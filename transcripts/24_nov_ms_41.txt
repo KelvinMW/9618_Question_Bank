@@ -1,0 +1,1470 @@
+--- Page 1 ---
+* CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 4 Practical
+MARK SCHEME
+Maximum Mark: 75
+9618/41
+October/November 2024
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2024 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+This document consists of 37 printed pages.
+© Cambridge University Press & Assessment 2024
+[Turn over
+
+--- Page 2 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Generic Marking Principles
+October/November 2024
+These general marking principles must be applied by all examiners when marking candidate answers. They should be applied alongside the
+specific content of the mark scheme or generic level descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+•
+•
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit is given for valid answers which go beyond
+the scope of the syllabus and mark scheme, referring to your Team Leader as appropriate
+marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these features are specifically assessed by the
+question as indicated by the mark scheme. The meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed instructions or in the application of generic level
+descriptors.
+© Cambridge University Press & Assessment 2024
+Page 2 of 37
+
+--- Page 3 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November 2024
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question (however; the use of the full mark range may
+be limited according to the quality of the candidate responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should not be awarded with grade thresholds or
+grade descriptors in mind.
+© Cambridge University Press & Assessment 2024
+Page 3 of 37
+
+--- Page 4 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1(a)
+October/November 2024
+Marks
+6
+1 mark each to max 6:
+Function declaration (and close where appropriate)
+•
+•
+Declaration/use of an array (with space/initialised with 45 spaces/strings)
+Opening the file Data.txt for read and closing in an appropriate place
+Looping through all file contents/Looping 45 times and reading each line ...
+. storing all items from file into array
+Returning the populated array
+Exception handling with suitable try, catch and output
+e.g.
+Python
+def ReadData () :
+Colours = []
+try:
+File = open ("Data.txt")
+Colours = File. read|) .split ("\n")
+File.close ()
+return Colours
+except:
+print ("No
+file found")
+VB.NET
+Function ReadData ()
+Dim TextFile As String = "Data.txt"
+Dim Colours (45) As String
+Try
+Dim FileReader As New System. IO. StreamReader (TextFile)
+For
+x = O TO 45
+Colours (x) = FileReader. ReadLine ()
+© Cambridge University Press & Assessment 2024
+Page 4 of 37
+
+--- Page 5 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November 2024
+Answer
+Marks
+Question
+1(a)
+Next
+FileReader. Close ()
+Catch ex As Exception
+Console. Writeline ("No file found")
+End Try
+Return Colours
+End Function
+Java
+public static String|| ReadData () {
+String
+TextFile = "Data.txt";
+String Colours[l = new
+String[45];
+tryt
+FileReader f = new FileReader (TextFile);
+BufferedReader Reader = new BufferedReader (f) ;
+for (Integer X = O; X < 45; X++) {
+tryi
+Colours [X] = Reader. readline ();
+}catch (IOException ex) {}
+}
+tryt
+Reader. close ();
+}catch (IOException ex) {}
+return Colours;
+¿catch (FileNotFoundException e) {
+System.out.println("File not found");
+}
+return
+Colours;
+}
+© Cambridge University Press & Assessment 2024
+Page 5 of 37
+
+--- Page 6 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1(b) (i)
+October/November 2024
+Marks
+2
+1 mark each
+Function header (and end where appropriate) taking (min) one parameter
+: Looping through each parameter aray eloment, concatenating with space and returning
+Python
+def FormatArray (DataArray) :
+OutputText
+11 11
+for x in range (0, 45):
+OutputText = OutputText + DataArray[x] + " "
+return OutputText
+VB.NET
+Function FormatArray (DataArray)
+Dim OutputText As String
+For X = 0 To 44
+OutputText =
+OutputText & DataArray (X)
+Next
+Return OutputText
+End Function
+Java
+public static String FormatArray (String|| DataArray) {
+String OutputText = "'';
+for (Integer X = 0; x < 45; x++) {
+OutputText
+= OutputText + DataArray[X] + " ";
+return OutputText;
+}
+© Cambridge University Press & Assessment 2024
+Page 6 of 37
+
+--- Page 7 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1 (b)(ii)
+October/November 2024
+Marks
+3
+1 (b)(iii)
+1 mark each:
+•
+Calling ReadData () and storing returned array ...
+•
+... calling FormatArray () with returned array
+• (
+Outputting return value from FormatArray ()
+Python
+Colours = ReadData () #string array
+print (FormatArray (Colours))
+VB.NET
+Dim Colours (45) As String
+Colours = ReadData ()
+Console.Writeline (FormatArray (Colours))
+Java
+String|| Colours = new String[45];
+Colours = ReadData ();
+System.out.println (FormatArray (Colours));
+1 mark for output showing all colours in one string
+beige green scarlet silver bronze slate yellow orange jadé lavender magenta magnolia turquoise black grey
+beige green scarlet silver bronze slate yellow orange jade lavender magenta magnolia turquoise black grey russet mango maroon mint purp
+nkle plum rose sage
+© Cambridge University Press & Assessment 2024
+Page 7 of 37
+
+--- Page 8 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1 (c)
+October/November 2024
+Marks
+4
+1 mark each
+•
+Function header (and close where appropriate) taking (min) two parameters and returns a value in all cases
+• Looping through each character in each string parameter ...
+:
+... return 1 when first parameter < second
+... return 2 when first parameter > second
+e.g.
+Python
+def CompareStrings (First, Second) :
+Count = 0
+while True:
+if First[Count] < Second [Count]:
+return 1
+elif First[Count] > Second[Count]:
+return
+2
+else:
+Count = Count + 1
+VB.NET
+Function CompareStrings (Firsts, Seconds)
+Dim Count As Integer = 1
+While (True)
+If Mid (FirstS, Count, 1) < Mid(Seconds, Count, 1) Then
+Return 1
+ElseIf Mid(Firsts, Count, 1) > Mid(Seconds, Count, 1) Then
+Return 2
+Else count = Count + 1
+End If
+End While
+End Function
+© Cambridge University Press & Assessment 2024
+Page 8 of 37
+
+--- Page 9 ---
+9618/41
+Question
+1(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Marks
+Java
+public static Integer Comparestrings (String
+First, String
+Second) {
+Integer Count = 0;
+while (true) {
+if (First. substring (Count, Count + 1). compareTo (Second. substring (Count,
+Count +
+1)) < 01{
+return 1;
+Count + 1))>01 {
+Jelse if (First. substring (Count, Count + 1). compareTo (Second. substring (Count,
+return 2;
+lelsel
+Counttt;
+1 (d) (i)
+1 mark each
+• Bubble sort function header taking array parameter and returns sorted array in all cases
+• Comparing strings using CompareStrings () and correctly swapping values when needed
+• Correct bubble sort that sorts the data correctly
+Python
+def Bubble (DataArray) :
+Arraylength = len (DataArray)
+for x in range (Arraylength
+for y in range (0, Arraylength - x - 1):
+Result = CompareStrings (DataArray[yl, DataArrayly + 1])
+if Result == 2:
+DataArraylyl, DataArraylyt1] = DataArraylyt1], DataArraylyl
+return DataArray
+3
+© Cambridge University Press & Assessment 2024
+Page 9 of 37
+
+--- Page 10 ---
+9618/41
+Question
+1 (d) (i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November 2024
+Answer
+Marks
+VB.NET
+Function Bubble (DataArray)
+Dim Arraylength As
+Integer = 45
+Dim Result As Integer
+Dim Temp As String
+For X = 0 To Arraylength - 1
+For Y = 0 To Arraylength - X - 2
+Result = CompareStrings (DataArray(Y), DataArray(Y + 1))
+If Result = 2 Then
+Temp = DataArray (Y)
+DataArray (Y)
+= DataArray (Y + 1)
+DataArray (Y + 1) = Temp
+End If
+Next
+Next
+Return DataArray
+End Function
+Java
+public static String|| Bubble (String[| DataArray) {
+Integer ArrayLength = 45;
+Integer Result;
+String Temp;
+for (Integer X = 0; X < Arraylength ; X++) {
+for (Integer Y = 0; Y < Arraylength - X - 1; 7++){
+Result = CompareStrings (DataArray[Y], DataArray[Y+1]);
+© Cambridge University Press & Assessment 2024
+Page 10 of 37
+
+--- Page 11 ---
+9618/41
+Question
+1 (d) (i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Marks
+if (Result == 2) {
+Temp = DataArray[Y];
+DataArray[Y] = DataArray[Y+1];
+DataArray[Y+1] = Temp;
+return DataArray;
+1 (d) (ii)
+1 mark each
+• Calling Bubble () with array as parameter and using/storing return value
+• Calling FormatArray () with return value from Bubble () and outputting return value
+Python
+BubbleSorted = Bubble (Colours)
+print (FormatArray (BubbleSorted))
+VB.NET
+Dim BubbleSorted(45) As String
+BubbleSorted = Bubble (Colours)
+Console.Writeline (FormatArray (BubbleSorted))
+Java
+String[| BubbleSorted = new String[45];
+BubbleSorted = Bubble (Colours);
+System.out.println (FormatArray (BubbleSorted));
+1 (d) (iii)
+1 mark for sorted data
+e.g.
+beige green scarlet silver bronze slate yellow orange jade lavender magenta magnolia turquoise black grey russet mango marõon mint purp
+le řed pink white cream navy olive brown' violet cyan amber aqua azure copper fawn fuschiá gold indigo ivory mauve muiberry peach periwi
+nkle plum rose sage
+imber aqua azure beige black bronze brown copper cream cyan fawn fuschia gold green grey indigo ivory jade lavender magenta magnolia ma
+10o maroon mauve mint mulberry navy olive orange peach periwinkle pink plum purple red rose russet sage scarlet silver slate turguoise
+violet hite vellow
+© Cambridge University Press & Assessment 2024
+Page 11 of 37
+2
+1
+
+--- Page 12 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Question
+2(a) (i)
+Marks
+4
+1 mark each
+:
+:
+Class Horse declaration (and end where appropriate)
+All 3 attributes declared as private with appropriate data types (declaration or comment)
+Constructor header (and end) taking 3 parameters (constructor must be within class) ...
+... constructor assigns parameters to attributes
+e.g.
+Python
+class Horse:
+self.
+self.
+(self, PName, PMaxFenceHeight, PPercentageSuccess):
+Name = PName #String
+MaxFenceHeight
+= PMaxFenceHeight #Integer
+PercentageSuccess = PPercentageSuccess
+#Integer
+VB.NET
+Class
+Horse
+Private Name As String
+Private MaxFenceHeight As Integer
+Private PercentageSuccess As Integer
+Sub New (PName, PMaxFenceHeight, PPercentageSuccess)
+Name = PName
+MaxFenceHeight = PMaxFenceHeight
+PercentageSuccess
+= PPercentageSuccess
+End Sub
+End Class
+© Cambridge University Press & Assessment 2024
+Page 12 of 37
+
+--- Page 13 ---
+9618/41
+Question
+2(a) (i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Marks
+Java
+class Horsel
+private
+static String Name;
+private
+static Integer MaxFenceHeight;
+private
+static Integer PercentageSuccess;
+public Horse (String
+PName, Integer PMaxFenceHeight, Integer PPercentageSuccess) {
+Name = PName;
+MaxFenceHeight = PMaxFenceHeight;
+PercentageSuccess = PercentageSuccess;
+2(a)(ii)
+1 mark each
+•
+1 get method header with no parameter ...
+….. returning correct attribute (without change)
+• 2nd get method correct
+e.g.
+Python
+def GetName (self) :
+return self.
+Name
+def GetMaxFenceHeight (self):
+return self._
+MaxFenceHeight
+VB.NET
+Function GetName ()
+Return Name
+End Function
+3
+© Cambridge University Press & Assessment 2024
+Page 13 of 37
+
+--- Page 14 ---
+9618/41
+Question
+2(a) (ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Marks
+Function GetMaxFenceHeight ()
+Return MaxFenceHeight
+End Function
+Java
+public String GetName () {
+return Name;
+public Integer GetMaxFenceHeight () {
+return MaxFenceHeight;
+2(b) (i)
+1 mark each
+Instantiating one object of type Horse with correct data...
+...and storing in first element of a 1D array Horses
+: ouen ame eh ea gets mn rey a de an sain nsen ite ote ara
+• Outputting name of both horse objects from array ...
+• ... using GetName ()
+e.g.
+Python
+Horses = []
+Horses. append (Horse ("Beauty", 150, 72))
+Horses. append (Horse ("Jet", 160, 65))
+print (Horses [0] . GetName ())
+print (Horses [1] . GetName ())
+VB.NET
+Dim Horses (2) As Horse
+Horses (0) = New Horse ("Beauty", 150, 72)
+Horses (1) = New Horse ("Jet", 160, 65)
+Console.Writeline (Horses (0) . GetName ())
+Console.WriteLine(Horses (1).GetName ())
+5
+© Cambridge University Press & Assessment 2024
+Page 14 of 37
+
+--- Page 15 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Marks
+Question
+2(b)(i)
+2(b) (ii)
+2(c) (i)
+Horse|| Horses = new Horse [2];
+Horses [0] = new Horse ("Beauty", 150, 72) ;
+Horses [1] = new Horse ("Jet", 160, 65) ;
+System.out.println (Horses [0].GetName ());
+System.out.println (Horses [1].GetName ());
+1 mark for both names output:
+Beauty
+Jet
+1 mark each
+•
+Class Fence header (and end where appropriate) with no inheritance
+Height and Risk private with integer data type
+•
+Constructor taking 2 parameters and storing in attributes (constructor must be within class)
+2 get methods (no parameter) returning correct attributes (within class)
+e.g.
+Python
+class Fence:
+def
+init
+(self, PHeight, PRisk):
+self._
+Height = PHeight #integer
+self.
+Risk = PRisk #integer
+def GetHeight (self):
+return self.
+Height
+def GetRisk (self):
+return self.
+Risk
+1
+4
+© Cambridge University Press & Assessment 2024
+Page 15 of 37
+
+--- Page 16 ---
+9618/41
+Question
+2(c)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Marks
+VB.NET
+Class Fence
+Dim Height As Integer
+Dim Risk As Integer
+Sub New (PHeight, PRisk)
+Height = PHeight
+Risk = PRisk
+End Sub
+Function GetHeight ()
+Return Height
+End Function
+Function GetRisk ()
+Return Risk
+End Function
+End Class
+Java
+class Fencel
+private Integer Height;
+private Integer Risk;
+public Fence (Integer PHeight, Integer PRisk) {
+Height = PHeight;
+Risk = PRisk;
+© Cambridge University Press & Assessment 2024
+Page 16 of 37
+
+--- Page 17 ---
+9618/41
+Question
+2(c)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Marks
+public Integer GetHeight () {
+return Height;
+}
+public Integer GetRisk () 1
+return Risk;
+2(c) (ii)
+1 mark each to max 5
+: Deolarationiuse of array cores of type Fence (with at last 4 elemenis)
+Taking Height and Risk as input four times and store/use
+5
+e.g.
+Python
+Course = [1
+for x in range (0, 4):
+Valid = False
+while Valid == False:
+Height = int (input ("Enter the height in cm"))
+if (Height ›= 70 and Height <= 180):
+Valid = True
+Valid
+= False
+while Valid == False:
+Risk = int (input ("Enter the risk between 1 (easy) and 5 (hard) "))
+if (Risk >= 1 and Risk <= 5):
+Valid = True
+Course. append (Fence (Height, Risk))
+© Cambridge University Press & Assessment 2024
+Page 17 of 37
+
+--- Page 18 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Question
+2(c)(ii)
+Marks
+VB.NET
+Dim Course (5) As Fence
+Dim Height As Integer
+Dim Risk As Integer
+For x = 0 To 3
+Do
+Console.Writeline("Enter the height in cm")
+Height = Console. ReadLine ()
+Loop Until Height >= 70 And Height <= 180
+DO
+Console.Writeline("Enter the risk between 1 (easy) and 5 (hard) ")
+Risk = Console. ReadLine ()
+Loop
+Until Risk ›=
+1 And Risk <= 5
+Course (x)
+= New Fence (Height, Risk)
+Next
+Java
+Fence [l Course
+= new Fence [4];
+for (Integer x = 0;
+x < 4; x++) {
+do 1
+System.out.println("Enter the height in cm");
+Height = Integer.parseInt(scanner.nextLine());
+} while (Height <70 || Height > 180);
+dol
+System.out.println ("Enter the risk between 1 (easy) and
+Risk = Integer.parseInt (scanner.nextline ());
+| Risk > 5);
+Course[x] = new Fence (Height, Risk);
+(hard) ");
+}
+© Cambridge University Press & Assessment 2024
+Page 18 of 37
+
+--- Page 19 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+2(d)
+October/November 2024
+Marks
+5
+1 mark each
+•
+Method header taking 2 parameters (and end where appropriate, returning real)
+Checking if fence height parameter is more than max attribute for that horse, if true multiplying percentage success by
+0.2
+(Otherwise) selection checking risk value parameter between 1 and 5, multiplying modifier by percentage success
+Returning correct value as a real number in all instances
+Correct use of attributes and parameters throughout
+•
+•
+•
+e.g.
+Python
+def
+Success (self, Height, Risk):
+if Height > self.
+return self.
+MaxFenceHeight:
+PercentageSuccess * 0.2
+else:
+if Risk == 1:
+return self._
+PercentageSuccess
+elif Risk == 2:
+return self._
+PercentageSuccess * 0.9
+elif Risk == 3:
+return self._
+PercentageSuccess
+* 0.8
+elif Risk == 4:
+return self._
+PercentageSuccess
+* 0.7
+else:
+return
+self._
+PercentageSuccess * 0.6
+VB.NET
+Function Success (Height, Risk)
+If Height > MaxFenceHeight Then
+Return PercentageSuccess * 0.2
+Else
+© Cambridge University Press & Assessment 2024
+Page 19 of 37
+
+--- Page 20 ---
+9618/41
+Question
+2(d)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Marks
+If Risk = 1 Then
+Return PercentageSuccess
+Elself Risk = 2 Then
+Return Percentagesuccess
+* 0.9
+Elself Risk = 3 Then
+Return Percentagesuccess
+* 0.8
+Elself Risk = 4 Then
+Return Percentagesuccess
+* 0.7
+Else
+Return PercentageSuccess
+* 0.6
+End If
+End If
+End Function
+Java
+public static Double Success (Integer Height, Integer Risk) {
+if (Height > MaxFenceHeight) {
+return Double. value0f (PercentageSuccess) * 0.2;
+Jelse E Risk == 111
+return Double.value0f (PercentageSuccess);
+}else if (Risk == 2) {
+return Double.value0f (PercentageSuccess)
+* 0.9;
+}else if (Risk == 3) {
+return Double.value0f (PercentageSuccess)
+* 0.8;
+}else if (Risk == 4) ≤
+return Double.value0f (PercentageSuccess)
+* 0.7;
+}else!
+return Double. (PercentageSuccess) (PercentageSuccess)
+* 0.6;
+© Cambridge University Press & Assessment 2024
+Page 20 of 37
+
+--- Page 21 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+2(e) (i)
+October/November 2024
+Marks
+3
+1 mark each
+•
+:
+Calling Success () for each horse with the height and risk of all 4 fences ...
+... using get methods for height and risk of each fence
+... outputting the horse name, fence number and calculated success at fence in appropriate message
+e.g.
+Python
+in range (0,
+for x in range (0,
+Chance = Horses [y]. Success (Course [x] .GetHeight (), Course [x]. GetRisk ())
+print (Horses [y] . GetName (), "Fence", x + 1,
+"chance of
+success is", Chance, "g")
+Dim Chance As Single
+For y = 0
+For x = 0 To 3
+Chandle. WHoresne Success oursene), Get Heighte: Course 1) GetRance!
+Console.Writeline (Horses (y) . GetName () & " Fence
+success is " & Chance & "f")
+Next
+Next
+Java
+Double Chance = 0.0;
+for (Integer y = 0; y ‹ 2; y ++) {
+for (Integer x = O; x < 4; x++) {
+исев 1a . + chance or
+Chance = Horses [yl. Success (Course [x].GetHeight (), Course [x] .GetRisk ());
+System.out.println (Horses [y].GetName () + "
+Fence " + (x + 1)
+chance of
+}
+© Cambridge University Press & Assessment 2024
+Page 21 of 37
+
+--- Page 22 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+2(e)(ii)
+October/November 2024
+Marks
+2
+1 mark each
+Calculating average of all 4 fences for each horse and outputting in suitable message
+• Identifying the highest percentage of success and outputting the horse's name in an appropriate message
+e.g.
+Python
+AverageSuccess = []
+for
+y in range (0,
+2):
+Total
+= 0
+for x in range (0, 4):
+Chance = Horses [y]. Success (Course [x]. GetHeight (), Course [x]. GetRisk ())
+print (Horses [y] . GetName (), "Fence", » t 1, "chance Of success is",
+Total = Total + Chance
+Average = Total / 4
+AverageSuccess. append (Average)
+print (Horses [y]. GetName (), "average success rate is", Average,
+"д")
+Chance,
+Highest = AverageSuccess [0]
+Winner
+= -1
+for x in range (1,2):
+if Highest <
+AverageSuccess [x]:
+Winner = x
+Highest = AverageSuccess [x]
+print (Horses [Winner]. GetName (), " has the highest average chance of success ")
+© Cambridge University Press & Assessment 2024
+Page 22 of 37
+
+--- Page 23 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Question
+2(e)(ii)
+Marks
+VB.NET
+Dim Total As Integer
+Dim Chance As Single
+Dim Average As Single
+y = 0 To 1
+Chance = Horses (y). Success (Course (X) .GetHeight (), Course (x) .GetRisk ())
+Console.Writeline (Horses (y) . GetName () & "
+&x+1&
+success is
+" & Chance & "¿")
+Total = Total + Chance
+Average = Total / 4
+AverageSuccess (y) = Average
+Console.WriteLine (Horses (y) .GetName() & " average success rate is " /
+& Average &
+"9")
+Next
+Next
+Dim Highest As Single
+Dim Winner As
+Integer
+Highest = AverageSuccess (0)
+Winner
+= -1,
+For x = 1 To 1
+If Highest
+< AverageSuccess (x) Then
+Winner
+= ×
+Highest = AverageSuccess (x)
+End If
+Next x
+Console.WriteLine (Horses (Winner) .GetName () & " has the highest average chance of success ")
+© Cambridge University Press & Assessment 2024
+Page 23 of 37
+
+--- Page 24 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Question
+2(e)(ii)
+Marks
+Java
+Double
+Total = 0.0;
+Double
+Chance
+= 0.0;
+Double Average = 0.0;
+for (Integer y
+= 0;
+y < 2; y ++) {
+Total = 0.0;
+for (Integer x
+= 0; x < 4; x++) {
+Chance = Horses [yl. Success (Course [x].GetHeight), Course [y] .GetRisk ());
+System.out.println (Horses [y].GetName () † " Fence
+" + (x + 1) + "
+success is
+" + Chance + "g");
+Total = Total + Chance;
+}
+Average = Total / 4;
+AverageSuccess [y] = Average;
+System.out.println (Horses[y].GetName|) + " average success rate is "
++ Average +
+"°");
+}
+Double Highest = AverageSuccess [0];
+Integer Winner
+for (Integer x = 1: x < 2: x++) {
+if (Highest < AverageSuccess [x]) {
+Winner = x;
+Highest = AverageSuccess [x];
+}
+}
+success");
+System.out.printlIn (Horses[Winner].GetName|) + " has the highest average chance of
+© Cambridge University Press & Assessment 2024
+Page 24 of 37
+
+--- Page 25 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November 2024
+Answer
+Question
+2(e)(iii)
+Marks
+2
+1 mark each
+• Outputting showing correct input values for all fences, and correct chance for each horse on each jump
+• Outputs of average chance of each horse and horse name with highest average
+e.g.
+Enter the height in cm152
+Enter the risk between 1 (easy) and 5 (hard) 5
+Enter the height in cm121
+Enter the height in cm130
+Enter the height in cm145
+he height in em 3 (asy) and 5 (haza 3
+Enter the risk between 1 (easy) and 5 (hard) 4
+Beauty Jump 1 chance of success is 14.4 %
+Beauty Jump 2 chance of success
+Beauty Jump 3 chance of success
+Beauty Jump 4 chance of success
+Beauty average success rate is 48.6 %
+1 chance of success is 39.0 %
+Jet Jump 2 chance of success is 65 %
+Jet Jump 3 chance of success is 52.0 %
+Jet Jump 4 chance of success
+45.5 %
+Jet average success rate is 50.375 %
+Jet has the best chance of winning
+© Cambridge University Press & Assessment 2024
+Page 25 of 37
+
+--- Page 26 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(a)
+October/November 2024
+Marks
+2
+1 mark each
+correctly
+Linkedlist declared as 2D array with (min) 20 × 2 elements (Integer) with all data initialised to - 1, all nodes linked
+• (Global) FirstNode (Int) initialised as - 1 and (global) FirstEmpty (Int) initialised as 0
+VB.NET
+Dim LinkedList (20, 2) As Integer
+Dim FirstNode As Integer
+Dim FirstEmpty As Integer
+Sub Main (args As String ())
+FirstNode =
+FirstEmpty
+For x = 0 To 18
+Linkedlist (x,
+Linkedlist (x, 1) = x + 1
+Next
+Linkedlist (19,
+0)
+= -1
+LinkedList (19, 1) = -1
+End Sub
+© Cambridge University Press & Assessment 2024
+Page 26 of 37
+
+--- Page 27 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November 2024
+Answer
+Marks
+Question
+3(a)
+Python
+Linkedlist = [l #global
+FirstEmpty = 0
+for x in range (0, 19):
+LinkedList.append([-1, × + 1])
+LinkedList [19][0] = -1
+LinkedList[19][1] = -1
+Java
+private static Integer|||| LinkedList = new Integer[20][2];
+static Integer FirstNode;
+private static Integer FirstEmpty;
+public static void main (String args [l){
+FirstNode = -1;
+FirstEmpty = 0;
+for (Integer X = 0; X ‹ 19; x++) {
+LinkedList [X][0] = -1;
+LinkedList[X][1] = X + 1;
+LinkedList [19][0] = -1;
+LinkedList [19][1] = -1;
+}
+© Cambridge University Press & Assessment 2024
+Page 27 of 37
+
+--- Page 28 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(b)
+October/November 2024
+Marks
+6
+1 mark each to max 6
+Procedure header (and end) taking (min) 5 data items as input from the user
+• Checking if linked list is full (FirstEmpty = -1)...
+• ...ending procedure/loop/not doing anything further
+•
+•
+•
+(otherwise) Linkedlist [FirstEmpty, 0] = data input
+nkedlist (FirstEmpty, 1) = FirstNode
+FirstNode = FirstEmpty
+FirstEmpty = Linkedlist [FirstEmpty, 1] before any update to FirstEmpty 's pointer
+e.g.
+Python
+def InsertData ():
+global Linkedlist
+global FirstNode
+global FirstEmpty
+in range (5):
+if FirstEmpty != -1:
+nextEmpty = LinkedList[FirstEmpty][1]
+Linkedlist[FirstEmpty|[O] = int(input("Value: "))
+Linkedlist[FirstEmpty][1] = FirstNode
+FirstNode = FirstEmpty
+FirstEmpty = nextEmpty
+© Cambridge University Press & Assessment 2024
+Page 28 of 37
+
+--- Page 29 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Question
+3(b)
+Marks
+VB.NET
+Sub
+InsertData ()
+Dim NewItem As
+Integer
+Dim NextEmpty As Integer
+For x = 0 To 4
+Console.Writeline ("Enter the next number")
+NewItem = Console. ReadLine ()
+If FirstEmpty = -1
+Then
+Else
+NextEmpty = LinkedList (FirstEmpty, 1)
+Linkedlist (FirstEmpty, O) = NewItem
+Linkedlist (FirstEmpty,
+1) = FirstNode
+FirstNode = FirstEmpty
+FirstEmpty = NextEmpty
+End
+Next x
+End Sub
+© Cambridge University Press & Assessment 2024
+Page 29 of 37
+
+--- Page 30 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November 2024
+Answer
+Marks
+Question
+3(b)
+public static void InsertData () {
+Integer NewItem;
+Integer CurrentPointer = 0;
+Integer PreviousPointer = 0;
+Scanner scanner = new Scanner (System.in);
+Integer NextEmpty;
+for (Integer X = O; X < 5; X++) {
+System.out.println("Enter the next number");
+NewItem = Integer.parseInt (scanner.nextLine());
+if (FirstEmpty == -1) {
+= 5;
+NextEmpty = LinkedList[FirstEmpty]|1];
+Linkedlist[FirstEmpty][O] = NewItem;
+Linkedlist[FirstEmpty][1] = FirstNode;
+FirstNode = FirstEmpty;
+FirstEmpty = NextEmpty;
+}
+}
+© Cambridge University Press & Assessment 2024
+Page 30 of 37
+
+--- Page 31 ---
+9618/41
+Question
+3(c)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Marks
+2
+1 mark each
+Procedure header (and end) starting with node at index FirstNode and outputting data
+LinkedList[FirstNode, 0]
+• Following pointers until end reached and outputting data for each node
+Python
+def Outputlinkedlist ():
+global Linkedlist
+global FirstNode
+global FirstEmpty
+CurrentPointer = FirstNode
+Flag = True
+while Flag:
+print (Linkedlist [CurrentPointer][0])
+CurrentPointer = Linkedlist[CurrentPointer][1]
+if CurrentPointer == -1:
+Flag = False
+VB.NET
+Sub OutputLinkedlist ()
+Dim CurrentPointer As Integer = FirstNode
+Dim Flag As Boolean = True
+While Flag
+Console.Writeline (Linkedlist (CurrentPointer, 0))
+CurrentPointer = Linkedlist (CurrentPointer,
+If CurrentPointer = -1 Then
+Flag = False
+End While
+© Cambridge University Press & Assessment 2024
+Page 31 of 37
+
+--- Page 32 ---
+9618/41
+Question
+3(c) (i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November 2024
+Answer
+Marks
+End sub
+Java
+public static void Outputlinkedlist () {
+Integer CurrentPointer = FirstNode;
+Boolean Flag = true;
+while (Flag) (
+system.out.printIn(LinkedList[CurrentPointer|[O1);
+CurrentPointer = Linkedlist CurrentPointer| [1];
+if (CurrentPointer == -1) {Flag = false;}
+}
+3(c) (i)
+1 mark for calling InsertData () then OutputLinkedlist ()
+Python
+InsertData ()
+Outputlinkedlist ()
+VB.NET
+InsertData ()
+OutputLinkedlist ()
+1
+3(c) (iii)
+Java
+InsertData () ;
+Outputlinkedlist ();
+1 mark for inputs of 5 1 2 3 8 and output of 8 3 2 1 5
+© Cambridge University Press & Assessment 2024
+Page 32 of 37
+
+--- Page 33 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Question
+3(d) (i)
+Marks
+5
+1 mark each to max 5
+• Procedure header (and end) with parameter
+• Checking data in FirstNode against parameter ...
+•
+... (if found) updating FirstNode to Linkedlist [FirstNode, 1]
+• (Otherwise) following pointers in loop/recursive call ...
+...comparing to data to remove each time
+•
+•
+….. storing previous pointer through each loop...
+... when found, updating previous pointer to found node's pointer
+• Adding deleted node to end of/start of empty list (and updating FirstEmpty if needed)
+Python
+def RemoveData (ItemToRemove):
+global LinkedList
+global FirstNode
+global FirstEmpty
+if LinkedList[FirstNode][0] == ItemToRemove:
+NewFirst = LinkedList FirstNodel[11
+Linkedlist[FirstNode][1] = FirstEmpty
+FirstEmpty = FirstNode
+FirstNode = NewFirst
+else:
+if FirstNode != -1:
+CurrentPointer = FirstNode
+PreviousNode = -1
+while (ItemToRemove != LinkedList[CurrentPointer|[0] and CurrentPointer
+!= -1) :
+PreviousNode = CurrentPointer
+CurrentPointer = LinkedList[CurrentPointer][1]
+if ItemToRemove == Linkedlist [CurrentPointer|[0]:
+Linkedlist [PreviousNode|[1] = Linkedlist [CurrentPointer|[1]
+LinkedList [CurrentPointer][0] = -1
+LinkedList[CurrentPointer|[1] = FirstEmpty
+FirstEmpty = CurrentPointer
+© Cambridge University Press & Assessment 2024
+Page 33 of 37
+
+--- Page 34 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Marks
+Question
+3(d)(i)
+VB.NET
+Sub
+RemoveData (ItemToRemove)
+If Linkedlist (FirstNode, O) = ItemToRemove
+Dim NewFirst As Integer = LinkedList (FirstNode, 1)
+LinkedList (FirstNode,
+1) = FirstEmpty
+FirstEmpty = FirstNode
+FirstNode = NewFirst
+Else
+If FirstNode <> -1 Then
+Dim CurrentPointer As Integer = FirstNode
+Dim PreviousNode As Integer = -1
+Dim Flag As Boolean
+= True
+Dim Found As Boolean
+= False
+While Flag And Not (Found)
+If (CurrentPointer <> -1) Then
+If (ItemToRemove <> Linkedlist (CurrentPointer,
+PreviousNode = CurrentPointer
+CurrentPointer = Linkedlist (CurrentPointer, 1)
+Else
+Found = True
+End If
+Else
+Flag = False
+End If
+End While
+If Found Then
+LinkedList (PreviousNode, 1) = Linkedlist (CurrentPointer, 1)
+LinkedList (CurrentPointer, 0) = -1
+Linkedlist (CurrentPointer, 1) = FirstEmpty
+FirstEmpty = CurrentPointer
+End If
+End If
+End If
+End Sub
+© Cambridge University Press & Assessment 2024
+Page 34 of 37
+
+--- Page 35 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November 2024
+Answer
+Marks
+Question
+3(d) (i)
+Java
+public static void RemoveData (Integer ItemToRemove) {
+Integer CurrentPointer = 0;
+Integer PreviousNode = 0;
+Integer NewFirst = 0;
+if (Linkedlist[FirstNode][0] == ItemToRemove) {
+NewFirst = Linkedlist[FirstNode][1];
+LinkedList[FirstNode][1] = FirstEmpty;
+FirstEmpty = FirstNode;
+FirstNode = NewFirst;
+}elsel
+!=-1) {
+if (FirstNode != -1) {
+CurrentPointer
+= FirstNode;
+PreviousNode = -1;
+while(ItemToRemove != Linkedlist[CurrentPointer][0]
+&& CurrentPointer
+PreviousNode = CurrentPointer;
+CurrentPointer = Linkedlist [CurrentPointer|[1];
+}
+if (ItemToRemove == LinkedList [CurrentPointer|[0|)|
+Linkedlist[PreviousNode|[11 = LinkedList[CurrentPointer|[1l:
+LinkedList [CurrentPointer][0] = -1;
+LinkedList[CurrentPointer][1] = FirstEmpty;
+FirstEmpty = CurrentPointer;
+}
+© Cambridge University Press & Assessment 2024
+Page 35 of 37
+
+--- Page 36 ---
+9618/41
+Question
+3(d) (ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+1 mark for calling RemoveData (5) , outputting "After", calling OutputLinkedlist ()
+Marks
+1
+Python
+Linkedlist = []
+FirstNode = -1
+FirstEmpty = 0
+for x in range (0, 19):
+Linkedlist.append([-1, × + 1])
+InsertData ()
+OutputLinkedlist ()
+RemoveData (5)
+print ("After")
+OutputLinkedList ()
+VB.NET
+Sub Main (args
+As
+String())
+FirstNode = -1
+FirstEmpty = 0
+For x = 0 To 19
+Linkedlist (x, 0) = -1
+LinkedList (x, 1) = x + 1
+Next
+InsertData ()
+OutputLinkedList ()
+RemoveData (5)
+Console.WriteLine("After")
+OutputLinkedList ()
+End Sub
+© Cambridge University Press & Assessment 2024
+Page 36 of 37
+
+--- Page 37 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Question
+3(d) (ii)
+Marks
+public static void main (String
+args []) {
+FirstNode = -1;
+FirstEmpty = 0;
+for (Integer X
+= 0; x < 20; x++) {
+LinkedList [X] [0] = -1;
+Linkedlist[X][1] = X + 1;
+}
+InsertData ();
+OutputLinkedlist ();
+RemoveData (5) ;
+System.out.println("After");
+OutputLinkedlist ();
+3(d)(iii)
+}
+1 mark for input and output.
+Test data 1:
+Input 56895
+'After'
+Output: 9 8 6 5
+Test data 2:
+Input 107856
+"After"
+Output: 6 8 7 10
+1
+© Cambridge University Press & Assessment 2024
+Page 37 of 37

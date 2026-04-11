@@ -1,0 +1,1502 @@
+--- Page 1 ---
+* CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 4 Practical
+MARK SCHEME
+Maximum Mark: 75
+9618/42
+May/June 2025
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2025 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+This document consists of 45 printed pages.
+© Cambridge University Press & Assessment 2025
+[Turn over
+
+--- Page 2 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Generic Marking Principles
+May/June 2025
+These general marking principles must be applied by all examiners when marking candidate answers. They should be applied alongside the
+specific content of the mark scheme or generic level descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specitic skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit is given for valid answers which go beyond
+the scope of the syllabus and mark scheme, referring to your Team Leader as appropriate
+marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these features are specifically assessed by the
+question as indicated by the mark scheme. The meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed instructions or in the application of generic level
+descriptors.
+© Cambridge University Press & Assessment 2025
+Page 2 of 45
+
+--- Page 3 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question (however; the use of the full mark range may
+be limited according to the quality of the candidate responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should not be awarded with grade thresholds or
+grade descriptors in mind.
+© Cambridge University Press & Assessment 2025
+Page 3 of 45
+
+--- Page 4 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Annotations guidance for centres
+Examiners use a system of annotations as a shorthand for communicating their marking decisions to one another. Examiners are trained during the
+standardisation process on how and when to use annotations. The purpose of annotations is to inform the standardisation and monitoring
+processes and guide the supervising examiners when they are checking the work of examiners within their team. The meaning of annotations and
+how they are used is specific to each component and is understood by all examiners who mark the component.
+We publish annotations in our mark schemes to help centres understand the annotations they may see on copies of scripts. Note that there may
+not be a direct correlation between the number of annotations on a script and the mark awarded. Similarly, the use of an annotation may not be an
+indication of the quality of the response.
+The annotations listed below were available to examiners marking this component in this series.
+Annotations
+Annotation
+BOD
+X
+FT
+~~
+Highlighted text
+NAQ]
+NE
+Meaning
+Benefit of the doubt
+To indicate where a key word/phrase/code is missing
+Incorrect
+Follow through
+Indicate a point in an answer
+To draw attention to a particular aspect or to indicate where parts of an answer have been combined
+Ignore
+Not answered question
+No examples or not enough
+© Cambridge University Press & Assessment 2025
+Page 4 of 45
+
+--- Page 5 ---
+9618/42
+Annotation
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Meaning
+Not relevant or used to separate parts of an answer
+Off-page
+comment
+REP
+SEEN
+TV
+Allows comments to be entered at the bottom of the RM marking window and then displayed when the associated question
+item is navigated to.
+Repetition
+Indicates that work or a page has been seen including blank answer spaces and blank pages.
+Correct
+Too vague
+© Cambridge University Press & Assessment 2025
+Page 5 of 45
+
+--- Page 6 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+•
+Bold in mark scheme means that idea is required.
+• / in mark scheme means alternative.
+• I/ in mark scheme means alternative solution that gains the same mark point.
+... at the end of one mark point without a ... at the start of the next just means the sentence follows on. There is no dependency.
+... at the end of one mark point and at the start of the next, this means the second cannot be awarded without the first.
+() means what is in the brackets is not required, or it is not required in some languages but may be required in others.
+May/June 2025
+© Cambridge University Press & Assessment 2025
+Page 6 of 45
+
+--- Page 7 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1(a)
+May/June 2025
+Marks
+2
+1 mark each
+(Global) Stack as 1D array (of strings) with 20 elements initialised to string "-1"
+(Global) TopOfStack initialised to - 1
+Example program code:
+public
+static String|| Stack = new String[20];
+static Integer TopOfStack;
+static void main (String args[]){
+for (Integer X
+= 0; x < 20; x++) {
+Stack [X] = "-1";
+TopOfStack = -1;
+}
+VB.NET
+Dim Stack (19) As String
+Dim TopOfstack As Integer
+For x = 0 To 19
+Stack (X) = "-1"
+Next
+TopOfStack = -1
+Python
+Stack = []
+TopofStack = -1
+#main
+for x in range (20):
+Stack.append ("-1")
+© Cambridge University Press & Assessment 2025
+Page 7 of 45
+
+--- Page 8 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1(b)
+May/June 2025
+Marks
+4
+1 mark each
+:
+:
+Push function header (and end where appropriate) taking one (string) parameter
+Checking if stack is full and returning integer -1
+(Otherwise) Incrementing Topofstack
+Storing parameter in the incremented the stack at TopofStack and returning integer 1
+Example program code:
+Java
+public static Integer Push (String Data) {
+(TopOfStack == 19) {
+return
+Jelsel
+Topofstacktt;
+Stack [TopOfStack] = Data;
+return 1;
+}
+}
+VB.NET
+Function Push (ByVal Data)
+If TopOfStack = 19 Then
+Return -1
+Else
+TopofStack = TopOfStack + 1
+Stack (TopOfStack) = Data
+Return 1
+End If
+End Function
+© Cambridge University Press & Assessment 2025
+Page 8 of 45
+
+--- Page 9 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+Question
+Python
+def Push (Data) :
+global Stack
+global Topofstack
+if TopOfStack == 19:
+return
+-1
+else:
+TopOfStack += 1
+Stack[TopOfStack] = Data
+return 1
+© Cambridge University Press & Assessment 2025
+Page 9 of 45
+
+--- Page 10 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1(c)
+May/June 2025
+Marks
+4
+1 mark each
+•
+Function header (and end where appropriate) and returning a value in all cases.
+• Checking if stack is empty and returning string "-1"
+Returning element in stack at TopOfStack before TopOfStack is decremented
+Example program code:
+Java
+public
+static String Pop () {
+if
+(Topofstack
+-1) {
+return "-1";
+}elsel
+String ReturnValue = Stack[Top0fStack];
+TopOfStack--;
+return ReturnValue;
+}
+}
+VB.NET
+Function Pop ()
+If TopOfStack = -1 Then
+Pop = "-1"
+Else
+Pop = Stack (TopOfStack)
+TopOfStack = TopOfStack
+- 1
+End If
+End Function
+© Cambridge University Press & Assessment 2025
+Page 10 of 45
+
+--- Page 11 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+Question
+Python
+def Pop () :
+global Stack
+global Topofstack
+if TopofStack
+==-1:
+return
+"-1"
+else:
+ReturnValue = Stack[Top0fStack]
+Topofstack
+return ReturnValue
+© Cambridge University Press & Assessment 2025
+Page 11 of 45
+
+--- Page 12 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1(d)
+May/June 2025
+Marks
+6
+1 mark each
+•
+•
+Procedure header (and end where appropriate) taking one (string) parameter
+Opening the file with the filename parameter and closing the file in an appropriate place
+Looping through to end of file and reading in each line ...
+•
+... calling Push () once with each read in value ...
+... if any return value from Push () is integer - 1 outputting "Stack full"
+•
+Exception handling for opening and reading from file with appropriate catch and output
+Example program code:
+Java
+public static void ReadData (String FileName) {
+Integer ReturnValue;
+tryt
+FileReader f
+= new FileReader (FileName) ;
+tryt
+BufferedReader Reader = new BufferedReader (f) ;
+String Line= Reader. readLine ();
+Line = Line. replace ("In","");
+while (Line != null){
+Line = Line.replace ("\n","");
+ReturnValue = Push (Line);
+if (ReturnValue == -1){
+System.out.println("Stack full");
+Line = Reader. readLine ();
+}
+Reader. close ();
+}catch (IOException ex) {}
+}catch (FileNotFoundException e) {
+System.out.println("File not found");
+© Cambridge University Press & Assessment 2025
+Page 12 of 45
+
+--- Page 13 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+VB.NET
+Sub ReadData (ByVal FileName As String)
+Dim ReturnValue As String
+Dim FileReader As New System.IO. StreamReader (FileName)
+While Not FileReader.EndOfStream
+ReturnValue = Push (FileReader.ReadLine ())
+If ReturnValue = "-1" Then
+Console.Writeline ("Stack full")
+End While
+FileReader.Close ()
+Catch ex As
+Exception
+Console.WriteLine ("Cannot open
+End Try
+End
+Sub
+Python
+def ReadData (FileName) :
+global Stack
+global TopofStack
+try:
+File = open (FileName)
+for Line in File:
+ReturnValue = Push (Line. strip ())
+if ReturnValue == -1:
+print ("Stack full")
+File. close ()
+except:
+print("Cannot open file")
+Marks
+© Cambridge University Press & Assessment 2025
+Page 13 of 45
+
+--- Page 14 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+Question
+1(e)
+1 mark for:
+Calculate () function header (and end where appropriate)
+•
+•
+Looping until the stack is empty
+Calling Pop () repeatedly within loop and storing/using return value
+... working out if return value from Pop () call is an operator or a number / alternating between operator and number
+•
+•
+•
+Select to determine if the operator is +, -, 1, * or ^ and attempt the matching calculation
+... performing correct calculation using operator, number
+... updating total from previous loops and returning this final value
+Example program code:
+Java
+public static Double Calculate (){
+Double Total = Double.parseDouble (Pop ());
+String ReturnValue =
+"'";
+String LastOperator = "";
+Boolean OperatorFlag = true;
+Integer TheData = 0;
+while(ReturnValue != "-1") {
+ReturnValue = Pop ();
+if (OperatorFlag == false) {
+TheData = Integer.parseInt (ReturnValue);
+if (LastOperator.compareTo("+")==0) |
+Total = Total + TheData;
+}else if (LastOperator.compareTo("_")==0) {
+Total = Total - TheData;
+}else if (LastOperator.compareTo("*")==0) {
+Total = Total * TheData;
+}else if (LastOperator.compareTo ("/")==0) {
+Total = Total / TheData;
+relse if (LastOperator.compareTo("^")==0) 1
+Total = Math.pow (Total, TheData);
+}
+OperatorFlag = true;
+© Cambridge University Press & Assessment 2025
+Page 14 of 45
+
+--- Page 15 ---
+9618/42
+Question
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+Jelsel
+LastOperator = ReturnValue;
+OperatorFlag
+= false;
+return Total;
+}
+VB.NET
+Function Calculate ()
+Dim Total As Integer = Pop ()
+Dim ReturnValue As String
+Dim LastOperator As String = ""
+Dim OperatorFlag As Boolean = True
+Dim TheData As Integer = 0
+While (ReturnValue <> "-1")
+ReturnValue = Pop ()
+Select Case OperatorFlag
+Case False
+TheData = ReturnValue
+Select Case
+Lastoperator
+Case "+"
+Iotal = Total + TheData
+Case
+"1_1
+Total = Total - TheData
+Case
+11*1
+Total = Total * TheData
+Case
+"/"
+Total = Total
+/ TheData
+Case
+"A m
+Total = Total ^ TheData
+End Select
+OperatorFlag = True
+Case Else
+LastOperator = ReturnValue
+© Cambridge University Press & Assessment 2025
+Page 15 of 45
+
+--- Page 16 ---
+9618/42
+Question
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+OperatorFlag
+= False
+End Select
+End While
+Return Total
+End Function
+Python
+def Calculate ():
+global Stack
+global TopofStack
+Total = Pop ()
+Total
+int (Total)
+Return = 0
+LastOperator =
+11 11
+Operator = True
+while (Return != "-1"):
+Return = Pop ()
+if Operator == False:
+Data = int (Return)
+if LastOperator == "+":
+Total = Total + Data
+elif LastOperator == "_":
+Total = Total
+- Data
+elif LastOperator == "*":
+Total = Total * Data
+elif LastOperator == "/":
+Total = Total / Data
+elif LastOperator == "^":
+Total = Total ** Data
+Operator = True
+LastOperator = Return
+Operator = False
+return Total
+© Cambridge University Press & Assessment 2025
+Page 16 of 45
+
+--- Page 17 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1 (f)(i)
+May/June 2025
+Marks
+2
+1 mark each
+Taking a filename as input and calling ReadData () with input
+• Calling Calculate () and outputting the return value
+Example program code:
+Topofstack
+System.out.println("Enter the filename");
+Scanner scanner
+new Scanner (System.in);
+String FileName
+= scanner.nextLine ();
+ReadData (FileName);
+Double ReturnValue
+= Calculate ();
+System.out.println (ReturnValue);
+VB.NET
+Console.WriteLine("Enter the filename")
+Dim FileName As String = Console. ReadLine ()
+ReadData (FileName)
+Dim ReturnValue As Single
+ReturnValue = Calculate ()
+Console.WriteLine (ReturnValue)
+Python
+FileName = input ("Enter the filename: ")
+ReadData (FileName)
+ReturnValue = Calculate ()
+print (ReturnValue)
+© Cambridge University Press & Assessment 2025
+Page 17 of 45
+
+--- Page 18 ---
+9618/42
+Question
+1(f)(ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for screenshot showing input of StackData. txt and output of 131
+1 mark for screenshot showing input of Secondstack. txt and output of 320
+May/June 2025
+Marks
+2
+e.g.
+Enter the filename
+StackData.txt
+131.0
+Enter the filename
+SecondStack.txt
+320.0
+© Cambridge University Press & Assessment 2025
+Page 18 of 45
+
+--- Page 19 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+2(a)
+May/June 2025
+Marks
+2
+1 mark each
+•
+•
+Record/class NewRecord declared
+3 variables within structure (all integer)
+Example program code:
+Java
+class NewRecord!
+private Integer
+Key;
+private Integer Iteml;
+private Integer Item2;
+public NewRecord (Integer
+Key = pKey;
+Item1
+= pItem1;
+Item2
+pItem2;
+}
+public Integer GetKey () {
+return Key;
+}
+public Integer GetItem1 () {
+return Item1;
+}
+public Integer GetItem2 () {
+return Item2;
+1}
+VB.NET
+Structure NewRecord
+Dim Key As Integer
+Dim Iteml As Integer
+Dim Item2 As Integer
+End Structure
+pkey, Integer pIteml, Integer pItem2) {
+© Cambridge University Press & Assessment 2025
+Page 19 of 45
+
+--- Page 20 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+Question
+Python
+class Record:
+(self, pkey, pIteml, pItem2):
+Key = pkey #integer
+= pIteml #integer
+Item2 = pItem2
+#integer
+def GetKey (self) :
+return self.
+Key
+de f
+GetItem1 (self):
+return self. Iteml
+def GetItem2 (self):
+return self.__ Item2
+© Cambridge University Press & Assessment 2025
+Page 20 of 45
+
+--- Page 21 ---
+9618/42
+Question
+2(b)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+1
+1 mark for
+• HashTable (200 records) and Spare (100 records) declared as (global) arrays
+Example program code:
+Java
+public static NewRecord|| HashTable = new NewRecord[200];
+public static NewRecord[| Spare = new NewRecord[100];
+VB.NET
+Dim HashTable (199) As NewRecord
+Dim Spare (99)
+As
+NewRecord
+Python
+HashTable = 1]
+Spare = 1]
+© Cambridge University Press & Assessment 2025
+Page 21 of 45
+
+--- Page 22 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+2(b)(ii)
+May/June 2025
+Marks
+2
+1 mark each
+Procedure Initialise () header (and close where appropriate) that initialises all elements in both arrays ...
+•
+... to an empty record with -1 in each of the 3 fields/elements
+Example program code:
+public
+static void Initialise(){
+NewRecord EmptyRecord = new NewRecord (-1,-1,-1);
+for (Integer X = 0; x < 200; x++) {
+HashTable [X] = EmptyRecord;
+}
+for (Integer X = 0; X < 100; x++) {
+Spare [X]
+= EmptyRecord;
+VB.NET
+Sub Initialise ()
+Dim EmptyRecord As NewRecord
+EmptyRecord. Key = -1
+EmptyRecord. Item1
+= -1
+EmptyRecord. Item2
+= -1
+For X = 0 To 199
+HashTable (X) = EmptyRecord
+Next
+For X = 0 To 99
+Spare (X) = EmptyRecord
+Next
+End Sub
+© Cambridge University Press & Assessment 2025
+Page 22 of 45
+
+--- Page 23 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+Question
+Python
+def Initialise ():
+global HashTable
+global Spare
+for X in range (200):
+HashTable. append (Record|-1, -1,-1))
+for X in range (100):
+Spare.append (Record (-1,-1,-1))
+© Cambridge University Press & Assessment 2025
+Page 23 of 45
+
+--- Page 24 ---
+9618/42
+Question
+2(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+2
+1 mark each
+• Function header (and close where appropriate), taking one (integer) parameter and returning the calculated value
+• Calculation of parameter MOD 200
+Example program code:
+public static Integer CalculateHash (Integer TheKey) {
+return (TheKey % 200);
+}
+VB.NET
+Function CalculateHash (Key)
+Return Key Mod 200
+End Function
+Python
+def CalculateHash (Key):
+return Key 8
+200
+© Cambridge University Press & Assessment 2025
+Page 24 of 45
+
+--- Page 25 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+2(d)
+May/June 2025
+Marks
+6
+1 mark each:
+•
+•
+•
+Procedure header (and end where appropriate) taking one record as a parameter
+Calling CalculateHash () with key from parameter record and storing/using return value
+Checking if HashTable at return value from CalculateHash is empty record ...
+... if it is empty, store parameter in location
+... otherwise, locating next free space in spare ...
+... and storing in that index only (i.e. not in all other free spaces)
+© Cambridge University Press & Assessment 2025
+Page 25 of 45
+
+--- Page 26 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+Example program code:
+Marks
+public static void InsertIntoHash (NewRecord TheRecord) {
+Integer HashValue = CalculateHash (TheRecord.GetKey ());
+if (HashTable [HashValue].GetKey ().equals (-1)){
+HashTable [HashValue] = TheRecord;
+}elsel
+for (Integer X = 0; X < 99; X++) {
+if (Spare [X] . GetKey (). equals (-1)) {
+Spare [X] = TheRecord;
+X = 99;
+}
+VB.NET
+Sub InsertIntoHash (TheRecord)
+Dim HashValue As Integer = CalculateHash (TheRecord.Key)
+If HashTable (HashValue) .Key = -1 Then
+HashTable (HashValue) = TheRecord
+For X = 0 To 99
+If Spare (X) .Key = -1 Then
+Spare (X) = TheRecord
+End If
+Next
+End If
+End Sub
+© Cambridge University Press & Assessment 2025
+Page 26 of 45
+
+--- Page 27 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+Question
+Python
+def InsertIntoHash (TheRecord):
+global HashTable
+global Spare
+HashValue = CalculateHash (TheRecord.GetKey ())
+if HashTable [HashValuel.GetKey ()
+== -1:
+HashTable|HashValuel = TheRecord
+else:
+for x in range (0, 100):
+if Spare [x]. GetKey () == -1:
+Spare [x] = TheRecord
+break
+© Cambridge University Press & Assessment 2025
+Page 27 of 45
+
+--- Page 28 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+2(e)
+May/June 2025
+Marks
+5
+1 mark each to max 5
+•
+•
+•
+•
+•
+Procedure header (and end where appropriate), opening and closing file HashData.txt
+Reading in all lines of data ...
+... splitting each line by commas
+Creating record with correct values with each line read in from file
+Calling Insert IntoHash () with each record they have created
+Exception handling for opening and reading from file with appropriate catch and output.
+Example program code:
+Java
+public static void CreateHashTable () {
+String[l Data
+Integer NewKey;
+Integer NewItem1;
+Integer NewItem2;
+try!
+new
+String[3];
+FileReader File = new FileReader ("HashData.txt") ;
+tryi
+BufferedReader Reader = new BufferedReader (File);
+String Line= Reader. readLine ();
+while (Line != null){
+Line = Line. replace ("\n","");
+Data = Line.split(",");
+Newkey = Integer.parseInt (Data [0]);
+NewItem1 = Integer.parseInt (Data[1]);
+NewItem2 = Integer.parseInt (Data[2]);
+NewRecord ReadData = new NewRecord (NewKey, NewIteml, NewItem2);
+Insert IntoHash (ReadData);
+Line= Reader. readLine ();
+}
+Reader. close () ;
+}catch (IOException ex) {}
+}catch (FileNotFoundException e) {System.out.println("File not found"); }
+}
+© Cambridge University Press & Assessment 2025
+Page 28 of 45
+
+--- Page 29 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+VB.NET
+Sub CreateHashTable ()
+Dim Line As String
+Dim Data (3) As String
+Dim TheRecord As NewRecord
+Try
+Dim FileReader As New System. IO. StreamReader ("HashData.txt")
+While Not FileReader. EndOfStream
+= FileReader. ReadLine ()
+Data = Split (Line, ",")
+TheRecord.Key = Integer.Parse (Data (0))
+TheRecord.Item1 = Integer.Parse (Data (1))
+TheRecord.Item2 = Integer.Parse (Data (2))
+InsertIntoHash (TheRecord)
+End While
+FileReader.Close ()
+Catch ex As Exception
+Console.WriteLine("Cannot open file")
+End Try
+End Sub
+Python
+def CreateHashTable ():
+global HashTable
+global Spare
+File = open ("HashData.txt")
+for Line in File:
+Data = Line.strip ()
+Data = Line.split(",")
+InsertIntoHash (Record (int (Data[0]), int (Data[1]), int (Data [2])))
+File. Close ()
+except:
+print ("Cannot open
+file")
+Marks
+© Cambridge University Press & Assessment 2025
+Page 29 of 45
+
+--- Page 30 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+2(f)(i)
+May/June 2025
+Marks
+2
+1 mark each
+•
+Procedure header (and end where appropriate) and looping through each element in spare...
+... checking if record is empty and outputting key field if not empty
+Example program code:
+static void Printspare () {
+Integer X = 0;
+while (Spare [X]. GetKey ()
+System.out.println (Spare [X].GetKey ());
+}
+VB.NET
+Sub Printspare ()
+Dim X As Integer = 0
+While Spare (X). Key < -1
+Console.Writeline (Spare (X) .Key)
+X= x + 1
+End While
+Python
+def Printspare ():
+global Spare
+X = 0
+while Spare [X] .GetKey () != -1:
+print (Spare [X] .GetKey ())
+© Cambridge University Press & Assessment 2025
+Page 30 of 45
+
+--- Page 31 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for calling Initialise () then CreateHashTable () then PrintSpare ()
+May/June 2025
+Marks
+1
+Question
+2(f)(ii)
+Example program code:
+Java
+Initialise ():
+CreateHashTable ():
+Printspare () ;
+VB.NET
+Initialise ()
+CreateHashTable ()
+PrintSpare ()
+Python
+Initialise ()
+CreateHashTable ()
+Printspare ()
+© Cambridge University Press & Assessment 2025
+Page 31 of 45
+
+--- Page 32 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+2(f)(iii)
+For example:
+915
+136
+415
+55
+349
+775
+846
+469
+246
+752
+889
+695
+292
+417
+181
+810
+972
+781
+1 mark for output
+Marks
+1
+© Cambridge University Press & Assessment 2025
+Page 32 of 45
+
+--- Page 33 ---
+9618/42
+Question
+3(a) (i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+4
+1 mark each
+Class header (and end when appropriate)
+• Four attributes with appropriate data types
+Constructor header (and end where appropriate) within class taking (min) 4 parameters ...
+... assigning each parameter to its attribute
+© Cambridge University Press & Assessment 2025
+Page 33 of 45
+
+--- Page 34 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+Example program code:
+Java
+class Animal!
+public String Name;
+public String Sound;
+public Integer Size;
+public Integer Intelligence;
+public Animal(String pName,
+String psound, Integer pfize,
+Integer pIntelligence){
+Name =
+pName;
+Sound = pSound;
+Size = pSize;
+Intelligence = pIntelligence;
+Marks
+}
+VB.NET
+Class Animal
+Public Name As String
+Public Sound As String
+Public Size As Integer
+Public Intelligence As Integer
+Sub New (pName, pSound, pSize, pIntelligence)
+Name = pName
+Sound = pSound
+Size = pSize
+Intelligence = pIntelligence
+End Sub
+End Class
+© Cambridge University Press & Assessment 2025
+Page 34 of 45
+
+--- Page 35 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+Question
+Python
+class Animal:
+(self, pName,
+psound, psize,
+pIntelligence):
+self.Name = pName #string
+self.Sound = pSound #string
+self.Size = pSize #integer
+self.Intelligence = pIntelligence #integer
+© Cambridge University Press & Assessment 2025
+Page 35 of 45
+
+--- Page 36 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(a)(ii)
+May/June 2025
+Marks
+3
+1 mark each
+•
+Description () method header (and end where appropriate) with no parameter
+Concatenating the attributes with the given message.
+•
+... and returning the created message
+Example program code:
+public String Description () {
+String Message
+"The animal's name is " + Name + ", it makes a " + Sound + ", its size is " + Size
+its intelligence level
++ Intelligence;
+return
+Message;
+}
+VB.NET
+Function Description ()
+Dim Message As String = "The animal's name is "¿ Name a ", it makes a " a sound a ", its size is " s
+and its intelligence level is " & CStr(Intelligence)
+Return Message
+End Function
+Python
+def Description (self):
+Message
+= "The animal's name is " + self.Name + ", it makes a " + self.Sound + ", its size is " +
+str (self.Size)
+its intelligence level is " + str (self. Intelligence)
+return
+Message
+© Cambridge University Press & Assessment 2025
+Page 36 of 45
+
+--- Page 37 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(b)(i)
+May/June 2025
+Marks
+4
+1 mark each
+•
+Class header (and end where appropriate) inherits from Animal
+Constructor header (and end where appropriate) taking 6 parameters within class and calling parent constructor with
+the four parameters...
+:
+... WingSpan and NumberWords attributes defined with data types and parameters assigned within constructor
+ChangeNumberWords () method header (and end where appropriate) takes one parameter and adds parameter to
+attribute Numberwords
+Example program code:
+Java
+class Parrot extends Animal!
+public Integer WingSpan;
+public
+Integer
+NumberWords;
+public Parrot(String pName, String pSound, Integer pSize, Integer pIntelligence, Integer pwingSpan,
+Integer pNumberwords) {
+super (pName, pSound, psize, pIntelligence);
+WingSpan = pwingSpan;
+NumberWords = pNumberWords;
+public void ChangeNumberwords (Integer Change) {
+NumberWords = NumberWords + Change;
+VB.NET
+Class Parrot
+Inherits Animal
+Dim WingSpan As Integer
+Dim NumberWords As Integer
+Sub New(pName, psound, psize, pIntelligence, pwingSpan, pNumberwords)
+MyBase. New (pName, pSound, psize, pIntelligence)
+WingSpan = pwingSpan
+NumberWords = pNumberwords
+End Sub
+© Cambridge University Press & Assessment 2025
+Page 37 of 45
+
+--- Page 38 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+Question
+Sub ChangeNumberWords (Change)
+NumberWords = NumberWords + Change
+End Sub
+End Class
+Python
+class Parrot (Animal):
+(self, pName, pSound, pSize, pIntelligence, pwingSpan, pNumberWords) :
+super ()._
+_(pName, pSound, pfize, pIntelligence)
+self.WingSpan = pWingSpan #integer
+self. Numberwords = Numberwords #integer
+def ChangeNumberwords (self, Change) :
+self. Numberwords = self. Numberwords + Change
+© Cambridge University Press & Assessment 2025
+Page 38 of 45
+
+--- Page 39 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(b) (i)
+May/June 2025
+Marks
+2
+1 mark each
+• Description () method header (and end where appropriate) taking no parameters and
+overriding/overloads/extending/using parent method
+•
+Concatenating and returning the correct string
+Example program code:
+public String Description () {
+String Message
+"The animal's name is " + Name + "
+, it makes a "
++ Sound + ", its size is " + Size
+and its intelligence level
++ Intelligence + "
+• It has a wingspan of "
++ WingSpan + "em and can say
+"1 t
+Numberwords +"
+words.";
+return Message;
+VB.NET
+Overloads Function Description ()
+Dim Message As String = "The animal's name is " ‹ Name & ", it makes a "
+& Sound & ", its size is " &
+CStr (Size) &
+" and its intelligence level is " & CStr (Intelligence) & "
+• It has a wingspan of "
+CStr (WingSpan) & "cm and can say " & CStr (NumberWords) & " words."
+Return Message
+End Function
+Python
+def Description (self) :
+Message = "The animal's name is " + self.Name + ", it makes a " t self.Sound + ", its size is " t
+str(self.Size) + " and its intelligence level is " + str(self.Intelligence) + ". It has a wingspan of " +
+str (self.WingSpan) + "cm and can say " + str(self.NumberWords) + " words."
+return Message
+© Cambridge University Press & Assessment 2025
+Page 39 of 45
+
+--- Page 40 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(c)(i)
+May/June 2025
+Marks
+4
+1 mark each
+•
+•
+Class header (and end where appropriate) inherits from Animal
+Constructor header (and end where appropriate) taking 5 parameters within class and calling parent constructor with
+parameters
+•
+Attribute Territory defined as int and parameter assigned within constructor
+SetTerritory () method header (and end) takes 1 parameter and adds parameter to attribute TerritorySize
+Example program code:
+Java
+class Wolf extends Animal/
+public Integer TerritorySize;
+public wolf(String pName,
+String pSound, Integer pfize, Integer pIntelligence, Integer
+pTerritorySize) {
+super (pName, pSound, pSize, pIntelligence);
+TerritorySize = pTerritorySize;
+public void SetTerritorySize (Integer Change) {
+TerritorySize = TerritorySize + Change;
+VB.NET
+Class Wolf
+Inherits Animal
+Dim TerritorySize As Integer
+Sub New (pName, psound, pSize, pIntelligence, pTerritory)
+MyBase. New (pName, pSound, pSize, pIntelligence)
+TerritorySize = pTerritory
+End Sub
+Sub SetTerritorySize (Change)
+TerritorySize = TerritorySize + Change
+End Class
+© Cambridge University Press & Assessment 2025
+Page 40 of 45
+
+--- Page 41 ---
+9618/42
+Question
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+class Wolf (Animal):
+_(self, pName, pSound, pSize, pIntelligence, pTerritorySize) :
+super ().
+(pName, psound, psize, pIntelligence)
+self.TerritorySize
+= pTerritorySize #integer
+def SetTerritorySize (self, Change) :
+self.TerritorySize = self.TerritorySize + Change
+© Cambridge University Press & Assessment 2025
+Page 41 of 45
+
+--- Page 42 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(c)(ii)
+May/June 2025
+Marks
+2
+1 mark each
+• Description () method header (and end where appropriate) taking no parameters and
+overriding/overloads/extending/using parent method
+•
+Concatenating and return correct message
+Example program code:
+public String Description () {
+Message
+"The animal's name is " + Name + "
+, it makes a " + Sound + ", its size is " + Size
+its intelligence level is "
++ Intelligence + "
+• Its territory is
+" + TerritorySize + " square
+miles.";
+return Message;
+}
+VB.NET
+Overloads Function Description ()
+Dim Message As String = "The animal's name is " « Name & ", it makes a " & Sound & ", its size is "
+CStr (Size) &
+" and its intelligence level is " & CStr|Intelligence) + ". Its territory is " &
+CStr (TerritorySize) & " square miles."
+Return Message
+End Function
+Python
+def Description (self):
+str (self.Size) + " and its intelligence
+Message -"The animal's name is " t self Name + ", it makes a "+ self Suns territory 1s"'s " +
+level is " t str(self.Intelligence) +
+str (self.TerritorySize) +" square miles."
+return Message
+© Cambridge University Press & Assessment 2025
+Page 42 of 45
+
+--- Page 43 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(d) (i)
+May/June 2025
+Marks
+2
+1 mark each
+1 correct instance created and stored in a suitable variable/structure
+• 2nd and 3rd correct instances created and stored in a suitable variable/structure
+Example program code:
+Java
+Parrot Animall = new Parrot("Chewie", "Squawk", 1, 10, 30, 29);
+Wolf Animal2
+= new Wolf ("Nighteyes", "Howl", 8, 7, 100);
+Animal Animal3 = new Animal ("Copper", "Neigh", 10, 6);
+Dim Animall As Parrot
+Animal1 = New Parrot("Chewie",
+"Squawk", 1, 10, 30, 29)
+Dim Animal2 As Wolf
+Animal2 = New Wolf("Nighteyes", "Howl", 8, 7, 100)
+Dim Animal3 As Animal
+Animal3 = New Animal ("Copper", "Neigh", 10, 6)
+Python
+Animall = Parrot ("Chewie", "Squawk", 1,10,30,29)
+Animal2 = Wolf("Nighteyes", "How1", 8, 7,100)
+Animal3 = Animal ("Copper", "Neigh", 10, 6)
+© Cambridge University Press & Assessment 2025
+Page 43 of 45
+
+--- Page 44 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(d) (ii)
+May/June 2025
+Marks
+3
+1 mark each
+Calling SetTerritorySize (-20) for instance of Nighteyes
+• Calling ChangeNumberWords (2) for instance of Chewie
+• Calling Description () for all 3 animals (after any updates) and outputting return values
+Example program code:
+Animal2.SetTerritorySize (-20);
+Animal1.ChangeNumberWords (2);
+System.out.println(Animall.Description ());
+System.out.println (Animal2.Description ());
+System.out.println(Animal3.Description ());
+Animal2. SetTerritorySize (-20)
+Animal1.ChangeNumberWords (2)
+Console.Writeline (Animall.Description ())
+Console Writeline (Animal.Description ())
+Console.Writeline (Animal3.Description ())
+Python
+Animal2.SetTerritorySize (-20)
+Animal1.ChangeNumberWords (2)
+print (Animall. Description ())
+print (Animal2.Description ())
+print (Animal3. Description ())
+© Cambridge University Press & Assessment 2025
+Page 44 of 45
+
+--- Page 45 ---
+9618/42
+Question
+3(d)(iii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Answer
+Marks
+2
+1 mark each:
+All three messages accurate with all relevant values
+•
+.... showing correctly updated territory for Nighteyes and words for Chewie
+e.g.
+The animal's name is Chewie, it makes a Squawk, its size is 1 and its intelligence level is 10.
+It has a wingspan of 30cm and can say 31 words.
+The animal's name is Nighteyes, it makes a Howl, its size is 8 and its intelligence level is 7
+it's territory is 80 square miles.
+The animal's name is Copper, it makes a Neigh, its size is 10 and its intelligence level is 6
+© Cambridge University Press & Assessment 2025
+Page 45 of 45

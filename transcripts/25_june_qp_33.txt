@@ -1,0 +1,530 @@
+--- Page 1 ---
+* 0000800000001*
+ELS Cambridge Assessment
+International Education
+7
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+9 6
+9618/33
+May/June 2025
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided.
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages. Any blank pages are indicated
+DC (CE/CT) 342254/3
+© UCLES 2025
+L
+[Turn over
+J
+
+--- Page 2 ---
+* 0000800000002*
+2
+1
+A programmer is writing a program to manage a video library. They require a user-defined data
+type.
+(a) Write pseudocode statements to declare the composite data type Videolibrary to hold
+data about each video in the collection. This data includes:
+identity code (any combination of letters and numbers)
+•
+title
+year released
+date purchased
+•
+format (for example DVD, Blu-ray, 4K, MP4)
+• running time (minutes)
+Use the most appropriate data type in each case.
+[4]
+(b) Identify one field in VideoLibrary that could be an efficient enumerated data type and give
+a reason for your choice.
+Field
+Reason
+12]
+LOUCLES 2025
+9618/33/M/J/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 3 ---
+0000800000003*
+DO NOT WRITE IN THIS MARGIN
+3
+7
+2
+Numbers are stored in a computer using binary floating-point representation with:
+• 8 bits for the mantissa
+• 8 bits for the exponent
+• two's complement form for both the mantissa and the exponent.
+(a) Give the largest normalised positive two's complement binary number that can be stored in
+this system and state its denary equivalent.
+The denary answer should be expressed in terms of powers of 2.
+Mantissa
+Exponent
+DO NOT WRITE IN THIS MARGIN
+Denary
+12]
+DO NOT WRITE IN THIS MARGIN
+(b) Calculate the normalised binary floating-point representation of -3.59375 in this system.
+Show your working.
+Mantissa
+Exponent
+Working ..
+DO NOT WRITE IN THIS MARGIN
+[4]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/33/M/J/25
+[Turn over
+
+--- Page 4 ---
+* 0000800000004*
+4
+3
+This truth table represents a logic circuit.
+INPUT
+A
+B
+C
+D
+OUTPUT
+Z
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+0
+0
+1
+1
+(a) Write the Boolean logic expression that corresponds to the given truth table as the
+sum-of-products.
+Z=
+LOUCLES 2025
+9618/33/M/J/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 5 ---
+* 0000800000005*
+DO NOT WRITE IN THIS MARGIN
+5
+7
+(b) (i) Complete the Karnaugh map (K-map) for the given truth table.
+AB
+CD
+00
+01
+11
+10
+00
+01
+11
+DO NOT WRITE IN THIS MARGIN
+12]
+DO NOT WRITE IN THIS MARGIN
+(ii) Draw loop(s) around appropriate group(s) in the K-map to produce an optimal
+sum-of-products.
+12]
+(iii) Write the Boolean logic expression from your answer to part (b)(ii) as the simplified
+sum-of-products.
+Z =
+[2]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/33/M/J/25
+[Turn over
+
+--- Page 6 ---
+000080000006*
+6
+(a) The Internet layer and Link layer are two layers of the TCP/IP protocol suite.
+Describe the purpose of the Internet layer and the purpose of the Link layer.
+Purpose of Internet layer
+Purpose of Link layer
+(b) Describe the function of a router in packet switching.
+LOUCLES 2025
+9618/33/M/J/25
+7
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+[5]
+DONOT WRITE IN THIS MARGIN
+14]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 7 ---
+* 0000800000007*
+DO NOT WRITE IN THIS MARGIN
+7
+5
+Complete the table by filling in the missing object-oriented programming (OOP) terms and
+descriptions.
+OOP term
+Description
+A method that accesses the value of a property.
+A method that changes the value of a property.
+DO NOT WRITE IN THIS MARGIN
+Object
+Method
+DO NOT WRITE IN THIS MARGIN
+[4]
+6
+The management and scheduling of processes are tasks carried out by an operating system.
+(a) Describe one reason why scheduling is necessary in process management.
+DO NOT WRITE IN THIS MARGIN
+12]
+(b) Explain the function of the round robin scheduling routine and give a benefit of this routine.
+Function
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+Benefit
+9618/33/M/J/25
+14]
+[Turn over
+
+--- Page 8 ---
+* 0000800000008*
+7
+8
+Secure Socket Layer (SSL) and Transport Layer Security (TLS) are two protocols.
+Explain how SSL/TLS is used when client-server communication is initiated.
+7
+DO NOT WRITE IN THIS MARGIN
+[4]
+DO NOT WRITE IN THIS MARGIN
+8
+Explain the process of syntax analysis during program compilation.
+DO NOT WRITE IN THIS MARGIN
+... [4]
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2025
+9618/33/M/J/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 9 ---
+* 0000800000009*
+DO NOT WRITE IN THIS MARGIN
+9
+BLANK PAGE
+7
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/33/M/J/25
+[Turn over
+
+--- Page 10 ---
+* 0000800000010*
+10
+9
+Several syntax diagrams are shown
+upper
+digit
+K
+X
+lower
+lower
+lower
+passcode
+upper
+digit
+digit
+digit
+DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN
+ADO NOT WRITE IN THIS MARGIN
+(a) State why JJ90 is not a valid passcode for the given syntax diagrams.
+[1]
+LOUCLES 2025
+9618/33/M/J/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 11 ---
+* 0000800000011*
+DO NOT WRITE IN THIS MARGIN
+11
+(b) Complete the Backus-Naur Form (BNF) for < upper> and <passcode>.
+‹upper> ::=
+7
+‹passcode>
+DO NOT WRITE IN THIS MARGIN
+[3]
+(c) A character can be an upper, a lower or a digit.
+The rules for passcode have been changed so that the third character may also be selected
+from upper and the final character may be repeated one or more times.
+Complete the syntax diagram for passcode to show these changes.
+DO NOT WRITE
+THIS MARGIN
+passcode
+upper
+lower
+digit
+lower
+digit
+digit
+121
+DO NOT WRITE IN THIS MARGI
+IN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/33/M/J/25
+[Turn over
+
+--- Page 12 ---
+* 0000800000012*
+10
+12
+(a) State the purpose of the A* and Dijkstra's algorithms.
+(b) Outline the difference between the A* and Dijkstra's algorithms.
+(c) Explain how unsupervised learning takes place in machine learning.
+LOUCLES 2025
+9618/33/M/J/25
+7
+[1]
+DO NOT WRITE IN THIS MARGIN
+12]
+DO NOT WRITE IN THIS MARGIN
+[3]
+DONOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 13 ---
+* 0000800000013*
+DO NOT WRITE
+IN THIS MARGIN
+11
+13
+The pseudocode algorithm below allows a user to input a new stock item. The random file is
+searched for the next empty location in the file and the new item is inserted there.
+A suitable message is displayed if the file is full.
+Complete this pseudocode.
+DECLARE Location : INTEGER
+DECLARE NewStock : STRING
+DECLARE CurrentStock : STRING
+DECLARE Stored : BOOLEAN
+DECLARE Max : INTEGER
+Max + 100000
+Stored t FALSE
+Location + 1
+7
+DO NOT WRITE IN THIS MARGIN
+OUTPUT "Enter the new item you wish to store:
+INPUT Newstock
+WHILE NOT Stored AND Location <= Max
+DO NOT WRITE
+Z
+THIS MARGIN
+GETRECORD "StockList.dat",
+IF CurrentStock = "" THEN
+"Stocklist.dat",
+NewStock
+Stored +
+TRUE
+ELSE
+ENDIF
+ENDWHILE
+Location + Location
++ 1
+THEN
+OUTPUT
+• "The
+item has
+ENDIF
+CLOSEFILE "Stocklist.dat"
+not been
+stored as the file was full."
+DO NOT WRITE IN THIS MARGIN
+[5]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/33/M/J/25
+[Turn over
+
+--- Page 14 ---
+* 0000800000014*
+14
+7
+12 (a) An array is an Abstract Data Type (ADT).
+Identify two other ADTs.
+1
+2
+11]
+(b) A 1D array DataArray holds up to 1000 elements of type integer and needs to be sorted in
+ascending order.
+Write the pseudocode for an insertion sort to sort the array into ascending order.
+Use the identifiers from the table in your algorithm.
+You do not need to declare any arrays or variables for this algorithm. You may assume this
+has already been done.
+Identifier
+Index
+Data type
+INTEGER
+Description
+Position
+INTEGER
+DataArray
+Value
+INTEGER
+INTEGER
+counter for outer loop
+counter for inner loop - insertion position
+1D array to store up to 1000 integers
+value to insert
+The first line has been written for you.
+FOR Index + 2 to 1000
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+[4]
+LOUCLES 2025
+9618/33/M/J/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 15 ---
+* 0000800000015*
+DO NOT WRITE IN THIS MARGIN
+15
+7
+(c) Describe two ways in which the performance of a sort routine is affected by the data to be
+sorted.
+2
+DO NOT WRITE IN THIS MARGIN
+12]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/33/M/J/25
+[Turn over
+
+--- Page 16 ---
+0000800000016*
+16
+13 The recursive procedure Delete () is defined as follows:
+PROCEDURE Delete (Index, Target)
+IF Numbers [Index] > 0 THEN
+IF Numbers [Index] ›= Target THEN
+Numbers [Index] * Numbers [Index + 1]
+ENDIF
+Index + Index + 1
+CALL Delete (Index, Target)
+ENDIF
+ENDPROCEDURE
+An array Numbers is used to store a sorted data set of non-zero positive integers.
+Unused cells contain zero.
+The contents of the array at the start of the algorithm are:
+Numbers
+11]
+2
+121
+3
+131
+7
+14]
+11
+15
+17
+17]
+19
+181
+23
+19]
+110]
+Complete the trace table for the algorithm for the procedure call:
+CALL Delete (1, 15)
+Index Target
+11]
+2
+12]
+3
+13]
+7
+14]
+11
+Numbers
+151
+[6]
+15
+17
+171
+19
+181
+23
+[91
+110]
+7
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+[4]
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Ever
+easonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+@UCLES 2025
+9618/33/M/J/25
+DO NOT WRITE IN THIS MARGIN

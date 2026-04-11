@@ -1,0 +1,403 @@
+--- Page 1 ---
+* 0019655539701*
+harbride sement
+•
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+3 4
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+9618/33
+May/June 2024
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+• Write your name, centre number and candidate number in the boxes at the top of the page.
+• Write your answer to each question in the space provided.
+• Do not use an erasable pen or correction fluid.
+• Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 12 pages. Any blank pages are indicated
+DC (LK/CGW) 329375/5
+© UCLES 2024
+L
+[Turn over
+J
+
+--- Page 2 ---
+* 0019655539702*
+2
+1
+Real numbers are stored in a computer system using floating-point representation with:
+• 10 bits for the mantissa
+• 6 bits for the exponent
+two's complement form for both the mantissa and the exponent.
+(a) Calculate the denary value of the given normalised floating-point number.
+Show your working.
+Mantissa
+Exponent
+Working...
+Answer
+[3]
+(b) Calculate the normalised floating-point representation of -102.75 in this system.
+Show your working.
+Mantissa
+Exponent
+Working
+[3]
+LOUCLES 2024
+9618/33/M/J/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 3 ---
+* 0019655539703*
+DO NOT WRITE IN THIS MARGIN
+3
+2
+The TCP/IP protocol suite has four layers:
+Transport, Application, Link, Internet
+(a) Complete the diagram to show the correct order for these layers.
+DO NOT WRITE IN THIS MARGIN
+12]
+(b) Describe the function of the Transport layer.
+DO NOT WRITE IN THIS MARGIN
+12]
+(c) Outline one protocol that is associated with the Application layer.
+12]
+DO NOT WRITE IN THIS MARGIN
+3 (a) Explain what is meant by non-composite and composite data types.
+DO NOT WRITE IN THIS MARGIN
+... [3]
+OUCLES 2024
+9618/33/M/J/24
+Turn over
+
+--- Page 4 ---
+* 0019655539704*
+4
+(b) Write pseudocode statements to declare the record data type FootballClub to hold data
+about football clubs in a league, to include:
+name of team
+• date team joined the league
+• main telephone number
+name of the manager
+number of members
+• current position in the league.
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+4 (a) Describe the sequential method of file access.
+DO NOT WRITE IN THIS MARGIN
+12]
+(b) Explain how the sequential method of file access is applied to files with serial organisation
+and to files with sequential organisation.
+DO NOT WRITE IN THIS MARGIN
+13]
+LOUCLES 2024
+9618/33/M/J/24
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 5 ---
+* 0019655539705*
+DO NOT WRITE IN THIS MARGIN
+5
+5
+(a) Write this Reverse Polish Notation (RPN) in infix form:
+52+93 - 13*
+DO NOT WRITE IN THIS MARGIN
+... [3]
+(b) Write this infix expression in RPN:
+(17+31-12181116
+12]
+DO NOT WRITE IN THIS MARGIN
+(c) Evaluate this RPN expression:
+ab- cd+ * el
+when
+a = 17, b = 5, c = 7, d = 3 ande = 10
+Show the changing contents of the stack as the RPN expression is evaluated.
+DO NOT WRITE IN THIS MARGIN
+14]
+DO NOT WRITE IN THIS MARGIN
+© UCLES 2024
+9618/33/M/J/24
+[Turn over
+
+--- Page 6 ---
+* 0019655539706*
+6
+6
+The diagram shows a logic circuit
+A
+Q
+P
+B
+- Z
+C -
+(a) Complete the truth table for the given logic circuit.
+Show your working.
+Working space
+Q
+R
+A
+0
+0
+0
+0
+1
+1
+1
+1
+B
+0
+1
+1
+0
+1
+1
+C
+P
+Z
+1
+0
+1
+1
+1
+(b) Write the Boolean expression that corresponds to the logic circuit as a sum-of-products.
+[3]
+Z=
+[2]
+LOUCLES 2024
+9618/33/M/J/24
+DONOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DONOT WRITE IN THIS MARGIN
+
+--- Page 7 ---
+* 0019655539807*
+DO NOT WRITE IN THIS MARGIN
+7
+(c) (i) Complete the Karnaugh map (K-map) for the Boolean expression:
+A.B.C + Ã.B.C + A.B.C + A.B.C + A.B.C + A.B.C
+BC
+00
+01
+A
+10
+DO NOT WRITE IN THIS MARGIN
+1
+12]
+(ii) Draw loop(s) around appropriate group(s) in the K-map to produce an optimal
+sum-of-products.
+(iii) Write the Boolean expression from your answer to part (c)(ii) as a simplified
+sum-of-products.
+[1]
+DO NOT WRITE IN THIS MARGIN
+7 (a) Describe what is meant by a digital certificate.
+DO NOT WRITE IN THIS MARGIN
+[3]
+(b) Explain the role of a digital certificate in creating a digital signature.
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/33/M/J/24
+12]
+Turn over /
+
+--- Page 8 ---
+* 0019655539808 *
+8
+8
+A declarative programming language is used to represent the features that are available and the
+features that are unavailable on different body styles of a car.
+01 feature (sunroof).
+02 feature (automatic
+tailgate).
+03 feature (heated_seats) •
+04 feature (extra
+_seats) .
+05 feature (reversing_camera).
+06 feature (dashboard camera).
+07 feature (air
+conditioning).
+08 feature (heated
+_windscreen).
+09 feature (satnav).
+10 bodystyle (saloon).
+11 bodystyle (hatchback).
+12 bodystyle (estate).
+13 bodystyle (minivan).
+14 bodystyle (convertible).
+15 available (sunroof, hatchback).
+16 available (sunroof, minivan).
+17 available (reversing_camera,
+hatchback).
+18 available (extra
+seats, minivan).
+19 available (reversing_camera, saloon).
+20 unavailable (sunroof, convertible).
+21 unavailable (automatic
+_tailgate, saloon).
+22 unavailable (extra_seats, hatchback).
+These clauses have the meanings:
+Clause
+Meaning
+01
+Sunroof is a feature.
+10
+Saloon is a body style.
+15
+Sunroof is available on a hatchback.
+20
+Sunroof is unavailable on a convertible.
+(a) Sliding doors is a feature that is available on a minivan but unavailable on a hatchback.
+Write additional clauses to represent this information.
+23
+24
+25
+13]
+LOUCLES 2024
+9618/33/M/J/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 9 ---
+* 0019655539809*
+DO NOT WRITE IN THIS MARGIN
+9
+(b) Using the variable Options, the goal:
+available (Options, saloon)
+DO NOT WRITE IN THIS MARGIN
+returns
+Options = reversing_camera
+Write the result returned by the goal:
+available (Options, hatchback)
+Options
+... [1]
+(c) F may be available for B if F is a feature and B is a body style and F is not unavailable for that
+body style.
+Write this as a rule:
+may_choose_option (F, B)
+IF
+DO NOT WRITE IN THIS MARGIN
+14]
+9
+Explain what is meant by Deep Learning in relation to Artificial Intelligence (Al).
+DO NOT WRITE IN THIS MARGIN
+[3]
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2024
+9618/33/M/J/24
+Turn over
+
+--- Page 10 ---
+* 0019655539810*
+10
+10 (a) State a condition that must be true for an array to be searchable for a binary search.
+[1]
+DO NOT WRITE IN THIS MARGIN
+(b) Complete the given pseudocode to find an item in a 1D array Names of type STRING using a
+binary search.
+DECLARE Names : ARRAY[1: 100000] OF STRING
+DECLARE Topoflist : INTEGER
+DECLARE Endoflist : INTEGER
+DECLARE CurrentItem : INTEGER
+DECLARE ToFind : STRING
+DECLARE Found : BOOLEAN
+DECLARE NotInlist : BOOLEAN
+Topoflist + 1
+EndofList + 100000
+OUTPUT "Which name do you wish to find? "
+INPUT ToFind
+DO NOT WRITE IN THIS MARGIN
+NotInList + FALSE
+WHILE
+......•. AND
+CurrentItem • (TopOflist + EndOflist) DIV 2
+IF
+...
+Found + TRUE
+ELSE
+IF Topoflist >= EndOflist THEN
+..... THEN
+DO NOT WRITE IN THIS MARGIN
+ELSE
+IF ToFind > Names [CurrentItem] THEN
+ELSE
+Endoflist + CurrentItem - 1
+ENDIF
+ENDIF
+ENDIF
+ENDWHILE
+IF Found = TRUE THEN
+OUTPUT
+"Item found at position ", CurrentItem, " in array"
+ELSE
+OUTPUT "Item not in array"
+ENDIF
+DO NOT WRITE IN THIS MARGIN
+15]
+LOUCLES 2024
+9618/33/M/J/24
+J
+
+--- Page 11 ---
+* 0019655539811*
+DO NOT WRITE IN THIS MARGIN
+11
+(c) Describe the performance of a binary search in relation to the number of data items in the
+array being searched. Refer to Big O notation in your answer.
+12]
+DO NOT WRITE IN THIS MARGIN
+Reduced Instruction Set Computers (RISC) and Complex Instruction Set Computers (CISC) are
+two types of processor.
+(a) State two features of RISC processors.
+DO NOT WRITE IN THIS MARGIN
+[2]
+(b) Outline the process of interrupt handling as it could be applied to RISC or CISC processors.
+DO NOT WRITE IN THIS MARGIN
+[3]
+(c) Explain how pipelining affects interrupt handling for RISC processors.
+DO NOT WRITE IN THIS MARGIN
+13]
+OUCLES 2021
+9618/33/M/J/24
+
+--- Page 12 ---
+* 0019655539812*
+12
+BLANK PAGE
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+L OUCLES 2024
+9618/33/M/J/24
+DO NOT WRITE IN THIS MARGIN

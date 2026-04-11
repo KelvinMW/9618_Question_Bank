@@ -1,0 +1,348 @@
+--- Page 1 ---
+55 Cambridge Assessment
+a International Education
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+9618/31
+May/June 2022
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages. Any blank pages are indicated
+DC (EF) 311847
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+2
+1 Data types can be defined using pseudocode.
+The data type, LibraryRecord, is defined in pseudocode as:
+TYPE LibraryRecord
+DECLARE Title : STRING
+DECLARE Fiction : BOOLEAN
+DECLARE Author : STRING
+DECLARE NumberOfCopies : INTEGER
+ENDTYPE
+A variable, LibraryBook, is declared in pseudocode as:
+DECLARE LibraryBook : LibraryRecord
+(a) Write pseudocode statements to assign:
+A Level Computer Science to Title of LibraryBook
+FALSE to Fiction of LibraryBook.
+12]
+(b) The type definition for LibraryRecord is changed.
+(i) The value for NumberOfCopies must be between 1 and 10 inclusive.
+Write the updated line of pseudocode from the type definition of LibraryRecord to
+implement the change.
+11]
+(i) Every copy of every book is now uniquely identified by an accession number,
+AccessionNumber, as it is added to the library. Each library record will include one or
+more accession numbers. Each accession number is an integer.
+Write the extra line of pseudocode needed in the type definition of LibraryRecord.
+12]
+© UCLES 2022
+9618/31/M/J/22
+
+--- Page 3 ---
+3
+(c) A record is a user-defined composite data type.
+Explain what is meant by a user-defined composite data type.
+Include an example of another user-defined composite data type in your answer.
+13]
+© UCLES 2022
+9618/31/M/J/22
+Turn over
+
+--- Page 4 ---
+4
+2 A declarative language is used to represent the following facts about cats.
+01 type (leopard, wild).
+02 type (lion, wild).
+03 type (cheetah, wild).
+04 type (savannah, hybrid).
+05 type (persian, domestic).
+06
+07 hair (leopard, medium).
+08 hair (lion, short).
+09 hair (cheetah, medium).
+10 hair (savannah, medium).
+11 hair(persian, long).
+12
+13 spots (leopard, yes).
+14 spots (lion, no).
+15 spots (cheetah, yes).
+16 spots (savannah, yes).
+spots (persian,
+no).
+These clauses have the following meaning:
+Clause
+01
+08
+16
+Meaning
+A leopard is a type of wild cat.
+A lion has short hair.
+A savannah has spots.
+© UCLES 2022
+9618/31/M/J/22
+
+--- Page 5 ---
+5
+(a) More facts are to be included. A caracal is a wild cat with short hair.
+Write the additional clauses to record these facts.
+18
+19
+12]
+(b) Using the variable Cat, the goal:
+hair (Cat,
+medium)
+returns
+Cat = leopard, cheetah,
+savannah
+Write the result returned by the goal:
+hair (Cat, long)
+Cat =
+(c) (i) Write the goal, using the variable Pet, to find all the domestic cats.
+[1]
+11]
+(ii) Write the goal, using the variable Wildspotty, to find all the wild cats with spots.
+..... 12]
+© UCLES 2022
+9618/31/M/J/22
+[Turn over
+
+--- Page 6 ---
+6
+Data can be sent over networks using either circuit switching or packet switching.
+Describe both methods of data transmission. Include a different advantage and disadvantage for
+each method.
+Circuit switching
+Advantage
+Disadvantage
+Packet switching
+Advantage
+Disadvantage
+[8]
+© UCLES 2022
+9618/31/M/J/22
+
+--- Page 7 ---
+7
+Reduced Instruction Set Computers (RISC) and Complex Instruction Set Computers (CISC) are
+two types of processor.
+(a) Describe what is meant by RISC and CISC processors.
+RISC
+CISC
+14]
+(b) Identify two differences between RISC and CISC processors.
+1
+2
+12]
+© UCLES 2022
+9618/31/M/J/22
+Turn over
+
+--- Page 8 ---
+8
+5 Part of a program's calculations uses the integer variables j, k, m, n and p.
+] = 3
+k = 2
+m
+= 10
+n = (j + k)/ (j - k)
+p= m
+(m - j *k)
+(a) Write the Reverse Polish Notation (RPN) for the expression:
+(j + k) / (j - k)
+.. 12]
+(b) (i) Show the changing contents of the stack as the value for p is calculated from its RPN
+expression:
+mm jk * - *
+[4]
+(ii) Describe the main steps in the evaluation of this RPN expression using a stack.
+[4]
+© UCLES 2022
+9618/31/M/J/22
+
+--- Page 9 ---
+9
+(c) State two other uses of a stack.
+1
+2
+12]
+A virtual machine is used to emulate a new computer system.
+Describe two benefits and one limitation of using a virtual machine for this purpose.
+Benefit 1
+Benefit 2
+Limitation
+16]
+© UCLES 2022
+9618/31/M/J/22
+[Turn over
+
+--- Page 10 ---
+10
+7 A program is to be written using Object-Oriented Programming (OOP) for a shop that sells knitting
+yarn. There are three types of yarn: acrylic, wool or mix.
+The following data are stored for each type.
+• Name
+Colour
+• Batch code
+• Weight
+• Type of yarn
+Number of balls of yarn in stock (can be edited)
+The following statements apply to yarn.
+• Acrylic can be soft or not soft
+• Wool can be lamb, merino or alpaca.
+• Mix contains a percentage of acrylic.
+Each type of yarn has a method that will display all the information about the yarn.
+(a) Complete this class inheritance diagram to show the properties, methods and inheritance.
+Yarn
+Name: STRING
+Colour: STRING
+BatchCode: STRING
+Weight: INTEGER
+NumberBalls: INTEGER
+Type: STRING
+Constructor ()
+EditNumberBalls ()
+YarnInfo ()
+Acrylic
+Wool
+Mix
+Percentage: INTEGER
+Constructor ()
+YarnInfo ()
+Constructor ()
+Constructor ()
+15]
+© UCLES 2022
+9618/31/M/J/22
+
+--- Page 11 ---
+11
+(b) Describe what is meant by the terms properties, methods and inheritance.
+Properties
+Methods
+Inheritance
+[6]
+© UCLES 2022
+9618/31/M/J/22
+[Turn over
+
+--- Page 12 ---
+12
+A message is to be sent securely. Software uses a key to encrypt the message before it is sent.
+(a) (i) Give two reasons for using key cryptography.
+2
+12]
+(ii) Give two methods of key cryptography that can be used.
+1
+2 ...
+12]
+(b) When there is a secure exchange of key(s), the message is sent.
+The use of quantum cryptography is being considered for the secure exchange.
+(i) State two possible benefits of using quantum cryptography.
+2
+12]
+(ii) State two possible drawbacks of using quantum cryptography.
+1
+2
+[2]
+© UCLES 2022
+9618/31/M/J/22
+
+--- Page 13 ---
+13
+BLANK PAGE
+© UCLES 2022
+9618/31/M/J/22
+Turn over
+
+--- Page 14 ---
+14
+The table shows assembly language instructions for a processor that has one general purpose
+register, the Accumulator (ACC).
+Label
+Opcode
+Instruction
+Operand
+LDM #n
+IDD <address>
+Explanation
+IDI <address>
+ADD <address>
+STO <address>
+<label>:
+‹data>
+Load the number n to ACC
+Load the contents of the given address to ACC
+The address to be used is at the given address
+Load the contents of this second address to ACC
+Add the contents of the given address to the ACC
+Store the contents of the ACC at the given address
+Gives a symbolic address <label> to the memory
+location with the contents < data>
+<label> can be used in place of <address ›
+# denotes a denary number, e.g. #123
+(a) The address 500 contains the value 100 and the address 100 contains the value 20.
+State the addressing mode and the contents of ACC after each instruction has been executed.
+LDM #500
+Addressing mode
+Contents of ACC
+LDD 500
+Addressing mode
+Contents of ACC
+LDI 500
+Addressing mode
+Contents of ACC .......
+[3]
+© UCLES 2022
+9618/31/M/J/22
+
+--- Page 15 ---
+15
+(b) Use only the given instruction set to write assembly language code to:
+use the constant 20 which needs to be stored
+add this constant to the value stored in the address contained in the variable y
+store the result in variable z.
+Label
+Opcode
+Instruction
+Operand
+[7]
+© UCLES 2022
+9618/31/M/J/22
+
+--- Page 16 ---
+16
+BLANK PAGE
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2022
+9618/31/M/J/22

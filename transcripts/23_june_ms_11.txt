@@ -1,0 +1,431 @@
+--- Page 1 ---
+alls Cambridge Assessment
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+MARK SCHEME
+Maximum Mark: 75
+9618/11
+May/June 2023
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2023 series for most
+Cambridge IGCSE, Cambridge International A and AS Level and Cambridge Pre-U components, and some
+Cambridge O Level components.
+This document consists of 9 printed pages.
+© UCLES 2023
+[Turn over
+
+--- Page 2 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2023
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+•..
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2023
+Page 2 of 9
+
+--- Page 3 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+Question
+1(a)
+1 mark for each correct definition
+Term
+Drawing list
+Definition
+All the drawing objects in an image I/ a list
+that stores the commands required to draw
+each object
+Pixel
+The smallest part of the image // one square
+/ dot of one colour
+Colour depth
+The number of bits per pixel I/ determines
+the number of colours that can be
+represented in the image
+3
+1 (b)(i)
+1 (b)(ii)
+1(c)(i)
+1 (c)(ii)
+1 mark each
+Examples:
+• •
+Confirmation that it is a bitmap // file type
+Compression type
+Location/offset of data within the file
+Dimensions e.g. 100 × 100 pixels
+1 mark for working; 1 mark for answer
+Working: (1500 * 3000 * 8) / 1000 / 1000
+•
+Answer: 36 MB
+1 mark each
+Examples:
+•• •
+••
+The customers will be able to download the photographs in less time
+...and they will take less of the customer's bandwidth
+mediunotographs will lake up less space on the customers storage
+...therefore the customers can store more images
+...and will have more space for other files
+1 mark each to max 2 for explanation; 1 mark for an image related example
+• RLE stores a colour and the number of times it occurs consecutively
+An image may not have many sequences of the same colour
+•
+It would need to store each colour and then the count/number 1 which
+adds data
+Example:
+Red-Green-Blue would become Red 1 Green 1 Blue 1
+2
+2
+3
+3
+© UCLES 2023
+Page 3 of 9
+
+--- Page 4 ---
+9618/11
+Question
+2(a)(i)
+2(a)(ii)
+2(b)(i)
+2(b) (ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for definition:
+•
+Data about the data in the database // data about the structure of the
+database // metadata for a database
+1 mark for a suitable example
+Examples:
+data types
+field names
+1 mark for definition
+• Methods of making sure the data is consistent
+1 mark for example
+Examples:
+:
+Enforcing referential integrity
+If data in one table is deleted/edited all tables are updated // cascading
+update/delete
+•
+Validation/verification rules
+1 mark for each field name and table
+Foreign key
+BirdID b
+PersonID
+Database table
+BIRD_SEEN
+BIRD_SEEN
+1 mark for all 3 correct lines
+Normal Form
+First Normal Form
+(1NF)
+May/June 2023
+Marks
+2
+2
+2
+1
+Second Normal
+Form (2NF)
+Definition
+All fields are fully
+/ dependent on the primary
+key.
+There are no repeating
+groups of attributes.
+Third Normal Form
+(3NF)
+There are no partial
+dependencies.
+© UCLES 2023
+Page 4 of 9
+
+--- Page 5 ---
+9618/11
+Question
+2(b)(iii)
+2(b) (iv)
+Question
+3(a)
+3(b)
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+4
+1 mark each
+:
+CREATE TABLE start and end bracket
+Bird ID as CHAR/VARCHAR
+..
+Name and size as VARCHAR/CHAR
+Bird ID as primary key
+Example answer:
+CREATE TABLE BIRD_TYPE (
+BirdID CHAR (4) NOT NULL,
+Name VARCHAR (9),
+Size VARCHAR (6),
+PRIMARY KEY (BirdID)
+) ;
+1 mark for each correctly completed space
+SELECT BIRD_TYPE.Size, COUNT (BIRD_TYPE.BirdID) AS
+NumberOfBirds
+FROM BIRD_TYPE, BIRD_SEEN
+WHERE BIRD_SEEN. PersonID = "J_123"
+AND BIRD_TYPE.BirdID = BIRD_SEEN.BirdID
+GROUP BY BIRD_TYPE. Size;
+5
+Answer
+Marks
+1 mark each to max 4
+Examples:
+• Installs device drivers
+... to allow communication between peripherals and computer
+Sends data and receives data to and from peripherals
+... such as to an output device and from an input device/by example
+•.
+Handles buffers for transfer of data
+... to ensure smooth transfer between devices that transmit and receive
+at different speeds
+•
+Manages interrupts / signals from the device
+1 mark each to max 2
+•
+•
+•
+Memory management
+File management
+Security management
+Process management
+Error checking and recovery
+4
+2
+Page 5 of 9
+
+--- Page 6 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Question
+3(c)
+Marks
+3
+3(d)(i)
+3(d)(ii)
+3(d)(iii)
+3(d) (iv)
+3(d) (v)
+3(d) (vi)
+1 mark each to max 3
+•
+Rearranges blocks of individual files (on the HDD) so they are
+contiguous // moves the free space together
+: Accessing each file is faster
+the fil because there is no need to search for the next fragment / block of
+• ...so less head movement is needed
+1 mark from
+:
+Kibibyte is 1024 bytes and kilobyte is 1000 bytes
+Kibibyte is binary prefix and kilobyte is denary prefix
+1001 0110 0100
+F2
+Smallest: 10000000
+Largest: 01111111
+1 mark for working
+1 mark for answer
+10110000
++00011011
+11001011
+11
+00011001
+1
+1
+1
+2
+2
+1
+© UCLES 2023
+Page 6 of 9
+
+--- Page 7 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+Question
+4(a)(i)
+4(a) (ii)
+4(b)
+4(c)
+4 (d)(i)
+1 mark each to max 2
+• Stores the bootstrap program // start-up instructions for the central
+computer // BIOS
+•
+Stores the start-up instructions for the CCTV system/cameras //
+firmware for CCTV
+•
+Stores the kernel of the Operating System // stores parts of the
+Operating System
+1 mark each to max 2
+Higher storage density
+Simple design - uses fewer transistors
+1 mark for reason, 1 mark for application/justification
+•
+The computer will have a large number of read/write operations
+because it is working all the time
+.. magnetic storage has more longevity
+•
+Magnetic storage costs less per storage unit
+... videos are large files and therefore very large storage capacity is
+required
+1 mark each to max 3
+Examples:
+•.
+Uses image recognition
+Monitors every image taken to identify matching
+images/shapes/features to a 'person' ...
+•
+identifts recording to secondary storage/permanently when a person is
+System identifies direction of movement of person and uses this to
+decide where/how to move the camera/record
+•
+System identifies other cameras to start recording based on direction of
+movement
+1 mark for each term
+An IPv4 address contains 4 groups of digits. Each group is represented in 8
+bits and the groups are separated by full stops.
+An IPv6 address contains 8 groups of digits. Each group is represented in
+16 bits. Multiple groups that only contain zeros can be replaced with a :: //
+double colon.
+2
+2
+4
+3
+5
+© UCLES 2023
+Page 7 of 9
+
+--- Page 8 ---
+9618/11
+Question
+4(d) (ii)
+Question
+5(a)
+5(b)
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for identification, 1 mark for expansion
+e.g.
+•
+Reduce amount of traffic in a network I/ improve network speed
+•
+Data stays in its subnet so it does not travel as far
+•
+Improves network security
+•
+... so that not all devices can access all areas of the network
+• Allows for easier maintenance
+•
+... because only one subnetwork may need taking down/changing while
+the rest of the network can continue
+Answer
+May/June 2023
+Marks
+4
+Marks
+2
+1 mark for 2 gates
+2 marks for all 4 gates
+A -
+B
+C
+D
+1 mark each
+NAND
+O is only output when both inputs are 1 // 1 is only output when none, or
+(either) one of the inputs is 1
+NOR
+1 is only output when both inputs are O // O is only output when (either) one
+or both inputs are 1
+2
+Page 8 of 9
+
+--- Page 9 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2023
+Answer
+Question
+6
+Marks
+5
+1 mark each to max 5
+••
+An interrupt flag is raised in the (interrupt) register
+At the end of the current FE cycle I/ at the start of the next FE cycle
+The system checks the interrupt register for higher priority interrupts
+than current process
+If true, it stores the current contents of the registers on the stack
+The appropriate interrupt service routine (ISR) for the key press is
+called
+The input data from the keyboard is processed
+The contents of the registers are restored from the stack
+...and control is passed back to previous process
+© UCLES 2023
+Page 9 of 9

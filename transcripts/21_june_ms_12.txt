@@ -1,0 +1,500 @@
+--- Page 1 ---
+* herbational destiont
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+MARK SCHEME
+Maximum Mark: 75
+9618/12
+May/June 2021
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2021 series for most Cambridge
+IGCSE™, Cambridge International A and AS Level components and some Cambridge O Level components.
+This document consists of 10 printed pages.
+© UCLES 2021
+[Turn over
+
+--- Page 2 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2021
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2021
+Page 2 of 10
+
+--- Page 3 ---
+9618/12
+Question
+1(a)
+1(b)
+1 (c)(i)
+1(c)(ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for definition, 1 mark for appropriate example in each
+Term
+Field
+Entity
+Foreign
+Key
+Definition and example
+A column/attribute in a table
+e.g. CustomerID in the table CUSTOMER
+Anything that data can be stored about
+e.g. A customer or a house
+A field in one table that is linked to a Primary Key in another
+table e.g. CustomerID / HouseID in table RENTAL
+1 mark per bullet point to max 2
+: for example l els an dependent tule are fly dependent other fields
+for example all fields in Customer table are fully dependent on
+CustomerID
+1 mark for each correctly completed line
+CREATE TABLE RENTAL (
+RentalID INTEGER NOT NULL,
+CustomerID INTEGER NOT NULL,
+House ID VARCHAR (5) NOT NULL,
+MonthlyCost REAL/CURRENCY NOT NULL,
+DepositPaid BOOLEAN NOT NULL,
+PRIMARY KEY (RentalID)
+1 :
+1 mark per bullet point
+•.
+Select FirstName and LastName
+From both tables
+•
+Where DepositPaid = No
+•
+Joining tables (either AND, or INNER JOIN)
+Example script:
+SELECT FirstName, LastName
+FROM CUSTOMER, RENTAL
+WHERE DepositPaid = No
+AND RENTAL. CustomerID = CUSTOMER.CustomerID;
+May/June 2021
+Marks
+6
+2
+4
+4
+© UCLES 2021
+Page 3 of 10
+
+--- Page 4 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2021
+Answer
+Question
+2(a)
+Marks
+2
+2(b)
+2(c)
+1 mark per bullet point to max 2
+To make sure the team members feel valued
+To get the best work out of the team
+To enable them to work well together
+•
+• ..
+••
+..
+To enable them to create the best product for the client
+1 mark per bullet point to max 3
+•
+•
+•
+The rules / past moves / decision making algorithms of the game will be
+stored
+The Al program is trained, by playing many times
+Al will look (ahead) at possible moves
+... and/or analyse the pattern of past choices
+... and choose the move most likely to be successful
+Computer could learn how to improve // learn from previous mistakes
+... by storing the positive/negative result of choices
+1 mark for each correct column
+Free
+Open
+Software
+Source
+Foundation
+Initiative
+Shareware
+Commercial
+Software
+r
+3
+4
+Statement
+The user can edit
+the source code
+The user must
+always pay before
+being able to use
+the software
+The user can
+redistribute the
+software
+The user always
+gets a trial period
+r
+r
+r
+© UCLES 2021
+Page 4 of 10
+
+--- Page 5 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2021
+Question
+3(a)
+Answer
+1 mark for each correct gate, with correct inputs
+Marks
+4
+- S
+3(b)
+1 mark for each half (shaded)
+2
+A
+B
+C
+Working space
+S
+1
+1
+1
+1
+1
+0
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+© UCLES 2021
+Page 5 of 10
+
+--- Page 6 ---
+9618/12
+Question
+4(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2021
+Answer
+1 mark for each shaded section / bullet point
+:
+..
+Load 65 into ACC
+Load 100 into ACC, increment and store in 102
+Load 68 into ACC
+Load 101 into ACC, decrement and store in 102
+Instruction
+address
+ACC
+100
+68
+Memory address
+101
+65
+102
+100
+Marks
+4
+70
+71
+72
+73
+74
+76
+77
+78
+79
+70
+71
+72
+80
+81
+82
+83
+(70)
+65
+100
+101
+101
+68
+101
+100
+100
+4(b)(i)
+4(b) (ii)
+102
+AND
+1
+1
+© UCLES 2021
+Page 6 of 10
+
+--- Page 7 ---
+9618/12
+Question
+4(b) (iii)
+Question
+5(a)
+5(b)
+5(c)(i)
+© UCLES 2021
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2021
+Answer
+Marks
+2
+1 mark for AND, 1 mark for #15
+AND #15
+Answer
+1 mark for each term correctly inserted
+The control unit/bus transmits the signals to coordinate events based on the
+pulses of the (system) clock.
+The data bus carries data to components, while the address bus carries the
+address where data is being written to or read from.
+The arithmetic logic unit/ALU performs mathematical operations and logical
+comparisons.
+1 mark per bullet point to max 3 per factor. max 4 overall.
+Number of cores:
+•
+•
+Each core processes one instruction per clock pulse
+More/multiple cores mean that sequences of instructions can be split
+between them
+•
+... and so more than one instruction is executed per clock pulse // more
+sequences of instructions can be run at the same time
+•
+More cores decreases the time taken to complete task
+Clock speed:
+• Each instruction is executed on a clock pulse // one F-E cycle is run on
+•
+each clock pulse
+...so the clock speed dictates the number of instructions that can be run
+per second
+•
+The faster the clock speed the more instructions can be run per second
+1 mark per bullet point to max 2
+Cloud storage can be free (for small quantities)
+•
+No need for separate (high capacity) storage devices // saves storage on
+existing devices
+•
+Can access data from any computer with internet access
+•
+Most cloud data services will have in-built backup/disaster recovery
+•
+Security could be better
+Can easily increase capacity
+•
+Data can be easily shared
+Marks
+5
+4
+2
+Page 7 of 10
+
+--- Page 8 ---
+9618/12
+Question
+5(c) (ii)
+5(d)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2021
+Answer
+1 mark per bullet point to max 2:
+•
+•
+•
+Can only access (the cloud) with internet access
+Security may not be strong // no control over security
+There may not be any backups // no control over backups
+It can take a long time to upload/download the data
+It can be more expensive in the long term
+There could be a limit to the amount of storage unless paid for
+There could be compatibility/access issues
+•
+There could be issues with the company offering cloud services
+1 mark for each correct line
+Term
+Description
+It is only visible to devices within the
+Local Area Network (LAN
+Marks
+2
+4
+Public IP Address
+It increments by 1 each time the
+device connects to the internet
+Private IP address
+Dynamic IP address
+Static IP address
+A new one is reallocated each time a
+device connects to the internet
+It can only be allocated to a router
+It is visible to any device on the
+internet
+It does not change each time a device
+is connected to the internet
+Answer
+Question
+6(a)
+Marks
+2
+6(b)
+1 mark for each correct answer
+ASCII = 128 /| 27
+Extended ASCII = 256 // 28
+1 mark per bullet point to max 2
+: Each character hates or is repaced by
+Each character in the word is replaced by its code
+•
+The codes are stored in the order in the word
+2
+© UCLES 2021
+Page 8 of 10
+
+--- Page 9 ---
+9618/12
+Question
+6(c)(i)
+6(c)(ii)
+Question
+7(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+7(b)(i)
+7(b)(ii)
+31
+53
+Answer
+1 mark per bullet point to max 2
+The program library can be referenced/imported
+the functions/routines can be called in her own program
+| 1 mark per bullet point to max 4; max 3 from each section
+Interpreter:
+Use an interpreter while writing the program
+... to test/debug the partially completed program
+... because errors can be corrected and processing continue from where
+the execution stopped // errors can be corrected in real time // errors are
+identified one at a time
+Compiler:
+Use the compiler after the program is complete
+•
+... to create an executable file
+Use the compiler to repeatedly test the same (completed) section
+•
+... without having to re-interpret every time I/ compiler not needed at run-
+time
+1 mark per correct tool to max 2
+e.g.
+Breakpoints
+•
+Single stepping
+Report windows
+May/June 2021
+Marks
+1
+1
+Marks
+2
+4
+2
+Question
+8(a)
+8(b)
+Answer
+1 mark per bullet point
+• .
+Security protects data against loss
+Privacy protects data against unauthorised access
+1 mark for a correct answer
+•.
+•
+Two factor authentication
+Biometric passwords
+Key Card Access
+Firewall
+Marks
+2
+1
+© UCLES 2021
+Page 9 of 10
+
+--- Page 10 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2021
+Answer
+Question
+8(c)
+Marks
+2
+1 mark per correct answer to max 2
+•
+•
+Malware // viruses // spyware // by example
+Hacking
+Phishing
+Pharming
+© UCLES 2021
+Page 10 of 10

@@ -1,0 +1,495 @@
+--- Page 1 ---
+* 0000800000001*
+SIS Cambridge Assessment
+International Educatior
+•
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+0 8 652
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+9618/33
+October/November 2024
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided.
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages. Any blank pages are indicated
+DC (EV) 347522
+© UCLES 2024
+L
+[Turn over
+J
+
+--- Page 2 ---
+* 0000800000002*
+2
+1
+Numbers are stored in a computer using binary floating-point representation with:
+• 10 bits for the mantissa
+• 6 bits for the exponent
+• two's complement form for both the mantissa and the exponent.
+(a) Calculate the normalised binary floating-point representation of +201.125 in this system.
+Show your working.
+Mantissa
+Exponent
+Working
+(b) Calculate the denary value of the given normalised binary floating-point number.
+Show your working.
+Mantissa
+Exponent
+1
+1 O
+1
+0
+Working
+Answer
+LOUCLES 2024
+9618/33/0/N/24
+[3]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 3 ---
+0000800000003*
+DO NOT WRITE IN THIS MARGIN
+3
+2
+Reduced Instruction Set Computers (RISC) is a type of processor.
+Identify four features of a RISC processor.
+1
+2
+DO NOT WRITE IN THIS MARGIN
+3
+4
+14]
+(a) Describe circuit switching as a method of data transmission.
+DO NOT WRITE IN THIS MARGIN
+13]
+DO NOT WRITE IN THIS MARGIN
+(b) State one benefit and one drawback of circuit switching as a method of data transmission.
+Benefit
+Drawback
+[2]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/33/0/N/24
+(Turn over
+
+--- Page 4 ---
+* 0000800000004*
+4
+The TCP/IP protocol may be viewed as a stack that contains four layers: Application, Transport,
+Internet, Link.
+Describe how the layers of the TCP/IP protocol stack interact with each other.
+14]
+5 (a) Explain what is meant by a hashing algorithm in the context of file access.
+13]
+(b) The use of a hashing algorithm can result in the same storage location being identified for
+more than one record.
+Outline two methods of overcoming this issue.
+1
+2
+12]
+LOUCLES 2024
+9618/33/0/N/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 5 ---
+* 0000800000005 *
+DO NOT WRITE IN THIS MARGIN
+5
+6
+(a) Describe the user-defined data type set.
+DO NOT WRITE IN THIS MARGIN
+[3]
+(b) Write pseudocode statements to declare the set data type, Symbolset, to hold the following
+set of mathematical operators, using the variable Operators.
+/
+DO NOT WRITE IN THIS MARGIN
+[4]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/33/0/N/24
+Turn over
+
+--- Page 6 ---
+* 0000800000006*
+6
+7 The truth table for a logic circuit is shown.
+INPUT
+A
+OUTPUT
+T
+B
+0
+C
+0
+1
+1
+1
+0
+1
+0
+1
+0
+1
+1
+1
+1
+0
+1
+1
+0
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+0
+0
+0
+1
+1
+1
+1
+0
+1
+1
+0
+0
+1
+1
+1
+1
+1
+1
+1
+1
+(a) Write the Boolean logic expression that corresponds to the given truth table as the
+sum-of-products.
+T= ...
+LOUCLES 2024
+9618/33/0/N/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 7 ---
+* 0000800000007*
+DO NOT WRITE IN THIS MARGIN
+7
+(b) Complete the Karnaugh map (K-map) for the given truth table.
+AB
+CD
+00
+11
+10
+DO NOT WRITE IN THIS MARGIN
+00
+01
+11
+10
+12]
+(c) Draw loop(s) around appropriate group(s) in the K-map to produce an optimal sum-of-products.
+(d) (i) Write the Boolean logic expression from your answer to part (c) as the simplified
+sum-of-products.
+T=...
+DO NOT WRITE IN THIS MARGIN
+12]
+(ii) Use Boolean algebra to write your answer to part (d)(i) in its simplest form.
+T=...
+.. [1]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/33/0/N/24
+(Turn over
+
+--- Page 8 ---
+* 000080000000*
+8
+(a) Describe the process of segmentation for memory management.
+DO NOT WRITE IN THIS MARGIN
+(b) Explain what is meant by disk thrashing.
+DO NOT WRITE IN THIS MARGIN
+DONOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2024
+9618/33/0/N/24
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 9 ---
+000080000009*
+DO NOT WRITE IN THIS MARGIN
+9
+9
+A veterinary surgery wants to create a class for individual pets.
+Some of the attributes required in the class are listed in the table.
+Attribute
+PetID
+PetType
+OwnerTelephone
+DateRegistered
+Data type
+STRING
+STRING
+STRING
+DATE
+Description
+unique ID assigned at registration
+type of pet assigned at registration
+telephone number of owner assigned at
+registration
+date of registration
+(a) State one reason why the attributes would be declared as PRIVATE.
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+...... [1]
+(b) Complete the class diagram for Pet, to include:
+• •
+•
+•
+•
+an attribute and data type for the name of the pet
+an attribute and data type for the name of the owner
+a method to create a Pet object and set attributes at the time of registration
+a method to assign a pet ID
+a method to assign the date of registration
+a method to return the pet name
+a method to return the owner's telephone number.
+Pet
+PetID
+PetType
+OwnerTelephone
+DateRegistered
+: STRING
+: STRING
+: STRING
+:
+DATE
+DO NOT WRITE IN THIS MARGIN
+....:
+DO NOT WRITE IN THIS MARGIN
+© UCLES 2024
+9618/33/0/N/24
+[5]
+[Turn over
+
+--- Page 10 ---
+* 00000000010*
+10
+10 Several syntax diagrams are shown.
+letter
+operator
+E
+digit
+symbol
+#
+label
+equation
+- label
+label
+operator
+LOUCLES 2024
+9618/33/0/N/24
+9
+label
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 11 ---
+* 0000800000011*
+DO NOT WRITE IN THIS MARGIN
+11
+(a) Complete the Backus-Naur Form (BNF) for the given syntax diagrams.
+‹operator> ::=
+<label> ::=
+DO NOT WRITE IN THIS MARGIN
+‹equation› ::=
+[4]
+(b) A new syntax rule, password, is required. It must begin with a letter or a symbol, followed by
+a digit and end with one or two symbols.
+(i) Draw a syntax diagram for password.
+DO NOT WRITE
+IN THIS MARGIN
+[3]
+(ii) Write the BNF for password.
+DO NOT WRITE IN THIS MARGI
+12]
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2024
+9618/33/0/N/24
+(Turn over
+
+--- Page 12 ---
+* 0000800000012*
+12
+11 The following diagram shows an ordered binary tree.
+Red
+Green
+Yellow
+Blue
+Orange
+Violet
+Indigo
+(a) A linked list of nodes is used to store the data. Each node consists of a left pointer, the data
+and a right pointer.
+- 1 is used to represent a null pointer.
+Complete this linked list to represent the given binary tree.
+RootPtr
+LeftPtr
+N
+Data
+Red
+RightPtr
+Green
+- 1
+Blue
+-1
+14]
+LOUCLES 2024
+9618/33/0/N/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 13 ---
+* 0000800000013*
+DO NOT WRITE IN THIS MARGIN
+13
+(b) A user-defined record structure is used to store the nodes of the linked list in part (a).
+Complete the diagram, using your answer for part (a).
+Rootptr
+Index
+Leftptr
+Rightptr
+DO NOT WRITE IN THIS MARGIN
+Freeptr
+1
+2
+3
+4
+5
+6
+7
+Data
+Red
+Green
+Yellow
+Blue
+Orange
+Indigo
+Violet
+14]
+DO NOT WRITE IN THIS MARGIN
+(c) The linked list in part (a) is implemented using a 1D array of records. Each record contains a
+left pointer, data and a right pointer.
+The following pseudocode represents a function that searches for an element in the array of
+records BinTree. It returns the index of the record if the element is found, or it returns a null
+pointer if the element is not found.
+Complete the pseudocode for the function.
+FUNCTION SearchTree (Item : STRING)
+NowPtr +
+WHILE NowPtr <> -1
+IF
+THEN
+DO NOT WRITE
+IN THIS MARGIN
+NowPtr + BinTree [NowPtr]. LeftPtr
+ELSE
+IF BinTree[NowPtr].Data ‹ Item THEN
+DO NOT WRITE IN THIS MARG
+IN
+OUCLES 2024
+ELSE
+ENDIF
+ENDIF
+ENDWHILE
+RETURN NowPtr
+ENDFUNCTION
+RETURN NowPtr
+14]
+9618/33/0/N/24
+
+--- Page 14 ---
+* 0000800000014*
+14
+BLANK PAGE
+LOUCLES 2024
+9618/33/0/N/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 15 ---
+* 0000800000015*
+DO NOT WRITE IN THIS MARGIN
+15
+BLANK PAGE
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/33/0/N/24
+J
+
+--- Page 16 ---
+* 0000800000016*
+16
+BLANK PAGE
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series. J
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+OUCLES 2024
+9618/33/0/N/24
+DO NOT WRITE IN THIS MARGIN

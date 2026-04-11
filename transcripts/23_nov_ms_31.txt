@@ -1,0 +1,549 @@
+--- Page 1 ---
+15 Cambridge Assessmen
+International Educatior
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+MARK SCHEME
+Maximum Mark: 75
+9618/31
+October/November 2023
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2023 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+This document consists of 9 printed pages.
+© UCLES 2023
+[Turn over
+
+--- Page 2 ---
+9618/31
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+•
+•
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2023
+Page 2 of 9
+
+--- Page 3 ---
+9618/31
+Question
+1(a)
+1(b)
+Question
+2(a)
+2(b)
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Answer
+One mark for working (Max 1)
+•
+conversion of 65.25 to binary seen e.g. 1000001.01 = 65.25 //
+64 + 1 + 0.25 / ¼
+One mark per mark point (Max 2)
+: correct manisat
+correct exponent
+Mantissa
+1
+1
+1
+Exponent
+1 1 1
+One mark per mark point (Max 2)
+the decimal fraction 0.20 cannot be represented exactly (the closest
+is 0.25/0.1875)
+MP2
+therefore, there will be a loss of precision due to a rounding
+error/truncation
+Answer
+One mark for each correct line connecting a protocol to its most appropriate
+description (Max 4).
+Protocol
+Use
+to provide peer-to-peer file sharing
+HTTP
+when retrieving email messages from a
+mail server over a TCP/IP connection
+BitTorrent
+when transmitting hypertext
+documents
+SMTP
+to map MAC addresses onto IP
+addresses
+IMAP
+when sending email messages
+towards the intended destination
+One mark per mark point (Max 2)
+MP1
+To ensure correct network protocols are followed
+MP2
+To enable the upper layers to access the physical medium //
+enables connection/ communication with the internet / network layer
+MP3
+To be responsible for transporting data within the network/local
+segments
+MP4
+MP5
+To format the data into frames for transmission
+Maps IP addresses to MAC/Physical addresses.
+Marks
+3
+2
+Marks
+4
+2
+Page 3 of 9
+
+--- Page 4 ---
+9618/31
+Question
+3
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Answer
+One mark per mark point - enumerated type (Max 2)
+MP1
+A user-defined non-composite (data type) (only award once)
+MP2
+...with a list of all possible values
+MP3
+...that is ordered
+One mark per mark point - pointer type (Max 2)
+MP4
+A user-defined non-composite (data type) (only award once)
+MP5
+....that stores addresses/memory locations only
+MP6
+...and indicates the type of data stored in the memory location.
+Marks
+4
+Question
+4(a)
+4(b)
+Question
+5
+Answer
+One mark per mark point - sequential (Max 2)
+MP1 Records (in the file) are ordered
+MP2
+...based on the key field
+MP3 A new version (of the file) has to be created to update the file
+One mark per mark point - random (Max 2)
+Records are stored in no particular order within the file // There is no
+sequencing in the placement of the records
+MP5
+There is a relationship between the key of the record and its location
+within the file I/ a hashing algorithm is used to find the location of the
+record
+MP6
+Updates to the file can be carried out directly.
+One mark per mark point (Max 2)
+MP1
+Start at the beginning of the file
+MP2
+...check records linearly
+MP3
+...until the desired record is found // ... processing / updating records
+as required //... EOF found.
+Answer
+One mark per mark point - SISD (Max 2)
+MP1
+Single Instruction, Single Data (architecture). // Data is taken from a
+MP2
+MP3
+One mark per mark point - MIMD (Max 2)
+Multiple Instruction, Multiple Data (architecture). I/ At any time, any
+processor can execute different instructions on different sets of data.
+Contains many processors
+MP6
+...that operate asynchronously / independently.
+Marks
+4
+2
+Marks
+4
+© UCLES 2023
+Page 4 of 9
+
+--- Page 5 ---
+9618/31
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Question
+6(a)
+Answer
+One mark for every shaded block of rows for column Z correct (Max 3)
+October/November
+2023
+Marks
+3
+A
+B
+C
+D
+1
+Z
+1
+1
+1
+0
+1
+1
+6(b)
+1
+1
+1
+1
+0
+1
+1
+0
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+One mark for correct working from points (Max 2), for example:
+(Y =)Ã.B.C. +Ã.B.c.D +Ã.B.C.D +Ã.в.c.D
+(Y =) A.D.(B.C + B.C + B.C + B.C)
+(Y =) A.D.(B.(C + C) + B.(C + C))
+(Y =) A.D.(B.(1) + B. (1))
+(Y =) Ã.D.(B + B)
+(Y =) Ã.Б.(1)
+One mark for correct answer
+(Y =)Ã.Б
+3
+© UCLES 2023
+Page 5 of 9
+
+--- Page 6 ---
+9618/31
+Question
+7(a)
+7(b)
+7(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+One mark for a benefit (Max 1) e.g.
+MP1
+The user interface hides the complexities of the computer
+hardware/operating system from the user
+MP2
+It provides appropriate access systems for users with differing needs
+MP3
+Complex commands involving memory locations/buses/computer
+hardware/ are avoided
+One mark for a valid example (Max 1) e.g.
+Clicking on icon rather than writing code
+Using a graphical user interface / icons for navigation
+Blocked (state)
+One mark per mark point (Max 2)
+MP1
+When the time slice of the running process expires (round robin).
+MP2
+...and there is a process with a higher priority in the ready queue, the
+running process is pre-empted
+MP3
+When an interrupt arrives at the CPU, (the process running on the
+CPU gets pre-empted).
+October/November
+2023
+Marks
+2
+1
+2
+Question
+8(a)
+8(b)
+8(c)
+Answer
+One mark for each correctly completed line (Max 5)
+DECLARE Customer : TAccount
+DECLARE Location
+1 : INTEGER
+DECLARE AccountFile : STRING
+AccountFile ‹ "AccountRecords. dat"
+OPENFILE AccountFile FOR RANDOM
+OUTPUT "Please enter an account number"
+INPUT Customer. AccountNumber
+Location ‹ Hash (Customer. AccountNumber)
+SEEK AccountFile, Location
+GETRECORD AccountFile, Customer
+OUTPUT Customer
+CLOSEFILE AccountFile
+One mark for correct definition
+(Exception handling is the process of) responding to an unexpected event
+when the program is running so it does not halt unexpectedly
+One mark per mark point (Max 2), for example:
+• Programming errors
+• User errors
+• Hardware failure
+• Runtime errors
+Marks
+5
+1
+2
+© UCLES 2023
+Page 6 of 9
+
+--- Page 7 ---
+9618/31
+Question
+9(a) (i)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2023
+Answer
+Marks
+2
+9(a)(ii)
+One mark per mark point (Max 2)
+(5 - 2)
+•
+* 15 + 4) / 9
+Final correct expression
+(5 - 2)
+* (5 + 4) / 9
+One mark per ring (Max 4)
+4
+5
+OR
+5
+2
+5
+2
+5
+3
+5
+3
+3
+3
+27
+27
+3
+3
+5
+3
+9
+3
+27
+9
+27
+3
+5
+3
+9(0)
+One mark per mark point (Max 3)
+MP1
+MP2
+Evaluate the RPN expression from left to right
+Push each element of the RPN expression onto the stack in order
+until an operator is reached
+MP3
+MP4
+MP5
+Pop the last two elements from the stack and apply the operator
+Push the result of the operation onto the stack
+Repeat the process until the whole expression is evaluated.
+3
+© UCLES 2023
+Page 7 of 9
+
+--- Page 8 ---
+9618/31
+Question
+10(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Marks
+3
+10(b)
+10(c)
+Question
+11(a)
+11(b)
+Answer
+One mark per mark point (Max 3)
+MP1
+Correct constant declaration
+MP2
+MP3
+Two correct variable declarations
+Correct array declaration
+Example answer:
+CONSTANT Capacity = 25
+DECLARE BasePointer
+: INTEGER
+DECLARE TopPointer : INTEGER
+DECLARE stack
+: ARRAY |1: 25] OF REAL
+One mark for each correctly completed line (Max 5)
+// popping an item from the stack
+FUNCTION POP ()
+RETURNS REAL
+DECLARE Item : REAL
+Item < 0
+IF TopPointer >= BasePointer THEN
+Item ‹ Stack [TopPointer]
+TopPointer ‹ TopPointer - 1
+ELSE
+OUTPUT "The stack is empty - error"
+ENDIF
+RETURN Item
+ENDFUNCTION
+One mark per mark point (Max 2)
+MP1
+A queue is a first in first out / FIFO data structure and a stack is a first
+in last out / FILO / LIFO data structure // Data is removed from a
+queue in the order it is received and removed from a stack in the
+reverse order to which it is received
+MP2
+MP3
+Both ADTs can vary in size / are of indeterminate length
+Data is popped and pushed (onto/from a stack) at the same end but
+it is enqueued and dequeued (to/from a queue) at different/opposite
+ends I/ a queue has two accessible ends and a stack has only one
+MP4
+A stack has only one moveable pointer whereas a queue has two.
+Answer
+One mark for each correctly completed clause (Max 3)
+(22) student (anthony).
+(23)
+choicel (anthony, history).
+(24) choice2 (anthony, geography).
+X= tomaz, pietre, nico
+5
+2
+Marks
+3
+1
+© UCLES 2023
+Page 8 of 9
+
+--- Page 9 ---
+9618/31
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+11(c)
+October/November
+2023
+Marks
+4
+One mark per mark point (Max 4)
+•
+•
+•
+•
+student (N)
+subject (S)
+choicel (N, S)
+all logical operators correct with no additional code (see example
+answers)
+Example answers:
+may_choose_subject (N, S)
+IF student (N) AND
+subject (S) AND NOT choicel (N, S)
+ma choose cub V, Student (N), subject (s)
+Question
+12
+Answer
+Marks
+4
+One mark per mark point (Max 4)
+MP1
+An artificial neural network is the component of artificial intelligence
+MP2
+MP3
+that is meant to simulate the functioning of a biological brain.
+Artificial neural networks are a key component of machine learning.
+They can solve problems that would prove impossible or difficult for
+humans // Artificial neural networks have self-learning capabilities
+that enable them to produce better results as more data becomes
+available
+MP4
+Artificial neural networks can be layered (input, hidden and output
+layers) // Artificial neural networks have many interconnected layers,
+some / many of which are hidden
+MP5
+MP6
+MP7
+Weights are assigned between nodes
+Weights are adjusted through training to give a more accurate result
+More complex learning capabilities / more accurate results are
+available with larger numbers of hidden layers
+© UCLES 2023
+Page 9 of 9

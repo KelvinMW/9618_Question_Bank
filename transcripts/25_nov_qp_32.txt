@@ -1,0 +1,504 @@
+--- Page 1 ---
+* 0000800000001*
+ELS Cambridge Assessment
+International Education
+7
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+T
+9618/32
+October/November 2025
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+• Answer all questions.
+• Use a black or dark blue pen.
+• Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided.
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages. Any blank pages are indicated
+DC (PB/SW) 346645/2
+© UCLES 2025
+L
+[Turn over
+J
+
+--- Page 2 ---
+* 0000800000002*
+DFD
+Г
+1
+2
+7
+The composite data type, Car, is defined in pseudocode as:
+TYPE Car
+DECLARE RegNumber : STRING
+DECLARE Make : STRING
+DECLARE Model : STRING
+DECLARE BodyStyle : STRING
+DECLARE Colour: STRING
+DECLARE IntoStock : DATE
+DECLARE Price : REAL
+ENDTYPE
+(a) (i)
+• Write the pseudocode statement to set up a variable for one record of the composite
+data type, Car.
+DO NOT WRITE IN THIS MARGIN
+11]
+DO NOT WRITE IN THIS MARGIN
+(ii) Write the pseudocode statements to assign the following values to the variable set up in
+part (a)(i):
+"Blue" to Colour
+21/10/2025 to Intostock
+12]
+DO NOT WRITE IN THIS MARGIN
+(b) The data type for BodyStyle is changed to an enumerated type, Body.
+(i) Write the pseudocode statement for the type declaration of Body to hold the names of
+the available choices:
+Convertible, Hatchback, Saloon, SUV
+DO NOT WRITE IN THIS MARGIN
+12]
+(ii) Write the new pseudocode statement required to update the declaration of Bodystyle
+in the definition of Car.
+11]
+LOUCLES 2025
+9618/32/0/N/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 3 ---
+* 0000800000003*
+DFD
+DO NOT WRITE IN THIS MARGIN
+3
+7
+2
+Numbers are stored in a computer system using binary floating-point representation with:
+•
+10 bits for the mantissa
+• 6 bits for the exponent
+two's complement form for both the mantissa and the exponent.
+(a) Calculate the denary value of the given normalised binary floating-point number.
+Show your working.
+Mantissa
+DO NOT WRITE IN THIS MARGIN
+Exponent
+1
+0 1 1
+Working..
+DO NOT WRITE IN THIS MARGIN
+Denary value
+13]
+(b) Calculate the normalised binary floating-point representation of +26.6875 in this system.
+Show your working.
+Mantissa
+Exponent
+DO NOT WRITE IN THIS MARGIN
+Working ..
+DO NOT WRITE IN THIS MARGIN
+[3]
+OUCLES 2025
+9618/32/0/N/25
+[Turn over
+
+--- Page 4 ---
+0000800000004*
+DFD
+4
+7
+3
+(a) HTTP and IMAP are examples of protocols used in the Application Layer of the TCP/IP
+protocol suite.
+State the purpose of the HTTP and IMAP protocols.
+HTTP
+DO NOT WRITE IN THIS MARGIN
+IMAP
+12]
+(b) Describe how files are shared using the BitTorrent protocol.
+DO NOT WRITE IN THIS MARGIN
+[4]
+DO NOT WRITE IN THIS MARGIN
+(a) Identify one benefit of circuit switching and one benefit of packet switching.
+Circuit switching
+Packet switching
+12]
+(b) Identify two differences between circuit switching and packet switching.
+1
+DO NOT WRITE IN THIS MARGIN
+2
+12]
+OUCLES 2025
+9618/32/0/N/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 5 ---
+* 0000800000005*
+DFD
+DO NOT WRITE IN THIS MARGIN
+5
+7
+5
+(a) Describe how interrupt handling is used in low-level scheduling.
+DO NOT WRITE IN THIS MARGIN
+12]
+(b) In process management, a process can be in one of three process states: running, ready or
+blocked.
+Complete the table to identify one reason why a process could be in each of the three states.
+Process state
+Reason
+DO NOT WRITE IN THIS MARGIN
+running
+ready
+DO NOT WRITE IN THIS MARGIN
+blocked
+[3]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/32/0/N/25
+[Turn over
+
+--- Page 6 ---
+* 0000800000006*
+DFD
+6
+(a) The diagram shows a logic circuit.
+A
+B
+C -
+Complete the truth table for the given logic circuit.
+Show your working.
+Working space
+Q
+R
+A
+0
+B
+0
+C
+0
+P
+0
+0
+1
+0
+1
+0
+1
+1
+1
+0
+0
+1
+1
+1
+1
+1
+1
+1
+OUCLES 2025
+9618/32/0/N/25
+Z
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 7 ---
+0000800000007*
+DFD
+DO NOT WRITE IN THIS MARGIN
+7
+7
+(b) (i) Complete the Karnaugh map (K-map) for the Boolean expression:
+A.B.C + Ã.B.C + A.B.C + A.B.C
+A
+00
+01
+10
+DO NOT WRITE IN THIS MARGIN
+1
+121
+(ii) Draw loop(s) around appropriate group(s) in the K-map to produce an optimal
+sum-of-products.
+12]
+(ili)
+Write the Boolean expression from your answer to part b(ii) as a simplified
+sum-of-products. Do not carry out any further simplification.
+DO NOT WRITE IN THIS MARGIN
+12]
+7 (a) Asymmetric encryption is a type of cryptography.
+Identify one other type of cryptography.
+11]
+DO NOT WRITE IN THIS MARGIN
+(b) An organisation holds two asymmetric encryption keys, which they intend to use to receive
+secure transmissions.
+Explain how the organisation makes use of the two keys to receive a secure transmission.
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+[4]
+9618/32/0/N/25
+[Turn over
+
+--- Page 8 ---
+000080000008*
+DFD
+8
+8
+(a) State the purpose of the optimisation stage in the compilation of a program.
+(b) Convert this Reverse Polish Notation (RPN) back to its original infix form:
+ab-ctca- * d/
+(c) The RPN expression:
+calbd-*b +
+is to be evaluated, where:
+a = 3, b = 16, c = 9 and d = 6.
+Show the changing contents of the stack as the RPN expression is evaluated.
+LOUCLES 2025
+9618/32/0/N/25
+7
+DO NOT WRITE IN THIS MARGIN
+11]
+DO NOT WRITE IN THIS MARGIN
+13]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+14]
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 9 ---
+* 0000800000009 *
+DFD
+DO NOT WRITE IN THIS MARGIN
+9
+9
+(a) Deep Learning is a form of Machine Learning.
+(i)
+State one example where Deep Learning is used.
+7
+[1]
+(ii) Identify how Deep Learning can be made more effective.
+DO NOT WRITE IN THIS MARGIN
+[1]
+(b) Describe the back propagation of errors method in Machine Learning.
+DO NOT WRITE IN THIS MARGIN
+14]
+10 An exception is an error that may cause a program to halt unexpectedly.
+(a) Describe how program termination due to an exception can be avoided.
+DO NOT WRITE IN THIS MARGIN
+[2]
+(b) Identify two possible causes of exceptions.
+DO NOT WRITE IN THIS MARGIN
+2
+OUCLES 2025
+9618/32/0/N/25
+[2]
+[Turn over
+
+--- Page 10 ---
+* 0000800000010*
+DFD
+10
+11 The table shows assembly language instructions for a processor that has one register, the
+Accumulator (ACC).
+Label
+Opcode
+Instruction
+Operand
+LDD
+‹address>
+LDI
+<address>
+ADD
+<address>
+SUB
+<address>
+STO
+) <address>
+<label>:
+< data>
+# denotes a denary number, e.g. #123
+<label> can be used in place of <address>
+The current contents of memory are:
+Address
+150
+300|
+420
+Explanation
+Load the number n to the ACC
+Load the contents of the location at the given
+address to ACC
+The address to be used is at the given address.
+Load the contents of this second address to
+the ACC.
+Add the contents of the given address to the
+ACC
+Subtract the contents of the given address
+from the ACC
+Store the contents of the ACC at the given
+address
+Gives a symbolic address ‹label> to the
+memory location with the contents < data>
+Contents
+26
+86
+150
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2025
+9618/32/0/N/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 11 ---
+* 0000800000011*
+DFD
+DO NOT WRITE IN THIS MARGIN
+11
+Write assembly language code, using only the given instruction set to:
+store the contents of location 300 as labelled variable A
+store the contents of location 420 as labelled variable B
+• add the value stored in the address contained in variable B to the value contained in
+variable A
+• store the result in variable Answer.
+Show the initialisation and values of the variables A, B and Answer in the table provided
+7
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+Label
+Content
+DO NOT WRITE IN THIS MARGIN
+[7]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/32/0/N/25
+(Turn over
+
+--- Page 12 ---
+* 0000800000012*
+DFD
+12
+12 (a) A stack has been implemented using pseudocode to store a maximum of 100 string items
+using the global variables in the following table:
+Identifier
+Data type
+Description
+Initialisation
+value
+Base
+Top
+StackArray
+Max
+INTEGER
+INTEGER
+STRING
+INTEGER
+pointer for the bottom of the stack
+pointer for the top of the stack
+1D array to implement the stack
+maximum number of items in the stack
+- 1
+10:991
+100
+The value of Top is incremented each time a data item is added to the stack and decremented
+each time a data item is removed. If the stack is full, an appropriate error message is output.
+(i) Complete the pseudocode for the procedure to add a data item onto the stack.
+PROCEDURE Push (....
+IF Top
+< Max
+- 1
+THEN
+Top
+‹ NewData
+ELSE
+OUTPUT
+ENDIF
+ENDPROCEDURE
+[4]
+(ii) Write pseudocode to input a new data item and add it to the stack using Push ().
+12]
+(b) Explain the reasons why a stack is used when a recursive algorithm is executed.
+[3]
+LOUCLES 2025
+9618/32/0/N/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 13 ---
+* 0000800000013*
+DFD
+DO NOT WRITE IN THIS MARGIN
+13
+BLANK PAGE
+7
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/32/0/N/25
+J
+
+--- Page 14 ---
+* 0000800000014*
+DFD
+Г
+14
+BLANK PAGE
+LOUCLES 2025
+9618/32/0/N/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 15 ---
+* 0000800000015*
+DFD
+DO NOT WRITE IN THIS MARGIN
+15
+BLANK PAGE
+7
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/32/0/N/25
+J
+
+--- Page 16 ---
+* 0000800000016*
+DFD
+Г
+16
+BLANK PAGE
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+OUCLES 2025
+9618/32/0/N/25
+DO NOT WRITE IN THIS MARGIN

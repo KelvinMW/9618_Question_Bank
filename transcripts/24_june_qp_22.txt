@@ -1,0 +1,549 @@
+--- Page 1 ---
+5 Cambridge Assessmen
+shes International Educatior
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+9618/22
+May/June 2024
+2 hours
+• >
+You must answer on the question paper.
+You will need: Insert (enclosed)
+INSTRUCTIONS
+• Answer all questions.
+• Use a black or dark blue pen.
+• Write your name, centre number and candidate number in the boxes at the top of the page.
+• Write your answer to each question in the space provided
+• Do not use an erasable pen or correction fluid.
+• Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+• The insert contains all the resources referred to in the questions.
+This document has 24 pages. Any blank pages are indicated
+DC (PQ/CGW) 329350/3
+© UCLES 2024
+[Turn over
+
+--- Page 2 ---
+2
+Refer to the insert for the list of pseudocode functions and operators.
+(a) The following table contains pseudocode examples.
+Each example may contain statements that relate to one or more of the following:
+•
+•
+selection
+iteration (repetition)
+input/output.
+Complete the table by placing one or more ticks (v) in each row.
+Pseudocode example
+FOR Index ‹ 1 TO 10
+Data [Index] < 0
+NEXT Index
+WRITEFILE ThisFile, "****"
+UNTIL Level > 25
+IF Mark > 74 THEN
+READFILE OldFile, Data
+ENDIF
+Selection
+Iteration
+Input/Output
+14]
+(b) Program variables have data types as follows:
+Variable
+MyChar
+MyString
+MyInt
+Data type
+CHAR
+STRING
+INTEGER
+Complete the table by filling in each gap with a function (from the insert) so that each expression
+is valid.
+MyInt +
+MyChar + ..
+Mystring +
+MyInt +
+Expression
+..... (3.1415926)
+("'Elwood", 3, 1)
+..... ...
+..... / .....
+(27.509))
+("ABC123", 3))
+[4]
+© UCLES 2024
+9618/22/M/J/24
+
+--- Page 3 ---
+3
+(c) The variables given in part (b) are chosen during the design stage of the program development
+life cycle
+The choices are to be documented to simplify program maintenance.
+State a suitable way of documenting the variables and give one piece of information that
+should be recorded, in addition to the data type.
+12]
+© UCLES 2024
+9618/22/M/J/24
+Turn over
+
+--- Page 4 ---
+4
+2 A program is being developed.
+(a) An algorithm for part of the program will:
+• input three numeric values and assign them to identifiers Num1, Num2 and Num 3
+assign the largest value to variable Ans
+• output a message giving the largest value and the average of the three numeric values.
+Assume the values are all different and are input in no particular order.
+Complete the program flowchart on page 5 to represent the algorithm.
+© UCLES 2024
+9618/22/M/J/24
+
+--- Page 5 ---
+START
+INPUT Num1, Num2, Num3
+Yes
+© UCLES 2024
+No
+C
+END
+[5]
+9618/22/M/J/24
+[Turn over
+
+--- Page 6 ---
+6
+(b) A different part of the program contains an algorithm represented by the following program
+flowchart:
+START
+Set Flag to Getstat ()
+Is Flag
+TRUE?
+No
+Set Port to 1
+Yes
+END
+No
+Is Port = 4?
+CALL Reset (Port)
+Yes
+Set Port to Port + 1
+Write pseudocode for the algorithm.
+[5]
+© UCLES 2024
+9618/22/M/J/24
+
+--- Page 7 ---
+7
+A factory needs a program to help manage its production of items.
+Data will be stored about each item.
+The data for each item will be held in a record structure of type Component.
+The programmer has started to define the fields that will be needed as shown in the table.
+Field
+Item Num
+Reject
+Stage
+Limit_1
+Limit_2
+Example value
+123478
+FALSE
+'B'
+13.5
+26.4
+Comment
+a numeric value used as an array index
+TRUE if this item has been rejected
+a letter to indicate the stage of production
+any value in the range O to 100 inclusive
+any value in the range 0 to 100 inclusive
+(a) (i) Write pseudocode to declare the record structure for type Component.
+[4]
+(ii) A 1D array Item of 2000 elements will store the data for all items.
+Write pseudocode to declare the Item array.
+12]
+(b) State three benefits of using an array of records to store the data for all items.
+1
+2
+3
+© UCLES 2024
+9618/22/M/J/24
+13]
+[Turn over
+
+--- Page 8 ---
+8
+4 A triangle has sides of length A, B and C.
+In this example, A is the length of the longest side.
+This triangle is said to be right-angled if the following equation is true:
+A×A= (B×B)+ (CxC)
+A procedure will be written to check whether three lengths represent a right-angled triangle.
+The lengths will be input in any sequence.
+The procedure ISRA () Will:
+• prompt and input three integer values representing the three lengths
+• test whether the three lengths correspond to the sides of a right-angled triangle
+output a suitable message.
+The length of the longest side may not be the first value input.
+© UCLES 2024
+9618/22/M/J/24
+
+--- Page 9 ---
+9
+Write pseudocode for the procedure IsRA () .
+[5]
+© UCLES 2024
+9618/22/M/J/24
+[Turn over
+
+--- Page 10 ---
+10
+5 A program is being designed in pseudocode.
+The program contains a global 1D array Data of type string containing 200 elements.
+The first element has the index value 1.
+A procedure Process () is written to initialise the values in the array:
+PROCEDURE Process (Label : STRING)
+DECLARE Index : INTEGER
+Index < 0
+INPUT Data [Index]
+WHILE Index < 200
+Index ‹ Index + 1
+CASE OF (Index MOD 2)
+• : Data|Index] ‹ TO_UPPER (Label)
+1 : Data [Index] + TO_LOWER (Label)
+OTHERWISE : OUTPUT "Alarm 1201"
+ENDCASE
+NEXT Index
+OUTPUT "Completed "
+& Index & " times"
+ENDPROCEDURE
+(a) (i) The pseudocode contains two syntax errors and one other error.
+Identify the errors.
+Syntax error 1
+Syntax error 2
+Other error ..
+[3]
+(ii) The procedure contains a statement that is not needed.
+Identify the pseudocode statement and explain why it is not needed.
+Statement
+Explanation
+12]
+© UCLES 2024
+9618/22/M/J/24
+
+--- Page 11 ---
+11
+(b) After correcting all syntax errors, the pseudocode is translated into program code which
+compiles without generating any errors.
+When the program is executed it unexpectedly stops responding.
+Identify the type of error that has occurred.
+....... [1]
+© UCLES 2024
+9618/22/M/J/24
+Turn over
+
+--- Page 12 ---
+12
+6 A music player stores music in a digital form and has a display which shows the track being
+played.
+(a) Up to 16 characters can be displayed. Track titles longer than 16 characters will need to be
+trimmed as follows:
+•
+Words must be removed from the end of the track title until the resulting title is less than
+14 characters.
+:
+When a word is removed, the space in front of that word is also removed.
+Three dots are added to the end of the last word displayed when one or more words
+have been removed.
+The table below shows some examples:
+Original title
+1
+2
+3
+4
+5
+6
+Display string
+78
+11
+12 13 14 15 16
+Bat out of Hull
+B
+a
+t
+u
+t
+f
+Bohemian Symphony
+B
+h
+e
+m
+i
+a
+n
+•
+Paperbook Writer
+P
+a
+P
+e
+r
+W
+r
+t
+e
+r
+Chris Sings the Blues
+C
+h
+i
+S
+i
+n
+S
+•
+•
+Green Home Alabama
+G
+r
+e
+e
+n
+H o
+m
+e
+A function Trim () will:
+•
+take a string representing the original title
+return the string to be displayed.
+Assume:
+•
+Words in the original title are separated by a single space character.
+There are no spaces before the first word or after the last word of the original title.
+The first word of the original title is less than 14 characters.
+© UCLES 2024
+9618/22/M/J/24
+
+--- Page 13 ---
+13
+Write pseudocode for the function Trim ().
+[7]
+© UCLES 2024
+9618/22/M/J/24
+[Turn over
+
+--- Page 14 ---
+14
+(b) Music is stored as a sequence of digital samples.
+Each digital sample is a denary value in the range 0 to 99999999 (8 digits).
+The samples are to be stored in a text file. Each sample is converted to a numeric string and
+32 samples are concatenated (joined) to form a single line of the text file.
+Each numeric string is 8 characters in length; leading 'O' characters are added as required.
+Example:
+Sample
+Denary value
+2
+3
+456
+48
+37652
+String
+00000456"
+00000048"
+00037652"
+32
+673
+00000673"
+The example samples will be stored in the text file as a single line:
+»000004560000004800037652..00000673"
+(i) Identify one drawback of adding leading 'O' characters to each numeric string
+[1]
+(ii)
+Suggest an alternative method of storing the samples which does not involve adding
+leading 'O' characters but which would still allow each individual sample to be extracted.
+11]
+(iii)
+State one drawback of the alternative method given in part (b)(ii).
+11]
+© UCLES 2024
+9618/22/M/J/24
+
+--- Page 15 ---
+15
+BLANK PAGE
+© UCLES 2024
+9618/22/M/J/24
+Turn over
+
+--- Page 16 ---
+16
+7 % A fitness club has a computerised membership system.
+The system stores information for each club member: name, home address, email address, mobile
+phone number, date of birth and exercise preferences.
+Many classes are full, and the club creates a waiting list for each class. The club adds details of
+members who want to join a class that is full to the waiting list for that class.
+When the system identifies that a space is available in one of the classes, a new module will send
+a text message to each member who is on the waiting list.
+(a) Decomposition will be used to break the new module into sub-modules (sub-problems).
+Identify three sub-modules that could be used in the design and describe their use.
+Sub-module 1
+Use
+Sub-module 2
+Use
+Sub-module 3
+Use
+[3]
+© UCLES 2024
+9618/22/M/J/24
+
+--- Page 17 ---
+17
+(b) A different part of the program is represented by the following state-transition diagram.
+Input-B | Output-W
+Input-B
+Input-B
+START
+S1
+Input-A
+S3
+Input-A | Output-W
+S2
+S5
+Input-A
+Input-A | Output-X
+Input-B | Output-Y
+S4
+(i) Complete the table to show the inputs, outputs and next states.
+Assume that the current state for each row is given by the 'Next state' on the previous
+row. For example, the first Input-A is made when in state S1.
+If there is no output for a given transition, then the output cell should contain 'none'.
+The first two rows have been completed
+Input
+Output
+Input-A
+Next state
+S1
+S3
+none
+Output-W
+none
+Input-B
+Input-A
+S4
+[5]
+(i) Identify the input sequence that will cause the minimum number of state changes in the
+transition from S1 to S4.
+..... 11]
+© UCLES 2024
+9618/22/M/J/24
+[Turn over
+
+--- Page 18 ---
+18
+8 A teacher is designing a program to process pseudocode projects written by her students.
+Each student project is stored in a text file.
+The process is split into a number of stages. Each stage performs a different task and creates a
+new file.
+For example:
+File name
+MichaelAday_src.txt
+MichaelAday_S1.txt
+MichaelAday_S2.txt
+Comment
+Student project file produced by student Michael Aday
+File produced by stage 1
+File produced by stage 2
+(a) Suggest a reason why the teacher's program has been split into a number of stages and give
+the benefit of producing a different file from each stage.
+Reason
+Benefit
+12]
+(b) The teacher has defined the first program module as follows:
+Module
+DeleteSpaces ()
+Description
+• called with a parameter of type string representing a line of
+pseudocode from a student's project file
+• returns the line after removing any leading space characters
+The following example shows a string before and after the leading
+spaces have been removed:
+Before: "
+After:
+IF X2 > 13 THEN"
+"IF X2 > 13 THEN"
+© UCLES 2024
+9618/22/M/J/24
+
+--- Page 19 ---
+19
+Complete the pseudocode for module DeleteSpaces ().
+FUNCTION DeleteSpaces (Line : STRING) RETURNS STRING
+ENDFUNCTION
+[6]
+© UCLES 2024
+9618/22/M/J/24
+[Turn over
+
+--- Page 20 ---
+20
+(c) Two modules are defined:
+Module
+DeleteComment ()
+(already written)
+Stage_2 ()
+Description
+• called with a parameter of type string representing a line of
+seudocode from a student's project fi
+returns the line after removing any commer
+• called with two parameters:
+o a string representing an output file name
+• copies each line from the input file to the existing output file having
+first removed all leading spaces and comments from that line
+• does not write blank lines to the output file
+• outputs a final message giving the number of blank lines removed
+© UCLES 2024
+9618/22/M/J/24
+
+--- Page 21 ---
+21
+Write pseudocode for module Stage_2 |).
+Modules DeleteComment () and DeleteSpaces () must be used in your solution.
+18]
+© UCLES 2024
+9618/22/M/J/24
+
+--- Page 22 ---
+22
+BLANK PAGE
+© UCLES 2024
+9618/22/M/J/24
+
+--- Page 23 ---
+23
+BLANK PAGE
+© UCLES 2024
+9618/22/M/J/24
+
+--- Page 24 ---
+24
+BLANK PAGE
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2024
+9618/22/M/J/24

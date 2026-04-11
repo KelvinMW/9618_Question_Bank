@@ -1,0 +1,465 @@
+--- Page 1 ---
+* 0000800000001*
+ELS Cambridge Assessment
+International Education
+7
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+9618/31
+May/June 2025
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided.
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages. Any blank pages are indicated
+DC (DE/CT) 342251/3
+© UCLES 2025
+L
+[Turn over
+J
+
+--- Page 2 ---
+* 0000800000002*
+Г
+1
+2
+A programmer is writing a program to manage bookings for a small taxi company. The programmer
+requires some user-defined data types.
+(a) Write a pseudocode statement to declare the enumerated data type, Vehicle, to hold the
+identity code of each of the company's taxis:
+M100, M230, Т101, Т102, Т120, Т150
+12]
+(b) Write pseudocode statements to declare the composite data type, Booking, to hold data
+about taxi bookings. The data required includes:
+•
+•
+booking number (any combination of letters and numbers)
+destination
+client name
+client telephone number
+date of departure
+address for pick-up
+the identity code of the taxi used.
+Use the most appropriate data type in each case, including the enumerated data type from
+part (a).
+.... [4]
+LOUCLES 2025
+9618/31/M/J/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 3 ---
+* 0000800000003*
+DO NOT WRITE IN THIS MARGIN
+3
+7
+2
+Numbers are stored in a computer using binary floating-point representation with:
+• 10 bits for the mantissa
+• 6 bits for the exponent
+• two's complement form for both the mantissa and the exponent.
+(a) Write the normalised floating-point representation of the following binary number using this
+system.
+0.00000011010111
+DO NOT WRITE IN THIS MARGIN
+Mantissa
+Exponent
+12]
+(b) Calculate the normalised binary floating-point representation of -25.3125 in this system.
+Show your working.
+DO NOT WRITE IN THIS MARGIN
+Mantissa
+Exponent
+Working
+DO NOT WRITE IN THIS MARGIN
+14]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/31/M/J/25
+[Turn over
+
+--- Page 4 ---
+* 0000800000004*
+3
+4
+(a) The Application Layer and Transport Layer are two layers of the TCP/IP protocol suite.
+Describe the purpose of the Application Layer and the purpose of the Transport Layer.
+Purpose of Application Layer .
+7
+DO NOT WRITE IN THIS MARGIN
+Purpose of Transport Layer
+DO NOT WRITE IN THIS MARGIN
+[5]
+(b) Describe packet switching as a method of transmitting messages across the internet.
+DO NOT WRITE IN THIS MARGIN
+14]
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2025
+9618/31/M/J/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 5 ---
+* 0000800000005*
+DO NOT WRITE IN THIS MARGIN
+4
+5
+(a) A linked list of nodes is used to store an ordered list of integers. Each node consists of the
+data, a left pointer and a right pointer, for example:
+Left pointer
+Data Right pointer
+20
+7
+DO NOT WRITE IN THIS MARGIN
+The linked list will be organised as a binary tree.
+- 1 is used to represent a null pointer.
+Complete the binary tree, including null pointers, to show how the data will be organised after
+the following integers have been added:
+6, 15, 41, 66
+Root pointer
+DO NOT WRITE IN THIS MARGIN
+36
+12
+40
+DO NOT WRITE IN THIS MARGIN
+[4]
+(b) Describe what is meant by recursion.
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/31/M/J/25
+12]
+[Turn over
+
+--- Page 6 ---
+000080000006*
+6
+(c) A binary tree is a suitable Abstract Data Type (ADT) that a designer can implement using
+recursive algorithms.
+Identify one other ADT that a designer can implement using recursive algorithms.
+... 11]
+5 This truth table represents a logic circuit.
+INPUT
+A
+B
+0
+C
+D
+OUTPUT
+Z
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+(a) Write the Boolean logic expression that corresponds to the given truth table as the
+sum-of-products.
+Z=
+LOUCLES 2025
+9618/31/M/J/25
+DO NOT WRITE IN THIS MARGIN
+12]
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 7 ---
+0000800000007*
+DO NOT WRITE IN THIS MARGIN
+7
+7
+(b) (i) Complete the Karnaugh map (K-map) for the given truth table.
+AB
+CD
+00
+01
+11
+10
+DO NOT WRITE IN THIS MARGIN
+00
+01
+11
+10
+12]
+12]
+(ii) Draw loop(s) around appropriate group(s) in the K-map to produce an optimal
+sum-of-products.
+(iii) Write the Boolean logic expression from your answer to part (b)(ii) as the simplified
+sum-of-products.
+Z=..
+DO NOT WRITE IN THIS MARGIN
+[2]
+6
+Describe the process of executing a program using an interpreter.
+DO NOT WRITE IN THIS MARGIN
+[4]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/31/M/J/25
+[Turn over
+
+--- Page 8 ---
+000080000008*
+8
+7
+Several syntax diagrams are shown.
+uppercase
+lowercase
+A
+symbol
+digit
+#
+&
+%
+passcode
+uppercase
+lowercase
+symbol
+digit
+OUCLES 2025
+9618/31/M/J/25
+DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGINS
+
+--- Page 9 ---
+000080000009*
+DO NOT WRITE IN THIS MARGIN
+9
+7
+(a) State why each passcode is invalid for the given syntax diagrams.
+#Jd7
+Reason
+Có6A
+Reason
+DO NOT WRITE IN THIS MARGIN
+12]
+(b) Complete the Backus-Naur Form (BNF) for < uppercase › and ‹passcode›.
+‹uppercase>
+:: =
+‹passcode>
+: : =
+DO NOT WRITE IN THIS MARGIN
+[4]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/31/M/J/25
+[Turn over
+
+--- Page 10 ---
+0000800000010*
+10
+7
+8
+(a) Describe what is meant by multi-tasking and how it benefits process management.
+DO NOT WRITE IN THIS MARGIN
+12]
+(b)
+Explain the function of the shortest remaining time scheduling routine and give a benefit of
+this routine.
+Function
+DO NOT WRITE IN THIS MARGIN
+Benefit
+14]
+DO NOT WRITE IN THIS MARGIN
+9 Secure Socket Layer (SSL) and Transport Layer Security (TLS) are two protocols.
+(a) State two functions of SSL/TLS.
+1
+2
+[2]
+DO NOT WRITE IN THIS MARGIN
+(b) Give two examples of situations where the use of SSL/TLS would be appropriate.
+1
+2
+[2]
+LOUCLES 2025
+9618/31/M/J/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 11 ---
+* 0000800000011*
+DO NOT WRITE IN THIS MARGIN
+11
+7
+10
+(a) Describe the purpose of a graph when used in an Artificial Intelligence (Al) system.
+12]
+DO NOT WRITE IN THIS MARGIN
+(b) Explain the use of artificial neural networks in Deep Learning.
+DO NOT WRITE IN THIS MARGIN
+14]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/31/M/J/25
+[Turn over
+
+--- Page 12 ---
+* 0000800000012*
+12
+11 (a) A medical centre uses objects of the class Appointment to record treatments given ano
+medication prescribed during each doctor's appointment. Some of the attributes required in
+the class are listed in the table.
+Attribute
+DateSeen
+Treatments
+Medications
+Data type
+DATE
+STRING
+STRING
+Description
+date of treatment
+treatments given
+medications prescribed
+Patients are identified by a unique 8-digit number, beginning with the patient's year of birth,
+for example, 20108989.
+Doctors are identified by their name, for example, AN Other.
+Complete the class diagram for Appointment, to include:
+attribute and data type for the identification of the patient
+attribute and data type for the identification of the doctor
+methods to assign date seen, treatments given and medications prescribed
+method to return the date seen and the attributes for the patient and the doctor.
+DateSeen
+Appointment
+: DATE
+Treatments
+Medications
+: STRING
+: STRING
+SetPatientID(PatientNumber : INTEGER)
+SetDoctor (DoctorID : STRING)
+GetTreatments ()
+GetMedications ()
+[5]
+OUCLES 2025
+9618/31/M/J/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 13 ---
+* 0000800000013 *
+DO NOT WRITE IN THIS MARGIN
+13
+(b) (i) Identify the object-oriented programming (OOP) feature whose function includes
+restricting external access to the data.
+7
+11]
+(il) Describe what is meant by the OOP feature inheritance.
+DO NOT WRITE IN THIS MARGIN
+12]
+12
+DO NOT WRITE
+IN THIS MARGIN
+The pseudocode algorithm checks whether a location in a stock file Stocklist. dat is empty
+or not. The location is given by the user. If the location is empty, a suitable message is displayed,
+otherwise the item stored at that location is displayed.
+Complete this file-handling pseudocode algorithm.
+DECLARE Location : INTEGER
+DECLARE Item
+: STRING
+DECLARE Continue : BOOLEAN
+DECLARE Answer : CHAR
+Continue ‹ TRUE
+OPENFILE
+WHILE Continue
+OUTPUT "Enter a location between 1 and 500: "
+INPUT Location
+DO NOT WRITE
+THIS MARGIN
+GETRECORD
+IF Item = "" THEN
+OUTPUT "This record
+I is missing."
+ELSE
+OUTPUT "The item in stock is ",
+ENDIE
+OUTPUT "Another location (Y OI N)?"
+INPUT Answer
+IF Answer <>
+"Y' THEN
+Continue ‹ FALSE
+ENDIF
+ENDWHILE
+DO NOT WRITE IN THIS MARGIN
+OUTPUT "End of program"
+[5]
+LOUCLES 2025
+9618/31/M/J/25
+
+--- Page 14 ---
+* 0000800000014*
+Г
+14
+BLANK PAGE
+LOUCLES 2025
+9618/31/M/J/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 15 ---
+* 0000800000015*
+DO NOT WRITE IN THIS MARGIN
+15
+BLANK PAGE
+7
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/31/M/J/25
+
+--- Page 16 ---
+* 0000800000016*
+Г
+16
+BLANK PAGE
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series. J
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+OUCLES 2025
+9618/31/M/J/25
+DO NOT WRITE IN THIS MARGIN

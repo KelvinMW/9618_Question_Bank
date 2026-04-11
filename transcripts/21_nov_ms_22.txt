@@ -1,0 +1,540 @@
+--- Page 1 ---
+SE Cambridge Assessment
+515 International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 2 Problem Solving & Programming
+MARK SCHEME
+Maximum Mark: 75
+9618/22
+October/November 2021
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2021 series for most
+Cambridge IGCSE ™
+', Cambridge International A and AS Level components and some Cambridge O Level
+This document consists of 10 printed pages.
+© UCLES 2021
+[Turn over
+
+--- Page 2 ---
+9618/22
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2021
+Page 2 of 10
+
+--- Page 3 ---
+9618/22
+Question
+1(a)
+1(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+The process involves:
+2
+Breaking down a problem / task into sub problems / steps / smaller parts
+In order to explain / understand // easier to solve the problem
+3
+Leading to the concept of program modules // assigning problem parts to
+teams
+Max 2
+Answer
+1
+The number of dimensions of ThisArray
+The technical terms for minimum and
+maximum values that variable n may take
+The technical term for the variable n in the
+pseudocode expression.
+Lower bound, upper bound
+Index / Subscript
+One mark per row
+October/November
+2021
+Marks
+2
+3
+1(c)
+1(d)
+Expression
+ASC ('C')
+2 * SIR_IO_NUM ("27")
+INT (27 / 2)
+"Sub" & MID ("Abstraction", 4, 5)
+One mark per row
+Function names must be exactly as shown
+Expression
+PressureOK AND HiFlOW
+Pumpon OR PressureOK
+NOT Pumpon OR (PressureOK AND NOT HiFlow)
+NOT (Pumpon OR PressureOK) AND NOT HiFlow
+1 mark for any two rows correct
+2 marks for all rows correct.
+Evaluates to
+67
+54
+13
+"Subtract"
+4
+Evaluates to
+FALSE
+TRUE
+TRUE
+FALSE
+2
+© UCLES 2021
+Page 3 of 10
+
+--- Page 4 ---
+9618/22
+Question
+2(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+Marks
+5
+START
+Set PosCount,
+NegCount to 0
+Set PosTotal,
+NegTotal to (
+INPUT NextNum
+Is NextNum
+0?
+YES
+NO
+Is NextNum >
+0?
+YES
+Increment PosCount
+NO
+Increment NegCount
+OUTPUT PosCount,
+NegCount
+OUTPUT PosTotal,
+NegTotal
+Set PosTotal to
+PosTotal
++ NextNum
+Set NegTotal to
+NegTotal + NextNum
+END
+One mark for each outlined group.
+Note:
+• Sum and increment steps (bottom-right rectangles) may be in reverse
+order in which case sum group will have two output lines
+•
+Max 4 for non-working solution
+© UCLES 2021
+Page 4 of 10
+
+--- Page 5 ---
+9618/22
+Question
+2(b) (i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November
+2021
+Marks
+2
+2(b) (i)
+One mark for each:
+Life cycle method: Iterative // Rapid Application Development (RAD)
+Reason: Provides a working model / prototype at an early stage for the
+principal to approve / review
+Decisions will be made regarding:
+:
+Data structures
+Algorithms / flowcharts / pseudocode
+Program structure (modules) / use of library routines / module - team
+allocation
+•..
+User interface // Web-page layout / content (for given scenario)
+Testing method / plan
+Choice of programming language / program environment
+Max 3
+Answer
+3
+Question
+3(a)(i)
+Marks
+3
+3(a)(ii)
+3(a)(iii)
+3(a) (iv)
+Pseudocode:
+TYPE Student
+DECLARE StudentID : STRING
+DECLARE Email : STRING
+DECLARE Club 1
+: INTEGER
+DECLARE Club
+INTEGER
+DECLARE
+Club
+3
+: INTEGER
+ENDTYPE
+Mark as follows:
+•
+One mark for TYPE and ENDTYPE
+One mark for Student ID and Email fields as STRING
+•
+One mark for all Club fields as INTEGER
+DECLARE Membership : ARRAY [1:30001 OF Student
+One mark per underlined phrase
+One mark for any one of:
+• Assign a value (of the correct data type) outside the normal range to one
+of the fields
+••
+Assign an empty string to the student ID field / Email field
+or value out of range to any club field
+A number outside the range 1 to 99
+2
+1
+1
+© UCLES 2021
+Page 5 of 10
+
+--- Page 6 ---
+9618/22
+Question
+3(b)
+Question
+4(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+Marks
+7
+PROCEDURE GetIDs ()
+DECLARE Index : INTEGER
+DECLARE ThisClub, Count : INTEGER
+OUTPUT "Please Input Club Number: "
+INPUT ThisClub
+Count < 0
+FOR Index + 1 TO 3000
+IF Membership [Index! Club_1 = Thisclub OR —
+ThisClub OR
+3=
+Count + Count + 1
+OUTPUT Membership [Index] . Student ID
+ENDIF
+NEXT Index
+OUTPUT "There are
+", Count,
+" Students in the club"
+ENDPROCEDURE
+Mark as follows:
+1 Declare and initialise Count
+2
+3
+4
+5
+6
+Prompt and Input club number before the loop
+Loop through 3000 elements
+Compare one club field with number input
+Compare all Club fields with number input
+If number found, OUTPUT of Student ID field and increment count
+7 Final OUTPUT of Count outside the loop
+Note:
+Max 6 if procedure heading and ending missing or incorrect (but allow array
+as parameter)
+Answer
+Marks
+A line number containing a variable being incremented
+The type of loop structure
+The number of functions used
+The number of parameters passed to function
+STR TO NUM ()
+Answer
+19 / 21 / 23
+pre-condition
+3
+1
+5
+The name of a procedure other than Check ()
+Result
+© UCLES 2021
+Page 6 of 10
+
+--- Page 7 ---
+9618/22
+Question
+4(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+Marks
+3
+4(c)(i)
+4(c) (ii)
+One mark per point:
+Indentation / white space / blank lines
+Capitalisation of keywords
+One mark per point:
+Structure: A count-controlled loop
+Justification: The number of iterations is known // repeats for the length of
+Instring
+15,23
+One mark for both line numbers
+2
+1
+© UCLES 2021
+Page 7 of 10
+
+--- Page 8 ---
+9618/22
+Question
+5(a)
+5(b)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+PROCEDURE MakeNewFile (OldFile, NewFile, Status
+: STRING)
+DECLARE Linel, Line2, Line3 : STRING
+DECLARE Numcopied, NumRecs : INTEGER
+NumRecs + 0
+NumCopied < 0
+OPENFILE OldFile FOR READ
+OPENFILE NewFile FOR WRITE
+WHILE NOT EOF (OldFile)
+READFILE OldFile, Linel
+READFILE OldFile, Line2
+READFILE OldFile, Line3
+NumRecs + NumRecs + 1
+IF Line3 <> Status THEN
+WRITEFILE NewFile, Linel
+WRITEFILE
+NewFile,
+Line2
+WRITEFILE
+NewFile, Line3
+NumCopied ‹ NumCopied + 1
+ENDIF
+ENDWHILE
+OUTPUT "File "
+, OldFile
+" contained "
+, NumRecs ,_
+" employee details"
+OUTPUT Numcopied, "
+detamployee sets of details were _
+written to file", NewFile
+CLOSEFILE OldFile
+CLOSEFILE NewFile
+ENDPROCEDURE
+Mark as follows:
+1
+2
+3
+4
+5
+6
+Procedure heading and ending, including parameters
+OPEN OldFile for READ and NewFile for WRITE and subsequently
+CLOSE both files
+Conditional loop until BOF (o1dFile)
+Read three lines from oldFile in a loop
+Compare 3rd line read with Status parameter and if not equal write
+3 lines to NewFile in a loop
+Count number of sets read and those written in a loop
+Final output including both counts and file names with suitable text after a
+loop
+Note:
+MP6: Both counts must have been declared and initialised
+Store all three items on one line
+October/November
+2021
+Marks
+7
+1
+© UCLES 2021
+Page 8 of 10
+
+--- Page 9 ---
+9618/22
+Question
+5(b) (ii)
+Question
+6(a)
+6(b)
+© UCLES 2021
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November
+2021
+Marks
+2
+One mark per point:
+Advantage: Fewer file operations required
+Disadvantage: Algorithm to combine / extract individual data items is more
+complex
+Answer
+FUNCTION FirstRowSet () RETURNS INTEGER
+DECLARE Row, COl : INTEGER
+DECLARE Found: BOOLEAN
+1l array is 1280 × 800
+Row + 1
+Found < FALSE
+WHILE ROW <= 800 AND Found = FALSE // top to bottom
+Col + 1
+WHILE COl <= 1280 AND Found = FALSE |/ left to right
+IF Screen [Row, Coll
+= 1 THEN
+Found + TRUE |/ end function as soon as first
+/ found
+ENDIF
+Col ‹ Col + 1
+ENDWHILE
+Row & Row + 1
+ENDWHILE
+IF Found = FALSE THEN |/ nothing found
+Row t 0
+ENDIF
+RETURN ROW - 1
+ENDFUNCTION
+Mark as follows:
+1
+2
+3
+4
+5
+6
+7
+Function heading and ending and return type
+(Conditional) outer loop 1 to 800 (row)
+(Conditional) inner loop 1 to 1280 // 1280 to 1 (column)
+Reference Screen element and test for = 1 || <> O
+and if true save row number and exit loops
+Increment index variables in both inner and outer loop
+Return Row number or - 1, following a reasonable attempt
+One mark for:
+(A flag is used to) exit the loops // iteration is terminated
+as soon as a Screen element with value 1 is found
+Marks
+7
+2
+Page 9 of 10
+
+--- Page 10 ---
+9618/22
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+6(c)(i)
+October/November
+2021
+Marks
+2
+6(c) (ii)
+6(d)
+One mark for:
+• Parameters) need to be passed to the module to identify the type of
+search
+Search algorithm is controlled by (global) variables / parameters
+Alternative:
+•
+The search algorithms from the original modules are included in the new
+module
+•
+The new module needs to return / store the four values (the results of the
+four searches)
+One mark for advantage and one for disadvantage:
+Advantage: (max 1)
+: Only have to change few module if specification changes
+Less repetitive code / fewer lines of code
+•
+Aids re-usability
+Disadvantage: (max 1)
+• Single module more complex / more error prone / more difficult to
+debug...
+• Single module cannot be split among programmers / teams
+Max 2
+PROCEDURE GetCentre ()
+DECLARE StartRow,
+EndRow, Startcol, Endcol : INTEGER
+StartRow ‹ FirstRowSet ()
+IF StartRow
+= -1 THEN
+CentreRow + -1 // no 'touch' detected
+ELSE
+EndRow ‹ LastRowSet ()
+StartCol ‹ FirstColSet ()
+EndCol ‹ LastColSet ()
+CentreRow < INT ( (StartRow + EndRow) /2)
+CentreCol < INT| (StartCol + EndCol) /2)
+ENDIF
+ENDPROCEDURE
+Mark as follows:
+1 Call <any Set function> and check for - 1 |/ check for no element set
+2
+3
+...and if so set CentreRow to - 1
+Call all 4 Set functions to get 'extremity' values
+4
+Calculate centre row and centre column
+5
+Use of INT () function or DIV operator on values from MP4
+6
+Assign calculated values to CentreRow and Centrecol
+2
+6
+Max 5 if procedure heading and ending missing or incorrect (ignore array if
+passed as a parameter) or any local variables are undefined or of incorrect
+© UCLES 2021
+Page 10 of 10

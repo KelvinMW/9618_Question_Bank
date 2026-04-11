@@ -1,0 +1,630 @@
+--- Page 1 ---
+* CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+MARK SCHEME
+Maximum Mark: 75
+9618/23
+October/November 2024
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2024 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+This document consists of 14 printed pages.
+© Cambridge University Press & Assessment 2024
+[Turn over
+
+--- Page 2 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level
+descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+•
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© Cambridge University Press & Assessment 2024
+Page 2 of 14
+
+--- Page 3 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Mark scheme abbreviations
+//
+underline
+max
+()
+separates alternative words / phrases within a marking point
+separates alternative answers within a marking point
+actual word given must be used by candidate (grammatical variants accepted
+indicates the maximum number of marks that can be awardec
+the word / phrase in brackets is not required, but sets the context
+Note: No marks are awarded for using brand names of software packages or hardware.
+© Cambridge University Press & Assessment 2024
+Page 3 of 14
+
+--- Page 4 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1(a)
+October/November
+2024
+Marks
+4
+1(b)
+Pseudocode example
+FOR Index + 1 IO 3
+IF Safe[Index] = TRUE THEN
+Flap[Index] < 0
+ENDIF
+NEXT Index
+CASE OF Compound (3)
+REPEAT UNTIL AllDone () = TRUE
+WHILE Result [3] <> FALSE
+One mark per row
+Variable
+Available
+Example data value
+TRUE
+Received
+Index
+"18/04/2021"
+100
+One mark per row
+Selection Iteration Subroutine
+r
+r
+r
+3
+Data type
+BOOLEAN
+STRING
+INTEGER
+1(c)
+3
+Expression
+Available AND NOT (Index > 100)
+Index MOD 30
+NUM_TO_STR (Index + "33")
+One mark per row
+Evaluates to
+TRUE
+10
+ERROR
+© Cambridge University Press & Assessment 2024
+Page 4 of 14
+
+--- Page 5 ---
+9618/23
+Question
+2(a)
+2(b)
+Question
+3(a)(i)
+3(a)(ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Answer
+DECLARE Count, Iotal, NextNumber : INTEGER
+Total + 0
+FOR Count + 1 TO 100
+OUTPUT "Input an integer value"
+INPUT NextNumber
+IF NextNumber > O THEN
+Total ‹ Total + NextNumber
+ENDIF
+NEXT Count
+OUTPUT Total
+Mark as follows:
+MP1 Declarations of all variables used
+MP2 Loop for 100 iterations
+Prompt and input a value in a loop and
+Test for value > 0 11>=1 in a loop
+MP5 Sum the Total in a loop
+MP6 Output of Total after the loop
+Max 5 marks
+MP1
+MP2
+Construct: Iteration / Repetition
+Use: To loop through all 100 inputs // To loop 100 times
+ALTERNATIVE:
+MP1 Construct: Selection
+MP2 Use: To test whether the value input is positive
+Answer
+O is not a valid array / List index value // No Oth element in the array
+Marks
+5
+2
+Marks
+1
+O to 200
+1
+© Cambridge University Press & Assessment 2024
+Page 5 of 14
+
+--- Page 6 ---
+9618/23
+Question
+3(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Answer
+Marks
+4
+START
+SET Index TO 1
+NO
+IS Index = 200?
+YES
+SET List [Index] . Pointer TO Index + 1
+SET Index TO Index + 1
+SET List [Index]. Pointer TO 0
+END
+Mark as follows:
+MP1 Use of variable as array index and initialisation to 1 / to first element of
+array
+MP2 Loop for 199 / 200 iterations
+MP3 Assign Index+1 to each pointer field in a loop
+MP4 Assign 0 to 200th pointer field
+© Cambridge University Press & Assessment 2024
+Page 6 of 14
+
+--- Page 7 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(c)
+October/November
+2024
+Marks
+4
+4(a)
+4(b) (i)
+One mark per step:
+MP1 Assign HeadPointer to ThisPointer / Current Pointer // Identify
+first node using headpointer
+MP2 Loop the following until ThisPointer value is 0 (zero) / null pointer
+reached
+MP3
+... Output data (field) from array element at index Thispointer I|
+Output data (field) of the current node / array element
+MP4 ... Assign pointer field from current array element / index / to
+ThisPointer / Current Pointer // Assign pointer field from current
+node to ThisPointer / Current Pointer
+One mark per highlighted part:
+FOR Index + 1 TO 5
+Lower + GB[Index] - 2
+Upper < GB [Index] + 2 // Lower + 4
+IF Mark > Lower AND Mark ≤= Upper THEN
+|/IF Mark ≤= Upper AND Mark >= Lower THEN
+OUTPUT "Check this paper"
+ENDIF
+NEXT Index
+MP1 Use Mark as the index to the Check array I/ to specify an array
+element
+MP2 If value of indexed element is TRUE, then the paper will need to be
+checked
+4
+2
+© Cambridge University Press & Assessment 2024
+Page 7 of 14
+
+--- Page 8 ---
+9618/23
+Question
+4(b) (ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Answer
+Marks
+6
+Example:solution
+PROCEDURE GBInitialise ()
+DECLARE GBIndex, GBMark, ThisIndex : INTEGER
+FOR ThisIndex + 0 TO 75
+Check [ThisIndex] ‹ FALSE | initialise all values
+NEXT ThisIndex
+FOR GBIndex + 1 TO 5
+GBMark < GB [GBIndex]
+FOR ThisIndex + GBMark - 2 TO GBMark + 2
+Check [ThisIndex| ‹ TRUE //Set GBMark ‡ 2 to
+TRUE
+NEXT ThisIndex
+NEXT GBIndex
+ENDPROCEDURE
+Mark as follows:
+MP1
+Procedure heading and ending
+MP2 Initialise Check array to FALSE
+MP3
+Loop through GB array
+MP4
+Extract the GB mark
+MP5 Loop for 5 elements across GBMark I 2 |/ Check if within GBMark
++2
+MP6 Assign each element of Check array to TRUE
+ALTERNATIVE - Example using selection Version 1
+FOR ThisIndex < 0 TO 75
+CASE ThisIndex
+GB [1]
+- 2 TO GB[1] + 2 : Check[ThisIndex]
+< TRUE
+GB [2] - 2 TO GB[2] † 2 : Check[ThisIndex]
+< TRUE
+GB [ 3]
+- 2 TO GB[3] + 2 : Check[ThisIndex]
+- TRUE
+GB [4] - 2 TO GB[4] † 2 : Check[ThisIndex]
+< TRUE
+GB [5]
+- 2 TO GB[5] + 2
+: Check[ThisIndex]
+< TRUE
+OTHERWISE: Check[ThisIndex]
+< FALSE
+ENDCASE
+NEXT ThisIndex
+© Cambridge University Press & Assessment 2024
+Page 8 of 14
+
+--- Page 9 ---
+9618/23
+Question
+4(b)(ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+ALTERNATIVE - Example using selection Version 2
+DECLARE ThisIndex, GBIndex : INTEGER
+DECLARE Lower, Higher : INTEGER
+FOR ThisIndex + 0 TO 75
+For GBIndex ‹ 1 TO 5
+Lower < GB [GBIndex] - 2
+Higher < GB[GBIndex] + 2
+IF ThisIndex ›= Lower
+AND ThisIndex <= Higher
+THEN
+Check [ThisIndex] + TRUE
+ELSE
+Check [ThisIndex] ‹ FALSE
+ENDIF
+NEXT Index
+NEXT ThisIndex
+Mark as follows:
+MP1 Procedure heading and ending
+MP2 Loop through Check array// loop from 0 to 75
+MP3 Attempt at using CASE / Selection structure with five clauses/ five
+checks for range
+MP4
+Extract GB grade
+MP5 Compare ThisIndex with each element in GB array +2
+MP6 Assign each element of Check array to TRUE if in range or FALSE if
+not in range
+October/November
+2024
+Marks
+Question
+5(a)
+Answer
+Marks
+4
+5(b)
+Activity
+Name of life
+cycle stage
+Coding
+A compiler is be used.
+A program that has been released for general use
+is modified
+The dry run method is used.
+The program structure is specified.
+Maintenance
+Testing
+Design
+One mark per row
+One mark for method - two marks for the description
+MP1 Stub testing
+MP2 The modules Iest Al) and Test B () are replaced by dummy
+modules
+MP3 ... which return a known result // An output statement is displayed
+when called (to check it works) // gives expected output
+© Cambridge University Press & Assessment 2024
+Page 9 of 14
+3
+
+--- Page 10 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+6
+October/November
+2024
+Marks
+7
+Loop Solution
+Example solution:
+FUNCTION AdjustClock (ThisYear : INTEGER) RETURNS INTEGER
+DECLARE ThisDayNumber, SundayCount : INTEGER
+DECLARE ThisDate
+: DATE
+ThisDayNumber
+< O
+SundayCount + 0
+REPEAT
+ThisDayNumber < ThisDayNumber + 1
+ThisDate < SETDATE (ThisDayNumber, 3, ThisYear)
+IF DAYINDEX (ThisDate) = 1 THEN
+SundayCount « SundayCount + 1
+ENDIF
+UNTIL SundayCount = 3
+RETURN ThisDayNumber
+ENDFUNCTION
+Mark as follows:
+MP1 Function heading, parameter, ending and return type
+MP2
+MP3
+Declare local integer variable that is used to create a date
+Loop until 3rd Sunday found
+MP4
+Attempt to use both SETDATE () and DAYINDEX () in a loop
+MP5
+Correctly generate value of type DATE using SETDATE () in a loop
+MP6
+Test if value represents a Sunday using DAYINDEX () in a loop
+MP7 Increment Sunday count in a loop and initialised correctly before loop
+MP8
+Return day number of third Sunday
+Max 7 marks
+Non-loop solution
+Example solution:
+FUNCTION AdjustClock (ThisYear : INTEGER) RETURNS INTEGER
+DECLARE FirstDayIndex: INTEGER
+DECLARE ThisDate : DATE
+ThisDate ‹ SETDATE (1, 3, ThisYear)
+FirstDayIndex ‹ DAYINDEX (ThisDate)
+IF FirstDayIndex = 1 THEN
+ThirdSunday ‹ FirstDayIndex + 14 //First day is
+Sunday
+ELSE
+ENDIF
+RETURN Thirdsunday
+ENDFUNCTION
+ThirdSunday ‹ 23 - FirstDayIndex // Other days
+© Cambridge University Press & Assessment 2024
+Page 10 of 14
+
+--- Page 11 ---
+9618/23
+Question
+6
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Answer
+Marks
+Mark as follows:
+MP1 Function heading, parameter, ending and return type
+MP2 Declare local integer variable that is used to hold a day number
+MP4 Attempt to use both SEIDATE () and DAYINDEX ()
+MP5 Correctly generate value of type DATE using SETDATE () for first of
+March / specific day in March
+MP6 Test if date represents a Sunday / specific day using DAYINDEX ()
+and calculate third Sunday // Correctly calculate third Sunday for a
+value returned by DAYINDEX () for one day
+MP7 Calculate third Sunday for other six days
+MP8 Return day number of third Sunday
+Max 7 marks
+Question
+7(a)
+Answer
+Marks
+2
+One mark per answer:
+MP1 Analysis
+MP2 Named document, examples include:
+A requirement specification
+Definition of System Objectives
+• List of problems with existing system
+• Survey results
+• Feasibility study
+Interview notes
+Max 2 marks
+© Cambridge University Press & Assessment 2024
+Page 11 of 14
+
+--- Page 12 ---
+9618/23
+Question
+7(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Answer
+Marks
+4
+One mark for name and use
+Mark as follows:
+Examples include:
+Sub-module: ScanCard () / GetID ()
+Use: Read the barcode from the loyalty card / Get the customer ID from the
+barcode
+Sub-module: GetPoints ()
+Use: Get the number of points the customer has
+Sub-module: ExchangePoints () / UpdateCard ()
+Use: Reduce the number of loyalty points
+Sub-module: GetDiscount () / CalculateDiscount ()
+Use: Calculate the discount
+Sub-module: CalculatePoints ()
+Use: Calculate points (following a purchase)
+Sub-module: UpdatePoints ()
+Use: Update total points a customer has (following a purchase)
+Sub-module: ShowDiscount ()
+Use: Display the discount
+Max 4 marks
+© Cambridge University Press & Assessment 2024
+Page 12 of 14
+
+--- Page 13 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+8(a)
+October/November
+2024
+Marks
+7
+Example solution
+PROCEDURE Count (ThisPlayer : INTEGER, ThisRole
+: STRING)
+DECLARE Index, Num, Total : INTEGER
+Num < O
+Total + 0
+FOR Index < 1 IO 45
+IF Character[Index].Player = ThisPlayer ANI
+Character[Index].Role = ThisRole THEN
+Num < Num + 1
+Total ‹ Total + Character[Index].Skilllevel
+NEXT Index
+IF Num > O THEN
+OUTPUT "Player
+", ThisPlayer,
+" has "
+, Num,
+characters with the role of
+ThisRole,
+" and the total skill level is
+Total
+ELSE
+OUTPUT "No characters with that role are
+assigned to this player"
+ENDIF
+ENDPROCEDURE
+MP1
+Initialisation of local integers for Num and Total
+MP2 Loop through 45 elements
+MP3 Attempt to check Player and Role fields in a loop
+MP4
+Correctly compare Player field with parameter in a loop
+MP5
+Correctly compare Role field with parameter in a loop
+MP6
+... if player and role found, increment Num and sum Skill Total in a
+loop
+Test for any matches after the loop
+MP8 Both possible OUTPUT statements correctly formed following an
+attempt at MP6 but outputting one only
+Max 7 marks
+© Cambridge University Press & Assessment 2024
+Page 13 of 14
+
+--- Page 14 ---
+9618/23
+Question
+8(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Answer
+Marks
+7
+8(c)
+Example solution:
+PROCEDURE Restore ()
+DECLARE Index
+DECLARE Line
+:
+INTEGER
+: STRING
+OPENFILE "SaveFile.txt" FOR READ
+FOR Index < 1 TO 45
+READFILE "SaveFile.txt", Line
+Character|Index|. Player ‹ STR_TO_NUM (Extract (Line,
+1))
+Character[Index].Role + Extract (Line, 2)
+Character[Index].Name ‹ Extract (Line, 3)
+Character[Index|. Skil1 + STR_TO_NUM(Extract (Line,
+NEXT Index
+CLOSEFILE "SaveFile.txt"
+ENDPROCEDURE
+Mark as follows:
+MP1 Open the file in read mode and subsequently close
+MP2
+Loop through 45 elements
+MP3
+MP4
+Read a line from the file in a loop
+Attempt to use Extract () in a loop
+MP5 Correct use of Extract () for all fields in a loop
+MP6
+Use of STR_TO_NUM () on Player and Skill in a loop
+MP7
+Completely correct extraction and assignment of all fields in a loop
+MP1
+The Character array / character data can be saved before the
+program is closed
+MP2
+Allowing the game to continue using the same data / from the point it
+was saved
+2
+© Cambridge University Press & Assessment 2024
+Page 14 of 14

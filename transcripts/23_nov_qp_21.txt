@@ -1,0 +1,500 @@
+--- Page 1 ---
+5 Cambridge Assessmen
+shes International Educatior
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+9618/21
+October/November 2023
+2 hours
+6 CO
+You must answer on the question paper.
+You will need: Insert (enclosed)
+INSTRUCTIONS
+• Answer all questions.
+• Use a black or dark blue pen.
+• Write your name, centre number and candidate number in the boxes at the top of the page.
+• Write your answer to each question in the space provided
+• Do not use an erasable pen or correction fluid.
+• Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+• The insert contains all the resources referred to in the questions.
+This document has 20 pages. Any blank pages are indicated
+DC (LK/SG) 315866/3
+© UCLES 2023
+[Turn over
+
+--- Page 2 ---
+2
+Refer to the insert for the list of pseudocode functions and operators.
+1 The following pseudocode represents part of the algorithm for a program:
+CASE OF ThisValue
+< 30
+: Level + "Low"
+/ less than 30
+Check + 1
+< 20
+: Level + "Very Low"
+/ less than 20
+Check + ThisValue / 2
+30 TO 40 : Level +
+"Medium"
+11 between 30 and 40
+Check + ThisValue / 3
+Data [ThisValue] ‹ Data[ThisValue] + 1
+Level + "High"
+> 40
+ENDCASE
+(a) Complete the table by writing the answer for each row:
+Answer
+The value assigned to Level when ThisValue is 40
+The value assigned to Check when ThisValue is 36
+The value assigned to Level when ThisValue is 18
+The number of elements in array Data that may be incremented
+[4]
+(b) The pseudocode contains four assignments to variable Level. One of these assignments
+will never be performed
+Identify this assignment and explain why this is the case.
+13]
+(c) The following line is added immediately before the ENDCASE statement:
+OTHERWISE
+: Level + "Undefined"
+State why this assignment is never performed.
+[1]
+© UCLES 2023
+9618/21/0/N/23
+
+--- Page 3 ---
+3
+(d) Give the appropriate data types for the variables ThisValue, Check and Level.
+ThisValue
+Check
+Level
+[3]
+2 (a) An algorithm is expressed as follows:
+:
+input 100 numbers, one at a time
+keep a total of all numbers input that have a value between 30 and 70 inclusive and
+output this total after the last number has been input.
+Outline, using stepwise refinement, the five steps for this algorithm which could be used to
+produce pseudocode.
+Do not use pseudocode statements in your answer.
+Step 1
+Step 2
+Step 3
+Step 4
+Step 5
+(b) Sequence is one programming construct.
+Identify two other programming constructs that will be required when the algorithm is
+converted into pseudocode.
+Construct 1
+Construct 2
+© UCLES 2023
+9618/21/0/N/23
+12]
+[Turn over
+
+--- Page 4 ---
+3
+4
+The diagram represents an Abstract Data Type (ADT).
+The operation of this stack may be summarised as follows:
+: The Toporstack pointer points to the last item added to the stack.
+The BottomofStack pointer points to the first item on the stack.
+Stack
+D1
+D3
+D4
+D5
+D2
++ TopofStack
+‹ BottomOfStack
+(a) The stack is implemented using two variables and a 1D array of 8 elements as shown.
+The variables are used to reference individual elements of the array, in such a way that:
+: the array is filled from the lowest indexed element towards the highest
+all the elements of the array are available for the stack.
+Complete the diagram to represent the state of the stack as shown above.
+Array
+element
+8
+7
+6
+5
+4
+3
+2
+1
+Data
+Variable
+Topofstack
+BottomOfStack
+© UCLES 2023
+9618/21/0/N/23
+[3]
+
+--- Page 5 ---
+5
+(b) A function Push () will add a value onto the stack by manipulating the array and variables in
+part (a).
+Before adding a value onto the stack, the algorithm will check that space is available.
+If the value is added to the stack, the function will return TRUE, otherwise it will return FALSE.
+The algorithm is expressed in five steps.
+Complete the steps.
+If
+2. Otherwise
+Use Topofstack as an
+4.
+Set the element at this
+5. Return
+..... then return FALSE
+........ Topofstack
+.... to the array.
+... to the
+being added.
+[5]
+© UCLES 2023
+9618/21/0/N/23
+[Turn over
+
+--- Page 6 ---
+6
+4 A global array is declared in pseudocode as follows:
+DECLARE Data : ARRAY[1:150] OF STRING
+A function TooMany () will:
+1. take two parameters:
+a string (the search string)
+an integer (the maximum value)
+2. count the number of strings in the array that exactly match the search string
+3.
+return TRUE if the count is greater than the maximum value, otherwise will return FALSE
+(a) Write pseudocode for the function TooMany ().
+[6]
+© UCLES 2023
+9618/21/0/N/23
+
+--- Page 7 ---
+7
+(b) The global array is changed to a 2D array, organised as 150 rows by 2 columns. It is declared
+in pseudocode as follows:
+DECLARE Data : ARRAY[1:150, 1:2] OF STRING
+The algorithm for the function in part (a) is changed. Strings will only be counted if both of
+the following conditions are true:
+The current row is an even number.
+The search string exactly matches the value in either column.
+Write pseudocode to check these conditions.
+Assume that the row index is contained in variable Row and the search string in variable
+Search.
+13]
+© UCLES 2023
+9618/21/0/N/23
+Turn over
+
+--- Page 8 ---
+8
+5 An algorithm is designed to find the smallest numeric value from an input sequence and count
+how many numeric values have been input.
+An example of an input sequence is:
+23, AB56, 17, 23ZW, 4, 10, END
+Numeric input values are all integers and non-numeric input is ignored, except for the string "END"
+which is used to terminate the sequence.
+The algorithm is expressed in pseudocode as shown:
+DECLARE NextInput : STRING
+DECLARE Min, Count, Num : INTEGER
+Min + 999
+Count + 0
+REPEAT
+INPUT NextInput
+IF IS_NUM (NextInput) = TRUE THEN
+Num • STR_TO_NUM (NextInput)
+IF Num > Min THEN
+Min + Num
+ENDIF
+Count + Count & 1
+ENDIF
+UNTIL NextInput + "END"
+OUTPUT "The minimum value is ", Min, " and the count was ", Count
+(a) The pseudocode contains three errors due to the incorrect use of operators.
+Identify each error and state the correction required.
+2 ....
+3
+13]
+© UCLES 2023
+9618/21/0/N/23
+
+--- Page 9 ---
+9
+(b) The operator errors are corrected and the algorithm is tested as follows:
+The input sequence:
+18, 4, ONE, 27, 189, ERIC, 3, 65, END
+produces the output:
+The minimum value is 3 and the count was 6
+The algorithm is tested with a different test data sequence. The sequence contains a mix
+of integer and non-numeric values. It is terminated correctly but the algorithm produces
+unexpected results.
+(i) Explain the problem with the algorithm.
+12]
+(ii) Give a sequence of four test data values that could be input to demonstrate the problem.
+Value 1
+Value 2
+Value 3
+Value 4
+12]
+© UCLES 2023
+9618/21/0/N/23
+[Turn over
+
+--- Page 10 ---
+10
+6 The pseudocode OUTPUT command starts each output on a new line.
+(a) A new procedure MyOutput () will take a string and a Boolean parameter.
+MyOutput () may be called repeatedly and will use concatenation to build a string using a
+global variable Mystring, up to a maximum length of 255 characters.
+Mystring will be output in either of these two cases:
+1. The Boolean parameter value is TRUE
+2. The resulting string (after concatenation) would be longer than 255 characters.
+If MyString is not output, the string is concatenated with MyString.
+For example, the calls to MyOutput () given below would result in the output as shown:
+Myoutput ("Hello "
+MyOutput ("ginger ", FALSE)
+Myoutput ("cat", TRUE)
+Myoutput ("How
+are you?", TRUE)
+Resulting output:
+Hello ginger cat
+How are you?
+Notes:
+MyString is initialised to an empty string before MyOutput () is called for the first time.
+No string passed to MyOutput () will be longer than 255 characters.
+© UCLES 2023
+9618/21/0/N/23
+
+--- Page 11 ---
+11
+Write pseudocode for Myoutput () .
+17]
+(b) The design of the procedure given in part (a) is modified and MyString is changed from a
+global to a local variable declared in MyOutput ().
+When the modified procedure is converted into program code, it does not work as expected.
+Explain why it does not work as expected.
+[2]
+© UCLES 2023
+9618/21/0/N/23
+[Turn over
+
+--- Page 12 ---
+12
+7 An algorithm is represented by a state-transition diagram.
+The table shows the inputs, outputs and states for the algorithm:
+Current state
+S1
+S2
+S5
+S5
+S5
+S1
+S3
+Input
+A1
+A3
+A2
+A1
+A4
+A3
+A9
+A9
+Output
+X1
+none
+X4
+X1
+X2
+none
+X9
+X9
+Next state
+S2
+S5
+S5
+S2
+S3
+S4
+Complete the state-transition diagram to represent the information given in the table.
+A1 |X1
+START
+S1
+A3
+© UCLES 2023
+9618/21/0/N/23
+[5]
+
+--- Page 13 ---
+13
+BLANK PAGE
+© UCLES 2023
+9618/21/0/N/23
+Turn over
+
+--- Page 14 ---
+8
+14
+A class of students are developing a program to send data between computers. Many computers
+are connected together to form a wired network. Serial ports are used to connect one computer to
+another.
+Each computer:
+•
+•
+is assigned a unique three-digit ID
+has three ports, each identified by an integer value
+is connected to between one and three other computers.
+Messages are sent between computers as a string of characters organised into fields as shown:
+<STX>‹DestinationID><SourceID><Data><ETX>
+Field
+number
+Field name
+Description
+n/a
+STX
+DestinationID
+2
+SourceID
+3
+Data
+n/a
+ETX
+a single character marking the start of the message
+(ASCII value 02)
+three numeric characters that identify the destination computer
+three numeric characters that identify the source computer
+a variable length string containing the data being sent
+(Minimum length is 1 character)
+a single character marking the end of the message
+(ASCII value 03)
+For example, the following message contains the data "Hello Kevin" being sent from computer
+"101" to computer "232":
+<STX>"232101Hel1o Kevin"<ETX>
+Each computer will run a copy of the same program. Each program will contain a global variable,
+MyID of type string, that contains the unique ID of the computer in which the program is running.
+The programmer has defined the first two program modules as follows:
+Module
+Transmit ()
+(already written)
+SendFile ()
+Description
+• takes two parameters:
+o a string containing a message
+o an integer containing a port number
+• transmits the message using the given port
+• takes three parameters:
+o a string containing a text file name
+o a string containing a Destination ID
+o an integer containing a Port number
+• transmits the file one line at a time
+• transmits a final message with data string "****"
+© UCLES 2023
+9618/21/0/N/23
+
+--- Page 15 ---
+15
+(a) Write pseudocode for module SendFile ().
+Assume:
+module Transmit () has already been written and is used to transmit a message
+the value of MyID may be used as SourceID
+the file specified contains no blank lines
+the file specified does not contain the line "****"
+.... 17]
+© UCLES 2023
+9618/21/0/N/23
+[Turn over
+
+--- Page 16 ---
+16
+(b) Module SendFile () is used to copy a file from one computer to another
+A module within the program running on the destination computer will receive the data and
+write it to a new file.
+Explain why module SendFile () transmits the message with data string "****" after the
+last line of the file.
+12]
+(c) One of the text files to be sent contains several blank lines (lines that do not contain any text).
+(i) Explain why this is a problem.
+12]
+(ii) Explain how the message format could be changed to allow a blank line to be sent.
+12]
+© UCLES 2023
+9618/21/0/N/23
+
+--- Page 17 ---
+17
+BLANK PAGE
+Question 8(d) starts on page 18.
+© UCLES 2023
+9618/21/0/N/23
+[Turn over
+
+--- Page 18 ---
+18
+(d) A new module has been defined:
+Module
+Description
+GetField ()
+• takes two parameters:
+o a string containing a message
+o an integer containing a field number
+• If the field number is valid (in the range 1 to 3, inclusive), it
+returns a string containing the required field, otherwise it returns
+an empty string.
+As a reminder, a message is defined as follows:
+<STX><DestinationID><SourceID><Data><ETX>
+Field
+number
+Field name
+Description
+Not applicable STX
+1
+2
+DestinationID
+SourceID
+3
+Data
+Not applicable ETX
+a single character marking the start of the message
+(ASCIl value 02)
+three numeric characters that identify the destination computer
+three numeric characters that identify the source computer
+a variable length string containing the data being sent
+(Minimum length is 1 character)
+a single character marking the end of the message
+(ASCIl value 03)
+© UCLES 2023
+9618/21/0/N/23
+
+--- Page 19 ---
+19
+Write pseudocode for module GetField ().
+[6]
+© UCLES 2023
+9618/21/0/N/23
+
+--- Page 20 ---
+20
+BLANK PAGE
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2023
+9618/21/0/N/23

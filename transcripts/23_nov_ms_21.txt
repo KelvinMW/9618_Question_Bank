@@ -1,0 +1,437 @@
+--- Page 1 ---
+15 Cambridge Assessmen
+sS International Educatior
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+MARK SCHEME
+Maximum Mark: 75
+9618/21
+October/November 2023
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2023 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+This document consists of 10 printed pages.
+© UCLES 2023
+[Turn over
+
+--- Page 2 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+•
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2023
+Page 2 of 10
+
+--- Page 3 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Mark scheme abbreviations
+1 separates alternative words / phrases within a marking point
+Il separates alternative answers within a marking point
+underline actual word given must be used by the candidate (grammatical variants accepted)
+max indicates the maximum number of marks that can be awarded
+() the word / phrase in brackets is not required but sets the context
+© UCLES 2023
+Page 3 of 10
+
+--- Page 4 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1(a)
+One mark per row:
+October/November
+2023
+Marks
+4
+The value assigned to Level when ThisValue is 40
+The value assigned to Check when Thi sValue is 36
+The value assigned to Level when ThisValue is 18
+The number of elements in array Data that may be
+incremented
+Answer
+"Medium"
+12
+"Low"
+11
+1(b)
+1(c)
+1(d)
+One mark for identifying assignment:
+MP1 Level ‹ "Very Low" // the level is assigned value "very low"
+Explanation points:
+MP2 because CASE clauses are checked in sequence // because of the order
+of the clauses
+MP3 a value < 30 satisfies the first clause // Clause '≤ 20' will never be tested
+MP1 all of the possible values are addressed via all / four / three / the other
+clauses // there are no other possible values to map to OTHERWISE
+One mark per point:
+...
+ThisValue: INTEGER
+Check:
+REAL
+Level:
+STRING
+3
+1
+3
+© UCLES 2023
+Page 4 of 10
+
+--- Page 5 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+2(a)
+October/November
+2023
+Marks
+5
+2(b)
+Max 5 marks
+MP1 Set total to zero
+MP2 Input a number
+MP3 Check if number greater than 29 and less than 71
+MP4 ... if check is true - add number to total
+MP5 Repeat from step 2 99 times // for a total of 100 iterations
+MP1 An iterative construct // a (count-controlled) loop
+MP2 A selection construct // an IF statement
+Answer
+Question
+3(a)
+Array
+element
+8
+7
+6
+Data
+2
+Marks
+3
+3(b)
+D1
+D3
+3
+2
+1
+D4
+Variables
+Topofstack
+Bottomofstack
+5
+1
+D5
+D2
+MP a pols in theatre and of in sent containing D1
+MP3 BottomofStack value is index of element containing D2
+MP1 If TopofStack = 8 // (stack) full then return FALSE
+MP2 Otherwise, increment TopofStack
+MP3 Use TopofStack as an index to the Array
+MP4 Set the element at this index / location / position to the value / data /
+item being added
+MP5 Return TRUE
+5
+© UCLES 2023
+Page 5 of 10
+
+--- Page 6 ---
+9618/21
+Question
+4(a)
+4(b)
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+FUNCTION IooMany (Search : STRING, Max : INTEGER) RETURNS
+BOOLEAN
+DECLARE Count, Index : INTEGER
+Count < 0
+FOR Index < 1 TO 150
+IF Data[Index] = Search THEN
+Count + Count + 1
+ENDIF
+NEXT Index
+IF Count > Max THEN
+RETURN TRUE
+ELSE
+RETURN FALSE
+ENDIF
+ENDFUNCTION
+MP1 Function heading, ending and return type
+MP2 Declare Count and Index as integers
+MP3 Initialise Count
+MP4 Loop (any type) for 150 iterations
+MP5 Compare Data element with parameter - if equal, increment Count in a
+loop
+MP6 Compare Count with Max and return Boolean in both cases outside the
+loop
+MP1 Test for row being even number
+MP2 Test for either column value equal to search
+IF ROW MOD 2 = 0 AND
+(Data [Row, 1] = Search OR Data [Row, 2] = Search) THEN
+ALTERNATIVE using nested IFs:
+IF ROW MOD 2 = O THEN
+IF Data[Row, 1] = Search OR Data [Row, 2] = Search THEN
+MP3 Selection structure is either:
+• Single IF statement using AND, or
+• Two nested IFs using AND, or
+• Single IF and the use of a two-iteration loop
+Either of these structures correctly formed scores the mark
+ALTERNATIVE SOLUTION: A FOR loop using 'STEP 2'
+FOR Row + 2 TO 150 / NEXT Row
+STEP 2
+Data [Row, 1] = Search OR Data [Row, 21 = Search) THEN
+Page 6 of 10
+October/November
+2023
+Marks
+6
+3
+
+--- Page 7 ---
+9618/21
+Question
+5(a)
+5(b)(i)
+5(b) (ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Answer
+Marks
+MP1 Num > Min should be Num < Min
+3
+MP2 Count & 1 should be Count + 1
+MP3 Next Input ‹ "END" should be Next Input = "END"
+MP1 If all the numeric input values are greater than 999 // If there are no
+2
+numeric values in the sequence
+MP2 then the minimum will be given as 999 (and not one of the input values)
+Many possible correct answers, for example:
+2
+MP1
+Mixture non-numeric and numeric with 3 or 4 values - with all numerics
+greater than 999
+Examples:
+1325, DOG, 7868, 7615
+/I SNAKE, 3478, SPIDER
+MP2 Final value: END
+Question
+6(a)
+Answer
+PROCEDURE MyOutput (Newstring : STRING, EOL : BOOLEAN)
+IF LENGTH (MyString) + LENGTH (NewString) > 255 THEN
+OUTPUT MyString
+/ Resulting
+string
+would be too
+long
+MyString & Newstring
+ELSE C
+Mystring & Mystring & Newstring
+• // Concat with
+Marks
+7
+MyString
+IF EOL = TRUE THEN
+OUTPUT MyString
+Mystring +""
+ENDIF
+ENDIF
+ENDPROCEDURE
+MP1 Procedure heading, including parameters, and ending
+MP2 Produce concatenated string
+MP3
+....Check whether resulting string would be too long
+MP4 If so, then output old MyString
+MP5 ... and assign NewString to MyString
+MP6 Else concatenate NewString to MyString
+MP7 (test for length < 255) Test EOL - If TRUE then Output
+MP&... and reset Mystring to empty string
+© UCLES 2023
+Page 7 of 10
+
+--- Page 8 ---
+9618/21
+Question
+6(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+MP1 A new (instance of) variable MyString is created each time the
+procedure is called / executed
+MP2 So the previous contents are lost
+October/November
+2023
+Marks
+2
+Question
+7
+Answer
+Marks
+5
+A1 | X1
+$2
+A2 | X4
+START
+S1
+A3
+A1 | X1
+A4 | X2
+S5
+A9 | X9
+S3
+A3
+A9 | X9
+MP1 S2 labelled
+MP2 S3, S4 and S5 added
+MP3 Line from S1 to S3
+MP4 All three lines between S2 and S5 (including S5 to S5)
+MP5 Line from S5 to S3 AND from S3 to S4
+© UCLES 2023
+Page 8 of 10
+
+--- Page 9 ---
+9618/21
+Question
+8(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+PROCEDURE SendFile (FileName, DestID : STRING, Port :
+INTEGER)
+DECLARE FileData
+: STRING
+CONSTANT STX = CHR (02)
+CONSTANT ETX = CHR (03)
+OPENFILE FileName FOR READ
+WHILE NOT EOF (FileName)
+READFILE FileName, FileData
+FileData < STX & DestID & MyID & FileData & ETX
+CALL Transmit (FileData, Port)
+ENDWHILE
+CLOSEFILE FileName
+CALL Transmit (STX
+& DestID & MyID & "****" & ETX,
+Port)
+October/November
+2023
+Marks
+7
+8(b)
+8(c)(i)
+8(c) (i)
+ENDPROCEDURE
+Mark as follows:
+MP1 OPEN file in READ mode - using parameter - and subsequently CLOSE
+MP2 Conditional loop to EOF ()
+MP3 Use of READFILE to get a line from the file
+MP4 'Attempt' to form a message (minimum is DestID, MyID, FileData)
+MP5 Message formed is completely correct
+MP6 Call Transmit () with correct MP4 string in a loop
+MP7 Transmit the "****" message (all parts present) after the loop
+Max 2 marks
+MP1 Indicates that all the lines of the file have been sent // it is the end of the
+transmission / file transfer
+MP2 So that the receiving program can stop waiting for further data
+MP3 The file can be closed / saved
+MP1 A message cannot contain a zero-length data field
+MP2 ... so a blank line cannot be sent // there is no way to send a blank line
+MP1 Append a (special) character to the start of the message text
+MP2 interpret the new field data as a blank line
+ALTERNATIVE
+MP1 Change the message protocol and use an additional field to act as an
+indicator
+MP2 Interpret the new field data
+2
+2
+2
+© UCLES 2023
+Page 9 of 10
+
+--- Page 10 ---
+9618/21
+Question
+8(d)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Answer
+FUNCTION GetField (Msg : STRING, FieldNo : INTEGER)
+RETURNS STRING
+DECLARE RetString : STRING
+Marks
+6
+CASE OF FieldNo
+1 : RetString + MID (Msg, 2, 3)
+2 : RetString
++ MID (Msg, 5, 3)
+3 : RetString < MID (Msg, 8, LENGTH (Msg) - 8)
+OTHERWISE : RetString +
+"1"
+ENDCASE
+RETURN RetString
+ENDFUNCTION
+MP1 Use of CASE
+•.. ENDCASE Or IF
+MP2 Field 1 and Field Z extracted correctly THEN
+..
+MP3 Calculate a length of field 3
+MP4 Field 3 extracted correctly
+MP5 Return empty string in case of invalid parameter (via OTHERWISE or
+initialisation)
+MP6 Final RETURN, after a reasonable attempt
+© UCLES 2023
+Page 10 of 10

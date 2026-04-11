@@ -1,0 +1,1343 @@
+--- Page 1 ---
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 4 Practical
+MARK SCHEME
+Maximum Mark: 75
+9618/42
+May/June 2023
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2023 series for most
+Cambridge IGCSE, Cambridge International A and AS Level and Cambridge Pre-U components, and some
+Cambridge O Level components.
+This document consists of 37 printed pages.
+© UCLES 2023
+[Turn over
+
+--- Page 2 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Generic Marking Principles
+May/June 2023
+These general marking principles must be applied by all examiners when marking candidate answers. They should be applied alongside the
+specific content of the mark scheme or generic level descriptors for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+•
+•
+•
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit is given for valid answers which go beyond
+the scope of the syllabus and mark scheme, referring to your Team Leader as appropriate
+marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these features are specifically assessed by the
+question as indicated by the mark scheme. The meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed instructions or in the application of generic level
+descriptors.
+Page 2 of 37
+
+--- Page 3 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2023
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question (however; the use of the full mark range may
+be limited according to the quality of the candidate responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should not be awarded with grade thresholds or
+grade descriptors in mind.
+ƠUCHES 23
+Page 3 of 37
+
+--- Page 4 ---
+9618/42
+Question
+1(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+1 mark each
+Global array named Animals
+• 10 string elements
+Example Program code:
+Java
+public static String|| Animals = new String[10];
+VB.NET
+Dim Animals (9) As String
+Python
+global Animals #array 10 elements string
+2
+Page 4 of 37
+
+--- Page 5 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+Question
+1(b)
+1 mark each
+•
+•
+Storing all 10 items in the array ...
+... in the correct order and all in lower case
+Example Program code:
+Java
+Animals [0] = "horse";
+Animals [1]
+Animals [2]
+Animals [3]
+"rabbit";
+"mouse";
+Animals [4]
+Animals [5]
+Animals [6]
+"whale".
+Animals [7]
+"elephant";
+Animals [8]
+"kangaroo";
+Animals[9] = "tiger";
+VB.NET
+Sub Main ()
+Animals (0) = "horse"
+Animals (1) = "lion"
+Animals (2) = "rabbit"
+Animals (3)
+= "mouse"
+Animals (4) = "bird"
+Animals (5)
+= "deer"
+Animals (6) = "whale"
+Animals (7) = "elephant"
+Animals (8) = "kangaroo"
+Animals (9) = "tiger"
+2
+End Sub
+Page 5 of 37
+
+--- Page 6 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+Question
+1(b)
+Python
+#main
+Animals
+= []
+Animals. append ("horse")
+Animals. append ("lion")
+Animals. append ("rabbit")
+Animals. append ("mouse")
+Animals.append ("bird")
+Animals. append ("deer")
+Animals.append ("whale")
+Animals.append ("elephant")
+Animals.append ("kangaroo")
+Animals. append ("tiger")
+Page 6 of 37
+
+--- Page 7 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+Question
+1(c)
+1 mark for each completed statement to MAX 4
+1 mark each:
+•
+Use of appropriate string functions to access e.g. MID and length
+• Remainder of procedure correct and following example
+Pseudocode:
+PROCEDURE SortDescending ()
+DECLARE Arraylength : INTEGER
+DECLARE Temp : STRING
+Arraylength ‹ LENGTH (Animals)
+FOR X < 0 TO Arraylength - 1
+FOR Y < 0 TO (Arraylength - X - 1)
+IF MID (Animals [Y], 0, 1)
+< MID (Animals [Y+1], 0, 1)
+THEN
+Temp ‹ Animals [Y]
+Animals[Y] < Animals[Y † 1]
+Animals [Y + 1]
+* Temp
+ENDIF
+NEXT Y
+NEXT X
+ENDPROCEDURE
+Example Program code:
+Java
+public static void SortDescending () {
+Integer ArrayLength
+= 10;
+String Temp
+="".
+for (Integer X = O; X < Arraylength - 1; X++) {
+for (Integer Y
+= 0; Y < ArrayLength-X-1; Y++) {
+6
+Page 7 of 37
+
+--- Page 8 ---
+9618/42
+Question
+1(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+if (Animals[Y].charAt (O) < Animals [Y+1].charAt (0)){
+Temp = Animals [Y];
+Animals [Y]
+= Animals [Y+1];
+Animals [Y+1] = Temp;
+May/June 2023
+Marks
+}
+VB.NET
+Sub SortDescending ()
+Dim Arraylength As
+Integer = 10
+Dim Temp As String = ""
+For X = 0 To ArrayLength - 1
+For Y = 0 To ArrayLength - X - 2
+If Left (Animals (Y), 1) < Left (Animals (Y + 1), 1) Then
+Temp = Animals (Y)
+Animals (Y) = Animals (Y + 1)
+Animals (Y + 1) = Temp
+Next
+Next
+End Sub
+Python
+def SortDescending ():
+ArrayLength = 10
+for X in range (0, Arraylength-1) :
+for Y in range (0, Arraylength-X-1):
+if (Animals|Y|[0] ‹ Animals[Y+1|[0]):
+Temp = Animals [Y]
+Animals[Y] = Animals[Y + 1]
+Animals[Y + 1] = Temp
+Page 8 of 37
+
+--- Page 9 ---
+9618/42
+Question
+1 (d) (i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+3
+1 mark each
+calling the procedure SortDescending ()
+looping through all array elements
+outputting each array element on a new line
+Example Program code:
+Java
+SortDescending () ;
+for (Integer X
+= 0; x < 10; x++) {
+System.out.println (Animals[X]);
+}
+VB.NET
+SortDescending ()
+For X = 0 to 9
+Console.WriteLine (Animals (X))
+Next X
+Python
+SortDescending ()
+for X in range (0, 10):
+print (Animals [X])
+Page 9 of 37
+
+--- Page 10 ---
+9618/42
+Question
+1 (d) (ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+1 mark for screenshot e.g.
+whale
+tiger
+rabbit
+mouse
+lion
+kangaroo
+¡horse
+elephant
+=deer
+bird
+Page 10 of 37
+
+--- Page 11 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+Question
+2(a)
+1 mark each
+•
+Record declaration named SaleData I/ class declaration (and end) named SaleData...
+....saleID declared as string, Quantity as integer in record
+Il if a class then a constructor assigning attributes SaleID and Quantity
+Example Program code:
+Java
+class
+SaleData{
+private String SaleId;
+private Integer Quantity;
+public SaleData (String SaleIDP, Integer Quantityp){
+SaleId = SaleIDP;
+Quantity = Quantityp;
+2
+}
+VB.NET
+Structure SaleData
+Public SaleID As String
+Public Quantity As Integer
+End Structure
+class SaleData:
+(self, SaleIDp, Quantityp):
+self.SaleID = SaleIDp
+#string
+self.Quantity = Quantityp #integer
+Page 11 of 37
+
+--- Page 12 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Question
+2(b)
+Marks
+1 mark each
+•
+Global array CircularQueue of 5 items of type SaleData
+Global variables Head, Tail and NumberOfItems all initialised to O
+•
+•
+One record declared setting ID to "" and Quantity to -1 ...
+...stored in all 5 array elements
+Example Program code:
+Java
+public static SaleDatall CircularQueue = new SaleData [5];
+public static Integer NumberOfItems = 0;
+public static Integer Head = 0;
+public static Integer Tail = 0;
+public static void main (String
+for (Integer X = 0; X < 5; X++) {
+CircularQueue[X] =
+new SaleData ('", - 1) ;
+4
+VB.NET
+Dim CircularQueue (0 To 4) As SaleData
+Dim NumberOfItems As Integer
+Dim Head As
+Integer
+Dim Tail As
+Integer
+Sub Main ()
+NumberOfItems = 0
+Head = 0
+Tail = 0
+For x = 0 To 4
+CircularQueue (x).SaleID = "'
+CircularQueue (x) .Quantity
+= -1
+Next
+End Sub
+Page 12 of 37
+
+--- Page 13 ---
+9618/42
+Question
+2(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+Python
+CircularQueue = I] #SaleData,
+global NumberOfItems #int
+global Head #int
+global Tail #int
+items
+#main
+NumberOfItems = 0
+Head = 0
+for x in range (0,
+CircularQueue.append|(SaleData("",-1)))
+Page 13 of 37
+
+--- Page 14 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Question
+2(c)
+Marks
+1 mark each
+•
+•
+Function Enqueue () header (and end) taking one parameter (type SaleData)
+Checks if queue is full ...
+... and returns -1
+•
+•
+•
+(otherwise) Inserts parameter to CircularQueue [Tail] ...
+... increments Tail and resets to 0 if 5
+Increments number of items and returns 1
+6
+Example Program code:
+public static Integer Enqueue (SaleData RecordToAdd) {
+if (NumberOfItems == 5) {
+return -1;
+}else!
+CircularQueue [Tail].SetSaleID(RecordToAdd.GetSaleID());
+CircularQueue[Tail]. SetQuantity (RecordToAdd.GetQuantity ());
+if (Tail
+== 4){
+Tail = 0;
+}else!
+Tail++;
+NumberOfItems++;
+return 1;
+}
+VB.NET
+Function
+Enqueue (RecordToAdd)
+If (NumberOfItems =
+5)
+Then
+Return
+-1
+Else
+CircularQueue (Tail) = RecordToAdd
+If (Tail = 4)
+Then
+Tail = 0
+Page 14 of 37
+
+--- Page 15 ---
+9618/42
+Question
+2(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+Else
+Tail += 1
+End If
+NumberOfItems +=
+1
+Return 1
+End If
+End Function
+Python
+def Enqueue (RecordToAdd) :
+global NumberOfItems
+global Head #int
+global Tail #int
+if (NumberOfItems
+== 5):
+return -1
+else:
+#int
+CircularQueue [Tail| = RecordToAdd
+== 4):
+Tail +=1
+NumberOfItems +=1
+return 1
+Page 15 of 37
+
+--- Page 16 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+Question
+2(d)
+1 mark each
+Function header Dequeue () (and end where appropriate)
+• Checking if queue is empty...
+•
+....and returning appropriate empty/null record/object/list element
+(Otherwise) returning the item at Head
+Incrementing Head and changing value O if it is 4/5
+•
+Decrement number of items
+Example Program code:
+Java
+public static SaleData Dequeue () {
+SaleData RecordRemoved;
+RecordRemoved = new SaleData ('", -1);
+if|! (NumberOfItems == 0)) {
+RecordRemoved. SetSaleID (CircularQueue [Head].GetSaleID());
+RecordRemoved. SetQuantity (CircularQueue [Head].GetQuantity ());
+NumberOfItems--;
+if (Head == 4) {
+Head = 0;
+}else (Headt+; }
+return RecordRemoved;
+VB.NET
+Function Dequeue ()
+Dim RecordRemoved As SaleData
+RecordRemoved.SaleID = ""
+RecordRemoved.Quantity = -1
+If Not (NumberOfItems = 0) Then
+RecordRemoved = CircularOueue (Head)
+NumberOfItems -= 1
+If Head = 4 Then
+Head = 0
+6
+Page 16 of 37
+
+--- Page 17 ---
+9618/42
+Question
+2(d)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+Else
+Head += 1
+End If
+End If
+Return RecordRemoved
+End Function
+Python
+def Dequeue () :
+global NumberOfItems #int
+global Head #int
+global Tail #int
+RecordRemoved = SaleData ('"
+-1)
+if not (NumberOfItems == 0):
+RecordRemoved = CircularQueue [Head]
+NumberOfItems -=1
+if Head == 4:
+Head
+else:
+Head +=1
+return
+RecordRemoved
+Page 17 of 37
+
+--- Page 18 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+Question
+2(e)
+1 mark each
+•
+•
+Procedure header EnterRecord (and end where appropriate) (ignore parameters)
+Takes as input an ID (string) and quantity (integer)
+Creates a record/object using inputs
+Calls Enqueue () with record as parameter and stores/uses return value
+Outputs "Ful1" and "Stored" in correct places
+Example Program code:
+Java
+public static void EnterRecord () {
+System.out.println("Enter ID");
+Scanner NewScanner = new Scanner (System.in);
+String ID = NewScanner.nextLine ();
+System.out.println("Enter quantity");
+Quan = Integer.parseInt (NewScanner.nextLine ());
+SaleData Record;
+Record = new SaleData (ID, Quan);
+if (Enqueue (Record) == -1){ System.out.println("Ful1") ; }
+else{System.out.println("Stored");}
+5
+VB.NET
+Sub EnterRecord ()
+Dim Record As SaleData
+Console.WriteLine ("Enter ID")
+Record.SaleID = Console.ReadLine ()
+Console.Writeline("Enter quantity")
+Record. Quantity = Console.ReadLine ()
+If Enqueue (Record)
+= -1 Then
+Console.WriteLine ("Ful1")
+Else
+Console.WriteLine ("Stored")
+End If
+End Sub
+Page 18 of 37
+
+--- Page 19 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+Question
+2(e)
+Python
+def EnterRecord () :
+ID = input ("Enter ID")
+Quantityl = input("Enter quantity")
+Record = SaleData (ID, QuantityP)
+if Enqueue (Record)
+print ("Full")
+print ("Stored")
+Page 19 of 37
+
+--- Page 20 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Question
+2(f) (i)
+Marks
+1 mark each to max 4
+•
+Calling EnterRecord () 6 times before dequeue
+Calling Dequeue () and storing/using return value ...
+•
+.. checking if an empty record is returned and outputting either the ID and quantity of returned record or outputting
+he error message if empty recor
+Calling EnterRecord () again after dequeue
+•
+Output the ID and quantity for all the records currently stored in CircularQueue
+Example Program code:
+Java
+EnterRecord () ;
+EnterRecord () ;
+EnterRecord () ;
+EnterRecord () ;
+EnterRecord () ;
+EnterRecord () :
+SaleData ReturnValue = new SaleData;
+ReturnValue = Dequeue () ;
+if (ReturnValue.GetSaleID() == "") {
+System.out.println("No items");
+lelsel
+System.out.println(ReturnValue.GetSaleID() + " " + ReturnValue. GetQuantity ());
+EnterRecord () :
+for (Integer X
+= 0; X < 5; X++) {
+System.out.println |CircularQueue[X].GetSaleID|) + "" +
+CircularQueue [X].GetQuantity));
+4
+VB.NET
+EnterRecord ()
+EnterRecord ()
+EnterRecord ()
+EnterRecord ()
+Page 20 of 37
+
+--- Page 21 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Question
+2(f)(i)
+Marks
+EnterRecord ()
+EnterRecord ()
+Dim ReturnValue As SaleData = new SaleData
+ReturnValue
+= Dequeue ()
+If (ReturnValue.SaleID = "') Then
+Console.WriteLine("No items")
+Else i
+End If
+EnterRecord ()
+Console.Writeline (ReturnValue.SaleID
+& "" & ReturnValue.Quantity)
+For x = 0 To
+Console.Writeline (CircularQueue (x) .SaleID & " " & CircularQueue(x) .Quantity)
+Next
+Python
+EnterRecord ()
+EnterRecord ()
+EnterRecord ()
+EnterRecord ()
+EnterRecord ()
+EnterRecord ()
+ReturnValue
+= Dequeue ()
+if ReturnValue.SaleID
+Sale ...:
+print("No items")
+else:
+EnterRecord ()
+print (ReturnValue.SaleID, " ", ReturnValue.Quantity)
+for x in range (0, 5) :
+print (CircularQueue [x].SaleID, " ", CircularQueue[x]. Quantity)
+OUI ES 23
+Page 21 of 37
+
+--- Page 22 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Question
+2(f)(ii)
+Marks
+1 mark for screenshot showing:
+•
+•
+•
+Data for 6 records input
+5 messages stating (e.g.) stored and 1 message stating (e.g.) full
+1 output of ADF 10 (dequeued)
+Repeat successful input of LLP 3
+• Output of the 5 records
+e.g.
+Enter IDADE
+Entat quantitylo
+Stored
+Enter IDOOP
+Entet quantityl
+Stored
+Enter IDEN
+Enter quantity5
+Stored
+Enter IDXXE
+Enter quantity22
+Stored
+Enter IDHOR
+Enter quantitys
+Stored
+Enter IDLLP
+Enter quantity3
+Full
+ADE
+10
+Enter IDLLE
+Enter quantity3
+Stored
+LLP
+COP
+XXZ
+HOR
+Page 22 of 37
+
+--- Page 23 ---
+9618/42
+3(a)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2023
+5
+1 mark each
+Class Employee declaration (and end where appropriate)
+• All 4 attributes declared with suitable data types, array with (min) 52 elements
+•
+Constructor header within class (and end where appropriate) taking 3 parameters...
+...assigning parameters to attributes within constructor
+•
+...initialising 52 elements of array to 0.0 within constructor
+Example Program code:
+Java
+class
+Employee!
+private Double HourlyPay;
+private String EmployeeNumber;
+private String JobTitle;
+private Double[l PayYear2022 = new Double [52];
+public Employee (String EmpNumP, Double PayP, String JobP) {
+HourlyPay = PayP;
+EmployeeNumber = EmpNumP;
+JobTitle = JobP;
+for (Integer X = 0; X < 52; X++) {
+PayYear2022 [X]|
+= 0.0;
+}
+}
+VB.NET
+Class Employee
+Private HourlyPay As Single
+Private
+EmployeeNumber As String
+Private JobTitle As String
+Private PayYear2022(0 To 51) As Single
+Public Sub New (EmpNumP As String, Payl As Single, JobP As String)
+HourlyPay = PayP
+EmployeeNumber = EmpNumP
+JobTitle = JobP
+© UCLES 2023
+Page 23 of 37
+
+--- Page 24 ---
+9618/42
+Question
+3(a)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+For X = O To 51
+PayYear2022 (X)
+= 0.00
+Next
+End Sub
+End Class
+Python
+class Employee:
+#self. HourlyPay single
+#self.__
+_EmployeeNumber string
+#self. i
+JobTitle string
+init_
+(self, EmpNumP,
+PayP, JobP) :
+self.__
+HourlyPay = PayP
+EmployeeNumber =
+self.__
+JobTitle = JobP
+PayYear2022 = I|#array 52 elements single
+x in range (0,
+selt._Paytear2022.append10.oo/
+Page 24 of 37
+
+--- Page 25 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+Question
+3(a)(ii)
+1 mark each
+•
+•
+Get method header (and end) with no parameters...
+... returning employee number (without overriding)
+Example program code:
+Java
+public String GetEmployeeNumber () {
+return EmployeeNumber;
+}
+VB.NET
+Public Function GetEmployeeNumber ()
+Return EmploveeNumber
+End Function
+Python
+def GetEmployeeNumber (self):
+return self._
+EmployeeNumber
+2
+Page 25 of 37
+
+--- Page 26 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(a)(iii)
+May/June 2023
+Marks
+3
+1 mark each
+Method header (and close) with two parameters (week number and number of hours)
+Calculates pay as number of hours (parameter) * HourlyPay (attribute)
+... stores result in correct index in PayYear2022
+Example program code:
+Java
+public void SetPay(Integer WeekNumber, Double Hours) {
+PayYear2022 [WeekNumber - 1] = Hours
+* HourlyPay;
+}
+VB.NET
+Overridable Sub SetPay (WeekNumber, Hours)
+PayYear2022 (WeekNumber - 1)
+= Hours * HourlyPay
+End Sub
+Python
+def SetPay (self, WeekNumber, Hours) :
+self.
+_PayYear2022 [WeekNumber-1] = Hours * self._HourlyPay
+Page 26 of 37
+
+--- Page 27 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+Question
+3(a) (iv)
+1 mark each
+Method header (and close) and returning calculated total (ignore parameters, allow return of any reasonable attempt
+Totalling all elements in PayYear2022
+Example program code:
+2
+public Double GetTotalPay (){
+Double TotalPay
+= 0.0;
+for (Integer X
+= 0; x < 52; X++) {
+TotalPay = TotalPay
++ PayYear2022[X];
+}
+return TotalPay;
+VB.NET
+Public Function GetTotalPay ()
+Dim TotalPay As Single
+For X = 0 To 51
+TotalPay = TotalPay + PayYear2022(X)
+Next
+Return
+Total Pay
+End Function
+def GetTotalPay (self):
+TotalPay = 0
+range (0, 52):
+TotalPay = TotalPay + self.__PayYear2022 [X]
+return TotalPay
+Page 27 of 37
+
+--- Page 28 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+Question
+3(b)(i)
+1 mark each
+•
+Class Manager header (and end) inheriting from Employee
+• Constructor within class (and end) taking 4 parameters...
+…..calling parent class constructor with 3 values from parameters
+Declaring BonusValue (real) and assigning parameter to it within constructor
+Example program code:
+Java
+class
+Manager extends Employee!
+private Double BonusValue;
+public Manager (String EmpNumP, Double PayP, String JobP, Double BonusP) {
+super (EmpNumP, PayP, JobP) ;
+BonusValue = BonusP;
+4
+}
+VB.NET
+Class Manager
+Inherits Employee
+Private BonusValue As Single
+Sub New (EmpNumP As String, PayP As Single, JobP As String, BonusP
+MyBase. New (EmpNumP, PayP, JobP)
+BonusValue = BonusP
+End Sub
+End Class
+As
+Single)
+Page 28 of 37
+
+--- Page 29 ---
+9618/42
+Question
+3(b) (i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+3(b) (ii)
+Python
+class Manager (Employee) :
+#BonusValue single
+def
+init
+_(self, EmpNumP, PayP, JobP, BonusP) :
+super ()._
+init
+(EmpNumP, PayP, JobP)
+self._
+BonusValue = BonusP
+1 mark each
+Method SetPay header (and end) taking 2 parameters
+•
+•
+Calculating hours (from parameter) * bonus as a percentage
+Overriding / calling parent Set Pay with week number from parameter and updated hours as parameters
+Example program code:
+3
+public void SetPay (Integer WeekNumber, Double Hours) {
+super. SetPay (WeekNumber, Hours * ((BonusValue / 100) + 1));
+Overrides Sub SetPay (WeekNumber, Hours)
+MyBase. SetPay (WeekNumber, Hours * ( (BonusValue / 100) + 1))
+End Sub
+Alternative VB.NET:
+Overloads Sub SetPay (WeekNumber, Hours)
+SetPay (WeekNumber, Hours * ((BonusValue / 100) + 1))
+End Sub
+Python
+def SetPay (self, WeekNumber, Hours) :
+Hours = Hours
+(1 + self.
+BonusValue / 100)
+super (). SetPay (WeekNumber, Hours)
+Page 29 of 37
+
+--- Page 30 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+Question
+3(c)
+1 mark each to max 7
+• Opening file Employees.txt to read and closing file in an appropriate place
+• Exception handling with appropriate output for opening the file
+Looping to EOF / 8 times
+• (Attempting to) Read in all lines from the file for each employee
+For each employee:
+Instantiating and storing an object of type Manager (not Employee) when bonus is included...
+...with correct read in values
+• (otherwise) instantiating and storing an object of type Employee ...
+.. with correct read in values
+Example program code:
+7
+public static void main (String args []) {
+Double Pay = 0.0;
+String
+ID = "";
+Double Bonus
+= 0.00;
+String
+Title
+"'';
+Integer NumberEmployees = O;
+String
+Temp = "";
+String TextFile
+= "Employees.txt";
+tryt
+FileReader f = new FileReader (TextFile);
+BufferedReader Reader = new BufferedReader (f);
+for (Integer X = 0; X < 8; x++) {
+Bonus = 0.00;
+Pay = Double.parseDouble (Reader. readLine ());
+ID = Reader. readLine();
+Temp = Reader. readline ();
+Page 30 of 37
+
+--- Page 31 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Question
+3(c)
+Marks
+Bonus = Double.parseDouble (Temp);
+Title = Reader. readLine ();
+EmployeeArray [NumberEmployees]
+= new Manager (ID, Pay,
+Title, Bonus);
+}catch (NumberFormatException e) {
+Title = Temp;
+EmployeeArray [NumberEmployees] = new Employee (ID, Pay, Title);
+} NumberEmployeest+;
+catch (IOException ex) {
+} tryl
+Reader. close ();
+}catch (IOException ex) {}
+}catch (FileNotFoundException ex) {
+System.out.println("No file found");
+VB.NET
+Dim Pay As Single
+Dim ID As String
+Dim Bonus As Single
+Dim Title As String
+Dim NumberEmployees As Integer = 0
+Dim Temp As String
+try
+Dim TextFile As String
+= "Employees.txt"
+Dim FileReader As New System.IO. StreamReader (TextFile)
+For x = 0 To 7
+Pay = CSng (FileReader. ReadLine ())
+ID = FileReader. ReadLine
+Temp = FileReader. ReadLine
+If Single. TryParse (Temp, Bonus) Then
+Bonus = Temp
+Title = FileReader.ReadLine ()
+EmployeeArray (NumberEmployees) = New Manager (ID, Pay, Title, Bonus)
+Page 31 of 37
+
+--- Page 32 ---
+9618/42
+Question
+3(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+Title = Temp
+EmployeeArray (NumberEmployees) = New Employee (ID, Pay,
+NumberEmployees += 1
+Next
+FileReader.Close ()
+Catch ex As Exception
+Python
+#main
+Pay = 0.00
+ID = "'
+Bonus = 0,00
+Title =
+Temp =""
+try:
+TextFile = "Employees.txt"
+File = open (TextFile,
+for x in range (0, 8):
+Pay = float (File.readline))
+ID = File.readline()
+Temp = File.readline ()
+try:
+Bonus = float (Temp)
+Title = File.readline()
+EmployeeArray. append (Manager (ID, Pay, Title, Bonus))
+except:
+Title = Temp
+EmployeeArray.append (Employee (ID, Pay, Title))
+Page 32 of 37
+
+--- Page 33 ---
+9618/42
+Question
+3(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+File.close ()
+except IOError:
+print ("Could not find file")
+dUCHES 23
+Page 33 of 37
+
+--- Page 34 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(d)
+May/June 2023
+Marks
+4
+1 mark each to max 4
+•
+Procedure header EnterHours () (ignore parameters) and opening file to read and closing file in appropriate place
+•
+Exception handling with appropriate output for opening file
+•
+Looping to EOF/8 times and reading in each line
+•
+•
+•
+Searching array for employee number ...
+... using GetEmployeeNumber ()
+....calling Set Pay () with the number of hours and week number 1 as parameters, for that employee in the array
+Example program code:
+Java
+public static void EnterHours () {
+String TextFile = "HoursWeekl.txt";
+String EmpID = "";
+try!
+FileReader f = new FileReader (TextFile);
+BufferedReader
+Reader = new BufferedReader (f) ;
+for (Integer X = 0; X ‹ 8; x++) {
+tryf
+EmpID = Reader. readLine ();
+for (Integer Y
+= 0; Y < 8; Y++) {
+if (Employees [Y] . GetEmployeeNumber (). equals (EmpID)) {
+Employees [Y]. SetPay (1, Double.parseDouble (Reader.readline ()));
+catch (IOException ex) {
+tryt
+Reader. close ();
+}catch (IOException ex) {}
+}catch (FileNotFoundException e) {
+System.out.println("File not found");
+}
+Page 34 of 37
+
+--- Page 35 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Question
+3(d)
+Marks
+VB.NET
+Sub EnterHours ()
+Dim TextFile As String = "HoursWeekl.txt"
+Dim FileReader As New System.IO. StreamReader (TextFile)
+Dim EmpId As String
+= FileReader.ReadLine ()
+If Employees (Y) .GetEmployeeNumber = EmpId Then
+Employees (Y) . SetPay (1, CSng(FileReader.ReadLine ()))
+End If
+Next
+FileReader.Close ()
+Catch ex As Exception
+Console.WriteLine("Invalid file")
+End Try
+End Sub
+Python
+def EnterHours () :
+try:
+TextFile = "HoursWeekl.txt"
+File = open (TextFile,
+"r')
+EmpID = ""
+for X in range (0, 8):
+EmpID = File.readline ()
+for Y in range (0, 8):
+if Employees [Y].GetEmployeeNumber () == EmpID:
+Employees [Y] . SetPay (1, float (File.readline()))
+except IOError:
+print ("Could not find file")
+Page 35 of 37
+
+--- Page 36 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+Question
+3(e)(i)
+1 mark each
+•
+•
+Calling EnterHours () and looping through each employee...
+... outputting the employee number and their total pay using GetTotalPay () and GetEmployeeNumber ()
+Example program code:
+Java
+EnterHours () ;
+for (Integer
+= 0; x
+8; X++) {
+System.out.println (Employees [Y].GetEmployeeNumber () + "
+" + Employees [Y] .GetTotalPay ());
+}
+VB.NET
+EnterHours ()
+For Y = 0 To 7
+Next
+Console.Writeline (Employees (Y) .GetEmployeeNumber & " " & Employees (Y) .GetTotalPay ())
+Python
+EnterHours ()
+forly in range (0,
+print (Employees [Y].GetEmployeeNumber\), " ", Employees[Y].GetTotalPay ())
+2
+Page 36 of 37
+
+--- Page 37 ---
+9618/42
+Question
+3(e) (ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+1 mark for screenshot e.g.
+21548 889.99994
+12452 730.56
+51947 1216.1409
+82610 502.07498
+82586 674.91565
+65912 475
+42004 768.5955
+51847 339.5925
+1
+21548
+890.0
+12452
+730.5600000000001
+51947
+1216.1408999999999
+82610
+502.075
+02586
+674.915625
+65912
+475.0
+42004
+768.5955
+51847
+339.5925
+Page 37 of 37

@@ -1,0 +1,362 @@
+--- Page 1 ---
+5 Cambridge Assessmen
+shes International Educatior
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+9618/22
+May/June 2021
+2 hours
+• /
+You must answer on the question paper.
+You will need: Insert (enclosed)
+INSTRUCTIONS
+• Answer all questions
+• Use a black or dark blue pen.
+• Write your name, centre number and candidate number in the boxes at the top of the page.
+• Write your answer to each question in the space provided
+• Do not use an erasable pen or correction fluid.
+• Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+• The insert contains all the resources referred to in the questions.
+This document has 16 pages. Any blank pages are indicated
+DC (MB/FC) 200588/5
+© UCLES 2021
+[Turn over
+
+--- Page 2 ---
+2
+Refer to the insert for the list of pseudocode functions and operators.
+(a) (i) Complete the following table by giving the appropriate data type in each case.
+Variable
+Name
+Index
+Modified
+Holiday
+Example data value
+"Catherine"
+100
+FALSE
+25/12/2020
+Data type
+14]
+(ii) Evaluate each expression in the following table by using the initial data values shown in
+part (a)(i).
+Expression
+Modified OR Index > 100
+LENGTH ("Student: " & Name)
+INT (Index + 2.9)
+MID (Name, 1, 3)
+Evaluates to
+14]
+(b) Each pseudocode statement in the following table contains an example of selection,
+assignment or iteration.
+Put one tick ('') in the appropriate column for each statement.
+Statement
+Index + Index + 1
+IF Modified = TRUE THEN
+ENDWHILE
+Selection
+Assignment Iteration
+[3]
+© UCLES 2021
+9618/22/M/J/21
+
+--- Page 3 ---
+3
+(a) Examine the following state-transition diagram.
+Low level detected | Activate pump
+Low level detected
+*
+S2
+S1
+Normal level detected
+Normal level detected | Deactivate pump
+(i) Complete the table with reference to the diagram.
+Answer
+The number of transitions that result in a different state
+The number of transitions with associated outputs
+The label that should replace 'X'
+The final or halting state
+14]
+(ii) The current state is S1. The following inputs occur.
+1.
+2.
+3.
+Low level detected
+Low level detected
+Low level detected
+Low level detected
+Give the number of outputs and the current state.
+Number of outputs
+Current state
+12]
+© UCLES 2021
+9618/22/M/J/21
+[Turn over
+
+--- Page 4 ---
+4
+(b) A system is being developed to help manage book loans in a library.
+Registered users may borrow books from the library for a period of time.
+(i) State three items of data that must be stored for each loan.
+1
+2
+3
+(i) State one item of data that will be required in the library system but does not need to be
+stored for each loan.
+12]
+[1]
+(iii) One operation that manipulates the data stored for each loan, would produce a list of all
+overdue books.
+Identify two other operations.
+Operation 1
+Operation 2
+12]
+© UCLES 2021
+9618/22/M/J/21
+
+--- Page 5 ---
+5
+3 The following diagram represents an Abstract Data Type (ADT).
+A + sial = cal 7 = Fian 17
+(a) Identify this type of ADT.
+B
+Elk
+• [1]
+(b) Give the technical term for the item labelled A in the diagram.
+.... [11
+(c) Give the technical term for the item labelled B in the diagram.
+Explain the meaning of the value given to this item.
+Term
+Meaning
+[2]
+(d) Complete the diagram to show the ADT after the data has been sorted in alphabetical order.
+Dolphin
+Cat
+Fish
+Elk
+12]
+© UCLES 2021
+9618/22/M/J/21
+[Turn over
+
+--- Page 6 ---
+6
+4 A teacher uses a paper-based system to store marks for a class test. The teacher requires a
+program to assign grades based on these results.
+The program will output the grades together with the average mark.
+Write a detailed description of the algorithm that will be needed.
+[6]
+© UCLES 2021
+9618/22/M/J/21
+
+--- Page 7 ---
+7
+5 (a) A student is learning about arrays.
+She wants to write a program to:
+•
+declare a 1D array RNum of 100 elements of type INTEGER
+• assign each element a random value in the range 1 to 200 inclusive
+•
+count and output how many numbers generated were between 66 and 173 inclusive.
+(i) Write pseudocode to represent the algorithm.
+[6]
+(ii) The student decides to modify the algorithm so that each element of the array will contain
+a unique value.
+Describe the changes that the student needs to make to the algorithm.
+[3]
+© UCLES 2021
+9618/22/M/J/21
+[Turn over
+
+--- Page 8 ---
+8
+(b) The following is a pseudocode function.
+Line numbers are given for reference only.
+01
+02
+03
+04
+05
+06
+07
+08
+09
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+FUNCTION StringClean (InString : STRING) RETURNS STRING
+DECLARE NextChar : CHAR
+DECLARE Outstring : STRING
+DECLARE Counter
+: INTEGER
+OutString
+FOR Counter + 1 TO LENGTH (InString)
+NextChar + MID(InString, Counter, 1)
+NextChar + LCASE (NextChar)
+IF NOT ( (NextChar
+< 'a') OR (NextChar > 'z')) THEN
+OutString + Outstring & NextChar
+ENDIF
+NEXT Counter
+RETURN Outstring
+ENDFUNCTION
+(i) Examine the pseudocode and complete the following table.
+Answer
+Give a line number containing an example of an initialisation statement.
+Give a line number containing the start of a repeating block of code.
+Give a line number containing a logic operation.
+Give the number of parameters to the function MID () .
+(ii) Write a simplified version of the statement in line 12.
+© UCLES 2021
+9618/22/M/J/21
+14]
+[2]
+
+--- Page 9 ---
+9
+BLANK PAGE
+© UCLES 2021
+9618/22/M/J/21
+[Turn over
+
+--- Page 10 ---
+10
+6 A procedure CountVowels () will:
+: be called with a string containing alphanumeric characters as its parameter
+count and output the number of occurrences of each vowel (a, e, i, 0, u) in the string
+count and output the number of occurrences of the other alphabetic characters (as a single
+total).
+The string may contain both upper and lower case characters.
+Each count value will be stored in a unique element of a global 1D array CharCount of type
+INTEGER. The array will contain six elements.
+Write pseudocode for the procedure CountVowels ().
+© UCLES 2021
+9618/22/M/J/21
+
+--- Page 11 ---
+11
+18]
+7 A procedure, FormatName () :
+• is called with a string containing words and spaces as its parameter. In this context, a word is
+any sequence of characters that does not contain a space character.
+• creates a new formatted string from this string with the following requirements:
+1. Any leading spaces removed (spaces before the first word).
+2. Any trailing spaces removed (spaces after the last word).
+3. Any multiple spaces between words converted to a single space.
+4. All characters converted to lower case.
+The FormatName () procedure has been written in a programming language and is to be tested
+using the black-box method
+(a) Give a test string that could be used to show that all four formatting requirements have been
+applied correctly.
+Use the symbol 'V' to represent a space character.
+.... [3]
+(b) The FormatName () procedure should assign a value to the global variable FString.
+There is a fault in the program, which means that the assignment does not always take place.
+Explain two ways of exposing the fault.
+... 12]
+© UCLES 2021
+9618/22/M/J/21
+[Turn over
+
+--- Page 12 ---
+12
+A program is needed to take a string containing a full name and to produce a new string of initials.
+Some words in the full name will be ignored. For example, "the", "and", "of", "for" and "to" may all
+be ignored
+Each letter of the new string must be upper case.
+For example:
+Full name
+Integrated Development Environment
+The American Standard Code for Information Interchange
+Initials
+IDE
+ASCII
+The programmer has decided to use the following global variables:
+a ten element 1D array IgnoreList of type STRING to store the ignored words
+a string FNString to store the full name string.
+Assume that:
+•
+•
+each alphabetic character in the full name string may be either upper or lower case
+the full name string contains at least one word.
+The programmer has started to define program modules as follows:
+Module
+GetStart ()
+Getword ()
+Ignoreword ()
+GetInitials ()
+Description
+• Called with an INTEGER as its parameter, representing the number of
+a word in FNString
+• Returns the character start position of that word in FNString or
+returns - 1 if that word does not exist
+• For example: GetStart (3) applied to "hot and cold" returns 9
+• Called with the position of the first character of a word in ENString
+as its parameter
+• Returns the word from FNString
+• For example: if ENString contains the string "hot and cold",
+Getword (9) returns "cold"
+• Called with a STRING parameter representing a word
+• Searches for the word in the Ignorelist array
+• Returns TRUE if the word is found, otherwise returns FALSE
+• Processes the sequence of words in the full name one word at a time
+Calls GetStart (), Getword () and IgnoreWord () to proces
+ach word to form the new strin
+• Outputs the new string
+© UCLES 2021
+9618/22/M/J/21
+
+--- Page 13 ---
+13
+(a) Write pseudocode for the module Ignoreword ().
+[5]
+© UCLES 2021
+9618/22/M/J/21
+[Turn over
+
+--- Page 14 ---
+14
+(b) Write pseudocode for the module GetInitials ().
+18]
+© UCLES 2021
+9618/22/M/J/21
+
+--- Page 15 ---
+15
+BLANK PAGE
+© UCLES 2021
+9618/22/M/J/21
+
+--- Page 16 ---
+16
+BLANK PAGE
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of the University of
+Cambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.
+© UCLES 2021
+9618/22/M/J/21

@@ -1,0 +1,650 @@
+--- Page 1 ---
+* CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+MARK SCHEME
+Maximum Mark: 75
+9618/21
+May/June 2025
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2025 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+This document consists of 14 printed pages.
+© Cambridge University Press & Assessment 2025
+[Turn over
+
+--- Page 2 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level
+descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© Cambridge University Press & Assessment 2025
+Page 2 of 14
+
+--- Page 3 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Annotations guidance for centres
+Examiners use a system of annotations as a shorthand for communicating their marking decisions to
+one another. Examiners are trained during the standardisation process on how and when to use
+annotations. The purpose of annotations is to inform the standardisation and monitoring processes
+and guide the supervising examiners when they are checking the work of examiners within their team.
+The meaning of annotations and how they are used is specific to each component and is understood
+by all examiners who mark the component.
+We publish annotations in our mark schemes to help centres understand the annotations they may
+see on copies of scripts. Note that there may not be a direct correlation between the number of
+annotations on a script and the mark awarded. Similarly, the use of an annotation may not be an
+indication of the quality of the response.
+The annotations listed below were available to examiners marking this component in this series.
+Annotations
+Annotation
+BOD
+X
+LFT
+Highlighted text
+NAQ]
+NE
+Meaning
+Benefit of the doubt
+To indicate where a key word/phrase/code is missing
+Incorrect
+Follow through
+Indicate a point in an answer
+To draw attention to a particular aspect or to indicate where parts of an answer
+have been combined
+Ignore
+Not answered question
+No examples or not enough
+Not relevant or used to separate parts of an answer
+Off-page
+comment
+REP]
+SEEN
+Allows comments to be entered at the bottom of the RM marking window and
+then displayed when the associated question item is navigated to.
+Repetition
+Indicates that work or a page has been seen including blank answer spaces
+and blank pages.
+Correct
+© Cambridge University Press & Assessment 2025
+Page 3 of 14
+
+--- Page 4 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Annotation
+TV
+Meaning
+Too vague
+© Cambridge University Press & Assessment 2025
+Page 4 of 14
+
+--- Page 5 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Mark scheme abbreviations
+separates alternative words / phrases within a marking point
+separates alternative answers within a marking point
+Underline
+Max
+().
+bold
+actual word given must be used by candidate (grammatical variants accepted)
+indicates the maximum number of marks that can be awarded
+the word / phrase in brackets is not required, but sets the context
+word/phrase in bold indicates this is a key word/phrase in the candidates answer and
+this word/phrase or a word/phrase with a similar meaning must be present
+© Cambridge University Press & Assessment 2025
+Page 5 of 14
+
+--- Page 6 ---
+9618/21
+Question
+1(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+4
+1(b)
+1(c)
+Example
+value
+"Fruit"
+Explanation
+Variable name
+Data type
+a category of stock that is
+sold in the shop
+20/02/2025
+when an item was sold
+12.67
+the cost of an item
+TRUE
+to indicate if an item is in
+stock
+Category
+STRING
+DateSold
+(Item) Cost/Price
+(Item) Instock
+DATE
+REAL
+BOOLEAN
+Mark as follows:
+1 mark per row for each variable name and data type
+Pseudocode extract
+Assignment
+Selection Iteration
+Result + CalculateTotal ()
+WHILE IsClosed
+REPEAT
+INPUT Value
+UNTIL Sales [4] > Value
+IF Sales [Current] <= 150 THEN
+Discount ‹ TRUE
+ENDIF
+CASE OF Option
+Mark as follows:
+One mark for each correct row
+Decomposition involves:
+MP1
+Breaking down a problem into sub problems
+MP2
+In order to explain / understand the process/task of how a (stock control)
+can be managed in more detail
+MP3
+Leading to the concept of the program designed as a series of modules
+/ procedures / functions
+Il or by example of different stock control modules
+MP4
+Makes the program easier to test / debug
+Max 3
+Max 2 if no mention of stock control
+5
+3
+© Cambridge University Press & Assessment 2025
+Page 6 of 14
+
+--- Page 7 ---
+9618/21
+Question
+2(a)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+The two decision boxes are in the wrong order //
+The first decision symbol is wrong
+The first decision should check for values greater than or equal to 2000
+May/June 2025
+Marks
+1
+2(a)(ii)
+2(b)(i)
+2(b)(ii)
+2(b) (iii)
+2(c)
+MP1
+MP2
+Max 1
+MP1
+MP2
+Explaining how to correct the flowchart.
+Swap around the two decision boxes
+The first decision box should check for values greater than or equal to 2000
+and the second decision box should check for values above 4000
+Max 1
+2000 / 4000 / 10 / 100
+MP1
+The value cannot be changed // avoids being different in two places
+MP2
+Makes the program easier to understand
+MP3
+Avoids repeatedly writing the same value throughout the program
+MP4
+A change to the value requires a change in only one statement
+Max 2
+MP1
+MP2
+(The code is) tried and tested so error free
+Provides functionality / code that the programmer may find difficult to code
+themselves
+Max 1
+MP1
+Syntax (error)
+MP2
+Rules of programming language // the language grammar was not followed
+MP3
+Run-time (error)
+MP4
+The program performs an illegal operation
+Mark as follows:
+One mark for naming each type of error and one mark for the description
+1
+1
+2
+1
+4
+© Cambridge University Press & Assessment 2025
+Page 7 of 14
+
+--- Page 8 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+3
+Marks
+8
+Example solution:
+DECLARE GeneratedValue : INTEGER
+DECLARE Guess : INTEGER
+GeneratedValue + INT (RAND (100)) + 1
+REPEAT
+OUTPUT "Enter a guess between 1 and 100: "
+INPUT Guess
+IF Guess > GeneratedValue THEN
+OUTPUT "Guess was too high"
+ENDIF
+IF Guess < GeneratedValue THEN
+OUTPUT "Guess was too low"
+ENDIF
+UNTIL Guess = GeneratedValue
+OUTPUT "Number guessed correctly"
+MP1
+MP2
+MP3
+MP4
+MP5
+MP6
+MP7
+MP8
+Declare all variables used
+MP9
+Uses RAND () function
+Uses INT () function
+Correct syntax for random number between 1 and 100
+Conditional loop until correct number guessed
+Prompt and input a guess
+in a loop
+Check if guess is too high
+in a loop
+Check if guess is too low
+in a loop
+Output appropriate message (x2) when the number is not guessed correctly
+(in the loop) and output correct guess message
+Max 8
+© Cambridge University Press & Assessment 2025
+Page 8 of 14
+
+--- Page 9 ---
+9618/21
+Question
+4(a)
+4(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+MP1
+MP2
+May/June 2025
+Marks
+2
+6
+I
+2
+3
+4
+5
+Count-controlled
+The number of iterations required is known
+Key
+"I'
+'H'
+MP3
+'R'
+J
+Chars [J]
+1
+2
+3
+2
+I11
+'D'
+'D'
+MP1
+"I'
+'D'
+'I'
+'H'
+Chars
+12]
+[3]
+'T'
+'H'
+IT'
+141
+'R'
+'H'
+MP2
+"T'
+MP4
+MP5
+MP6
+('R')
+'R'
+Chars array final values
+"D'
+'H'
+R' T
+Mark as follows:
+MP1, MP2, MP3, MP4, MP5
+1 mark per enclosure
+© Cambridge University Press & Assessment 2025
+Page 9 of 14
+
+--- Page 10 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Answer
+Question
+5
+Marks
+7
+MP1
+MP2
+MP3
+MP4
+MP5
+MP6
+MP7
+MP8
+MP9
+MP10
+Max 7
+Pop an item off the stack
+Update Stack pointer
+Add it to the queue
+Update Rear pointer
+Repeat until the stack is empty
+Remove an item from the queue
+Update Front pointer
+Push it onto the stack
+Update the Stack pointer
+Repeat until the queue is empty
+Question
+6(a)
+Answer
+Marks
+4
+Type of test data
+normal
+boundary/
+extreme/
+normal
+boundary/
+extreme/
+normal
+abnormal
+normal
+Test data value
+36
+0/1
+59 / 60
+>= 61
+15
+Expected outcome
+data item is accepted
+data item is accepted
+data item is accepted
+data item is rejected
+data item is accepted
+Mark as follows:
+1 mark for each row with (Type and Value and Outcome)
+© Cambridge University Press & Assessment 2025
+Page 10 of 14
+
+--- Page 11 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+6(b)
+Marks
+8
+Example solution:
+PROCEDURE Sort ()
+DECLARE Temp, J, Boundary : INTEGER
+DECLARE NoSwaps : BOOLEAN
+Boundary + 1999
+REPEAT
+NoSwaps ‹ TRUE
+FOR J ‹ 1 TO Boundary
+IF Reading[J, 1] > Reading[Jt1, 1] THEN
+//first swap sensor value
+Temp < Reading[J, 1]
+Reading[J, 1] < Reading[Jt1, 1]
+Reading[Jt1, 1] < Temp
+//now swap corresponding ID
+Temp < Reading[J, 2]
+Reading[J, 2] ‹ Reading[J+1, 21
+Reading[Jt1, 2] ‹ Temp
+NoSwaps +
+FALSE
+ENDIF
+NEXT J
+Boundary + Boundary - 1
+UNTIL NoSwaps = TRUE
+ENDPROCEDURE
+MP1
+MP2
+initialised
+Procedure heading and ending
+Conditional loop correctly formed including Boolean flag declared and
+MP3
+MP4
+MP5
+MP6
+MP7
+MP8
+An inner loop
+Correct range 1 to 1999 for inner loop
+Comparison of element J with J+1
+Declare Temp variable and swap elements
+in a loop
+in a loop
+Both SensorlD and Speed values were swapped in a loop
+'No-Swap' mechanism:
+: Flag set in inner lo to indicate saare
+Conditional outer loop including flag reset
+MP9
+Reducing Boundary in the outer loop
+© Cambridge University Press & Assessment 2025
+Page 11 of 14
+
+--- Page 12 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+7(a)
+Marks
+6
+Example solution:
+FUNCTION CustomerOrder (Number, Points : INTEGER) RETURNS
+INTEGER
+DECLARE NewPoints,
+NumberFree: INTEGER
+NewPoints ‹ Points + Number
+Number Free < 0
+WHILE NewPoints >= 11 AND Number > O
+NumberFree ‹ NumberFree + 1
+NewPoints ‹ NewPoints -11
+Number ‹ Number - 1
+END WHILE
+OUTPUT "Number of free coffees
+RETURN NewPoints
+ENDFUNCTION
+is:
+, NumberFree
+MP1
+MP2
+Function header and ending and parameters and return type
+Number of coffees ordered added to points
+MP3
+Correct calculation of one free coffee
+MP4
+Attempted calculation of multiple free coffees and reduced NewPoints
+MP5
+Output number of free drinks with suitable message
+MP6
+Return of NewPoints
+© Cambridge University Press & Assessment 2025
+Page 12 of 14
+
+--- Page 13 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Answer
+Question
+7(b)(i)
+Marks
+8
+Example solution:
+PROCEDURE
+AddNewCustomers (NumToAdd
+: INTEGER)
+DECLARE CustomerID : INTEGER
+DECLARE Count : INTEGER
+DECLARE Line : STRING
+DECLARE Newline : STRING
+OPENFILE
+"Loyalty.txt" FOR READ
+WHILE NOT EOF ("Loyalty.txt")
+READFILE
+"Loyalty.txt"
+ENDWHILE
+CLOSEFILE
+"Loyalty.txt"
+Line
+OPENFILE "Loyalty.txt" FOR APPEND
+CustomerID < STR_TO_
+_NUM ( (LEFT (Line, 6))
+FOR Count ‹ 1 TO NumToAdd
+CustomerID + CustomerID + 1
+OUTPUT CustomerID
+NewLine ‹ NUM TO
+_STR (CustomerID)
+& ""0"
+WRITEFILE "Loyalty.txt", Newline
+NEXT Count
+CLOSEFILE "Loyalty.txt"
+ENDPROCEDURE
+Mark as follows:
+MP1
+an integer
+All variables used are declared using the correct type including a string and
+MP2
+Open file in read mode and close (before opening in append mode)
+MP3
+MP4
+Conditional loop with EOF ("Loyalty.txt")
+Read Line from file // Count number of records in the file
+MP5
+MP6
+MP7
+MP8
+Open the file in append mode and subsequently close
+Extract CustomerID from Line and convert to integer // use count from
+MP4 to generate last Customer ID stored
+A (count controlled) loop for the number of customers to add
+Increment CustomerID and output the new CustomerID in loop
+MP9
+Create string for new CustomerID and write to file in loop
+Max 8
+© Cambridge University Press & Assessment 2025
+Page 13 of 14
+
+--- Page 14 ---
+9618/21
+Question
+7(b)(i)
+MP1
+MP2
+MP3
+MP4
+MP5
+Max 4
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Answer
+Check if the text file loyalty. txt exists / is empty
+If file does not exist it must be created (using write mode)
+If the file has to be created / is empty then set the first CustomerID to
+Marks
+4
+Write "100001, 0" to loyalty. txt (using write mode)
+For all but the first customer (to be added to the empty file) use the existing
+code / module
+© Cambridge University Press & Assessment 2025
+Page 14 of 14

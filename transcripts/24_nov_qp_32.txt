@@ -1,0 +1,466 @@
+--- Page 1 ---
+* 0000800000001*
+SIS Cambridge Assessment
+International Educatior
+•
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+9618/32
+October/November 2024
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+• Answer all questions.
+Use a black or dark blue pen.
+• Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided.
+Do not use an erasable pen or correction fluid.
+•
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages. Any blank pages are indicated
+DC (WW/FC) 337425/4
+© UCLES 2024
+L
+[Turn over
+J
+
+--- Page 2 ---
+* 0000800000002*
+2
+1 (a) Describe how packet switching is used to transmit messages across a network.
+13]
+(b) State two benefits and two drawbacks of packet switching as a method of transmitting
+messages across a network.
+Benefit 1 ....
+Benefit 2
+Drawback 1
+Drawback 2
+14]
+(a) Describe serial file organisation as a method of storing data records in a file.
+12]
+(b) State one example of a use for serial file organisation.
+[11
+LOUCLES 2024
+9618/32/0/N/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 3 ---
+* 0000800000003*
+DO NOT WRITE IN THIS MARGIN
+3
+3
+(a) Describe the user-defined data type record.
+DO NOT WRITE IN THIS MARGIN
+(b) A programmer defines a record, Order, to store the following data:
+account number
+order number
+order price
+order date.
+Write pseudocode statements to define this record.
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/32/0/N/24
+[3]
+.......... [4]
+(Turn over
+
+--- Page 4 ---
+* 0000800000004*
+4
+4
+Numbers are stored in a computer using binary floating-point representation with:
+• •
+•
+12 bits for the mantissa
+4 bits for the exponent
+two's complement form for both the mantissa and the exponent.
+(a) Calculate the denary value of the given normalised binary floating-point number.
+Show your working.
+Mantissa
+1
+1
+Exponent
+1
+1
+Working ..
+Answer
+(b) Calculate the normalised binary floating-point representation of -49.1875 in this system.
+Show your working.
+Mantissa
+Exponent
+Working ..
+LOUCLES 2024
+9618/32/0/N/24
+[2]
+[4]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 5 ---
+* 000080000005*
+DO NOT WRITE IN THIS MARGIN
+5
+(a) Name and describe two protocols used by the Application Layer of the TCP/IP protocol suite.
+Protocol 1
+Description
+DO NOT WRITE IN THIS MARGIN
+Protocol 2
+Description
+[4]
+(b) Explain the purpose and function of the Application Layer in the TCP/IP protocol suite.
+DO NOT WRITE IN THIS MARGIN
+[3]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/32/0/N/24
+(Turn over
+
+--- Page 6 ---
+* 0000800000006*
+6
+6
+The truth table for a logic circuit is shown.
+INPUT
+OUTPUT
+A
+B
+0
+D
+0
+0
+0
+0
+1
+0
+0
+1
+1
+1
+1
+0
+0
+1
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+0
+0
+1
+1
+1
+0
+1
+1
+1
+1
+(a) Write the Boolean logic expression that corresponds to the given truth table as the
+sum-of-products.
+X=......
+[3]
+LOUCLES 2024
+9618/32/0/N/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 7 ---
+* 0000800000007*
+DO NOT WRITE IN THIS MARGIN
+7
+(b) Complete the Karnaugh map (K-map) for the given truth table.
+AB
+CD
+00
+01
+11
+10
+DO NOT WRITE IN THIS MARGIN
+00
+01
+11
+10
+12]
+(c) Draw loop(s) around appropriate group(s) in the K-map to produce an optimal sum-of-products.
+12]
+(d) Write the Boolean logic expression from your answer to part (c) as the simplified
+sum-of-products.
+X=...
+DO NOT WRITE IN THIS MARGIN
+12]
+DO NOT WRITE IN THIS MARGI
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/32/0/N/24
+(Turn over
+
+--- Page 8 ---
+000080000008*
+8
+7
+Several syntax diagrams are shown.
+odd
+even
+co
+symbol
+letter
+#
+number
+odd
+odd
+even
+OUCLES 2024
+9618/32/0/N/24
+A
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 9 ---
+000080000009*
+DO NOT WRITE IN THIS MARGIN
+9
+(a) State why each number is invalid for the given syntax diagrams.
+21
+Reason
+123
+Reason
+DO NOT WRITE IN THIS MARGIN
+12]
+(b) Complete the Backus-Naur Form (BNF) for the given syntax diagrams.
+<symbol> ::=
+<number>
+: : =
+DO NOT WRITE IN THIS MARGIN
+12]
+(c) A new syntax rule, code, is required. It must begin with a letter, followed by one or two
+numbers, and end with a symbol.
+(i) Draw a syntax diagram for code.
+DO NOT WRITE IN THIS MARGIN
+[3]
+(ii) Write the BNF for code.
+DO NOT WRITE IN THIS MARGIN
+12]
+LOUCLES 2024
+9618/32/0/N/24
+(Turn over
+
+--- Page 10 ---
+* 0000800000010*
+10
+Complex Instruction Set Computer (CISC) is a type of processor.
+Identify four features of a CISC processor.
+1
+2
+3
+4
+9 (a) The kernel is the central component of an Operating System (OS).
+Outline how the kernel of an OS acts as an interrupt handler.
+(b) (i) State what is meant by the term multi-tasking in an Operating System.
+(ii)
+Describe how multi-tasking is implemented in an Operating System.
+LOUOLES 2024
+9618/32/0/N/24
+14]
+12]
+... [1]
+12]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 11 ---
+* 0000800000011 *
+DO NOT WRITE IN THIS MARGIN
+11
+10 Objects and classes form the basic structure of Object-Oriented Programming (OOP).
+(a) Outline the structure of a class.
+DO NOT WRITE IN THIS MARGIN
+13]
+(b) Give three differences between an object and a class.
+DO NOT WRITE IN THIS MARGIN
+2
+3
+DO NOT WRITE IN THIS MARGIN
+13]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/32/0/N/24
+Turn over
+
+--- Page 12 ---
+* 0000800000012*
+11 This binary tree shows an ordered list of integers.
+12
+25
+36
+64
+49
+(a) A linked list of nodes is used to store the data. Each node consists of a left pointer, the data
+and a right pointer.
+- 1 is used to represent a null pointer.
+Complete this linked list to represent the given binary tree organisation.
+RootPtr
+LeftPir Data RightPtr
+< 25|
+4
+_1 1
+[4]
+LOUCLES 2021
+9618/32/0/N/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 13 ---
+* 0000800000013*
+DO NOT WRITE IN THIS MARG
+IN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+13
+(b) A 2D array is used to store the nodes of the linked list in part (a).
+Complete the diagram using your answer for part (a).
+RootPtr
+Index
+Leftptr
+Freeptr
+1
+2
+3
+4
+5
+6
+Data
+25
+4
+36
+1
+16
+64
+RightPtr
+49
+8
+14]
+(c) The linked list in part (a) is implemented using a 1D array of records. Each record contains a
+left pointer, data and a right pointer.
+The following pseudocode represents a function that searches for an element in the array of
+records LinkList. It returns the index of the record if the element is found, or it returns a
+null pointer if the element is not found.
+Complete the pseudocode for the function.
+FUNCTION Searchlist (Item : INTEGER)...
+NullPtr < -1
+.... < RootPtr
+WHILE NowPtr <> NullPtr
+IF LinkList[NowPtr].Data < Item THEN
+NowPtr & LinkList[NowPtr]. RightPtr
+ELSE
+IF
+THEN
+NowPtr +
+ELSE
+ENDIF
+ENDIF
+ENDWHILE
+RETURN NullPtr
+ENDFUNCTION
+RETURN NowPtr
+OUCLES 2024
+[4]
+9618/32/0/N/24
+
+--- Page 14 ---
+* 0000800000014*
+14
+BLANK PAGE
+LOUCLES 2024
+9618/32/0/N/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 15 ---
+* 0000800000015*
+DO NOT WRITE IN THIS MARGIN
+15
+BLANK PAGE
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/32/0/N/24
+J
+
+--- Page 16 ---
+* 0000800000016*
+16
+BLANK PAGE
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series. J
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+OUCLES 2024
+9618/32/0/N/24
+DO NOT WRITE IN THIS MARGIN

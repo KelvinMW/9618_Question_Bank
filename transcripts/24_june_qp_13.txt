@@ -1,0 +1,602 @@
+--- Page 1 ---
+* 0019655335901*
+•
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+9618/13
+May/June 2024
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+• Write your name, centre number and candidate number in the boxes at the top of the page.
+• Write your answer to each question in the space provided.
+• Do not use an erasable pen or correction fluid.
+• Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages.
+DC (KS/SG) 329374/2
+© UCLES 2024
+[Turn over
+L
+
+--- Page 2 ---
+* 0019655335902*
+2
+1
+(a) Complete the following description.
+A kibibyte has a
+as ..
+A megabyte has a
+as
+prefix. Three kibibytes is the same
+bytes.
+prefix. Two terabytes is the same
+gigabytes.
+14]
+(b) Convert the denary number 241 to hexadecimal.
+11]
+(c) State what is meant by an overflow in binary addition.
+11]
+(d) Computers use character sets when representing characters in binary.
+(i) Complete the table by identifying the number of bits each of the character sets allocates
+to each character.
+Character set
+ASCII
+extended ASCII
+Unicode
+Number of bits
+[1]
+(i) Explain how the word 'Clock' is represented by a character set.
+12]
+LOUCLES 2024
+9618/13/M/J/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 3 ---
+* 0019655335903*
+DO NOT WRITE IN THIS MARGIN
+3
+2
+A photograph is stored as a bitmap image.
+(a) The photograph has a resolution of 4000 pixels wide by 3000 pixels high. The bit depth is
+4 bytes.
+Calculate an estimate for the file size of the photograph in megabytes.
+Show your working.
+Working.
+DO NOT WRITE IN THIS MARGIN
+Answer
+megabytes
+12]
+(b) The photograph is compressed before being uploaded to a web server.
+(i) Give three benefits of this photograph being compressed using lossy compression
+instead of lossless compression.
+DO NOT WRITE IN THIS MARGIN
+1
+2
+3
+[3]
+DO NOT WRITE IN THIS MARGIN
+(ii) Explain how run-length encoding (RLE) will compress the photograph.
+12.
+(c) Identify two elements of a bitmap image that can be changed to reduce its file size.
+DO NOT WRITE IN THIS MARGIN
+2
+OUCLES 2024
+9618/13/M/J/24
+[2]
+[Turn over
+
+--- Page 4 ---
+* 0019655335904 *
+4
+3
+The following table shows part of the instruction set for a processor. The processor has two
+registers: the Accumulator (ACC) and an Index Register (IX).
+Instruction
+Opcode
+Operand
+LDM
+| #n
+Explanation
+Immediate addressing. Load the number n to ACC
+LDD
+‹address>
+Direct addressing. Load the contents of the location at the given
+address to ACC
+LDI
+<address>
+Indirect addressing. The address to be used is at the given address.
+Load the contents of this second address to ACC
+Indexed addressing. Form the address from <address> + the contents
+LDX
+<address>
+of the index register. Copy the contents of this calculated address to
+ACC
+LDR
+#n
+Immediate addressing. Load the number n to IX
+ADD
+#n/Bn/&n
+Add the number n to the ACC
+ADD
+DEC
+<address>
+Add the contents of the given address to the ACC
+SUB
+<register>
+#n/Bn/&n
+Subtract 1 from the contents of the register (ACC or IX)
+Subtract the number n from the ACC
+SUB
+<address>
+Subtract the contents of the given address from the ACC
+INC
+‹register>
+Add 1 to the contents of the register (ACC or IX)
+<address> can be an absolute or a symbolic address
+# denotes a denary number, e.g. #123
+B denotes a binary number, e.g. B01001010
+& denotes a hexadecimal number, e.g. &4A
+MARG
+DO NOT WRITE
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2024
+9618/13/M/J/24
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 5 ---
+* 0019655335905*
+DO NOT WRITE IN THIS MARGIN
+5
+DO NOT WRITE IN THIS MARGIN
+(a) The current contents of memory are shown:
+Address
+48
+49
+50
+51
+52
+53
+54
+Data
+51
+6
+48
+50
+49
+50
+6
+The current contents of the ACC and IX are shown:
+ACC
+IX
+2
+50
+Complete the table by writing the content of the ACC after each program has run.
+Program number
+ACC content
+DO NOT WRITE IN THIS MARGIN
+1
+2
+DO NOT WRITE IN THIS MARGIN
+3
+4
+Code
+LDM #50
+INC ACC
+SUB #1
+IDI 51
+ADD 52
+LDR #2
+IDX 50
+DEC ACC
+IDD 52
+SUB 54
+INC ACC
+[4]
+DO NOT WRITE IN THIS MARGIN
+© UCLES 2024
+9618/13/M/J/24
+[Turn over
+
+--- Page 6 ---
+* 0019655335906*
+6
+(b) The processor includes these bit manipulation instructions:
+Instruction
+Opcode
+Operand
+AND
+#n/Bn/&n
+Explanation
+Bitwise AND operation of the contents of ACC with the operand
+AND
+<address>
+Bitwise AND operation of the contents of ACC with the contents of
+<address>
+XOR
+#n/Bn/&n
+Bitwise XOR operation of the contents of ACC with the operand
+Bitwise XOR operation of the contents of ACC with the contents of
+XOR
+‹address>
+<address>
+OR
+#n/Bn/&n
+Bitwise OR operation of the contents of ACC with the operand
+OR
+<address>
+Bitwise OR operation of the contents of ACC with the contents of
+<address>
+LSL #n
+Bits in ACC are shifted logically n places to the left. Zeros are
+introduced on the right-hand end
+LSR #n
+Bits in ACC are shifted logically n places to the right. Zeros are
+introduced on the left-hand end
+<address> can be an absolute or a symbolic address
+# denotes a denary number, e.g. #123
+B denotes a binary number, e.g. BO1001010
+& denotes a hexadecimal number, e.g. &4A
+The current contents of memory are shown:
+Address
+Data
+100
+00001101
+101
+10111110
+102
+11110011
+103
+| 00110111
+104 00000000
+The current content of the ACC is shown:
+1
+1
+1
+1
+1
+1
+OUCLES 2024
+9618/13/M/J/24
+DO NOT WRITE IN THIS MARG
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 7 ---
+* 0019655335907*
+DO NOT WRITE IN THIS MARGIN
+7
+Complete the table by writing the content of the ACC after each instruction has run.
+The binary number 11111111 is reloaded into the ACC before each instruction is run.
+Instruction number
+Instruction
+ACC content
+1
+LSL #2
+2
+XOR 100
+3
+AND 103
+DO NOT WRITE IN THIS MARGIN
+[3]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2021
+9618/13/M/J/24
+(Turn over
+
+--- Page 8 ---
+* 0019655335908*
+4
+8
+A theatre wants to use a database to store data about the shows that are scheduled, their
+customers and the seats that the customers have booked.
+In the theatre:
+• Each show can take place on multiple dates.
+Some dates can have more than one performance.
+• There are multiple rows of seats.
+• Each seat can be individually booked by its row letter and seat number, for example row E
+seat 2.
+Part of the database design includes these tables:
+SHOW (ShowID, Title, Duration)
+SEAT (SeatID, RowLetter, SeatNumber)
+PERFORMANCE (PerformanceID, ShowID, ShowDate, StartTime)
+(a) Identify the relationship between the tables PERFORMANCE and SHOW.
+11]
+(b) Sample data for the table PERFORMANCE is shown:
+PerformanceID
+Show ID
+ShowDate
+0001
+0002
+0003
+0004
+0005
+0006
+MK12
+MK12
+MK12
+OP3
+0P3
+OP3
+5/5/2025
+5/5/2025
+6/5/2025
+7/5/2025
+8/5/2025
+9/5/2025
+StartTime
+13:00
+19:30
+19:00
+18:30
+18:30
+13:00
+Write a Structured Query Language (SQL) script to define the table PERFORMANCE.
+[4]
+OUCLES 2024
+9618/13/M/J/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 9 ---
+* 0019655336009*
+DO NOT WRITE IN THIS MARGIN
+9
+(c) Write an SQL script to return the number of times each show is scheduled. For example, in
+the sample data in part (b), the show MK12 is scheduled three times.
+The result needs to include the show name and a suitable field name for the number of times
+it is scheduled.
+DO NOT WRITE IN THIS MARGIN
+[4]
+DO NOT WRITE IN THIS MARGIN
+(d) Customers give their first name, last name and email address when they are making a
+booking. One booking can include multiple seats.
+Describe the additional tables that will need to be included in the database and explain how
+these tables will be linked within the database.
+DO NOT WRITE IN THIS MARGIN
+[5]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/13/M/J/24
+[Turn over
+
+--- Page 10 ---
+* 0019655336010*
+5
+10
+A multimedia design company has an office with a LAN (local area network). The LAN can have
+up to 20 devices connected with cables and other devices connected using wireless access.
+(a) The company has private cloud storage for its employees to store their work.
+(i) Define the term private cloud.
+11]
+(ii) Describe the benefits to the company of using private cloud storage instead of public
+cloud storage.
+[3]
+(b) Part of the internal structure of the wired LAN is a star topology.
+Explain how packets are transmitted between two devices in a star topology.
+12]
+LOUCLES 2021
+9618/13/M/J/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DONOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 11 ---
+* 0019655336011*
+DO NOT WRITE IN THIS MARGIN
+11
+(c) A different part of the network uses the Ethernet protocol.
+(i) A collision is detected.
+Describe how the collision is managed using Carrier Sense Multiple Access/Collision
+Detection (CSMA/CD).
+DO NOT WRITE IN THIS MARGIN
+12]
+(ii) Identify two drawbacks of using CSMA/CD.
+2
+DO NOT WRITE IN THIS MARGIN
+12]
+(d) The devices in the office have static private IP addresses.
+State what is meant by a static private IP address.
+11]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2021
+9618/13/M/J/24
+(Turn over
+
+--- Page 12 ---
+* 0019655336012*
+6
+12
+Each of the following truth tables has three inputs (A, B and C) and one output (X).
+Draw one line to match each truth table with its logic expression.
+Truth table
+A
+0
+0
+0
+1
+1
+1
+B
+0
+1
+1
+0
+0
+1
+1
+B
+0
+1
+1
+C
+0
+1
+0
+1
+0
+1
+0
+1
+1
+1
+X
+1
+1
+1
+0
+1
+Logic expression
+NOT (A XOR B) AND C
+(A OR C) AND NOT B
+A NAND B NAND C
+1
+1
+0
+0
+0
+1
+C
+0
+0
+1
+(A NAND B) OR C
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+NOT (A AND B AND C)
+OUCLES 2024
+9618/13/M/J/24
+13]
+J
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 13 ---
+* 0019655336013*
+DO NOT WRITE
+IN THIS MARGIN
+13
+Robots are used to serve food and drink to customers at a restaurant.
+DO NOT WRITE
+IN THIS MARGIN
+(a) A robot navigates through the restaurant to the table it is serving.
+Complete the table by identifying two sensors that can be included in the robot and the
+purpose of each sensor in the navigation system.
+Sensor
+Purpose of sensor in navigation system
+DO NOT WRITE IN THIS MARGIN
+12]
+DO NOT WRITE IN THIS MARGIN
+(b) The robot uses Artificial Intelligence (Al) to communicate with the customers. The customers
+speak to the robot to order their food and drinks.
+Explain how Al will be used in this part of the robot.
+DO NOT WRITE IN THIS MARGIN
+©UCLES 2024
+9618/13/M/J/24
+13]
+[Turn over
+
+--- Page 14 ---
+* 0019655336014*
+14
+(c) The navigation system can be considered an example of a control system.
+Describe how feedback is used in a control system.
+12]
+(d) The robot includes a touchscreen for the customer to make their payment.
+Describe the principal operation of a touchscreen.
+14]
+LOUCLES 2024
+9618/13/M/J/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 15 ---
+* 0019655336015*
+DO NOT WRITE IN THIS MARGIN
+15
+(e) Program libraries were used when writing the robot's software.
+(i) State what is meant by a program library.
+11]
+(ii) Some program libraries include Dynamic Link Library (DLL) files.
+Describe the benefits of a programmer using a library with DLL files instead of using a
+library that does not include DLL files.
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+[4]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2024
+9618/13/M/J/24
+(Turn over
+
+--- Page 16 ---
+* 0019655336016*
+16
+(f) The data from the robots is transmitted to a central computer using a wireless connection.
+(i) Complete the table by identifying and describing two methods of data verification that
+can be used during data transfer.
+Method
+Description
+1
+2
+14]
+(ii) Explain how encryption can protect the security of data during transmission.
+12]
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2024
+9618/13/M/J/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN

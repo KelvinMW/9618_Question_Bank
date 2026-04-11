@@ -1,0 +1,489 @@
+--- Page 1 ---
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+MARK SCHEME
+Maximum Mark: 75
+9618/13
+October/November 2021
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2021 series for most
+Cambridge IGCSE™
+', Cambridge International A and AS Level components and some Cambridge O Level
+This document consists of 9 printed pages.
+© UCLES 2021
+[Turn over
+
+--- Page 2 ---
+9618/13
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2021
+Page 2 of 9
+
+--- Page 3 ---
+9618/13
+Question
+1(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+1 mark for each correct line
+Marks
+5
+1 kibibyte
+8 bits
+1 gigabyte
+8000 bits
+1000
+kilobytes
+1024
+mebibytes
+1 byte
+1 kilobyte
+1 gibibyte
+8192 bits
+1 megabyte
+1 mebibyte
+1(b)(i)
+1(b) (ii)
+1(c)
+1 mark for answer
+1 mark for working
+e.g.
+1010 1010
+0011 0111
+1110 0001
+111111
+The result is a larger number than can be stored in the given number of bits
+/ The result is greater than 255
+240
+2
+1
+1
+© UCLES 2021
+Page 3 of 9
+
+--- Page 4 ---
+9618/13
+Question
+2(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+Marks
+2
+2(b)(i)
+2(b) (ii)
+2(c)
+1 mark per bullet point
+:
+security is protecting data from loss / corruption
+integrity is ensuring the consistency / accuracy of the data
+1 mark per bullet point
+validation checks that data is reasonable / sensible
+example e.g. checking data is the right number / type of characters
+1 mark per bullet point
+verification checks that data is the same as the original
+by example e.g. double entry
+1 mark per similarity to max 2
+...
+Both are pieces of malicious software
+Both are downloaded / installed/run without the user's knowledge
+Both can pretend to be / are embedded in other legitimate software when
+downloaded // both try to avoid the firewall
+•
+Both run in the background
+1 mark for difference
+:
+•
+Virus can damage computer data; spyware only records / accesses data
+Virus does not send data out of the computer; spyware sends recorded
+data to third party
+Virus replicates itself; spyware does not replicate itself
+Answer
+2
+2
+3
+Question
+3(a)
+Marks
+3
+1 mark per bullet point
+• • •
+A AND B...
+...XORC...
+... OR NOT B
+((A AND B) XOR C) OR NOT B
+© UCLES 2021
+Page 4 of 9
+
+--- Page 5 ---
+9618/13
+Question
+3(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+1 mark for each set of 4 rows (shaded)
+A
+B
+C
+Working space
+Marks
+2
+3(c)
+1
+1
+1
+0
+1
+1 mark for gate, 1 mark for matching symbol, 1 mark for matching truth table
+0
+0
+0
+1
+1
+1
+1
+NOR
+0
+1
+1
+0
+0
+X
+1
+1
+1
+1
+1
+1
+3
+NAND
+A
+0
+0
+1
+1
+A
+B
+1
+0
+1
+B
+OUTPUT
+1
+1
+1
+1
+0
+1
+OUTPUT
+1
+1
+1
+© UCLES 2021
+Page 5 of 9
+
+--- Page 6 ---
+9618/13
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+4(a)
+October/November
+2021
+Marks
+3
+4(b) (i)
+4(b)(ii)
+4(c)
+1 mark per bullet point to max 3
+e.g.
+He has ethical guidelines to follow
+•
+•
+.... so clients/other staff know the standards being applied
+... so he does not have to decide what is ethical it's written down
+••.
+..
+Clients / staff know he is reputable
+... recognition of his skills / knowledge
+... there may be a test / requirements for entry
+They provide help and support
+... for example if he needs legal advice
+They run training courses
+... to keep his skills up-to-date
+1 mark per bullet point to max 2
+e.g.
+•
+He can tell the manager he has not used it
+... and how he will get up-to-date
+He can perform his own research on how to use it
+He can explain to the manager that he needs additional training
+He can(ask the manager to book on a training course
+He can ask for a mentor / to shadow someone
+He can practice at home before starting
+1 mark for each correct tool
+e.g.
+Colour coding // pretty printing
+Auto-complete
+Auto-correct
+Context sensitive prompts
+•
+Expand and collapse code blocks
+1 mark per bullet point to max 2
+e.g.
+He didn't act in best interest of product
+•
+...because the product might fail because he didn't report the error
+He didn't act in best interest of client
+•
+... because if the product does not work then they have been let down
+because he didn't report the error
+•
+•
+He didn't act in the best interest of the profession
+... he is letting his profession down because he didn't report the error
+He didn't act in best interest of the company
+•
+... not correcting the error early could lead to later problems
+2
+3
+2
+© UCLES 2021
+Page 6 of 9
+
+--- Page 7 ---
+9618/13
+Question
+4(d)
+Question
+5(a)
+5(b)
+5(c)(i)
+5 (c)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for each correctly completed term
+Compilers are usually used when a high-level language program is complete.
+They translate all the code at the same time and then run the program. They
+produce executable/ exe/object code files that can be run without the source
+Interpreters translate one line of a high-level language program at a time,
+and then run that line of code. They are most useful while developing the
+Programs because errors can be corected and then the program continues
+Assemblers are used to translate assembly code into binary/machine code.
+Answer
+1 mark for 2 or 3 correct ticks, 2 marks for 4 correct ticks
+Table
+Field name
+Primary
+Key (PK)
+Foreign
+Key (FK)
+MANAGER
+SHOP
+CAR
+CAR
+ManagerID
+ManagerID
+RegistrationNumber
+shopID
+r
+r
+1 mark per bullet point
+••.
+Access rights give managers / himself access to different elements
+... by having different accounts / logins
+... which have different access rights e.g. read only // no access / read /
+write
+:
+Specific views can be assigned to himself and to the managers
+....e.g. managers can only see the data for their own shops)
+1 mark per correctly completed statement
+SELECT COUNT (RegistrationNumber)
+FROM CAR
+GROUP BY ShopID
+1 mark for each correct statement
+INSERT INTO CAR
+VALUES ("123AA", "Tiger", "Lioness", 10500, "12BSTREET" )
+October/November
+2021
+Marks
+4
+Marks
+2
+3
+3
+2
+© UCLES 2021
+Page 7 of 9
+
+--- Page 8 ---
+9618/13
+Question
+6(a)
+6(b)
+Question
+7(a)(i)
+7(a)(ii)
+7(b)(i)
+7(b)(ii)
+© UCLES 2021
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+1 mark for identification of line and description of error
+1 mark for the correct statement
+Marks
+4
+Line
+number
+Description of the error
+Correct statement
+2
+3
+Program Counter should be incremented,
+not decremented
+It should be the contents of the address in
+the MAR
+PC < [PC] + 1
+MDR < [ [MARI]
+1 mark for each correct row
+Current contents of the ACC
+11111111
+Instruction New contents of the ACC
+OR 101
+11111111
+00000000
+XOR #15
+00001111
+10101010
+LSR #2
+00101010
+01010101
+AND 104
+00000000
+Answer
+4
+Marks
+2
+1 mark per bullet point
+•
+••
+..
+Smaller time gaps between the samples
+Makes the digital sound wave more accurate
+Smaller quantisation errors
+1 mark per bullet point
+More samples/data are taken/recorded
+... so more bits are stored altogether
+1 mark per bullet point
+•
+Reduces the file size
+Faster to transmit/download
+•
+Original file is too large for email storage/attachment
+1 mark per bullet point to max 2
+Reduce amplitude to only the range used
+... limited amplitudes mean fewer bits per sample
+:
+•
+Run-length-encoding
+... Where consecutive sounds are the same record the binary value of the
+sound and number of times it repeats
+Record the changes instead of the actual sounds
+Page 8 of 9
+2
+2
+2
+
+--- Page 9 ---
+9618/13
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+8(a)
+October/November
+2021
+Marks
+3
+8(b)
+8(c)
+1 mark per bullet point
+Small geographical area
+No leasing external infrastructure / transmission media // does not use
+internet to transmit within the building
+1 mark per item
+router
+switch
+hub
+1 mark per bullet point to max 4
+•
+Provide interface to wireless network
+... as an antenna
+Receives analogue radio waves
+... convert them to digital / binary
+Checks incoming transmissions for correct MAC / IP address
+.... ignore transmissions not intended for it
+Encrypts / encodes the data
+Decrypts / decodes the data
+Takes digital/binary input and converts to analogue waves
+... sends the radio waves via the antenna
+2
+4
+© UCLES 2021
+Page 9 of 9

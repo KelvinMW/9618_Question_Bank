@@ -1,0 +1,2322 @@
+{
+    "1.1": {
+        "Whole Topic": [
+            {
+                "img": "21_june_qp_11_q1.png",
+                "ms_img": "21_june_ms_11_q1.png",
+                "paper": "21_june_qp_11",
+                "question": "1",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "1.2": {
+        "Whole Topic": [
+            {
+                "img": "21_june_qp_11_q1.png",
+                "ms_img": "21_june_ms_11_q1.png",
+                "paper": "21_june_qp_11",
+                "question": "1",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "1.3": {
+        "Whole Topic": [
+            {
+                "img": "21_june_qp_11_q1.png",
+                "ms_img": "21_june_ms_11_q1.png",
+                "paper": "21_june_qp_11",
+                "question": "1",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "13.1": {
+        "File Processing": [
+            {
+                "img": "23_june_qp_32_q6.png",
+                "ms_img": "23_june_ms_32_q6.png",
+                "paper": "23_june_qp_32",
+                "question": "6",
+                "tags": [
+                    "File Processing"
+                ]
+            }
+        ],
+        "OOP": [
+            {
+                "img": "22_june_qp_32_q1.png",
+                "ms_img": "22_june_ms_32_q1.png",
+                "paper": "22_june_qp_32",
+                "question": "1",
+                "tags": [
+                    "OOP"
+                ]
+            }
+        ],
+        "Whole Topic": [
+            {
+                "img": "21_june_qp_31_q2.png",
+                "ms_img": "21_june_ms_31_q2.png",
+                "paper": "21_june_qp_31",
+                "question": "2",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "22_june_qp_31_q1.png",
+                "ms_img": "22_june_ms_31_q1.png",
+                "paper": "22_june_qp_31",
+                "question": "1",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "21_nov_qp_31_q3.png",
+                "ms_img": "21_nov_ms_31_q3.png",
+                "paper": "21_nov_qp_31",
+                "question": "3",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "22_nov_qp_32_q4.png",
+                "ms_img": "22_nov_ms_32_q4.png",
+                "paper": "22_nov_qp_32",
+                "question": "4",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "23_june_qp_31_q4.png",
+                "ms_img": "23_june_ms_31_q4.png",
+                "paper": "23_june_qp_31",
+                "question": "4",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "23_nov_qp_31_q3.png",
+                "ms_img": "23_nov_ms_31_q3.png",
+                "paper": "23_nov_qp_31",
+                "question": "3",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "23_nov_qp_32_q2.png",
+                "ms_img": "23_nov_ms_32_q2.png",
+                "paper": "23_nov_qp_32",
+                "question": "2",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "13.2": {
+        "Whole Topic": [
+            {
+                "img": "23_june_qp_31_q3.png",
+                "ms_img": "23_june_ms_31_q3.png",
+                "paper": "23_june_qp_31",
+                "question": "3",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "23_nov_qp_31_q4.png",
+                "ms_img": "23_nov_ms_31_q4.png",
+                "paper": "23_nov_qp_31",
+                "question": "4",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "23_nov_qp_32_q3.png",
+                "ms_img": "23_nov_ms_32_q3.png",
+                "paper": "23_nov_qp_32",
+                "question": "3",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "13.3": {
+        "Whole Topic": [
+            {
+                "img": "21_june_qp_31_q1.png",
+                "ms_img": "21_june_ms_31_q1.png",
+                "paper": "21_june_qp_31",
+                "question": "1",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "21_nov_qp_31_q1.png",
+                "ms_img": "21_nov_ms_31_q1.png",
+                "paper": "21_nov_qp_31",
+                "question": "1",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "22_nov_qp_32_q1.png",
+                "ms_img": "22_nov_ms_32_q1.png",
+                "paper": "22_nov_qp_32",
+                "question": "1",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "23_june_qp_31_q1.png",
+                "ms_img": "23_june_ms_31_q1.png",
+                "paper": "23_june_qp_31",
+                "question": "1",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "23_june_qp_32_q1.png",
+                "ms_img": "23_june_ms_32_q1.png",
+                "paper": "23_june_qp_32",
+                "question": "1",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "23_nov_qp_31_q1.png",
+                "ms_img": "23_nov_ms_31_q1.png",
+                "paper": "23_nov_qp_31",
+                "question": "1",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "23_nov_qp_32_q1.png",
+                "ms_img": "23_nov_ms_32_q1.png",
+                "paper": "23_nov_qp_32",
+                "question": "1",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "14.1": {
+        "Whole Topic": [
+            {
+                "img": "22_june_qp_32_q3.png",
+                "ms_img": "22_june_ms_32_q3.png",
+                "paper": "22_june_qp_32",
+                "question": "3",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "22_nov_qp_32_q3.png",
+                "ms_img": "22_nov_ms_32_q3.png",
+                "paper": "22_nov_qp_32",
+                "question": "3",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "23_nov_qp_31_q2.png",
+                "ms_img": "23_nov_ms_31_q2.png",
+                "paper": "23_nov_qp_31",
+                "question": "2",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "23_nov_qp_32_q4.png",
+                "ms_img": "23_nov_ms_32_q4.png",
+                "paper": "23_nov_qp_32",
+                "question": "4",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "14.2": {
+        "Whole Topic": [
+            {
+                "img": "21_june_qp_31_q6.png",
+                "ms_img": "21_june_ms_31_q6.png",
+                "paper": "21_june_qp_31",
+                "question": "6",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "22_june_qp_31_q3.png",
+                "ms_img": "22_june_ms_31_q3.png",
+                "paper": "22_june_qp_31",
+                "question": "3",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "21_nov_qp_31_q6.png",
+                "ms_img": "21_nov_ms_31_q6.png",
+                "paper": "21_nov_qp_31",
+                "question": "6",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "23_june_qp_31_q5.png",
+                "ms_img": "23_june_ms_31_q5.png",
+                "paper": "23_june_qp_31",
+                "question": "5",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "23_june_qp_32_q7.png",
+                "ms_img": "23_june_ms_32_q7.png",
+                "paper": "23_june_qp_32",
+                "question": "7",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "15.1": {
+        "Parallel Processing": [
+            {
+                "img": "23_june_qp_31_q8.png",
+                "ms_img": "23_june_ms_31_q8.png",
+                "paper": "23_june_qp_31",
+                "question": "8",
+                "tags": [
+                    "Parallel Processing"
+                ]
+            }
+        ],
+        "Pipelining": [
+            {
+                "img": "23_june_qp_32_q8.png",
+                "ms_img": "23_june_ms_32_q8.png",
+                "paper": "23_june_qp_32",
+                "question": "8",
+                "tags": [
+                    "RISC/CISC",
+                    "Pipelining"
+                ]
+            }
+        ],
+        "RISC/CISC": [
+            {
+                "img": "22_june_qp_31_q4.png",
+                "ms_img": "22_june_ms_31_q4.png",
+                "paper": "22_june_qp_31",
+                "question": "4",
+                "tags": [
+                    "RISC/CISC"
+                ]
+            },
+            {
+                "img": "23_june_qp_32_q8.png",
+                "ms_img": "23_june_ms_32_q8.png",
+                "paper": "23_june_qp_32",
+                "question": "8",
+                "tags": [
+                    "RISC/CISC",
+                    "Pipelining"
+                ]
+            }
+        ],
+        "SISD/SIMD/MISD/MIMD": [
+            {
+                "img": "22_june_qp_32_q5.png",
+                "ms_img": "22_june_ms_32_q5.png",
+                "paper": "22_june_qp_32",
+                "question": "5",
+                "tags": [
+                    "SISD/SIMD/MISD/MIMD"
+                ]
+            },
+            {
+                "img": "23_nov_qp_31_q5.png",
+                "ms_img": "23_nov_ms_31_q5.png",
+                "paper": "23_nov_qp_31",
+                "question": "5",
+                "tags": [
+                    "SISD/SIMD/MISD/MIMD"
+                ]
+            },
+            {
+                "img": "23_nov_qp_32_q10.png",
+                "ms_img": "23_nov_ms_32_q10.png",
+                "paper": "23_nov_qp_32",
+                "question": "10",
+                "tags": [
+                    "SISD/SIMD/MISD/MIMD"
+                ]
+            }
+        ],
+        "Virtual Machines": [
+            {
+                "img": "22_june_qp_31_q6.png",
+                "ms_img": "22_june_ms_31_q6.png",
+                "paper": "22_june_qp_31",
+                "question": "6",
+                "tags": [
+                    "Virtual Machines"
+                ]
+            },
+            {
+                "img": "22_nov_qp_32_q5.png",
+                "ms_img": "22_nov_ms_32_q5.png",
+                "paper": "22_nov_qp_32",
+                "question": "5",
+                "tags": [
+                    "Virtual Machines"
+                ]
+            }
+        ]
+    },
+    "15.2": {
+        "Boolean Algebra": [
+            {
+                "img": "22_nov_qp_32_q8.png",
+                "ms_img": "22_nov_ms_32_q8.png",
+                "paper": "22_nov_qp_32",
+                "question": "8",
+                "tags": [
+                    "Flip Flops",
+                    "Boolean Algebra"
+                ]
+            },
+            {
+                "img": "23_june_qp_31_q7.png",
+                "ms_img": "23_june_ms_31_q7.png",
+                "paper": "23_june_qp_31",
+                "question": "7",
+                "tags": [
+                    "K-Map",
+                    "Boolean Algebra"
+                ]
+            },
+            {
+                "img": "23_june_qp_32_q9.png",
+                "ms_img": "23_june_ms_32_q9.png",
+                "paper": "23_june_qp_32",
+                "question": "9",
+                "tags": [
+                    "K-Map",
+                    "Boolean Algebra"
+                ]
+            },
+            {
+                "img": "23_nov_qp_31_q6.png",
+                "ms_img": "23_nov_ms_31_q6.png",
+                "paper": "23_nov_qp_31",
+                "question": "6",
+                "tags": [
+                    "Boolean Algebra"
+                ]
+            },
+            {
+                "img": "23_nov_qp_32_q7.png",
+                "ms_img": "23_nov_ms_32_q7.png",
+                "paper": "23_nov_qp_32",
+                "question": "7",
+                "tags": [
+                    "Boolean Algebra"
+                ]
+            }
+        ],
+        "Flip Flops": [
+            {
+                "img": "22_nov_qp_32_q8.png",
+                "ms_img": "22_nov_ms_32_q8.png",
+                "paper": "22_nov_qp_32",
+                "question": "8",
+                "tags": [
+                    "Flip Flops",
+                    "Boolean Algebra"
+                ]
+            }
+        ],
+        "Full/Half Adders": [
+            {
+                "img": "21_june_qp_31_q7.png",
+                "ms_img": "21_june_ms_31_q7.png",
+                "paper": "21_june_qp_31",
+                "question": "7",
+                "tags": [
+                    "Full/Half Adders"
+                ]
+            }
+        ],
+        "K-Map": [
+            {
+                "img": "23_june_qp_31_q7.png",
+                "ms_img": "23_june_ms_31_q7.png",
+                "paper": "23_june_qp_31",
+                "question": "7",
+                "tags": [
+                    "K-Map",
+                    "Boolean Algebra"
+                ]
+            },
+            {
+                "img": "23_june_qp_32_q9.png",
+                "ms_img": "23_june_ms_32_q9.png",
+                "paper": "23_june_qp_32",
+                "question": "9",
+                "tags": [
+                    "K-Map",
+                    "Boolean Algebra"
+                ]
+            }
+        ],
+        "Whole Topic": [
+            {
+                "img": "21_nov_qp_31_q7.png",
+                "ms_img": "21_nov_ms_31_q7.png",
+                "paper": "21_nov_qp_31",
+                "question": "7",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "22_june_qp_32_q6.png",
+                "ms_img": "22_june_ms_32_q6.png",
+                "paper": "22_june_qp_32",
+                "question": "6",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "16.1": {
+        "Disk Thrashing": [
+            {
+                "img": "23_nov_qp_32_q5.png",
+                "ms_img": "23_nov_ms_32_q5.png",
+                "paper": "23_nov_qp_32",
+                "question": "5",
+                "tags": [
+                    "Virtual Memory",
+                    "Disk Thrashing"
+                ]
+            }
+        ],
+        "Scheduling": [
+            {
+                "img": "22_nov_qp_32_q9.png",
+                "ms_img": "22_nov_ms_32_q9.png",
+                "paper": "22_nov_qp_32",
+                "question": "9",
+                "tags": [
+                    "Scheduling"
+                ]
+            },
+            {
+                "img": "23_nov_qp_31_q7.png",
+                "ms_img": "23_nov_ms_31_q7.png",
+                "paper": "23_nov_qp_31",
+                "question": "7",
+                "tags": [
+                    "Scheduling"
+                ]
+            }
+        ],
+        "Virtual Memory": [
+            {
+                "img": "23_nov_qp_32_q5.png",
+                "ms_img": "23_nov_ms_32_q5.png",
+                "paper": "23_nov_qp_32",
+                "question": "5",
+                "tags": [
+                    "Virtual Memory",
+                    "Disk Thrashing"
+                ]
+            }
+        ],
+        "Whole Topic": [
+            {
+                "img": "21_june_qp_31_q3.png",
+                "ms_img": "21_june_ms_31_q3.png",
+                "paper": "21_june_qp_31",
+                "question": "3",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "16.2": {
+        "BNF/Syntax Diagrams": [
+            {
+                "img": "21_nov_qp_31_q4.png",
+                "ms_img": "21_nov_ms_31_q4.png",
+                "paper": "21_nov_qp_31",
+                "question": "4",
+                "tags": [
+                    "BNF/Syntax Diagrams"
+                ]
+            },
+            {
+                "img": "22_june_qp_32_q4.png",
+                "ms_img": "22_june_ms_32_q4.png",
+                "paper": "22_june_qp_32",
+                "question": "4",
+                "tags": [
+                    "BNF/Syntax Diagrams"
+                ]
+            },
+            {
+                "img": "23_june_qp_31_q6.png",
+                "ms_img": "23_june_ms_31_q6.png",
+                "paper": "23_june_qp_31",
+                "question": "6",
+                "tags": [
+                    "BNF/Syntax Diagrams"
+                ]
+            },
+            {
+                "img": "23_june_qp_32_q3.png",
+                "ms_img": "23_june_ms_32_q3.png",
+                "paper": "23_june_qp_32",
+                "question": "3",
+                "tags": [
+                    "BNF/Syntax Diagrams"
+                ]
+            }
+        ],
+        "RPN": [
+            {
+                "img": "21_june_qp_31_q4.png",
+                "ms_img": "21_june_ms_31_q4.png",
+                "paper": "21_june_qp_31",
+                "question": "4",
+                "tags": [
+                    "RPN"
+                ]
+            },
+            {
+                "img": "22_june_qp_31_q5.png",
+                "ms_img": "22_june_ms_31_q5.png",
+                "paper": "22_june_qp_31",
+                "question": "5",
+                "tags": [
+                    "RPN"
+                ]
+            },
+            {
+                "img": "23_nov_qp_31_q9.png",
+                "ms_img": "23_nov_ms_31_q9.png",
+                "paper": "23_nov_qp_31",
+                "question": "9",
+                "tags": [
+                    "RPN"
+                ]
+            },
+            {
+                "img": "23_nov_qp_32_q6.png",
+                "ms_img": "23_nov_ms_32_q6.png",
+                "paper": "23_nov_qp_32",
+                "question": "6",
+                "tags": [
+                    "RPN"
+                ]
+            }
+        ],
+        "Whole Topic": [
+            {
+                "img": "21_june_qp_31_q3.png",
+                "ms_img": "21_june_ms_31_q3.png",
+                "paper": "21_june_qp_31",
+                "question": "3",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "22_nov_qp_32_q2.png",
+                "ms_img": "22_nov_ms_32_q2.png",
+                "paper": "22_nov_qp_32",
+                "question": "2",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "17.1": {
+        "Digital Certificates & Signatures": [
+            {
+                "img": "22_june_qp_32_q7.png",
+                "ms_img": "22_june_ms_32_q7.png",
+                "paper": "22_june_qp_32",
+                "question": "7",
+                "tags": [
+                    "Digital Certificates & Signatures"
+                ]
+            },
+            {
+                "img": "22_nov_qp_32_q6.png",
+                "ms_img": "22_nov_ms_32_q6.png",
+                "paper": "22_nov_qp_32",
+                "question": "6",
+                "tags": [
+                    "Digital Certificates & Signatures",
+                    "Types of Encryption"
+                ]
+            }
+        ],
+        "Quantum Cryptography": [
+            {
+                "img": "22_june_qp_31_q8.png",
+                "ms_img": "22_june_ms_31_q8.png",
+                "paper": "22_june_qp_31",
+                "question": "8",
+                "tags": [
+                    "Quantum Cryptography"
+                ]
+            },
+            {
+                "img": "23_june_qp_31_q9.png",
+                "ms_img": "23_june_ms_31_q9.png",
+                "paper": "23_june_qp_31",
+                "question": "9",
+                "tags": [
+                    "Quantum Cryptography"
+                ]
+            },
+            {
+                "img": "23_june_qp_32_q5.png",
+                "ms_img": "23_june_ms_32_q5.png",
+                "paper": "23_june_qp_32",
+                "question": "5",
+                "tags": [
+                    "Quantum Cryptography"
+                ]
+            }
+        ],
+        "SSL/TLS": [
+            {
+                "img": "21_nov_qp_31_q8.png",
+                "ms_img": "21_nov_ms_31_q8.png",
+                "paper": "21_nov_qp_31",
+                "question": "8",
+                "tags": [
+                    "SSL/TLS"
+                ]
+            }
+        ],
+        "Types of Encryption": [
+            {
+                "img": "22_nov_qp_32_q6.png",
+                "ms_img": "22_nov_ms_32_q6.png",
+                "paper": "22_nov_qp_32",
+                "question": "6",
+                "tags": [
+                    "Digital Certificates & Signatures",
+                    "Types of Encryption"
+                ]
+            }
+        ]
+    },
+    "18.1": {
+        "A*": [
+            {
+                "img": "21_nov_qp_31_q9.png",
+                "ms_img": "21_nov_ms_31_q9.png",
+                "paper": "21_nov_qp_31",
+                "question": "9",
+                "tags": [
+                    "A*",
+                    "Neural Networks"
+                ]
+            },
+            {
+                "img": "23_june_qp_31_q2.png",
+                "ms_img": "23_june_ms_31_q2.png",
+                "paper": "23_june_qp_31",
+                "question": "2",
+                "tags": [
+                    "Machine Learning",
+                    "A*",
+                    "Dijkstra"
+                ]
+            },
+            {
+                "img": "23_june_qp_32_q10.png",
+                "ms_img": "23_june_ms_32_q10.png",
+                "paper": "23_june_qp_32",
+                "question": "10",
+                "tags": [
+                    "A*"
+                ]
+            }
+        ],
+        "Dijkstra": [
+            {
+                "img": "23_june_qp_31_q2.png",
+                "ms_img": "23_june_ms_31_q2.png",
+                "paper": "23_june_qp_31",
+                "question": "2",
+                "tags": [
+                    "Machine Learning",
+                    "A*",
+                    "Dijkstra"
+                ]
+            },
+            {
+                "img": "23_nov_qp_32_q8.png",
+                "ms_img": "23_nov_ms_32_q8.png",
+                "paper": "23_nov_qp_32",
+                "question": "8",
+                "tags": [
+                    "Dijkstra"
+                ]
+            }
+        ],
+        "Dijsktra": [
+            {
+                "img": "21_june_qp_31_q5.png",
+                "ms_img": "21_june_ms_31_q5.png",
+                "paper": "21_june_qp_31",
+                "question": "5",
+                "tags": [
+                    "Dijsktra",
+                    "Graphs"
+                ]
+            }
+        ],
+        "Graphs": [
+            {
+                "img": "21_june_qp_31_q5.png",
+                "ms_img": "21_june_ms_31_q5.png",
+                "paper": "21_june_qp_31",
+                "question": "5",
+                "tags": [
+                    "Dijsktra",
+                    "Graphs"
+                ]
+            }
+        ],
+        "Machine Learning": [
+            {
+                "img": "22_nov_qp_32_q7.png",
+                "ms_img": "22_nov_ms_32_q7.png",
+                "paper": "22_nov_qp_32",
+                "question": "7",
+                "tags": [
+                    "Machine Learning"
+                ]
+            },
+            {
+                "img": "23_june_qp_31_q2.png",
+                "ms_img": "23_june_ms_31_q2.png",
+                "paper": "23_june_qp_31",
+                "question": "2",
+                "tags": [
+                    "Machine Learning",
+                    "A*",
+                    "Dijkstra"
+                ]
+            }
+        ],
+        "Neural Networks": [
+            {
+                "img": "21_nov_qp_31_q9.png",
+                "ms_img": "21_nov_ms_31_q9.png",
+                "paper": "21_nov_qp_31",
+                "question": "9",
+                "tags": [
+                    "A*",
+                    "Neural Networks"
+                ]
+            },
+            {
+                "img": "23_nov_qp_31_q12.png",
+                "ms_img": "23_nov_ms_31_q12.png",
+                "paper": "23_nov_qp_31",
+                "question": "12",
+                "tags": [
+                    "Neural Networks"
+                ]
+            }
+        ]
+    },
+    "19.1": {
+        "Binary Search": [
+            {
+                "img": "22_june_qp_32_q8.png",
+                "ms_img": "22_june_ms_32_q8.png",
+                "paper": "22_june_qp_32",
+                "question": "8",
+                "tags": [
+                    "Binary Search"
+                ]
+            }
+        ],
+        "Insertion Sort": [
+            {
+                "img": "21_june_qp_31_q8.png",
+                "ms_img": "21_june_ms_31_q8.png",
+                "paper": "21_june_qp_31",
+                "question": "8",
+                "tags": [
+                    "Insertion Sort"
+                ]
+            }
+        ],
+        "Linked Lists": [
+            {
+                "img": "22_nov_qp_32_q11.png",
+                "ms_img": "22_nov_ms_32_q11.png",
+                "paper": "22_nov_qp_32",
+                "question": "11",
+                "tags": [
+                    "Linked Lists"
+                ]
+            }
+        ],
+        "Queues": [
+            {
+                "img": "23_june_qp_31_q11.png",
+                "ms_img": "23_june_ms_31_q11.png",
+                "paper": "23_june_qp_31",
+                "question": "11",
+                "tags": [
+                    "Queues"
+                ]
+            },
+            {
+                "img": "23_june_qp_32_q11.png",
+                "ms_img": "23_june_ms_32_q11.png",
+                "paper": "23_june_qp_32",
+                "question": "11",
+                "tags": [
+                    "Queues"
+                ]
+            }
+        ],
+        "Stacks": [
+            {
+                "img": "23_nov_qp_31_q10.png",
+                "ms_img": "23_nov_ms_31_q10.png",
+                "paper": "23_nov_qp_31",
+                "question": "10",
+                "tags": [
+                    "Stacks"
+                ]
+            },
+            {
+                "img": "23_nov_qp_32_q9.png",
+                "ms_img": "23_nov_ms_32_q9.png",
+                "paper": "23_nov_qp_32",
+                "question": "9",
+                "tags": [
+                    "Stacks"
+                ]
+            }
+        ]
+    },
+    "19.2": {
+        "Whole Topic": [
+            {
+                "img": "21_nov_qp_31_q10.png",
+                "ms_img": "21_nov_ms_31_q10.png",
+                "paper": "21_nov_qp_31",
+                "question": "10",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "23_june_qp_31_q12.png",
+                "ms_img": "23_june_ms_31_q12.png",
+                "paper": "23_june_qp_31",
+                "question": "12",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "2.1": {
+        "Whole Topic": [
+            {
+                "img": "21_june_qp_11_q4.png",
+                "ms_img": "21_june_ms_11_q4.png",
+                "paper": "21_june_qp_11",
+                "question": "4",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "20.1": {
+        "Declarative Programming": [
+            {
+                "img": "22_june_qp_31_q2.png",
+                "ms_img": "22_june_ms_31_q2.png",
+                "paper": "22_june_qp_31",
+                "question": "2",
+                "tags": [
+                    "Declarative Programming"
+                ]
+            },
+            {
+                "img": "22_june_qp_32_q2.png",
+                "ms_img": "22_june_ms_32_q2.png",
+                "paper": "22_june_qp_32",
+                "question": "2",
+                "tags": [
+                    "Declarative Programming"
+                ]
+            },
+            {
+                "img": "23_nov_qp_31_q11.png",
+                "ms_img": "23_nov_ms_31_q11.png",
+                "paper": "23_nov_qp_31",
+                "question": "11",
+                "tags": [
+                    "Declarative Programming"
+                ]
+            },
+            {
+                "img": "23_nov_qp_32_q11.png",
+                "ms_img": "23_nov_ms_32_q11.png",
+                "paper": "23_nov_qp_32",
+                "question": "11",
+                "tags": [
+                    "Declarative Programming"
+                ]
+            }
+        ],
+        "Low-Level Programming": [
+            {
+                "img": "22_june_qp_31_q9.png",
+                "ms_img": "22_june_ms_31_q9.png",
+                "paper": "22_june_qp_31",
+                "question": "9",
+                "tags": [
+                    "Low-Level Programming"
+                ]
+            }
+        ],
+        "OOP": [
+            {
+                "img": "22_june_qp_31_q7.png",
+                "ms_img": "22_june_ms_31_q7.png",
+                "paper": "22_june_qp_31",
+                "question": "7",
+                "tags": [
+                    "OOP"
+                ]
+            },
+            {
+                "img": "22_june_qp_32_q1.png",
+                "ms_img": "22_june_ms_32_q1.png",
+                "paper": "22_june_qp_32",
+                "question": "1",
+                "tags": [
+                    "OOP"
+                ]
+            },
+            {
+                "img": "22_nov_qp_32_q10.png",
+                "ms_img": "22_nov_ms_32_q10.png",
+                "paper": "22_nov_qp_32",
+                "question": "10",
+                "tags": [
+                    "OOP"
+                ]
+            },
+            {
+                "img": "23_june_qp_32_q4.png",
+                "ms_img": "23_june_ms_32_q4.png",
+                "paper": "23_june_qp_32",
+                "question": "4",
+                "tags": [
+                    "OOP"
+                ]
+            }
+        ],
+        "Whole Topic": [
+            {
+                "img": "21_june_qp_31_q9.png",
+                "ms_img": "21_june_ms_31_q9.png",
+                "paper": "21_june_qp_31",
+                "question": "9",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "21_nov_qp_31_q2.png",
+                "ms_img": "21_nov_ms_31_q2.png",
+                "paper": "21_nov_qp_31",
+                "question": "2",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "20.2": {
+        "Exception Handling": [
+            {
+                "img": "22_june_qp_32_q9.png",
+                "ms_img": "22_june_ms_32_q9.png",
+                "paper": "22_june_qp_32",
+                "question": "9",
+                "tags": [
+                    "Exception Handling"
+                ]
+            },
+            {
+                "img": "23_nov_qp_31_q8.png",
+                "ms_img": "23_nov_ms_31_q8.png",
+                "paper": "23_nov_qp_31",
+                "question": "8",
+                "tags": [
+                    "File Processing",
+                    "Exception Handling"
+                ]
+            },
+            {
+                "img": "23_nov_qp_32_q12.png",
+                "ms_img": "23_nov_ms_32_q12.png",
+                "paper": "23_nov_qp_32",
+                "question": "12",
+                "tags": [
+                    "File Processing",
+                    "Exception Handling"
+                ]
+            }
+        ],
+        "File Processing": [
+            {
+                "img": "23_june_qp_31_q10.png",
+                "ms_img": "23_june_ms_31_q10.png",
+                "paper": "23_june_qp_31",
+                "question": "10",
+                "tags": [
+                    "File Processing"
+                ]
+            },
+            {
+                "img": "23_june_qp_32_q6.png",
+                "ms_img": "23_june_ms_32_q6.png",
+                "paper": "23_june_qp_32",
+                "question": "6",
+                "tags": [
+                    "File Processing"
+                ]
+            },
+            {
+                "img": "23_nov_qp_31_q8.png",
+                "ms_img": "23_nov_ms_31_q8.png",
+                "paper": "23_nov_qp_31",
+                "question": "8",
+                "tags": [
+                    "File Processing",
+                    "Exception Handling"
+                ]
+            },
+            {
+                "img": "23_nov_qp_32_q12.png",
+                "ms_img": "23_nov_ms_32_q12.png",
+                "paper": "23_nov_qp_32",
+                "question": "12",
+                "tags": [
+                    "File Processing",
+                    "Exception Handling"
+                ]
+            }
+        ],
+        "Whole Topic": [
+            {
+                "img": "21_nov_qp_31_q5.png",
+                "ms_img": "21_nov_ms_31_q5.png",
+                "paper": "21_nov_qp_31",
+                "question": "5",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "3.1": {
+        "Whole Topic": [
+            {
+                "img": "21_june_qp_11_q5.png",
+                "ms_img": "21_june_ms_11_q5.png",
+                "paper": "21_june_qp_11",
+                "question": "5",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "21_june_qp_11_q8.png",
+                "ms_img": "21_june_ms_11_q8.png",
+                "paper": "21_june_qp_11",
+                "question": "8",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "3.2": {
+        "Whole Topic": [
+            {
+                "img": "21_june_qp_11_q5.png",
+                "ms_img": "21_june_ms_11_q5.png",
+                "paper": "21_june_qp_11",
+                "question": "5",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "21_june_qp_11_q8.png",
+                "ms_img": "21_june_ms_11_q8.png",
+                "paper": "21_june_qp_11",
+                "question": "8",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "4.1": {
+        "Whole Topic": [
+            {
+                "img": "21_june_qp_11_q3.png",
+                "ms_img": "21_june_ms_11_q3.png",
+                "paper": "21_june_qp_11",
+                "question": "3",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "4.2": {
+        "Whole Topic": [
+            {
+                "img": "21_june_qp_11_q3.png",
+                "ms_img": "21_june_ms_11_q3.png",
+                "paper": "21_june_qp_11",
+                "question": "3",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "4.3": {
+        "Whole Topic": [
+            {
+                "img": "21_june_qp_11_q3.png",
+                "ms_img": "21_june_ms_11_q3.png",
+                "paper": "21_june_qp_11",
+                "question": "3",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "5.1": {
+        "Whole Topic": [
+            {
+                "img": "21_june_qp_11_q2.png",
+                "ms_img": "21_june_ms_11_q2.png",
+                "paper": "21_june_qp_11",
+                "question": "2",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "5.2": {
+        "Whole Topic": [
+            {
+                "img": "21_june_qp_11_q2.png",
+                "ms_img": "21_june_ms_11_q2.png",
+                "paper": "21_june_qp_11",
+                "question": "2",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "6.1": {
+        "Whole Topic": [
+            {
+                "img": "21_june_qp_11_q6.png",
+                "ms_img": "21_june_ms_11_q6.png",
+                "paper": "21_june_qp_11",
+                "question": "6",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "6.2": {
+        "Whole Topic": [
+            {
+                "img": "21_june_qp_11_q6.png",
+                "ms_img": "21_june_ms_11_q6.png",
+                "paper": "21_june_qp_11",
+                "question": "6",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "7.1": {
+        "Whole Topic": [
+            {
+                "img": "21_june_qp_11_q1.png",
+                "ms_img": "21_june_ms_11_q1.png",
+                "paper": "21_june_qp_11",
+                "question": "1",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "8.1": {
+        "Whole Topic": [
+            {
+                "img": "21_june_qp_11_q7.png",
+                "ms_img": "21_june_ms_11_q7.png",
+                "paper": "21_june_qp_11",
+                "question": "7",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "8.2": {
+        "Whole Topic": [
+            {
+                "img": "21_june_qp_11_q7.png",
+                "ms_img": "21_june_ms_11_q7.png",
+                "paper": "21_june_qp_11",
+                "question": "7",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "8.3": {
+        "Whole Topic": [
+            {
+                "img": "21_june_qp_11_q7.png",
+                "ms_img": "21_june_ms_11_q7.png",
+                "paper": "21_june_qp_11",
+                "question": "7",
+                "tags": [
+                    "Whole Topic"
+                ]
+            }
+        ]
+    },
+    "P4": {
+        "P4-2D Array": [
+            {
+                "img": "22_june_qp_42_q2.png",
+                "ms_img": "22_june_ms_42_q2.png",
+                "paper": "22_june_qp_42",
+                "question": "2",
+                "tags": [
+                    "P4-2D Array",
+                    "P4-Bubble Sort",
+                    "P4-Binary Search"
+                ]
+            },
+            {
+                "img": "22_nov_qp_42_q1.png",
+                "ms_img": "22_nov_ms_42_q1.png",
+                "paper": "22_nov_qp_42",
+                "question": "1",
+                "tags": [
+                    "P4-2D Array",
+                    "P4-Insertion Sort"
+                ]
+            },
+            {
+                "img": "24_nov_qp_42_q3.png",
+                "ms_img": "24_nov_ms_42_q3.png",
+                "paper": "24_nov_qp_42",
+                "question": "3",
+                "tags": [
+                    "P4-2D Array",
+                    "P4-File Processing",
+                    "P4-Bubble Sort"
+                ]
+            },
+            {
+                "img": "25_nov_qp_41_q3.png",
+                "ms_img": "25_nov_ms_41_q3.png",
+                "paper": "25_nov_qp_41",
+                "question": "3",
+                "tags": [
+                    "P4-Hash Table",
+                    "P4-2D Array",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "25_nov_qp_43_q1.png",
+                "ms_img": "25_nov_ms_43_q1.png",
+                "paper": "25_nov_qp_43",
+                "question": "1",
+                "tags": [
+                    "P4-OOP",
+                    "P4-2D Array"
+                ]
+            }
+        ],
+        "P4-Binary Search": [
+            {
+                "img": "22_june_qp_42_q2.png",
+                "ms_img": "22_june_ms_42_q2.png",
+                "paper": "22_june_qp_42",
+                "question": "2",
+                "tags": [
+                    "P4-2D Array",
+                    "P4-Bubble Sort",
+                    "P4-Binary Search"
+                ]
+            },
+            {
+                "img": "24_june_qp_41_q1.png",
+                "ms_img": "24_june_ms_41_q1.png",
+                "paper": "24_june_qp_41",
+                "question": "1",
+                "tags": [
+                    "P4-Bubble Sort",
+                    "P4-Binary Search"
+                ]
+            },
+            {
+                "img": "24_june_qp_42_q3.png",
+                "ms_img": "24_june_ms_42_q3.png",
+                "paper": "24_june_qp_42",
+                "question": "3",
+                "tags": [
+                    "P4-Binary Search",
+                    "P4-Insertion Sort",
+                    "P4-Recursion/Iteration"
+                ]
+            },
+            {
+                "img": "25_june_qp_43_q2.png",
+                "ms_img": "25_june_ms_43_q2.png",
+                "paper": "25_june_qp_43",
+                "question": "2",
+                "tags": [
+                    "P4-Insertion Sort",
+                    "P4-Binary Search"
+                ]
+            },
+            {
+                "img": "25_nov_qp_42_q2.png",
+                "ms_img": "25_nov_ms_42_q2.png",
+                "paper": "25_nov_qp_42",
+                "question": "2",
+                "tags": [
+                    "P4-Bubble Sort",
+                    "P4-Binary Search"
+                ]
+            }
+        ],
+        "P4-Binary Tree": [
+            {
+                "img": "21_nov_qp_41_q3.png",
+                "ms_img": "21_nov_ms_41_q3.png",
+                "paper": "21_nov_qp_41",
+                "question": "3",
+                "tags": [
+                    "P4-Binary Tree"
+                ]
+            },
+            {
+                "img": "22_nov_qp_41_q3.png",
+                "ms_img": "22_nov_ms_41_q3.png",
+                "paper": "22_nov_qp_41",
+                "question": "3",
+                "tags": [
+                    "P4-Binary Tree"
+                ]
+            },
+            {
+                "img": "24_june_qp_42_q2.png",
+                "ms_img": "24_june_ms_42_q2.png",
+                "paper": "24_june_qp_42",
+                "question": "2",
+                "tags": [
+                    "P4-OOP",
+                    "P4-Binary Tree"
+                ]
+            },
+            {
+                "img": "25_june_qp_41_q3.png",
+                "ms_img": "25_june_ms_41_q3.png",
+                "paper": "25_june_qp_41",
+                "question": "3",
+                "tags": [
+                    "P4-OOP",
+                    "P4-Binary Tree"
+                ]
+            },
+            {
+                "img": "25_nov_qp_42_q3.png",
+                "ms_img": "25_nov_ms_42_q3.png",
+                "paper": "25_nov_qp_42",
+                "question": "3",
+                "tags": [
+                    "P4-Binary Tree",
+                    "P4-File Processing"
+                ]
+            }
+        ],
+        "P4-Bubble Sort": [
+            {
+                "img": "21_june_qp_41_q2.png",
+                "ms_img": "21_june_ms_41_q2.png",
+                "paper": "21_june_qp_41",
+                "question": "2",
+                "tags": [
+                    "P4-Linear Search",
+                    "P4-Bubble Sort"
+                ]
+            },
+            {
+                "img": "22_june_qp_42_q2.png",
+                "ms_img": "22_june_ms_42_q2.png",
+                "paper": "22_june_qp_42",
+                "question": "2",
+                "tags": [
+                    "P4-2D Array",
+                    "P4-Bubble Sort",
+                    "P4-Binary Search"
+                ]
+            },
+            {
+                "img": "22_nov_qp_41_q1.png",
+                "ms_img": "22_nov_ms_41_q1.png",
+                "paper": "22_nov_qp_41",
+                "question": "1",
+                "tags": [
+                    "P4-File Processing",
+                    "P4-Bubble Sort"
+                ]
+            },
+            {
+                "img": "23_june_qp_42_q1.png",
+                "ms_img": "23_june_ms_42_q1.png",
+                "paper": "23_june_qp_42",
+                "question": "1",
+                "tags": [
+                    "P4-Bubble Sort"
+                ]
+            },
+            {
+                "img": "24_june_qp_41_q1.png",
+                "ms_img": "24_june_ms_41_q1.png",
+                "paper": "24_june_qp_41",
+                "question": "1",
+                "tags": [
+                    "P4-Bubble Sort",
+                    "P4-Binary Search"
+                ]
+            },
+            {
+                "img": "24_nov_qp_41_q1.png",
+                "ms_img": "24_nov_ms_41_q1.png",
+                "paper": "24_nov_qp_41",
+                "question": "1",
+                "tags": [
+                    "P4-Bubble Sort",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "24_nov_qp_42_q3.png",
+                "ms_img": "24_nov_ms_42_q3.png",
+                "paper": "24_nov_qp_42",
+                "question": "3",
+                "tags": [
+                    "P4-2D Array",
+                    "P4-File Processing",
+                    "P4-Bubble Sort"
+                ]
+            },
+            {
+                "img": "25_nov_qp_42_q2.png",
+                "ms_img": "25_nov_ms_42_q2.png",
+                "paper": "25_nov_qp_42",
+                "question": "2",
+                "tags": [
+                    "P4-Bubble Sort",
+                    "P4-Binary Search"
+                ]
+            }
+        ],
+        "P4-File Processing": [
+            {
+                "img": "21_june_qp_41_q3.png",
+                "ms_img": "21_june_ms_41_q3.png",
+                "paper": "21_june_qp_41",
+                "question": "3",
+                "tags": [
+                    "P4-OOP",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "21_nov_qp_41_q2.png",
+                "ms_img": "21_nov_ms_41_q2.png",
+                "paper": "21_nov_qp_41",
+                "question": "2",
+                "tags": [
+                    "P4-OOP",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "22_june_qp_41_q1.png",
+                "ms_img": "22_june_ms_41_q1.png",
+                "paper": "22_june_qp_41",
+                "question": "1",
+                "tags": [
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "22_june_qp_42_q3.png",
+                "ms_img": "22_june_ms_42_q3.png",
+                "paper": "22_june_qp_42",
+                "question": "3",
+                "tags": [
+                    "P4-OOP",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "22_nov_qp_41_q1.png",
+                "ms_img": "22_nov_ms_41_q1.png",
+                "paper": "22_nov_qp_41",
+                "question": "1",
+                "tags": [
+                    "P4-File Processing",
+                    "P4-Bubble Sort"
+                ]
+            },
+            {
+                "img": "22_nov_qp_42_q2.png",
+                "ms_img": "22_nov_ms_42_q2.png",
+                "paper": "22_nov_qp_42",
+                "question": "2",
+                "tags": [
+                    "P4-OOP",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "23_june_qp_41_q1.png",
+                "ms_img": "23_june_ms_41_q1.png",
+                "paper": "23_june_qp_41",
+                "question": "1",
+                "tags": [
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "23_june_qp_41_q3.png",
+                "ms_img": "23_june_ms_41_q3.png",
+                "paper": "23_june_qp_41",
+                "question": "3",
+                "tags": [
+                    "P4-Stack",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "23_june_qp_42_q3.png",
+                "ms_img": "23_june_ms_42_q3.png",
+                "paper": "23_june_qp_42",
+                "question": "3",
+                "tags": [
+                    "P4-OOP",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "23_nov_qp_41_q2.png",
+                "ms_img": "23_nov_ms_41_q2.png",
+                "paper": "23_nov_qp_41",
+                "question": "2",
+                "tags": [
+                    "P4-Queue",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "23_nov_qp_42_q1.png",
+                "ms_img": "23_nov_ms_42_q1.png",
+                "paper": "23_nov_qp_42",
+                "question": "1",
+                "tags": [
+                    "P4-Stack",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "24_june_qp_41_q2.png",
+                "ms_img": "24_june_ms_41_q2.png",
+                "paper": "24_june_qp_41",
+                "question": "2",
+                "tags": [
+                    "P4-OOP",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "24_june_qp_42_q1.png",
+                "ms_img": "24_june_ms_42_q1.png",
+                "paper": "24_june_qp_42",
+                "question": "1",
+                "tags": [
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "24_nov_qp_41_q1.png",
+                "ms_img": "24_nov_ms_41_q1.png",
+                "paper": "24_nov_qp_41",
+                "question": "1",
+                "tags": [
+                    "P4-Bubble Sort",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "24_nov_qp_42_q3.png",
+                "ms_img": "24_nov_ms_42_q3.png",
+                "paper": "24_nov_qp_42",
+                "question": "3",
+                "tags": [
+                    "P4-2D Array",
+                    "P4-File Processing",
+                    "P4-Bubble Sort"
+                ]
+            },
+            {
+                "img": "25_june_qp_41_q2.png",
+                "ms_img": "25_june_ms_41_q2.png",
+                "paper": "25_june_qp_41",
+                "question": "2",
+                "tags": [
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "25_june_qp_42_q1.png",
+                "ms_img": "25_june_ms_42_q1.png",
+                "paper": "25_june_qp_42",
+                "question": "1",
+                "tags": [
+                    "P4-Stack",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "25_june_qp_42_q2.png",
+                "ms_img": "25_june_ms_42_q2.png",
+                "paper": "25_june_qp_42",
+                "question": "2",
+                "tags": [
+                    "P4-Hash Table",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "25_june_qp_43_q1.png",
+                "ms_img": "25_june_ms_43_q1.png",
+                "paper": "25_june_qp_43",
+                "question": "1",
+                "tags": [
+                    "P4-Queue",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "25_nov_qp_41_q3.png",
+                "ms_img": "25_nov_ms_41_q3.png",
+                "paper": "25_nov_qp_41",
+                "question": "3",
+                "tags": [
+                    "P4-Hash Table",
+                    "P4-2D Array",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "25_nov_qp_42_q3.png",
+                "ms_img": "25_nov_ms_42_q3.png",
+                "paper": "25_nov_qp_42",
+                "question": "3",
+                "tags": [
+                    "P4-Binary Tree",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "25_nov_qp_43_q2.png",
+                "ms_img": "25_nov_ms_43_q2.png",
+                "paper": "25_nov_qp_43",
+                "question": "2",
+                "tags": [
+                    "P4-Queue",
+                    "P4-File Processing"
+                ]
+            }
+        ],
+        "P4-Hash Table": [
+            {
+                "img": "25_june_qp_42_q2.png",
+                "ms_img": "25_june_ms_42_q2.png",
+                "paper": "25_june_qp_42",
+                "question": "2",
+                "tags": [
+                    "P4-Hash Table",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "25_nov_qp_41_q3.png",
+                "ms_img": "25_nov_ms_41_q3.png",
+                "paper": "25_nov_qp_41",
+                "question": "3",
+                "tags": [
+                    "P4-Hash Table",
+                    "P4-2D Array",
+                    "P4-File Processing"
+                ]
+            }
+        ],
+        "P4-Insertion Sort": [
+            {
+                "img": "22_nov_qp_42_q1.png",
+                "ms_img": "22_nov_ms_42_q1.png",
+                "paper": "22_nov_qp_42",
+                "question": "1",
+                "tags": [
+                    "P4-2D Array",
+                    "P4-Insertion Sort"
+                ]
+            },
+            {
+                "img": "24_june_qp_42_q3.png",
+                "ms_img": "24_june_ms_42_q3.png",
+                "paper": "24_june_qp_42",
+                "question": "3",
+                "tags": [
+                    "P4-Binary Search",
+                    "P4-Insertion Sort",
+                    "P4-Recursion/Iteration"
+                ]
+            },
+            {
+                "img": "25_june_qp_43_q2.png",
+                "ms_img": "25_june_ms_43_q2.png",
+                "paper": "25_june_qp_43",
+                "question": "2",
+                "tags": [
+                    "P4-Insertion Sort",
+                    "P4-Binary Search"
+                ]
+            }
+        ],
+        "P4-Linear Search": [
+            {
+                "img": "21_june_qp_41_q2.png",
+                "ms_img": "21_june_ms_41_q2.png",
+                "paper": "21_june_qp_41",
+                "question": "2",
+                "tags": [
+                    "P4-Linear Search",
+                    "P4-Bubble Sort"
+                ]
+            }
+        ],
+        "P4-Linked List": [
+            {
+                "img": "21_june_qp_41_q1.png",
+                "ms_img": "21_june_ms_41_q1.png",
+                "paper": "21_june_qp_41",
+                "question": "1",
+                "tags": [
+                    "P4-Linked List"
+                ]
+            },
+            {
+                "img": "24_nov_qp_41_q3.png",
+                "ms_img": "24_nov_ms_41_q3.png",
+                "paper": "24_nov_qp_41",
+                "question": "3",
+                "tags": [
+                    "P4-Linked List"
+                ]
+            },
+            {
+                "img": "25_june_qp_43_q3.png",
+                "ms_img": "25_june_ms_43_q3.png",
+                "paper": "25_june_qp_43",
+                "question": "3",
+                "tags": [
+                    "P4-OOP",
+                    "P4-Linked List"
+                ]
+            }
+        ],
+        "P4-OOP": [
+            {
+                "img": "21_june_qp_41_q3.png",
+                "ms_img": "21_june_ms_41_q3.png",
+                "paper": "21_june_qp_41",
+                "question": "3",
+                "tags": [
+                    "P4-OOP",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "21_nov_qp_41_q2.png",
+                "ms_img": "21_nov_ms_41_q2.png",
+                "paper": "21_nov_qp_41",
+                "question": "2",
+                "tags": [
+                    "P4-OOP",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "22_june_qp_41_q2.png",
+                "ms_img": "22_june_ms_41_q2.png",
+                "paper": "22_june_qp_41",
+                "question": "2",
+                "tags": [
+                    "P4-OOP"
+                ]
+            },
+            {
+                "img": "22_june_qp_42_q3.png",
+                "ms_img": "22_june_ms_42_q3.png",
+                "paper": "22_june_qp_42",
+                "question": "3",
+                "tags": [
+                    "P4-OOP",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "22_nov_qp_41_q2.png",
+                "ms_img": "22_nov_ms_41_q2.png",
+                "paper": "22_nov_qp_41",
+                "question": "2",
+                "tags": [
+                    "P4-OOP"
+                ]
+            },
+            {
+                "img": "22_nov_qp_42_q2.png",
+                "ms_img": "22_nov_ms_42_q2.png",
+                "paper": "22_nov_qp_42",
+                "question": "2",
+                "tags": [
+                    "P4-OOP",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "23_june_qp_41_q2.png",
+                "ms_img": "23_june_ms_41_q2.png",
+                "paper": "23_june_qp_41",
+                "question": "2",
+                "tags": [
+                    "P4-OOP"
+                ]
+            },
+            {
+                "img": "23_june_qp_42_q3.png",
+                "ms_img": "23_june_ms_42_q3.png",
+                "paper": "23_june_qp_42",
+                "question": "3",
+                "tags": [
+                    "P4-OOP",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "23_nov_qp_41_q3.png",
+                "ms_img": "23_nov_ms_41_q3.png",
+                "paper": "23_nov_qp_41",
+                "question": "3",
+                "tags": [
+                    "P4-OOP"
+                ]
+            },
+            {
+                "img": "23_nov_qp_42_q3.png",
+                "ms_img": "23_nov_ms_42_q3.png",
+                "paper": "23_nov_qp_42",
+                "question": "3",
+                "tags": [
+                    "P4-OOP"
+                ]
+            },
+            {
+                "img": "24_june_qp_41_q2.png",
+                "ms_img": "24_june_ms_41_q2.png",
+                "paper": "24_june_qp_41",
+                "question": "2",
+                "tags": [
+                    "P4-OOP",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "24_june_qp_42_q2.png",
+                "ms_img": "24_june_ms_42_q2.png",
+                "paper": "24_june_qp_42",
+                "question": "2",
+                "tags": [
+                    "P4-OOP",
+                    "P4-Binary Tree"
+                ]
+            },
+            {
+                "img": "24_nov_qp_41_q2.png",
+                "ms_img": "24_nov_ms_41_q2.png",
+                "paper": "24_nov_qp_41",
+                "question": "2",
+                "tags": [
+                    "P4-OOP"
+                ]
+            },
+            {
+                "img": "24_nov_qp_42_q1.png",
+                "ms_img": "24_nov_ms_42_q1.png",
+                "paper": "24_nov_qp_42",
+                "question": "1",
+                "tags": [
+                    "P4-OOP"
+                ]
+            },
+            {
+                "img": "25_june_qp_41_q3.png",
+                "ms_img": "25_june_ms_41_q3.png",
+                "paper": "25_june_qp_41",
+                "question": "3",
+                "tags": [
+                    "P4-OOP",
+                    "P4-Binary Tree"
+                ]
+            },
+            {
+                "img": "25_june_qp_42_q3.png",
+                "ms_img": "25_june_ms_42_q3.png",
+                "paper": "25_june_qp_42",
+                "question": "3",
+                "tags": [
+                    "P4-OOP"
+                ]
+            },
+            {
+                "img": "25_june_qp_43_q3.png",
+                "ms_img": "25_june_ms_43_q3.png",
+                "paper": "25_june_qp_43",
+                "question": "3",
+                "tags": [
+                    "P4-OOP",
+                    "P4-Linked List"
+                ]
+            },
+            {
+                "img": "25_nov_qp_41_q2.png",
+                "ms_img": "25_nov_ms_41_q2.png",
+                "paper": "25_nov_qp_41",
+                "question": "2",
+                "tags": [
+                    "P4-OOP"
+                ]
+            },
+            {
+                "img": "25_nov_qp_42_q1.png",
+                "ms_img": "25_nov_ms_42_q1.png",
+                "paper": "25_nov_qp_42",
+                "question": "1",
+                "tags": [
+                    "P4-OOP"
+                ]
+            },
+            {
+                "img": "25_nov_qp_43_q1.png",
+                "ms_img": "25_nov_ms_43_q1.png",
+                "paper": "25_nov_qp_43",
+                "question": "1",
+                "tags": [
+                    "P4-OOP",
+                    "P4-2D Array"
+                ]
+            }
+        ],
+        "P4-Queue": [
+            {
+                "img": "22_june_qp_41_q3.png",
+                "ms_img": "22_june_ms_41_q3.png",
+                "paper": "22_june_qp_41",
+                "question": "3",
+                "tags": [
+                    "P4-Queue"
+                ]
+            },
+            {
+                "img": "22_nov_qp_42_q3.png",
+                "ms_img": "22_nov_ms_42_q3.png",
+                "paper": "22_nov_qp_42",
+                "question": "3",
+                "tags": [
+                    "P4-Queue",
+                    "P4-Recursion/Iteration"
+                ]
+            },
+            {
+                "img": "23_june_qp_42_q2.png",
+                "ms_img": "23_june_ms_42_q2.png",
+                "paper": "23_june_qp_42",
+                "question": "2",
+                "tags": [
+                    "P4-Queue"
+                ]
+            },
+            {
+                "img": "23_nov_qp_41_q2.png",
+                "ms_img": "23_nov_ms_41_q2.png",
+                "paper": "23_nov_qp_41",
+                "question": "2",
+                "tags": [
+                    "P4-Queue",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "24_june_qp_41_q3.png",
+                "ms_img": "24_june_ms_41_q3.png",
+                "paper": "24_june_qp_41",
+                "question": "3",
+                "tags": [
+                    "P4-Queue"
+                ]
+            },
+            {
+                "img": "24_nov_qp_42_q2.png",
+                "ms_img": "24_nov_ms_42_q2.png",
+                "paper": "24_nov_qp_42",
+                "question": "2",
+                "tags": [
+                    "P4-Queue"
+                ]
+            },
+            {
+                "img": "25_june_qp_41_q1.png",
+                "ms_img": "25_june_ms_41_q1.png",
+                "paper": "25_june_qp_41",
+                "question": "1",
+                "tags": [
+                    "P4-Queue"
+                ]
+            },
+            {
+                "img": "25_june_qp_43_q1.png",
+                "ms_img": "25_june_ms_43_q1.png",
+                "paper": "25_june_qp_43",
+                "question": "1",
+                "tags": [
+                    "P4-Queue",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "25_nov_qp_43_q2.png",
+                "ms_img": "25_nov_ms_43_q2.png",
+                "paper": "25_nov_qp_43",
+                "question": "2",
+                "tags": [
+                    "P4-Queue",
+                    "P4-File Processing"
+                ]
+            }
+        ],
+        "P4-Recursion/Iteration": [
+            {
+                "img": "21_nov_qp_41_q1.png",
+                "ms_img": "21_nov_ms_41_q1.png",
+                "paper": "21_nov_qp_41",
+                "question": "1",
+                "tags": [
+                    "P4-Recursion/Iteration"
+                ]
+            },
+            {
+                "img": "22_nov_qp_42_q3.png",
+                "ms_img": "22_nov_ms_42_q3.png",
+                "paper": "22_nov_qp_42",
+                "question": "3",
+                "tags": [
+                    "P4-Queue",
+                    "P4-Recursion/Iteration"
+                ]
+            },
+            {
+                "img": "23_nov_qp_41_q1.png",
+                "ms_img": "23_nov_ms_41_q1.png",
+                "paper": "23_nov_qp_41",
+                "question": "1",
+                "tags": [
+                    "P4-Recursion/Iteration"
+                ]
+            },
+            {
+                "img": "23_nov_qp_42_q2.png",
+                "ms_img": "23_nov_ms_42_q2.png",
+                "paper": "23_nov_qp_42",
+                "question": "2",
+                "tags": [
+                    "P4-Recursion/Iteration"
+                ]
+            },
+            {
+                "img": "24_june_qp_42_q3.png",
+                "ms_img": "24_june_ms_42_q3.png",
+                "paper": "24_june_qp_42",
+                "question": "3",
+                "tags": [
+                    "P4-Binary Search",
+                    "P4-Insertion Sort",
+                    "P4-Recursion/Iteration"
+                ]
+            },
+            {
+                "img": "25_nov_qp_43_q3.png",
+                "ms_img": "25_nov_ms_43_q3.png",
+                "paper": "25_nov_qp_43",
+                "question": "3",
+                "tags": [
+                    "P4-Recursion/Iteration"
+                ]
+            }
+        ],
+        "P4-Stack": [
+            {
+                "img": "22_june_qp_42_q1.png",
+                "ms_img": "22_june_ms_42_q1.png",
+                "paper": "22_june_qp_42",
+                "question": "1",
+                "tags": [
+                    "P4-Stack"
+                ]
+            },
+            {
+                "img": "23_june_qp_41_q3.png",
+                "ms_img": "23_june_ms_41_q3.png",
+                "paper": "23_june_qp_41",
+                "question": "3",
+                "tags": [
+                    "P4-Stack",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "23_nov_qp_42_q1.png",
+                "ms_img": "23_nov_ms_42_q1.png",
+                "paper": "23_nov_qp_42",
+                "question": "1",
+                "tags": [
+                    "P4-Stack",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "25_june_qp_42_q1.png",
+                "ms_img": "25_june_ms_42_q1.png",
+                "paper": "25_june_qp_42",
+                "question": "1",
+                "tags": [
+                    "P4-Stack",
+                    "P4-File Processing"
+                ]
+            },
+            {
+                "img": "25_nov_qp_41_q1.png",
+                "ms_img": "25_nov_ms_41_q1.png",
+                "paper": "25_nov_qp_41",
+                "question": "1",
+                "tags": [
+                    "P4-Stack"
+                ]
+            }
+        ]
+    }
+}

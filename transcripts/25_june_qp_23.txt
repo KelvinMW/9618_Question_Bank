@@ -1,0 +1,608 @@
+--- Page 1 ---
+* 0000800000001*
+ELS Cambridge Assessment
+International Education
+7
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+9618/23
+May/June 2025
+2 hours
+Q 6 T
+8 6
+You must answer on the question paper.
+You will need: Insert (enclosed)
+INSTRUCTIONS
+• Answer all questions.
+• Use a black or dark blue pen.
+• Write your name, centre number and candidate number in the boxes at the top of the page.
+• Write your answer to each question in the space provided.
+• Do not use an erasable pen or correction fluid.
+• Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+• The insert contains all the resources referred to in the questions.
+This document has 20 pages. Any blank pages are indicated
+DC (PQ/CT) 342887/5
+© UCLES 2025
+L
+[Turn over
+
+--- Page 2 ---
+* 0000800000002*
+2
+Refer to the insert for the list of pseudocode functions and operators.
+1 A program is being developed for the management of a sports centre.
+(a) The programmer developing the software decides to use modules (procedures or functions)
+and local variables. They also decide not to use global variables.
+(i) State two reasons why the programmer decides to use modules.
+1
+2
+12]
+(ii) State one difference between local and global variables.
+7
+[1]
+(iii)
+State two benefits of using local variables.
+1
+2
+12]
+(b) The pseudocode design contains a number of expressions.
+Complete each pseudocode expression so that it evaluates to the value shown.
+Refer to the insert for the list of pseudocode functions and operators.
+Expression
+(68)
+. (04/02/2025)
+...TRUE
+• (.....
+("Courtl. 4Upper" ,...................))
+Evaluates to
+'D'
+2
+FALSE
+1.4
+[5]
+OUCLES 2025
+9618/23/M/J/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 3 ---
+0000800000003*
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+3
+(c) The table lists some of the variables used in the program.
+Complete the table by writing the most appropriate data type for each variable.
+Variable
+MemberCount
+Use of variable
+stores how many members have used the sports
+centre each day
+TotalTakings
+stores the total amount of money taken each day
+BookingConfirmed
+stores the state of a booking for an exercise class;
+a booking is either confirmed or not confirmed
+to calculate when to send an email with a birthday
+Member DOB
+message to a member
+7
+Data type
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/23/M/J/25
+[Turn over
+
+--- Page 4 ---
+0000800000004*
+2
+4
+A programmer uses a number of Abstract Data Types (ADT) in the programs that she is developing.
+(a) A stack using memory locations 400 to 409 is used in one program.
+The diagram represents the current state of the stack
+A variable TopofStack pointer indicates the last value added to the stack.
+Stack
+DO NOT WRITE IN THIS MARGIN
+Memory
+location
+409
+408
+407
+406
+405
+404
+403
+402
+401
+400
+Value
+< TopofStack
+'X'
+'D'
+'B'
+(i) Complete the answer column in the following table:
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+Answer
+the memory location of the value that has been on the stack for
+the longest time
+the number of consecutive push operations that will result in the
+TopofStack variable containing 409
+12]
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2025
+9618/23/M/J/25
+J
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 5 ---
+* 000080000005*
+DO NOT WRITE IN THIS MARGIN
+5
+(ii) The diagram shows the current state of the stack.
+Stack
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE
+THIS MARGIN
+Memory
+location
+Value
+409
+408
+407
+406
+405
+404
+403
+'A'
++ TopofStack
+'C'
+'F'
+'K'
+'B'
+402
+401
+'R'
+400
+'D'
+The following sequence of operations are performed:
+PUSH T'
+POP
+POP
+PUSH 'Z'
+PUSH X'
+POP
+PUSH 'Y
+Complete the following diagram to show the state of the stack after the operations have
+been performed.
+Stack
+DO NOT WRITE IN THIS MARGI
+IN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+Memory
+location
+409
+408
+407
+406
+405
+404
+403
+402
+401
+400
+Value
+9618/23/M/J/25
+[3]
+[Turn over
+
+--- Page 6 ---
+* 0000800000006*
+6
+(b) In a different program, the programmer decides to implement a linked list using an array of
+records.
+(i) The array is represented in the diagram.
+A pointer value of - 1 indicates the end of the linked list.
+Complete the pointer field to produce a linked list that is in alphabetical order.
+Index
+1
+2
+3
+4
+5
+Data
+"Neptune"
+"Jupiter"
+"Saturn"
+"Earth"
+"Mercury"
+"Uranus"
+Pointer
+13]
+(ii) The variable StartPointer contains the index of the first item in the linked list.
+State the value of the variable StartPointer
+[1]
+(c) A third program is also being created to manage a queue.
+Describe two features of a queue.
+Feature one
+Feature two
+LOUCLES 2025
+9618/23/M/J/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 7 ---
+0000800000007*
+DO NOT WRITE IN THIS MARGIN
+7
+7
+3
+DO NOT WRITE IN THIS MARGIN
+A programmer has been asked to create a module RollDice () to simulate multiple rolls of a
+dice. This module will be used as part of a program for a game.
+The module will:
+step 1 - take a positive integer parameter representing the number of times the dice will be rolled
+step 2 - simulate one roll of the dice by generating a random integer between 1 and 6 inclusive
+step 3 - output the integer generated
+step 4 - repeat, as required from step 2
+step 5 - calculate the average value of the random integers generated
+step 6 - return the average value.
+Write pseudocode for the module RollDice ()
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+O UCLES 2025
+9618/23/M/J/25
+17]
+[Turn over
+
+--- Page 8 ---
+* 0000800000008*
+8
+4
+A programmer is developing a new stock control program for a shop owner to produce sales
+reports.
+(a) A text file Sales. txt stores strings representing the number of items sold.
+The file contains 52 lines, each representing the number of items sold in each week of the
+year.
+For example:
+File line number
+2
+3
+File data
+"350"
+"502"
+"434"
+49
+50
+51
+52
+"492"
+"872"
+"772"
+"201"
+The example shows that 502 items were sold in week 2.
+The owner requires a module to output all week numbers where the number of items sold is
+greater than 500.
+Describe an algorithm that produces the required module.
+Do not include pseudocode statements in your answer.
+[5]
+OUCLES 2025
+9618/23/M/J/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 9 ---
+* 0000800000009*
+DO NOT WRITE IN THIS MARGIN
+9
+(b) Once the program has been completed, it is tested using the walkthrough method.
+Describe the walkthrough method and explain how it can be used to identify errors.
+7
+DO NOT WRITE IN THIS MARGIN
+.. [3]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/23/M/J/25
+[Turn over
+
+--- Page 10 ---
+* 0000800000010*
+10
+5
+A module Parity () takes a string as a parameter. The parameter has the identifier Bitstring
+and it represents a binary value.
+The module will concatenate a single character to the end of Bitstring by applying one of the
+two rules:
+'O' if Bitstring contains an even number of 1s
+• '1' if Bitstring contains an odd number of 1s.
+The modified value of Bitstring is then returned.
+For example:
+Parameter
+"0010010110"
+String returned
+00100101100"
+"101010"
+"1010101"
+Explanation
+there are an even number of 1s in the string
+passed to Parity () so a '0' is concatenated
+to the end of Bitstring
+there are an odd number of 1s in the string
+passed to Parity () so a '1'is concatenated
+to the end of Bitstring
+Write pseudocode for the module Parity ()
+Assume the parameter BitString can only contain the characters '0' and '1'
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+© UCLES 2025
+9618/23/M/J/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 11 ---
+* 0000800000011*
+DO NOT WRITE IN THIS MARGIN
+11
+7
+DO NOT WRITE IN THIS MARGIN
+18]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/23/M/J/25
+[Turn over
+
+--- Page 12 ---
+* 0000800000012*
+12
+6
+Study the structure chart:
+Main
+DO NOT WRITE IN THIS MARGIN
+Sub_A
+Sub_B
+RO
+X
+Sub_Part1A
+Sub_Part2A
+Sub_Part3A
+Sub_Part1B
+Sub_Part2B
+DO NOT WRITE IN THIS MARGIN
+Some of the parameter data types are:
+•
+R and V are of type INTEGER
+•
+Tis of type REAL
+• U is of type STRING
+• Wis of type BOOLEAN.
+Some of the modules in the structure chart are functions, others are procedures.
+(a) Explain one difference between functions and procedures.
+DO NOT WRITE IN THIS MARGIN
+11]
+(b) Write the pseudocode to define the module headers:
+Sub_Part1A
+Sub_Part2A
+DO NOT WRITE IN THIS MARGIN
+Sub_Part3A
+LOUCLES 2025
+9618/23/M/J/25
+LE
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 13 ---
+* 0000800000013*
+DO NOT WRITE IN THIS MARGIN
+13
+7
+(c) The structure chart uses the two symbols shown.
+Complete the table to explain what each symbol means and how the relevant modules in the
+structure chart are affected.
+Symbol
+Explanation
+DO NOT WRITE IN THIS MARGIN
+13]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/23/M/J/25
+[Turn over
+
+--- Page 14 ---
+* 0000800000014*
+7
+14
+A program is being developed to implement a customer loyalty scheme for a coffee shop.
+The programmer has decided that the following data items need to be stored for each customer:
+Data item
+customer ID
+Description
+loyalty points
+last visit date
+a unique six-digit string
+an integer value that depends on how often the customer visits the coffee shop
+the date the customer last visited the coffee shop
+The programmer has defined a program module:
+Module
+Description
+7
+UpdateVisit ()
+• called with two parameters:
+1. loyalty points of type INTEGER
+2. last visit date of type DATE
+• change the loyalty points:
+• increase by four if the last visit date and the current date are in the
+same month
+• otherwise increase by one
+• change the last visit date to the current date
+• the changed values must be available to the code that follows the call
+to UpdateVisit ()
+(a) (i) Write pseudocode for module UpdateVisit ()
+Assume the customer has made at least one previous visit.
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2025
+9618/23/M/J/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 15 ---
+* 0000800000015 *
+DO NOT WRITE IN THIS MARGIN
+15
+(ii) The programmer decides to amend the UpdateVisit () module so that loyalty points
+are further increased if the customer visits the coffee shop the same day of the week as
+their last visit.
+Write the pseudocode for this condition.
+7
+... 11]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/23/M/J/25
+[Turn over
+
+--- Page 16 ---
+* 0000800000016*
+16
+(b) A text file Loyalty. txt will be used to store the data items for the loyalty scheme.
+The text file Loyalty. txt contains only one line of data for each customer.
+Each data item is separated by a comma:
+«CustomerID>, ‹LoyaltyPointsString>, ‹LastVisitDateString>
+LastVisitDateString is always eight characters in length in the format: DDMMYYYY.
+An example of how a line of data will be stored in the text file Loyalty. txt is:
+"100123, 132, 05032025"
+This example shows that the customer with an ID of 100123 had 132 loyalty points following
+their last visit to the coffee shop on 05/03/2025.
+If a customer visits the coffee shop on a Monday, the value of their loyalty points is increased
+by 10.
+The programmer has defined two more program modules:
+Module
+FindCustomer ()
+(is already written)
+MondayCheck ()
+Description
+• called with a parameter of type STRING that represents a
+customer ID
+•
+returns the line of data read from the text file Loyalty. txt
+containing the data items for that customer
+•
+called with a parameter of type STRING that represents the
+customer ID of a customer
+:
+calls FindCustomer ()
+extracts the loyalty points from the string returned by
+FindCustomer ()
+• increases the loyalty points for the current customer by 10 if the
+day visited is a Monday
+•
+returns an integer value representing the loyalty points
+7
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2025
+9618/23/M/J/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 17 ---
+* 0000800000017*
+DO NOT WRITE IN THIS MARGIN
+17
+(i) Write pseudocode for module MondayCheck ()
+The module FindCustomer () must be used and assume it returns a valid string for the
+current customer.
+7
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+18]
+OUCLES 2025
+9618/23/M/J/25
+(Turn over
+
+--- Page 18 ---
+0000800000018*
+Г
+18
+7
+(ii) A date is stored in LastVisitDateString in the format:
+DDMMYYYY
+DD is a 2-digit string
+MM is a 2-digit string
+YYYY is a 4-digit string.
+For example, the date 03/09/2024 is stored as "03092024"
+An algorithm is needed to convert the string stored in LastVisitDateString to data
+type DATE which is then stored in the variable LastVisitDate.
+Complete the pseudocode for this algorithm:
+Assume that LastVisitDateString has been declared and contains valid data.
+DECLARE DayInt, MonthInt, YearInt : INTEGER
+DECLARE LastVisitDate : DATE
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+[4]
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2025
+9618/23/M/J/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 19 ---
+* 0000800000019*
+DO NOT WRITE IN THIS MARGIN
+19
+BLANK PAGE
+7
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/23/M/J/25
+
+--- Page 20 ---
+* 0000800000020*
+Г
+20
+BLANK PAGE
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series. J
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+OUCLES 2025
+9618/23/M/J/25
+DO NOT WRITE IN THIS MARGIN

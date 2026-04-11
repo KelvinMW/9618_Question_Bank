@@ -1,0 +1,511 @@
+--- Page 1 ---
+15 Cambridge Assessmen
+International Educatior
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 3 Problem Solving & Programming
+MARK SCHEME
+Maximum Mark: 75
+9618/32
+October/November 2022
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2022 series for most
+Cambridge IGCSE™
+', Cambridge International A and AS Level components and some Cambridge O Level
+This document consists of 16 printed pages.
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+9618/32
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Generic Marking Principles
+October/November 2022
+These general marking principles must be applied by all examiners when marking candidate answers. They should be applied alongside the
+specific content of the mark scheme or generic level descriptors for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+•
+•
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit is given for valid answers which go beyond the
+scope of the syllabus and mark scheme, referring to your Team Leader as appropriate
+marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these features are specifically assessed by the
+question as indicated by the mark scheme. The meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed instructions or in the application of generic level
+descriptors.
+Page 2 of 16
+
+--- Page 3 ---
+9618/32
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November 2022
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question (however; the use of the full mark range may
+be limited according to the quality of the candidate responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should not be awarded with grade thresholds or
+grade descriptors in mind.
+Page 3 of 16
+
+--- Page 4 ---
+9618/32
+Question
+1(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2022
+Exponent
+1 1 1
+Marks
+1
+1(b)
+1(c)
+Mantissa
+1111111
+Two marks for working
+:
+correct calculation of exponent seen
+correct application of exponent to mantissa seen
+One mark for correct answer
+Working:
+= 1.0110010011 × 2º //exponent = 9
+= 1011001001.1 (moving bp 9 places to right) // evaluate two's complement
+For example: -512 + 128 + 64 + 8 + 1 + 0.5
+Answer:
+-310.5 || -310½
+One mark per point
+: Folle resun a to smal i a preciation
+.. the result is too small to be precisely represented in the available system // When the number of bits is not enough
+Oo small for the computer's allocated word size / to represent the binary numbel
+3
+2
+Question
+2(a)
+Answer
+Marks
+2
+One mark per point
+: Codeineration
+Optimisation
+© UCLES 2022
+Page 4 of 16
+
+--- Page 5 ---
+9618/32
+Question
+2(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2022
+Marks
+2
+One mark per point (Max 2)
+• It checks that the code matches the grammar of the language // It checks that the tokens conform with the rules of the
+programming language
+Syntax errors are reported
+A parse tree is produced.
+Question
+3(a)
+Answer
+Marks
+2
+3(b)
+3(c)
+One mark per point (Max 2)
+Protocols set a standard for communication
+Protocols enable communication/compatibility between devices from different manufacturers/platforms
+If two devices were sending messages to each other but using different protocols, they would not be able to
+communicate properly
+One mark for each correct answer
+Application (Layer)
+Transport
+Internet/Network (Layer)
+Link
+One mark per point (Max 2)
+• used by email clients to retrieve email messages // a pull protoco
+• from a mail server (over a TCP/IP connection
+keeps the server and client in sync (by not deleting the original email). I/ allows a copy of the email to be downloaded
+from the mail server.
+2
+2
+© UCLES 2022
+Page 5 of 16
+
+--- Page 6 ---
+9618/32
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+4(a)
+October/November 2022
+Marks
+2
+4(b)
+4(c)(i)
+Marks as shown in the square brackets:
+TYPE Aircraft = (C300, C350, D242, E757, X380)
+TYPE
+Aircraft = [1]
+(C300, C350, D242, E757, X380) [1]
+One mark for each point (Max 4)
+..
+..
+TYPE Flight and ENDTYPE correct
+DECLARE FlightNumber and DECLARE Destination as STRING
+DECLARE DepartureDate as DATE
+DECLARE AircraftType as Aircraft (correct data type from part 4(a))
+Example answer:
+TYPE Flight
+DECLARE FlightNumber : STRING
+DECLARE Destination : STRING
+DECLARE DepartureDate
+: DATE
+DECLARE AircraftType : Aircraft
+ENDTYPE
+Example answer:
+DECLARE Flightl
+: Flight
+4
+Page 6 of 16
+
+--- Page 7 ---
+9618/32
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+4(c) (ii)
+October/November 2022
+Marks
+3
+One mark for each point (Max 3)
+Correct assignments of both string data values
+Correct assignments of date data value
+Correct assignments of enumerated data value
+Example answer:
+Flight1.FlightNumber < "XA782"
+Flightl.Destination <
+"Cambridge"
+Flightl.DepartureDate < 12/12/2022
+Flight1.AircraftType ‹ C350
+Page 7 of 16
+
+--- Page 8 ---
+9618/32
+Question
+5
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November 2022
+Answer
+Marks
+6
+One mark for each description (Max 2)
+• The emulation of a computer system / hardware and/or software
+•
+... using a host computer system.
+• Using guest operating system(s) for emulation.
+One mark for each correct benefit (Max 2)
+• Multiple guest operating systems / VMs can be used on the same computer.
+Different instruction set architectures can be emulated on a single computer.
+•
+A virtual machine can crash without affecting the host machine.
+There are security benefits // Trying a piece of suspicious software and if it is / has a virus, it will only infect the virtual
+• Cost savings due to not needing to purchase extra hardware.
+• Can run legacy applications that are currently incompatible.
+One mark for each correct drawback (Max 2)
+• A virtual machine is less efficient / has poorer performance than real machines because of extra load on the host
+computer
+Performance of the guest system cannot be adequately measured.
+A virtual machine may be affected by any weaknesses of the host machine.
+•
+Costly and/or complex to maintain / implement / manage.
+Cannot emulate some hardware.
+Question
+6(a)
+Answer
+Marks
+2
+One mark for each point
+:
+Symmetric encryption uses a single key and asymmetric encryption uses a pair of keys.
+The symmetric single key is used by all, whereas only one of the keys for asymmetric encryption is available to
+everyone / one of the asymmetric encryption keys needs to be kept secret.
+© UCLES 2022
+Page 8 of 16
+
+--- Page 9 ---
+9618/32
+Question
+6(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2022
+Marks
+4
+Question
+One mark for each point (Max 4)
+•..
+:
+The organisation requests a certificate from a Certificate Authority (CA)
+The organisation may send their public key to CA
+The organisation gathers all the information required by the CA in order to obtain their certificate, which includes
+information to prove their identity
+The CA verifies the organisation's identity
+The CA generates / issues the certificate including the organisation's public key (and other information).
+Answer
+Marks
+4
+One mark for each point
+Supervised learning (Max 3 of 4)
+• Supervised learning allows data to be collected, or a data output produced, from the previous experience.
+• In supervised learning, known input and associated outputs are given // uses sample data with known outputs (in
+training) // uses labelled input data.
+• Able to predict future outcomes based on past data.
+Unsupervised learning (Max 3 of 4)
+•
+Unsupervised machine learning helps all kinds of unknown patterns in data to be found.
+•
+Unsupervised learning only requires input data to be given.
+• Uses any data // not trained on the right output // uses unlabelled input data.
+Page 9 of 16
+
+--- Page 10 ---
+9618/32
+Question
+8(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2022
+Marks
+4
+One mark for each point (Max 4)
+One correct NAND or NOR gate with two separate inputs and one output
+Second correct logic gate of same type as first with two separate inputs and one output
+Correct connections between logic gates
+Correctly labelled inputs
+Example answers:
+S/Set
+R/Reset
+Page 10 of 16
+
+--- Page 11 ---
+9618/32
+Question
+8(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2022
+Marks
+Or
+R/Reset
+S/Set
+8(b)
+To store a binary digit / (single) bit.
+Page 11 of 16
+
+--- Page 12 ---
+9618/32
+Question
+8(c)
+One mark for each point (Max 3)
+• ..
+Correct application of De Morgan's Law
+Correct application of Double Negation Law or Distributive Law
+Correct answer
+TA.B).(A.C) (B.D)
+(À.B) + (À.C) + (B.D) [1]
+(Ã.B) + (Ă.C) + (B.D) [1]
+À. (B + C) + B.D [1]
+Question
+9(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2022
+Marks
+3
+Answer
+Marks
+3
+One mark for each point (Max 3)
+•
+:
+Process scheduling allows more than one program/task to appear to be executed at the same time / enables multi-
+tasking / multiprogramming.
+To allow high priority jobs to be completed first.
+To keep the CPU busy all the time
+... to ensure that all processes execute efficiently
+... and to have reduced wait times for all processes / to ensure all processes have fair access to the CPU / prevent
+starvation of some processes.
+Page 12 of 16
+
+--- Page 13 ---
+9618/32
+Question
+9(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2022
+Marks
+6
+One mark for each point (Max 2) for Shortest job first:
+•
+Process are executed in ascending order of the amount of CPU time required // Short processes are executed first and
+followed by longer processes.
+•
+...which leads to an increased throughput (because more processes can be executed in a smaller amount of time).
+One mark for each point (Max 2) for Round robin:
+Each process is served by the CPU for a fixed time/time slice (so all processes are given the same priority).
+Starvation doesn't occur (because for each round robin cycle, every process is given a fixed time/time slice to execute).
+One mark for each point (Max 2) for First come first served:
+:
+No complex logic, each process request is queued as it is received and executed one by one.
+Starvation doesn't occur (because every process will eventually get a chance to run) // less processor overhead.
+Answer
+Question
+10(a)
+Marks
+3
+One mark for each correct OOP term definition
+• Encapsulation - putting properties and methods inside a class // ensures sensitive data is hidden from users by hiding
+values of a structured data object inside a class.
+•.
+Getter - method that is used to return the value of a property.
+Setter - method that is used to update the value of a property.
+© UCLES 2022
+Page 13 of 16
+
+--- Page 14 ---
+9618/32
+Question
+10(b)
+One mark for each point
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2022
+Marks
+3
+setters correct
+getters correct
+SubstituteTeacher
+SubName : STRING
+Telephone
+: STRING
+InSchool : BOOLEAN
+SetSubName (StaffName : STRING)
+SetTelephone (Iel : STRING)
+SetInSchool (Present : BOOLEAN)
+GetSubName ()
+GetTelephone ()
+GetInSchool ()
+Page 14 of 16
+
+--- Page 15 ---
+9618/32
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+11(a)
+One mark for each point
+October/November 2022
+Marks
+3
+Any three correct NextPointer
+All six NextPointer correct
+HeadPointer
+Index
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Flower
+Rose
+Marigold
+Foxglove
+Iris
+Daisy
+Đahlia
+Saxifrage
+Lupin
+Lily
+Hydrangea
+NextPointer
+4
+3
+1
+8
+© UCLES 2022
+Page 15 of 16
+
+--- Page 16 ---
+9618/32
+Question
+11(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2022
+Marks
+5
+11(c)
+One mark for each correct line
+Pointer « HeadPointer
+Found + 0
+OUTPUT "Enter a flower name "
+INPUT FlowerName
+WHILE Pointer <> 0
+IF Flower [Pointer] = FlowerName THEN
+Found + Pointer
+Pointer ‹ 0
+ELSE
+Pointer ‹ NextPointer [Pointer]
+ENDIF
+ENDWHILE
+IF Pointer = 0 THEN |/ IF Found <> O THEN
+OUTPUT Flower [Found], " is found"
+ELSE
+OUTPUT "The flower you wanted is not in the list"
+ENDIF
+One mark for each point (Max 2)
+Include a free list pointer
+...as a linked list of free space.
+2
+© UCLES 2022
+Page 16 of 16

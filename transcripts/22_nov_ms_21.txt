@@ -1,0 +1,577 @@
+--- Page 1 ---
+15 Cambridge Assessmen
+lS International Educatior
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 2 Problem Solving & Programming
+MARK SCHEME
+Maximum Mark: 75
+9618/21
+October/November 2022
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2022 series for most
+Cambridge IGCSE™
+', Cambridge International A and AS Level components and some Cambridge O Level
+This document consists of 10 printed pages.
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2022
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+•
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+• the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2022
+Page 2 of 10
+
+--- Page 3 ---
+9618/21
+Question
+1(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2022
+Answer
+Marks
+3
+1(b)(i)
+1 (b)(ii)
+1(c)
+One mark per point:
+1 They are tried and tested so free from errors
+They perform a function that you may not be able to program yourself
+(for example encryption)
+They are readily available / speed up development time
+One mark per point:
+1
+Algorithm to process / search / organise the data is easier to implement
+// Values may be accessed via a loop-controlled variable / iterated
+2 Makes the program easier to design / code / test / understand
+3
+Multiple instances referenced via a single identifier / so fewer identifiers
+needed // Easier to amend the program when the number of students
+increases
+One mark per point:
+Purpose: It identifies / references an individual array element // provides the
+index to the array
+Data type: Integer
+One mark per row:
+Statement
+IF EMPTY < "' THEN
+Status + IS_NUM(-23.4)
+X < STR_IO_NUM ("37") + 5
+Y < STR_TO_NUM ("37" + "5")
+Error
+Should be "-" not <
+Parameter should be a string (or
+char) // should not be a real
+NO ERROR
+Wrong operator - should be & or
+Parameter is not a string
+3
+2
+4
+© UCLES 2022
+Page 3 of 10
+
+--- Page 4 ---
+9618/21
+Question
+2(a)
+2(b)
+Question
+3
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November
+2022
+Marks
+3
+One mark for Explanation:
+•
+Abstraction is used to filter out information / data that is not necessary
+for the task
+Or the opposite:
+•
+To keep only information / data that is necessary for the task
+One mark for each TWO data items (not dependent on 'Explanation"'):
+Items include:
+•
+Customer details: ID, name, address, licence details etc
+Start date (of hire)
+Return date / Number of days (of hire)
+Cost of hire
+One mark for each (Max 2)
+Examples include:
+1
+2
+3
+4
+5
+7
+8
+Input customer details
+Input car details
+Input payment details
+Create hire / start hire
+Return car / end hire
+Change / check car status (hired / available / written-off)
+Cancel hire
+Process payment / calculate hire cost
+2
+Answer
+Marks
+5
+One mark per point (Max 5):
+1
+2
+3
+4
+5
+6
+7
+Declare a variable / an integer Max
+Assign value of first / any element to Max
+Set up a loop to repeat 200 times / from start to end of array
+Use the loop counter as the array index
+If value of current element is greater than Max...
+....then assign value to Max
+After the loop, Output Max
+Page 4 of 10
+
+--- Page 5 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+4(a)(i)
+October/November
+2022
+Marks
+4
+One mark for each:
+1
+2
+3
+4
+Data A and K stored in new / existing nodes
+Start pointer points to Node A
+Node A points to Node C and Node C points to Node K
+Node K contains Null Pointer
+Start pointer
+"C'
+4(a)(ii)
+4(a) (iii)
+4(b)
+'A'
+'к'
+Ø
+One mark per point:
+1
+Pointers determine the ordering of data // only the pointers need to be
+2
+changed when data changed
+Easier to add / delete data (to maintain correct sequence) in a linked list
+Il description of moving data to maintain correct sequence when array
+used
+One mark per point:
+1
+2
+Need to store pointers as well as data
+More complex (to setup / implement)
+One mark per point (Max 4):
+1
+2
+3
+4
+5
+6
+7
+Declare two (1D) arrays
+One for data, one for pointers
+Elements from same index represent one node
+Declare an integer / variable for startPointer |/ explain its use
+Define appropriate value for null pointer // explain its use
+Declare an integer / variable for FreeList pointer I/ explain its use
+Routines are needed to add / delete / search
+Alternative MP1, 2 and 3 for record-based implementation:
+1
+2
+3
+Define a record type with fields for data and pointer
+Declare one (1D) array
+...of the defined record type
+2
+2
+4
+© UCLES 2022
+Page 5 of 10
+
+--- Page 6 ---
+9618/21
+Question
+5
+Question
+6(a)
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November
+2022
+Marks
+5
+Mark as follows (Max 5):
+1 Procedure heading and ending and declaration of both indexes
+Loop to process all elements from Array 1
+3
+Sum (any) three consecutive values from Array1 and divide by 3
+in a loop
+4
+5
+6
+Convert result to Integer
+Assign value to correct element of Array2 in a loop
+Increment Array2 index in a loop
+PROCEDURE Summarise ()
+DECLARE Value : REAL
+DECLARE IxA,
+IxB : INTEGER |/ Index variables
+IxB < 1
+FOR IxA < 1 TO 598
+STEP 3
+Value < Array1[IxA]
++ Arrayl|IxA + 1] + Arrayl[IxA + 2]
+Value ‹ Value
+/ 3
+Array2[IxB] < INT (Value)
+IxB < IxB + 1
+NEXT IXA
+ENDPROCEDURE
+Answer
+One mark for any part correct (accept equivalent wording) (Max 1):
+• Condition evaluates to TRUE if bracket contents evaluate to FALSE:
+• Bracket contents evaluate to FALSE if:
+• Dots:
+zero / less than one
+or
+• Ats: not equal to one
+or
+• Others: less than nine
+Marks
+1
+Page 6 of 10
+
+--- Page 7 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Question
+6(b) (i)
+Answer
+October/November
+2022
+Marks
+5
+One mark for each area as outlined:
+Index
+NextChar
+Dots
+Ats
+Others
+Valid
+TRUE
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+'L'
+"i'
+'z'
+''
+"1'
+"2'
+'3'
+'O'
+"b'
+'i'
+"g'
+"O'
+1
+2
+3
+1
+4
+5
+6
+1
+7
+8
+9
+2
+FALSE
+6(b) (ii)
+FALSE
+1
+© UCLES 2022
+Page 7 of 10
+
+--- Page 8 ---
+9618/21
+Question
+7(a) (i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2022
+Answer
+Marks
+One mark per point (Max 7) as follows:
+7
+1
+2
+3
+4
+Declaration of local variables for Par1 Par2 and Par 3
+Loop to end of (parameter) string // until operator is found
+Extract a character in a loop..
+Attempt at extraction of three parts of expression using substring
+functions
+5
+Completely correct extraction of all three parts of expression
+6.
+Convert string to Integer using SIR_IO_NUM <something
+sensible>)
+7
+Attempt to interpret at least two operators (Par2): + - */
+8 Corresponding correct calculation (all operators) and final Output of
+result
+PROCEDURE Calculate (Expression : STRING)
+DECLARE Vall, Val2, Index : INTEGER
+DECLARE Result : REAL
+DECLARE Parl, Par2, Par3
+: STRING
+CONSTANT PLUS = "+'
+CONSTANT MINUS = '-'
+CONSTANT MULTIPLY
+="*'
+CONSTANT DIVIDE = '/'
+FOR Index ‹ 1 IO LENGTH (Expression) I/search for
+operator
+ThisChar
+* MID (Expression, Index, 1)
+IF IS NUM (ThisChar)
+= FALSE THEN
+Parl + LEFT (Expression, Index - 1)
+Par2 ‹ ThisChar
+Par3 ‹ RIGHT (Expression, LENGTH (Expression) -
+Index)
+ENDIF
+NEXT Index
+Vall ‹ STR_TO_NUM (Parl)
+Val2 < STR_TO_NUM (Par3)
+CASE OF Par2
+PLUS
+: Result & Vall + Val2
+MINUS
+: Result + Vall - Val2
+MULTIPLY : Result ‹ Vall * Val2
+DIVIDE
+: Result ‹ Vall / Val2
+ENDCASE
+OUTPUT Result
+ENDPROCEDURE
+7(a)(ii)
+FUNCTION Calculate (Expression : STRING) RETURNS REAL
+1
+© UCLES 2022
+Page 8 of 10
+
+--- Page 9 ---
+9618/21
+Question
+7(b)
+Question
+8(a)
+8(b)
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Example string: "23/0" (Any divide by zero example)
+Reason: The result is infinity / cannot be represented / is undefined // will
+cause the program to crash
+October/November
+2022
+Marks
+2
+Answer
+One mark for each point (Max 7) as follows:
+Function heading and ending including parameter and return type
+Declaration and initialisation of local Integer for count
+3
+4
+5
+6
+7
+8
+OPEN in READ mode and CLOSE
+Conditional loop until EOF ()
+Read a line in a loop
+If non-blank, increment count in a loop
+Terminate loop when 10 non-blank lines have been read
+Return Boolean in both cases
+FUNCTION CheckFile (Thisfile |
+: STRING) RETURNS BOOLEAN
+DECLARE Valid : BOOLEAN
+DECLARE ThisLine : STRING
+DECLARE Count : INTEGER
+Count < 0
+Valid ‹ FALSE
+OPEN ThisFile FOR READ
+WHILE NOT EOF (ThisFile) AND Valid = FALSE
+READFILE ThisFile, Thisline
+IF ThisLine <>
+THEN
+Count + Count + 1
+IF Count > 9 THEN
+Valid
+‹ TRUE
+ENDIF
+ENDIF
+ENDWHILE
+CLOSEFILE ThisFile
+RETURN Valid
+ENDFUNCTION
+CALL CountErrors ("Jim01Prog.txt", 20)
+One mark for each:
+1 Module name, at least one parameter in brackets and one parameter
+correct
+2 Completely correct statement
+Marks
+7
+2
+Page 9 of 10
+
+--- Page 10 ---
+9618/21
+Question
+8(c)
+8(d)
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2022
+Answer
+Marks
+Mark as follows:
+1
+2
+Procedure heading and ending including parameters
+Declaration and initialisation of local Integer value for ErrCount
+3
+Use of CheckFile (), output message and terminate if it returns
+FALSE
+4
+5
+6
+7
+8
+Conditional loop until EOF ()
+...or ErrCount > MaxErrors
+Read line and use as parameter to CheckLine () in a loop
+Test return value and increment ErrCount if non-zero in a loop
+Output either message once only as appropriate
+8
+PROCEDURE CountErrors (ThisFile : STRING, MaxErrors :
+INTEGER)
+DECLARE ErrCount,
+ThisError : INTEGER
+DECLARE ThisLine : STRING
+ErrCount < 0
+IF CheckFile (ThisFile) = FALSE THEN
+OUTPUT "That program file is not valid"
+ELSE
+OPEN ThisFile FOR READ
+REPEAT
+READFILE, ThisFile, Thisline
+ThisError ‹ CheckLine(ThisLine)
+IF ThisError <> 0 THEN
+ErrCount ‹ ErrCount + 1
+ENDIF
+UNTIL ErrCount > MaxErrors OR EOF (ThisFile)
+IF EOF (ThisFile)
+= FALSE THEN
+OUTPUT "Check terminated - too many errors"
+ELSE
+OUTPUT "There were ", ErrCount, " errors."
+ENDIF
+CLOSEFILE ThisFile
+ENDIF
+ENDPROCEDURE
+One mark for each (Max 2):
+Examples:
+1 Incorrect block structure. Missing keyword denoting part of block (for
+example ENDPROCEDURE, ENDFUNCTION, ENDTYPE)
+2
+Data type errors, for example, assigning an integer value to a string
+3
+Identifier used before it is declared
+4
+Incorrect parameter use
+2
+Page 10 of 10

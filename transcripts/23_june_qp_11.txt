@@ -1,0 +1,326 @@
+--- Page 1 ---
+55 Cambridge Assessment
+a International Education
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+9618/11
+May/June 2023
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages. Any blank pages are indicated
+DC (EF/SG) 313479/3
+© UCLES 2023
+[Turn over
+
+--- Page 2 ---
+2
+Images are being created to advertise holidays.
+Some of the images are bitmap images and some are vector graphics.
+(a) Complete the table by defining the image terms.
+Term
+Definition
+Drawing list
+Pixel
+Colour depth
+[3]
+(b) The bitmap images are photographs of the holiday locations.
+(i) Colour depth and image resolution are both included in the file header of a bitmap image.
+Identify two other items that could be included in the file header of each photograph.
+1
+2
+12]
+© UCLES 2023
+9618/11/M/J/23
+
+--- Page 3 ---
+3
+(ii) One of the photographs has a bit depth of 8 bytes and an image resolution of 1500 pixels
+wide and 3000 pixels high.
+Calculate the file size of the photograph in megabytes. Show your working.
+Working
+File size
+MB
+12]
+(c) The photographs are compressed before they are uploaded to a web
+server.
+Customers download the photographs from this web server.
+(i) Explain the reasons why compressing the photographs will benefit the customers.
+[3]
+(ii) An image can be compressed using run-length encoding (RLE).
+Explain the reasons why RLE may not reduce the file size of a bitmap image.
+Give one example in your answer.
+[3]
+© UCLES 2023
+9618/11/M/J/23
+[Turn over
+
+--- Page 4 ---
+4
+2 An organisation uses a database to store data about the types of bird that people have seen.
+(a) The database is managed using a Database Management System (DBMS).
+State what is meant by a data dictionary and give one example of an item typically found
+in a data dictionary.
+Definition
+Example
+12]
+(ii) State what is meant by data integrity and give one example of how this is implemented
+in a database.
+Definition
+Example
+12]
+© UCLES 2023
+9618/11/M/J/23
+
+--- Page 5 ---
+5
+(b) The database, Birds, stores information about the types of bird and the people who have
+seen them.
+Data about each bird seen is stored with its location and data about the person who saw the
+bird.
+Database Birds has the following tables:
+BIRD_TYPE (BirdID,
+Name,
+Size)
+BIRD_SEEN (SeenID, BirdID,
+Date, Location, PersonID)
+PERSON (PersonID, FirstName, LastName, EmailAddress)
+(i) Complete the table by identifying two foreign keys and the database table where each is
+found.
+Foreign key
+Database table
+12]
+(ii) The database Birds has been normalised.
+Draw one line from each Normal Form to the most appropriate definition.
+Normal Form
+Definition
+First Normal Form (1NF)
+All fields are fully dependent on the primary key.
+Second Normal Form (2NF)
+There are no repeating groups of attributes.
+Third Normal Form (3NF)
+There are no partial dependencies.
+[11
+© UCLES 2023
+9618/11/M/J/23
+[Turn over
+
+--- Page 6 ---
+6
+(iii) Part of the database table BIRD_TYPE is shown:
+BirdID
+Name
+Size
+0123
+0035
+0004
+0085
+Blackbird
+Jay
+Raven
+Robin
+Medium
+Large
+Large
+Small
+The database only supports these data types:
+: character
+varchar
+• Boolean
+: integer
+real
+date
+time
+Write a Structured Query Language (SQL) script to define the table Bird Type.
+© UCLES 2023
+9618/11/M/J/23
+14]
+
+--- Page 7 ---
+7
+(iv) The database tables are repeated here for reference:
+BIRD_TYPE (BirdID, Name, Size)
+BIRD_SEEN (SeenID, BirdID, Date, Location, PersonID)
+PERSON (PersonID, FirstName, LastName, EmailAddress)
+Complete the SQL script to return the number of birds of each size seen by the person
+with the ID of J_123.
+SELECT BIRD_TYPE.Size,
+(BIRD_TYPE.BirdID)
+AS NumberOfBirds
+FROM BIRD_TYPE,
+WHERE
+.. = "J_123"
+AND BIRD_TYPE.BirdID = ...
+BIRD_TYPE.Size;
+15]
+© UCLES 2023
+9618/11/M/J/23
+Turn over
+
+--- Page 8 ---
+8
+3
+A computer has an Operating System (OS).
+(a) Describe how the Operating System manages the peripheral hardware devices of the
+computer.
+14]
+(b) Hardware management is one key management task carried out by the Operating System.
+Identify two other key management tasks carried out by the Operating System.
+1
+2
+[2]
+(c) The Operating System has utility software including defragmentation software.
+Explain how defragmentation can improve the performance of the computer.
+13]
+(d) The computer stores data in binary form.
+(i)
+State the difference between a kibibyte and a kilobyte.
+....... [1]
+© UCLES 2023
+9618/11/M/J/23
+
+--- Page 9 ---
+9
+(ii) Convert the denary number 964 into Binary Coded Decimal (BCD).
+[1]
+(iii) Convert the positive binary integer 11110010 into hexadecimal.
+[1]
+(iv) Give the smallest and largest two's complement binary number that can be represented
+using 8 bits.
+Smallest
+Largest
+[2]
+(v) Add the following two binary integers using binary addition. Show your working.
+10110000
++00011011
+12]
+(vi) Show the result of a 3-place right logical shift on the binary number:
+11001100
+............. [1]
+© UCLES 2023
+9618/11/M/J/23
+[Turn over
+
+--- Page 10 ---
+4
+10
+A networked closed-circuit television (CCTV) system in a house uses sensors and cameras to
+detect the presence of a person. It then tracks the person and records a video of their movements.
+Data from the CCTV cameras is transmitted to a central computer.
+(a) This computer has both Read Only Memory (ROM) and Random Access Memory (RAM).
+(i) Describe the contents of the ROM in the central computer.
+12]
+(ii) The central computer has Dynamic RAM (DRAM).
+Identify two advantages of using DRAM instead of Static RAM (SRAM).
+1
+2
+[2]
+(b) The central computer stores the video files on secondary storage.
+Describe two reasons why magnetic storage is more appropriate than solid state storage for
+this computer.
+2
+[4]
+© UCLES 2023
+9618/11/M/J/23
+
+--- Page 11 ---
+11
+(c) The CCTV system uses Artificial Intelligence (AI) to identify the presence of a person in the
+house and to track their movements.
+Describe how Al is used in this system.
+[3]
+(d) The CCTV cameras are connected to a network and transfer their data wirelessly to the
+central computer.
+(i) Each device on the network has an IP address.
+Complete the description of IP addresses.
+An IPv4 address contains
+groups of digits. Each group is
+represented in
+bits and the groups are separated by full stops.
+An IPv6 address contains
+• groups of digits. Each group is
+represented in
+bits. Multiple groups that only contain zeros
+can be replaced with a ..............
+......
+15]
+(ii)
+The network makes use of subnetting.
+Describe two benefits of subnetting a network.
+1
+2
+© UCLES 2023
+9618/11/M/J/23
+[4]
+[Turn over
+
+--- Page 12 ---
+12
+(a) Draw the logic circuit for this logic expression:
+T = (NOT A OR B) XOR (C NAND D)
+A-
+B-
+C
+D
+(b) Describe the function of the NAND and NOR logic gates.
+NAND
+NOR
+© UCLES 2023
+9618/11/M/J/23
+- T
+[2]
+[2]
+
+--- Page 13 ---
+13
+6 An interrupt is generated when a key is pressed on a computer keyboard.
+Explain how the computer handles this interrupt.
+[5]
+© UCLES 2023
+9618/11/M/J/23
+
+--- Page 14 ---
+14
+BLANK PAGE
+© UCLES 2023
+9618/11/M/J/23
+
+--- Page 15 ---
+15
+BLANK PAGE
+© UCLES 2023
+9618/11/M/J/23
+
+--- Page 16 ---
+16
+BLANK PAGE
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2023
+9618/11/M/J/23

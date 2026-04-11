@@ -1,0 +1,639 @@
+--- Page 1 ---
+15 Cambridge Assessmen
+International Educatior
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 2 Problem Solving & Programming
+MARK SCHEME
+Maximum Mark: 75
+9618/22
+October/November 2022
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2022 series for most
+Cambridge IGCSE™
+', Cambridge International A and AS Level components and some Cambridge O Level
+This document consists of 13 printed pages.
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+9618/22
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2022
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2022
+Page 2 of 13
+
+--- Page 3 ---
+9618/22
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1(a)(i)
+October/November
+2022
+Marks
+2
+1(a) (i)
+1(b)
+1(c)
+One mark for each point (Max 2):
+When a task which is repeated / reused / performed in several places
+When a part of an algorithm performs a specific task
+Reduces complexity of program / program is simplified // subroutine
+already available
+•
+Testing / debugging / maintenance is easier
+One mark for each part:
+Term: Parameter(s)
+Use: to pass values / arguments to the procedure
+One mark for test stage, one mark for each description point
+(Max 3 for Description)
+Test stage: Beta testing
+Description:
+Testing carried out by a small group of (potential) users
+2
+Users will check that the software works as required / works in the real
+world / does not contain errors
+3
+4
+Users will feedback problems / suggestions for improvement
+Problems / suggestions identified are addressed (before the program is
+sold)
+One mark per row:
+2
+4
+3
+Expression
+MID (Charlist, MONTH (FlagDay), 1)
+INT (Count / LENGTH (CharList))
+(Count >= 99) AND (DAY (FlagDay) > 23)
+Evaluation
+'D'
+4
+FALSE
+© UCLES 2022
+Page 3 of 13
+
+--- Page 4 ---
+9618/22
+Question
+2(a) (i)
+2(a)(ii)
+2(b)
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2022
+Answer
+Marks
+5
+One mark per step (or equivalent):
+Open file in APPEND mode (and subsequent Close)
+Prompt and Input a student name and mark
+If mark greater than or equal to 20 jump to step 5
+Write only the name to the file
+Repeat from Step 2 for 35 times / the number of students
+Data in a file is saved after the computer is switched off / stored
+permanently // no need to re-enter the data when the program is re-run
+Example answer:
+So that existing file data is not overwritten.
+One mark per row (row 2 to 5):
+Input
+Output
+1
+1
+4
+Next state
+S1
+Input-A
+Input-A
+Input-B
+Input-A
+Output-X
+(none)
+Output-W
+Output-W
+S2
+S3
+S4
+Page 4 of 13
+
+--- Page 5 ---
+9618/22
+Question
+3(a)
+3(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2022
+Answer
+One mark for name, Max two for features (Max 3 in total)
+Marks
+Name: Queue
+Features:
+1 Each queue element contains one data item
+• A Pointer to the front / start of the queur
+3
+A Pointer to the back / end of the queu
+4
+Data is added at back / end and removed from front / start // works on a
+FIFO basis
+5 May be circular
+ALTERNATIVE:
+Name: Linked List
+Features:
+Each node contains data and a pointer to the next node
+2
+3
+4
+A Pointer to the start of the list
+Last node in the list has a null pointer
+Data may be added / removed by manipulating pointers (not moving
+data)
+5
+Nodes are traversed in a specific sequence
+6
+Unused nodes are stored on a free list // a free-list pointer to the Free
+List
+One mark per point (Max 5):
+1
+2
+3
+4.
+5
+7
+8
+9
+Declare a (1D) array of data type STRING
+The number of elements in that array corresponds to the size of the
+required stack
+Declare an integer / variable for StackPointer
+Declare an integer / variable for the size of the stack // for the max value
+of StackPointer
+Use the stackPointer as an index to the array
+Pointers and variables initialised to indicate empty stack
+Store each item on the stack as one array element / Each stack item
+maps to one array element
+Attempt to describe Push and Pop operations
+Push and Pop routines need to check for full or empty conditions
+3
+5
+© UCLES 2022
+Page 5 of 13
+
+--- Page 6 ---
+9618/22
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Question
+3(c)
+Answer
+October/November
+2022
+Marks
+5
+One mark for each:
+Data 'After Group 1' (as shown, including blank cells)
+Data 'After Group 2' (as shown, including blank cells)
+Data 'After Group 3' (as shown, including blank cells)
+SP 'After Group 1' pointing to location 955
+Final two SPs pointing to locations 952 and 954
+lemor
+ocatio
+957
+956
+955
+954
+953
+952
+951
+950
+stat
+After
+Group 2
+E
+D
+<SP
+E
+D
+<SP
+Y
+Z
+P
+Y
+‹SP
+Z
+P
+P
+After
+Group:
+E
+A
+<SP
+P
+[5]
+© UCLES 2022
+Page 6 of 13
+
+--- Page 7 ---
+9618/22
+Question
+4(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2022
+Answer
+Marks
+6
+One mark per point:
+2
+3
+4
+5
+6
+Input UserID and use of GetAverage () and assignment
+Initialisation of Total to zero and Index to 4
+Conditional loop with Index from 4 to 6
+Assignment of Last from element SameMonth [Index] in a loop
+Structure: IF...THEN...ELSE... ENDIF in a loop
+Correct assignments and final call to Update () after the loop
+INPUT UserID
+Average ‹ GetAverage (UserID)
+Total < 0
+Index + 4
+WHILE
+Index < 7 // REPEAT
+Last ‹ SameMonth [Index]
+IF Average > Last
+THEN
+Total ‹ Total + Average
+ELSE
+Total ‹ Total + Last
+ENDIF
+Index ‹ Index + 1
+ENDWHILE // UNTIL
+Index = 7
+CALL Update (UserID, Total)
+Alternative solution using FOR loop:
+One mark per point FOR loop solution:
+1 Input UserID and use of GetAverage () and assignment
+2
+3
+4
+5
+6
+Initialisation of Total to zero
+loop Index from 4 to 6
+Assignment of Last from array SameMonth in a loop
+Comparison IF...THEN...ELSE...ENDIF in a loop
+Appropriate assignments in a loop AND final call to Update () after
+the loop
+INPUT UserID
+Average + GetAverage (UserID)
+Total + 0
+FOR Index + 4 TO 6
+Last ‹ SameMonth [Index]
+IF Average > Last THEN
+Total + Total + Average
+ELSE
+Total + Total + Last
+ENDIF
+NEXT Index
+CALL Update (UserID, Total)
+© UCLES 2022
+Page 7 of 13
+
+--- Page 8 ---
+9618/22
+Question
+4(b)
+Question
+5
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Pre-condition (loop) / count-controlled (loop)
+October/November
+2022
+Marks
+1
+Answer
+One mark per IF... THEN... ENDIF clause:
+1 IF A AND B AND C THEN
+CALL Subl ()
+ENDIF
+2 IF (A AND B) AND NOT C THEN
+CALL Sub2 ()
+ENDIF
+IF (NOT A) AND (NOT C) THEN
+CALL Sub3 ()
+ENDIE
+4
+IF (NOT A) AND C THEN
+CALL Sub4 ()
+ENDIF
+Marks
+4
+Page 8 of 13
+
+--- Page 9 ---
+9618/22
+Question
+6(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2022
+Answer
+Marks
+Example by repeated multiplication:
+7
+Mark as follows (multiplication solution), (Max 7):
+1
+2
+3
+4
+5
+6
+Function heading and ending including parameter and return type
+Declaration and initialisation of local Num
+Any conditional loop
+Conditional loop until ThisValue found or Try out of range
+Multiply Try by Num in a loop
+Compare Try with ThisValue and set termination if the same in
+a loop
+7
+Increment Num and repeat in a loop
+8 Attempt to Return Num if ThisValue is a factorial or -1 otherwise
+FUNCTION FindBaseNumber (ThisValue : INTEGER) RETURNS
+INTEGER
+DECLARE Num, Try : INTEGER
+DECLARE Found : BOOLEAN
+Num < O
+Found ‹ FALSE
+TrY + 1
+WHILE Try <= ThisValue AND Found = FALSE
+Num < Num + 1
+Try & Try * Num
+IF Try = ThisValue THEN //BaseNumber found
+Found ‹ TRUE
+ENDIF
+ENDWHILE
+IF Found = TRUE THEN
+RETURN Num
+ELSE
+RETURN -1
+ENDIF
+ENDFUNCTION
+© UCLES 2022
+Page 9 of 13
+
+--- Page 10 ---
+9618/22
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November
+2022
+Marks
+Question
+6(a)
+6(b)
+Alternative FOR LOOP solution.
+Mark as follows:
+Function heading and ending including parameter and return type
+2
+3
+4
+5
+6
+7
+Declaration of local Integer value for Num and Try
+Count-controlled Loop from 1 to Thisvalue
+Multiply Try by Num in a loop
+Compare Try with ThisValue in a loop
+...Immediate return of Num if they are the same in a loop
+Return - 1 if ThisValue not found after loop
+FUNCTION FindBaseNumber (ThisValue : INTEGER) RETURNS
+INTEGER
+DECLARE Num, Try : INTEGER
+Try + 1
+FOR Num < 1 TO ThisValue
+Try & Try * Num
+IF Try = ThisValue THEN //BaseNumber found
+RETURN Num
+ENDIF
+NEXT Num
+RETURN -1
+ENDFUNCTION
+One mark per row.
+Examples of invalid strings:
+1 Non-numeric but not "End" I/ contains space or other non-numeric
+characters
+2 Real number
+3 Integer value out of range (i.e. <= 0)
+Empty string
+5
+Correct word but wrong case e.g. "end" rather than "End"
+Input
+"Aardvark"
+"27.3"
+"-3" //"''"
+''''
+Reason for choice
+Non-numeric (and not "End")
+Numeric but not an integer
+A non-positive integer
+An empty string
+4
+© UCLES 2022
+Page 10 of 13
+
+--- Page 11 ---
+9618/22
+Question
+7(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2022
+Answer
+Marks
+6
+One mark per point (Max 6):
+3
+4
+5
+6
+7
+Procedure heading and ending including parameters
+Conditional loop containing incrementing Index...
+...terminating when Err Num found
+...terminating when ErrCode | Index] > ErrNum (i.e. ErrNum
+not found
+... OR after element 500 tested
+Test if found and OUTPUT 'Found' message
+…..otherwise OUTPUT 'Not Found' message
+PROCEDURE OutputError (LineNum, ErrNum : INTEGER)
+DECLARE
+Index : INTEGER
+Index < 0
+I Search until ErrNum found OR not present OR end of
+array
+REPEAT
+Index ‹ Index + 1
+UNTIL ErrCode[Index] >= ErrNum OR Index = 500
+IF ErrCode[Index]
+= ErrNum THEN
+OUTPUT ErrText [Index],
+" on line
+// Found
+ELSE
+, LineNum
+OUTPUT "Unknown error on line ", LineNum
+//Not
+found
+ENDIF
+ENDPROCEURE
+© UCLES 2022
+Page 11 of 13
+
+--- Page 12 ---
+9618/22
+Question
+7(b)
+7(c) (i)
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2022
+Answer
+Marks
+8
+One mark per point (Max 8):
+1
+2
+3
+4
+5
+6
+7
+8
+9
+Procedure heading and ending as shown
+Conditional loop correctly terminated
+An inner loop
+Correct range for inner loop
+Comparison (element J with J+1) in a loop
+Swap elements in both arrays in a loop
+'No-Swap' mechanism:
+•
+Conditional outer loop including flag reset
+•
+Flag set in inner loop to indicate swap
+Efficiency (this scenario): terminate inner loop when ErrCode = 99
+Reducing Boundary in the outer loop
+PROCEDURE SortArrays ()
+DECLARE TempInt, J, Boundary : INTEGER
+DECLARE TempStr : STRING
+DECLARE Noswaps
+• BOOLEAN
+Boundary + 499
+REPEAT
+NoSwaps < TRUE
+FOR J ‹ 1 TO Boundary
+IF ErrCode[J]> ErrCode[J+1] THEN
+//first
+swap
+ErrCode elements
+TempInt ‹ ErrCode [J]
+ErrCode[J] < ErrCode [J+1]
+ErrCode [Jt1] ‹ TempInt
+//now swap corresponding
+ErrText elements
+TempStr ‹ ErrText [J]
+ErrText[J] ‹ ErrText [J+1]
+ErrText[J+1] ‹ TempStr
+NoSwaps < FALSE
+ENDIF
+NEXT J
+Boundary + Boundary - 1
+UNTIL NoSwaps = TRUE
+ENDPROCEDURE
+ErrCode should be an INTEGER // ErrCode should not be a STRING
+1
+Page 12 of 13
+
+--- Page 13 ---
+9618/22
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+7(c) (ii)
+October/November
+2022
+Marks
+2
+7(c) (iii)
+Benefits include:
+1 Array of records can store mixed data types / multiple data types under
+a single identifer
+2 Tighter / closer association between ErrCode and ErrText // simpler
+code as fields may be referenced together I/ values cannot get out o
+step as with two arrays
+3
+Program easier to design / write / debug / test / maintain / understand
+One mark per point
+Note: Max 2 marks
+DECLARE Error : ARRAY[1:500] OF ErrorRec
+1
+© UCLES 2022
+Page 13 of 13

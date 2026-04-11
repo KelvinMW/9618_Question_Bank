@@ -1,0 +1,354 @@
+--- Page 1 ---
+5 Cambridge Assessmen
+shes International Educatior
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+9618/11
+October/November 2023
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided.
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages. Any blank pages are indicated
+DC (PQ/FC) 318308/2
+© UCLES 2023
+[Turn over
+
+--- Page 2 ---
+2
+BLANK PAGE
+© UCLES 2023
+9618/11/0/N/23
+
+--- Page 3 ---
+3
+(a) Draw one line from each vector graphic term to its most appropriate description.
+Term
+Description
+drawing list
+a component created
+using a formula
+drawing object
+defines one characteristic
+of a component
+property
+data required to create all
+components in the graphic
+[2]
+(b) State what is meant by the bit depth of a bitmap image and explain how changing the bit
+depth affects the image.
+Definition
+Explanation
+[3]
+(c) Explain why a bitmap image is often compressed before it is attached to an email.
+... 12]
+© UCLES 2023
+9618/11/0/N/23
+[Turn over
+
+--- Page 4 ---
+4
+2 A school has a Local Area Network (LAN).
+(a) The LAN connects to the internet using a router.
+Describe the function of a router in a network.
+13]
+(b) Complete the following table by writing the purpose of each of these other hardware devices
+used to support the LAN.
+Hardware device
+Purpose
+switch
+Wireless Access Point
+(WAP)
+bridge
+[3]
+© UCLES 2023
+9618/11/0/N/23
+
+--- Page 5 ---
+5
+(c) The students can save their school files on a public cloud.
+Identify two drawbacks of the students storing their files on the public cloud.
+1
+2
+12]
+(d) A new classroom is being set up with 20 computers and a switch.
+Explain one advantage of implementing a star topology instead of a bus topology in the new
+classroom.
+[2]
+© UCLES 2023
+9618/11/0/N/23
+Turn over
+
+--- Page 6 ---
+6
+3 A shop manager has designed a relational database to store customer orders.
+The database will have the following tables:
+CUSTOMER (CustomerID, FirstName, LastName, Town)
+SHOP_ORDER (OrderNo, CustomerID, OrderDate)
+SUPPLIER (SupplierID, EmailAddress, TelephoneNumber)
+ITEM (ItemNumber, SupplierID, Description, Price)
+ORDER_ITEM (ItemNumber, OrderNo, Quantity)
+(a) Complete the entity-relationship (E-R) diagram for the relational database.
+SHOP_ORDER
+CUSTOMER
+ORDER_ITEM
+SUPPLIER
+ITEM
+(b) Identify three advantages of a relational database compared to a file-based approach.
+1
+2
+3
+© UCLES 2023
+9618/11/0/N/23
+[3]
+[3]
+
+--- Page 7 ---
+7
+(c) (i) Write a Structured Query Language (SQL) script to define the database called SHOP.
+11]
+(ii) Write the SQL script to return the total quantity of items that the customer with the ID of
+HJ231 has ordered.
+14.
+© UCLES 2023
+9618/11/0/N/23
+Turn over
+
+--- Page 8 ---
+8
+4 (a) Complete the truth table for the logic expression:
+X = NOT (A NAND B) XOR (NOT B AND (B NOR C))
+Working space
+A
+B
+C
+x
+0
+0
+0
+1
+0
+1
+0
+0
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+(b) Draw a logic circuit for the logic expression:
+X = (A AND NOT (B OR C)) AND (B NOR C)
+A-
+B-
+- X
+C-
+© UCLES 2023
+9618/11/0/N/23
+12]
+12]
+
+--- Page 9 ---
+9
+5 The Central Processing Unit (CPU) of the basic Von Neumann model for a computer system
+contains several special purpose registers.
+(a) The Memory Data Register (MDR), Index Register (IX) and the Accumulator (ACC) are
+examples of special purpose registers.
+Identify two other special purpose registers and state their role in the CPU.
+Special purpose register 1
+Role
+Special purpose register 2
+Role
+[4]
+(b) Describe what is meant by the Immediate Access Store (IAS) in a computer system.
+12]
+© UCLES 2023
+9618/11/0/N/23
+Turn over
+
+--- Page 10 ---
+10
+(c) A computer has a single 2.1 GHz CPU.
+(i) Describe how increasing the clock speed to 4 GHz can increase the performance of the
+computer.
+(li)
+A second computer has a CPU with two 2.1 GHz cores.
+Explain why the second computer does not always run twice as fast as the computer
+with one 2.1 GHz CPU
+[5]
+© UCLES 2023
+9618/11/0/N/23
+
+--- Page 11 ---
+11
+6 A programmer uses both a compiler and an interpreter to translate a program written in a high-level
+language.
+(a) Describe the advantages of using the interpreter compared to the compiler to translate the
+program.
+14]
+(b) State one reason why some high-level languages are partially compiled and partially interpreted.
+11]
+(c) (i)
+Identify two features that support the visual presentation of the code in a typical
+Integrated Development Environment (IDE).
+1
+2
+12]
+(ii) Identify two features that support the debugging of the code in a typical IDE.
+1
+2
+12]
+© UCLES 2023
+9618/11/0/N/23
+[Turn over
+
+--- Page 12 ---
+12
+7 (a) Describe the principal operations of a 3D printer.
+[3]
+(b) Describe the purpose of a temperature sensor within the 3D printer.
+12]
+(c) A 3D printer contains 1 GB of Dynamic RAM (DRAM) to store print data.
+State two advantages of the printer having Dynamic RAM instead of Static RAM (SRAM).
+2
+12]
+© UCLES 2023
+9618/11/0/N/23
+
+--- Page 13 ---
+13
+(a) Identify the purpose of the first pass of a two-pass assembler.
+[1]
+(b) The following table shows part of the instruction set for a processor. The processor has two
+registers, the Accumulator (ACC) and the Index Register (IX).
+Instruction
+Operand
+Explanation
+Opcode
+LDR
+#n
+Immediate addressing. Load the number n to IX
+STO
+<address>
+Store contents of ACC at the given address
+ADD
+<address>
+Add the contents of the given address to the ACC
+INC
+<register>
+CMP
+#n
+JPE <address>
+OUT
+Add 1 to the contents of the register (ACC or IX)
+Compare the contents of ACC with number n
+Following a compare instruction, jump to ‹address> if the compare was True
+Output to the screen the character whose ASCII value is stored in ACC
+<address> can be an absolute or symbolic address
+# denotes a denary number, e.g. #123
+(i) Give one example of an instruction that belongs to each of the following instruction
+groups.
+Only use the instructions given in the table. Each instruction must have a
+suitable
+operand.
+Data movement
+Arithmetic operation
+Conditional instruction
+13]
+(ii) The instruction LDR #2 uses immediate addressing.
+Give one similarity and one difference between direct addressing and indexed addressing.
+Similarity
+Difference
+© UCLES 2023
+9618/11/0/N/23
+12]
+[Turn over
+
+--- Page 14 ---
+14
+(iii) Identify one other mode of addressing.
+[11
+(c) The following table shows another part of the instruction set for the same processor.
+Instruction
+Opcode
+Operand
+AND
+Explanation
+Bn
+Bitwise AND operation of the contents of ACC with the operand
+XOR
+Bn
+Bitwise XOR operation of the contents of ACC with the operand
+LSR
+#n
+Bits in ACC are shifted logically n places to the right. Zeros are introduced on
+the left hand end
+# denotes a denary number, e.g. #123
+B denotes a binary number, e.g. B01001101
+(i) The current contents of the ACC are:
+Show the contents of the ACC after the execution of the following instruction.
+AND B10100101
+[1]
+(ii) The current contents of the ACC are:
+1
+1
+Show the contents of the ACC after the execution of the following instruction.
+LSR
+#3
+11]
+© UCLES 2023
+9618/11/0/N/23
+
+--- Page 15 ---
+15
+(iii) The current contents of the ACC are:
+Show the contents of the ACC after the execution of the following instruction.
+XOR B00100101
+[1]
+© UCLES 2023
+9618/11/0/N/23
+Turn over
+
+--- Page 16 ---
+16
+(a) Explain the importance of feedback in a control system.
+12]
+(b) Give one example of an embedded system and explain why it is an example of an embedded
+system.
+Example
+Explanation …..
+[3]
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2023
+9618/11/0/N/23

@@ -1,0 +1,391 @@
+--- Page 1 ---
+* 0000800000001*
+ELS Cambridge Assessment
+International Education
+7
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+9618/33
+October/November 2025
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+• Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided.
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 12 pages. Any blank pages are indicated
+DC (PB/SW) 346646/2
+© UCLES 2025
+L
+[Turn over
+J
+
+--- Page 2 ---
+* 0000800000002*
+DFD
+2
+1
+(a) An enumerated data type, Spectrum, is required to hold the names of colours.
+(i)
+Write the pseudocode statement for the type declaration of spectrum to hold the
+names of the colours available:
+Red, Orange, Yellow, Green, Blue, Indigo, Violet.
+12]
+(ii)
+Identify two characteristics of the list of values given in an enumerated data type
+declaration.
+1
+2...
+12]
+(b) ColourData is a composite data type to store definitions of colours.
+Write pseudocode statements to declare ColourData to hold the following fields:
+Field
+ColourCode
+Colour
+Wavelength
+Frequency
+Primary Colour
+Example data
+XYZ12345
+Red
+650
+4.62
+Yes
+Use the most appropriate data type in each case, including the enumerated data type
+Spectrum from part a(i).
+[4]
+OUCLES 2025
+9618/33/0/N/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 3 ---
+0000800000003*
+DFD
+DO NOT WRITE IN THIS MARGIN
+3
+7
+2
+Numbers are stored in a computer system using binary floating-point representation with:
+12 bits for the mantissa
+• 4 bits for the exponent
+two's complement form for both the mantissa and the exponent
+• 2 bytes in total.
+(a) Outline the effect of changing the number of bits used to store the mantissa to 10 bits, in this
+system.
+DO NOT WRITE IN THIS MARGIN
+[3]
+DO NOT WRITE IN THIS MARGIN
+(b) Describe one example of a situation that could cause an overflow to occur and the
+consequences of such an overflow.
+DO NOT WRITE IN THIS MARGIN
+13]
+3
+Describe how packet switching is used to pass messages across a network. Do not include
+checking for completeness and resending packets in your answer.
+DO NOT WRITE IN THIS MARGIN
+@UCLES 2025
+9618/33/0/N/25
+14]
+[Turn over
+
+--- Page 4 ---
+* 0000800000004*
+DFD
+4
+4
+Identify and describe three protocols that are used in the Application Layer of the TCP/IP protocol
+suite.
+Protocol 1
+Description
+Protocol 2
+Description
+Protocol 3
+Description
+16]
+5 (a) State the purpose of multi-tasking.
+11]
+(b) Explain how an operating system ensures that multi-tasking operates efficiently
+LOUCLES 2025
+9618/33/0/N/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 5 ---
+0000800000005*
+DFD
+DO NOT WRITE IN THIS MARGIN
+5
+7
+6
+(a) The Karnaugh map (K-map) represents a logic circuit with four inputs.
+AB
+CD
+00
+01
+DO NOT WRITE IN THIS MARGIN
+00
+01
+11
+10
+1
+11
+0
+1
+10
+1
+1
+0
+1
+1
+1
+1
+(i) Draw loop(s) around appropriate group(s) in the K-map to produce an optimal
+sum-of-products.
+13]
+(ii) Write the Boolean expression from your answer to part a(i) as a simplified sum-of-products.
+Do not carry out any further simplification.
+DO NOT WRITE IN THIS MARGIN
+12]
+(b) Simplify the following expression using De Morgan's laws and Boolean algebra.
+Show all the stages in your simplification.
+X=A+B+C+B+C
+DO NOT WRITE IN THIS MARGIN
+[3]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/33/0/N/25
+[Turn over
+
+--- Page 6 ---
+0000800000006*
+DFD
+6
+7 (a) Outline the process of optimisation during the compilation of a program.
+(b) Write the Reverse Polish Notation (RPN) for the given infix expression:
+((6 +12)/ (16-10)) * 18
+(c) The RPN expression
+ca-bd+*bat/
+is to be evaluated, where:
+a = 4, b = 12,c = 24 and d = 6.
+Show the changing contents of the stack as the RPN expression is evaluated.
+LOUCLES 2025
+9618/33/0/N/25
+7
+DO NOT WRITE IN THIS MARGIN
+12]
+DO NOT WRITE IN THIS MARGIN
+13]
+DONOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+14]
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 7 ---
+0000800000007*
+DFD
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+7
+7
+8
+Calculate the shortest distance between the Start node and each of the nodes in the graph using
+Dijkstra's algorithm.
+Show your working on the graph or in the working space. Write your answers in the table provided.
+V
+T
+3
+5
+W
+6
+10
+DO NOT WRITE IN THIS MARGIN
+22
+8
+Start
+Working
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+Answers:
+OUCLES 2025
+T
+V
+W
+Y
+Z
+[5]
+9618/33/0/N/25
+[Turn over
+
+--- Page 8 ---
+* 0000800000008 *
+DFD
+9
+8
+A company requires a digital certificate to ensure the authenticity of its online communications.
+Outline the process followed to acquire a digital certificate.
+14]
+10
+A stack, StackArray, is to be implemented using pseudocode, to store a maximum of 100 string
+items in an appropriate array. Declarations are required so that the stack has a beginning, an end
+and a maximum size. An array is also required to store the data.
+(a) Write pseudocode to declare the variables, constant and array required to implement the
+stack.
+[3]
+(b) Write pseudocode for a procedure to initialise the top and bottom pointers of the stack to
+appropriate values.
+OUCLES 2025
+9618/33/0/N/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DONOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 9 ---
+000080000009*
+DFD
+DO NOT WRITE IN THIS MARGIN
+11
+9
+Describe when the use of recursion would be beneficial and give an example.
+Description
+7
+DO NOT WRITE IN THIS MARGIN
+Example ..
+[3]
+12
+An exception can occur when running a program.
+(a) Explain what is meant by an exception.
+DO NOT WRITE IN THIS MARGIN
+[3]
+(b) Identify one example of an exception and give one reason why the exception may cause a
+problem.
+Example
+DO NOT WRITE IN THIS MARGIN
+Reason ..
+12]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/33/0/N/25
+[Turn over
+
+--- Page 10 ---
+* 0000800000010*
+DFD
+10
+13 The table shows assembly language instructions for a processor that has one register, the
+Accumulator (ACC).
+Label
+Instruction
+Opcode
+Operand
+LDM #n
+IDD <address>
+LDI <address>
+ADD <address>
+ADD #n
+SUB <address>
+SUB #n
+STO <address>
+<label>:
+<data>
+# denotes a denary number, e.g. #123
+<label> can be used in place of < address>
+The current contents of memory are:
+Address
+563
+899
+Contents
+125
+63
+Explanation
+Load the number n to the ACC
+Load the contents of the location at the given
+address to the ACC
+The address to be used is at the given address.
+Load the contents of this second address to
+the ACC
+Add the contents of the given address to the
+ACC
+Add the number n to the ACC
+Subtract the contents of the given address
+from the ACC
+Subtract the number n from the ACC
+Store the contents of the ACC at the given
+address
+Gives a symbolic address ‹label> to the
+memory location with the contents <data>
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2025
+9618/33/0/N/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 11 ---
+* 0000800000011*
+DFD
+DO NOT WRITE IN THIS MARGIN
+11
+Write assembly language code, using only the given instruction set to:
+store the denary value 250 as labelled variable x
+store the value stored in location 563 as labelled variable Y
+add the value stored in variable X to the value stored in variable Y
+subtract the value stored in location 899 from the current value in the Accumulator
+store the result in variable Total.
+Show the initialisation and values of the variables X, Y and Total in the table provided.
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+Label
+Content
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/33/0/N/25
+7
+[7]
+
+--- Page 12 ---
+* 0000800000012*
+DFD
+Г
+12
+BLANK PAGE
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+OUCLES 2025
+9618/33/0/N/25
+DO NOT WRITE IN THIS MARGIN

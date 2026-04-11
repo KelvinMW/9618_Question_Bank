@@ -1,0 +1,1403 @@
+--- Page 1 ---
+* CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 4 Practical
+MARK SCHEME
+Maximum Mark: 75
+9618/43
+October/November 2025
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2025 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+This document consists of 39 printed pages.
+© Cambridge University Press & Assessment 2025
+[Turn over
+
+--- Page 2 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Generic Marking Principles
+October/November 2025
+These general marking principles must be applied by all examiners when marking candidate answers. They should be applied alongside the
+specific content of the mark scheme or generic level descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+•
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit is given for valid answers which go beyond
+the scope of the syllabus and mark scheme, referring to your Team Leader as appropriate
+•
+marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these features are specifically assessed by the
+question as indicated by the mark scheme. The meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed instructions or in the application of generic level
+descriptors.
+© Cambridge University Press & Assessment 2025
+Page 2 of 39
+
+--- Page 3 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November 2025
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question (however; the use of the full mark range may
+be limited according to the quality of the candidate responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should not be awarded with grade thresholds or
+grade descriptors in mind.
+© Cambridge University Press & Assessment 2025
+Page 3 of 39
+
+--- Page 4 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November 2025
+Annotations guidance for centres
+Examiners use a system of annotations as a shorthand for communicating their marking decisions to one another. Examiners are trained during the
+standardisation process on how and when to use annotations. The purpose of annotations is to inform the standardisation and monitoring
+processes and guide the supervising examiners when they are checking the work of examiners within their team. The meaning of annotations and
+how they are used is specific to each component and is understood by all examiners who mark the component.
+We publish annotations in our mark schemes to help centres understand the annotations they may see on copies of scripts. Note that there may
+not be a direct correlation between the number of annotations on a script and the mark awarded. Similarly, the use of an annotation may not be an
+indication of the quality of the response.
+The annotations listed below were available to examiners marking this component in this series.
+Annotations
+Annotation
+BOD]
+FT
+Highlighted text
+NAQ]
+NE
+Meaning
+Benefit of the doubt
+To indicate where a key word/phrase/code is missing
+Incorrect
+Follow through
+Indicate a point in an answer
+To draw attention to a particular aspect or to indicate where parts of an answer have been combined
+Ignore
+Not answered question
+No examples or not enough
+© Cambridge University Press & Assessment 2025
+Page 4 of 39
+
+--- Page 5 ---
+9618/43
+Annotation
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November 2025
+Meaning
+Not relevant or used to separate parts of an answer
+Off-page
+comment
+REP
+SEEN
+TV
+Allows comments to be entered at the bottom of the RM marking window and then displayed when the associated question
+item is navigated to.
+Repetition
+Indicates that work or a page has been seen including blank answer spaces and blank pages.
+Correct
+Too vague
+© Cambridge University Press & Assessment 2025
+Page 5 of 39
+
+--- Page 6 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Mark scheme abbreviations
+• Bold in mark scheme means that idea is required.
+• / in mark scheme means alternative.
+• I/ in mark scheme means alternative solution that gains the same mark point.
+….. at the end of one mark point without a ... at the start of the next just means the sentence follows on. There is no dependency.
+... at the end of one mark point and ... at the start of the next, this means the second cannot be awarded without the first.
+• () means what is in the brackets is not required, or it is not required in some languages but may be required in others.
+October/November 2025
+© Cambridge University Press & Assessment 2025
+Page 6 of 39
+
+--- Page 7 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1(a)(i)
+October/November 2025
+Marks
+5
+1 mark each
+Class header (and end where appropriate)
+•
+•
+•
+Declaring Code as string and Value as integer
+Constructor header (and end where appropriate) within class ...
+... taking two parameters ...
+... assigning parameters to attributes
+Example program code.
+Java
+class Boardobject{
+public String Code;
+public Integer Value;
+public Boardobject (String pCode, Integer pValue) {
+Code = pCode;
+Value = pValue;
+}
+VB.NET
+Public Class Boardobject
+Private Code As String
+Private Value As Integer
+Sub New (pCode, pValue)
+Code = pCode
+Value = pValue
+End Sub
+End Class
+class Boardobject () :
+(self, Code, Value):
+self.Code = Code #string
+self.Value = Value # integer
+© Cambridge University Press & Assessment 2025
+Page 7 of 39
+
+--- Page 8 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1(a)(ii)
+October/November 2025
+Marks
+3
+1 mark each
+•
+1 get header (and end where appropriate) with no parameter ...
+:
+... returning correct value without overriding
+2nd correct get method
+Example program code
+Java
+public String GetCode () {
+return Code;
+}
+public Integer GetValue (){
+return Value;
+}
+VB.NET
+Function GetCode ()
+Return Code
+End Function
+Function GetValue ()
+Return Value
+End Function
+Python
+def GetCode (self) :
+return
+self. Code
+def GetValue (self):
+return
+self. Value
+© Cambridge University Press & Assessment 2025
+Page 8 of 39
+
+--- Page 9 ---
+9618/43
+Question
+1(a)(iii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2025
+Marks
+3
+1 mark each
+•
+Creating one instance of BoardObject and storing in correct variable ...
+... with correct parameters
+Remaining four created correctly and stored
+Example program code
+Boardobject Object1 = new BoardObject ("A", 2);
+Boardobject Object2 =
+new Boardobject ("B", 3);
+Boardobject Object3
+new Boardobject ("C", 5);
+Boardobject Object4
+new Boardobject ("D", 2);
+Boardobject Object5
+new BoardObject ("E", 7);
+Dim Objectl As BoardObject = New BoardObject ("A", 2)
+Dim Object2 As Boardobject
+= New Boardobject ('B",
+Dim Object3 As BoardObject
+= New Boardobject ("C",
+Dim Object4 As Boardobject
+= New Boardobject ("D",
+Dim Object5 As BoardObject = New BoardObject("", 7)
+Python
+Object1 = BoardObject ("A", 2)
+Object2 = BoardObject ("B", 3)
+Object3 = BoardObject ("C", 5)
+Object4 = BoardObject ("D", 2)
+Object5 = BoardObject ("E", 7)
+© Cambridge University Press & Assessment 2025
+Page 9 of 39
+
+--- Page 10 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1(b)(i)
+October/November 2025
+Marks
+4
+1 mark each
+Class header (and end where appropriate)
+Declaration of 2D array with 10 × 10 elements of type Boardobject
+Storing Boardobject object with Code "-" and Value 0 in each array element
+Example program code
+class Board!
+private Boardobject|||| TheBoard = new Boardobject [10| [10];
+public Board () 1
+for (Integer x = 0; x < 10; xt+) {
+for (Integer y = 0; y ‹ 10; y++) {
+TheBoard[x] [y] = new BoardObject ("_", 0) ;
+111}
+VB.NET
+Public Class Board
+Private TheBoard (9, 9) As Boardobject
+Sub New ()
+For x
+= 0 To 9
+Fox Yhe Board 9 V = New Boardobiect (..", 0,
+Next
+Next
+End Sub
+End Class
+© Cambridge University Press & Assessment 2025
+Page 10 of 39
+
+--- Page 11 ---
+9618/43
+Question
+1(b)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2025
+Marks
+Python
+class Board ():
+(self):
+self.TheBoard = I] #type Boardobject
+for x in range (10):
+TempList
+for y in range (10):
+TempList.append (BoardObject ("-", 0))
+self. TheBoard. append (TempList)
+1 (b)(ii)
+1 mark each
+Get method header taking 2 (integer) parameters ...
+... returning the Boardobject at Board position of parameters
+Example program code
+public Boardobject GetObject (Integer Rowpos, Integer Columnpos) {
+return TheBoard [Rowpos] [Columnpos];
+}
+VB.NET
+Function GetObject (Rowpos, Columnpos)
+Return TheBoard (Rowpos, Columnpos)
+End Function
+Python
+def GetObject (self, Rowpos, Columnpos) :
+return self.TheBoard [Rowpos] [Columnpos]
+2
+© Cambridge University Press & Assessment 2025
+Page 11 of 39
+
+--- Page 12 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1 (b)(iii)
+October/November 2025
+Marks
+2
+1 mark each
+Set method header taking three parameters (TheObject, row, column) ...
+•
+... storing parameter TheObject in TheBoard at parameters row and column
+Example program code
+Java
+public void Setobject (Boardobject TheObject, Integer Rowpos, Integer Columnpos) {
+TheBoard [Rowpos] [Columnpos] = TheObject;
+}
+VB.NET
+Sub SetObject (TheObject, Rowpos, Columnpos)
+TheBoard (Rowpos, Columnpos) = TheObject
+End Sub
+Python
+def Setobject (self,
+TheObject, Rowpos, Columnpos) :
+self.TheBoard [Rowpos][Columnpos] = TheObject
+© Cambridge University Press & Assessment 2025
+Page 12 of 39
+
+--- Page 13 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1(b) (iv)
+1 mark each
+Method DisplayBoard () header (and end where appropriate) and using GetCode ()
+• Outputting Code of all Boardobject elements in both indices (10 × 10)
+•
+... with each row on one line and space between each value
+Example program code
+public void DisplayBoard () {
+String OutputLine;
+for (Integer x = 0; x < 10; xt+) {
+OutputLine = "";
+for (Integer y = 0; y ‹ 10; y++) {
+Outputline = Outputline + TheBoard[x] [y] .GetCode ()
+}
+System.out.println(OutputLine);
+VB.NET
+Sub DisplayBoard ()
+Dim Outputline As String
+For x = 0 To 9
+OutputLine =
+For y = 0 To 9
+Outputline = OutputLine & TheBoard (x, y) .GetCode() & " "
+Next
+Console.WriteLine (OutputLine)
+Next
+End Sub
+© Cambridge University Press & Assessment 2025
+Page 13 of 39
+October/November 2025
+Marks
+3
++ "";
+
+--- Page 14 ---
+9618/43
+Question
+1(b) (iv)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2025
+Marks
+Python
+def DisplayBoard (self):
+for x in range (1):
+OutputLine =
+for y in range (10):
+Outputline = Outputline + str (self.TheBoard[x] [y]. GetCode ()) + " "
+print (OutputLine)
+© Cambridge University Press & Assessment 2025
+Page 14 of 39
+
+--- Page 15 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1(c)(i)
+October/November 2025
+Marks
+3
+1 mark each
+•
+Creating instance of Board and storing it
+: Storing all 5 objects in correct positions
+Calling DisplayBoard ()
+Example program code
+Java
+Board GameBoard =new
+Board ();
+Boardobject Object1
+= new Boardobject ("A", 2) ;
+Boardobject Object2 =
+new Boardobject ("B"
+Boardobject Object3
+new Boardobject ("C"
+Boardobject Object4 =
+new BoardObject ('D"
+Boardobject Object5
+new
+Boardobject ("E", 7);
+GameBoard. SetObject (Object1, 0, 0);
+GameBoard. Setobject (Object2, 9, 9);
+GameBoard. SetObject (Object3, 4, 5);
+GameBoard. Setobject (Object4, 2, 2);
+GameBoard. SetObject (Object5, 8, 7);
+GameBoard.DisplayBoard ();
+VB.NET
+Dim GameBoard As Board = New Board ()
+Dim Object1 As BoardObject = New BoardObject ("A", 2)
+Dim Object2 As BoardObject = New BoardObject ("B"
+Dim Object3 As BoardObject = New Boardobject ("C",
+Dim Object4 As BoardObject = New BoardObject ('D"
+Dim Object5 As BoardObject = New Boardobject ("E", 7)
+GameBoard. SetObject (Object1, 0, 0)
+GameBoard. SetObject (Object2,
+GameBoard. SetObject (Object3,
+GameBoard. SetObject (Object4,
+9,
+4,
+2,
+9)
+5)
+2)
+GameBoard. SetObject (Object5, 8, 7)
+GameBoard.DisplayBoard ()
+© Cambridge University Press & Assessment 2025
+Page 15 of 39
+
+--- Page 16 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2025
+Marks
+Question
+1(c) (i)
+1 (c)(i)
+Python
+GameBoard = Board ()
+Object1 = BoardObject ("A", 2)
+object2 = BoardObject ("B",
+Object3 = BoardObject ("C", 5)
+Object4 = BoardObject ("D", 2)
+Object5 = BoardObject ("E", 7)
+GameBoard. SetObject (Object1, 0, 0)
+GameBoard. SetObject (Object2,
+GameBoard. Setobject (Object3, 4, 5)
+GameBoard. SetObject (Object4,
+GameBoard. SetObject (Object5,
+8, 7)
+GameBoard.DisplayBoard ()
+1 mark for screenshot showing board contents
+Example
+A -
+1
+C
+E
+- B
+© Cambridge University Press & Assessment 2025
+Page 16 of 39
+
+--- Page 17 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1 (d) (i)
+October/November 2025
+Marks
+4
+1 mark each to max 4
+Taking x-axis and y-axis as input repeatedly until each value is between 0 and 9 (inclusive)
+•
+•
+Calling Board. GetObject () with input x-axis and y-axis values ...
+... checking if object exists e.g. if Code is "-"
+... outputting "Miss" if no Boardobject and outputting Code and Value in an appropriate message if there is a
+Boardobject
+Example program code
+Java
+Scanner scanner = new Scanner (System. in);
+Integer InputRow
+= -1;
+while (InputRow < 0 || InputRow > 9) {
+System.out.println ('Enter the row position between 0 and 9 ");
+InputRow = Integer.parseInt (scanner.nextLine());
+Integer InputColumn
+= -1;
+while (InputColumn < 0 || InputColumn > 9) {
+System.out.println ("Enter the column position between 0 and 9 ");
+InputColumn = Integer.parseInt (scanner.nextLine());
+BoardObject GuessObject = GameBoard.GetObject (InputRow, InputColumn);
+if | (GuessObject.GetCode ()) . equals ("_")) {
+System.out.println("Miss");
+System.out.println ("You found " + GuessObject.GetCode () + "
+with
+value "
++
+GuessObject.GetValue ());
+VB.NET
+Dim InputRow, InputColumn As Integer
+InputRow = -1
+InputColumn = -1
+While InputRow < 0 Or InputRow > 9
+Console.Writeline("Enter the row position between 0 and 9 ")
+InputRow = Console.ReadLine ()
+End
+While
+© Cambridge University Press & Assessment 2025
+Page 17 of 39
+
+--- Page 18 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2025
+Question
+1 (d) (i)
+Marks
+While InputColumn < 0 Or InputColumn > 9
+Console.Writeline ("Enter the column position between 0
+and 9 ")
+InputColumn = Console. ReadLine ()
+End
+While
+Dim GuessObject As BoardObject = GameBoard.GetObject (InputRow, InputColumn)
+If GuessObject. GetCode ()
+"'_"
+Console.WriteLine ("Miss")
+Else
+Console.WriteLine ("You found " & GuessObject. GetCode ()
+GuessObject.GetValue ())
+End If
+& " with value "
+Python
+InputRow = -1
+while InputRow
+< O or InputRow > 9:
+InputRow = int (input ("Enter the row position between 0 and 9 "))
+InputColumn = -1
+while InputColumn < 0 or InputColumn > 9:
+InputColumn = int (input ("Enter the column position between 0 and 9 "))
+GuessObject = GameBoard. GetObject (InputRow, InputColumn)
+if GuessObject. GetCode () =="_":
+print ("Miss")
+print ("You found " + str (GuessObject.GetCode()) + " with value
+"+
+str (GuessObject.GetValue ()))
+© Cambridge University Press & Assessment 2025
+Page 18 of 39
+
+--- Page 19 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1 (d)(ii)
+October/November 2025
+Marks
+1
+1 mark for screenshot showing inputs and correct output
+Row 10 4
+Column -1 5
+Output C 5
+Example
+Enter the row position between 0 and 9 10
+Enter the row position between 0 and 9 4
+Enter the column position between 0 and 9 -1
+Enter the column position between 0 and 9 5
+You found C with value 5
+© Cambridge University Press & Assessment 2025
+Page 19 of 39
+
+--- Page 20 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+2(a)
+October/November 2025
+Marks
+2
+1 mark each
+Queue declared as a (global) 1D array of 100 string elements all initialised to ""
+QueueHead and QueueTail initialised with - 1, Number Items initialised to 0
+Example program code
+Java
+public static String|| Queue = new String[100];
+public
+static Integer QueueHead;
+public
+static Integer QueueTail;
+public
+static Integer NumberItems;
+for lint x = 0; x < 100; x++) {
+Queue [x] = "'";
+QueueHead = -1;
+QueueTail =
+-1;
+Number Items = 0;
+VB.NET
+Dim Queue (99) As String
+Dim QueueHead As Integer
+Dim QueueTail As Integer
+Dim NumberItems As Integer
+For x = 0 To 99
+Queue (x) = ""
+Next
+QueueHead = -1
+QueueTail = -1
+NumberItems = 0
+© Cambridge University Press & Assessment 2025
+Page 20 of 39
+
+--- Page 21 ---
+9618/43
+Question
+2(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2025
+Marks
+Python
+global Queue, QueueHead, QueueTail, NumberItems
+Queue = []
+for x in range (100):
+Queue. append ("'")
+QueueHead
+QueueTail =
+NumberItems = 0
+© Cambridge University Press & Assessment 2025
+Page 21 of 39
+
+--- Page 22 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+2(b)
+October/November 2025
+Marks
+5
+1 mark each
+•
+•
+•
+•
+•
+Function header (and end where appropriate) taking one (string) parameter and checking full and returning FALSE
+(otherwise) Storing parameter in QueueTail + 1
+Incrementing QueueTail and NumberItems
+(Dealing with first element) If QueueHead = -1 store 0 in QueueHead / increment QueueHead
+Return TRUE in all cases when inserted
+Example program code.
+Java
+public static Boolean Enqueue (String TheData) {
+if (QueueHead == -1) {
+Queue [0] = TheData;
+QueueHead = 0;
+QueueTail = 0;
+NumberItems++;
+return true;
+}else if (QueueTail ›= 99) {
+return false;
+relsel
+Queue [QueueTail+1] = TheData;
+QueueTail++;
+NumberItems++;
+return true;
+}
+© Cambridge University Press & Assessment 2025
+Page 22 of 39
+
+--- Page 23 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2025
+Question
+2(b)
+Marks
+VB.NET
+Function Enqueue (TheData)
+If QueueHead = -1 Then
+Queue (0) =
+TheData
+QueueHead
+= 0
+QueueTail = 0
+NumberItems
++= 1
+Return True
+ElseIf QueueTail
+>= 99 Then
+Return False
+Else
+Queue (QueueTail + 1)
+= TheData
+QueueTail += 1
+NumberItems += 1
+Return True
+End If
+End Function
+Python
+def Enqueue (TheData) :
+global Queue, QueueHead, QueueTail, NumberItems
+if (QueueHead == -1) {
+Queue [0] = TheData
+QueueHead = 0
+QueueTail = 0
+NumberItems +=1
+return True
+elif QueueTail ›= 99:
+return False
+else:
+Queue [QueueTail+1] = TheData
+QueueTail +=1
+NumberItems +=1
+return True
+© Cambridge University Press & Assessment 2025
+Page 23 of 39
+
+--- Page 24 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+2(c)
+October/November 2025
+Marks
+3
+1 mark each
+returning "False"
+•
+(otherwise) returning Queue [QueueHead]
+Incrementing QueueHead, decrementing NumberItems
+Function header (and end), checking if Queue is empty (NumberItems = 0 or QueueHead > QueueTail) and
+Example program code
+public static String Dequeue () {
+String ReturnValue;
+if (NumberItems == 0) {
+return "False";
+}else!
+ReturnValue
+= Queue [QueueHead] ;
+QueueHeadtt;
+NumberItems--;
+return ReturnValue;
+VB.NET
+Function Dequeue ()
+If NumberItems = 0 Then
+Return "False"
+Else
+Dequeue = Queue (QueueHead)
+QueueHead
++= 1
+NumberItems -= 1
+End If
+End Function
+© Cambridge University Press & Assessment 2025
+Page 24 of 39
+
+--- Page 25 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2025
+Question
+2(c)
+Marks
+Python
+def Dequeue () :
+global Queue, QueueHead, QueueTail, NumberItems
+if NumberItems == 0:
+else:
+ReturnData = Queue [QueueHead]
+QueueHead += 1
+NumberItems
+return ReturnData
+© Cambridge University Press & Assessment 2025
+Page 25 of 39
+
+--- Page 26 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+2(d)
+October/November 2025
+Marks
+5
+1 mark each to max 5
+•
+•
+•
+Procedure header (and end where appropriate)
+Opening the file and closing the file (in appropriate place)
+Looping until EOF // looping through each line ...
+... read in each value ...
+.. calling Enqueue () with read in value and store/use return value
+•
+Exception handling with try except and appropriate output with all file access within try
+Example program code
+public static void ReadData () {
+Boolean ReturnValue;
+Boolean FinishLoop = false;
+tryt
+Scanner Scanner1 = new Scanner (new File ("BinaryData.txt"));
+while (Scanner1.hasNextLine ()
+&& FinishLoop == false) {
+ReturnValue = Enqueue (Scannerl.nextline());
+if (ReturnValue. equals ("False")){
+FinishLoop = true;
+}
+Scanner1. close ();
+catch (FileNotFoundException ex) {
+System.out.println("No file found");
+}
+© Cambridge University Press & Assessment 2025
+Page 26 of 39
+
+--- Page 27 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November 2025
+Answer
+Marks
+Question
+2(d)
+VB.NET
+Sub ReadData ()
+Dim ReturnValue As String
+Dim DataReader As New System. IO. StreamReader ("BinaryData.txt")
+Dim FinishLoop As Boolean = True
+Do Until DataReader.EndOfStream Or Finishloop = False
+ReturnValue = Enqueue (DataReader.Readline ())
+If ReturnValue = False Then
+Finishloop = False
+Loop
+DataReader. Close ()
+End Sub
+Python
+def ReadData ():
+TheFile = open ("BinaryData.txt")
+for Line in TheFile:
+ReturnValue = Enqueue (Line.strip ())
+if ReturnValue == False:
+TheFile.close ()
+© Cambridge University Press & Assessment 2025
+Page 27 of 39
+
+--- Page 28 ---
+9618/43
+Question
+2(e)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2025
+Marks
+6
+1 mark each
+Procedure header (and end where appropriate), storing final string compressed data in global variable
+• Call Dequeue () and storing return value ...
+... repeatedly until the return value == "False"
+•
+Comparing new value with previous...
+... maintaining counter of number of occurrences...
+•
+... appending digit and number of occurrences to a string without overriding
+Example program code
+Java
+public static void Compress () {
+String First = Dequeue () ;
+String Newline = "';
+Integer Count;
+String NextChar;
+while (NumberItems > 0
+&& First != "False") {
+Count = 1;
+NextChar
+= Dequeue () ;
+while (NextChar.equals (First)) |
+Count+t;
+First = NextChar;
+NextChar = Dequeue () ;
+Newline = First + Count;
+Newstring
+= NewString + NewLine;
+First = NextChar;
+© Cambridge University Press & Assessment 2025
+Page 28 of 39
+
+--- Page 29 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2025
+Question
+2(e)
+Marks
+VB.NET
+Sub Compress ()
+Dim First
+String = Dequeue ()
+Dim Newline As String
+=
+" 17
+Dim Count As Integer
+Dim NextChar As String
+While NumberItems > 0 And First <> "False"
+Count = 1
+NextChar
+= Dequeue ()
+While NextChar = First
+Count t= 1
+First = NextChar
+NextChar = Dequeue ()
+End While
+Newline = First & Count
+NewString = NewString & NewLine
+First
+= NextChar
+End While
+Python
+def Compress ():
+global Newstring
+First = Dequeue ()
+NewString = ""
+while NumberItems > 0 and First
+!= "False":
+Count = 1
+NextChar = Dequeue ()
+while NextChar == First:
+Count t= 1
+First = NextChar
+NextChar = Dequeue ()
+NewLine = First + str (Count)
+NewString = NewString
++ NewLine
+First = NextChar
+© Cambridge University Press & Assessment 2025
+Page 29 of 39
+
+--- Page 30 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2025
+Question
+2(f)(i)
+Marks
+2
+1 mark each
+• Calling ReadData () then Compress ()
+• Outputting compressed string
+Example program code
+Java
+public
+static void main (String
+args[l) {
+NewString
+"";
+for lint x
+= 0; x < 100;
+x++) {
+Queue [x]
+="'";
+}
+QueueHead = -1;
+QueueTail =
+-1;
+NumberItems = 0;
+ReadData () ;
+Compress ();
+System.out.println (NewString);
+VB.NET
+Sub Main ()
+NewString
+=""
+For x = 0 To
+99
+Queue (x)
+=""
+Next
+QueueHead = -1
+QueueTail
+=
+-1
+Number Items = 0
+ReadData ()
+Compress ()
+Console.WriteLine (NewString)
+Console. ReadLine ()
+End Sub
+© Cambridge University Press & Assessment 2025
+Page 30 of 39
+
+--- Page 31 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2025
+Marks
+Question
+2(f)(i)
+2(f)(ii)
+Python
+NewString
+Queue
+for
+=""
+in range (100):
+Queue.append ("")
+QueueHead = -1
+QueueTail
+- 1
+Number Items = 0
+ReadData ()
+Compress ()
+print (NewString)
+1 mark for screenshot showing output
+Example
+19051306
+1
+© Cambridge University Press & Assessment 2025
+Page 31 of 39
+
+--- Page 32 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2025
+Question
+3(a)(i)
+Marks
+6
+1 mark each
+•
+•
+•
+•
+•
+•
+Function header (and end) taking three parameters
+Checking number of elements for 0 and returning 0 (e.g. ArrayCopy = I||| len (ArrayCopy) |
+== 0)
+(otherwise) comparing first array element to parameter DataToFind ...
+... if match return recursive call adding 1
+... if no match return recursive call without adding 1
+….. all recursive calls have array without first element, NumberElements-1 and DataToFind
+Example program code
+Java
+public static Integer RecursiveCount (Integer DataloFind, Integer|| ArrayCopy, Integer
+NumberElements) {
+if (NumberElements > 0) {
+Integer[| NewArray = new Integer[NumberElements-1];
+for (Integer x = 1; x ‹< NumberElements; x++) {
+NewArray [x-1]= ArrayCopy[x];
+}
+if (ArrayCopy[0] == DataToFind) {
+return 1 + RecursiveCount (DataToFind, NewArray, NumberElements - 1);
+}elsel
+}
+return RecursiveCount (DataToFind, NewArray, NumberElements - 1);
+telsel
+return 0;
+© Cambridge University Press & Assessment 2025
+Page 32 of 39
+
+--- Page 33 ---
+9618/43
+Question
+3(a)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2025
+Marks
+VB.NET
+Function RecursiveCount (DataToFind As Integer, ArrayCopy() As Integer, NumberElements As
+Integer)
+If NumberElements > 0 Then
+Dim NewArray (NumberElements - 1) As Integer
+For X = 1 To NumberElements - 1
+NewArray (× - 1)
+= ArrayCopy (x)
+Next x
+If ArrayCopy (0) = DataToFind Then
+Return 1 + RecursiveCount (DataToFind, NewArray, NumberElements - 1)
+Else
+Return RecursiveCount (DataloFind, NewArray, NumberElements - 1)
+End If
+Else
+Return O
+End If
+End Function
+Python
+def RecursiveCount (DataToFind, ArrayCopy, NumberElements) :
+if NumberElements > 0:
+NewArray = ArrayCopy[1: ]
+if ArrayCopy[0] == DataToFind:
+return 1 + RecursiveCount (DataToFind, NewArray, NumberElements - 1)
+return RecursiveCount (DataToFind, NewArray, NumberElements - 1)
+else:
+return 0
+© Cambridge University Press & Assessment 2025
+Page 33 of 39
+
+--- Page 34 ---
+9618/43
+Question
+3(a)(ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2025
+Marks
+3
+1 mark each
+Storing the correct data in an array
+• Calling RecursiveCount () with the correct parameters
+• Outputting the return value
+Example program code
+3(a)(iii)
+3(b)(i)
+Integer|| MyArray = new Integer[]10, 5, 1, 2, 5, 9, 9, 6, 5, 0};
+System.out.println (RecursiveCount (0, MyArray, 10));
+VB.NET
+Dim MyArray () As Integer = 10, 5, 1, 2, 5, 9, 9, 6, 5, 0}
+Console.Writeline (RecursiveCount (0, MyArray, 10))
+Python
+MyArray = 10,5,1,2,5,9,9,6, 5, 0]
+print (RecursiveCount (0, MyArray, 10))
+1 mark for screenshot showing correct output of 2
+Example
+2
+1 mark for storing the string in a variable
+Example program code
+Java
+String Code = "x=0;y=1;x=x+y;y++;";
+VB.NET
+Dim Code As String = "x=0;y=1; x=x+y;y++;"
+Python
+Code= "x=0;y=1; x=xty;y++;"
+© Cambridge University Press & Assessment 2025
+Page 34 of 39
+1
+
+--- Page 35 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(b)(ii)
+October/November 2025
+Marks
+6
+1 mark each
+Function header, taking one string parameter
+•
+Loop e.g. four times/through each character in parameter
+Comparing character from parameter to '; ' ...
+... concatenate current character to a string until ' ; ' is found
+... when '; ' found storing string in array
+Returning string array without semicolons
+Example program code
+Javlic static Strinal! SplitData (strina Datastrina) !
+public static String|| SplitData (String DataString) {
+String[| SplitDataArray = new String[10];
+Integer Count = 0;
+String TempString
+="'"';
+String Character = "';
+Integer LastElement = O;
+for (Integer x = 0; x < 4; xt+) {
+TempString = "";
+tryl
+Character = String.value0f (DataString.charAt (Count));
+while (Character.equals(";") == false) {
+TempString = TempString + Character;
+Count+t;
+Character = String.valueOf (DataString.charAt (Count));
+¡finally )
+Count+t;
+}
+}
+SplitDataArray[LastElement] = TempString;
+LastElement++;
+return SplitDataArray;
+© Cambridge University Press & Assessment 2025
+Page 35 of 39
+
+--- Page 36 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2025
+Question
+3(b)(ii)
+Marks
+VB.NET
+Function SplitData (DataString)
+SplitDataArray (10) As
+String
+Dim Count As Integer = 0
+Dim TempString As
+String =""
+Dim Character As String = "'
+LastElement As Integer = 0
+For x = 0 To 3
+TempString
+Try
+"11r
+Character
+= DataString (Count)
+While Character <> ";"
+TempString
+= TempString + Character
+Count = Count +
+1
+Character
+= DataString (Count)
+End While
+SplitDataArray (LastElement) = TempString
+LastElement = LastElement +
+Catch
+End Try
+Count = Count + 1
+Console.WriteLine("No more character")
+Next
+Return SplitDataArray
+End Function
+© Cambridge University Press & Assessment 2025
+Page 36 of 39
+
+--- Page 37 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November 2025
+Answer
+Marks
+Question
+3(b)(ii)
+Python
+def SplitData (DataString):
+SplitDataArray
+Count = 0
+for x in
+TempString
+range (4) :..
+Character = DataString[Count]
+while Character != ";":
+TempString = TempString + (Character)
+Count += 1
+Character = DataString[Count]
+SplitDataArray.append (TempString)
+except:
+print ("No more characters")
+Count += 1
+return SplitDataArray
+© Cambridge University Press & Assessment 2025
+Page 37 of 39
+
+--- Page 38 ---
+9618/43
+Question
+3(b)(iii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2025
+Marks
+2
+1 mark each
+Calling SplitData () With array as argument and storing/using return value
+• Outputting each element of the returned array on a new line
+Example program code
+Java
+String
+Code = "x=0;y=1;x=x+y;y++;";
+String|| SplitDataArray = new String[10];
+SplitDataArray = SplitData (Code);
+for (Integer x = 0; x
+< 4; x++) {
+System.out.println(SplitDataArray[x]);
+VB.NET
+Dim Code As String = "x=0;y=1;x=xty;y++;"
+Dim SplitDataArray ()
+As String = SplitData (Code)
+For x = 0 To 3
+Console.Writeline (SplitDataArray(x))
+Next
+Python
+Code = "x=0;y=1;x=x+y;y++;"
+SplitDataArray
+= SplitData (Code)
+for x in range (4):
+print (SplitDataArray[x])
+© Cambridge University Press & Assessment 2025
+Page 38 of 39
+
+--- Page 39 ---
+9618/43
+Question
+3(b)(iv)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2025
+Marks
+1
+1 mark for output
+x=0
+y=1
+x=x+y
+y++
+Example
+x=0
+y=1
+×=×+Y
+y++
+© Cambridge University Press & Assessment 2025
+Page 39 of 39

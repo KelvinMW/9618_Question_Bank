@@ -1,0 +1,537 @@
+--- Page 1 ---
+S5 Cambridge Assessmen
+5 International Educatiol
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+MARK SCHEME
+Maximum Mark: 75
+9618/31
+May/June 2021
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2021 series for most Cambridge
+IGCSE™, Cambridge International A and AS Level components and some Cambridge O Level components.
+This document consists of 10 printed pages.
+© UCLES 2021
+[Turn over
+
+--- Page 2 ---
+9618/31
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2021
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2021
+Page 2 of 10
+
+--- Page 3 ---
+9618/31
+Question
+1(a)
+1(b)
+1(c)
+1 (d)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Working: one mark for calculation of the mantissa and one mark for
+calculation or use of the exponent
+Exponent: one from:
+= 0. 11101 × 23 |/ 0.11101 × 2" // O. 11101 × 103 // 0.11101 × 1011
+= 1.00011 × 23 || 1.00011 × 2'' || 1.00011 × 103 /| 1.00011 × 1011
+= appropriate shifting of binary point for +7.25
+Mantissa: one from:
+= 111.01 (conversion to binary +7.25 - 10 bits)
+= 0111010000 (mantissa 10 bits for +7.25
+= 1000101111 (one's complement mantissa for -7.25)
+= 1000110000 (two's complement mantissa for -7.25)
+Correct Answer (Max 1)
+Mantissa
+1
+1
+Exponent
+00001
+One mark for working out the exponent
+One mark for working out the mantissa
+One mark for the correct answer
+Example answers
+:
+=1.011000111 × 2' (exponent is 7)
+=10110001.11 || -128 + 32 + 16 + 1 + 0.5 + 0.25 // convert to positive
+01001110.01 (and add a minus sign to the answer)
+•
+-78.25
+One mark for working
+One mark for correct mantissa
+One mark for correct exponent
+Example answers
+Number of places added to exponent for normalisation -6 for number to
+retain its value // mantissa moved 6 places left
+1 1
+Mantissa
+1 0 0 0
+0 0
+Exponent
+1
+0 0 0 0
+1
+One mark for each correct marking point (Max 3)
+•
+Requires 11 bits / more than 10 bits to store (accurately) / reference to
+maximum (positive) number that can be stored = 511
+:
+Denary 513 in binary is 1000000001 // Normalised: 0.1000000001
+Results in overflow
+May/June 2021
+Marks
+3
+3
+3
+3
+© UCLES 2021
+Page 3 of 10
+
+--- Page 4 ---
+9618/31
+Question
+1 (d)(ii)
+Question
+2(a)
+2(b)(i)
+2(b)(ii)
+2(c)
+© UCLES 2021
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+One mark for each correct marking point (Max 2)
+:
+The number of bits for the mantissa must be increased
+11/12 bits mantissa and 5/4 bits exponent
+Answer
+One mark for each correct marking point (Max 2)
+: To alate ata typdata ya (rame in aing data types)
+o allow data types not available in a programming language to b
+onstructed // To extend the flexibility of the programming lanquac
+TYPE SchoolDay = Monday, Tuesday, Wednesday, Thursday,
+TYPE WeekEnd = (Saturday, Sunday)
+One mark for each marking point (Max 4)
+..
+TYPE ClubMeet and ENDTYPE correct
+DECLARE FirstName and DECLARE LastName included with correct
+data types
+••
+DECLARE Schoolday included with correct data types from part 2(b)(i)
+DECLARE weekend included with correct data types from part 2(b)(ii)
+Example answer
+TYPE ClubMeet
+DECLARE FirstName : STRING
+DECLARE LastName : STRING
+DECLARE Schoolday : Schoolday
+DECLARE Weekend : Weekend
+ENDTYPE
+May/June 2021
+Marks
+2
+Marks
+2
+1
+1
+4
+Page 4 of 10
+
+--- Page 5 ---
+9618/31
+Question
+3(a)
+3(b)
+Question
+4(a)(i)
+© UCLES 2021
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+One mark for each correct line from Operating System Term to Description
+OS term
+Description
+Using secondary storage to simulate
+additional main memor
+Multi-tasking
+May/June 2021
+Marks
+5
+Paging
+Managing the he Cesses running on
+Managing the execution of many programs
+that appear to run at the same time
+Interrupt handling
+Locating non-concaius blocks of data and
+Scheduling
+Transfering contil i rether routine when
+Virtual memory
+Roadio seing amorage block red late
+One mark for each correct statement (Max 4)
+•..
+An interpreter examines source code one statement at a time
+Check each statement for errors
+...If no error is found the statement is executed
+:
+....lf an error is found this is reported and the interpreter halts
+Interpretation is repeated for every iteration in repeated sections of
+code/in loops
+•
+Interpretation has to be repeated every time the program is run
+Answer
+One mark for each correct marking point (Max 2)
+•
+•..
+Reverse Polish Notation provides an unambiguous method of
+representing an expression
+... reading from left to right
+... without the need to use brackets
+... with no need for rules of precedence / BODMAS
+4
+Marks
+2
+Page 5 of 10
+
+--- Page 6 ---
+9618/31
+Question
+4(a)(ii)
+4(b)
+4(c)
+4 (d)
+Question
+5(a)
+© UCLES 2021
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+One mark for identification of the data structure,
+One mark for a sensible reason
+Either:
+Structure: stack
+The operands are popped from the stack in the reverse order to how they
+were pushed
+Or:
+Structure: Binary tree
+A (binary) tree allows both infix and postfix to be evaluated (tree traversal)
+ab-ac+ * 7/
+a /b* 4- la + b)
+1 mark tor correct structure
+1 mark for correct substitution
+(a + b)
+/ 1c /
+d)
+(17 + 3) / 148 / 12)
+May/June 2021
+Marks
+2
+1
+1
+2
+Answer
+Marks
+5
+Working (Max 3)
+May be seen on diagram
+:
+:
+Initialisation: setting Base to O
+... and the rest of the towns to ∞
+Evidence to show values at nodes being updated
+Evidence to show 'visited node(s)'
+May be seen in working section of paper
+Evidence to show calculation of at least one route
+Evidence to show more than one route has been calculated for at least
+one town
+Correct Answer (Max 2)
+One mark for four correct values...
+... One mark for all values correct
+Town 1
+Town 2
+Town 3
+Town 4
+Town 5
+Town 6
+3
+5
+2
+9
+3
+8
+Page 6 of 10
+
+--- Page 7 ---
+9618/31
+Question
+5(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+One mark for each correct marking point (Max 3)
+:
+Artificial Neural Networks can be represented using graphs
+Graphs provide structures for relationships // graphs provide
+relationships between nodes
+Al problems can be defined/solved as finding a path in a graph
+Graphs may be analysed/ingested by a range of algorithms
+• •
+•
+...e.g. A" / Dijksta's algorithm
+..used in machine learning
+Example of method e.g. Back propagation of errors / regression
+methods
+May/June 2021
+Marks
+3
+Question
+6
+Answer
+One mark for each correct benefit (Max 2)
+• Accuracy - Ensures accurate delivery of the message
+• Completeness - Missing packets can be easily detected and a re-send
+request sent so the message arrives complete
+• Resilience - if a network changes the router can detect this and send
+the data another way to ensure it arrives
+• Path also available to other users // Doesn't use whole bandwidth //
+allows simultaneous use of channel by multiple users
+• Better security as packets hashed and sent by different routes.
+One mark for each correct drawback (Max 2)
+• Time delays to correct errors // Network problems may introduce errors
+in packets
+• Requires complex protocols for delivery
+• Unsuitable for real time transmission applications
+Marks
+4
+© UCLES 2021
+Page 7 of 10
+
+--- Page 8 ---
+9618/31
+Question
+7(a)
+7(b)
+7(c)
+Question
+8(a)
+© UCLES 2021
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+One mark for working, (all three columns P, Q and R)
+One mark for each correct column Y, Z
+A
+B
+C
+P
+Q
+R
+0
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+Full adder
+One mark for each point
+Y=ÃBC +ÁBČ+ABČ+ABC
+Purpose: Sum bit
+Z= ABC + ABC+ ABC + A BC
+Purpose: Carry output
+Answer
+One mark for each correct marking point (Max 2)
+• The initial order of the data
+The number of data items to be sorted
+The efficiency of the sorting algorithm
+Y
+1
+1
+1
+0
+0
+1
+May/June 2021
+Marks
+3
+Z
+1
+1
+1
+1
+1
+4
+Marks
+2
+Page 8 of 10
+
+--- Page 9 ---
+9618/31
+Question
+8(b)
+Question
+9(a)
+9(b)
+© UCLES 2021
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+One mark for each marking point (max 6)
+MP1
+MP2
+MP3
+MP4
+MP5
+MP6
+MP7
+Use of FOR loop to cycle through the whole year group
+Temporary storage of the score being 'inserted'
+Temporary storage of the corresponding name elements
+Use of WHILE loop with correct exit clause
+Moving of all three elements of data to next array elements
+Correct updating of counter variable
+Final insertion of all three data elements
+Example algorithm
+YearSize < 249
+FOR Student <
+2 to YearSize
+Temp1 + Score [Student]
+Temp2 < Name [Student, 1]
+Temp3 ‹ Name [Student, 2]
+Counter ‹ Student
+WHILE Counter > 1
+AND Score [Counter - 1]
+Score [Counter] ‹ Score [Counter - 1]
+Name [Counter, 1] < Name[Counter - 1,1]
+Name [Counter, 21 <
+Name [Counter
+- 1,2]
+Counter + Counter - 1
+ENDWHILE
+Score [Counter]
+< Temp1
+Name [Counter, 1] ‹ Temp2
+Name [Counter, 2] < Temp3
+NEXT Student
+< Temp1
+May/June 2021
+Marks
+6
+Answer
+One mark for each correct marking point (Max 2)
+• . .
+•
+Imperative languages use variables
+... which are changed using (assignment) statements
+... they rely on a method of repetition / iteration.
+The statements provide a sequence of commands for the computer to
+perform
+... in the order written / given
+... each line of code changes something in the program run.
+One mark for each correct marking point (Max 2)
+•
+•
+Instructs a program on what needs to be done instead of how to do it
+... using facts and rules
+... using queries to satisfy goals.
+Can be logical or functional
+Logical - states a program as a set of logical relations
+Functional - constructed by applying functions to arguments / uses a
+mathematical style
+Marks
+2
+2
+Page 9 of 10
+
+--- Page 10 ---
+9618/31
+Question
+9(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+One mark for each correct programming paradigm (Max 4)
+Program code example
+male (john)
+female (ethel).
+parent (john,
+ethel).
+FOR Counter = 1 TO 20
+X = X * Counter
+NEXT Counter
+Start: LDD Counter
+INC ACC
+STO Counter
+public class Vehicle
+private speed;
+public Vehicle()
+speed = 0;
+}
+Programming paradigm
+Declarative
+Procedural / imperative
+Low-level / assembly
+Object oriented / (OOP)
+May/June 2021
+Marks
+4
+}
+© UCLES 2021
+Page 10 of 10

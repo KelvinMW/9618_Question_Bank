@@ -1,0 +1,319 @@
+--- Page 1 ---
+5 Cambridge Assessment
+a International Education
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+9618/32
+May/June 2024
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+• Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 12 pages.
+DC (DE) 352034/4
+© UCLES 2024
+[Turn over
+
+--- Page 2 ---
+2
+(a) Describe the effect of changing the allocation of bits used for the mantissa and for the
+exponent in a floating-point number with a fixed total number of bits.
+12]
+(b) Real numbers are stored in a computer, using floating-point representation with:
+12 bits for the mantissa
+4 bits for the exponent
+two's complement form for both the mantissa and exponent.
+Calculate the normalised floating-point representation of +54.8125 in this system.
+Show your working.
+Mantissa
+Exponent
+Working
+[3]
+© UCLES 2024
+9618/32/M/J/24
+
+--- Page 3 ---
+3
+2 (a) Outline why protocols are essential for communication between computers.
+12]
+(b) State the names of two different protocols associated with the sending and receiving of
+emails between computers.
+Sending
+Receiving
+12]
+(c) Explain the meaning of the phrase:
+BitTorrent protocol provides peer-to-peer file sharing.
+........ [3]
+© UCLES 2024
+9618/32/M/J/24
+Turn over
+
+--- Page 4 ---
+4
+(a) Explain what is meant by the term non-composite data type and give an example of a
+non-composite data type.
+Example
+13]
+(b) Write pseudocode statements to declare the set data type EvenNumbers to hold this set of
+even numbers between 2 and 12:
+2, 4, 6, 8, 10, 12
+14]
+© UCLES 2024
+9618/32/M/J/24
+
+--- Page 5 ---
+5
+4 Sheila has a customer called Fred. Fred wants to send Sheila a confidential document as part of a
+transaction.
+Explain how Fred uses asymmetric encryption to send his document securely.
+[4]
+© UCLES 2024
+9618/32/M/J/24
+[Turn over
+
+--- Page 6 ---
+6
+5 (a) Write this infix expression in Reverse Polish Notation (RPN):
+(7-2+8) /19-5)
+(b) Evaluate this RPN expression:
+adtab+c-*
+when
+a = 6,b = 3,c = 7 andd = 9
+Show the changing contents of the stack as the RPN expression is evaluated.
+(c) Write this RPN expression in infix form:
+bac-+db+ * cl
+© UCLES 2024
+9618/32/M/J/24
+.... [2]
+14]
+13]
+
+--- Page 7 ---
+7
+6 The diagram shows a logic circuit.
+A -
+B
+>
+R
+C
+(a) Complete the truth table for the given logic circuit.
+Show your working.
+A
+0
+0
+0
+0
+1
+1
+1
+1
+B
+0
+0
+1
+1
+C
+0
+1
+0
+1
+P
+Q
+Working space
+R
+S
+T
+Z
+1
+1
+1
+0
+1
+13]
+(b) Write the Boolean expression that corresponds to the logic circuit as a sum-of-products.
+Z=
+[2]
+© UCLES 2024
+9618/32/M/J/24
+[Turn over
+
+--- Page 8 ---
+8
+(c) (i) Complete the Karnaugh map (K-map) for this Boolean expression:
+A.B.C + Ã.B.C + Ã.B.C + A.B.C + A.B.C + A.B.C
+_ BC
+A
+00
+01
+10
+1
+121
+12]
+(ii) Draw loop(s) around appropriate group(s) in the K-map to produce an optimal
+sum-of-products.
+(iii) Write the Boolean expression from your answer to part c(ii) as a simplified
+sum-of-products.
+[1]
+7 (a) Outline what is meant by direct access as a method of file access.
+12]
+(b) Explain how direct access is used to locate a specific record in sequential files and random
+files.
+(i) Sequential files
+1[2]
+(li) Random files
+12]
+© UCLES 2024
+9618/32/M/J/24
+
+--- Page 9 ---
+9
+8 (a) Complete the pseudocode to find an item in a 1D array Widgets of type STRING, using a
+linear search.
+DECLARE Widgets: ARRAY[1: ARRAY[1:50000] OF STRING
+DECLARE Topoflist : INTEGER
+DECLARE Endoflist : INTEGER
+DECLARE Count : INTEGER
+DECLARE ToFind : STRING
+DECLARE Found : BOOLEAN
+DECLARE NotInlist: BOOLEAN
+Topoflist + 1
+Endoflist ‹ 50000
+OUTPUT "Enter the name of the item you wish to find "
+INPUT ToFind
+NotInList + FALSE
+Count + Topoflist
+WHILE
+...... AND
+IF
+Found ‹ TRUE
+ENDIF
+Count + Count + 1
+THEN
+IF …..
+..... THEN
+NotInlist ‹ TRUE
+ENDIF
+ENDWHILE
+IF Found = TRUE THEN
+OUTPUT "Item found at position ", Count - 1, " in array"
+ELSE
+OUTPUT "Item not in array"
+ENDIE
+[4]
+(b) Compare the methods used by the linear and binary search algorithms to find an item in an
+array. Refer to Big O notation in your answer.
+© UCLES 2024
+9618/32/M/J/24
+[4]
+[Turn over
+
+--- Page 10 ---
+10
+(a) Outline two benefits and two limitations of a virtual machine.
+Benefit 1
+Benefit 2
+Limitation 1
+Limitation 2
+14]
+(b) Explain the roles of the host operating system and the guest operating system as used in a
+computer system running a virtual machine.
+..... [3]
+© UCLES 2024
+9618/32/M/J/24
+
+--- Page 11 ---
+11
+10 A declarative programming language is used to allow clients to choose daily activities at the
+beach.
+01 activity (paddleboarding).
+02 activity(sailing).
+03 activity (rowing).
+04 activity (kayaking).
+05 activity(jetskiing).
+06 client (stevie).
+07 client(antonio).
+08 client (henry).
+09 client(eliza).
+10 client (rebeka).
+11 client (danny) .
+12 client(erik).
+13 client (simone).
+14 client (petra).
+15 client (frankie).
+16 choice (petra, rowing).
+17 choice(frankie, sailing).
+18 choice(erik, sailing).
+19 choice (eliza, rowing).
+20 choice(stevie, jetskiing) .
+21 choice (henry, sailing).
+22 done (henry, jetskiing) .
+23 done (rebeka, jetskiing).
+24 done (antonio, kayaking).
+These clauses have the meanings:
+Clause
+Meaning
+01
+06
+Paddle boarding is an activity.
+Stevie is a client.
+16
+Petra has chosen rowing.
+22
+Henry has already done jet skiing.
+(a) Jane is a client who would like to choose the activity surfing and she has already done sailing.
+Write additional clauses to represent this information.
+25
+26
+27
+28
+14]
+© UCLES 2024
+9618/32/M/J/24
+[Turn over
+
+--- Page 12 ---
+12
+(b) Using the variable List, the goal:
+choice (List, rowing)
+returns
+List = petra, eliza
+Write the result returned by the goal:
+choice (List, sailing)
+List =
+(c) C is a client who would like to choose A if A is an activity and C has not already done A.
+Write this as a rule:
+may_choose_activity (C, A)
+IF
+.. [1]
+[4]
+11 Explain what is meant by Reinforcement Learning in relation to Artificial Intelligence.
+13]
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2024
+9618/32/M/J/24

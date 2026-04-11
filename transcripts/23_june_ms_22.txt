@@ -1,0 +1,639 @@
+--- Page 1 ---
+AlE Cambridge Assessment
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+MARK SCHEME
+Maximum Mark: 75
+9618/22
+May/June 2023
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2023 series for most
+Cambridge IGCSE, Cambridge International A and AS Level and Cambridge Pre-U components, and some
+Cambridge O Level components.
+This document consists of 14 printed pages.
+© UCLES 2023
+[Turn over
+
+--- Page 2 ---
+9618/22
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2023
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+•..
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2023
+Page 2 of 14
+
+--- Page 3 ---
+9618/22
+Question
+1(a)(i)
+1(a)(ii)
+1(b)
+1(c)
+Question
+2(a)
+2(b)
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Use of constants
+One mark per bullet point (or equivalent to max 3):
+Postal rates are entered once only
+2
+Avoids input error / changing the cost accidentally I/ avoids different
+values for postal rates at different points in the program
+3 When required, the constant representing the postal rate value is
+changed once only I/ easier to maintain the program when the postal
+Makes the program easier to understand
+Note: Max 3 marks
+One mark per bullet point:
+: henation
+White space
+Comments
+•
+Sensible / meaningful variable names // use of Camel Case
+Capitalised keywords
+Note: Max 3 marks
+One mark per bullet point:
+Marks
+1
+3
+3
+3
+STRING
+Answer
+MyDOB < SETDATE (17, 11, 2007)
+NumMonths + 12 - MONTH (MyDOB)
+One mark per underlined part
+Marks
+1
+2
+Page 3 of 14
+
+--- Page 4 ---
+9618/22
+Question
+2(c)
+Question
+3(a)(i)
+3(a)(ii)
+3(b)
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2023
+Answer
+Marks
+One mark per array definition bullet:
+: or 11D) STRiNontaining 7 elements
+of type STRING
+One mark per Step:
+Step1: Assign value "Sunday" to first element, "Monday" to second
+element etc.
+Step2: Use the function DAYINDEX () to return / find the day number from
+MyDoB
+Step3: Use the returned value as the array index / to access the element
+that contains the name / string
+Step4: Output the element / name / string
+Note: Max 2 for Array definition, Max 4 for steps
+Answer
+6
+Marks
+4
+One mark per point:
+1
+Check that the queue is not full
+2
+Eod pointer will move to point to location 9
+3
+Data item Orange will be stored in location referenced by EoQ pointer
+4
+Eod pointer will move to point to location o
+5
+Data item Yellow will be stored in location referenced by EoQ pointer
+Note: max 4 marks
+7
+One mark per bullet:
+1
+2
+3
+Open file in READ mode
+Loop to EOF () I/ read / process all the lines in file
+Loop will end when return value from AddIoQueue () is FALSE / queue
+is full
+4
+5
+Read a line from the file in a loop
+Pass string to AddIoQueue () |/ AddToQueue () is executed with
+line as parameter
+1
+5
+Page 4 of 14
+
+--- Page 5 ---
+9618/22
+Question
+4
+Question
+5(a)
+5(b)
+5(c)
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Function GetNum (Thisstring : STRING, ThisChar : CHAR)
+RETURNS INTEGER
+DECLARE Index, Count : INTEGER
+Count < 0
+FOR Index & 1 TO LENGTH (Thisstring)
+IF MID(ThisString, Index, 1) = ThisChar THEN
+Count + Count + 1
+ENDIE
+NEXT Index
+RETURN Count
+ENDFUNCTION
+Mark as follows:
+1
+2
+3
+4
+5
+6
+Function heading and end, including parameters and return type
+Declare local Integers for Index and Count
+Loop for length of ThisString
+Extract a character and compare with parameter in a loop
+Increment Count if match in a loop
+Return Count after loop
+May/June 2023
+Marks
+6
+Answer
+Marks
+3
+One mark per point:
+•
+parameter / Num has been passed by reference // should have been
+passed by value
+•
+so when the value / ThisNum is modified (in procedure
+DisplaySart ())
+the new value will be used in the loop (lines 40-43) // Num will be
+changed to modified value
+• The rules of the language have not been broken // there are no syntax
+errors
+Could use an IDE to:
+Set a breakpoint to stop the program at a certain line / statement / point
+• Step through the program line by line / statement by statement
+•
+checking the value of 'num' I a variable using a report / watch window
+One mark per bullet
+1
+3
+Page 5 of 14
+
+--- Page 6 ---
+9618/22
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Question
+5(d)
+Marks
+1
+Answers include:
+Change the statement into a comment
+Change the statement to a string representing a literal value and assign
+it to a variable / output it
+Note: max 1 mark
+© UCLES 2023
+Page 6 of 14
+
+--- Page 7 ---
+9618/22
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Question
+6
+Marks
+6
+Example of iterative solution:
+PROCEDURE Square (Dim : INTEGER)
+DECLARE Count: INTEGER
+DECLARE ThisChar : CHAR
+DECLARE stringa,
+StringB : STRING
+CONSTANT FILLER
+StringA + ""
+ThisChar + NUM_IO_STR (Dim)
+FOR Count + 1 TO Dim
+StringA + StringA & ThisChar I/build up first &
+last line
+NEXT Count
+StringB & ThisChar
+FOR Count + 1 TO Dim - 2
+StringB + StringB & FILLER //build up
+intermediate line
+NEXT Count
+StringB + StringB & ThisChar |/ add final digit
+OUTPUT StringA
+FOR Count + 1 TO Dim - 2
+OUTPUT Stringb
+NEXT Count
+IF Dim <> 1 THEN
+OUTPUT StringA
+ENDIF
+ENDPROCEDURE
+For loop-based solutions, mark as follows:
+Procedure heading and ending including parameter
+Loop using parameter, containing attempt to construct first line / last line
+Construct first line / last line
+4
+Attempt at loop to construct intermediate line
+5
+Output first / last line of square when Dim > 2
+6
+Output all intermediate lines in a loop
+7 Correct output of first two squares
+Note: Max 6 marks
+© UCLES 2023
+Page 7 of 14
+
+--- Page 8 ---
+9618/22
+Question
+6
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Example of selection-based solution:
+PROCEDURE Square (Dim : INTEGER)
+DECLARE Count
+: INTEGER
+CASE OF Dim
+"1"
+OUTPUT
+"22"
+OUTPUT "22"
+3
+: OUTPUT
+'333"
+OUTPUT "3*3"
+OUTPUT
+'333"
+4
+: OUTPUT "4444"
+FOR Count + 1 TO 2
+OUTPUT "4**4"
+NEXT Count
+OUTPUT "4444"
+5: OUTPUT "55555"
+FOR Count ‹ 1 TO 3
+OUTPUT "5***5"
+NEXT Count
+OUTPUT "55555"
+6: OUTPUT "666666"
+FOR Count < 1 TO 4
+OUTPUT "6****6"
+NEXT Count
+OUTPUT "666666"
+7 : OUTPUT "7777777"
+FOR Count ‹ 1 TO 5
+OUTPUT "7*****7"
+NEXT Count
+OUTPUT "7777777"
+8 : OUTPUT "88888888"
+FOR Count < 1 TO 6
+OUTPUT "8******8"
+NEXT Count
+OUTPUT "88888888"
+9
+: OUTPUT "999999999"
+FOR Count < 1 TO 7
+OUTPUT "9*******9"
+NEXT Count
+OUTPUT "999999999"
+ENDCASE
+ENDPROCEDURE
+For in-line / selection-based solutions, mark as follows:
+1
+Procedure heading and ending including parameter
+2
+Correct use of parameter to select all required squares
+3
+Correct output of first two squares
+4
+At least six squares correctly output
+5
+At least one loop to output lines with multiple asterisks
+6
+All number squares output correctly
+Page 8 of 14
+May/June 2023
+Marks
+
+--- Page 9 ---
+9618/22
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Question
+7(a)(i)
+Marks
+3
+7(a)(ii)
+Correct answers include:
+• Information: customer name
+Justification: to personalise / address the email
+•
+Information: email address
+Justification: so that the email can be delivered correctly
+• Information: product category preference
+Justification: to check that the customer would be interested in the
+product
+• Information: contact preference
+Justification: to check that the customer will accept contact via email
+Information: order history
+Justification: to send details of product similar to that already bought //
+to identify frequent shoppers
+Information: new product information
+Justification: to include information about the new product in the email
+One mark for each piece of information and matching justification
+Note: Max 3 marks
+One mark for each piece of information and matching justification:
+•
+postal address
+Justification: sending an email, not a letter
+payment details
+Justification: Nothing being bought / sold at this stage
+• order history
+Justification: Customer preference used to decide if new product is
+relevant
+Note: Max 2 marks
+2
+© UCLES 2023
+Page 9 of 14
+
+--- Page 10 ---
+9618/22
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2023
+Question
+7(b)
+Answer
+Marks
+4
+Re-input PIN | Display amor
+Too marry tries | Block Acoum
+Input PIN
+START
+83
+Cancal | Re-prompt
+Valid PIN | Enabie payment
+One mark for each:
+1
+2
+3
+4
+Line from S1 to S2 and label
+S2 loop label
+S3 circle and label on incoming
+S4 circle and label on incoming
+© UCLES 2023
+Page 10 of 14
+
+--- Page 11 ---
+9618/22
+Question
+8(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2023
+Answer
+Marks
+FUNCTION CheckInfo (NewLine: STRING) RETURNS BOOLEAN
+DECLARE ThisNum : STRING
+DECLARE Index :
+INTEGER
+7
+IF LENGTH (Newline) < 19 THEN
+RETURN FALSE
+ENDIF
+FOR Index + 1 TO 4
+IF NOT IS_NUM (MID (Newline, Index, 1)) THEN
+RETURN FALSE
+ENDIF
+NEXT Index
+ThisNum < LEFT (Newline, 4)
+IF ThisNum ‹ "0001" OR ThisNum > "5999" THEN
+RETURN FALSE
+ENDIF
+IF NOT OnlyAlpha (MID (Newline, 5,
+3)) THEN
+RETURN FALSE
+ENDIF
+RETURN TRUE
+ENDFUNCTION
+Mark as follows:
+1
+2
+3
+4
+5
+6
+7
+Test length of parameter
+Extract first 4 characters of parameter (as ItemNum)
+lest tirst tour characters are all numeric
+Test ItemNum in range "0001" to "5999"
+Extract characters 5 to 7 of parameter (as SupplierCode)
+Use of onlyAlpha () with extracted SupplierCode
+Return BOOLEAN value correctly in all cases, must have been declared
+as local
+© UCLES 2023
+Page 11 of 14
+
+--- Page 12 ---
+9618/22
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2023
+Question
+8(b)
+Answer
+PROCEDURE AddItem (Newline : STRING)
+DECLARE NewItemNum,
+ThisItemNum : STRING
+OPENFILE "Stock.txt" FOR READ
+OPENFILE "Newstock.txt" FOR WRITE
+NewItemNum ‹ LEFT (NewLine, 4)
+WHILE NOT EOF("Stock.txt")
+READFILE ("Stock. txt", Thisline)
+ThisItemNum ‹ LEFT (ThisLine, 4)
+IF ThisItemNum > NewItemNum THEN
+WRITEFILE ("NewStock.txt", Newline) |
+V write New
+Line...
+NewItemNum < "9999" // ... once only
+ENDIF
+ENDWHILE
+WRITEFILE ("NewStock.txt", ThisLine)
+IF NewItemNum <> "9999" THEN
+WRITEFILE ("NewStock.txt", NewLine) //New last line
+in the
+file
+ENDIF
+CLOSEFILE "Stock.txt"
+CLOSEFILE
+"NewStock. txt"
+ENDPROCEDURE
+Mark as follows:
+1
+2
+3
+Open both files, in correct modes, and subsequently close
+Conditional loop until end of file Stock. txt
+Read a line from stock. txt AND extract ThisItemNum in a
+4
+loop
+Test ThisItemNum > NewItemNum then write NewLine to
+Newstock.txt
+5
+6
+...including mechanism to only do this once only
+Write line read from stock to Newstock
+7 Deal with the case where NewLine is the new last line
+Marks
+7
+© UCLES 2023
+Page 12 of 14
+
+--- Page 13 ---
+9618/22
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Question
+8(b)
+Marks
+Example of array-based solution:
+PROCEDURE AddItem (Newline : STRING)
+DECLARE ThisItemNum,
+ThisLine : STRING
+DECLARE Temp : ARRAY [1: 5999] OF STRING
+DECLARE Index : INTEGER
+FOR Index < 1 TO
+5999
+Temp [Index]
+"'/Initialise array
+NEXT Index
+Index & STR_IO_NUM (LEFT (NewLine, 4))
+Temp [Index]
+‹ NewLine
+//Add new line to array
+OPENFILE "Stock.txt" FOR READ
+WHILE NOT EOF ("Stock.txt")
+READFILE ("Stock.txt", Thisline)
+Index ‹ STR_TO
+_NUM (LEFT (Thisline, 4))
+Temp [Index] ‹ Thisline //Add line from
+file to
+array
+ENDWHILE
+CLOSEFILE "Stock.txt"
+OPENFILE "NewStock.txt" FOR WRITE
+FOR Index ‹ 1 TO 5999
+IF Temp [Index] <> "" THEN
+element...
+I/write non-blank
+WRITEFILE ("NewStock.txt", Temp [Index]) |/...to
+new file
+ENDIF
+NEXT Index
+CLOSEFILE "NewStock.txt"
+ENDPROCEDURE
+Mark as follows:
+Open both files, in correct modes, and subsequently close
+2
+3
+4
+Declare AND initialise Temp array
+Store NewLine in appropriate array element
+Loop until end of file stock. txt
+Read a line from Stock. txt AND extract Index in a loop
+6
+7
+Assign line read to appropriate array element in a loop
+Loop through array, writing non-blank elements to file NewStock.txt
+© UCLES 2023
+Page 13 of 14
+
+--- Page 14 ---
+9618/22
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2023
+Answer
+Question
+8(c)
+Marks
+3
+One mark for method:
+Method: Stub testing
+Two marks for description:
+• The modules SuppExists () and CheckSupplier () are replaced by
+dummy modules
+...which return a known result / contain an output statement to show
+they have been called
+© UCLES 2023
+Page 14 of 14

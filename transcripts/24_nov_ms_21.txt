@@ -1,0 +1,643 @@
+--- Page 1 ---
+* CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+MARK SCHEME
+Maximum Mark: 75
+9618/21
+October/November 2024
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2024 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+This document consists of 13 printed pages.
+© Cambridge University Press & Assessment 2024
+[Turn over
+
+--- Page 2 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level
+descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+•
+..
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© Cambridge University Press & Assessment 2024
+Page 2 of 13
+
+--- Page 3 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Mark scheme abbreviations
+//
+underline
+max
+()
+separates alternative words / phrases within a marking point
+separates alternative answers within a marking point
+actual word given must be used by candidate (grammatical variants accepted
+indicates the maximum number of marks that can be awardec
+the word / phrase in brackets is not required, but sets the context
+Note: No marks are awarded for using brand names of software packages or hardware.
+© Cambridge University Press & Assessment 2024
+Page 3 of 13
+
+--- Page 4 ---
+9618/21
+Question
+1(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Answer
+Marks
+2
+1(b)(i)
+1(b)(ii)
+1(c)
+1(d)
+One mark per point:
+Error: The calculation of TaxPayable is incorrect
+Correction: TaxPayable < (ItemCost * TaxRate) / 100
+Use constants (to represent the tax rate values)
+One mark per bullet point (or equivalent to max 3):
+2
+3
+Tax rates are entered once only
+Avoids / Minimise (input) error(s) / changing the Tax rates accidentally //
+avoids different values for tax rates at different points in the program
+When required, the constant value (representing a tax rate) is changed
+(once) // Easier to maintain / update the program (when the tax rates
+change)
+Makes the program / code easier to understand
+One mark per row:
+Variable name
+HighRate
+TaxPayable
+Data type
+Boolean
+Real
+OTHERWISE
+1
+3
+2
+1
+© Cambridge University Press & Assessment 2024
+Page 4 of 13
+
+--- Page 5 ---
+9618/21
+Question
+2
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Answer
+Marks
+6
+Example solution:
+PROCEDURE Tick ()
+SS < SS + 1
+IF SS = 60 THEN
+SS < O
+MM < MM + 1
+IF MM = 60 THEN
+MM < O
+HH < HH + 1
+IF HH = 24 THEN
+HH < O
+CALL NewDay ()
+ENDIF
+ENDIF
+CALL CheckAlarm ()
+ENDIF
+ENDPROCEDURE
+Mark as follows:
+Increment SS anywhere in the code
+2 Call CheckAlarm () when SS is set to zero
+3
+Test if ss = 60 anywhere in the code...
+4
+5
+6
+set ss to 0
+increment MM
+When MM is set to 60 set MM to 0 and increment HH
+When HH is set to 24 set HH to 0 and call NewDay ()
+Max 6 marks
+Question
+3(a)
+Answer
+Marks
+4
+One mark per emboldened part:
+1
+2
+3
+4
+5
+6
+7
+8
+Open the file (Result.txt) in read mode
+Loop until EOF(Result.txt) // EOF // end of file
+Read a / the / next line (from the file) and store in Thisline
+Assign LineY to Liney
+Assign Linez to Linel
+Assign ThisLine to Linez
+After the loop, close the file (Result.txt)
+Output LineX, LineY, Linez
+© Cambridge University Press & Assessment 2024
+Page 5 of 13
+
+--- Page 6 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(b)
+October/November
+2024
+Marks
+1
+3(c)
+Example answer:
+So that the last three lines of the file are output in the correct order
+A mark for mentioning one of:
+• (Ensuring) the lines are output in correct order
+Ordering the last three lines
+Ordering the lines so they are in the same order as (they occur) in the file
+Max 1 marks
+Two loop solution
+One mark per point:
+1
+Loop until given line number (-1) / <parameter› (-1) (lines have been
+read)
+2
+... if end of file is reached then return FALSE
+3
+4
+5
+Loop for three lines // Read three lines // Repeat of 4 and 5 for three lines
+Read a line and output it
+... if end of file is reached then return FALSE
+6
+After outputting the (required) lines return TRUE
+7 Ordering of lines no longer needed
+Max 4 marks
+Alternative solution
+One loop solution mark scheme that reads to given line number + 2
+One mark per point
+Loop until given line number + 2 / <parameter> + 2 (lines have been
+2
+3
+4
+5
+6
+read)
+OR end of file is reached
+Return FALSE if EOF reached
+Read a line from the file in the loop
+Continue to order the last three lines read in the loop // Steps 4 to 6 stay
+the same
+(If FALSE has not been returned) output the required three lines (in the
+correct order)
+... and Return TRUE
+Max 4 marks
+4
+© Cambridge University Press & Assessment 2024
+Page 6 of 13
+
+--- Page 7 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+4(a)
+October/November
+2024
+Marks
+2
+4(b)
+One mark per point:
+Type: Run-time error
+Cause: A divide by zero operation is attempted // Attempt to convert a non-
+numeric string to a number
+Answers include:
+Reason:
+This part of the algorithm performs a specific task I/ if the check or
+calculation is changed it is changed only once
+A (similar) subroutine is already available // Library routine is already
+available
+The program is simplified / easier to understand / easier to design / code /
+test / debug / maintain
+Max 1 marks for 'Reason'
+Avoided:
+• Unnecessary code duplication
+• Errors caused by differences where several copies of the check and
+calculation exist
+Max 1 marks for 'Avoided'
+2
+© Cambridge University Press & Assessment 2024
+Page 7 of 13
+
+--- Page 8 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+4(c)
+October/November
+2024
+Marks
+6
+Example solution:
+FUNCTION Evaluate (NumStr1, Numstr2 : STRING) RETURNS
+Result
+DECLARE RetVal : Result
+DECLARE Num1, Num2 : REAL
+RetVal. Done ‹ FALSE
+IF IS_NUM (NumStr1) = TRUE AND IS_NUM (NumStr2) = TRUE
+THEN
+Num1 < STR_IO_NUM (NumStr1)
+Num2 < STR
+_TO
+_NUM (NumStr2)
+IF Num2 <> 0 THEN
+RetVal.Value < (Num1 / Num2)
+RetVal. Done ‹ TRUE
+ENDIF
+ENDIE
+RETURN
+RetVal
+ENDFUNCTION
+Note that order of parameters is not specified so divisor could be either
+parameter.
+Mark as follows:
+1
+2
+3
+4
+5
+6
+7
+8
+Function heading, parameters, ending
+... Correct return type of Result
+Local declaration of type Result
+Attempt at using IS
+_NUM () to check both parameters/strings
+Attempt at using of STR_TO.
+_NUM () to convert both parameters/strings
+check it the divisor, is non-zero
+... and if so correct calculation and assignment to value fiel
+Return variable of type Result having assigned both fields
+Max 6 marks
+© Cambridge University Press & Assessment 2024
+Page 8 of 13
+
+--- Page 9 ---
+9618/21
+Question
+5(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Answer
+Marks
+5
+5(b) (i)
+Name of life
+Activity
+cycle stage
+The walkthrough method is used.
+Testing
+An algorithm is implemented in a programming language.
+Coding
+The client is interviewed about problems with the current
+Analysis
+system.
+The program is modified to run on new hardware.
+Records and file structures are defined.
+Maintenance
+Design
+One mark per row
+One mark per row
+Type of test data
+Abnormal
+Abnormal / Boundary / Extreme
+Boundary / Extreme
+Boundary
+Boundary
+Boundary /Extreme
+Abnormal / Boundary / Extreme
+Abnormal
+Test data value
+12(< 23)
+23
+24
+25
+36
+37
+38
+99 (> 38)
+Expected result
+FALSE
+FALSE
+TRUE
+TRUE
+TRUE
+TRUE
+FALSE
+FALSE
+Max 4 marks
+Integration (testing)
+4
+5(b) (ii)
+Question
+6(a)
+Answer
+One mark per point:
+1
+Fewer lines of code are needed
+The program is simpler/ less complex // Program is easier to design /
+code / maintain / modify / test / debug
+3
+Direct access to days in a month / data (using month number as index) //
+Can use index / month to (directly) access days in month / data
+Max 2 marks
+1
+Marks
+2
+© Cambridge University Press & Assessment 2024
+Page 9 of 13
+
+--- Page 10 ---
+9618/21
+Question
+6(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Answer
+Marks
+7
+Example Solution
+FUNCTION GetDate (ProductionDate : DATE, Shelflife :
+INTEGER) RETURNS DATE
+DECLARE NewDate: DATE
+DECLARE DD, MM, YY, LastDay : INTEGER
+DD + DAY (ProductionDate)
+MM + MONTH (ProductionDate)
+YY + YEAR (ProductionDate)
+DD + DD + Shelflife
+LastDay < DaysInMonth [MM]
+IF DD > LastDay THEN
+MM < MM + 1
+DD & DD - LastDay
+IF MM = 13 THEN
+MM < 1
+YX +YY +1
+ENDIF
+ENDIF
+NewDate & SETDATE (DD, MM,
+YY)
+RETURN NewDate
+ENDFUNCTION
+Mark as follows:
+1
+2
+Declare three variables of TYPE INTEGER to store DD, MM and YY
+Correct use of date functions from Insert to extract three integer values
+representing DD, MM and YY and use/assign to a variable
+3
+4
+5
+Add parameter Shelflife to DD and use / assign result to a variable
+Extract LastDay from Days InMonth using MM as Index
+Test for new DD after end of month / Days InMonth [MM]
+.... and if DD > DaysInMonth [MM]:
+6
+MM is incremented by 1 and DD is set to DD -
+Days InMonth [MM]
+7
+8
+If MM = 13 / MM > 12 then increment YY and set MM to 1
+Use of SETDATE to assign value to NewDate, NewDate must have been
+delared as a type DATE
+Return date
+Max 7 marks
+© Cambridge University Press & Assessment 2024
+Page 10 of 13
+
+--- Page 11 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+7(a)
+October/November
+2024
+Marks
+5
+Connect
+T1
+Q
+H1
+52
+Code
+Sync
+Activate
+RA
+CC
+ID
+SA
+7(b)
+Reset
+Enable
+Initialise
+One mark per point:
+All module identified in correct hierarchy
+2 Parameters to both Sync and Activate and return values
+Parameters to both Reset and Enable
+Parameters to Initialise
+Decision diamond
+Explanation:
+Means that Sync repeatedly calls Reset and (then) Enable
+One mark for each point
+MP1: reference to iteratior
+MP2: naming all three modules correctly including correct sequence of calls
+2
+© Cambridge University Press & Assessment 2024
+Page 11 of 13
+
+--- Page 12 ---
+9618/21
+Question
+8(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Answer
+Marks
+6
+Loop example solution
+FUNCTION CheckMark (Mark : INTEGER) RETURNS BOOLEAN
+DECLARE Index,
+Lower, Upper : INTEGER
+FOR Index + 1 IO 5
+Lower « GradeBoundary[ Index] - 2
+Upper ‹ GradeBoundary[Index] + 2
+IF Mark >= Lower AND Mark <= Upper THEN
+RETURN TRUE
+ENDIF
+NEXT Index
+RETURN FALSE
+ENDFUNCTION
+Mark as follows:
+1 Loop through all elements in GradeBoundary array
+Attempt to calculate range, both Lower and Upper, in a loop
+Completely correct range calculation in a loop
+4
+5
+Test if given mark / parameter, is within range in a loop
+Set variable / immediate RETURN if recheck required in a loop
+Return Boolean in both cases following a reasonable attempt
+Selection example solution
+FUNCTION CheckMark (Mark : INTEGER) RETURNS BOOLEAN
+CASE OF Mark
+GradeBoundary[1] - 2 TO GradeBoundary[l] + 2 :
+RETURN TRUE
+GradeBoundary [2] - 2 TO GradeBoundary[2]
++2:
+RETURN TRUE
+GradeBoundary[3] - 2 TO GradeBoundary[3] + 2 :
+RETURN TRUE
+GradeBoundary[4] - 2 TO GradeBoundary [4]
++2:
+RETURN TRUE
+GradeBoundary [5] - 2 TO GradeBoundary[5] + 2 :
+RETURN TRUE
+OTHERWISE :
+RETURN
+FALSE
+ENDCASE
+ENDFUNCTION
+Mark as follows:
+1 Correct syntax used for selection structure(s)
+2 Correct checks for two ranges
+3
+Correct checks for three ranges
+4
+Correct checks for four ranges
+5
+Correct checks for all five ranges
+6
+Return Boolean in both cases following a reasonable attempt
+© Cambridge University Press & Assessment 2024
+Page 12 of 13
+
+--- Page 13 ---
+9618/21
+Question
+8(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Answer
+Marks
+8
+8(c)
+Example Solution:
+PROCEDURE CheckAll (CNum : INTEGER)
+DECLARE Index, Count, ThisMark: INTEGER
+Count < 0
+OPENFILE "GRList.txt" FOR WRITE
+FOR Index ‹ 1 to CNum
+ThisMark ‹ Result[Index, 1] |/ 2D array: mark + ID
+IF
+CheckMark (ThisMark)
+= TRUE THEN
+WRITE "GRList. txt", NUM_TO_STR (Result [Index, 21)
+Count + Count + 1
+ENDIF
+NEXT Index
+CLOSEFILE "GRList.txt"
+OUTPUT "There are
+", Count, " papers to check"
+ENDPROCEDURE
+Mark as follows:
+Procedure heading, parameter and ending.
+2 Open file in write mode and subsequently close
+Loop through all CNum candidates
+4
+5
+6
+7
+8
+9
+Extract candidate mark from Result array in a loop
+Use of CheckMark () with candidate mark as parameter in a loop
+Test return value and if TRUE then increment Count in a loop
+... write ID to file
+....after conversion to a string in a loop
+Final output of message giving number of papers to check not in a loop
+Max 8 marks
+The file will need to be opened in APPEND mode
+1
+© Cambridge University Press & Assessment 2024
+Page 13 of 13

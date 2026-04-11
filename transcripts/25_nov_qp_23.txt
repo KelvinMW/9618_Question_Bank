@@ -1,0 +1,697 @@
+--- Page 1 ---
+* 0000800000001 *
+ELS Cambridge Assessment
+International Education
+7
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+9618/23
+October/November 2025
+2 hours
+006 R
+You must answer on the question paper.
+You will need: Insert (enclosed)
+INSTRUCTIONS
+• Answer all questions.
+• Use a black or dark blue pen.
+• Write your name, centre number and candidate number in the boxes at the top of the page.
+• Write your answer to each question in the space provided.
+• Do not use an erasable pen or correction fluid.
+• Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+• The insert contains all the resources referred to in the questions.
+This document has 24 pages. Any blank pages are indicated
+DC (CJ) 343243/3
+© UCLES 2025
+L
+[Turn over
+J
+
+--- Page 2 ---
+* 0000800000002*
+DFD
+2
+Refer to the insert for the list of pseudocode functions and operators.
+1
+A user requires a program that implements complex data encryption to a recognised international
+standard. A programmer has started the design of the program.
+(a) The programmer decides to use a library routine to provide part of the solution. One reason
+for this is that library routines may perform functions that the programmer is unable to program
+themselves.
+State three other benefits of using library routines in the development of the program.
+2
+3
+[3]
+(b) The programmer has identified a different part of the algorithm that would be appropriate to
+implement as a subroutine (a procedure or a function); no suitable library routine exists for
+this part.
+(i) State two reasons why the programmer may decide to use a subroutine.
+1
+2
+[2]
+(ii) A function header in pseudocode is defined as:
+FUNCTION Pass2 (Count : INTEGER) RETURNS BOOLEAN
+Complete the table by describing the terms used in the function header.
+The first row has been completed.
+Term
+Description
+Pass2
+the name of the function
+Count
+BOOLEAN
+12]
+OUCLES 2025
+9618/23/0/N/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 3 ---
+* 0000800000003*
+DFD
+DO NOT WRITE IN THIS MARGIN
+3
+(c) Variables in the program have example values:
+Variable
+DOB
+Multiplier
+23/6/2011
+2.5
+AddressLine [1]
+"35 Lincoln Avenue"
+Example value
+7
+DO NOT WRITE IN THIS MARGIN
+Complete the table by evaluating each expression using the example values:
+Expression
+LENGTH (NUM_TO_STR (Multiplier))
+MONTH (DOB) > 4
+Evaluates to
+15 + STR_TO_NUM (MID (AddressLine [1], 2, 1))
+13]
+DO NOT WRITE
+IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/23/0/N/25
+[Turn over
+
+--- Page 4 ---
+0000800000004*
+DFD
+2
+4
+(a) A program contains a global 1D array of type STRING containing 65 elements.
+An existing text file is used to store the data in the array. Only non-blank elements (those that
+do not contain an empty string) are written to the text file.
+An algorithm will:
+write the first element of the array as a new line in the text file
+• continue until all elements have been written, each to a new line of the text file.
+Stepwise refinement is applied to the algorithm.
+Describe up to six steps for this algorithm that could be used to produce pseudocode.
+Do not use pseudocode statements in your answer.
+Step 1
+7
+Step 2
+DO NOT WRITE IN THIS MARGIN
+Step 3
+Step 4
+Step 5
+DO NOT WRITE IN THIS MARGIN
+Step 6
+(b) Iteration is one programming construct.
+Identify one other programming construct that will be required when the algorithm from part
+(a) is converted into pseudocode and explain how it is used.
+Construct
+DO NOT WRITE IN THIS MARGIN
+Use
+[2]
+OUCLES 2025
+9618/23/0/N/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 5 ---
+0000800000005*
+DFD
+DO NOT WRITE IN THIS MARGIN
+5
+BLANK PAGE
+7
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/23/0/N/25
+[Turn over
+
+--- Page 6 ---
+0000800000006*
+DFD
+Г
+3
+6
+A program uses a stack to hold up to 30 integer values. The stack is implemented using a global
+integer variable and a global 1D array.
+The array is declared in pseudocode:
+DECLARE ThisStack: ARRAY|1:30] OF INTEGER
+Stack design notes:
+• The global variable SP acts as a stack pointer. SP contains the array index of the last value
+pushed onto the stack.
+• If the stack is empty, then sp is assigned the value zero.
+• The first item added to the stack will be stored in ThisStack [1]
+• SP is incremented each time an item is added to the stack.
+A function Pop () is written to remove an item from Thisstack. The function returns an item of
+type PopData which is defined in pseudocode:
+TYPE PopData
+DECLARE Data
+: INTEGER
+DECLARE Exists : BOOLEAN
+ENDTYPE
+The value removed from the stack is assigned to Data and Exists is set to TRUE. If it is not
+possible to remove a value from the stack, then Exists is set to FALSE
+Complete the pseudocode for Pop ()
+FUNCTION Pop () RETURNS PopData
+DECLARE ThisPop
+IF
+.. . .
+THEN
+PopData.Exists+
+// Stack is empty
+ELSE
+PopData.Data<.
+PopData.Exists‹ ....
+ENDIF
+RETURN ThisPop
+ENDFUNCTION
+[5]
+LOUCLES 2025
+9618/23/0/N/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 7 ---
+* 0000800000007*
+DFD
+DO NOT WRITE IN THIS MARGIN
+7
+BLANK PAGE
+7
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/23/0/N/25
+[Turn over
+
+--- Page 8 ---
+000080000008*
+DFD
+8
+7
+4A A program contains a global 1D array Data containing 20 elements of type INTEGER
+A global string NumString represents a sequence of three-digit numbers, separated by commas.
+For example:
+"101,456,219, 754, 328"
+The string contains at least four three-digit numbers. The total number of three-digit numbers in
+the string is unknown.
+A procedure Store () Will:
+• extract one three-digit number at a time from Numstring
+• convert each of the three-digit numbers extracted to an integer and assign this to the next
+array element, starting from index 1
+• end when all three-digit numbers have been stored, or when the array is full.
+Complete the pseudocode for store ()
+All local variables used must be declared.
+PROCEDURE Store ()
+DONOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+ENDPROCEDURE
+[6]
+OUCLES 2025
+9618/23/0/N/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 9 ---
+* 0000800000009*
+DFD
+DO NOT WRITE IN THIS MARGIN
+9
+BLANK PAGE
+7
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/23/0/N/25
+[Turn over
+
+--- Page 10 ---
+* 0000800000010*
+DFD
+5
+10
+A global 1D array Num of integers contains four elements. A program assigns values to these
+elements as shown:
+Num [1] < 1
+Num [2] < 2
+Num [3] < 5
+Num [4] < 3
+A procedure Process () manipulates the values in the array.
+The procedure is written in pseudocode:
+PROCEDURE Process (Start : INTEGER)
+DECLARE CaseVar, Index, Count
+: INTEGER
+Index‹ Start
+Count +0
+WHILE Count <= 20
+CaseVar ‹ Num [Index]
+CASE OF CaseVar
+1: Num[Index] ‹Num[Index] + Index I/clause one
+Index‹ Index + 1
+Count + Count + 1
+2 : Num[Index] <Num[Index] + Index I/clause two
+Index‹ Index + 2
+Count ‹ Count + 2
+3 : Num[Index] < Num[Index] * 2
+Index‹ Index + 3
+Count + Count - 1
+/clause three
+4: Count< Count + 4
+OTHERWISE : Count ‹ 20
+ENDCASE
+//clause four
+Index ‹ (Index MOD 4) + 1
+ENDWHILE
+ENDPROCEDURE
+7
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2025
+9618/23/0/N/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 11 ---
+* 0000800000011*
+DFD
+DO NOT WRITE IN THIS MARGIN
+11
+(a) Complete the trace table by dry running the procedure when it is called in the statement:
+CALL Process (1)
+Index
+CaseVar
+Count
+Num [1]
+Num [2]
+Num [3]
+Num [4]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+[5]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/23/0/N/25
+[Turn over
+
+--- Page 12 ---
+* 0000800000012*
+DFD
+12
+(b) As a reminder, the CASE structure in the pseudocode is:
+CASE OF CaseVar
+1 : Num[Index] ‹Num[Index] + Index I/clause one
+Index‹ Index + 1
+Count ‹Count + 1
+2 : Num[Index] ‹Num[Index] + Index I/clause two
+Index‹ Index + 2
+Count+ Count + 2
+3 : Num[Index] ‹Num[Index]
+Index+ Index + 3
+Count ‹ Count - 1
+* 2
+I/clause three
+4 : Count< Count + 4
+OTHERWISE : Count < 20
+ENDCASE
+/clause four
+The CASE structure could be optimised by combining two existing clauses.
+(i) Identify the CaseVar values for these two existing clauses.
+(ii) Write pseudocode for a single clause to replace the two clauses identified in (b) (i).
+LOUCLES 2025
+9618/23/0/N/25
+7
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+[1]
+12]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 13 ---
+* 0000800000013*
+DFD
+DO NOT WRITE IN THIS MARGIN
+13
+BLANK PAGE
+7
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/23/0/N/25
+[Turn over
+
+--- Page 14 ---
+* 0000800000014*
+DFD
+6
+14
+Students are learning about a simple check digit method for data validation. In this method, a
+single check digit is appended to the end of an original number to give a new number.
+The students are studying a method which:
+• calculates the sum of all the digits in the original number
+uses integer division to calculate the remainder when the sum is divided by 10
+• uses the remainder as the check digit
+• appends the check digit to the original number, creating the new number.
+For example:
+original number
+sum of all digits
+remainder when the sum is divided by 10 using integer division
+new number
+4162
+4+1+6+2=13
+3
+41623
+The original number is always at least three digits in length.
+When the new number is input, the check digit is used to validate the new number.
+(a) A function Generate () is written to take an original number as a parameter and to return the
+check digit.
+Outline a test plan that could be used to fully test function Generate ()
+Assume that the parameter is valid.
+12]
+LOUCLES 2025
+hel
+9618/23/0/N/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 15 ---
+* 0000800000015*
+DFD
+DO NOT WRITE IN THIS MARGIN
+15
+(b) A function CheckNumber () will take an integer value and return the Boolean value TRUE if
+the check digit is correct, otherwise return FALSE
+Write pseudocode for the function CheckNumber ()
+Assume that the parameter is valid.
+7
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/23/0/N/25
+[7]
+[Turn over
+
+--- Page 16 ---
+* 0000800000016 *
+DFD
+7
+16
+There are several different ways to express an algorithm during the design of a program.
+(a) One part of the program contains an algorithm which is represented by a state-transition
+diagram.
+The table shows the inputs, outputs and states for the algorithm:
+Current state
+S1
+S3
+S3
+S3
+S3
+S4
+S4
+S4
+Input
+A1
+A2
+A1
+A2
+A3
+A4
+A3
+A4
+A1
+Output
+X4
+X1
+X1
+X3
+X4
+X4
+Next state
+S2
+S3
+S3
+S3
+S4
+S2
+S5
+S5
+Complete the state-transition diagram to represent the information given in the table:
+START
+•
+S1
+LOUCLES 2025
+9618/23/0/N/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 17 ---
+* 0000800000017*
+DFD
+DO NOT WRITE IN THIS MARGIN
+17
+(b) A structure chart is used to document a different part of the program, made up of five modules.
+Program notes:
+• module Setup calls either module Restart, or module Confirm
+• module Confirm takes a string as a parameter and returns an integer
+•
+module Modify has no parameters and returns a Boolean
+module Update takes a string as a parameter
+module Restart repeatedly calls module Update followed by module Modify
+module Restart takes a string as a parameter that is passed by reference.
+Draw a structure chart to represent the relationship between the five modules, including all
+parameters and return values.
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+14]
+OUCLES 2025
+9618/23/0/N/25
+[Turn over
+
+--- Page 18 ---
+* 0000800000018 *
+DFD
+8
+18
+A program is being developed to manage student book loans from a college library.
+The programmer has defined a record type to define each loan.
+The data items are:
+Data item
+Data type
+7
+StudentID
+STRING
+BookID
+OnLoan
+STRING
+BOOLEAN
+Comment
+the unique ID of the student who has borrowed
+the book
+The first three characters of a studentID
+represent a tutor ID. Each student has one tutor.
+the unique ID of the book being borrowed
+TRUE if the book has not been returned
+The programmer has defined a global array Loan to store 8000 loan records.
+There are more elements in the array than books in the library. Unused elements have the
+StudentID set to an empty string. These may occur anywhere in the array.
+The programmer has defined a program module:
+Module
+LoanStatus ()
+•
+Description
+called with two parameters of type STRING representing a
+StudentID and a BookID
+outputs a message saying whether a given loan has been
+returned or not
+outputs a warning message if a record of the given loan is
+not found
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2025
+9618/23/0/N/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 19 ---
+* 0000800000019*
+DFD
+DO NOT WRITE IN THIS MARGIN
+19
+(a) Write efficient pseudocode for the module LoanStatus ()
+Assume that each combination of Student ID and BookID can occur only once.
+7
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/23/0/N/25
+18]
+[Turn over
+
+--- Page 20 ---
+* 0000800000020*
+DFD
+Г
+20
+7
+(b) A second module is defined:
+Module
+LoansPerTutor ()
+•
+Description
+called with a parameter of type STRING representing
+a tutor ID (as a reminder, the first three characters of
+a studentID represent a tutor ID)
+returns an integer value representing the number of
+books currently on loan to students who have the
+given tutor
+Reminder: unused elements have the Student ID set to an empty string. These may occur
+anywhere in the array.
+Write pseudocode for the module LoansPerTutor ()
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+...[7.
+OUCLES 2025
+9618/23/0/N/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 21 ---
+* 0000800000021*
+DFD
+DO NOT WRITE IN THIS MARGIN
+21
+(c) It is decided to mark as unused all records for book loans that have been returned. The data
+for these records will first be written to a new text file for archive purposes.
+(i) The archive program will automatically generate a meaningful filename each time it is
+run.
+7
+Outline a meaningful format to use for the filename.
+DO NOT WRITE IN THIS MARGIN
+12]
+(ii) There is a problem that will need to be overcome before the data items can be written to
+a text file.
+As a reminder, the data items are:
+Data item
+Data type
+DO NOT WRITE IN THIS MARGIN
+StudentID
+STRING
+BookID
+OnLoan
+Explain the problem.
+STRING
+BOOLEAN
+Comment
+the unique ID of the student who has borrowed the
+book
+The first three characters of a Student ID represent
+a tutor ID. Each student has one tutor.
+the unique ID of the book being borrowed
+TRUE if the book has not been returned
+DO NOT WRITE IN THIS MARGIN
+[1]
+(iii) One way of storing the data items in a text file is to store each data item on a separate
+Identify one benefit and one drawback of this way of storing the data.
+Benefit
+Drawback
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+12]
+9618/23/0/N/25
+
+--- Page 22 ---
+* 0000800000022*
+DFD
+Г
+22
+BLANK PAGE
+LOUCLES 2025
+9618/23/0/N/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 23 ---
+* 0000800000023*
+DFD
+DO NOT WRITE IN THIS MARGIN
+23
+BLANK PAGE
+7
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/23/0/N/25
+
+--- Page 24 ---
+* 0000800000024*
+DFD
+Г
+24
+BLANK PAGE
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series. J
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+OUCLES 2025
+9618/23/0/N/25
+DO NOT WRITE IN THIS MARGIN

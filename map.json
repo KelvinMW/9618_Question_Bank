@@ -1,0 +1,515 @@
+{
+  "1.1": {
+    "topic": "Data Representation",
+    "keywords": [
+      "binary magnitudes",
+      "binary prefixes",
+      "binary, denary, hexadecimal number systems",
+      "Binary Coded Decimal (BCD)",
+      "two's complement",
+      "binary addition/subtraction",
+      "overflow",
+      "ASCII",
+      "extended ASCII",
+      "Unicode"
+    ]
+  },
+  "1.2": {
+    "topic": "Multimedia",
+    "subtopics": {
+      "1.2.1": {
+        "title": "Graphics",
+        "keywords": [
+          "bitmap image encoding",
+          "pixel",
+          "file header",
+          "image resolution",
+          "colour depth",
+          "file size calculation",
+          "vector graphics",
+          "bitmap vs vector images"
+        ]
+      },
+      "1.2.2": {
+        "title": "Sound",
+        "keywords": [
+          "sampling",
+          "sampling rate",
+          "sampling resolution",
+          "analog vs digital data"
+        ]
+      }
+    }
+  },
+  "1.3": {
+    "topic": "Compression",
+    "keywords": [
+      "lossy compression",
+      "lossless compression",
+      "run-length encoding (RLE)"
+    ]
+  },
+  "2.1": {
+    "topic": "Networks including the Internet",
+    "keywords": [
+      "LAN",
+      "WAN",
+      "client-server model",
+      "peer-to-peer model",
+      "network topologies",
+      "cloud computing",
+      "wireless vs wired networks",
+      "IP addressing",
+      "DNS",
+      "router",
+      "Ethernet",
+      "CSMA/CD",
+      "bit streaming"
+    ]
+  },
+  "3.1": {
+    "topic": "Computers and their components",
+    "keywords": [
+      "input/output devices",
+      "memory types",
+      "embedded systems",
+      "SRAM",
+      "DRAM",
+      "ROM",
+      "buffer",
+      "monitoring and control systems",
+      "sensors",
+      "actuators"
+    ]
+  },
+  "3.2": {
+    "topic": "Logic Gates and Logic Circuits",
+    "keywords": [
+      "logic gates (AND, OR, NOT, XOR, etc.)",
+      "truth tables",
+      "logic circuits",
+      "De Morgan's laws",
+      "Karnaugh maps"
+    ]
+  },
+  "4.1": {
+    "topic": "CPU Architecture",
+    "keywords": [
+      "Von Neumann model",
+      "CPU registers",
+      "program counter (PC)",
+      "memory data register (MDR)",
+      "ALU",
+      "CU",
+      "system clock",
+      "address bus",
+      "fetch-execute cycle"
+    ]
+  },
+  "4.2": {
+    "topic": "Assembly Language",
+    "keywords": [
+      "assembler",
+      "two-pass assembler",
+      "addressing modes",
+      "machine code",
+      "assembly instructions"
+    ]
+  },
+  "4.3": {
+    "topic": "Bit manipulation",
+    "keywords": [
+      "binary shifts",
+      "logical, arithmetic, cyclic shifts",
+      "bit masking",
+      "bitwise operations (AND, OR, XOR)"
+    ]
+  },
+  "5.1": {
+    "topic": "Operating Systems",
+    "keywords": [
+      "memory management",
+      "file management",
+      "security management",
+      "process management",
+      "utility software"
+    ]
+  },
+  "5.2": {
+    "topic": "Language Translators",
+    "keywords": [
+      "assembler",
+      "compiler",
+      "interpreter",
+      "IDE features"
+    ]
+  },
+  "6.1": {
+    "topic": "Data Security",
+    "keywords": [
+      "security vs privacy vs integrity",
+      "firewall",
+      "anti-virus software",
+      "biometrics",
+      "encryption",
+      "malware",
+      "phishing"
+    ]
+  },
+  "6.2": {
+    "topic": "Data Integrity",
+    "keywords": [
+      "data validation",
+      "data verification",
+      "range check",
+      "checksum",
+      "parity check"
+    ]
+  },
+  "7.1": {
+    "topic": "Ethics and Ownership",
+    "keywords": [
+      "ethical body",
+      "copyright legislation",
+      "software licensing",
+      "AI impact"
+    ]
+  },
+  "8.1": {
+    "topic": "Database Concepts",
+    "keywords": [
+      "relational database",
+      "entity-relationship (E-R) diagram",
+      "normalisation (1NF, 2NF, 3NF)",
+      "primary key",
+      "foreign key",
+      "referential integrity"
+    ]
+  },
+  "8.2": {
+    "topic": "DBMS Features",
+    "keywords": [
+      "data integrity",
+      "data security",
+      "query processor",
+      "developer interface"
+    ]
+  },
+  "8.3": {
+    "topic": "DDL and DML",
+    "keywords": [
+      "SQL",
+      "CREATE DATABASE",
+      "CREATE TABLE",
+      "INSERT INTO",
+      "SELECT...FROM",
+      "INNER JOIN"
+    ]
+  },
+  "9.1": {
+    "topic": "Computational Thinking Skills",
+    "keywords": [
+      "abstraction",
+      "decomposition",
+      "modular programming"
+    ]
+  },
+  "9.2": {
+    "topic": "Algorithms",
+    "keywords": [
+      "pseudocode",
+      "algorithm design",
+      "flowcharts",
+      "stepwise refinement",
+      "linear search",
+      "binary search",
+      "bubble sort",
+      "insertion sort"
+    ]
+  },
+  "10.1": {
+    "topic": "Data Types and Records",
+    "keywords": [
+      "data types",
+      "record structure",
+      "arrays",
+      "files"
+    ]
+  },
+  "10.2": {
+    "topic": "Arrays",
+    "keywords": [
+      "index",
+      "upper/lower bounds",
+      "1D and 2D arrays",
+      "bubble sort",
+      "linear search"
+    ]
+  },
+  "10.3": {
+    "topic": "Files",
+    "keywords": [
+      "file handling",
+      "text files",
+      "file operations"
+    ]
+  },
+  "10.4": {
+    "topic": "Abstract Data Types (ADT)",
+    "keywords": [
+      "stack",
+      "queue",
+      "linked list",
+      "dictionary",
+      "binary tree"
+    ]
+  },
+  "11.1": {
+    "topic": "Programming Basics",
+    "keywords": [
+      "variable declaration",
+      "input/output",
+      "arithmetic/logic operators"
+    ]
+  },
+  "11.2": {
+    "topic": "Constructs",
+    "keywords": [
+      "if statements",
+      "case structures",
+      "loops (for, while, do-while)"
+    ]
+  },
+  "11.3": {
+    "topic": "Structured Programming",
+    "keywords": [
+      "procedures",
+      "functions",
+      "parameters",
+      "passing by reference/value"
+    ]
+  },
+  "12.1": {
+    "topic": "Program Development Life Cycle",
+    "keywords": [
+      "waterfall",
+      "iterative",
+      "RAD",
+      "analysis",
+      "design",
+      "testing",
+      "maintenance"
+    ]
+  },
+  "12.2": {
+    "topic": "Program Design",
+    "keywords": [
+      "structure chart",
+      "state-transition diagrams",
+      "modular programming"
+    ]
+  },
+  "12.3": {
+    "topic": "Program Testing and Maintenance",
+    "keywords": [
+      "testing types",
+      "error identification",
+      "test plan",
+      "maintenance types"
+    ]
+  },
+    "13.1": {
+      "topic": "User-defined data types",
+      "keywords": [
+        "enumerated data type",
+        "pointer data type",
+        "composite vs non-composite",
+        "record data type",
+        "set data type"
+      ]
+    },
+    "13.2": {
+      "topic": "File organisation and access",
+      "keywords": [
+        "serial file organisation",
+        "sequential file organisation",
+        "random file organisation",
+        "direct access",
+        "hashing algorithm",
+        "collision",
+        "overflow area"
+      ]
+    },
+    "13.3": {
+      "topic": "Floating-point numbers",
+      "keywords": [
+        "binary floating-point",
+        "mantissa",
+        "exponent",
+        "normalisation",
+        "precision vs range",
+        "underflow",
+        "rounding errors"
+      ]
+    },
+    "14.1": {
+      "topic": "Protocols",
+      "keywords": [
+        "TCP/IP stack",
+        "Application layer",
+        "Transport layer",
+        "Internet layer",
+        "Link layer",
+        "HTTP",
+        "HTTPS",
+        "FTP",
+        "POP3",
+        "IMAP",
+        "SMTP",
+        "BitTorrent",
+        "SSH"
+      ]
+    },
+    "14.2": {
+      "topic": "Circuit and packet switching",
+      "keywords": [
+        "packet switching",
+        "circuit switching",
+        "packet header",
+        "payload",
+        "trailer",
+        "routing table",
+        "hop"
+      ]
+    },
+    "15.1": {
+      "topic": "Processors, Parallel Processing and Virtual Machines",
+      "keywords": [
+        "RISC",
+        "CISC",
+        "pipelining",
+        "parallel processing",
+        "SISD",
+        "SIMD",
+        "MISD",
+        "MIMD",
+        "massively parallel computers",
+        "virtual machine"
+      ]
+    },
+    "15.2": {
+      "topic": "Boolean Algebra and Logic Circuits",
+      "keywords": [
+        "half adder",
+        "full adder",
+        "SR flip-flop",
+        "JK flip-flop",
+        "De Morgan's Laws",
+        "Karnaugh Map (K-map)",
+        "identity law",
+        "distributive law"
+      ]
+    },
+    "16.1": {
+      "topic": "Purposes of an Operating System",
+      "keywords": [
+        "multi-tasking",
+        "process states (running, ready, blocked)",
+        "scheduling",
+        "paging",
+        "segmentation",
+        "virtual memory",
+        "thrashing"
+      ]
+    },
+    "16.2": {
+      "topic": "Translation Software",
+      "keywords": [
+        "lexical analysis",
+        "syntax analysis",
+        "semantic analysis",
+        "code generation",
+        "code optimisation",
+        "Backus-Naur Form (BNF)",
+        "syntax diagrams",
+        "Reverse Polish Notation (RPN)"
+      ]
+    },
+    "17.1": {
+      "topic": "Encryption and Digital certificates",
+      "keywords": [
+        "symmetric encryption",
+        "asymmetric encryption",
+        "public key",
+        "private key",
+        "digital certificate",
+        "Certificate Authority (CA)",
+        "SSL",
+        "TLS",
+        "hashing"
+      ]
+    },
+    "18.1": {
+      "topic": "Artificial Intelligence (AI)",
+      "keywords": [
+        "graphs (Dijkstra's, A*)",
+        "machine learning",
+        "supervised learning",
+        "unsupervised learning",
+        "reinforcement learning",
+        "artificial neural networks (ANN)",
+        "deep learning",
+        "backpropagation"
+      ]
+    },
+    "19.1": {
+      "topic": "Algorithms",
+      "keywords": [
+        "binary tree traversal",
+        "pre-order",
+        "in-order",
+        "post-order",
+        "linear search",
+        "binary search",
+        "bubble sort",
+        "insertion sort",
+        "quicksort"
+      ]
+    },
+    "19.2": {
+      "topic": "Recursion",
+      "keywords": [
+        "recursive base case",
+        "general case",
+        "call stack",
+        "stack overflow",
+        "iterative vs recursive"
+      ]
+    },
+    "20.1": {
+      "topic": "Programming Paradigms",
+      "keywords": [
+        "imperative",
+        "object-oriented (OOP)",
+        "class",
+        "object",
+        "inheritance",
+        "encapsulation",
+        "polymorphism",
+        "declarative",
+        "facts and rules"
+      ]
+    },
+    "20.2": {
+      "topic": "File Processing and Exception Handling",
+      "keywords": [
+        "binary files",
+        "random access files",
+        "exception handling",
+        "TRY...CATCH"
+      ]
+    },
+    "P4": {
+      "topic" : "Practical"
+    }
+  }

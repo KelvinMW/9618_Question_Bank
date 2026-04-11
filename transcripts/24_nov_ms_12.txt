@@ -1,0 +1,530 @@
+--- Page 1 ---
+* CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+MARK SCHEME
+Maximum Mark: 75
+9618/12
+October/November 2024
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2024 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+This document consists of 10 printed pages.
+© Cambridge University Press & Assessment 2024
+[Turn over
+
+--- Page 2 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level
+descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+•
+..
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© Cambridge University Press & Assessment 2024
+Page 2 of 10
+
+--- Page 3 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Question
+1(a)
+Answer
+October/November
+2024
+Marks
+2
+1 mark for each shaded part.
+A
+B
+1(b)
+1
+1
+1
+1
+1
+1
+1
+1
+C
+0
+1
+0
+1
+1
+0
+1
+X
+1
+1
+1
+1
+1
+1
+1
+1 mark for (P XOR Q) and (Q OR NOT R)
+1 mark for second XOR gate and final NAND gate with appropriate inputs
+2
+P
+DD
+Q
+R-
+Question
+2(a)
+Answer
+Marks
+3
+1 mark for each bullet point (max 3)
+e.g.
+It is difficult to change / update the firmware by the user
+• Errors cannot be fixed easily // Troubleshooting / fault-finding / repairing is
+a specialist task / expensive
+•
+Functionality cannot be changed/extended easily I/ Cannot be easily
+adapted for another task
+•
+•
+Faulty / outdated devices are often thrown away rather than repaired
+... leading to e-waste
+© Cambridge University Press & Assessment 2024
+Page 3 of 10
+
+--- Page 4 ---
+9618/12
+Question
+2(b)
+2(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark from:
+•
+DRAM is less expensive to manufacture/purchase than SRAM in the
+embedded system
+•
+DRAM has a higher bit density per chip // more data can be stored
+per chip
+1 mark for each bullet point (max 2)
+•
+•
+EPROM uses ultraviolet light to erase data whilst EEPROM uses an
+electrical signal to do this
+EPROM has to be removed from the circuit board when changing the
+data whilst EEPROM remains in the circuit when the data is changed
+•
+EPROM erases all the data, EEPROM can erase parts of the data
+Answer
+October/November
+2024
+Marks
+1
+2
+Question
+3(a)
+Marks
+3(b)
+1 mark for each correct purpose
+Register
+Program Counter
+(PC)
+Memory Address
+Register (MAR)
+Memory Data
+Register (MDR)
+Index Register (IX)
+Purpose
+Stores the address of the next instruction to be
+fetched/executed
+Stores the address of the memory location
+where data will be read from/written to
+Stores the data read from the address in the
+MAR I/ stores the data to be written to the
+address in the MAR
+Stores a number that will be added to the
+operand, to form the address of the data
+1 mark for each bullet point (max 4)
+e.g.
+HDMI has faster transfer rates than VGA
+... needed due to high resolution / large number of pixels of monitor //
+•
+HDMI supports the high resolution of the monitor
+HDMI supports video and audio transfer between computer and
+monitor speakers
+:
+... so no separate sound cable is needed unlike VGA
+HDMI is digital interface therefore no data is lost in transfer to analogue
+and back
+•
+HDMI is less prone to error/crosstalk/external interference
+4
+4
+© Cambridge University Press & Assessment 2024
+Page 4 of 10
+
+--- Page 5 ---
+9618/12
+Question
+3(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for each bullet point (max 4)
+e.g.
+It manages the scheduling of processes // Decides which process is to be
+run next
+Allows multi-tasking/multi-processing
+Ensures fair access
+..
+Handles interrupts
+Manages / allocates which resources the processes require
+Facilitates the sharing and exchange of data between processes
+•
+Prevents interference between processes I/ conflict resolution
+Answer
+October/November
+2024
+Marks
+4
+Question
+4(a)
+Marks
+4
+1 mark for each bullet point (max 4)
+e.g.
+Run the program one line at a time
+... and check the variable contents / program flow // show the effect of
+each line of code
+Set breakpoints
+4(b)
+4(c)
+••
+Variable/report watch window
+.... view how the data changes as the program is running
+1 mark for each bullet point (max 3)
+e.g.
+Subroutines can be shared / reused
+•
+... between team members who are working independently
+... without having to rewrite/re-test them which saves the
+programmers time
+:
+A program library provides continuity between programs/programmers
+Individual programmers can contribute their specialisms to the library //
+Individual programmers can use the specialisms of others
+1 mark for the security method. 2 marks for explanation
+Security method:
+Encryption
+Explanation
+• File contents are converted to cipher text
+•
+If intercepted the data cannot be understood without the decryption key
+3
+3
+© Cambridge University Press & Assessment 2024
+Page 5 of 10
+
+--- Page 6 ---
+9618/12
+Question
+5(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Answer
+1 mark for each bullet point max 2 for public max 2 for colleagues
+e.g.
+Colleagues:
+The programmer should:
+• Treat colleagues fairly and avoid acts of discrimination
+Be prepared to accept / offer critique
+... so that technical work can be improved
+Credit the contributions of colleagues
+: Help traithey fed vas
+... so that they feel valued / respected
+Marks
+4
+5(b) (i)
+5(b) (ii)
+The public:
+The programmer should:
+Maintain the health, safety and welfare of the public
+•
+•
+... so as not to endanger anyone
+Be honest / realistic in making claims about the software
+... so that public trust is maintained
+Maintain the security of the public's data
+etc.
+Type of software licence
+1 mark for
+• Open Source Initiative // Free Software Foundation
+Reason for choice:
+1 mark for each bullet point (max 2)
+•
+•
+Allows program source code to be examined
+... so that the business can adapt/modify the program to meet their needs
+Allows the programmer to earn money for the software and updates
+1 mark for each bullet point (max 2)
+•
+To identify themselves as the owner/author // To gain formal recognition
+of ownership
+•.
+To allow for legal consequences if anyone steals/copies it
+To restrict competition
+3
+2
+© Cambridge University Press & Assessment 2024
+Page 6 of 10
+
+--- Page 7 ---
+9618/12
+Question
+6(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Answer
+Marks
+3
+6(b) (i)
+6(b) (ii)
+1 mark each to max 3
+e.g.
+•
+There is reduced data redundancy // less repeated data
+•
+... because each item of data is only stored once
+Data consistency is maintained // Data integrity is improved
+.... changes in one table will automatically update in another
+... linked data cannot be entered differently in two tables
+Program-data independence is ensured
+... changes to the data do not require programs to be re-written // queries
+are not dependent on the structure of the data
+Complex queries are easier to run
+Different views can be provided
+.... so users can only see specific aspects of the database
+••
+Multiple concurrent access is possible
+... through record locking
+1 mark each to max 6
+••
+CUSTOMER to JOB is 1 to many
+... implemented by Primary Key in CUSTOMER is Foreign Key in JOB
+• •
+EMPLOYEE to LOGIN_DATA is 1 to 1
+... implemented by Primary Key in EMPLOYEE is Foreign Key in
+LOGIN DATA
+•
+•
+:
+JOB to JOB_EMPLOYEE is 1 to many
+... implemented by Primary Key in JOB is Foreign Key in
+JOB
+_EMPLOYEE
+EMPLOYEE to JOB_EMPLOYEE is 1 to many
+... implemented by Primary Key in EMPLOYEE is Foreign Key in
+JOB EMPLOYEE
+11 mark each
+• Select SUM of Amount
+: Romaningore table didn
+From the correct table and one correct condition
+Example:
+SELECT SUM (Amount)
+FROM INVOICE
+WHERE Paid =
+"Y"
+AND DateSent >= #01/01/2023# AND DateSent <=
+#31/12/2023#
+6
+3
+© Cambridge University Press & Assessment 2024
+Page 7 of 10
+
+--- Page 8 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+7(a)(i)
+October/November
+2024
+Marks
+2
+7(a) (ii)
+7(a)(iii)
+7(b)
+1 mark for each correct definition
+Colour depth:
+• the number of bits used to represent a colour // the number of colours that
+can be represented in an image
+File header:
+• stores data about the image file / metadata
+1 mark for each correct explanation
+Image quality:
+Decreasing resolution means details within the image are lost because
+there are fewer pixels // Increasing resolution means the image is more
+detailed because there are more pixels
+File size:
+• Decreasing the resolution will decrease the file size because there are
+fewer pixels therefore less data // Increasing the resolution will increase
+the file size because there are more pixels therefore more data
+1 mark for correct method
+For example:
+•
+Run-Length Encoding
+1 mark for each correct definition
+Property:
+• an attribute of a drawing object // data about a shape // defines one
+aspect of the appearance of a drawing object
+Drawing list:
+• all the drawing objects/shapes in an image // stores the
+commands/descriptions / mathematical equations required to draw
+each object
+2
+1
+2
+© Cambridge University Press & Assessment 2024
+Page 8 of 10
+
+--- Page 9 ---
+9618/12
+Question
+8(a)
+8 (b) (i)
+8(b) (ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Answer
+1 mark for each correct content of the ACC (4)
+1 mark for correct IX column
+1
+Instructions
+LDM #19
+DEC ACC
+ACC content
+IX content
+18
+20
+2
+3
+4
+LDD 23
+ADD 19
+LDI 25
+INC ACC
+LDR #21
+LDX 2
+40
+20
+5
+20
+15
+21
+1 mark each correct content of ACC
+Instructions
+ACC content
+1
+ISL #2
+0110 1000
+2
+3
+ADD #5
+AND #30
+OR B11110010
+INC ACC
+0001 1110
+1111 1011
+Marks
+5
+1 mark each to max 2 for explanation
+An odd binary number will have a 1 in the Least Significant Bit (LSB)
+A bit manipulation operation is required to access/mask only the LSB and
+clear all the others
+Compare the result of the masking with denary 1
+... the result of the comparison will be true if the number is odd
+1 mark for correct instruction
+AND B00000001 // AND #1 // AND &01
+3
+3
+© Cambridge University Press & Assessment 2024
+Page 9 of 10
+
+--- Page 10 ---
+9618/12
+Question
+9(a)
+9(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Answer
+1 mark for sensor and its use in this system
+Infra-red sensor
+Measure / check the height of the vehicle
+Pressure sensor
+Measure / check the weight of the vehicle
+1 mark for each bullet point (max 2) for a correct justification
+No marks for the identification of the system
+Marks
+2
+Monitoring system
+• Because there is no use of feedback // the warning sign is only
+an indicator
+•
+... the output of the turning on of the sign does not affect the input of data
+from the sensors
+•
+The system does not have any actuators
+2
+© Cambridge University Press & Assessment 2024
+Page 10 of 10

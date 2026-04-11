@@ -1,0 +1,595 @@
+--- Page 1 ---
+* CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+MARK SCHEME
+Maximum Mark: 75
+9618/33
+October/November 2025
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2025 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+components.
+This document consists of 16 printed pages.
+© Cambridge University Press & Assessment 2025
+[Turn over
+
+--- Page 2 ---
+9618/33
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Generic Marking Principles
+October/November 2025
+These general marking principles must be applied by all examiners when marking candidate answers. They should be applied alongside the
+specific content of the mark scheme or generic level descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit is given for valid answers which go beyond
+the scope of the syllabus and mark scheme, referring to your Team Leader as appropriate
+marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these features are specifically assessed by the
+question as indicated by the mark scheme. The meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed instructions or in the application of generic level
+descriptors.
+© Cambridge University Press & Assessment 2025
+Page 2 of 16
+
+--- Page 3 ---
+9618/33
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November 2025
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question (however; the use of the full mark range may
+be limited according to the quality of the candidate responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should not be awarded with grade thresholds or
+grade descriptors in mind.
+© Cambridge University Press & Assessment 2025
+Page 3 of 16
+
+--- Page 4 ---
+9618/33
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November 2025
+Annotations guidance for centres
+Examiners use a system of annotations as a shorthand for communicating their marking decisions to one another. Examiners are trained during the
+standardisation process on how and when to use annotations. The purpose of annotations is to intorm the standard isation and monitoring
+processes and guide the supervising examiners when they are checking the work of examiners within their team. The meaning of annotations and
+how they are used is specific to each component and is understood by all examiners who mark the component.
+We publish annotations in our mark schemes to help centres understand the annotations they may see on copies of scripts. Note that there may
+not be a direct correlation between the number of annotations on a script and the mark awarded. Similarly, the use of an annotation may not be an
+indication of the quality of the response.
+The annotations listed below were available to examiners marking this component in this series.
+Annotations
+Annotation
+Highlighter
+REP
+NE
+Meaning
+Correct
+Incorrect
+To indicate where a key word/phrase/code is missing.
+Not relevant or used to separate parts of an answer.
+Indicates a part of the answer that is incorrect.
+To draw attention to a particular aspect or to indicate where parts of an answer have been combined.
+Too vague.
+Repetition
+No examples or not enough.
+© Cambridge University Press & Assessment 2025
+Page 4 of 16
+
+--- Page 5 ---
+9618/33
+Annotation
+BOD
+NAQ]
+SEEN
+E8
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November 2025
+Meaning
+Benefit of Doubt.
+Not Answered Question.
+Indicates that work or a page has been seen including blank answer spaces and blank pages.
+Follow through.
+Ignore
+© Cambridge University Press & Assessment 2025
+Page 5 of 16
+
+--- Page 6 ---
+9618/33
+Question
+1(a)(i)
+1(a)(ii)
+1 (b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Marks
+One mark per mark point (Max 2)
+MP1
+TYPE Spectrum =
+2
+MP2
+(Red, Orange, Yellow, Green, Blue, Indigo, Violet)
+Example answer
+TYPE Spectrum = (Red, Orange, Yellow, Green, Blue,
+Indigo, Violet)
+One mark per mark point (Max 2)
+MP1
+2
+the list is ordered/ordinal
+MP2
+the list contains all possible values
+MP3
+no duplicate values in list
+MP4
+all values are the same data type
+One mark for TYPE ColourData and ENDTYPE correct
+4
+One mark for correct use of DECLARE in all declarations
+One mark for correct use of Spectrum in declaration
+One mark for remaining four declarations correct (STRING, INTEGER,
+REAL, BOOLEAN)
+Example answer
+TYPE ColourData
+DECLARE ColourCode : STRING
+DECLARE Colour : Spectrum
+DECLARE Wavelength : INTEGER
+DECLARE Frequency: REAL
+DECLARE PrimaryColour : BOOLEAN
+ENDTY PE
+October/November 2025
+Guidance
+© Cambridge University Press & Assessment 2025
+Page 6 of 16
+
+--- Page 7 ---
+9618/33
+Question
+2(a)
+2(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Marks
+3
+One mark per mark point (Max 3)
+MP1
+the precision of the number stored in the mantissa will be reduce
+MP2
+MP3
+the number of bits available for the exponent will increase to
+... this will increase the range of numbers that can be stored.
+Me mark precess inviving a cal)
+a process involving a calculation / the multiplication of two large
+numbers could take place
+MP2
+the result might be outside of the range of values possible to store
+in the given system
+MP3
+.. leading to the most significant bits of the mantissa/exponent
+being lost (which is an overflow)
+3
+Question
+3
+Answer
+One mark per mark point (Max 4)
+MP1
+the message is divided into small chunks called packets
+MP2
+each packet is given a header with important data including source
+and destination IP addresses
+MP3
+each packet is sent independently // packets can be sent through
+MP4
+packets are sent through the optimum route // packets can be re-
+routed if a route is unavailable
+MP5
+packets are reassembled at the destination into the whole message
+Marks
+4
+© Cambridge University Press & Assessment 2025
+Page 7 of 16
+October/November 2025
+Guidance
+Guidance
+
+--- Page 8 ---
+9618/33
+Question
+4
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Marks
+One mark for a correct protocol and one mark for a correct corresponding
+description (Max 6)
+6
+Three from:
+HTTP/S [1] a protocol/secure protocol used to transfer hypermedia
+documents / web pages / (data) files between networked devices [1]
+FTP [1] a protocol to download, upload and transfer files from one location to
+another on a network [1]
+POP3 [1] a protocol used to retrieve/receive emails from a mail server to a
+computer [1]
+IMAP [1] allows users to access/read their emails from any device without
+removing the message from the mail server I/ synchronises emails on any
+device [1]
+SMTP [1] a protocol used to send emails between mail servers |/ a protocol
+used to send emails from a computer to a mail server [1]
+BitTorrent [1] a communication protocol used for peer-to-peer file sharing [1]
+Question
+5(a)
+5(b)
+Answer
+To enable multiple programs/processes to be executed at the same time
+One mark per mark point (Max 3)
+MP1
+the operating system monitors the state of each task/process
+MP2
+MP3
+using scheduling to ensure hardware resources are used efficientl
+... and making sure that tasks/processes do not clash.
+Marks
+1
+3
+© Cambridge University Press & Assessment 2025
+Page 8 of 16
+October/November 2025
+Guidance
+Guidance
+
+--- Page 9 ---
+9618/33
+Question
+6(a)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Marks
+3
+October/November 2025
+Guidance
+One mark for each correct loop (Max 3)
+AB
+CD
+00
+00
+01
+0
+11
+0
+10
+0
+01
+1
+1
+1
+1
+6(a)(i)
+One mark per mark point (Max 2)
+MP1
+One correct Boolean term with an OR sign
+MP2
+All three correct Boolean terms connected by OR signs and no
+other terms present.
+À.C.D + B.D + A.C
+2
+© Cambridge University Press & Assessment 2025
+Page 9 of 16
+
+--- Page 10 ---
+9618/33
+Question
+6(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+One mark for correct use of De Morgan's laws
+One mark for correct use of any other Boolean algebra law
+Marks
+3
+X=A+B+C+ B+C
+(x=)Ã.B.č+B.č
+(X=) Ã.B.C + B.C
+(X=) Č.(Ã.B + B)
+One mark for correct answer
+(X=) C.(À + B) .
+• (De Morgan's)
+• (Double negation)
+. (Distributive)
+. (Redundancy)
+Question
+7(a)
+7(b)
+Answer
+One mark per mark point (Max 2)
+To identify and remove redundant code / To simplify expressions /
+To reorder the code
+MP2
+... so that storage size/memory use/power consumption/program
+execution time/CPU time is minimized.
+One mark per mark point (Max 2)
+MP1
+6 12 +
+MP2 16 10 - 1
+MP3 18*
+Final correct expression
+612 + 16 10 - 118*
+Marks
+2
+3
+© Cambridge University Press & Assessment 2025
+Page 10 of 16
+October/November 2025
+Guidance
+Guidance
+
+--- Page 11 ---
+9618/33
+Question
+7(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Marks
+4
+October/November 2025
+Guidance
+One mark per ring (Max 3)
+One mark for the interim total (360) and the final total (10).
+24
+4
+24
+20
+12
+20
+6
+12
+20
+18
+20
+360
+12
+360
+24
+12
+360
+36
+360
+10
+© Cambridge University Press & Assessment 2025
+Page 11 of 16
+
+--- Page 12 ---
+9618/33
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Question
+8
+Answer
+One mark per mark point - working (Max 3)
+May be seen on diagram or in working section
+MP1
+Initialisation - setting Start to 0
+MP2
+...and the rest of the towns to o
+MP3
+Evidence to show values at nodes being updated
+MP4
+Evidence to show 'visited node(s)'
+MP5
+Evidence to show a correct calculation of at least one route
+MP6
+Evidence to show more than one route has been calculated for at
+least one town
+Correct Answers (Max 2)
+Two marks for all six correct values
+One mark for four or five correct values.
+V
+6
+10
+13
+18
+Y
+21
+Z
+28
+Question
+9
+Answer
+One mark per mark point (Max 4)
+MP1
+the company generates a public and private key pair locally using a
+web browser and an RSA key generator tool, which may be part of
+the CA's web page
+MP2
+MP3
+MP4
+MP5
+MP6
+MP7
+the company requests a digital certificate from a Certificate
+Authority (CA)
+the CA responds with its public key and digital certificate,
+... signed with its private key
+the company gathers authentication information e.g. its public key
+... and sends it to the CA signed with the company's private key and
+encrypted with the CA's public key
+the CA verifies the received information and generates/issues the
+digital certificate.
+© Cambridge University Press & Assessment 2025
+Page 12 of 16
+Marks
+5
+Marks
+4
+October/November 2025
+Guidance
+Guidance
+
+--- Page 13 ---
+9618/33
+Question
+10(a)
+10(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Marks
+One mark per mark point (Max 3)
+MP1
+Correct declaration of constant Maximum
+MP2 Both correctly declared integers
+MP3 Correct array declaration
+Example answer
+CONSTANT Maximum = 100
+DECLARE Base
+: INTEGER
+DECLARE Top : INTEGER
+DECLARE StackArray : ARRAY[1: 100] OF STRING
+One mark per mark point (Max 3)
+MP1
+Correct procedure definition structure
+MP2
+Base pointer with appropriate value (0 or 1)
+MP3
+Top pointer with appropriate value (-1, 0, 1)
+Example answer
+PROCEDURE Initialisestack ()
+Base + 0
+Top + 0
+ENDPROCEDURE_
+3
+3
+Question
+11
+Answer
+One mark per mark point (Max 3)
+MP1
+Recursion is beneficial for problems that can be broken down into
+smaller, repetitive problems
+MP2
+.... especially for problems that have many possible branches / are
+too complex for an iterative approach
+MP3
+An example e.g. solving mathematical series, sorting a pile of
+documents, etc.
+Marks
+3
+© Cambridge University Press & Assessment 2025
+Page 13 of 16
+October/November 2025
+Guidance
+Guidance
+
+--- Page 14 ---
+9618/33
+Question
+12(a)
+12(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Marks
+3
+One mark per mark point (Max 3)
+MP1
+An exception is an unplanned / unexpected event that occurs
+when a program is running
+MP2
+... due to an error in programming/logic that wasn't detected during
+MP3
+program construction/compilation
+The effect of an exception can be that the program halts
+unexpectedly.
+One mark per mark point (Max 2)
+MP1
+MP2
+One mak for an example of an exception sep it in guidance)
+Example answer
+Division by zero
+The processor will not be able to evaluate this answer because a number
+divided by zero is infinity, so the program will crash.
+2
+October/November 2025
+Guidance
+© Cambridge University Press & Assessment 2025
+Page 14 of 16
+
+--- Page 15 ---
+9618/33
+Question
+13
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Marks
+7
+One mark per mark point (Max 7)
+LDM #250 seen
+Correct use of LDD 563
+Correct use of ADD with labelled address X
+Correct use of suB with address 899
+At least one correct use of sTo
+Opcode
+LDM #250
+STO
+LDD 563
+STO
+ADD
+SUB
+1899
+STO Total
+Operand
+October/November 2025
+Guidance
+© Cambridge University Press & Assessment 2025
+Page 15 of 16
+
+--- Page 16 ---
+9618/33
+Question
+13
+MP6
+MP7
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Correct setting up of at least one labelled address and its value
+Correct setting up of remaining two labelled addresses and their
+values
+Marks
+October/November 2025
+Guidance
+Label
+Contents
+X: 250
+Y: 125
+Total: 312
+© Cambridge University Press & Assessment 2025
+Page 16 of 16

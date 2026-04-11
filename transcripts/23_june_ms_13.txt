@@ -1,0 +1,551 @@
+--- Page 1 ---
+alls Cambridge Assessment
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+MARK SCHEME
+Maximum Mark: 75
+9618/13
+May/June 2023
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2023 series for most
+Cambridge IGCSE, Cambridge International A and AS Level and Cambridge Pre-U components, and some
+Cambridge O Level components.
+This document consists of 11 printed pages.
+© UCLES 2023
+[Turn over
+
+--- Page 2 ---
+9618/13
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2023
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+•..
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2023
+Page 2 of 11
+
+--- Page 3 ---
+9618/13
+Question
+1(a)
+1(b)
+Question
+2(a)
+2(b)(i)
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2023
+Answer
+NOT B
+1 mark for first 4 rows correct; 1 mark for second 4 rows correct
+A
+B
+Marks
+1
+2
+0
+1
+1
+0
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Answer
+Marks
+2
+1 mark each to max 2
+• WAN covers a large geographical area and LAN covers a small
+geographical area
+•
+LAN connections between devices are usually physical, whereas the
+•
+WAN connections are often virtual
+A LAN has a high data transfer rate, whereas a WAN has a low data
+transfer rate
+•
+The ownership of a LAN is private; the ownership of a WAN can be
+private or public
+•
+LAN is usually more secure than a WAN because protection is easier
+to implement
+1 mark each to max 2
+...
+All computers are connected to at least one other device
+There are multiple routes between devices
+The computers can act as relays, passing packets on towards the final
+destination
+2
+Page 3 of 11
+
+--- Page 4 ---
+9618/13
+Question
+2(b)(ii)
+2(c)
+2(d)
+2(e)
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+2
+1 mark each to max 2
+: more line goes does or reare more contes veille
+:
+Improved security as not using one main line
+No/fewer collisions
+New nodes can be added without interruption or interfering with other
+nodes
+•
+More secure because data is sent over a dedicated connection
+1 mark each to max 2
+: Sienes perfy sends processes regesever ate task an or data storage
+Clients only sends requests to the server and displays the returned
+results
+1 mark each to max 4
+Examples:
+•
+Some students might only have one sort of connection on their device
+•
+Wired provides better performance for the student's device
+....for example, enabling faster access to university databases
+There will be less interference if students connect via a cable
+•
+Students can transmit private/confidential data/work securely
+....for example, their final dissertation
+•
+Wireless connection means that the students can use their devices in
+different rooms/sites/outside/anywhere more freely // student devices
+can be portable
+•
+Wireless connection enables the students to bring multiple devices //
+bring their own devices // change devices
+1 mark for identification
+IP address is made up of a network ID and a host ID
+1 mark each to max 2 for description
+• Subhedoice ins austerent networke same network ID // Each
+subnetwork has a different network ID
+•
+Every device in each subnetwork has a different host ID but the same
+network ID // the host ID uniquely identifies the device within the
+subnetwork
+2
+4
+3
+Page 4 of 11
+
+--- Page 5 ---
+9618/13
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2023
+Answer
+Question
+3(a)
+Marks
+5
+3(b)
+3(c)(i)
+3(c) (ii)
+1 mark for each term
+: Risistive
+Circuit
+•
+Capacitive
+• Change
+• Coordinates
+A resistive touchscreen has two layers. When the user touches the screen,
+the layers touch and a circuit is completed.
+A capacitive touchscreen has several layers. When the top layer is
+touched there is a change/increase/decrease in the electric current.
+A microprocessor identifies the coordinates of the touch.
+1 mark each to max 3
+Examples:
+•
+Scans the scene in real time
+Identifies if there are faces in the image
+Uses facial recognition
+... uses image recognition
+....takes each frame individually
+... analyses the pixels
+... stores pattern for a face
+... looks for patterns that match/come close to the pattern for a face
+Camera focuses on the pattern identified
+1 mark each
+:
+The amplitude is recorded a set number of times a second
+Each (instance of an) amplitude is given a corresponding binary
+number
+•
+The binary number (of each amplitude) is saved in sequence
+1 mark each; max 2 for rate and max 2 for resolution
+Sampling rate
+There are smaller 'gaps' in the sound wave // sound is recorded more
+often
+•
+Digital waveform is closer to the analogue waveform
+•
+The quantisation errors are smaller
+Sampling resolution
+• There are more bits per sample I/ a wider range of amplitudes can be
+stored
+•
+Each binary amplitude/note (in the digital recording) is closer to the
+analogue amplitude/note
+..
+Digital waveform is closer to the analogue waveform
+The quantisation errors are smaller
+3
+3
+4
+© UCLES 2023
+Page 5 of 11
+
+--- Page 6 ---
+9618/13
+Question
+4(a)
+4(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for each bullet point. Mark in pairs. Max 2 for each description.
+:
+:
+Reduces data redundancy
+... because linked tables mean that each data item is stored only once
+Reduces program-data dependency
+... because the data is separate from the software so changes to the
+data do not require programs to be re-written
+:
+Reduces data inconsistency // improves data integrity
+... because by only storing data once it only needs to be updated once //
+changes in one table will automatically update in another // linked data
+cannot be entered differently in two tables
+•
+Complex queries are easier to run
+Can provide different views
+....so users can only see specific aspects of the database
+1 mark each
+Term
+Entity
+Tuple
+Secondary key
+Foreign key
+Description
+An object that data is stored about.
+A row of data in a table about one
+instance of an object.
+An additional/alternative key used as well
+as the primary key to locate specific data
+Il a candidate key that has not been
+chosen as a primary key.
+A field in one table that is linked to a primary
+key in another table.
+May/June 2023
+Marks
+4
+4
+4(c)
+1 mark each
+• Only 3 tables with appropriate identifiers (i.e. one table for customer,
+one for booking and one for car)
+Appropriate Primary key in each table underlined
+• Booking table includes Primary key from car and Primary key from
+customer as Foreign keys
+• All original fields are in correct tables
+Example answer:
+BOOKING (BookingID, CarRegistration, CustomerID,
+StartDate, EndDate)
+CAR (CarRegistration, CarModel, CarColour)
+CUSTOMER (CustomerID, CustomerFirstName,
+CustomerLastName, EmailAddress, TelephoneNumber)
+4
+© UCLES 2023
+Page 6 of 11
+
+--- Page 7 ---
+9618/13
+Question
+4 (d) (i)
+4(d) (ii)
+4 (d)(iii)
+Question
+5(a)(i)
+5(a)(ii)
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+2
+1 mark each to max 2
+• Length check: the registration number must be 6 characters long
+Format check: the registration number must be in the format letter-
+digit-digit-digit-letter-letter
+Type check: the registration number must be alphanumeric
+1 mark each
+the source document
+Double entry: Enter the registration number twice and the computer
+compares to check they are the same
+The registration number on the original document might be in the correct
+format but may be the incorrect registration number for that car.
+Answer
+2
+1
+Marks
+1 mark each to max 2
+•
+Programmer can test sections of the code without every part working /
+being written
+•
+Programmer can debug in real time
+.... so that errors can be fixed and the program continued from that point
+The effect of any changes made by the programmer can be seen
+immediately
+•
+To avoid dependent errors
+1 mark each to max 3
+•
+•
+•
+The compiler produces an executable file
+... so the user cannot access / edit / sell the code
+... and users do not need the translator to run the game
+The game can be compiled for different hardware specifications
+...and then used to generate more income for the programmer
+The program can be tested multiple times without having to retranslate
+each time
+2
+3
+Page 7 of 11
+
+--- Page 8 ---
+9618/13
+Question
+5(b)
+Question
+6(a)
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for appropriate licence; 1 mark for each point to max 3
+:
+• • .
+•
+Commercial software licence
+User has to pay for the product so the programmer can gain an income
+Enables the program to be copyrighted
+... so the user cannot legally edit the program // the programmer retains
+control over product
+... and can take legal action against people who attempt to illegall
+oov it sell it ol
+Shareware licence
+Enables the program to be copyrighted
+The user cannot legally edit the program so the developer retains
+control over product
+User can try the program for free and then pay for the full game which
+allows the programmer to gain an income
+so more people can experience it and therefore be more likely to buy it
+May/June 2023
+Marks
+4
+Answer
+Marks
+5
+1 mark each to max 5
+•
+•
+•
+•
+•
+•
+The sender hashes the document
+... to produce a digest
+The sender encrypts the digest to create the digital signature
+The message and the signature are sent to the receiver
+The receiver decrypts the signature to reproduce the digest
+The receiver uses the same hashing algorithm on the document
+received to produce a second digest
+The receiver compares this digest with the one from the digital
+signature
+If both of the receiver's digests are the same the document is authentic
+Page 8 of 11
+
+--- Page 9 ---
+9618/13
+Question
+6(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark each for identification and appropriate description of 2 pieces of
+software, max 2
+Type of
+software
+Antivirus
+May/June 2023
+Marks
+2
+Antispyware
+Firewall
+Antimalware
+Description
+• scans the computer for viruses and checks against
+a stored database of viruses, that needs to be
+updated regularly and then deletes / quarantines
+•
+compares downloaded files to a database of known
+viruses and prevents the download continuing
+scans the computer for spyware and checks
+against a stored database of viruses, that needs to
+be updated regularly and then deletes / quarantines
+them
+•
+compares downloaded files to a database of known
+spyware and prevents the download continuing.
+•
+monitors incoming and outgoing traffic and
+compares it to criteria that are set by the user such
+as through a whitelist/blacklist/identifying allowed /
+blocked IP addresses
+•
+compares incoming and outgoing traffic to criteria
+blocks those that do not match criteria
+1.
+scans the computer for viruses and checks against
+a stored database of viruses, that needs to be
+updated regularly and then deletes / quarantines
+them
+•
+compares downloaded files to a database of known
+viruses and prevents the download continuing
+© UCLES 2023
+Page 9 of 11
+
+--- Page 10 ---
+9618/13
+Question
+7(a)
+7(b)
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+3
+1 mark for each correct line
+Description
+Denary value
+The smallest integer that can
+be represented in 8-bit two's
+complement.
+-127
+127
+-255
+-128
+The largest integer that can be
+represented in 8-bit two's
+complement.
+-256
+256
+128
+The largest unsigned integer
+that can be represented in 8
+bits.
+255
+1 mark each to max 4
+•
+•
+•
+The system clock gives out timing signals
+... which are sent on the control bus
+...to synchronise the other system components
+The Control Unit initiates data transfer
+...by generating signals that are sent on the control bus to other
+components
+4
+Page 10 of 11
+
+--- Page 11 ---
+9618/13
+Question
+7(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for each Register transfer notation
+Stage description
+The Program Counter (PC) is
+incremented
+The data in the address stored in the
+Memory Address Register (MAR) is
+copied to the Memory Data Register
+(MDR)
+Register transfer
+notation
+PC < [PC] + 1
+MDR < [[MARI]
+May/June 2023
+Marks
+2
+© UCLES 2023
+Page 11 of 11

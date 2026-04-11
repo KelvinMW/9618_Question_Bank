@@ -1,0 +1,325 @@
+--- Page 1 ---
+5 Cambridge Assessment
+a International Education
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+T Є
+9618/32
+May/June 2022
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 12 pages.
+DC (CE/SG) 303765/2
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+2
+1 Data types can be defined using pseudocode.
+The data type, BuildingRecord, is defined in pseudocode as:
+TYPE BuildingRecord
+DECLARE BuildingID : INTEGER
+DECLARE BuildingGroup : STRING
+DECLARE OwnerName : STRING
+DECLARE BuildingAddress : STRING
+DECLARE DateLastSold : DATE
+DECLARE PricelastSold : REAL
+ENDTYPE
+A variable, BuildingRegister, is declared in pseudocode as:
+DECLARE BuildingRegister : BuildingRecord
+(a) Write pseudocode statements to assign:
+• •
+1067 to the BuildingID of BuildingRegister
+house to the BuildingGroup of BuildingRegister
+12]
+(b) The type definition for BuildingRecord is changed. The data type for BuildingGroup is
+changed to an enumerated type, BuildingType, with values of house, bungalow, apartment
+and farm.
+(i) Write the type declaration for BuildingType in pseudocode.
+12]
+(ii) Write the new declaration for BuildingGroup in pseudocode.
+[1]
+(iii) Write the new pseudocode statement to assign house to BuildingGroup of
+BuildingRegister.
+[1]
+© UCLES 2022
+9618/32/M/J/22
+
+--- Page 3 ---
+3
+(c) The program is to be rewritten using Object-Oriented Programming (OOP). The data type
+BuildingRecord is to be changed to a class, BuildingClass.
+The properties for BuildingClass are BuildingID, BuildingGroup, OwnerName,
+BuildingAddress, DatelastSold and PricelastSold.
+All the properties are set to PRIVATE, for example:
+PRIVATE PriceLastSold : REAL
+(i) Write the declaration in pseudocode for OwnerName as PRIVATE.
+11]
+(ii) Explain why the properties have been set to PRIVATE.
+[2]
+© UCLES 2022
+9618/32/M/J/22
+Turn over
+
+--- Page 4 ---
+4
+2 A declarative language is used to represent the following facts about a school.
+01 teaches (alan, mathematics).
+02 teaches (ioana, geography) .
+03
+teaches (nina, history).
+04 teaches (alan, statistics).
+05
+06
+studies (ahmed, history).
+07 studies (freya, history).
+08 studies (kim, history).
+09 studies (freya, geography).
+10 studies (hua, mathematics).
+11 studies (hua, statistics).
+12
+studies (hua, geography).
+13
+14
+tutors (alan, kim) .
+15 tutors (alan, hua).
+16 tutors (alan, freya).
+17
+tutors (nina, ahmed).
+These clauses have the following meaning:
+Clause
+01
+06
+14
+Meaning
+Alan teaches mathematics.
+Ahmed studies history.
+Alan is Kim's tutor.
+(a) More facts are to be included. Sam studies history and Nina is his tutor.
+Write the additional clauses to record these facts.
+18
+19
+(b) Using the variable Student, the goal:
+studies (Student, history)
+returns
+Student = freya, ahmed, kim
+Write the result returned by the goal:
+studies (Student, geography)
+Student =
+© UCLES 2022
+9618/32/M/J/22
+12]
+....... [1]
+
+--- Page 5 ---
+5
+(c) Write the goal, using the variable x, to find all the students who have a tutor that teaches
+them. For example, Hua has Alan for a tutor and is also taught mathematics by Alan.
+[4]
+3 The TCP/IP protocol suite has four layers. The application layer provides user services.
+(a) Identify two protocols used by this layer. Describe the use of each protocol.
+Protocol 1
+Description
+Protocol 2
+Description
+[4]
+(b) Identify two other layers of the TCP/IP protocol suite. Describe the function of each layer.
+Layer 1
+Description
+Layer 2
+Description
+[4]
+© UCLES 2022
+9618/32/M/J/22
+[Turn over
+
+--- Page 6 ---
+6
+4 The following syntax diagrams show the syntax of:
+a variable
+an unsigned integer
+a digit
+an operator
+an assignment statement.
+variable
+letter
+unsigned integer
+unsigned integer
+digit
+letter
+X
+digit
+digit
+2
+Z
+3
+operator
+assignment
+(a) The following assignment statements are invalid. State the reason in each case.
+X1 = Y2 - 12
+Reason
+Z = Y12 + Z1
+Reason
+12]
+© UCLES 2022
+9618/32/M/J/22
+
+--- Page 7 ---
+7
+(b) Complete the Backus-Naur Form (BNF) for the syntax diagrams shown.
+< letter > has been completed for you.
+‹variable> : :=
+‹unsigned_integer> ::=
+<letter> ::= X | Y
+1Z
+‹digit> ::=
+‹operator> ::=
+<assignment_statement>
+[5]
+(c) The syntax of an assignment statement is changed to allow each of the variables on the
+right-hand side of the '=' symbol to be either a variable or an unsigned integer.
+(i) Draw a syntax diagram for the new syntax of the assignment statement.
+13]
+("i)
+Write the Backus-Naur Form (BNF) for your syntax diagram.
+......... [3]
+© UCLES 2022
+9618/32/M/J/22
+[Turn over
+
+--- Page 8 ---
+8
+5 There are four basic categories of computer architecture. Single Instruction Single Data (SISD) is
+one architecture.
+Identify the three other categories of computer architecture.
+Describe each category that you identify.
+Architecture 1
+Description
+Architecture 2 .
+Description
+Architecture 3
+Description
+[6]
+© UCLES 2022
+9618/32/M/J/22
+
+--- Page 9 ---
+9
+6 A logic circuit has two inputs A and B, and two outputs E and F.
+A
+E
+F
+(a) Complete the truth table for this logic circuit.
+INPUT
+OUTPUT
+A
+B
+E
+1
+1
+1
+1
+(b) (i)
+State the name of this logic circuit.
+(ii) State the purpose of each output E and F.
+Purpose of E
+Purpose of F ......
+© UCLES 2022
+9618/32/M/J/22
+F
+12]
+[1]
+[2]
+Turn over
+
+--- Page 10 ---
+10
+7 A digital signature is used to validate the authenticity of an electronic message.
+In order to produce a digital signature, a digital certificate is required.
+(a) State how a digital certificate is obtained.
+13]
+(b) (i) Explain how a digital signature is produced before the message is sent.
+13]
+(ii) Explain how the digital signature can be checked on receipt to ensure that the message
+has not been altered during transmission.
+14]
+© UCLES 2022
+9618/32/M/J/22
+
+--- Page 11 ---
+11
+8 A binary search or a linear search can be used to look for a specific value in an array.
+(a) Complete this pseudocode algorithm for a linear search.
+DECLARE Mylist : ARRAY [O: 9]
+OF INTEGER
+DECLARE MaxIndex : INTEGER
+DECLARE Index : INTEGER
+DECLARE Found : BOOLEAN
+DECLARE ValueToFind :
+INPUT ValueToFind
+Found ‹ FALSE
+Index + 0
+MaxIndex +
+REPEAT
+IF Mylist[Index] = ValueToFind THEN
+Found + TRUE
+ENDIF
+Index +
+UNTIL Found OR Index
+> MaxIndex
+IF Found THEN
+OUTPUT "Value found at position ", Index
+ELSE
+OUTPUT
+ENDIF
+14]
+(b) (i) State the necessary condition for a binary search.
+[1]
+(ii) Describe how to perform a binary search.
+14]
+© UCLES 2022
+9618/32/M/J/22
+[Turn over
+
+--- Page 12 ---
+12
+(ili) Explain how the performance of a binary search varies according to the number of values
+in the array.
+[1]
+(c) Compare the performance of the algorithms for a binary search and a linear search using
+Big O notation for order of time complexity.
+13]
+State the reasons for including exception handling routines when writing a program.
+Include an example of an exception in your answer.
+14]
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2022
+9618/32/M/J/22

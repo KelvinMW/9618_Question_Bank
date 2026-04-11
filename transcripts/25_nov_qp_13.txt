@@ -1,0 +1,549 @@
+--- Page 1 ---
+* 0000800000001*
+ELS Cambridge Assessment
+International Education
+7
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+9618/13
+October/November 2025
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided.
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages. Any blank pages are indicated
+DC (PB/CGW) 346717/4
+© UCLES 2025
+L
+[Turn over
+J
+
+--- Page 2 ---
+* 0000800000002*
+DFD
+2
+7
+1
+(a) A student creates sound recordings.
+Making changes to a sound recording may impact the accuracy of the resulting sound file or
+the size of the file.
+Draw two lines from each change to the impacts it has on the sound file.
+Change
+Impact
+the file size gets bigger
+increase the duration of the recording
+no change in the file size
+the file size gets smaller
+increase the sampling rate
+the accuracy of the sound file improves
+no change to the accuracy of the sound file
+decrease the sampling resolution
+the accuracy of the sound file worsens
+[3]
+(b) The file names of the sound recordings are stored using the ASCII character set.
+Explain how text is represented by the ASCII character set.
+DO NOT WRITE IN THIS MARGIN
+12]
+(c) Give two differences between the ASCII and UNICODE character sets.
+1
+2
+[2]
+OUCLES 2025
+9618/13/0/N/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 3 ---
+* 0000800000003*
+DFD
+DO NOT WRITE IN THIS MARGIN
+3
+2
+(a) Data in a computer system is represented in binary.
+Put one tick (V) in each row to identify the minimum number of bits used to store each
+example of data.
+DO NOT WRITE IN THIS MARGIN
+Example of data
+the hexadecimal value F139
+16 000 000 unique amplitude values
+an IPv4 address
+256 unique colours
+an IPv6 address
+the denary value 65000
+4
+8
+Number of bits
+16
+24
+32
+64
+128
+DO NOT WRITE IN THIS MARGIN
+13]
+(b) Convert the denary number -108 into a 12-bit two's complement binary number.
+11]
+(c) A three-place arithmetic shift to the right is performed on the following two's complement
+negative integer.
+Show the result of this arithmetic shift.
+10010011
+DO NOT WRITE IN THIS MARGIN
+... 11]
+(d) Convert the following positive binary integer into hexadecimal.
+1110001100111011
+.... [1]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/13/0/N/25
+[Turn over
+
+--- Page 4 ---
+0000800000004*
+DFD
+4
+(a) Complete the truth table for the following logic expression:
+X = (A NOR B) NAND (C XOR B)
+Working space
+A
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+(b) Draw a logic circuit for the logic expression:
+X = NOT (((A AND B) OR C) AND (C NOR D))
+A -
+B -
+C -
+D
+LOUCLES 2025
+9618/13/0/N/25
+7
+x
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+121
+DO NOT WRITE IN THIS MARGIN
+-x
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 5 ---
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+* 0000800000005*
+DFD
+5
+4
+A network engineer is setting up a Local Area Network (LAN) in an office. The network uses both
+wired and wireless connectivity.
+(a) Give three advantages of a wireless network compared to a wired network.
+1
+2
+3
+[3]
+(b) Give one drawback of using a wireless network.
+11]
+(c) Complete the table by writing the name of the type of memory technology for each description.
+Description
+A read only memory where the contents
+can be erased using a voltage pulse. The
+contents can be changed multiple times
+without physically removing the memory.
+A read only memory where the contents
+are erased using ultraviolet (UV) light. The
+memory must be physically removed to be
+reprogrammed.
+Memory technology
+A read only memory where the contents can
+be written only once after manufacture.
+[3]
+© UCLES 2025
+9618/13/0/N/25
+[Turn over
+
+--- Page 6 ---
+* 0000800000006 *
+DFD
+6
+5
+A company creates a relational database to store data about its customers.
+The database, REVIEWS, stores data about the customers, products, complaints and staff.
+The database has four tables:
+CUSTOMER (CustomerID, CustomerFirstName, CustomerLastName, CustomerEmail)
+PRODUCT (ProductID, ProductName, ProductDetail, Price, Rating)
+COMPLAINT (ComplaintID, ProductID, CustomerID, ComplaintDetails, StaffID)
+STAFF (StaffID, StaffFirstName, StafflastName, Department, RemoteWorker)
+(a) Complete the entity-relationship (E-R) diagram for the database REVIEWS.
+7
+CUSTOMER
+PRODUCT
+DO NOT WRITE IN THIS MARGI
+COMPLAINT
+STAFF
+[3]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2025
+9618/13/0/N/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 7 ---
+0000800000007*
+DFD
+DO NOT WRITE
+IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+7
+(b) Some example data from the STAFF table is shown.
+StaffID
+StaffFirstName
+StaffLastName
+1
+Department
+E
+2
+Ralph
+Luca
+3
+Darwin
+Jura
+Emcee
+Acula
+A
+F
+Write a Structured Query Language (SQL) script to define the table STAFF.
+Remoteworker
+Yes
+Yes
+No
+DO NOT WRITE IN THIS MARGIN
+[4]
+DO NOT WRITE IN THIS MARGIN
+(c) Products are given a rating between 1 and 10 inclusive.
+Write an SQL script to return only the ProductID, ProductName and ComplaintDetails
+for all products with a rating of 5 or less. The results need to be displayed in descending order
+of rating.
+DO NOT WRITE IN THIS MARGIN
+©UCLES 2025
+9618/13/0/N/25
+[5]
+[Turn over
+
+--- Page 8 ---
+00008000000*
+DFD
+8
+(d) A Database Management System (DBMS) is used to maintain and manage the database.
+Describe two ways in which the DBMS can be used to ensure the security of the
+customer data.
+1
+2
+LOUCLES 2025
+9618/13/0/N/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 9 ---
+* 0000800000009*
+DFD
+DO NOT WRITE IN THIS MARGIN
+9
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+Question 6 starts on the next page.
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/13/0/N/25
+[Turn over
+
+--- Page 10 ---
+* 0000800000010*
+DFD
+10
+6
+The following table shows part of the instruction set for a processor. The processor has two
+registers: the Accumulator (ACC) and the Index Register (IX).
+Instruction
+Opcode
+Operand
+LDM
+#n
+AND
+#n / Bn / &n
+AND
+<address>
+Explanation
+Immediate addressing. Load the number n to the ACC
+Bitwise AND operation of the contents of the ACC with the operand
+Bitwise AND operation of the contents of the ACC with the contents of
+<address>
+XOR
+XOR
+#n / Bn / &n
+‹address>
+Bitwise XOR operation of the contents of the ACC with the operand
+Bitwise XOR operation of the contents of the ACC with the contents of
+<address>
+OR
+OR
+#n / Bn / &n
+<address>
+Bitwise OR operation of the contents of the ACC with the operand
+Bitwise OR operation of the contents of the ACC with the contents of
+<address>
+CMP
+CMP
+ISL
+#n
+<address>
+#n
+Compare the contents of the ACC with number n
+Compare the contents of the ACC with the contents of < address>
+Bits in the ACC are shifted logically n places to the left. Zeros are
+introduced on the right-hand end
+LSR
+#n
+Bits in the ACC are shifted logically n places to the right. Zeros are
+introduced on the left-hand end
+<address> can be an absolute or symbolic address
+# denotes a denary number, e.g. #127
+B denotes a binary number, e.g. B10010001
+& denotes a hexadecimal number, e.g. &4A
+The current contents of main memory are shown:
+Address
+100
+101
+102
+103
+104
+Data
+0000 0011
+1010 1110
+1100 1100
+1111 1111
+1100 1100
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2025
+9618/13/0/N/25
+J
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 11 ---
+* 0000800000011*
+DFD
+DO NOT WRITE IN THIS MARGIN
+11
+7
+(a) Complete the table by writing the contents of the ACC after the execution of each instruction.
+Current contents of the
+ACC
+0000 1111
+Instruction
+AND 101
+Contents of the ACC after the
+execution of the instruction
+0000 0000
+DO NOT WRITE IN THIS MARGIN
+LDM #100
+0000 0001
+XOR &F1
+0001 0001
+CMP 101,
+14]
+(b) The Von Neumann model for a computer system uses registers.
+Describe the role of the Memory Address Register (MAR) and Memory Data Register (MDR)
+in the fetch-execute (F-E) cycle.
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+[4]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+(c) Assembly language instructions are grouped
+Complete each statement by writing the name of the appropriate instruction group.
+Loading data into the accumulator is an example of an instruction in the
+... group. Incrementing the index register is an example
+of an instruction in the
+group. Branching to another
+address is an example of an instruction in the .
+.. group.
+[3]
+9618/13/0/N/25
+[Turn over
+
+--- Page 12 ---
+* 0000800000012*
+DFD
+7
+12
+A digital video camera records students in a classroom. The data is transferred from the digital
+video camera over the internet to a server. Artificial Intelligence (Al) is used to analyse the video
+on the server to identify when students are interacting with the lesson and the teacher.
+(a) Describe one ethical impact of this use of Al in the classroom.
+12]
+(b) A video is made of many bitmap images called frames. 30 frames are recorded every second.
+Each frame is 4000 pixels wide by 3000 pixels high. The video records using 16-bit
+colour depth.
+Calculate an estimate for the file size for one second of the video in gigabytes.
+Show your working.
+File size
+gigabytes
+12]
+(c) Identify and describe one method of data verification that can be used when transferring data
+from the digital video camera to the server.
+Method
+Description
+13]
+OUCLES 2025
+9618/13/0/N/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 13 ---
+* 0000800000013*
+DFD
+DO NOT WRITE IN THIS MARGIN
+13
+(d) Describe two reasons why the server that stores the videos uses magnetic hard disks instead of
+solid state (flash) memory.
+2
+DO NOT WRITE IN THIS MARGIN
+14]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/13/0/N/25
+[Turn over
+
+--- Page 14 ---
+* 0000800000014*
+DFD
+14
+(e) The table contains three algorithms that perform data validation. The third algorithm uses the
+functions MID and LENGTH.
+The functions MID and LENGTH are defined as follows:
+• MID(ThisString : STRING, × : INTEGER, Y : INTEGER) RETURNS STRING
+returns a string of length y starting at position x from Thisstring
+•
+LENGTH (ThisString : STRING) RETURNS INTEGER
+returns the integer value representing the length of Thisstring
+Complete the table to identify the method of data validation for each algorithm. Each method
+of data validation must be different.
+Algorithm
+Method of data validation
+INPUT X
+IF X < 1 or x > 26 THEN
+OUTPUT "Invalid"
+ENDIF
+INPUT ×
+IF x <>
+'R' AND X <> 'G' AND × <> 'B' THEN
+OUTPUT "Invalid"
+ENDIF
+INPUT X
+FLAG < FALSE
+FOR INDEX ‹ 1 TO LENGTH (x)
+IF MID (x, INDEX, 1) = "@" THEN
+FLAG + TRUE
+ENDIF
+NEXT INDEX
+IF NOT FLAG THEN
+OUTPUT "Invalid"
+ENDIF
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/13/0/N/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 15 ---
+* 0000800000015*
+DFD
+DO NOT WRITE IN THIS MARGIN
+15
+7
+8
+Compilers and interpreters are used to translate programs written in a high-level language into a
+low-level language.
+(a) State two disadvantages of using a compiler compared to an interpreter during
+program development.
+1
+DO NOT WRITE IN THIS MARGIN
+2
+12]
+(b) Explain how a programmer benefits from using program libraries during program development.
+DO NOT WRITE IN THIS MARGIN
+13]
+(c) A programmer is developing an Operating System (OS).
+Identify two types of software licence the programmer can use to allow other people to edit
+and redistribute the OS.
+1
+2
+DO NOT WRITE IN THIS MARGIN
+12]
+(d) Memory management is one key management task performed by an OS.
+Give three other key management tasks that are performed by an OS.
+1
+2
+3
+DO NOT WRITE IN THIS MARGIN
+13]
+OUCLES 2025
+9618/13/0/N/25
+
+--- Page 16 ---
+* 0000800000016*
+DFD
+Г
+16
+BLANK PAGE
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series. J
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+OUCLES 2025
+9618/13/0/N/25
+DO NOT WRITE IN THIS MARGIN

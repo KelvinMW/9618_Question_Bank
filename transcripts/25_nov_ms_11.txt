@@ -1,0 +1,659 @@
+--- Page 1 ---
+* CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+MARK SCHEME
+Maximum Mark: 75
+9618/11
+October/November 2025
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2025 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+components.
+This document consists of 15 printed pages.
+© Cambridge University Press & Assessment 2025
+[Turn over
+
+--- Page 2 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2025
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level
+descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+•..
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+• marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© Cambridge University Press & Assessment 2025
+Page 2 of 15
+
+--- Page 3 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Annotations guidance for centres
+Examiners use a system of annotations as a shorthand for communicating their marking decisions to
+one another. Examiners are trained during the standardisation process on how and when to use
+annotations. The purpose of annotations is to inform the standard isation and monitoring processes
+and guide the supervising examiners when they are checking the work of examiners within their team.
+The meaning of annotations and how they are used is specific to each component and is understood
+by all examiners who mark the component.
+We publish annotations in our mark schemes to help centres understand the annotations they may
+see on copies of scripts. Note that there may not be a direct correlation between the number of
+annotations on a script and the mark awarded. Similarly, the use of an annotation may not be an
+indication of the quality of the response.
+The annotations listed below were available to examiners marking this component in this series.
+Annotations
+Annotation
+Meaning
+Correct
+Incorrect
+To indicate where a key word/phrase/code is missing.
+Not relevant or used to separate parts of an answer.
+Highlighter
+TV
+REP
+NE
+BOD
+NAQ
+SEEN
+FT
+Indicates a part of the answer that is incorrect.
+To draw attention to a particular aspect or to indicate where parts of an answer
+have been combined.
+Too vague.
+Repetition
+No examples or not enough.
+Benefit of Doubt.
+Not Answered Question.
+Indicates that work or a page has been seen including blank answer spaces and
+blank pages.
+Follow through.
+Ignore
+© Cambridge University Press & Assessment 2025
+Page 3 of 15
+
+--- Page 4 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1(a)(i)
+1(a)(i)
+1(a)(iii)
+October/November
+2025
+Marks
+1
+1
+2
+BЗA
+0001 0000 1000
+1 mark for the working
+1 mark for the correct denary value
+Working:
+Method 1:
+Flip the bits
+Add 1
+1111 1011 1100
+0000 0100 0011
+0000 0000 0001 +
+0000 0100 0100
+1 (b)(i)
+1 (b)(ii)
+Method 2:
+-2048 + 1024 + 512 + 256 + 128 + 32 + 16 + 8 + 4
+II-128 + 32 + 16 + 8 + 4
+Denary value:
+-68
+(1) 00101011
+1 mark per bullet point, max 2 marks
+An overflow error occurs
+The answer cannot be represented in the number of bits available // The
+answer is larger than the maximum positive number that can be stored in
+the register // The answer is smaller than the most negative number that
+1
+2
+© Cambridge University Press & Assessment 2025
+Page 4 of 15
+
+--- Page 5 ---
+9618/11
+Question
+2(a)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+1 mark for each correct relationship, max 2 marks
+Marks
+2
+STUDENT
+PLACEMENT
+2(b)
+2 (c)(i)
+2(c) (ii)
+COMPANY
+1 mark per bullet point, max 2 marks
+There are no repeating groups of attributes
+There are no many-to-many relationships
+There are no partial key dependencies // no non-key dependencies // no
+transitive dependencies
+1 mark per bullet point, max 2 marks
+DELETE FROM and correct table
+Correct condition
+Example answer:
+DELETE FROM PLACEMENT
+WHERE Complete = TRUE;
+1 mark per bullet point, max 4 marks
+•
+•
+SELECT COUNT any appropriate field
+AS and an appropriate name
+FROM and correct table and WHERE and one correct condition
+•
+Two AND clauses with the other two correct conditions
+Example answer:
+SELECT COUNT (CompanyID)
+AS TotalPlacements
+FROM PLACEMENT
+WHERE CompanyID
+= "NEAM"
+AND StudentID = "LDEA01"
+AND Complete = TRUE;
+2
+2
+4
+© Cambridge University Press & Assessment 2025
+Page 5 of 15
+
+--- Page 6 ---
+9618/11
+Question
+2(d)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2025
+Answer
+1 mark per bullet point, max 3 marks
+Marks
+3
+Generic mark points (max 2)
+:
+Referential integrity ensures that related data is consistent
+Referential integrity ensures that every foreign key has a corresponding
+primary key
+:
+Referential integrity provides for cascading update / delete
+Referential integrity ensures that if a primary key is deleted or modified all
+linked records in foreign table will be deleted or modified // Referential
+integrity stops "orphaned records"— records in a table that point to an
+entry in another table that no longer exists
+Specific mark points (max 2) for good examples
+CompanyID is a foreign key in PLACEMENT table and is dependent on
+the primary key CompanylD in COMPANY table
+If a record is deleted from the STUDENT table, then all records with the
+same StudentID will be deleted from the PLACEMENT table
+•
+If a CompanyID is modified in the company table, all records with that
+CompanyID in the placement table will also be modified
+© Cambridge University Press & Assessment 2025
+Page 6 of 15
+
+--- Page 7 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+Question
+3(a)
+Answer
+One mark per bullet point, max 2 marks
+(A NAND B) and (NOT A OR NOT C)
+XOR and NOT
+2025
+Marks
+2
+:
+A
+B
+→D
+3(b)
+4(a)
+Do
+Do
+1 mark per bullet point, max 2 marks
+• One correct term: (R AND S AND NOT T)
+// (NOT R AND NOT S AND T)
+• Second correct term plus the OR in correct place
+Answer:
+Q = (R AND S AND NOT T) OR (NOT R AND NOT S AND T)
+1 mark for:
+LSL #2
+1
+1
+1
+2
+1
+4(b)
+4(c)
+4(d)
+1
+1
+0
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+© Cambridge University Press & Assessment 2025
+Page 7 of 15
+
+--- Page 8 ---
+9618/11
+Question
+5(a) (i)
+5(a)(ii)
+5(b)(i)
+5(b) (ii)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+1 mark per bullet point, max 2 marks
+Marks
+2
+•••
+Installs driver software for devices connected to external ports
+Manages communication between devices
+Manages hardware interrupts
+1 mark per bullet point, max 2 marks
+••
+Prevents unauthorised access
+...by providing authentication // by validating users and processes
+•
+•
+Implements access rights and permissions
+Makes provision for recovery of lost data
+Carries out Operating System security updates as available
+•
+Carries out auditing and keeps logs of activity
+One mark for benefit, one mark for appropriate matching expansion
+e.g.
+•
+Less code needs to be developed as code is pre-written
+•
+... thereby reducing the time to write a program
+The library routine will be pre-tested and documented
+•
+.... reducing the time taken to test a program // giving confidence that the
+routine works as it should
+•
+The code for the library routine can written in a different programming
+language
+•
+... which allows the use of special features of that language
+•
+•
+The user's source code is more readable
+... as the library routine is simply called in the source code rather than
+being written out in full
+•
+•
+The library could contain the code for complex routines
+... thus allowing the programmer to include modules they might not be
+able to code
+1 mark for drawback, 1 mark for appropriate matching expansion
+e.g.
+2
+2
+2
+•.
+•
+•
+•
+Compatibility issues
+... the library routine may not work with current program
+Not guaranteed to be thoroughly tested
+.... there could be unexpected problems (bugs/virus)
+The library routine may not match needs exactly // The library routine may
+give unexpected results
+... so it will need to be edited and tested
+If the library routine is later edited or changed (by someone else)
+... there could be unexpected errors or results
+© Cambridge University Press & Assessment 2025
+Page 8 of 15
+
+--- Page 9 ---
+9618/11
+Question
+5(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2025
+Answer
+1 mark per bullet point, max 2 marks
+Prettyprint
+Expanding and collapsing code blocks
+Automatic / smart indentation / formatting
+Marks
+2
+© Cambridge University Press & Assessment 2025
+Page 9 of 15
+
+--- Page 10 ---
+9618/11
+Question
+6(a)
+6(b)
+6(c)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+1 mark for each correct description, max 2 marks
+Marks
+2
+Register
+ACC
+Role
+stores the intermediate results of arithmetic and logical
+operations
+Il holds the result of a calculation
+CIR
+holds the instruction currently being decoded and/or executed
+1 mark per bullet point, max 2 marks
+e.g.
+•
+Latency may be increased
+...because the cores must communicate with one another
+•
+•
+There is a potential for dead-lock situations
+.... where one core may wait for information from other cores which in turn
+are waiting for the first one
+•
+•
+Not all software is designed to use multi-cores
+... so some of the additional cores would be idle
+•
+Increased heat generation
+•
+... which could cause damage to other components
+1 mark per bullet point, max 3 marks
+• DRAM requires to be refreshed/charged SRAM does not request a
+refresh
+DRAM stores each bit as charge SRAM uses flip-flop to store each bit
+DRAM is less expensive to manufacture SRAM is more expensive to
+manufacture
+DRAM has slower access speeds SRAM has faster access times
+: DRAM has higher scoree bread densily at aler
+storage/bit/data density
+•
+DRAM is used in main memory SRAM is used in cache
+2
+3
+© Cambridge University Press & Assessment 2025
+Page 10 of 15
+
+--- Page 11 ---
+9618/11
+Question
+7(a)
+7(b)
+7(c)
+7(d) (i)
+7(d)(ii)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+1 mark for each correct description, max 2 marks
+Marks
+2
+Type of IP
+address
+Description
+Static
+Public
+IP address that does not change each time a device
+connects to the network
+IP address assigned to a device on a network to allow the
+device to be visible on the internet
+1 mark per bullet point for justification, max 2 marks
+Choice: Invalid (no mark for the choice)
+Justification:
+•
+It is not IPv4 because the maximum denary value should be 255, this
+uses 256
+•
+It is not IPv6 because it uses a full stop to separate sections and not
+colon // It is not IPv6 because there are not enough groups
+1 mark per bullet point, max 4 marks
+•
+•
+•
+The browser checks its cache for the URL
+The browser parses the URL and splits it into its component parts
+The browser finds the IP address for the domain name by querying a
+DNS server
+•
+The browser receives the matching IP address from the DNS server
+• The browser creates connection with the web server with the matching IP
+address
+• A request for the resource is sent to the web server with that IP address
+•
+The browser renders and displays the result
+•
+The IP address is stored in the browser cache for future use
+1 mark for the working
+1 mark for the correct answer
+Working:
+(512 * 2048 * 8) / (8 * 1024 ) /I (512 * 2048) / 1024
+/I (29*211*23) / (23*210) 11(29 * 211) /210
+Answer: 1024 kibibytes // 210 kibibytes
+1 mark per bullet point, max 2 marks
+The file will contain metadata
+•
+The file will have a header
+2
+4
+2
+2
+© Cambridge University Press & Assessment 2025
+Page 11 of 15
+
+--- Page 12 ---
+9618/11
+Question
+7(d) (i)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+1 mark per bullet point, max 2 marks
+Marks
+2
+:
+Sequences of consecutive identical colours / pixels
+.. are stored as the colour value and the number of times it occurs
+consecutively
+© Cambridge University Press & Assessment 2025
+Page 12 of 15
+
+--- Page 13 ---
+9618/11
+Question
+8(a)
+8(b)
+8(c)
+Cambridge International AS & A Level — Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+1 mark for each correct explanation, max 2 marks
+Marks
+2
+Virus:
+Malicious program/software that replicates/copies itself and deletes/alters
+files/data stored on a computer
+Pharming:
+Malicious code/software installed on a computer which redirects user to a fake
+website to obtain personal data
+1 mark per bullet point, max 3 marks
+e. g.
+Students should consider privacy issues
+Students should not make inappropriate use of social networking //
+Students should not engage in cyberbullying
+• Students should not copy work that is not their own
+• Students should abide by the school rules/guidelines for accessing the
+network
+• Students should only use the school network for legitimate purposes
+• Students should not hack / crack other computers
+1 mark per bullet point, max 4 marks
+e. g.
+Negative Impacts
+If students use Al to shortcut learning, they may miss out on developing
+reasoning and problem-solving skills // Students may not be learning
+anything // It could lead to a decline in specific skills
+It could have negative impacts on student communication // heavy
+reliance on Al may limit opportunities for collaboration, teamwork, and
+face-to-face communication
+• Emphasises the digital divide// some students may not have access to
+the technology
+: The Al answer might not be correct leading to mis information
+Increased screen time and isolation could contribute to anxiety or
+loneliness
+Positive Impacts
+Pupils who struggle in traditional settings may gain self-esteem through
+Al-assisted learning at their own pace
+Long-Term Impacts
+• Protection of intellectual property // ethical issues and considerations
+Schools may need to redesign curricula and/or assessment to integrate
+3
+4
+© Cambridge University Press & Assessment 2025
+Page 13 of 15
+
+--- Page 14 ---
+9618/11
+Question
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark per bullet point, max 3 marks
+•
+•
+•
+Monitoring systems do not take any action whereas control systems act
+autonomously to change the environment if the values are out of a
+prescribed range
+Control systems use actuators monitoring systems do not have any
+actuators
+Control systems make use of feedback monitoring systems do not make
+use of feedback
+The output from a monitoring system does not affect the subsequent
+input whereas output from a control system affects the next input.
+October/November
+2025
+Marks
+3
+© Cambridge University Press & Assessment 2025
+Page 14 of 15
+
+--- Page 15 ---
+9618/11
+Question
+10(a)
+10(b)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+1 mark per bullet point, max 3 marks
+Marks
+3
+Generic mark points: (max 3)
+:
+Additive manufacturing
+Uses a digital file created from 3D modelling software or Computer Aided
+Design (CAD) software
+••.
+The printer builds up the model one layer at a time
+The process is repeated for each layer
+Some materials may need time to cool and set or UV curing using LEDs
+for photopolymer resins
+Specific mark points: (max 1)
+e.g.
+•
+Fused Deposition Modelling (FDM) // Material is heated and pushed
+through nozzle / extruder
+•
+Stereolithography (SLA) // Photosensitive liquid resin is exposed to a UV-
+laser beam
+•
+Digital Light Processing (DLP) // Photosensitive liquid resin is exposed to
+a UV projected image of the layer to cure the resin
+•
+Selective Laser Sintering (SLS) // Uses a laser to form objects from
+powdered material, the material can be plastics or metals
+1 mark
+•
+•
+To free up the processor to carry out other tasks as the rate data is
+received by the printer is different from the rate at which it can be
+processed
+To manage the mismatch in speed between the processor and the
+peripheral / 3D printer
+1
+© Cambridge University Press & Assessment 2025
+Page 15 of 15

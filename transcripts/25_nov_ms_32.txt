@@ -1,0 +1,681 @@
+--- Page 1 ---
+* CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+MARK SCHEME
+Maximum Mark: 75
+9618/32
+October/November 2025
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2025 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+components.
+This document consists of 17 printed pages.
+© Cambridge University Press & Assessment 2025
+[Turn over
+
+--- Page 2 ---
+9618/32
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Generic Marking Principles
+October/November
+2025
+These general marking principles must be applied by all examiners when marking candidate answers. They should be applied alongside the
+specific content of the mark scheme or generic level descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit is given for valid answers which go beyond
+the scope of the syllabus and mark scheme, referring to your Team Leader as appropriate
+marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these features are specifically assessed by the
+question as indicated by the mark scheme. The meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed instructions or in the application of generic level
+descriptors.
+© Cambridge University Press & Assessment 2025
+Page 2 of 17
+
+--- Page 3 ---
+9618/32
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2025
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question (however; the use of the full mark range may
+be limited according to the quality of the candidate responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should not be awarded with grade thresholds or
+grade descriptors in mind.
+© Cambridge University Press & Assessment 2025
+Page 3 of 17
+
+--- Page 4 ---
+9618/32
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2025
+Annotations guidance for centres
+Examiners use a system of annotations as a shorthand for communicating their marking decisions to one another. Examiners are trained during the
+standardisation process on how and when to use annotations. The purpose of annotations is to intorm the standard isation and monitoring
+processes and guide the supervising examiners when they are checking the work of examiners within their team. The meaning of annotations and
+how they are used is specific to each component and is understood by all examiners who mark the component.
+We publish annotations in our mark schemes to help centres understand the annotations they may see on copies of scripts. Note that there may
+not be a direct correlation between the number of annotations on a script and the mark awarded. Similarly, the use of an annotation may not be an
+indication of the quality of the response.
+The annotations listed below were available to examiners marking this component in this series.
+Annotations
+Annotation
+Highlighter
+REP
+NE
+Meaning
+Correct
+Incorrect
+To indicate where a key word/phrase/code is missing.
+Not relevant or used to separate parts of an answer.
+Indicates a part of the answer that is incorrect.
+To draw attention to a particular aspect or to indicate where parts of an answer have been combined.
+Too vague.
+Repetition
+No examples or not enough.
+© Cambridge University Press & Assessment 2025
+Page 4 of 17
+
+--- Page 5 ---
+9618/32
+Annotation
+BOD
+NAQ
+SEEN
+E8
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2025
+Meaning
+Benefit of Doubt.
+Not Answered Question.
+Indicates that work or a page has been seen including blank answer spaces and blank pages.
+Follow through.
+Ignore
+© Cambridge University Press & Assessment 2025
+Page 5 of 17
+
+--- Page 6 ---
+9618/32
+Question
+1(a)(i)
+1(a)(ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November
+2025
+Marks
+1
+2
+1(b) (i)
+1(b) (ii)
+DECLARE Carl : Car
+One mark for each correct answer
+Example answer
+Carl. Colour ‹ "Blue"
+Carl. Intostock & 21/10/2025
+One mark per mark point (Max 2)
+MP1
+TYPE Body =
+MP2
+(Convertible, Hatchback, Saloon, SUV)
+Example answer
+TYPE Body = (Convertible, Hatchback,
+Saloon,
+SUV)
+DECLARE Bodystyle : Body
+2
+© Cambridge University Press & Assessment 2025
+Page 6 of 17
+
+--- Page 7 ---
+9618/32
+Question
+2(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November
+2025
+Marks
+3
+2(b)
+Two marks for working
+:
+correct calculation/application of exponent seen
+correct method to find the final answer
+Working:
+Exponent = 8 + 2 + 1 = 11
+|/ =0.111100101 x 211
+/I=11110010100.0 (moving bp 11 places to right)
+Method to find the answer
+|| 1024 + 512 + 256 + 128 + 16 + 4
+One mark for correct answer
+Denary value: 1940
+Example of solution using fractions:
+One mark per mark point (Max 3)
+MP1
+correct method to find the binary number
+MP3
+correct use of exponent
+correct answer in the space provided
+Working:
+26.6875 converted to binary (0)11010. 1011 // 16+8+2+0.5+0. 125+0.0625 movement of binary point by 5 places
+Mantissa
+0 1 1 0
+1 0
+1 0 1
+0 o
+Exponent
+• 1 0
+3
+© Cambridge University Press & Assessment 2025
+Page 7 of 17
+
+--- Page 8 ---
+9618/32
+Question
+3(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November
+2025
+Marks
+2
+3(b)
+One mark per mark point (Max 2)
+:
+HTTP to send and receive / transfer web pages / hypertext / images / videos
+IMAP allows users to access/read their emails from any device without removing the message from the mail server
+Il synchronises emails on any device
+One mark per mark point (Max 4)
+Files are shared over a peer-to-peer network
+A small file, a torrent (descriptor file), is initially created by a peer
+The torrent (descriptor file) contains metadata about the file to be shared
+The whole file must initially be located on at least one peer
+The file is broken into equal sized pieces
+Other peers who wish to download the file first obtain the torrent (descriptor file) and connect to a tracker
+A tracker acts like a server that holds all the data about all the computers connected to it / the swarm
+Each peer downloads parts of the file from other peers until the entire file has been downloaded
+As each peer receives a piece of the file, they become a source for that piece of the file
+MP10 A peer who has a complete file and is sharing it is a seed // Once a peer has completely downloaded the file
+and made the file available to others in the swarm, they become a seed.
+4
+© Cambridge University Press & Assessment 2025
+Page 8 of 17
+
+--- Page 9 ---
+9618/32
+Question
+4(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November
+2025
+Marks
+2
+One mark for a benefit of circuit switching (Max 1)
+MP1
+MP2
+MP3
+MP4
+MP5
+Once the connection is made, it is available until the end of the transmission (suitable for long continuous
+transmission)
+The dedicated path ensures a steady rate of data transmission, once connection has been made (because the
+whole bandwidth is available)
+The dedicated path ensures data is less likely to be lost.
+No intermediate delays once the circuit is established, enables real time transmission
+No additional time/delay to reorder needed because data arrives in the order it was sent / data sent as a
+continuous stream
+One mark for a benefit of packet switching (Max 1)
+MP6
+No need to tie up a communication line // path available to multiple users // bandwidth can be shared by multiple
+users
+Possible to overcome failed / faulty / busy lines by re-routing packets
+Individual packets can be resent if lost/damaged
+Users only charged for the duration of connectivity
+MP10
+High rate of data transmission possible
+MP11
+Always uses digital networks so data is transmitted directly to the destination
+MP12 Good security because all packets can take different routes // A more secure method because all packets can take
+different routes
+© Cambridge University Press & Assessment 2025
+Page 9 of 17
+
+--- Page 10 ---
+9618/32
+Question
+4(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November
+2025
+Marks
+2
+One mark per difference (Max 2)
+MP1
+MP2
+MP3
+MP4
+MP5
+MP6
+MP7
+MP8
+Circuit switching requires a dedicated line to be connected before the data transfer takes place, in packet
+switching, data transter commences directly/ straight away
+In circuit switching, each data unit knows the entire path address, but in packet switching, each data unit only
+knows the final address (routers decide intermediate paths)
+Circuit switching uses the whole bandwidth of the transmission path, but packet switching shares it with other users
+I/ circuit switching uses a constant high bandwidth. Packet switching has variable bandwidth
+In circuit switching each data unit follows the same route, but in packet switching, packets can follow any route
+In circuit switching data arrives in the correct order but in packet switching it has to be reordered
+Data remains intact / a continuous stream in circuit switching but is segmented in packet switching
+Lost data in circuit switching requires the whole transmission to be resent, but individual packets can be
+resent in packet switching
+Circuit switching doesn't suffer data loss but packets can be lost in packet switching.
+Answer
+Question
+5(a)
+Marks
+2
+5(b)
+One mark per mark point (Max 2)
+MP1
+The low-level scheduler manages the handling of interrupts based on priority
+MP2
+... ensuring that critical events are handled without delay
+MP3
+It uses an Interrupt Vector Table (IVT) / Interrupt Descriptor/Despatch Table (IDT)/ Interrupt Service Routine (ISR)
+lookup
+MP4
+...to map the interrupt to the specific handling routine / ISR.
+One mark per correct answer (Max 3)
+Process state
+running
+Reason
+CPU time has been allocated and the process is being executed.
+ready
+blocked
+The process is waiting (in the ready queue) for a slice of CPU time. It could run. // It has been displaced
+by a higher priority process and could otherwise still run.
+The process is waiting for an I/O operation / some event to take place / be completed.
+© Cambridge University Press & Assessment 2025
+Page 10 of 17
+3
+
+--- Page 11 ---
+9618/32
+Question
+6(a)
+6(b) (i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+One mark for working, (all four columns P, Q, Rand S)
+One mark for first four rows of column Z
+Working space
+A
+B
+P
+Q
+0
+1
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+Two marks if no errors present
+One mark if only one error present
+BC
+00
+01
+11
+10
+A
+0
+1
+1
+1
+1
+R
+1
+1
+1
+1
+0
+S
+1
+0
+0
+Z
+1
+1
+1
+0
+1
+1
+1
+0
+October/November
+2025
+Marks
+3
+2
+© Cambridge University Press & Assessment 2025
+Page 11 of 17
+
+--- Page 12 ---
+9618/32
+Question
+6(b)(ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November
+2025
+Marks
+2
+One mark for each correct loop (Max 2)
+BC
+00
+01
+11
+10
+A
+0
+0
+1
+1
+6(b) (i)
+1
+1
+1
+One mark for each mark point (Max 2)
+One correct Boolean term with a + / OR sign
+: All Boolean terms and operators correct and no other terms present
+À.C + B.C + A.B.C
+2
+© Cambridge University Press & Assessment 2025
+Page 12 of 17
+
+--- Page 13 ---
+9618/32
+Question
+7(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November
+2025
+Marks
+1
+7(b)
+Question
+8(a)
+8(b)
+One from
+Symmetric (cryptography / encryption)
+Quantum (cryptography)
+One mark per mark point (Max 4)
+The two keys held by the organisation are a private key and a public key
+The organisation makes the public key available to anyone who wishes to send them secure transmissions // The
+sender obtains the organisation's public ke!
+The sender uses the organisation's public key to encrypt the message / plain text // The sender uses the
+organisation's public key to turn the message into cipher text
+MP4
+The organisation uses its private key to decrypt the message.
+Answer
+To improve the code by making it use minimum resources (CPU, memory/storage, time) |/ Answer by example: To improve
+the code by
+minimising CPU time
+minimising memory use
+minimising program execution time (includes peripheral use as well as CPU)
+One mark (a - b + c)
+One mark *
+(c
+-
+a)
+One mark / d
+Complete answer
+(a -b + c) *
+(0 - a)
+/ d
+4
+Marks
+1
+3
+© Cambridge University Press & Assessment 2025
+Page 13 of 17
+
+--- Page 14 ---
+9618/32
+Question
+8(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+One mark per ring (Max 4)
+October/November
+2025
+Marks
+4
+3
+9
+3
+16
+3
+6
+16
+3
+10
+3
+30
+16
+30
+46
+Question
+9(a)(i)
+Answer
+Marks
+1
+9(a)(ii)
+One from:
+e.g.
+:
+Virtual assistants // Al Agents
+Chatbots
+Composing music
+Self-driving cars
+Natural language processing
+Fraud detection
+Image colouring // photograph enhancement
+Visual/Image recognition/facial recognition
+Text mining
+Computer assisted translation
+Large language models (LLMs)
+Playing chess
+Grading student exams
+•
+Weather forecasting
+Use / introduce more hidden layers
+1
+© Cambridge University Press & Assessment 2025
+Page 14 of 17
+
+--- Page 15 ---
+9618/32
+Question
+9(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November
+2025
+Marks
+4
+Question
+10(a)
+10(b)
+One mark per mark point (Max 4)
+Initial outputs are compared to expected outputs
+.... weightings are adjusted to minimise the difference between actual and expected outputs
+Calculus is used to find the error gradient in the obtained outputs
+... the results are fed back into the neural network
+MP5
+MP6
+... weightings of each neuron / node are adjusted as a result of the feedback
+... the process repeats until results are more accurate
+Answer
+One mark per mark point (Max 2)
+Use an exception handling routine (to respond to unwanted / unexpected events when the program is running)
+MP2
+Use of try ... except / catch // Generate some form of error message
+One mark per mark point (Max 2)
+MP1
+Coding errors
+MP2
+User errors
+MP3
+Hardware failure // Losing connection to a device e.g. a printer
+Marks
+2
+2
+© Cambridge University Press & Assessment 2025
+Page 15 of 17
+
+--- Page 16 ---
+9618/32
+Question
+11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November
+2025
+Marks
+7
+One mark per mark point (Max 7)
+LDD 300 seen
+Correct use of STO seen (at least once)
+Correct use of IDD 420 seen
+Correct use of LDI B
+Correct use of ADD A
+Opcode
+LDD
+300
+STO
+A
+LDD
+420
+STO B
+LDI B
+ADD
+A
+STO
+Answer
+Operand
+MP6
+MP7
+MP8
+Correct labelling of three addresses A:, B: and Answer:
+Correct contents in A: and B:
+Correct value in Answer:
+Label
+Contents
+A: 86
+B: 150
+Answer: | 112
+© Cambridge University Press & Assessment 2025
+Page 16 of 17
+
+--- Page 17 ---
+9618/32
+Question
+12(a)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November
+2025
+Marks
+4
+12(a)(ii)
+12(b)
+One mark for each correctly completed line (Max 4)
+PROCEDURE Push (NewData : STRING)
+IF Top ‹ Max - 1 THEN
+Top + Top + 1
+StackArray [Top] < NewData
+ELSE
+OUTPUT "Stack full; new data cannot be added"
+ENDIE
+ENDPROCEDURE
+One mark per mark point (Max 2)
+MP1
+Input with variable, with or without prompt
+MP2 Procedure call for Push with parameter used matching input variable
+Example answer
+NPUT MyData
+'ALL Push (MvData
+One mark per mark point (Max 3)
+Stacks store data in Last In First Out (LIFO) / First In Last Out (FILO) orde
+MP2
+Each time a recursive algorithm calls itself data is pushed onto the stack
+MP3 When the recursive algorithm reaches its base case / starts to unwind
+MP4 ... data is popped from the stack in the reverse order to which it was pushed onto it.
+2
+3
+© Cambridge University Press & Assessment 2025
+Page 17 of 17

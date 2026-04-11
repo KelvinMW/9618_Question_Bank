@@ -1,0 +1,573 @@
+--- Page 1 ---
+* CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+MARK SCHEME
+Maximum Mark: 75
+9618/22
+May/June 2024
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2024 series for most
+Cambridge IGCSE, Cambridge International A and AS Level and Cambridge Pre-U components, and some
+Cambridge O Level components.
+This document consists of 12 printed pages.
+© Cambridge University Press & Assessment 2024
+[Turn over
+
+--- Page 2 ---
+9618/22
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2024
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level
+descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+•..
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+• marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind
+© Cambridge University Press & Assessment 2024
+Page 2 of 12
+
+--- Page 3 ---
+9618/22
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2024
+Mark scheme abbreviations
+underline
+max
+()
+separates alternative words / phrases within a marking point
+separates alternative answers within a marking point
+actual word given must be used by candidate (grammatical variants accepted)
+indicates the maximum number of marks that can be awarded
+the word / phrase in brackets is not required, but sets the context
+Note: No marks are awarded for using brand names of software packages or hardware.
+© Cambridge University Press & Assessment 2024
+Page 3 of 12
+
+--- Page 4 ---
+9618/22
+Question
+1(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Selection
+May/June 2024
+Marks
+4
+Pseudocode example
+FOR Index < 1 TO 10
+DatalIndex] < 0
+NEXT Index
+WRITEFILE ThisFile,
+11****.I
+UNTIL Level > 25
+IF Mark > 74 THEN
+READFILE OldFile,
+Data
+ENDIF
+One mark per row.
+Iteration
+Input/Output
+r
+r
+r
+r
+1(b)
+4
+Expression
+1(c)
+MyInt < INT (3.1415926)
+MyChar + MID ("Elwood", 3, 1)
+Any of:
+• MyString < NUM_TO_SIR (INT (27.509))
+•
+MyString + CHR (INT (27.509))
+• MyString ‹ TO_UPPER ( NUM
+_TO_STR ( 27.509))
+• MyString + IO_LOWER ( NUM_TO_STR ( 27.509))
+Any of:
+•
+•
+•
+MyInt + STR_TO_NUM (RIGHT ("ABC123", 3))
+MyInt < LENGTH (RIGHT ("ABC123", 3))
+MyInt ‹ LENGTH ( LEFT ('ABC123", 3))
+One mark per row
+1 mark for stating a suitable way of documenting:
+Identifier table
+1 mark for giving one piece of information that should be recorded.
+examples include:
+Explanation of what (each) variable is used for
+The purpose of (each) variable
+An example of data values stored // Initialisation value
+2
+© Cambridge University Press & Assessment 2024
+Page 4 of 12
+
+--- Page 5 ---
+9618/22
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Question
+2(a)
+Marks
+5
+START
+INBUT Nund, Muma, Hums
+Is Numi > Num2
+AND Maal > Mans?
+Yes
+No
+No
+Is Nund > Nuns ?
+Yes
+Set Ans to Nan!
+Set Ans to Sumi
+Set Ans to Bun!
+Set Average to (Banl + Mand + Nund) / 3
+- and ne average 1s, Average
+END
+Mark points
+1 Condition for selecting one of the input numbers as largest value
+2 ... and assign to Ans
+Condition for selecting largest number for all three number input and
+assigning to Ans
+4
+Average calculated using Num1, Num2 and Num3 and stored in a variable.
+Reject use of DIV
+5
+Output of Ans and average in output symbol / parallelogram
+© Cambridge University Press & Assessment 2024
+Page 5 of 12
+
+--- Page 6 ---
+9618/22
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Question
+2(b)
+Marks
+5
+Example solutions:
+Flag & Getstat ()
+WHILE Flag <> TRUE
+FOR Port + 1 IO 3
+CALL Reset (Port)
+NEXT Port
+Flag + Getstat ()
+ENDWHILE
+Alternative:
+REPEAT
+Flag & Getstat ()
+IF Flag < TRUE THEN
+FOR Port < 1 TO 3
+CALL Reset (Port)
+NEXT Port
+ENDIF
+UNTIL Flag = TRUE
+One mark per point:
+1 (Outer) conditional loop testing Flag
+Correct assignment of Flag from GetStat () in a loop
+(Inner) loop checking / counting port // Check if Port is different to 4
+4
+5
+... loop for 3 iterations
+a call to Reset () in a loop
+Question
+3(a)(i)
+Answer
+Marks
+4
+Pseudocode:
+TYPE Component
+DECLARE Item_Num : INTEGER
+DECLARE Reject
+: BOOLEAN
+DECLARE Stage
+: CHAR
+DECLARE Limit_1
+: REAI
+DECLARE Limit_2
+: REAL
+ENDTYPE
+Mark as follows:
+1 One mark for TYPE and ENDTYPE statements
+2 One mark for Item_Num and Reject fields
+One mark for stage field
+4 One mark for Limit fields as REAL
+© Cambridge University Press & Assessment 2024
+Page 6 of 12
+
+--- Page 7 ---
+9618/22
+Question
+3(a) (ii)
+3(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2024
+DECLARE Item
+DECLARE Item
+DECLARE Item
+Answer
+ARRAY [1:20001 OF Component//
+: ARRAY 120001 OF Component//
+: ARRAY I0:19991 OF Component
+Marks
+2
+One mark per underlined phrase
+One mark per point:
+1
+Allows for iteration / can use a loop to access the records / data items
+2
+Use of index to directly access a record in the array // Example of
+3
+simplification of code e.g. use of dot notation Item[1].Stage
+Simplifies the code / algorithm // Reduces duplication of code // Program
+easier to write / understand / maintain / test / debug // Data items/record
+easier to search / sort / manipulate
+3
+Question
+4
+Answer
+Marks
+5
+Example solution:
+PROCEDURE IsRA ()
+DECLARE a, b, c: INTEGER
+OUTPUT "Input length of the first side"
+INPUT a
+INPUT b
+INPUT C
+OUTPUT "Input length of the second side"
+OUTPUT "Input length of the third side"
+IF (a * a = 1b
+*
+b)
++ (c * c)) OR_
+(b *b=
+(c * c=
+la *
+a)
++
+(C
+C)) OR
+a)
++ (b * b)) THEN
+OUTPUT "It is
+right-angled"
+ELSE
+OUTPUT "Not right-angled"
+ENDIF
+ENDPROCEDURE
+Mark as follows:
+1. Procedure heading and ending and declaration of all variables used
+2. Appropriate prompt and input for each length
+3. One correct length test
+. All three length tests // selection of which test is required
+5. Output one of two messages following a reasonable attempt at MP3
+© Cambridge University Press & Assessment 2024
+Page 7 of 12
+
+--- Page 8 ---
+9618/22
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2024
+Answer
+Question
+5(a)(i)
+Marks
+3
+5(a)(ii)
+5(b)
+One mark per error:
+Syntax:
+1. NEXT Index (should be ENDWHILE)
+2. '&' used to concatenate an integer (in OUTPUT statement)
+Other:
+3. Accesses element outside range // Accesses element O
+One mark per point:
+Statement:
+• The OTHERWISE statement
+Explanation:
+• The result of MOD 2 can only be 0 or 1
+Run-time
+2
+1
+© Cambridge University Press & Assessment 2024
+Page 8 of 12
+
+--- Page 9 ---
+9618/22
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2024
+Answer
+Question
+6(a)
+Marks
+7
+6(b)(i)
+6(b) (ii)
+6(b)(iii)
+Example solution:
+Function Trim (Name : STRING) RETURNS STRING
+CONSTANT Dots
+=
+CONSTANT Space
+".."
+IF LENGTH (Name) <= 16 THEN
+RETURN Name
+ENDIF
+1l Otherwise it has to be trimmed
+WHILE LENGTH (Name)
+> 13
+REPEAT
+last char
+ENDWHILE
+Name * LEFT (Name, LENGTH (Name) - 1) |/ strip
+UNTIL RIGHT (Name, 1) = Space |/ back to SPACE
+Name < LEFT (Name,
+LENGTH (Name) - 1) I remove the
+space
+Name ‹ Name & Dots
+RETURN Name
+ENDFUNCTION
+Mark as follows:
+1. Function heading, ending, parameter and return type
+2. If length of original string <= 16 then return original string
+3. Any Conditional loop...
+4.
+until string is short enough
+5.
+Inner conditional loop / second condition to identify word(s) to
+remove from the end of string // Check to identify word (s) to remove
+from the end of string
+6. Attempt to strip characters back to space
+7. Correct removal of word/words from end of string and remove final
+space
+8. Concatenate Dots and return result
+Max 7 marks
+A (very) large file is created // redundant zeroes are stored in the file
+One mark for:
+Values are delimited by a special character / a separator character
+: Firstes aracter indicates sample lengra
+Max 1 mark
+The algorithm to store / extract / separate the individual values is more
+complex / takes longer to execute / run / process
+NE Algorithm is more complicated
+1
+1
+1
+© Cambridge University Press & Assessment 2024
+Page 9 of 12
+
+--- Page 10 ---
+9618/22
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Question
+7(a)
+Marks
+3
+7(b)(i)
+Examples include:
+Module: IdentifyMember ()
+Use: Identifies a club member who has expressed an interest in a given class
+Module: GetMemberPhoneNumber ()
+Use: Gets the mobile phone number of a member
+Module: CreateMessage ()
+Use: Generates a text message to a member
+Module: sendMessage ()
+Use: Sends a text message to a member in the waiting list
+One mark for name and use
+Note: max 3 marks
+Input
+Output
+5
+Input-A
+Input-A
+Input-B
+Input-B
+Input-A
+Input-A
+One mark per row 3 to 7
+Input-B, Input-A
+none
+Output-W
+none
+none
+none
+Output-X
+Next state
+S1
+S3
+S3
+S2
+S5
+S2
+S4
+7(b)(ii)
+Question
+8(a)
+Answer
+1
+Marks
+2
+One mark for reason, one for benefit
+Reason: (Program is) easier to design / implement / test / debug / modify
+Benefit: Easier to check that each stage works as expected
+© Cambridge University Press & Assessment 2024
+Page 10 of 12
+
+--- Page 11 ---
+9618/22
+Question
+8(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Example algorithm based on finding position of first non-space character and
+then using substring function:
+'UNCTION DeleteSpaces (Line : STRING) RETURNS STRIN
+ECLARE NewLine : STRIN
+DECLARE Endofleading : BOOLEAN
+DECLARE Count, NumSpaces : INTEGER
+DECLARE NextChar
+CONSTANT Space
+: CHAR
+Numspaces + 0
+Endofleading ‹ FALSE
+FOR Count + 1 TO LENGTH (Line)
+NextChar + MID (Line, Count, 1)
+IF NextChar
+< Space
+AND EndofLeading = FALSE
+THEN
+NumSpaces ‹ Count - 1 // the number to trim
+EndOfLeading = TRUE
+ENDIF
+NEXT Count
+Newline & RIGHT (Line, LENGTH (Line) - NumSpaces)
+RETURN NewLine
+ENDFUNCTION
+Mark as follows:
+1
+2
+3
+4
+5
+6
+Loop to length of parameter |/ Loop until first non-space
+character in Line
+Extract a character in a loop
+Identify first non-space character in a loop
+Attempt at removing leading spaces in Line
+Leading spaces removed from Line / / Create new string without leading
+space
+Return a string following a reasonable attempt at removing leading spaces
+in Line
+May/June 2024
+Marks
+6
+© Cambridge University Press & Assessment 2024
+Page 11 of 12
+
+--- Page 12 ---
+9618/22
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Question
+8(c)
+Marks
+8
+Example:
+PROCEDURE Stage_2 (F1, F2 : STRING)
+DECLARE Line : STRING
+DECLARE Count : INTEGER
+Count + 0
+OPEN F1 FOR READ
+OPEN F2 FOR APPEND
+WHILE NOT EOF (F1)
+READFILE F1, Line
+Line ‹ DeleteSpaces (Line)
+Line ‹ DeleteComment (Line)
+IF Line <> "" THEN
+WRITEFILE F2, Line
+I skip blank lines
+Count + Count + 1
+ENDIF
+ENDWHILE
+CLOSEFILE F1
+CLOSEFILE F2
+OUTPUT Count, " blank lines were
+removed"
+ENDPROCEDURE
+Mark as follows:
+1
+2
+3
+4
+5
+6
+Procedure heading, parameters, ending
+Open both files in correct modes and subsequently close
+Loop to EOF (F1)
+Read a line from F1 in a loop
+Assign return values from DeleteComment () and DeleteSpaces ()
+in a loop
+Check return value following both MP5 function calls is not an empty
+string and if so write to F2 in a loop
+Count the blank lines in a look
+Output number of blank lines removed following a reasonable attemp
+after the loop
+© Cambridge University Press & Assessment 2024
+Page 12 of 12

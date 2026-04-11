@@ -1,0 +1,553 @@
+--- Page 1 ---
+* CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+MARK SCHEME
+Maximum Mark: 75
+9618/13
+May/June 2025
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2025 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+This document consists of 12 printed pages.
+© Cambridge University Press & Assessment 2025
+[Turn over
+
+--- Page 2 ---
+9618/13
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level
+descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+• •
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© Cambridge University Press & Assessment 2025
+Page 2 of 12
+
+--- Page 3 ---
+9618/13
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Annotations guidance for centres
+Examiners use a system of annotations as a shorthand for communicating their marking decisions to
+one another. Examiners are trained during the standardisation process on how and when to use
+annotations. The purpose of annotations is to inform the standardisation and monitoring processes
+and guide the supervising examiners when they are checking the work of examiners within their team.
+The meaning of annotations and how they are used is specific to each component and is understood
+by all examiners who mark the component.
+We publish annotations in our mark schemes to help centres understand the annotations they may
+see on copies of scripts. Note that there may not be a direct correlation between the number of
+annotations on a script and the mark awarded. Similarly, the use of an annotation may not be an
+indication of the quality of the response.
+The annotations listed below were available to examiners marking this component in this series.
+Annotations
+Annotation
+Meaning
+X
+Correct
+Incorrect
+To indicate where a key word/phrase/code is missing.
+Not relevant or used to separate parts of an answer.
+ww
+Highlighter
+[REP
+NE
+BOD
+NAQ
+SEEN
+Indicates a part of the answer that is incorrect.
+To draw attention to a particular aspect or to indicate where parts of an answer
+have been combined.
+Too vague.
+Repetition
+No examples or not enough.
+Benefit of Doubt.
+Not Answered Question.
+Indicates that work or a page has been seen including blank answer spaces and
+blank pages.
+Follow through.
+Ignore
+© Cambridge University Press & Assessment 2025
+Page 3 of 12
+
+--- Page 4 ---
+9618/13
+Question
+1(a)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Answer
+Marks
+2
+1(a)(ii)
+1(b)
+1 (c)(i)
+1(c)(ii)
+1 mark for correct working:
+e.g.
+2000000 * 16/ (8 * 1000 * 1000)
+1 mark for answer:
+4MB
+1 mark each
+Image:
+: There will be fewer shades of colour available
+so the image does not match the original as detail is lost
+Image file:
+:
+Fewer bits are used to store each pixel
+so less data is stored, therefore the file size is reduced
+1 mark for each correct term:
+Description
+the number of times the amplitude is measured
+per time interval
+the number of bits used to store each
+amplitude measurement
+the type of sound wave before it is recorded by
+a computer
+Sound term
+Sampling rate
+Sampling resolution
+Analogue
+1 mark each to max 2
+: Roses er cac care
+Represents 28 / 216/ etc. characters
+Represents every language and other characters such as emojis
+1 mark for each correctly completed space
+Character
+!
+L
+ü
+Denary
+33
+76
+252
+8-bit Binary
+0010 0001
+0100 1100
+11111100
+Hexadecimal
+21
+4C
+FC
+4
+3
+2
+3
+© Cambridge University Press & Assessment 2025
+Page 4 of 12
+
+--- Page 5 ---
+9618/13
+Question
+2(a)(i)
+2(a)(ii)
+2(b)
+2(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark each to max 2 - max 1 for each set of marks
+:
+Thesenio uni synchronise ho action oring processoduced by the
+system clock
+•
+using / along the control bus
+1 mark each
+•••.
+MAR < [PC] and PC < [PC] + 1
+MDR < [[MAR]I
+CIR < [MDR]
+Correct order
+For example:
+MAR < [PC]
+PC < [PC] + 1
+MDR < [[MAR]]
+CIR < [MDR]
+1 mark each
+•
+•
+Using cache memory improves system performance
+because cache is fast access memory close to the CPU
+which stores frequently used instructions / data
+so that they can be accessed faster than from RAM
+1 mark each to max 2
+e.g.
+HDMI transfers both audio and video using a single cable
+•
+•
+•
+•
+HDMI has a high bandwidth
+Data is transmitted in a stream
+of uncompressed digital signals
+HDMI uses a technology called Transition-Minimized Differential
+Signalling (TMDS)
+May/June 2025
+Marks
+2
+4
+2
+2
+© Cambridge University Press & Assessment 2025
+Page 5 of 12
+
+--- Page 6 ---
+9618/13
+Question
+3(a)
+3(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Answer
+1 mark for each correctly completed term
+Marks
+4
+source/program code
+stops
+immediately/in real-time
+A compiler checks all of the code before attempting to translate the program.
+If any errors are found, they are all reported at the same time and the program
+does not translate or run. If there are no errors found, the compiler produces
+an executable file/.exe which can run without access to the source/program
+code.
+An interpreter translates one line of code and then runs it, before moving to
+the next line of code. If the line of code has an error, the interpreter stops and
+displays the error. The programmer can correct the error immediately/in real-
+time and then the interpreter continues translating from that point.
+1 mark for method and 1 mark for corresponding description
+During transmission
+e.g.
+:
+Encryption // by example such as VPN
+Jumble / encode data so it cannot be decrypted/understood without the
+On computer
+: rememong
+Filter incoming transmissions and stop any that could be attempting
+unauthorised access
+:
+Anti-malware
+Find and delete or quarantine any malware that could delete the data /
+4
+Jumble / encode data so it cannot be decrypted / understood without the
+key
+:
+Physical method // by example
+For example, the computer storing the data cannot be accessed without
+the key to the room
+© Cambridge University Press & Assessment 2025
+Page 6 of 12
+
+--- Page 7 ---
+9618/13
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Answer
+Question
+3(c)
+Marks
+4
+3(d)
+1 mark each to max 4
+:
+A webserver stores all the data for each player
+Each player is on a client computer // The player's web browser is the
+client
+•.
+•
+that sends requests over the internet to the web server
+the server performs the required action in the game
+the server updates the data in the game
+the server sends the results to the player
+1 mark each to max 3
+e.g.
+:
+There is no / limited access to legal advice
+in case action is taken against them
+There are fewer networking opportunities
+•
+•
+•
+•
+•
+so they could miss out on contacts / jobs
+There would be less access to training
+There would be no clear laid out ethical guidelines
+and / or people to discuss potential ethical problems with
+possibly leading to inappropriate / unethical actions
+which might lead to legal proceedings / recourse
+3
+© Cambridge University Press & Assessment 2025
+Page 7 of 12
+
+--- Page 8 ---
+9618/13
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Question
+4(a)
+Answer
+Marks
+2
+4(b)
+1 mark for each correct statement
+X = B NOR (A NOR C)
+Y = (B AND C) XOR NOT D
+1 mark for 1st 4 rows
+1 mark for 2nd 4 rows
+A
+0
+B
+0
+2
+Working space
+0
+0
+1
+1
+0
+X
+1
+1
+1
+0
+0
+0
+1
+0
+1
+© Cambridge University Press & Assessment 2025
+Page 8 of 12
+
+--- Page 9 ---
+9618/13
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+5(a)(i)
+Marks
+3
+1 mark for each shaded section
+Instruction
+address
+ACC
+50
+47
+Memory address
+51
+52
+48
+49
+53
+50
+500
+501
+502
+504
+501
+502
+503
+505
+506
+507
+50
+49
+48
+48
+38
+38
+5(a)(ii)
+5(b)
+1 mark for addressing mode, 1 mark for matching description
+:
+Direct
+The operand is the address of the data
+:
+Indirect
+The operand points to the memory location which is the address of the
+:
+Indexed
+The address of the data is formed by adding the contents of the Index
+Register (IX) to the operand
+1 mark for each correct instruction
+e.g.
+AND B00000000 / #0 / &0
+OR B10000000 / #128 / &80
+4
+2
+© Cambridge University Press & Assessment 2025
+Page 9 of 12
+
+--- Page 10 ---
+9618/13
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Answer
+Question
+6(a)
+1 mark for each correct relationship
+Marks
+4
+CUSTOMER
+ORDER
+SUPPLIER
+ORDER_PRODUCI
+PRODUCT
+6(b)
+1 mark each
+• .
+•
+INSERT INTO PRODUCT
+VALUES with opening and closing brackets
+Inserting ProductID, ProductName and SupplierlD correctly as strings
+including quotation marks into correct fields
+Inserting quantity and cost correctly into correct fields
+Example 1:
+INSERT INTO PRODUCT
+VALUES ('002323", "Blue ball point 2 mm", 50, 5.00, "SFX223");
+Example 2:
+INSERT INTO PRODUCT (ProductID, ProductName, QuantitylnBox, Cost,
+SupplierlD)
+VALUES ('002323", "Blue ball point 2 mm", 50, 5.00, "SFX223");
+4
+© Cambridge University Press & Assessment 2025
+Page 10 of 12
+
+--- Page 11 ---
+9618/13
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+6(c)
+Marks
+4
+6(d)(i)
+6(d)(ii)
+1 mark each
+:
+Selection of customer name and counting any field from ORDER as an
+appropriate identifier
+Joining tables ORDER and CUSTOMER
+AND (or WHERE) clause: Collected = FALSE
+Grouping by customer ID or customer name
+Example 1:
+SELECT CustomerName, COUNT(OrderlD) AS NotCollected
+FROM ORDER, CUSTOMER
+WHERE ORDER. CustomerID = CUSTOMER.CustomerID
+AND Collected = FALSE
+GROUP BY CUSTOMER. CustomerID
+Example 2:
+SELECT CustomerName, COUNT(OrderID) AS NotCollected
+FROM ORDER INNER JOIN CUSTOMER
+ON ORDER. CustomerID = CUSTOMER.CustomerID
+WHERE Collected = FALSE
+GROUP BY CUSTOMER. CustomerID
+1 mark each to max 3
+e.g.
+••
+•
+Relationships
+Views
+Data types
+Validation rules
+1 mark each to max 3
+3
+3
+••.
+To create / modify / delete database objects
+To create a form for data input
+To add tools to a form
+••.
+for example, drop-down boxes / buttons etc.
+To design a report to show the output in an organised manner
+To add a menu to enable users to choose different actions / run different
+queries
+© Cambridge University Press & Assessment 2025
+Page 11 of 12
+
+--- Page 12 ---
+9618/13
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+7(a)(i)
+Marks
+1
+7(a)(i)
+7(b)
+7(c)
+1 mark for
+0010 1000
+1 mark for
+1111 0011
+1 mark for
+11110101
++1110111100011
+(1) 10100110
+Answer: (1) 10100110
+1 mark for showing binary subtraction (any method)
+Direct subtraction:
+0 11'01011 00
+00011111110
+01000110
+Adding the two's complement:
+01100100
+111111100010
+(1)01 000110
+1 mark for answer 0100 0110
+1
+1
+2
+© Cambridge University Press & Assessment 2025
+Page 12 of 12

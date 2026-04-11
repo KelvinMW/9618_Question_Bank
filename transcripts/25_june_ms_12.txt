@@ -1,0 +1,581 @@
+--- Page 1 ---
+* CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+MARK SCHEME
+Maximum Mark: 75
+9618/12
+May/June 2025
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2025 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+This document consists of 12 printed pages.
+© Cambridge University Press & Assessment 2025
+[Turn over
+
+--- Page 2 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level
+descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+• •
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© Cambridge University Press & Assessment 2025
+Page 2 of 12
+
+--- Page 3 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Annotations guidance for centres
+Examiners use a system of annotations as a shorthand for communicating their marking decisions to
+one another. Examiners are trained during the standardisation process on how and when to use
+annotations. The purpose of annotations is to inform the standardisation and monitoring processes
+and guide the supervising examiners when they are checking the work of examiners within their team.
+The meaning of annotations and how they are used is specific to each component and is understood
+by all examiners who mark the component.
+We publish annotations in our mark schemes to help centres understand the annotations they may
+see on copies of scripts. Note that there may not be a direct correlation between the number of
+annotations on a script and the mark awarded. Similarly, the use of an annotation may not be an
+indication of the quality of the response.
+The annotations listed below were available to examiners marking this component in this series.
+Annotations
+Annotation
+Meaning
+X
+Correct
+Incorrect
+To indicate where a key word/phrase/code is missing.
+Not relevant or used to separate parts of an answer.
+ww
+Highlighter
+[REP
+NE
+BOD
+NAQ
+SEEN
+Indicates a part of the answer that is incorrect.
+To draw attention to a particular aspect or to indicate where parts of an answer
+have been combined.
+Too vague.
+Repetition
+No examples or not enough.
+Benefit of Doubt.
+Not Answered Question.
+Indicates that work or a page has been seen including blank answer spaces and
+blank pages.
+Follow through.
+Ignore
+© Cambridge University Press & Assessment 2025
+Page 3 of 12
+
+--- Page 4 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+1(a)
+Marks
+3
+1(b)
+1(c)
+1 mark for each correct row
+Incorrect
+statement
+number
+1
+Corrected statement
+3
+4
+The Program Counter (PC) stores the address of the
+next instruction to be fetched from memory.
+The Control Unit (CU) sends signals to other components
+on the control bus.
+The Memory Data Register (MDR) holds data to be
+stored in the memory address in the MAR. // The
+Memory Data Register (MDR) holds data read from the
+memory address in the MAR
+1 mark for name, 1 mark for corresponding role
+e.g.
+:
+Current Instruction Register // CIR
+To store the instruction to be decoded / executed next
+:
+Status register // SR
+To contain bits that can be referenced individually to indicate a state or
+event
+..
+Interrupt register
+To store details of any interrupts that have occurred
+1 mark each to max 4
+..
+•..
+•
+•
+At the start / end of FE cycle the interrupt register is checked
+The priority of any interrupts waiting is checked
+if the priority of the interrupt is higher than the current process
+the contents of the registers are stored on the stack
+The relevant Interrupt Service Routine (ISR) / interrupt handler is called to
+process the interrupt
+When the ISR has finished, a further check is made for higher priority
+interpre interrupts of higher priority, the register contents are restored
+and the next FE cycle continues
+2
+4
+© Cambridge University Press & Assessment 2025
+Page 4 of 12
+
+--- Page 5 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Answer
+Question
+2(a)
+Marks
+2
+2(b)(i)
+2(b) (ii)
+2(c)
+1 mark for:
+0010 0010 1110
+1 mark for:
+22E
+1 mark for:
+-30
+1 mark for smallest, 1 mark for largest
+Smallest: 1000 0000
+Largest: 01111111
+1 mark for application and 1 mark for corresponding justification
+an application that performs financial / banking calculations
+• because financial transactions use only two decimal places and must be
+accurate, no accumulating / rounding errors and it is difficult to represent
+decimal values exactly in normal binary.
+Or
+•
+•
+•
+Or
+•
+•
+Or
+electronic displays
+because visual displays only need to show individual digits
+because conversion between denary and BCD is straightforward
+The storage of the date and time in the BIOS of a PC
+because conversion between denary and BCD is more straightforward
+•
+Barcode systems
+•
+because conversion between denary and BCD can be accurately
+completed
+1
+2
+2
+© Cambridge University Press & Assessment 2025
+Page 5 of 12
+
+--- Page 6 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Answer
+Question
+3(a)
+Marks
+4
+3(b)
+3(c)(i)
+3(с) (ii)
+1 mark each to max 4
+e.g.
+Uses image recognition // optical character recognition
+to analyse a photograph/pixels to identify the location of characters within
+an image
+•
+in order to convert the pattern of pixels into individual characters
+Uses natural language
+to combine the characters into words
+and compare the words to database to identify a match in the language of
+the writing
+• it may also predict what is missing / incomplete / from what has been
+•
+then compare the words to a database of the user's chosen language to
+find a match and translate
+..
+Uses text-to-speech
+to generate the audio waveforms corresponding to the words
+1 mark each to max 2
+e.g.
+•
+It can help people with visual impairment to identify which products to
+purchase
+••
+It can help people who cannot understand the language
+It can help to overcome learning / reading difficulties
+1 mark each to max 3
+•
+•
+•
+The program is usually sold for a fee
+Users have no access to source code
+It protects the intellectual rights of the programmer / developer
+Users cannot legally alter or share the program
+•
+There are limitations on the use of the software e.g. number of times it
+can be installed
+•
+Support and maintenance is usually provided e.g. updates, bug fixes etc.
+1 mark each to max 3
+e.g.
+•
+••.
+The source code would be accessible therefore it could be changed
+which might lead to the program outputting an incorrect response
+so people could purchase the wrong item
+which might have serious consequences // by example e.g. allergies
+2
+3
+3
+© Cambridge University Press & Assessment 2025
+Page 6 of 12
+
+--- Page 7 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Question
+4(a)
+Answer
+Marks
+2
+4(b)
+1 mark each:
+:
+X = (R NOR S) XOR T
+TY = (TAND U) OR U
+1 mark for first four rows, 1 mark for second four rows
+A
+B
+Working space
+2
+1
+1
+1
+0
+0
+1
+0
+0
+1
+1
+1
+1
+1
+0
+0
+1
+© Cambridge University Press & Assessment 2025
+Page 7 of 12
+
+--- Page 8 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+5(a)
+Marks
+2
+5(b)
+5 (c)(i)
+5 (c)(ii)
+1 mark each to max 2
+•..
+To remove the many-to-many relationship
+between CHARACTER and ITEM tables
+To allow each character to have many items // to allow each item to be
+purchased for many characters
+:
+by creating a linking table
+between the characters and the items purchased for each one
+1 mark for the three single Primary Keys
+1 mark for the composite key
+USER(Username, Password, DateOfBirth)
+CHARACTER(CharacterName, CharacterID, Username, Level, Money)
+ITEM(ItemName, MinimumLevel, Cost)
+CHARACTER_ITEM(CharacterID, ItemName)
+1 mark for method 1 mark for matching explanation
+e.g.
+:
+Access rights
+appropriate permissions for the table USER are needed to read or edit
+the data
+:
+A password for the database or the USER table
+prevents users without the password from accessing the data
+:
+Encrypting the database
+stops users without the decryption key from decoding / understanding the
+:
+Views
+users can be given a view to the database that does not include the data
+in the table USER
+1 mark each to max 2
+e.g.
+Validation
+Enforce referential integrity
+•
+•
+Cascade update / delete
+Ensuring the database is normalised
+2
+4
+2
+© Cambridge University Press & Assessment 2025
+Page 8 of 12
+
+--- Page 9 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+5(d) (i)
+Marks
+3
+5 (d)(ii)
+1 mark for each point
+:
+Select COUNT
+FROM (using correct tables) and joining
+WHERE (or AND) condition for correct username
+Example 1:
+SELECT COUNT(ItemName)
+FROM CHARACTER_ITEM INNER JOIN CHARACTER
+ON CHARACTER. CharacterlD = CHARACTER_ITEM CharacterID
+WHERE CHARACTER.Username = "KAT123";
+Example 2:
+SELECT COUNT(ItemName)
+FROM CHARACTER_ITEM, CHARACTER
+WHERE CHARACTER. CharacterlD = CHARACTERLITEM.CharacterlD
+AND CHARACTER.Username = "KAT123";
+1 mark for each point
+• UPDATE character
+• SET level and money
+• WHERE condition
+e.g.
+UPDATE CHARACTER
+SET Level = 3, Money = 10000.00
+WHERE CharacterID = "0002";
+3
+© Cambridge University Press & Assessment 2025
+Page 9 of 12
+
+--- Page 10 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+6(a)
+Marks
+2
+6(b)
+6(c)
+1 mark each to max 2
+•
+•
+•
+In a WAN devices can connect over a larger geographical area in a LAN
+devices connect over a smaller geographical area
+A WAN may use non-dedicated hardware the hardware in a LAN is
+usually dedicated
+A WAN uses external / not company owned transmission media // the
+transmission media for a LAN is usually company owned
+1 mark each to max 4
+e.g.
+Land is split into cells designed for maximum line of sight
+Each cell has a tower with an antenna which receives and transmits data
+Data is transmitted between the tower and the phone
+Data transmission is wireless using low power radio signals/frequencies
+Multiple devices can communicate simultaneously with the same tower
+1 mark for each correct word
+•...
+full stops
+hexadecimal
+zeros
+128
+dynamic
+•
+private
+IPv4 is made of four groups of 8-bit numbers separated by full stops. Each
+IPv4 address is 32 bits.
+IPv6 is made of eight groups of 4 hexadecimal numbers separated by colons.
+Multiple consecutive groups of zeros can be replaced with a double colon.
+Each IPv6 address is 128 bits.
+A dynamic IP address can change each time the computer connects to a
+network.
+A private IP address can only be accessed by other devices in the same LAN
+and is assigned by the router within the LAN.
+4
+6
+© Cambridge University Press & Assessment 2025
+Page 10 of 12
+
+--- Page 11 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+6(d)
+Marks
+4
+1 mark each
+:
+Server directly connected to the switch
+Four labelled computers all connected directly to the switch
+Two printers each directly connected to the switch / server / a computer
+Router / modem directly connected to the switch / server for internet
+access
+e.g. Example only
+Router
+Server
+Printer2
+Switch
+Printer1
+Computer 1
+Computer 4
+Computer2
+Computer 3
+6(e)
+1 mark each to max 3
+e.g.
+To store the MAC addresses of devices connected to it
+To receive packets from devices
+To forward packets directly to the intended recipient
+To provide a central point of connection for the network
+to enable connected devices to communicate
+3
+© Cambridge University Press & Assessment 2025
+Page 11 of 12
+
+--- Page 12 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Answer
+Question
+7(a)(i)
+Marks
+3
+1 mark for each shaded section
+Instruction
+address
+ACC
+Memory address
+10
+11
+12
+12
+10
+13
+22
+14
+22
+100
+101
+102
+103
+104
+107
+12
+22
+22
+22
+7(a)(ii)
+7(a) (iii)
+7(b)(i)
+7(b) (ii)
+1 mark from:
+• The number 10 will be loaded into the ACC instead of 12/ contents of
+address 10
+•
+The addition will give 20 not 22 so the comparison will fail and result in an
+infinite loop
+1 mark for name of mode, 1 mark for matching description
+e.g.
+• •
+Indirect
+The operand points to the memory location that contains the address of
+the data
+:
+Indexed
+The address of the data is formed by adding the contents of the Index
+Register (IX) to the operand
+:
+Relative
+1 mark for:
+1111 1111
+The address is calculated using its distance from a base address
+1 mark for:
+0000 0011
+1
+2
+1
+© Cambridge University Press & Assessment 2025
+Page 12 of 12

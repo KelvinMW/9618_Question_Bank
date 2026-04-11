@@ -1,0 +1,359 @@
+--- Page 1 ---
+5 Cambridge Assessment
+a International Education
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+9618/33
+October/November 2023
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided.
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages. Any blank pages are indicated
+DC (AP) 333121
+© UCLES 2023
+[Turn over
+
+--- Page 2 ---
+2
+Real numbers are stored in a computer using floating-point representation with:
+12 bits for the mantissa
+4 bits for the exponent
+two's complement form for both the mantissa and exponent.
+(a) Write the normalised floating-point representation of +65.25 in this system.
+Show your working.
+Mantissa
+Exponent
+Working
+13]
+(b) Explain the problem that will occur in storing the normalised floating-point representation of
++65.20 in this system.
+12]
+© UCLES 2023
+9618/33/0/N/23
+
+--- Page 3 ---
+3
+2 (a) Draw one line to connect each protocol to its most appropriate use.
+Protocol
+Use
+to provide peer-to-peer file sharing
+HTTP
+when retrieving email messages from a
+mail server over a TCP/IP connection
+BitTorrent
+when transmitting hypertext documents
+SMTP
+to map MAC addresses onto IP addresses
+IMAP
+when sending email messages towards
+the intended destination
+[4]
+(b) Outline the purpose of the Link layer in the TCP/IP protocol suite.
+12]
+Describe what is meant by enumerated and pointer data types.
+Enumer.
+Pointer
+[4]
+© UCLES 2023
+9618/33/0/N/23
+[Turn over
+
+--- Page 4 ---
+4
+4 (a) Describe sequential and random methods of file organisation.
+Sequential file organisation
+Random file organisation
+(b) Outline the process of sequential access for serial and sequential files.
+5
+Describe the features of SISD and MIMD computer architectures.
+SISD
+MIMD
+© UCLES 2023
+9618/33/0/N/23
+[4]
+12]
+[4]
+
+--- Page 5 ---
+5
+BLANK PAGE
+© UCLES 2023
+9618/33/0/N/23
+Turn over
+
+--- Page 6 ---
+6
+6 This diagram represents a logic circuit.
+A
+B
+C
+D
+(a) Complete the truth table for the given logic circuit.
+A
+B
+D
+0
+1
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+0
+1
+1
+1
+© UCLES 2023
+9618/33/0/N/23
+Z
+Working space
+Z
+[3]
+
+--- Page 7 ---
+7
+(b) Simplify the given Boolean expression using Boolean algebra.
+Show your working.
+Y = À.B.C.D + A.B.C.D + Ã.B.C.D + Ã.B.C.D
+13]
+7 (a) A student buys a new computer.
+State one benefit to the student of a user interface and give an example.
+Benefit
+Example
+12]
+(b) Two of the process states are the running state and the ready state.
+Identify one other process state.
+11]
+(c) Outline conditions under which a process could change from the running state to the ready
+state.
+12]
+© UCLES 2023
+9618/33/0/N/23
+[Turn over
+
+--- Page 8 ---
+8
+8 (a) A pseudocode algorithm finds a customer account record in a random file and outputs it. The
+records are stored using the user-defined data type TAccount.
+TYPE TAccount
+DECLARE AccountNumber : INTEGER
+DECLARE LastName : STRING
+DECLARE FirstName : STRING
+DECLARE Address : STRING
+DECLARE ContactNumber : STRING
+ENDTYPE
+Complete the file handling pseudocode.
+The function Hash () takes the customer account number as a parameter, calculates and
+returns the hash value.
+DECLARE Customer
+: TAccount
+DECLARE Location
+: INTEGER
+DECLARE AccountFile
+: STRING
+< "AccountRecords. dat"
+OUTPUT
+"Please
+..... AccountFile
+enter an account number"
+INPUT Customer. AccountNumber
+Location ‹ Hash (.
+SEEK
+..)
+, Location
+... AccountFile,
+1l output customer record
+OUTPUT Customer
+CLOSEFILE AccountFile
+[5]
+(b) Define the term exception handling.
+11]
+(c) State two possible causes of an exception.
+12]
+© UCLES 2023
+9618/33/0/N/23
+
+--- Page 9 ---
+9
+(a) (i) Write the infix expression for this Reverse Polish Notation (RPN) expression:
+52 - 54 + * 9 1
+12]
+(ii) Show how the contents of the following stack will change as the RPN expression in
+part (a)(i) is evaluated
+14]
+(b) Explain how a stack can be used to evaluate RPN expressions.
+[3]
+© UCLES 2023
+9618/33/0/N/23
+Turn over
+
+--- Page 10 ---
+10
+10 A stack is to be set up using the information in the table.
+Identifier
+BasePointer
+Data type
+INTEGER
+Description
+points to the bottom of the stack
+TopPointer
+INTEGER
+points to the top of the stack
+Stack
+REAL
+1D array to implement the stack
+A constant, with identifier Capacity, limits the size of the stack to 25 items.
+(a) Write the pseudocode for the required declarations.
+(b) Complete the pseudocode function Pop () to pop an item from Stack.
+I popping an item from the stack
+FUNCTION Pop ()..
+DECLARE Item : REAL
+Item < O
+BasePointer THEN
+Item +
+ELSE
+ENDIF
+TopPointer
+OUTPUT
+"The
+stack is empty - error"
+ENDFUNCTION
+© UCLES 2023
+9618/33/0/N/23
+13]
+[5]
+
+--- Page 11 ---
+11
+(c) Compare and contrast the queue and stack Abstract Data Types (ADT).
+12]
+© UCLES 2023
+9618/33/0/N/23
+[Turn over
+
+--- Page 12 ---
+12
+11 A declarative programming language is used to represent subjects that students can choose to
+study.
+Students must choose two subjects.
+01 subject (mathematics).
+02 subject (physics).
+03 subject (chemistry).
+04 subject (computer_science).
+05 subject (geography).
+06 subject (history).
+07 subject (english).
+08 subject (biology).
+09 student (tomaz).
+10 student (josephine).
+11 student (elspeth).
+12 student (nico).
+13 student (teresa).
+14 student (pietre).
+15 choicel(tomaz, mathematics).
+16 choicel(teresa, chemistry).
+17 choicel(pietre, mathematics).
+18 choicel(nico, mathematics).
+19 choicel (elspeth, chemistry).
+20 choice2 (tomaz, computer_science) •
+21 choice2(nico, geography).
+These clauses have the meanings:
+Clause
+01
+09
+15
+20
+Meaning
+Mathematics is a subject.
+Tomaz is a student.
+Tomaz has chosen mathematics as his first choice.
+Tomaz has chosen computer science as his second choice.
+© UCLES 2023
+9618/33/0/N/23
+
+--- Page 13 ---
+13
+(a) Anthony is a student who would like to study history and geography.
+Write additional clauses to represent this information.
+22
+23
+24
+13]
+(b) Using the variable x, the goal:
+choicel (X, chemistry)
+returns
+X = teresa, elspeth
+Write the result returned by the goal:
+choicel (X, mathematics)
+X=....
+.... [1]
+(c) Students must choose two different subjects such that:
+N may choose S, if N is a student and S is a subject and N has not chosen S as the first
+choice.
+Write this as a rule.
+may_choose_subject (N, S)
+IF
+..... [4]
+© UCLES 2023
+9618/33/0/N/23
+[Turn over
+
+--- Page 14 ---
+14
+12 Artificial neural networks have played a significant role in the development of machine learning.
+Explain what is meant by the term artificial neural network.
+... 4
+© UCLES 2023
+9618/33/0/N/23
+
+--- Page 15 ---
+15
+BLANK PAGE
+© UCLES 2023
+9618/33/0/N/23
+
+--- Page 16 ---
+16
+BLANK PAGE
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2023
+9618/33/0/N/23

@@ -1,0 +1,461 @@
+--- Page 1 ---
+alls Cambridge Assessment
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+MARK SCHEME
+Maximum Mark: 75
+9618/12
+May/June 2023
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2023 series for most
+Cambridge IGCSE, Cambridge International A and AS Level and Cambridge Pre-U components, and some
+Cambridge O Level components.
+This document consists of 10 printed pages.
+© UCLES 2023
+[Turn over
+
+--- Page 2 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2023
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct / valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2023
+Page 2 of 10
+
+--- Page 3 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Question
+1(a)
+Marks
+2
+1(b)
+1(c)
+1 mark each to max 2
+•
+Allows the sharing of files/data // Allows communication between the
+devices
+:
+Allows the sharing of resources e.g. hardware / software (applications)
+Allows central management// by example, backup, security, etc.
+1 mark each to max 2
+:
+Covers a small geographical area
+The infrastructure is privately owned // not controlled by external
+organisations
+1 mark each to max 2
+:
+Each computer directly connected only to the server...
+….. all components correctly labelled
+2
+2
+Computer
+Server
+Computer 4
+Computer
+Computer
+1 (d)
+1(e)
+1 mark each to max 3
+: ford suitel
+For data transmission over standard / universal wired / cabled network
+connections
+Uses Carrier Sense Multiple Access / Collision Detection (CSMA/CD)
+Data is transmitted in frames
+... each frame has a source and destination (IP/MAC) address
+... and error checking data (so damaged frames can be resent)
+1 mark each
+: The lens also do most or theis omn processing for indepent
+The clients also do most of their own processing/work independently /I
+most of the resources are installed locally
+3
+2
+© UCLES 2023
+Page 3 of 10
+
+--- Page 4 ---
+9618/12
+Question
+2(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for each correct feature or description
+Feature
+Data dictionary
+May/June 2023
+Marks
+4
+Query processor
+Logical schema
+Developer interface
+Description
+Data about the data in the database // data
+about the structure of the database //
+metadata for a database
+Software that allows the user to enter
+criteria, then finds and returns the
+appropriate result // software that
+Solesses and executes queries written in
+A model of a database that is not specific
+to one DBMS
+A software tool that allows the user to
+create items such as tables, forms and
+reports
+2(b)
+1 mark each to max 3
+3
+2(c)(i)
+•
+Referential integrity ensures that every foreign key has a corresponding
+primary key
+Referential Integrity prevents records from being added / deleted /
+modified incorrectly
+Referential Integrity makes sure that if data is changed in one place the
+change is reflected in all related records
+Referential Integrity makes sure any queries return accurate and complete
+results
+1 mark each to max 2
+•
+•
+Presence check to make sure that the (rider level) is entered
+Look-up / Existence check to make sure the rider level is only Beginner,
+Intermediate or Advanced
+Length check to make sure the rider level entered is either 8 or 12
+characters
+Type check to make sure the rider level is alphanumeric
+2
+© UCLES 2023
+Page 4 of 10
+
+--- Page 5 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Question
+2 (c)(ii)
+Marks
+1 mark each
+4
+2(c)(ii)
+FROM table HORSE
+WHERE with Intermediate / Beginner
+OR with Beginner / Intermediate
+Example answer:
+SELECT Name
+FROM HORSE
+WHERE Horselevel = "Intermediate"
+OR Horselevel =
+"Beginner";
+1 mark each
+..
+SUM should be COUNT /I SELECT COUNT(STUDENT.RiderLevel)
+The WHERE statement needs the table names before each field name
+// WHERE STUDENT.StudentID = LESSON.StudentID
+The OR should be AND /I AND Date = #09/09/2023#
+Beginner is missing the speech marks // STUDENT.RiderLevel =
+"Beginner";
+4
+© UCLES 2023
+Page 5 of 10
+
+--- Page 6 ---
+9618/12
+Question
+3(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for generates object code to second pass
+1 mark for reads source code one line at a time to both boxes
+1 mark for removes white space and adds labels to first pass
+Action
+May/June 2023
+Marks
+3
+Pass
+generates object code
+first
+reads the source code
+one line at a time
+removes white space
+second
+3(b)
+adds labels to the
+symbol table
+1 mark for each correct term
+Direct addressing is when the operand holds the memory address of the data.
+Indirect addressing is when the operand holds a memory address that stores
+the memory address of the data.
+Immediate addressing is when the operand is the data.
+3
+Question
+4(a)
+4(b)
+Answer
+216 // 65536
+1 mark for working; 1 mark for answer
+Working: +120 = 0111 1000
+•
+Answer: 1000 0111
+Marks
+1
+2
+© UCLES 2023
+Page 6 of 10
+
+--- Page 7 ---
+9618/12
+Question
+4(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2023
+Answer
+1 mark for working; 1 mark for answer
+Working: A04 = (10 * 162) +4
+|I A04 = (10 * 256) + 4
+|/ A04 = 1010 0000 0100
+Answer: 2564
+0011 1100
+Marks
+2
+4 (d)
+Question
+5(a)
+Answer
+1
+Marks
+2
+1 mark each to max 2
+Examples:
+Interrupt
+5(b)
+5(c) (i)
+5(c)(ii)
+1 mark for description; 1 mark for corresponding explanation
+Examples
+: Increase number of cores
+Each core can independently carry out a process at the same time // so
+that more instructions are performed in parallel
+Increase RAM capacity
+... allowing more applications to reside in memory at the same time,
+saving disk access times
+:
+Increase cache memory
+More data can be stored in fast access so less time is spent accessing
+from RAM
+: More etchodesoled
+More Fetch-Decode-Execute (FDE) cycles can run each second / per unit
+time
+1 mark for a correct answer
+Can be synchronous or asynchronous
+USB-3 is full duplex and earlier versions are half-duplex
+1 mark for identification of a suitable port
+Examples
+: Displa
+DisplayPort
+4
+1
+1
+© UCLES 2023
+Page 7 of 10
+
+--- Page 8 ---
+9618/12
+Question
+5(d) (i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+5
+5(d) (ii)
+6(a)
+1 mark each to max 5
+•
+Manages the scheduling of processes // decides which order to run
+processes
+:
+•
+•
+Manages which resources the processes require
+... such as allocating memory
+Enables processes to share data
+Prevents interference between processes I/ resolution of conflicts
+Handles the process queue
+It allows multi-tasking / multi-processing
+... by ensuring fair access, handling priorities and handling interrupts
+1 mark each to max 2
+•
+To help users to set-up / configure / analyse / optimise / maintain the
+computer...
+:
+... by for example, making memory allocation more efficient
+...by for example, checking the system for faults
+1 mark for correct XOR and AND gates, with correct inputs
+1 mark for correct NOT and NOR gates with correct inputs
+R
+2
+2
+-=
+6(b)
+1 mark for first 4 rows
+1 mark for last 4 rows
+P
+0
+0
+0
+1
+1
+1
+1
+Q
+0
+1
+0
+0
+1
+1
+2
+R
+Working space
+Z
+1
+0
+1
+1
+1
+1
+1
+© UCLES 2023
+Page 8 of 10
+
+--- Page 9 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Question
+7(a)(i)
+Marks
+2
+7(a)(ii)
+7(b)
+1 mark each to max 2
+Set of pre-written / pre-compiled / pre-tested subroutines
+... which can be called in other programs
+... by installing/importing the library
+1 mark for each bullet point. Mark in pairs; 1 mark for a benefit and 1 mark for
+an appropriate expansion
+:
+(main) memory requirements for program is reduced
+... as dynamic link library is loaded only once / when required
+:
+the executable file size of the program using the DLL will be smaller
+... because the executable does not contain (all) the library routines
+• maintenance not needed to be done by the programmer
+• ... because the DLL is separate from program
+• no need to recompile the main program when changes are made to DLL
+….. because changes / improvements/ error correction to the DLL file code
+are done independently of the main program
+• A single DLL file can be made available to several application programs
+... Saving space in memory / easing the pressure on memory
+No mark for choice. 1 mark each to max 3 for justification
+Interpreter
+• Allows the developer to make real-time changes
+• ... so the program can be debugged at each stage
+• ... the effect of any changes made by the developer can be seen
+immediately
+• The developer can test when incomplete
+... so small parts can be tested without having to test the rest of the
+program
+:
+... if one section does not work others can still be tested
+To avoid dependent errors
+Compiler
+• The developer can debug multiple errors simultaneously
+: Produces an executable fle
+... so that the developer can test the program multiple times without
+recompiling
+4
+3
+© UCLES 2023
+Page 9 of 10
+
+--- Page 10 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Question
+7(c)
+Marks
+4
+7(d)
+1 mark each
+Breakpoints:
+• Stop the code at a specific line to check the current progress / values
+Dynamic syntax checks:
+• Highlight / underline / colour syntax errors as the code is entered
+Context-sensitive prompts:
+• Suggest the code to add // automatically complete statements
+Single stepping:
+• Run the code one line at a time so the values can be checked
+1 mark each to max 3
+•
+Uses speech recognition
+... which identifies key phrases / words spoken
+... and matches these to a database
+... and generates the most likely sentence / command / word
+3
+© UCLES 2023
+Page 10 of 10

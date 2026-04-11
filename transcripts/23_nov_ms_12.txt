@@ -1,0 +1,622 @@
+--- Page 1 ---
+15 Cambridge Assessmen
+International Educatior
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+MARK SCHEME
+Maximum Mark: 75
+9618/12
+October/November 2023
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2023 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+This document consists of 11 printed pages.
+© UCLES 2023
+[Turn over
+
+--- Page 2 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+•
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+•
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2023
+Page 2 of 11
+
+--- Page 3 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1(a)
+1(b)
+October/November
+2023
+Marks
+1
+2
+1 (c)(i)
+1 (c)(ii)
+1 mark for:
+•
+infra-red / proximity (sensor)
+1 mark for each bullet point (max 2)
+• .
+Actuator generates a signal / causes an action / converts electrical
+energy into a mechanical force
+... to push an arm // to open a trap door // to pick up the chocolate bar
+with the incorrect weight
+1 mark for each feature (max 2)
+:
+Dedicated to a single task // limited number of functions
+Built into a larger system // integrated into a larger system
+An embedded system must contain a processor, memory and an /O
+capability // Dedicated hardware
+1 mark for each bullet point (max 1)
+•
+Difficult to change / update the firmware by the user // Difficult to upgrade
+devices to take advantage of new technology
+:
+Cannot be easily adapted for another task
+Troubleshooting faults/upgrading is a specialist task
+Devices are often thrown away rather than repaired as difficult to upgrade
+or repair
+2
+1
+Question
+2(a)
+Answer
+Marks
+3
+1 mark for each term (max 3)
+Entity:
+• An object about which data can be stored
+Primary key:
+The unique attribute / combination of attributes used to identify the
+record / tuple
+Referential integrity:
+Makes sure that if data is changed in one place the change is reflected in
+all related records - cascading update/delete
+Makes sure that data that does not exist cannot be referenced
+•
+Ensures that every foreign key has a corresponding primary key
+|I A logical dependency of a foreign key on a primary key
+•
+•
+Ensures that the data in the database is consistent / up to date
+Prevents records from being added/deleted/modified incorrectly
+Makes sure any queries return accurate and complete results
+© UCLES 2023
+Page 3 of 11
+
+--- Page 4 ---
+9618/12
+Question
+2(b)
+2(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for each bullet point (max 4)
+Max 2 if no descriptions
+: Backup alicaly taprocedures
+….. automatically takes copies of the database and store off site on a
+regular basis / weekly, etc.
+•
+... so that the data can be recovered if lost
+•
+Use of access rights
+... some users are given different access permissions to different tables
+... read/write, read only, full access, etc.
+•
+:
+Views
+.... different users are able to see different parts of the database
+... only see what users need to see // by example
+•
+•
+Record and table locking
+... prevents simultaneous access to data
+.... so updates are not lost // data is not overwritten
+Encryption
+.... the data is turned into ciphertext
+•
+... so it cannot be understood without a decryption key
+1 mark for each bullet point (max 4)
+•
+•
+•
+Identify repeating groups of attributes...
+... Subject and SubjectCode
+Ensure each field is atomic
+... StudentName should be split into e.g. FirstName and LastName
+Identify the primary key for the table
+Answer
+October/November
+2023
+Marks
+4
+4
+Question
+3(a)
+Marks
+1
+3(b) (i)
+3(b)(ii)
+3(b) iii)
+1 mark for:
+Either
+• kibibyte = 1,024 bytes // 21° bytes and
+megabyte = 1000 kilobytes //1 000 000 bytes // 103 kilobytes // 10º bytes
+• kibi is binary prefix and mega is denary prefix
+1111 0011 1100
+|865
+470
+1
+1
+1
+© UCLES 2023
+Page 4 of 11
+
+--- Page 5 ---
+9618/12
+Question
+3(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Answer
+Marks
+1 mark for a correct application
+2
+1 mark for a corresponding justification
+•
+An application that performs financial / banking calculations
+•
+... because it is difficult to represent decimal values exactly in normal
+binary and financial transactions use only two decimal places and must
+be accurate, no accumulating errors
+Or
+•
+Electronic displays, e.g. calculators, digital clocks
+... because visual displays only need to show individual digits
+•
+... because conversion between denary and BCD is easier
+Or
+The storage of the date and time in the BIOS of a PC
+... because conversion with denary is easier
+Answer
+Question
+4(a)
+Marks
+3
+4(b)
+5(a)
+1 mark for each bullet point
+•
+A NAND B
+NOT (B XOR C)
+Final NAND
+X = A NAND B NAND (NOT (B XOR C))
+1 mark for each set of rows (shaded)
+A
+B
+0
+0
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1 mark for:
+Either
+C
+0
+1
+1
+1
+1
+X
+1
+1
+1
+1
+1
+• Ensuring data can only be accessed by / disclosed to authorised persons
+•
+Ensuring data cannot be accessed by / disclosed to unauthorised
+persons
+2
+1
+© UCLES 2023
+Page 5 of 11
+
+--- Page 6 ---
+9618/12
+Question
+5(b)
+5(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for each bullet point (max 1)
+•
+•
+Ensuring the accuracy / completeness / consistency of data (during /
+after processing)
+Ensuring the data is up to date
+1 mark for each bullet point.
+Phishing email (max 2)
+: The emmal pretends to be from an oticial body,
+.. persuading individuals to disclose private information // by example
+such as bank details
+•
+...or requesting authentication by redirecting to an unofficial/unauthorised
+website // inviting a user to click a link
+Spyware (max 2)
+October/November
+2023
+Marks
+1
+4
+... which secretly records the user's actions / keystrokes on the computer
+... and sends logs of the actions to a third party
+Question
+6(a)
+Answer
+Marks
+3
+1 mark for each bullet point (max 3)
+Lossy compression (ticked)
+: Loss ot quality will not be noticed
+Needs to be viewed in real time so less bandwidth needed if file size
+smaller
+•
+Smaller file sizes will reduce buffering so the video will play more
+•
+smoothly
+Viewers may watch on different devices, so may not need high quality
+resolution
+Lossless compression (ticked)
+: Original recording may not have been made in high resolution
+Could be streaming to high bandwidth devices
+•
+•
+The reduction in the file size is sufficient for the receiving device
+Viewers do not want any loss of quality
+© UCLES 2023
+Page 6 of 11
+
+--- Page 7 ---
+9618/12
+Question
+6(b)
+6(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Answer
+Marks
+1 mark for each bullet point (max 3)
+Increase sampling resolution
+:
+.... the number of bits used for each sample is increased
+... there will be more values available to represent each sample // more
+amplitudes can be represented
+... each binary amplitude/note in the digital recording is closer to the
+analogue amplitude/note
+... quantisation errors are reduced
+.... the digital soundwave is closer to the original analogue soundwave
+Decrease sampling resolution
+:
+•.
+... the number of bits used for each sample is decreased
+.... there will be fewer values available to represent each sample // fewer
+amplitudes can be stored
+... each binary amplitude/note in the digital recording is further from the
+analogue amplitude/note
+... quantisation errors are increased
+... the digital soundwave is less like the original analogue soundwave
+1 mark for answer, 1 mark for working
+Answer: 2.5 mebibytes
+Working:
+(2048 × 1024 × 10) / (8 x 1024 x 1024)
+3
+2
+Question
+7(a)
+Answer
+Marks
+2
+7(b) (i)
+1 mark for each bullet point (max 2)
+•..
+Only has four groups of digits // IPv6 has eight groups
+Uses dotted notation instead of colons
+Because it is a 32 bit / 4 byte address // IPv6 is 128 bits / 16 bytes
+1 mark for server only connected to router
+1 mark for two laptop computers connected only to router
+Server
+Router
+2
+Laptop 1
+Laptop 2
+© UCLES 2023
+Page 7 of 11
+
+--- Page 8 ---
+9618/12
+Question
+7(b) (ii)
+7(b) (iii)
+7(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Answer
+Marks
+1 mark for each bullet point (max 2)
+..
+The data from the sending laptop is transmitted to the router
+The data has address of recipient
+•
+The router determines recipient's destination address
+... by using a routing table
+•
+The router transmits data directly / only to recipient
+1 mark for each use (max 2) and
+1 mark for corresponding expansion (max 2)
+•
+•
+•.
+To improve the security of the LAN
+... so that devices do not receive unintended data
+... so that a compromised device does not expose the whole network
+... so not all devices can access all segments
+•
+•
+To make the network management easier
+... because faults can be isolated more efficiently
+...by appropriate example
+•
+To make the network easier to expand // For better control of network
+growth
+... by allowing for greater range of IP addresses to be available
+•
+•
+•
+To improve network performance
+To reduce network congestion
+... by localising network communications I/ by dividing data between
+segments
+... so that devices are not flooded with data
+... because data sent between devices on the same subnet stays within
+the subnet
+1 mark for each bullet point (max 3)
+To monitor the communications channel
+To send data only when there is no data being transmitted / the line is
+quiet / idle
+•
+To detect a collision and then stop transmissions of further data //
+transmit a jamming signal
+•
+To calculate a random wait time / back-off time
+..
+...then retransmit the data after that random wait time
+Increase random time if multiple collisions
+2
+4
+3
+© UCLES 2023
+Page 8 of 11
+
+--- Page 9 ---
+9618/12
+Question
+7(d)
+Question
+8(a)
+8(b)
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Answer
+Marks
+4
+1 mark for each highlighted area
+Type of IP address
+Description
+public IP address
+an IP address that is assigned to a device
+to allow direct access on the internet
+static IP address
+an IP address that is fixed / doesn't
+change each time a device re-joins a LAN
+/ network
+private IP address
+an IP address used for internal LAN
+communication only
+dynamic IP address
+an IP address that may be refreshed /
+changed each time a device re-joins a
+LAN / network
+Answer
+1 mark for each bullet point (max 1)
+To hide the complexities of the hardware from the user
+To provide a platform for software to run
+To provide a user interface
+1 mark for the name of the utility software
+2 marks for the explanation
+•
+•
+•.
+•
+Defragmentation software
+... because over time saving and deleting of small files fragments the disk
+... the software makes (individual) files contiguous
+... so access time to the files is improved
+... because head movement is reduced
+•
+•
+Disk contents analysis/disk repair software
+... to identify and mark bad sectors
+... to restore corrupted files
+... to recover lost data (due to hardware failure)
+•
+File compression
+...to reduce the size of files
+... which saves storage and memory space // by example
+... and reduces transmission time // by example
+•
+•
+Disk formatter
+... to prepare a disk for use // set up the file system
+... to partition the disc
+... to delete all the data from the disc
+Page 9 of 11
+Marks
+1
+3
+
+--- Page 10 ---
+9618/12
+Question
+8(c) (i)
+8(c) (ii)
+Question
+9(a)
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Answer
+Marks
+1
+1 mark for each bullet point (max 1)
+:
+USB / Universal Serial Bus
+HDMI
+1 mark for each component (max 3)
+Buffers
+• A buffer temporarily holds data until it is ready to be transmitted to the
+device
+Address Bus
+• The address of the data to be written to the device (in RAM) is carried
+on the address bus
+Data Bus
+• All data to be written to the device / buffer is carried on the data bus
+Answer
+3
+Marks
+4
+1 mark for each bullet point
+•
+•
+IN - Input and output of data
+ADD - Arithmetic operations
+JPE - Unconditional and conditional instructions
+CMI - Compare instructions
+Page 10 of 11
+
+--- Page 11 ---
+9618/12
+Question
+9(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Answer
+Marks
+4
+1 mark for each set of shaded rows
+Instruction
+address
+ACC
+IX
+10
+12
+13
+14
+15
+16
+17
+18
+19
+20
+13
+14
+15
+21
+22
+49
+51
+49
+65
+65
+1
+100
+Memory address
+101
+110 111
+51
+65
+Output
+49
+65
+A
+© UCLES 2023
+Page 11 of 11

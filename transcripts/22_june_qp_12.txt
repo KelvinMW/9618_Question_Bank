@@ -1,0 +1,438 @@
+--- Page 1 ---
+5 Cambridge Assessmen
+shes International Educatior
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+9618/12
+May/June 2022
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages. Any blank pages are indicated
+DC (KN) 301924/3
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+2
+(a) Draw one line from each image representation term to its correct definition.
+Term
+Definition
+Pixel
+The number of pixels wide by the number of
+pixels high
+Bit depth
+The smallest identifiable component of an
+image
+Image resolution
+Stores data about the image file, e.g. file
+format, number of bits per pixel, file size
+File header
+The number of bits used to represent each
+colour
+[3]
+(b) The following section of a bitmap image is 10 pixels wide and 5 pixels high. In this example,
+each colour is represented by a letter, e.g. B is blue.
+B
+B
+B
+B
+B
+B
+Y
+Y
+P
+Y
+Y
+Y
+P
+R
+R
+M
+R
+P
+K
+T
+B
+P
+Y
+Y
+Y
+P
+R
+R
+P
+P
+P
+R
+The complete image can have up to 256 colours.
+B
+Y
+T
+G
+R
+B
+Y
+R
+P
+R
+B
+Y
+R
+P
+R
+(i) Identify the smallest number of bits that can be used to represent each colour in the
+complete bitmap image.
+..... [1]
+© UCLES 2022
+9618/12/M/J/22
+
+--- Page 3 ---
+3
+(ii) Calculate an estimate for the file size of the section of the bitmap image shown, giving
+your answer in bytes. Use your answer from part (b)(i).
+Show your working.
+Working
+Answer
+bytes
+12]
+(c) Describe how changing the colour depth of an image affects its file size.
+12]
+(d) The first row of pixels in the image from part (b) is shown:
+Explain how this row of pixels can be compressed using lossless compression.
+......... [2]
+© UCLES 2022
+9618/12/M/J/22
+[Turn over
+
+--- Page 4 ---
+4
+2 A car has several features.
+(a) One feature is a lane detection system. This system monitors the lines on either side of the
+lane. If the car gets too close to one line, the system automatically moves the car away from
+the line.
+Explain why the lane detection system is an example of an embedded system.
+.. 12]
+(b) Two other features:
+record the number of miles travelled in the current journey, from when the engine is
+turned on to when it is turned off
+record the total number of miles the car has travelled since it was built.
+Identify the data that will be stored in the primary and secondary storage of the car for these
+two features.
+Primary
+Secondary
+12]
+(c) The car has a resistive touchscreen for the user to select options.
+Tick (/) one box in each row to show whether each statement about a resistive touchscreen
+is true or talse.
+Statement
+True
+False
+The screen always has five different layers
+\ processor determines the horizontal an
+ertical coordinates of the point of contac
+The touchscreen will work if any object
+touches the screen
+[11
+© UCLES 2022
+9618/12/M/J/22
+
+--- Page 5 ---
+5
+3
+The table shows part of the instruction set for a processor. The processor has one general purpose
+register, the Accumulator (ACC).
+Instruction
+Opcode
+Operand
+AND
+Explanation
+Bitwise AND operation of the contents of ACC with the operand
+AND
+<address>
+Bitwise AND operation of the contents of ACC with the contents
+of <address>
+XOR #n
+Bitwise XOR operation of the contents of ACC with the operand
+XOR <address>
+Bitwise XOR operation of the contents of ACC with the contents
+of <address>
+OR #n
+Bitwise OR operation of the contents of ACC with the operand
+OR
+<address>
+Bitwise OR operation of the contents of ACC with the contents of
+<address>
+<address> can be an absolute or a symbolic address
+# denotes a denary number, e.g. #123
+(a) The ACC currently contains the following positive binary integer:
+0
+1
+1
+0
+1
+1
+Write the bit manipulation instruction that would change the binary integer in ACC to:
+1
+1
+1
+1
+1
+1
+1
+1
+Opcode ...
+Operand ....
+12]
+(b) The ACC currently contains the following positive binary integer:
+0
+1
+1
+0
+1
+1
+Write the bit manipulation instruction that would change the binary integer in ACC to:
+1
+1
+1
+1
+Opcode ...
+…... Operand
+12]
+© UCLES 2022
+9618/12/M/J/22
+[Turn over
+
+--- Page 6 ---
+6
+(c) Convert the following positive binary integer into hexadecimal.
+01111110
+11]
+(d) A three-place logical shift to the left is performed on the following positive binary integer.
+Show the result of this logical shift.
+01111110
+.. [1]
+(e) Convert the denary numbers 127 and 12 to 8-bit binary and then perform the subtraction
+12 - 127 in binary.
+Show your working.
+127 in binary
+12 in binary
+12 - 127 in binary ..
+13]
+© UCLES 2022
+9618/12/M/J/22
+
+--- Page 7 ---
+7
+A school stores personal data about its staff and students on its computer system.
+(a) Explain why the school needs to keep both its data and its computer system secure from
+unauthorised access.
+Data
+Computer system
+12]
+(b) Complete the table by identifying two security threats to the data on a computer.
+Describe each threat.
+Give a different prevention method for each threat.
+Threat
+Description
+Prevention
+method
+[6]
+(c) Data is encrypted when it is transmitted within the school network, or externally such as over
+the internet.
+Describe what is meant by encryption and explain why it is used.
+© UCLES 2022
+9618/12/M/J/22
+12]
+[Turn over
+
+--- Page 8 ---
+8
+5 A database, FILMS, stores information about films and actors.
+Part of the database is shown:
+ACTOR (ActorID, FirstName, LastName, DateOfBirth)
+FILM_FACT (FilmID, FilmTitle, ReleaseDate, Category)
+FILM_ACTOR (ActorID, FilmID)
+(a) Complete the entity-relationship (E-R) diagram.
+ACTOR
+FILM_FACT
+FILM_ACTOR
+12]
+(b) A composite primary key consists of two or more attributes that together form the primary key.
+Explain why the table FILM_ACTOR has a composite primary key.
+... 12]
+© UCLES 2022
+9618/12/M/J/22
+
+--- Page 9 ---
+9
+(c) Complete the SQL script to return the IDs of all the actors in the film with the title Cinderella.
+SELECT
+FROM FILM_ACTOR
+INNER JOIN
+ON FILM_FACT.FilmID =
+WHERE FILM_FACT.FilmTitle
+=
+14]
+(d) Write an SQL script to count the number of films that were released in January 2022.
+13]
+© UCLES 2022
+9618/12/M/J/22
+[Turn over
+
+--- Page 10 ---
+10
+(e) A Database Management System (DBMS) is used to create and manipulate the database.
+Complete the descriptions of the features and tools found in a DBMS using the given terms.
+Not all terms will be used.
+Boolean
+data dictionary
+data redundancy
+field names
+input
+interface
+logical schema
+normalisation
+operating system
+output
+primary keys
+query
+structure
+A DBMS provides data management. This includes the development of a
+... that stores information about the data stored, such as
+and..
+The
+.... uses methods, such as an E-R diagram, to show the
+structure of the database and its relationships.
+The
+.... processor allows a user to perform searches to find
+specific data. The DBMS also provides a developer
+... that
+allows the user to create tables, forms and reports.
+16]
+© UCLES 2022
+9618/12/M/J/22
+
+--- Page 11 ---
+11
+6 A programmer uses language translators when writing and testing a program.
+(a) Describe the operation of a compiler.
+12]
+(b) Describe the operation of an interpreter.
+[2]
+(c) Explain how a programmer can make use of a typical Integrated Development Environment
+(IDE) when writing and testing a program.
+Writing
+Testing
+14]
+© UCLES 2022
+9618/12/M/J/22
+[Turn over
+
+--- Page 12 ---
+12
+7 Complete the truth table for the following logic expression:
+X = (A XOR B) AND NOT C
+Working space
+A
+B
+C
+0
+0
+0
+0
+1
+1
+1
+0
+1
+1
+0
+0
+1
+1
+1
+1
+1
+0
+1
+8 Describe one application of Artificial Intelligence (Al).
+© UCLES 2022
+9618/12/M/J/22
+x
+[2]
+13]
+
+--- Page 13 ---
+13
+(a) The following incomplete table contains four network devices and their descriptions.
+Complete the table by writing the missing devices and missing descriptions.
+Device
+Description
+Receives and sends data between two networks operating on the
+same protocol
+Wireless
+Network
+Interface Card
+(WNIC)
+Restores the digital signal so it can be transmitted over greater
+distances
+Wireless Access
+Point (WAP)
+[4]
+(b) Describe three differences between fibre-optic cables and copper cables.
+1
+2
+3
+[3]
+© UCLES 2022
+9618/12/M/J/22
+[Turn over
+
+--- Page 14 ---
+14
+(c) Ethernet uses Carrier Sense Multiple Access/Collision Detection (CSMA/CD).
+Describe CSMA/CD. J
+... 4
+© UCLES 2022
+9618/12/M/J/22
+
+--- Page 15 ---
+15
+BLANK PAGE
+© UCLES 2022
+9618/12/M/J/22
+
+--- Page 16 ---
+16
+BLANK PAGE
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2022
+9618/12/M/J/22

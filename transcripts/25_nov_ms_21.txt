@@ -1,0 +1,789 @@
+--- Page 1 ---
+* CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+MARK SCHEME
+Maximum Mark: 75
+9618/21
+October/November 2025
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2025 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+components.
+This document consists of 19 printed pages.
+© Cambridge University Press & Assessment 2025
+[Turn over
+
+--- Page 2 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2025
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level
+descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+•..
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+• marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© Cambridge University Press & Assessment 2025
+Page 2 of 19
+
+--- Page 3 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Annotations guidance for centres
+Examiners use a system of annotations as a shorthand for communicating their marking decisions to
+one another. Examiners are trained during the standardisation process on how and when to use
+annotations. The purpose of annotations is to inform the standard isation and monitoring processes
+and guide the supervising examiners when they are checking the work of examiners within their team.
+The meaning of annotations and how they are used is specific to each component and is understood
+by all examiners who mark the component.
+We publish annotations in our mark schemes to help centres understand the annotations they may
+see on copies of scripts. Note that there may not be a direct correlation between the number of
+annotations on a script and the mark awarded. Similarly, the use of an annotation may not be an
+indication of the quality of the response.
+The annotations listed below were available to examiners marking this component in this series.
+Annotations
+Annotation
+BOD
+Highlighted text
+NAQ
+NE
+Meaning
+Benefit of the doubt
+To indicate where a key word/phrase/code is missing
+Incorrect
+Follow through
+Indicate a point in an answer
+To draw attention to a particular aspect or to indicate where parts of an answer
+have been combined
+Ignore
+Not answered question
+No examples or not enough
+Not relevant or used to separate parts of an answer
+Off-page
+comment
+[REP
+SEEN
+Allows comments to be entered at the bottom of the RM marking window and
+then displayed when the associated question item is navigated to.
+Repetition
+Indicates that work or a page has been seen including blank answer spaces
+and blank pages.
+Correct
+© Cambridge University Press & Assessment 2025
+Page 3 of 19
+
+--- Page 4 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2025
+Annotation
+Meaning
+Too vague
+© Cambridge University Press & Assessment 2025
+Page 4 of 19
+
+--- Page 5 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Mark scheme abbreviations
+/
+underline
+max
+()
+separates alternative words / phrases within a marking point
+separates alternative answers within a marking point
+actual word given must be used by candidate (grammatical variants accepted)
+indicates the maximum number of marks that can be awarded
+the word / phrase in brackets is not required, but sets the context
+© Cambridge University Press & Assessment 2025
+Page 5 of 19
+
+--- Page 6 ---
+9618/21
+Question
+1(a)
+1(b)
+1(c)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+Marks
+4
+Expression
+Mystring & 'X' & Mystring
+Mychar + MID ("ABCD", 1/2/314, 1)
+MyString + NUM_TO_STR (DAY / MONTH / YEAR / DAYINDEX
+(MyDOB))
+MyInt < INT (LENGTH (MyString) / 2)
+One mark per row
+3
+Test description
+Test method
+carried out as soon as a program module has been
+alpha
+coded
+carried out as program modules are being
+integration
+combined
+completed by the developers without referring to
+black-box
+the code
+completed by the customer
+acceptance / beta
+One mark per row (2 to 4)
+One mark per point:
+reference to a breakpoint
+reference to single stepping
+Correct explanation of both e.g. to stop program execution at specific
+point / line / statement / instruction and to execute one line / statement /
+instruction at a time to (locate an/the error)
+One mark for each bulleted point
+3
+© Cambridge University Press & Assessment 2025
+Page 6 of 19
+
+--- Page 7 ---
+9618/21
+Question
+2
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+Marks
+5
+Example solution
+START
+set Index to
+Set Count to
+No
+Set Indexto Index + 1
+Is Index = 31?
+Is Data [Index]
+=
+"'?
+Yes
+Yes
+No
+Set Count to Count + 1
+Output Count
+Output Datal Index]
+END
+Mark as follows:
+Initialisation of variables used as array index and count
+2 Loop through exactly 30 elements in the array
+3
+Test for empty string in current array element // Test for non-empty string
+4
+Increment count if appropriate in a loop
+5
+Both required outputs under correct conditions with correct outputs
+© Cambridge University Press & Assessment 2025
+Page 7 of 19
+
+--- Page 8 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2025
+Question
+2
+Answer
+Marks
+Alternative solution
+Checking for empty string first
+START
+Set toexto
+Is Data[Index] ="*''
+No
+Yes
+Output Data[index]
+T
+Set Count to Count + 1
+Set Index to Index + 1
+Set Index to Index + 1
+Is Index > 30?
+>
+No
+Yes
+END
+Output Total
+© Cambridge University Press & Assessment 2025
+Page 8 of 19
+
+--- Page 9 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(a)(i)
+October/November
+2025
+Marks
+4
+3(a) (i)
+3(b)
+Pseudocode:
+TYPE RentalRecord
+DECLARE RentalID : STRING
+DECLARE
+CarID : INTEGER
+DECLARE DisCode : CHAR
+DECLARE Start : DATE
+DECLARE Duration : INTEGER
+DECLARE Completed
+: BOOLEAN
+ENDTYPE
+Mark as follows:
+1
+One mark for TYPE RentalRecord and ENDTYPE statements
+One mark for RentalID and CarID declared correctly
+3
+One mark for DisCode and Start declared correctly
+4
+One mark for Duration and Completed declared correctly
+DECLARE Rental : ARRAY[1:5001 OF RentalRecord
+One mark per underlined phrase
+One mark per point:
+2
+Different data types held (for each rental) under a single identifier
+Allows for iteration through rentals/records //
+Can access rentals/records in a loop //
+Can (directly) access a specific rental/record using an (array) index
+3
+Simplifies the code/program / less code needed / reduces code
+duplication // Makes code/program easier to understand //
+Makes testing / debugging easier //
+Program maintenance easier
+2
+3
+© Cambridge University Press & Assessment 2025
+Page 9 of 19
+
+--- Page 10 ---
+9618/21
+Question
+4(a)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+Marks
+6
+Example solution - conditional:
+PROCEDURE Store ()
+DECLARE ThisNum, LastNum : REAL
+DECLARE Index : INTEGER |/ index to global array
+INPUT ThisNum
+LastNum < ThisNum
+Number[1] ‹ ThisNum
+INPUT ThisNum
+Index + 2
+WHILE Index < 21 AND ThisNum > LastNum
+Number [Index]
+* ThisNum
+LastNum ‹ ThisNum
+Index ‹ Index + 1
+IF Index ‹ 21 THEN
+INPUT
+ThisNum
+ENDIF
+ENDWHILE
+OUTPUT Index - 1,
+" values were stored in the array"
+ENDPROCEDURE
+Alternative loop:
+/ Loop without using Last Num
+WHILE Index < 21 AND ThisNumNum > Number[Index - 1]
+Number [Index]
+- ThisNum
+Index + Index + 1
+IF Index < 21 THEN
+Iskip input if array full
+INPUT ThisNum
+ENDIF
+ENDWHILE
+Mark as follows:
+1 Declare local variables Index as integer, ThisNum and LastNum as real
+2 Input value and assign to first element
+3 Attempt at conditional loop including both tests
+1 Completely correct conditional loop including both tests
+Assign input value to current element if greater than previous element
+and input next value in a loop
+6
+Final output giving attempted count of elements stored plus message
+after a loop
+© Cambridge University Press & Assessment 2025
+Page 10 of 19
+
+--- Page 11 ---
+9618/21
+Question
+4(a)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+Marks
+Alternative FOR loop example solution:
+PROCEDURE Store ()
+DECLARE ThisNum, LastNum : REAL
+DECLARE Index : INTEGER |/ index to global array
+DECLARE Count : INTEGER
+INPUT ThisNum
+LastNum < ThisNum
+Number [1] ‹ ThisNum
+Count < 1
+INPUT ThisNum
+FOR Index < 2 IO 20
+IF ThisNum > LastNum THEN
+Number [Index| < ThisNum
+LastNum & ThisNum
+Count + Count + 1
+IF Index
+< 20 THEN
+INPUT ThisNum
+ENDIF
+ELSE
+BREAK
+ENDIF
+NEXT Index
+OUTPUT Count,
+ENDPROCEDURE
+" values were stored in the array"
+Alternative loop:
+Count + 1
+INPUT ThisNum
+FOR Index + 2 TO 20
+IF ThisNum > Number [Index - 1] THEN
+Number [Index]
+* ThisNum
+Count ‹ Count + 1
+IF Index ‹ 20 THEN
+INPUT ThisNum
+ENDIF
+ELSE
+BREAK
+ENDIF
+NEXT Index
+Mark as follows:
+Declare local variables Index as integer, ThisNum and LastNum as real
+2 Input value and assign to first element
+4
+Count-controlled loop
+Count-controlled loop with BREAK if current value greater than previous
+5
+6
+in a loop input value to current element following correct comparison
+Final output giving count of elements stored plus message following a
+reasonable attempt after loop
+© Cambridge University Press & Assessment 2025
+Page 11 of 19
+
+--- Page 12 ---
+9618/21
+Question
+4(b)(i)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+Marks
+2
+4(b) (ii)
+Question
+5(a) (i)
+5(a) (ii)
+5(a)(iii)
+5(b) (i)
+5(b) (ii)
+Question
+6(a)
+One mark per point:
+1 The amount of values stored (in a text file) is not fixed / not limited
+(other than by secondary storage available) //
+2
+The amount values stored is not limited to the size of the array
+The data is stored permanently / non-volatile //
+Data can be restored / reused without re-entering values
+Each (real) value would have to be converted to a string
+Answer
+It is a value that is invalid as an (array) index // not in the range of valid
+(index) values
+To test whether the current element / value at index matches the given /
+search string / data / parameter
+The value of FoundAt is only updated to the (current) index if it currently
+stores the initial value / -1
+FoundAt is not updated when it currently stores any other value than -1
+The loop continues after the (first instance) of the search value / string /
+matching element has been found
+Comparisons/tests continue to be made even if the search value / string /
+matching element has been found
+One mark per point
+Construct:
+Justification:
+A conditional loop
+The loop / search can be terminated as soon as the (first
+occurrence of) Searchstring / required value / required
+string / matching element is found
+Answer
+Number:
+Any number where the first two digits sum to 5 / 15 and the
+last three digits are 623
+Explanation:
+The remainder is the same / /I
+The sum of the (first four) digits is the same / 13
+1
+Marks
+1
+1
+1
+1
+2
+Marks
+2
+© Cambridge University Press & Assessment 2025
+Page 12 of 19
+
+--- Page 13 ---
+9618/21
+Question
+6(b)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+Example solution - conversion of Number to a string
+Marks
+7
+DECLARE NumString : STRING
+Total + 0
+NumString + NUM_IO_STR (Number)
+1))
+FOR Index + 1 TO LENGTH (NumString)
+Iotal + Total + STR_IO_NUM(MID (NumString, Index,
+NEXT Index
+CheckDigit + Total MOD 10
+Number < Number * 10 + CheckDigit
+// NumString ‹ Numstring & NUM TO STR (CheckDigit)
+RETURN Number |/ STR_TO_NUM (NumString)
+ENDFUNCTION
+Mark as follows:
+1
+2
+7
+Function heading, parameters return type and ending
+Initialise Total
+Convert Number to a string and loop for length of converted Number
+attempt to form sum of digits in a loop
+completely correct sum of digits in a loop
+Calculate CheckDigit
+Add CheckDigit to original number multiplied by 10 and return number
+Convert CheckDigit to a character and appended to Numstring and
+then convert to a number and return
+© Cambridge University Press & Assessment 2025
+Page 13 of 19
+
+--- Page 14 ---
+9618/21
+Question
+6(b)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+Marks
+Example Solution - no conversion to string
+FUNCTION Generate (Number : INTEGER) RETURNS INTEGER
+DECLARE Iotal, CheckDigit, Remainder, Num: INTEGER
+Num < Number
+Total < 0
+WHILE Num > 0
+Remainder + Num MOD 10
+Num + Num DIV 10
+Total ‹ Total + Remainder
+ENDWHILE
+CheckDigit + Total MOD 10
+Number ‹ Number * 10 + CheckDigit
+RETURN Number
+ENDFUNCTION
+Mark as follows:
+Function heading, parameters return type and ending
+Initialise Total
+Loop while Num > 0
+attempt to use MOD and DIV to sum successive digits in Number
+completely correct sum of digits
+Calculate CheckDigit
+Add CheckDigit to original number and return number
+© Cambridge University Press & Assessment 2025
+Page
+14 of 19
+
+--- Page 15 ---
+9618/21
+Question
+7(a)
+Cambridge International AS & A Level - Mark Scheme
+October/November
+PUBLISHED
+2025
+Answer
+Marks
+5
+A2 | X2
+S3
+A2 | X4
+START
+S1
+A3 | X3
+A1 | X1
+A1 | X1
+S2
+A3
+A4 | X4
+A4 | X4
+One mark for each:
+1 Label A1 | X1 added on line from S1 to state labelled S2
+States S3, S4 and S5 labelled
+Line from S2 to S5 with event label A4|X4
+Lines from S3 with correct event labels including 'loop' label
+Lines from S4 with correct event labels including 'loop'
+© Cambridge University Press & Assessment 2025
+Page 15 of 19
+
+--- Page 16 ---
+9618/21
+Question
+7(b)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+Marks
+5
+Setup
+H1
+Restart
+Modify
+Final
+R2
+Update
+Confirm
+One mark per point:
+1
+2
+3
+4
+5
+All boxes correctly labellec
+Iteration arrow
+Parameter to Restart
+Return value from Modify and parameter to Final
+BYREF parameter to Update
+© Cambridge University Press & Assessment 2025
+Page 16 of 19
+
+--- Page 17 ---
+9618/21
+Question
+8(a)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+Marks
+7
+Example solution:
+PROCEDURE OKToBorrow (ThisStudentID : STRING)
+DECLARE Index, Count :
+INTEGER
+CONSTANT Max = 5
+Count < 0
+Index + 1 / 0
+WHILE Index <= 5000 / Index <= 4999 AND Count < Max
+IF Loan [Index]. StudentID
+= ThisstudentID AND
+Loan [Index]. OnLoan =
+TRUE THEN
+Count + Count + 1
+ENDIF
+Index ‹ Index +
+ENDWHILE
+IF Count < Max THEN
+OUT PUT
+"Student
+may borrow another book"
+ELSE
+OUTPUT "Student may not borrow another book"
+ENDIF
+ENDPROCEDURE
+Mark as follows:
+1
+Procedure heading, parameter and ending
+2 Loop through all elements in Loan array
+3
+... terminating if Max reached
+Test for correct StudentID field in a loop
+...and that OnLoan = TRUE in a loop
+... if so, then increment Count in a loop
+Output an appropriate message in both cases after the loop
+© Cambridge University Press & Assessment 2025
+Page 17 of 19
+
+--- Page 18 ---
+9618/21
+Question
+8(b)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+Marks
+8
+Example solution:
+FUNCTION ReturnBook (ThisStudentID, ThisBookID : STRING)
+RETURNS BOOLEAN
+DECLARE Index : INTEGER
+Index ‹ 1
+WHILE Index < 5001
+IF Loan [Index]. StudentID = ThisStudentID AND
+Loan [Index|. BookID = ThisBookID THEN
+IF Loan [Index]. OnLoan = TRUE THEN // Not
+returned
+Loan [Index|. OnLoan ‹ FALSE |/ Mark as
+returned now
+RETURN TRUE //Found and not already returned
+ELSE
+ENDIF
+ENDIF
+Index ‹ Index + 1
+ENDWHILE
+RETURN FALSE
+/ Found and already returned
+RETURN False |/ loan not found
+ENDFUNCTION
+Mark as follows:
+1
+Loop through all elements in Loan array
+2
+...and book loan not found
+3
+4
+Attempt to reference an individual data item in a loop
+Correct test for student ID and correct BookID in a loop
+5
+... If book not returned yet, then set OnLoan field to FALSE
+6 RETURN TRUE if book loan Found and not already returned
+7 RETURN FALSE if book loan Found and loan already returned
+8
+RETURN FALSE if book loan not found
+Alterantive example solution - not immediate return
+FUNCTION ReturnBook (ThisstudentID, ThisBookID : STRING)
+RETURNS BOOLEAN
+DECLARE Index : INTEGER
+DECLARE Found, OK : BOOLEAN
+Index < 1
+Found + FALSE
+OK < TRUE
+© Cambridge University Press & Assessment 2025
+Page 18 of 19
+
+--- Page 19 ---
+9618/21
+Question
+8(b)
+8(c)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+Marks
+WHILE Index < 5001 AND NOT Found
+F Loan [Index|. StudentID = ThisStudentID AN
+-
+oan [Index].BookID = ThisBookID THE
+Found < TRUE
+IF Loan [Index]. OnLoan = FALSE THEN // Already
+returned
+OK < FALSE
+ELSE
+Loan [Index|. OnLoan & FALSE |/ Mark as
+returned now
+ENDIF
+ENDIF
+Index ‹ Index + 1
+ENDWHILE
+RETURN Found AND OK
+ENDFUNCTION
+Award marks for reference to following design features:
+2
+Change to existing Record:
+1
+Store date due back as a new data item / in the loan record
+2 Store date of loan and the loan length category as new data items / in the
+loan record
+Max 1
+New Record
+3
+New Records with Category (and Loan length field)
+Change to Program:
+4
+(Use the loan length category of a book to) calculate the date due date
+5
+Compare due date with today's date (to check if overdue / to calculate
+6
+fine)
+Map loan length category to length of loan / date due back
+Max 1
+Max 2 marks
+© Cambridge University Press & Assessment 2025
+Page 19 of 19

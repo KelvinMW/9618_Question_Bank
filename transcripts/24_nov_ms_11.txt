@@ -1,0 +1,513 @@
+--- Page 1 ---
+* CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+MARK SCHEME
+Maximum Mark: 75
+9618/11
+October/November 2024
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2024 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+This document consists of 9 printed pages.
+© Cambridge University Press & Assessment 2024
+[Turn over
+
+--- Page 2 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level
+descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+•
+the specific content of the mark scheme or the generic level descriptors for the question
+..
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© Cambridge University Press & Assessment 2024
+Page 2 of 9
+
+--- Page 3 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1(a)
+October/November
+2024
+Marks
+1
+1 (b)(i)
+1 (b)(ii)
+1(b)(iii)*
+1(c)
+1(d)
+1 mark for:
+•
+•
+A tebibyte = 1024 gibibytes / 1 048 576 kibibytes / 240 bytes whereas a
+gigabyte = 1000 megabytes / 1 000 000 kilobytes / 109 bytes
+Tebi is binary prefix giga is denary prefix
+1 mark for:
+C67
+1 mark for:
+- 1641
+1 mark for:
+573
+1 mark for working 1 mark for answer.
+Working
+Using the two's complement and adding:
+23 in binary = 00010111 so minus 23 is 11101001
+0100 1010
++ 1110 1001
+(1)0011 0011
+Direct subtraction:
+0100 1010
+= 0001 0111
+0011 0011
+Answer: 0011 0011
+1 mark from:
+The answer cannot be represented in the number of bits available
+The answer is larger than the maximum positive number that can be
+stored in the register
+The answer is smaller than the most negative number that can be stored
+in the register
+1
+1
+1
+2
+1
+© Cambridge University Press & Assessment 2024
+Page 3 of 9
+
+--- Page 4 ---
+9618/11
+Question
+2(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for limitation and 2 marks for corresponding explanation
+October/November
+2024
+Marks
+3
+2(b)(i)
+e.g.
+Data redundancy // data duplication
+:
+Separate linked tables are used
+Data items are stored once so reduces data duplication / data
+redundancy
+Data inconsistency / Poor data integrity
+: Data changed once in one place will automatically update elsewhere
+Linked data cannot be entered differently in two tables
+• Referential integrity can be enforced
+The data structure used depends on the application
+... and queries are not dependent on the structure of the data
+... and changes to the data do not require programs to be re-written
+1 mark for each correct relation
+REPAIR_PART
+PART
+3
+REPAIR
+CUSTOMER
+2(b)(ii)
+1 mark for each bullet point
+•
+Create table REPAIR_PART with opening and closing brackets, all
+statements inside the brackets
+•
+•
+PartID and RepairNumber as varchar (or equivalent)
+Quantity as integer
+At least 1 appropriate constraint
+•
+Dual primary key
+For example:
+CREATE TABLE REPAIR PART (
+PartID VARCHAR (20) NOT NULL,
+RepairNumber VARCHAR (4) NOT NULL,
+Quantity INT NOT NULL,
+PRIMARY
+KEY
+(PartID, RepairNumber)
+5
+) ;
+© Cambridge University Press & Assessment 2024
+Page 4 of 9
+
+--- Page 5 ---
+9618/11
+Question
+2(b) (iii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Answer
+Marks
+3
+2(c)
+1 mark for each bullet point
+•..
+Select SUM of Amount Due
+From the correct table and one correct condition
+Second correct condition
+SELECT SUM (AmountDue)
+FROM INVOICE
+WHERE SupplierID = "JK675" AND Paid = FALSE;
+1 mark for each correct definition
+Database Term
+Referential Integrity
+3
+Candidate Key
+Tuple
+Definition
+All duplicate entries of data between tables are
+consistent // all foreign keys are matched to an
+appropriate primary key
+A field that could be a primary key but is not // an
+attribute or smallest set of attributes in a table where
+no tuple has the same value
+A row / record in a table // one instance of an entity in
+a table
+Question
+3(a)
+3(b) (i)
+Answer
+1 mark for system clock and 1 mark for Control Unit
+System clock
+: To synchronise aporansmis
+....by creating and transmitting timing signals on the control bus
+Control Unit
+:
+Sends/receives control signals along control bus
+Reads an instruction from the contents of the memory location whose
+address is stored in PC
+:
+•
+Coordinates/synchronises the activity of other components in the CPU
+Manages the execution of instructions
+Controls communication between the components in the CPU
+1 mark for the feature, 1 mark max for the matching reason
+e.g.
+Feature: clock speed
+• Higher clock speed means that more F-E cycles are executed per second
+// Higher clock speed results in more throughput
+Feature: bus width
+•
+Larger bus width means that more data transferred at the same time
+Marks
+2
+2
+© Cambridge University Press & Assessment 2024
+Page 5 of 9
+
+--- Page 6 ---
+9618/11
+Question
+3(b) (ii)
+3(c)
+3(d) (i)
+3(d) (ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Answer
+1 mark for correct port. 2 marks for explanation
+Port: USB / Universal Serial Bus
+Explanation:
+: A voltage change occurs when the drive is plugged in
+The computer detects this voltage change
+•
+The code of the device is transferred to computer
+•
+....the OS finds the code of the device in the list of devices
+... and loads the appropriate device driver
+1 mark for each bullet point (max 2)
+DRAM requires constant refresh cycles unlike SRAM
+• DRAM has lower access speed than SRAM
+1 mark for each bullet point (max 4)
+Marks
+3
+The disc is spun at high speed
+•
+A laser is shone onto the disc to read / write
+... using optical head to move it into position
+... it follows the spiral track from the centre outwards
+When writing the laser burns pits to represent the data
+When reading the laser reflects from pits and lands
+•
+The reflection from a pit and a land is different
+....the differences are interpreted as 1 or 0
+1 mark for each bullet point (max 3)
+The computer and optical disc reader/writer send and receive at different
+speeds
+•
+A buffer allows temporary storage of the data
+... so that the computer can transfer data to the buffer at the higher speed
+... and is not held up waiting for data to transfer I/ so the computer can
+carry on with other tasks
+•
+•
+... so the optical disc reader/writer is not overloadec
+... and so that data is transferred to optical disc reader/writer from the
+buffer at the slower rate
+2
+4
+3
+© Cambridge University Press & Assessment 2024
+Page 6 of 9
+
+--- Page 7 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+4(a) (i)
+October/November
+2024
+Marks
+2
+4(a) (ii)
+4(b) (i)
+4(b) (ii)
+4(c)
+1 mark for each bullet point (max 2)
+e.g.
+•
+Secondary storage space is divided into file allocation units
+Space on secondary storage is allocated to particular files
+Maintains/creates directory structures
+•
+•
+•
+:
+•
+Specifies the logical method of file storage e.g. FAT or NTFS
+Provides file naming conventions
+Controls user access // implements access rights //implements password
+protection // Makes file sharing possible
+Controls access to the file by other software
+Specifies tasks that can be performed on a file e.g. open, close, delete,
+copy, create, move, etc
+Allows searching for a file
+1 mark for each bullet point (max 2)
+•
+•
+•
+•
+To allow data to be retrieved / restored when lost
+To automatically make a duplicate copy of data...
+...so the user does not have to remember to backup data
+To make regular duplicate copies of data
+1 mark for each bullet point (max 3)
+e.g.
+Less of the teacher's storage space is used
+... so more student work can be stored
+Transmission time is reduced
+... so the teacher does not have to wait as long for it to arrive
+Bandwidth usage is reduced
+....so other transmissions are not adversely affected
+•
+Less data allowance is used on the teacher's email system
+1 mark for each bullet point (max 3)
+..
+Run-Length Encoding // RLE
+Repeated sequences of the same characters are replaced by
+... a single copy of the character
+•
+... and a count of the number of characters
+1 mark for each bullet point (max 3)
+e.g.
+•
+It saves development time for the student
+•
+... by using pre-written code
+•
+There is less testing to do // the routines are more likely to work correctly
+... because they have already been tested and are error-free
+It results in a more robust program
+Subroutines can be used that they do not have the skill to write
+•
+... which enables a more complex program to be written
+2
+3
+3
+3
+© Cambridge University Press & Assessment 2024
+Page 7 of 9
+
+--- Page 8 ---
+9618/11
+Question
+4 (d) (i)
+4(d) (ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Answer
+1 mark for correct name, 1 mark for matching description
+Marks
+2
+..
+Expand/collapse code blocks...
+.... sections of source code that are part of the same block can be
+expanded to see the content or collapsed so that the overall code is seen
+••
+Auto-indentation // auto-formatting...
+... automatically indents/formats code as the user types so that the
+structure is clear I/ aids readability
+1 mark for correct name, 1 mark for matching description
+:
+Breakpoints.
+... stops the code running on a set line to view the current status/variable
+contents/program flow
+:
+Report window / variable watch window..
+... shows the values in variables/data structures and how they change
+when each line is run
+2
+Question
+5(a)
+Answer
+Marks
+1
+5(b)
+5(c)
+1 mark for all 3 appropriate sensors
+Scenario
+Type of sensor
+Pressure sensor // Infra-red
+A door is open.
+The external daylight-level is below a set
+amount.
+A person is detected within 2 metres.
+Light sensor
+Infra-red
+1 mark for each correct expression
+X = E AND A AND C
+Y = E AND (B OR C OR D)
+1 mark for each bullet point (max 3) for a correct justification
+No marks for the identification of the system
+Monitoring system
+•.
+There is no use of feedback // The light and the alarm are just warnings
+The output of the floodlight or the audio alarm does not affect the input of
+•
+The system does not have any actuators
+2
+3
+© Cambridge University Press & Assessment 2024
+Page 8 of 9
+
+--- Page 9 ---
+9618/11
+Question
+6
+Question
+7(a)
+7(b)
+Question
+8(a)
+8(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2024
+Answer
+1 mark for each bullet point (max 4)
+•
+•
+It uses image recognition
+The pixels of each image from the camera are stored
+... and matched to the expected shape/size/colour of registration number
+It uses optical character recognition
+The pixels within the registration number area identified are analysed
+.... and compared to expected characters/letters/numbers
+Answer
+1 mark for each bullet point (max 2)
+•
+:
+The user can test/trial the program before purchasing to see whether it
+meets needs
+There is no initial cost
+Users who try the software may spread the word so the developer gets
+more custom
+The developer can get feedback to improve the program
+1 mark for each bullet point (max 2)
+:
+The owner/developer can earn a fee
+Comprehensive support is usually offered so problems can be easily
+solved
+•
+The software is usually well tested so few bugs
+Answer
+1 mark for each bullet point (max 2)
+To store the value of flags/bits
+... that can be changed/set/cleared after arithmetic / logical operations
+To allow flags to be checked
+•
+... to change instruction sequence
+1 mark for each bullet point (max 2)
+•
+•
+Special purpose registers have a specified role in the machine whereas
+general purpose registers can be used for all purposes defined by the
+programmer
+Special purpose registers hold the state of the program's execution while
+general purpose registers hold the program's data during operations
+Marks
+4
+Marks
+2
+2
+Marks
+2
+2
+© Cambridge University Press & Assessment 2024
+Page 9 of 9

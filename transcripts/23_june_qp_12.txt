@@ -1,0 +1,310 @@
+--- Page 1 ---
+55 Cambridge Assessment
+a International Education
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+9618/12
+May/June 2023
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages. Any blank pages are indicated
+DC (RW/SG) 313483/1
+© UCLES 2023
+[Turn over
+
+--- Page 2 ---
+2
+1
+A company has a LAN (local area network).
+(a) Give two benefits of connecting computers to a LAN.
+1
+2
+[2]
+(b) Give two characteristics of a LAN.
+1
+2
+12]
+(c) One of the company's offices has one server and four computers connected in a star topology.
+Draw a diagram to show the layout of the office's star topology.
+[2]
+© UCLES 2023
+9618/12/M/J/23
+
+--- Page 3 ---
+3
+(d) Computers can be connected using Ethernet.
+Describe what is meant by Ethernet.
+(e) The network runs as a thick-client model.
+Describe what is meant by a thick-client model.
+© UCLES 2023
+9618/12/M/J/23
+13]
+....2
+[Turn over
+
+--- Page 4 ---
+4
+BLANK PAGE
+© UCLES 2023
+9618/12/M/J/23
+
+--- Page 5 ---
+5
+A horse riding school uses a database, Lessons, to store data about lesson bookings.
+This database is created and managed using a Database Management System (DBMS).
+(a) The table contains names and descriptions of DBMS features and tools.
+Complete the table by writing down the missing names and descriptions.
+Name
+Description
+Data dictionary
+Query processor
+A model of a database that is not specific to one DBMS.
+A software tool that allows the user to create items such as
+tables, forms and reports.
+14]
+(b) Explain the reasons why referential integrity is important in a database.
+13]
+© UCLES 2023
+9618/12/M/J/23
+[Turn over
+
+--- Page 6 ---
+6
+(c) The database Lessons has the following tables:
+HORSE (HorseID, Name, Height, Age, HorseLevel)
+STUDENT (StudentID, FirstName, LastName, RiderLevel, PreferredHorseID)
+LESSON (LessonID, Date, Time, StudentID, HorseID, LessonContent)
+Dates in this database are stored in the format #DD/MM/YYYY#.
+The fields Riderlevel and Horselevel can only have the values: Beginner,
+Intermediate or Advanced.
+(i) Describe two methods of validating the field RiderLevel.
+2
+12]
+(ii) Write a Structured Query Language (SQL) script to return the names of all the horses
+that have the horse level intermediate or beginner.
+[4]
+© UCLES 2023
+9618/12/M/J/23
+
+--- Page 7 ---
+7
+(iii) The following SQL script should return the number of riders that have the rider level
+beginner and have a lesson booked on 09/09/2023.
+SELECT SUM (STUDENT. Riderlevel) AS NumberOfRiders
+FROM STUDENT, LESSON
+WHERE StudentID = StudentID
+OR Date = #09/09/2023#
+AND STUDENT. Riderlevel = Beginner;
+There are four errors in the script.
+Identify and correct each error.
+1 .......
+2
+3
+4
+[4]
+© UCLES 2023
+9618/12/M/J/23
+[Turn over
+
+--- Page 8 ---
+8
+3 A program is written in assembly language.
+(a) The program is converted into machine code by a two-pass assembler.
+Draw one or more lines to identify the pass or passes in which each action takes place.
+Action
+Pass
+generates object code
+first
+reads the source code one line at a time
+removes white space
+second
+adds labels to the symbol table
+13]
+(b) Assembly language statements can use different modes of addressing.
+Complete the following description of addressing modes.
+.. addressing is when the operand holds the memory address of
+the data.
+stores the memory address of the data.
+. addressing is when the operand holds a memory address that
+.. addressing is when the operand is the data.
+[3]
+© UCLES 2023
+9618/12/M/J/23
+
+--- Page 9 ---
+9
+4
+Data in a computer is stored in binary form.
+(a) State the number of unique binary values that can be represented in 16 bits.
+[1]
+(b) Give the 8-bit one's complement representation of the denary number - 120.
+Show your working.
+Working ..
+Answer
+[2]
+(c) Convert the hexadecimal number A04 into denary.
+Show your working.
+Working
+Answer
+12]
+(d) Show the result of a 2-place left logical shift on the binary number:
+01001111
+....... [1]
+© UCLES 2023
+9618/12/M/J/23
+[Turn over
+
+--- Page 10 ---
+10
+5 A student has purchased a new laptop.
+(a) The laptop is designed using the Von Neumann model for a computer system.
+Identify two types of signal that a control bus can transfer.
+1
+2
+[2]
+(b) Describe two ways the hardware of a laptop can be upgraded to improve the performance
+and explain how each upgrade improves the performance.
+2
+[4]
+© UCLES 2023
+9618/12/M/J/23
+
+--- Page 11 ---
+11
+(c) Peripherals are connected to the laptop using ports.
+(i) A printer is connected to a Universal Serial Bus (USB) port.
+Describe how data is transmitted through a USB port.
+11]
+(ii) A monitor is connected to the laptop using a different type of port
+Identify one other type of port that can be used to connect the monitor.
+[1]
+(d) The laptop has systems software.
+(i) Describe how the Operating System (OS) manages processes in the computer.
+[5]
+(it)
+Describe the purpose of utility software in a computer.
+[2]
+© UCLES 2023
+9618/12/M/J/23
+[Turn over
+
+--- Page 12 ---
+12
+(a) Draw the logic circuit for this logic expression:
+Z = (R XOR S) AND (NOT T NOR P)
+R-
+S-
+T-
+P-
+(b) Complete the truth table for this logic expression:
+Z = (NOT P OR Q) XOR (R NOR Q)
+Working space
+P
+Q
+R
+0
+0
+0
+0
+1
+1
+1
+1
+0
+1
+1
+0
+0
+1
+1
+1
+1
+1
+0
+1
+© UCLES 2023
+9618/12/M/J/23
+Z
+- Z
+121
+12]
+
+--- Page 13 ---
+13
+7 A software developer is working in a team writing a program for a client.
+(a) The developer is writing a new program library to be used by the other team members.
+(i) Define the term program library.
+12]
+(ii) Explain two benefits to the developer of choosing to create a Dynamic Link Library (DLL).
+1
+2
+[4]
+(b) The development team needs to use a translator whilst writing the program for the client.
+Identify whether an interpreter or a compiler would be more appropriate at this stage of the
+program development.
+Justify your choice.
+Translator ..
+Justification
+..... [3]
+© UCLES 2023
+9618/12/M/J/23
+[Turn over
+
+--- Page 14 ---
+14
+(c) The development team uses an Integrated Development Environment (IDE).
+Complete the table by describing the typical features found in an IDE.
+Feature
+Description
+....
+Breakpoints
+Dynamic syntax checks
+Context-sensitive prompts
+Single stepping
+(d) One section of the program being developed will convert user's speech into commands.
+Explain how Artificial Intelligence (Al) can be used in this program.
+© UCLES 2023
+9618/12/M/J/23
+14]
+[3]
+
+--- Page 15 ---
+15
+BLANK PAGE
+© UCLES 2023
+9618/12/M/J/23
+
+--- Page 16 ---
+16
+BLANK PAGE
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2023
+9618/12/M/J/23

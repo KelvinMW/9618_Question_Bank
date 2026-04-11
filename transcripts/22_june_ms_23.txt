@@ -1,0 +1,581 @@
+--- Page 1 ---
+5 Cambridge Assessment
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 23 Problem Solving & Programming
+MARK SCHEME
+Maximum Mark: 75
+9618/23
+May/June 2022
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2022 series for most
+Cambridge O Level components.
+mege O Lovel componen remainal and and Lovel and Camordge Pre U componenis, and some
+This document consists of 11 printed pages.
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2022
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2022
+Page 2 of 11
+
+--- Page 3 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Question
+1(a)
+Marks
+5
+One mark per row
+Pseudocode example
+FOR Index + 1 70 3
+Safe [Index] +- GetResult ()
+NEXT Index
+OTHERWISE
+: OUTPUT
+"ERROR 1202"
+Selection
+Iteration
+Assignment
+1 (b)(i)
+REPEAT UNTIL Index = 27
+INPUT MyName
+IF Mark > 74 THEN
+Grade
+ENDIF
+"A'
+1 mark for any two rows correct
+1 mark for all rows correct
+Expression
+ARA AND (Count > 99)
+AAA AND (NOT BBB)
+(Count <- 99) AND (AAA OR BBB)
+(BBB AND Count > 50) OR NOT AAA
+2
+Evaluation
+FALSE
+TRUE
+TRUE
+FALSE
+1(b) (ii)
+One mark from:
+To terminate a (conditional) loop when a value has been found
+When the variable can take only one of two possible values
+(Accept by example): When a variable is recording when an action has
+been done e.g. Yes or No // light is on
+1
+© UCLES 2022
+Page 3 of 11
+
+--- Page 4 ---
+9618/23
+Question
+2
+Question
+3(a)
+3(b)
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2022
+Answer
+Dependent marks
+One mark for type; one mark for matching reason
+Answers include:
+Type:
+Adaptive
+Reason:
+To accommodate a change in the requirement / technology /
+legislation
+e.g. a new HTML version is available
+Type:
+Reason:
+Corrective
+The program does not operate as expected / contains a bug
+e.g. passwords are not hidden
+Answer
+Marks
+4
+Marks
+2
+One mark per point to show:
+• module relationships / hierarchy / selection / repetition // how a problem is
+broken down
+the parameters that are passed between the sub-tasks / modules //
+whether a module is a function or a procedure
+5
+Sectlon_1
+PB
+SA
+XI
+"..
+Subl_B
+Sub1_A
+Sub1_c
+One mark for each:
+1 Four boxes linked as shown correctly labelled (Order of lower 3 not
+important)
+2 Parameters to Sub1_A
+Parameter to Sub1 B and return value
+4
+Parameters to Sub1_C
+5
+Selection diamond
+Page 4 of 11
+
+--- Page 5 ---
+9618/23
+Question
+4
+Question
+5(a)(i)
+5(a) (ii)
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+One mark per row 2 to 7 to Max 4
+Type of
+test data
+Example
+test value
+Expected
+return value
+Explanation
+Normal
+153
+"PASS"
+Abnormal
+< 149
+"FAIL"
+Value within the acceptable
+range
+Outside acceptable range /
+too small
+Abnormal /
+Boundary
+Boundary /
+Extreme /
+Normal
+149
+"FAIL"
+Maximum unacceptable
+150
+"PASS"
+Minimum acceptable
+Boundary /
+Extreme /
+Normal
+Abnormal /
+Boundary
+155
+"PASS"
+Maximum acceptable
+156
+"FAIL"
+Minimum unacceptable
+Abnormal
+> 156
+"FAIL"
+Outside acceptable range /
+too large
+Answer
+TYPE Employee
+DECLARE EmployeeNumber : INTEGER
+DECLARE Name : STRING
+DECLARE Department : STRING
+DECLARE Born : DATE
+DECLARE Attendance : REAL
+ENDTYPE
+One mark for each:
+1. TYPE Employee and ENDTYPE
+2. Fields: EmployeeNumber and Name and Department
+3. Field: Born
+4. Field: Attendance
+DECLARE Staff : ARRAY [1:5001 OF Employee
+One mark per underlined phrase
+May/June 2022
+Marks
+4
+Marks
+4
+2
+Page 5 of 11
+
+--- Page 6 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Question
+5(b)(i)
+Marks
+1
+5(b)(ii)
+5(c)
+Example answers to Max 1:
+•
+So that unused elements may be recognised when processing
+searching
+Otherwise the element may contain old / unexpected data
+Use of any 'impossible' field value, for example:
+• •
+An EmployeeNumber field. e.g. <1
+An empty string / impossible string e.g. "EMPTY" for name or department
+•
+DOB a long time ago...
+Zero / Negative value for attendance
+PROCEDURE Absentees ()
+DECLARE Index : INTEGER
+FOR Index ‹ 1 TO 500
+IF Staff[Index].EmployeeNumber <> -1 THEN
+Staff|Index]. Attendance <= 90 THEN
+OUTPUI Staff [Index]. EmployeeNumber
+OUTPUT Staff [Index]. Name
+/ not empty
+NEXT Index
+ENDPROCEDURE
+Marks as follows to Max 4:
+1
+2
+3
+4
+5
+Procedure heading and ending and declaration of loop counter
+loop through 500 elements
+attempt to skip unused element
+test staff [Index]. Attendance <= 90 in a loop
+if so, output EmployeeNumber and Name fields in a loop
+1
+4
+© UCLES 2022
+Page 6 of 11
+
+--- Page 7 ---
+9618/23
+Question
+6(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+FUNCTION Factorial (ThisNum : INTEGER) RETURNS INTEGER
+DECLARE Value : INTEGER
+IF ThisNum < O THEN
+Value + -1
+ELSE
+Value + 1
+WHILE ThisNum <> O
+Value + Value * ThisNum
+ThisNum < ThisNum - 1
+ENDWHILE
+ENDIF
+RETURN Value
+ENDFUNCTION
+Marks as follows to Max 6:
+5
+6
+7
+Function heading and ending including parameter and return value
+Declaration and initialisation (to 1) of local Integer Value for result
+Check for illegal value (< 0)
+(Conditional) loop while Thi sNum not zero // loop for Thi sNum iterations
+Attempt to form answer by successive multiplication
+Completely correct MP5
+Return INTEGER value correctly in both cases: ThisNum < 0 and >= 0
+ALTERNATIVE RECURSIVE SOLUTION:
+FUNCTION Factorial(ThisNum : INTEGER)
+RETURNS INTEGER
+IF ThisNum > 1 THEN
+RETURN ThisNum * Factorial(ThisNum - 1)
+ELSE
+IF ThisNum = 1 OR ThisNum = 0 THEN
+RETURN 1
+ELSE
+ENDIF
+ENDIF
+ENDFUNCTION
+RETURN -1
+Marks as follows:
+1 Function heading and ending including parameter and return value
+Test for ThisNum > 1
+3
+4
+5
+6
+and if so return product of Thisnum and Factorial (ThisNum-1)
+Check for special case..
+...return 1 for 0 and 1 and return - 1 for negative values
+Return INTEGER value (correctly in all cases)
+May/June 2022
+Marks
+6
+© UCLES 2022
+Page 7 of 11
+
+--- Page 8 ---
+9618/23
+Question
+6(b)
+Question
+7(a)(i)
+7(a)(ii)
+7(b)
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2022
+Answer
+Marks
+4
+One mark for:
+: Rach of ToNS D, E
+Each of rows D, E and F
+Label
+A
+Text
+D
+E
+F
+Is Num > 9?
+YES
+NO
+Set Identifier> to Factorial (Num)
+OUTPUT "Factorial of", Num, "is", ‹Identifier›
+Set Num to Num + 1 // Increment Num
+Answer
+The lines are output in an incorrect sequence / in the wrong order / not as
+they appear in the file
+Description of error: (Max 2 marks)
+•
+If the final line of the file is not written into array element 3
+•
+then outputting the elements in the sequence 1 to 3 will give the error.
+Explanation of error correction: (Max 2 marks)
+Copy Buffer[2] to Buffer[1] AND copy Buffer[3] to Buffer[2]
+Read a line from the file and write it to Buffer[3]
+OR
+• Store the index of the last element written to buffer (the last line of the
+:
+Replace the FOR loop with something that starts at index
+and then wraps around (MOD 3)
+OR (two-loop solution, not using an array)
+..
+Loop to read file to end to get number of lines
+close and re-open file
+read (and discard) lines to number of lines - 3, then loop to read and
+output last 3 lines
+If the number of lines in the text file is a multiple of three
+Marks
+1
+4
+1
+Page 8 of 11
+
+--- Page 9 ---
+9618/23
+Question
+7(c)
+Question
+8(a)
+8(b)
+8(c)
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+2
+Correct answers include:
+LineNum < (LineNum
+MOD 3) + 1 // | (LineNum + 3) MOD 3)
++ 1
+One mark for assignment to LineNum making any use of MOD
+One for completely correct statement
+Answer
+Marks
+3
+Analysis
+Design
+Codina
+Testing
+Maintenance
+One mark for:
+2 (at last oven rows beate shepes with at sat one valid stage names
+Up and Down arrows between each pair of shapes
+3
+Design - Coding - Testing labels in correct sequence
+Downward arrows: result from one stage is input / passed to the next
+Upward arrows: more work is required at a previous stage to complete the
+current stage
+For example:
+Iterative / Rapid Application Development (RAD)
+2
+1
+Page 9 of 11
+
+--- Page 10 ---
+9618/23
+Question
+9(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+FUNCTION Generate () RETURNS STRING
+DECLARE Password, Group : STRING
+DECLARE NextChar : CHAR
+DECLARE ACount,
+BCount : INTEGER
+CONSTANT HYPHEN
+1-'
+Password < ""
+FOR ACount < 1 TO 3
+Group +""
+FOR BCount + 1 TO 4
+REPEAT
+NextChar + RandomChar ()
+UNTIL Exists (Group, NextChar) = FALSE
+Group & Group & NextChar
+NEXT BCount
+Password & Password & Group & HYPHEN
+NEXT ACount
+Password + LEFT (Password, 14)
+I remove final hyphen
+RETURN Password
+ENDFUNCTION
+Marks as follows to Max 7:
+1
+2
+3
+4
+5
+6
+7
+8
+Declaration and initialisation of Password as STRING
+Outer loop for three groups / until password is complete // three group
+loops
+Attempt to use of both RandomChar () and Exists () in a loop
+(Inner) loop for 4 characters in a group // note every 4 chars in a
+loop
+Conditional loop until char is unique
+Concatenating unique character to Group in a loop
+Concatenate Group / random character to Password in a loop
+(Attempt to) insert hyphens between groups (or removing later) and
+Return Password
+May/June 2022
+Marks
+7
+© UCLES 2022
+Page 10 of 11
+
+--- Page 11 ---
+9618/23
+Question
+9(b)
+9(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+FUNCTION AddPassword (Name, Password : STRING)
+RETURNS BOOLEAN
+DECLARE Index : INTEGER
+DECLARE Added : BOOLEAN
+Added ‹ FALSE
+Index + 1
+IF FindPassword (Name) = "" THEN |/ Domain name not in
+1/ array
+WHILE Added = FALSE AND Index <= 500
+IF Secret [Index, 1] = "" THEN
+Secret [Index, 1]
+Secret [Index, 2] + Encrypt (Password)
+ELSE
+ENDIF
+ENDWHILE
+ENDIF
+Index ‹ Index + 1
+RETURN Added
+ENDFUNCTION
+Marks as follows:
+1
+Check that the website domain name isn't already in array using
+FindPassword () / linear search, otherwise:
+2
+(Conditional) loop while not added and not end of arra
+3
+Check for unused element by testing value in column 1 in a loo
+4
+If unused, write parameter values to column 1 and 2 and set flag /
+variable
+5
+6
+..having used Encrypt () on the passwor
+Return BOOLEAN value (correctly in all cases
+One mark per point to Max 3.
+Solution based on field length:
+•
+• .
+Convert the length of the website domain name (either field) ...
+...to a string of fixed length
+Form a string by concatenate this string with the other two (and write as
+one line of the file)
+Solution based on use of separator character:
+Select a (separator) character that cannot occur in the domain name (e.g.
+..
+space)
+Create a string from the domain name followed by the separator
+...Concatenate the encrypted password (and write as one line of the file)
+May/June 2022
+Marks
+6
+3
+© UCLES 2022
+Page 11 of 11

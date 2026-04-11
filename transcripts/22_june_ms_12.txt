@@ -1,0 +1,478 @@
+--- Page 1 ---
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 12 Theory Fundamentals
+MARK SCHEME
+Maximum Mark: 75
+9618/12
+May/June 2022
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2022 series for most
+Cambridge IGCSE, Cambridge International A and AS Level and Cambridge Pre-U components, and some
+Cambridge O Level components.
+This document consists of 9 printed pages.
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2022
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2022
+Page 2 of 9
+
+--- Page 3 ---
+9618/12
+Question
+1(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+3
+1 mark for 1 correct line
+2 marks for 2 or 3 correct lines
+3 marks for all 4 correct lines
+Term
+Pixel
+Bit depth
+Definition
+The number of pixels
+wide by the number of
+pixels high
+The smallest identifiable
+component of an image
+Image resolution
+Stores data about the
+image file, e.g. file
+format, number of bits
+per pixel, file size
+File header
+The number of bits used
+to represent each colour
+1 (b)(i)
+1(b)(ii)
+1(c)
+1(d)
+8
+1 mark for working
+•
+10 * 5*8 (bits) / 8 || = 50 (pixels) * 8 (bits) / 8
+1 mark for answer
+• 50 (bytes)
+1 mark per point
+• Increasing the colour depth results in increased file size // Decreasing
+the colour depth results in smaller file size
+• Increasing the colour depth means more bits per pixel and hence more
+data stored // Decreasing the colour depth means fewer bits per pixel
+and hence less data stored
+1 mark per point
+:
+Use run-length encoding // RLE
+Record the colour Blue, and the number of times it occurs 10
+1
+2
+2
+2
+© UCLES 2022
+Page 3 of 9
+
+--- Page 4 ---
+9618/12
+Question
+2(a)
+2(b)
+2(c)
+Question
+3(a)
+3(b)
+3(c)
+3(d)
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+2
+1 mark per point to max 2
+• The lane detection system is built into / integrated into the car
+: The lane detection system only performs one task
+The lane detection system is not easily changed/updated by the car
+owner
+1 mark for primary
+•
+e.g. Miles travelled in the current journey, before the engine is turned off
+1 mark for secondary
+e.g. Total miles travelled since the car was built // miles for most recent
+journey after engine switched off
+1 mark for all correct ticks
+Statement
+The screen always has five different layers
+A processor determines the horizontal and
+vertical coordinates of the point of contact
+The touchscreen will work if any object
+touches the screen
+True
+False
+r
+r
+2
+1
+Answer
+1 mark for correct opcode and 1 mark for corresponding operand
+OR #255 // OR #154 /| XOR #154
+e.g.
+... #255
+XOR #255
+1 mark for correct opcode and 1 mark for corresponding operand
+e.g.
+• XOR...
+• ... #255
+7E
+11110000
+Marks
+2
+2
+1
+1
+Page 4 of 9
+
+--- Page 5 ---
+9618/12
+Question
+3(e)
+Question
+4(a)
+4(b)
+4(c)
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+3
+1 mark per point
+: sing a ting iT no no or rent 0003
+Working e.g. turning 01111111 into two's complement 10000001
+Answer: 1000 1101
+Answer
+1 mark per point, max 1 for data and max 1 for computer system
+Data
+• Data needs protecting from someone amending / deleting or taking it
+Computer System
+• Computer system need protecting to stop people for example, installing
+malware or damaging the system
+1 mark for each correct threat, matching description and prevention
+e.g.
+Threat
+Virus
+Hacker
+Description
+Malicious software that
+replicates itself and can corrupt
+data
+Unauthorised access to the
+computer with malicious intent
+Prevention method
+Anti-virus / Firewall /
+Anti-malware
+Firewall/ strong or
+biometric passwords/ user
+permissions
+Marks
+2
+6
+1 mark per point to max 2
+:
+Data is turned into cipher text // Data is encoded
+Used so that it cannot be understood if intercepted without the
+decryption key
+2
+Page 5 of 9
+
+--- Page 6 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Question
+5(a)
+Marks
+2
+1 mark for each correct relationship
+ACTOR
+FILM_FACT
+FILM_ACTOR
+5(b)
+5(c)
+5(d)
+1 mark per point
+: Neator caniquay perinese sch tele brides
+One actor cannot appear in the same film twice so together they are
+unique
+1 mark per correct entry
+SELECT FILM_ACTOR ActorID / ActorID
+FROM FILM ACTOR
+INNER JOIN FILM_FACT
+ON FILM FACT. FiIMID = FILM_ACTOR. FilmID
+WHERE FILM_FACT.FilmTitle = "Cinderella" ¡
+1 mark per point
+•
+COUNT and correct fieldname
+SELECT and FROM statements, including the table name in FROM
+WHERE statement
+e.g.
+SELECT COUNT (FilmID)
+FROM FILM_FACT
+WHERE ReleaseDate >= #01/01/2022# AND ReleaseDate <=
+#31/01/2022#;
+/ WHERE ReleaseDate BETWEEN #01/01/2022#
+AND
+#31/01/2022#;
+|/ WHERE ReleaseDate = "January 2022";
+2
+4
+3
+© UCLES 2022
+Page 6 of 9
+
+--- Page 7 ---
+9618/12
+Question
+5(e)
+Question
+6(a)
+6(b)
+6(c)
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2022
+Answer
+Marks
+1 mark for each correctly completed term
+: data dictionary
+field names // primary keys
+•
+primary keys //field names
+•
+logical schema
+• query
+• interface
+A DBMS provides data management. This includes the development of a
+data dictionary that stores information about the data stored, such as field
+names and primary keys.
+The logical schema uses methods such as an E-R diagram to show the
+structure of the database and its relationships.
+The query processor allows a user to perform searches to find specific data.
+The DBMS also provides a developer interface that allows the user to
+create tables, forms and reports.
+6
+Answer
+Marks
+1 mark per point to max 2
+e.g.
+...
+Attempts to translate the whole source code
+Creates a separate error report at the end of the translation process
+If translation successful / no errors creates an executable file
+1 mark per point to max 2
+: Stops each in ether encounsel display it
+Stops when an error is encountered // displays errors where it finds
+1 mark per point, max 2 for writing, max 2 for testing
+Writing e.g.
+•
+Enter code into an editor
+• Pretty printing to identify key terms
+Context-sensitive prompts to help complete statements
+•
+Expand and collapse code blocks
+• Auto-complete to suggest what to type next
+Auto-formatting to indent code blocks
+• Dynamic syntax checking
+Testing e.g.
+• Single stepping to run the code line by line
+• Breakpoints to stop the code at set points to check values
+Report window to see how variables change
+2
+2
+4
+Page 7 of 9
+
+--- Page 8 ---
+9618/12
+Question
+7
+Question
+8
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2022
+Answer
+1 mark for first 4 rows, 1 mark for second 4 rows (shaded)
+A
+0
+0
+0
+1
+1
+1
+1
+B
+1
+1
+0
+1
+1
+C
+Working space
+1
+1
+1
+1
+1
+1
+Marks
+2
+Answer
+1 mark for identification of an application
+Max 2 marks for relevant description
+e.g.
+•
+•
+•
+•
+•
+•
+Police identifying wanted people
+Uses image recognition
+... to identify features/characteristics/items in an image
+Natural language interfaces
+Use speech recognition to identify words that are spoken
+... and adapts to learn regional accents
+Self-driving cars
+Detects its position on the road and within the traffic
+Follows a route // Collision avoidance // Self-parking etc.
+Spoken Interfaces
+Use natural language processing
+... to take a sentence and work out its meaning
+•
+•
+Game playing
+Models characters in a computer game
+.... to allow computer characters to react according to the player's
+movements
+Marks
+3
+Page 8 of 9
+
+--- Page 9 ---
+9618/12
+Question
+9(a)
+9(b)
+9(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for each completed name or description
+Device
+Router
+Description
+Receives and sends data between two networks
+operating on the same protocol
+Wireless
+Network
+Interface Card
+(WNIC)
+Hardware component that allows a device to connect to
+a wireless network // Provides a MAC address to the
+device to identify it on the wireless network
+Repeater
+Wireless
+Access Point
+(WAP)
+Restores the digital signal so it can be transmitted over
+greater distances
+Hardware component that provides radio
+communication from the central device to nodes on the
+network (and vice versa)
+1 mark for each difference
+e.g.
+Fibre optic data is transmitted using light, copper cable through
+electrical signals
+Fibre optic has higher bandwidth than copper cable // Fibre optic has
+higher transmission rates than copper cable
+:
+Fibre optic has smaller risk of (noise) interference than copper cable
+Fibre optic can be used over longer distances than copper cable before
+repeaters are needed
+:
+Fibre optic is much more difficult to hack into than copper cable
+Fibre optic is more prone to damage than copper cable
+1 mark per point to max 4
+•
+A workstation / node (wishing to transmit) listens to the communication
+channel
+• is sata is only sent when the channel re ... i chanel is free data
+•
+Because there is more than one computer connected to the same
+transmission medium
+...two workstations can start to transmit at the same time, causing a
+collision
+•
+If a collision happens, the workstations send a (jamming) signal / abort
+transmission
+....and each waits a random amount of time before attempting to resend
+May/June 2022
+Marks
+4
+3
+4
+© UCLES 2022
+Page 9 of 9

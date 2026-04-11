@@ -1,0 +1,1164 @@
+--- Page 1 ---
+a Cambridge Assessmen
+55 International Educatior
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 4 Practical
+MARK SCHEME
+Maximum Mark: 75
+9618/41
+October/November 2021
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2021 series for most
+Cambridge IGCSE™
+', Cambridge International A and AS Level components and some Cambridge O Level
+This document consists of 23 printed pages.
+© UCLES 2021
+[Turn over
+
+--- Page 2 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2021
+Page 2 of 23
+
+--- Page 3 ---
+9618/41
+Question
+1(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+Marks
+3
+1 mark per bullet point
+•• .
+function with correct name and parameters
+correct Div operator (or equivalent) used
+code matches pseudocode
+Example program code:
+Python
+def Unknown (X, I) :
+if X
+< Y:
+print (str (X + Y))
+return Unknown (X +
+1, Y) * 2
+elif Xi
+== Y:
+return
+1
+else:
+print (str (X + Y))
+return int (Unknown (X - 1, Y) / 2)
+VB.NET
+Function Unknown (X, Y)
+If X < Y Then
+Console.Writeline (X + Y)
+Return Unknown (X + 1,
+Y) * 2
+Elself X
+= Y Then
+Return
+Else
+Console.WriteLine (X + Y)
+Return Unknown (X - 1,
+Y)
+12
+End If
+End Function
+Java
+public
+static Integer Unknown (Integer X, Integer Y) {
+if (X < Y) {
+System.out.println (X+Y);
+return Unknown (X + 1, Y) * 2;
+}else if (X == 4){
+return 1;
+}elsel
+System.out .println (X + Y);
+Integer ReturnValue
+Unknown (X-1,Y) / 2;
+return ReturnValue;
+}
+© UCLES 2021
+Page 3 of 23
+
+--- Page 4 ---
+9618/41
+Question
+1 (b)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+Marks
+3
+1 mark per bullet point
+•
+Suitable output identifying parameters for each call
+All three correct function calls ...
+•
+...outputting the return value for each call
+Example program code:
+Python
+print ("10 and 15")
+print (str (Unknown (10, 15)))
+print ("10 and 10")
+print (str (Unknown (10, 10)))
+print ("15 and 10")
+print (str (Unknown (15, 10)))
+VB.NET
+Console.WriteLine("10 and 15")
+Console.WriteLine (Unknown (10, 15))
+Console. Writeline("10, 10")
+Console. WriteLine (Unknown (10, 10))
+Console. WriteLine("15, 10")
+Console. WriteLine (Unknown (15, 10))
+Java
+public static void main (String []
+args) {
+System.out.println("10 and 15");
+System.out.println (Unknown (10,15)) ;
+System.out.println("10 and 10");
+System.out.println (Unknown (10, 10));
+system.out: printin 25 an 15" 10) :
+}
+© UCLES 2021
+Page 4 of 23
+
+--- Page 5 ---
+9618/41
+Question
+1(b)(ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for fuacting with correct out with coret output.
+For example:
+10 and 15
+25
+26
+27
+28
+29
+32
+10 and 10
+15 and 10
+25
+24
+23
+22
+21
+0
+October/November
+2021
+Marks
+2
+© UCLES 2021
+Page 5 of 23
+
+--- Page 6 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Question
+1(c)
+Answer
+Marks
+7
+1 mark per bullet point
+••.
+Iterative function, taking 2 parameters
+Starting with return value (Total) as 1
+Looping while X < Y I/ might be 1 loop or two separate // returning when X=
+Y I/ looping until X== Y
+•..
+•
+Within each loop, outputting (X+Y) correctly when X<Y and Y<
+Each time X < Y, Total * 2 and X++
+Each time Y < X Total DIV 2 and X--
+Returning the Total after correct calculations
+Example program code:
+Python
+def IterativeUnknown (X,Y) :
+Total = 1
+while X != Y:
+print (str (X + Y))
+if X
+< Y:
+X
+= X +
+1
+Total
+= Total * 2
+else:
+X = X - 1
+Total
+= int (Total
+/ 2)
+return Total
+VB.NET
+Function IterativeUnknown (X, Y)
+Dim Total As Integer
+= 1
+While X <> Y
+Console.WriteLine (X + Y)
+If X < Y Then
+X = X + 1
+Total
+= Total * 2
+Else
+X = X
+-
+1
+Total
+Total \ 2
+End If
+End While
+Return Total
+End Function
+© UCLES 2021
+Page 6 of 23
+
+--- Page 7 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November
+2021
+Marks
+Question
+1(c)
+Java
+public static Integer IterativeUnknown (Integer X, Integer
+711
+Integer Total
+= 1;
+while (X != Y){
+System.out.printIn(X+Y) ;
+if (X<Y) {
+X =
+Total
++
+1;
+=
+Total * 2;
+Jelsel
+X = X
+- 1;
+Total = Total / 2;
+}
+return Total;
+1 (d)(i)
+}
+Calling function 3 times with correct Data and outputting
+Example program code:
+Python
+print ("10 and 15")
+print (str (IterativeUnknown (10, 15)))
+print ("10 and 10")
+print (str (IterativeUnknown (10, 10)))
+print ("15 and 10")
+print (str (IterativeUnknown (15,
+10)))
+VB.NET
+Console.Writeline("10 and 15")
+Console. Writeline (IterativeUnknown (10, 15))
+Console.Writeline ("10, 10")
+Console.Writeline (IterativeUnknown (10, 10))
+Console.WriteLine("15, 10")
+Console. WriteLine (IterativeUnknown (15, 10))
+1
+Java
+System.out.println("10 and 15");
+System.out.println (IterativeUnknown (10, 15));
+System.out.println("10 and 10");
+System.out println (IterativeUnknown (10, 10)) ;
+System.out.println("15 and 10");
+System.out.println|IterativeUnknown (15, 10));
+© UCLES 2021
+Page 7 of 23
+
+--- Page 8 ---
+9618/41
+Question
+1 (d)(ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Marks
+1
+Answer
+1 mark for screenshot showing correct output for both functions
+10 and 15
+25
+26
+27
+28
+29
+32
+10 and 10
+1
+15 and 10
+25
+24
+23
+22
+Question
+2(a)
+Answer
+Marks
+5
+1 mark per bullet point
+class declared (with appropriate close) with identifier Picture
+correct attribute declarations with Data types (Description, Frame colour =
+string, Width, Height = integer.)
+:
+•
+...as private
+correct constructor (with appropriate close) with four parameters...
+...parameters assigned to attributes
+Example program code:
+Python
+class Picture:
+def
+init
+_(self, DescriptionP, WidthSizeP,
+HeightSizeP, FrameColourP) :
+self._Description = DescriptionP # string
+self._
+width = int (WidthSizeP) #integer
+self.
+Height = int (HeightSizeP)
+#integer
+self._
+FrameColour = FrameColourP #string
+Java
+class Picture|
+private String Description;
+private Integer Width;
+private Integer Height;
+private String FrameColour;
+public Picture (String
+DescriptionP, Integer WidthP,
+Integer HeightP, String FrameColourP){
+Description = DescriptionP;
+Width = WidthP;
+Height = HeightP;
+FrameColour = FrameColourP;
+}
+© UCLES 2021
+Page 8 of 23
+
+--- Page 9 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+Marks
+Question
+2(a)
+VB.NET
+Class Picture
+Private Description As String
+Private Width As Integer
+Private Height As Integer
+: FrameColour As String
+Public Sub New (DescriptionP, WidthP, HeightP, FrameColourP)
+Description = DescriptionP
+width = WidthP
+Height = HeightP
+FrameColour = FrameColourP
+End Sub
+End Class
+© UCLES 2021
+Page 9 of 23
+
+--- Page 10 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+2(b)
+October/November
+2021
+Marks
+3
+1 mark per bullet point
+1 Get method taking no parameter...
+....returning correct attribute
+remaining 3 correct methods
+Example program code:
+Python
+def GetDescription (self) :
+return self.
+Description
+def
+Getwidth (self):
+return self. Width
+def GetHeight (self) :
+return self.
+Height
+def GetColour (self) :
+return self._FrameColour
+Java
+public String GetDescription () {
+return Description;
+public Integer GetWidth () {
+return Width;
+}
+public Integer GetHeight () {
+return Height;
+}
+public String GetFrameColour () {
+return FrameColour;
+}
+VB.NET
+Function GetDescription ()
+Return Description
+End Function
+Function Getwidth ()
+Return Width
+End Function
+Function GetHeight ()
+Return Height
+End Function
+Function GetFrameColour ()
+Return FrameColour
+End Function
+© UCLES 2021
+Page 10 of 23
+
+--- Page 11 ---
+9618/41
+Question
+2(c)
+2(d)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark per bullet point
+Set method (procedure) taking parameter (no return) ...
+...assigning parameter to correct attribute
+Example program code:
+Python
+def SetDescription (self, DescriptionP):
+self._Description
+= DescriptionP
+Java
+public void
+SetDescription (String DescriptionP){
+Description = DescriptionP;
+}
+VB.NET
+Public Sub SetDescription (DescriptionP)
+Description = DescriptionP
+End sub
+1 mark for declaring array of type Picture with 100 elements
+Example program code:
+Python
+PictureArray = I]
+for i in range (100):
+PictureArray. append (Picture ("", 0,0, ""))
+Java
+public static void main (String|| args) {
+Picture|| PictureArray = new Picture [100] ;}
+VB.NET
+Dim PictureArray (0 to 99) As Picture
+October/November
+2021
+Marks
+2
+1
+© UCLES 2021
+Page 11 of 23
+
+--- Page 12 ---
+9618/41
+Question
+2(e)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+Marks
+8
+1 mark per bullet point:
+: appropriate catch and output
+Exception with opening the file inside...
+1 mark per bullet point to Max 7
+•
+Function/procedure declared with correct name (and close, passing array by
+reference or global array declared)
+•
+opening Pictures. txt for Read
+looping until EOF / or equivalent
+...reading each set of 4 lines from the file within loop
+creating object of type Picture
+...with Description, Width, Height, Frame colour from File as parameters
+..adding to next array element/appending
+closing the File (in an appropriate place)
+•
+counts and returns number of pictures in array
+Example program code:
+Python
+def ReadData (PictureArray) :
+Filename = "Pictures.txt"
+Counter = 0
+File = open (Filename, "I")
+Description = (File. readline ()) . strip |) .lower ()
+while (Description
+width = int ((File. readline ()).strip())
+Height = int (File. readline ()) .strip())
+Frame = ((File.readline()) .strip()).lower ()
+PictureArray [Counter] = Picture (Description,
+Width, Height, Frame)
+Description = ( (File. readline ()) . strip()) .lower ()
+Counter
+= Counter + 1
+File.close ()
+except IOErIOI:
+print ("Could not find File")
+return Counter, PictureArray
+© UCLES 2021
+Page 12 of 23
+
+--- Page 13 ---
+9618/41
+Question
+2(e)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+Marks
+VB.NET
+Function ReadData (ByRef PictureArray, ByRef NumberPictures)
+As Integer
+Dim Counter As Integer = 0
+Dim Filename As String = "Pictures.txt"
+Dim FileReader As New System.IO. StreamReader (Filename)
+Dim Description, FrameColour As String
+Dim Height, Width As Integer
+While FileReader. Peek <> -1
+Description = FileReader. ReadLine ()
+Width = FileReader. ReadLine ()
+Height = FileReader. ReadLine ()
+FrameColour = FileReader. ReadLine ()
+PictureArray (NumberPictures) =
+New Picture (Description, Width, Height, FrameColour)
+NumberPictures = NumberPictures + 1
+Counter = Counter + 1
+End While
+FileReader.Close ()
+Catch ex As Exception
+Console.Writeline("Invalid File")
+End Try
+Return Counter
+End Function
+© UCLES 2021
+Page 13 of 23
+
+--- Page 14 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November
+2021
+Marks
+Question
+2(e)
+Java
+public static Integer ReadData (Picture|| PictureArray){
+String Filename = "Pictures.txt";
+String
+DataRead;
+String
+Description;
+String Width;
+String Height;
+String FrameColour;
+Integer
+NumberPictures = 0;
+tryl
+FileReader f = new FileReader (Filename) ;
+BufferedReader
+Reader = new BufferedReader (f) ;
+DataRead = Reader. readline ();
+while (DataRead!= null){
+Description = DataRead;
+Width = Reader. readline();
+leiaht = Reader. readLine ()
+'rameColour = Reader. readline )
+PictureArray [NumberPictures] =
+new Picture (Description, Integer.parseInt (Width),
+Integer. parseInt (Height), FrameColour);
+NumberPictures++;
+DataRead = Reader. readline ();
+Reader. close ();
+}
+catch (FileNotFoundException ex){
+System. out.printIn ("No File found");
+}
+catch (IOException ex) {
+System.out.println("No File found");
+}
+return NumberPictures;
+2(f)
+1 mark per bullet point
+•
+calling function ReadData () ..
+•
+...store/use the Number of elements returned/by reference based on answer
+2
+Example program code:
+Python
+NumberPicturesInArray,
+PictureArray = ReadData (PictureArray)
+Java
+Integer NumberPicturesInArray = ReadData (PictureArray);
+VB.NET
+Dim NumberPicturesInArray As Integer = ReadData ()
+© UCLES 2021
+Page 14 of 23
+
+--- Page 15 ---
+9618/41
+Question
+2(g)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+Marks
+7
+1 mark per bullet point to Max 7
+•
+taking as input all three values (colour, width, height)
+... converting colour to lowercase // uppercase
+:
+looping through array ...
+...using returned value from part 2(f) as max index
+•
+:
+...within loop, checking if Arraylindex]. FrameColour matches input
+...and checking if Array[index].FrameWidth <= input Width
+...and checking if Array[index]. FrameHeight <= input Height
+...all using Get methods
+outputting the Picture Description, Width and Height for all/any matching
+Pictures
+Example program code:
+Python
+FrameColour = input("Input the Frame colour ").lower ()
+Maxwidth = int(input ("Input the Maximum Width
+. ") )
+MaxHeight = int(input("Input the Maximum Height "))
+print ("Matches Frames shown")
+for Z in range (0, NumberPicturesInArray):
+if PictureArray [Z] .GetColour () == FrameColour:
+if (PictureArray [Z] .GetWidth () <= MaxWidth) :
+if (PictureArray [Z] .GetHeight () <= MaxHeight):
+print (PictureArray [Z] .GetDescription(), " "
+str (PictureArray [Z] .Getwidth ()), " ",
+str (PictureArray [Z] .GetHeight ()))
+VB.NET
+Sub Main ()
+Dim PictureArray (0 To 99) As Picture
+Dim NumberPictures As Integer = 0
+Dim FrameColour As String
+Dim Maxwidth, MaxHeight As Integer
+ReadData (PictureArray, NumberPictures)
+Console Writeline("Input the Frame colour")
+FrameColour = (Console. ReadLine ()) . ToLower ()
+Console.Writeline("Input the Maximum Width")
+MaxWidth = Console.ReadLine ()
+Console.WriteLine("Input the Maximum Height")
+MaxHeight = Console. ReadLine ()
+Console.Writeline ("Matching Frames shown")
+For X = 0 To NumberPictures - 1
+If PictureArray (X) .GetFrameColour ()
+= FrameColour And
+PictureArray (X) .GetWidth <= MaxWidth And
+PictureArray (X) .GetHeight <= MaxHeight Then
+© UCLES 2021
+Page 15 of 23
+
+--- Page 16 ---
+9618/41
+Question
+2(g)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+Console Writeline (PictureArray (X). GetDescription () & " "
+& PictureArray (X). Getwidth ()
+" "|
+PictureArray (X). GetHeight)
+End If
+Next
+Console. ReadLine ()
+End Sub
+Marks
+Java
+public static void main (String[l args){
+Picture|| PictureArray = new Picture [100];
+Integer NumberPicturesInArray = ReadData (PictureArray)|
+Scanner scanner = new Scanner (System. in) ;
+System.out.printIn ("Enter the Frame colour") ;
+String FrameColour = scanner.nextLine ();
+System .out.println("Enter the Maximum Width");
+Integer MaxWidth = Integer.parseInt (scanner.nextLine ());
+System.out println("Enter the Maximum Height");
+Integer MaxHeight = Integer.parseInt (scanner.nextLine ());
+FrameColour = FrameColour.toLowerCase ();
+for (int X = 0; X < NumberPicturesInArray; X++){
+if (PictureArray [X].GetFrameColour\) equals (FrameColour) &&
+PictureArray [X] .GetWidth () <= Maxwidth &&
+PictureArray [X] GetHeight () <= MaxHeight) {
+System.out.println (PictureArray [X] .GetDescription () +
+" " + PictureArray [X].GetWidth() + " " +
+PictureArray [X] . GetHeight ()) ;
+2(h)
+-
+1 mark for screenshot showing output for BLACK, 100, 100
+1 mark for showing no outputs for silver, 25, 25
+Input the Frame colour BLACK
+Input the Maximum Width 100
+Input the Maximum Height 100
+Matches Frames shown
+flowers
+45
+50
+deople
+20
+20
+30
+landscape
+people
+25
+45
+37
+50
+40
+Input the Frame colour silver
+Input the Maximum Width 25
+Input the Maximum Height 25
+Matches Frames shown
+2
+© UCLES 2021
+Page 16 of 23
+
+--- Page 17 ---
+9618/41
+Question
+3(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+Marks
+4
+1 mark per bullet point
+....
+Declaring array named ArrayNodes of type integer
+...with 20 by 3 elements
+Root Pointer declared as integer and assigned -1
+FreeNode declared as integer and assigned O
+Example program code:
+Python
+ArrayNodes=[|0 for X in range (3)] for I in range (20) I
+RootPointer = -1
+FreeNode = 0
+VB.NET
+Sub Main ()
+Dim ArrayNodes (19, 2) As Integer
+Dim RootPointer As Integer = -1
+Dim FreeNode As Integer = 0
+End Sub
+Java
+public static Integer|||| ArrayNodes = new Integer |20] [3];
+public static Integer RootPointer =
+- 1;
+public static Integer FreeNode = 0;
+© UCLES 2021
+Page 17 of 23
+
+--- Page 18 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Question
+3(b)
+October/November
+2021
+Marks
+8
+Answer
+1 mark for each completed statement to Max 6
+1 mark per bullet point
+• Function/procedure declaration either :
+taking parameters by reference
+returning the three amended values (Python)
+using global instead
+•
+remainder of function/procedure matches the pseudocode
+Example program code:
+Python
+def AddNode (ArrayNodes, RootPointer, FreeNode) :
+NodeData = int (input ("Enter the Data"))
+if FreeNode <= 19:
+ArrayNodes [FreeNodel [O] = -1
+ArrayNodes [FreeNodel [1]
+= NodeData
+ArrayNodes [FreeNodel [2]
+= -1
+if RootPointer == -1: # Add to start
+RootPointer = 0
+else:
+Placed = False
+CurrentNode = RootPointer
+while Placed == False:
+if NodeData < ArrayNodes [CurrentNodel [1] :
+if ArrayNodes [CurrentNodel [0] == -1:
+ArrayNodes [CurrentNodel [0] = FreeNode
+Placed = True
+else:
+CurrentNode = ArrayNodes [CurrentNodel [0]
+else:
+if ArrayNodes [CurrentNodel [2] == -1:
+ArrayNodes [CurrentNodel [2] = FreeNode
+Placed = True
+else:
+CurrentNode = ArrayNodes [CurrentNodel [2]
+FreeNode = FreeNode + 1
+else:
+print ("Tree is full")
+return ArrayNodes,
+RootPointer, FreeNode
+© UCLES 2021
+Page 18 of 23
+
+--- Page 19 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+Marks
+Question
+3(b)
+VB.NET
+Sub AddNode (ByRef ArrayNodes, ByRef RootPointer,
+ByRef FreeNode)
+Console WriteLine ("Enter the Data"')
+Dim NodeData As Integer = Console. ReadLine
+If FreeNode <= 19 Then
+ArrayNodes (FreeNode, 0) = -1
+ArrayNodes (FreeNode, 1) = NodeData
+ArrayNodes (FreeNode, 2) = -1
+If RootPointer
+=-1 Then
+RootPointer = 0
+Else
+Dim Placed As Boolean = False
+Dim CurrentNode As Integer = RootPointer
+While Placed = False
+If NodeData < ArrayNodes (CurrentNode, 1)
+Il ArrayNodes (CurrentNode,
+0) = -1 Then
+ArrayNodes (CurrentNode, 0) = FreeNode
+Placed = True
+Else
+CurrentNode = ArrayNodes (CurrentNode, 0)
+End
+If
+If ArrayNodes (CurrentNode, 2) = -1 Then
+ArrayNodes (CurrentNode, 2) = FreeNode
+Placed
+= True
+CurrentNode = ArrayNodes (CurrentNode, 2)
+End If
+End If
+End While
+Endif
+FreeNode = FreeNode + 1
+Else
+Console.Writeline("Tree is full")
+End If
+End Sub
+© UCLES 2021
+Page 19 of 23
+
+--- Page 20 ---
+9618/41
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Question
+3(b)
+Answer
+October/November
+2021
+Marks
+Java
+public static void AdaNode () {
+System.out.println("Enter the Data");
+Integer NodeData;
+Scanner in = new Scanner (System.in);
+NodeData = in.nextInt ();
+if (FreeNode <= 19){
+ArrayNodes FreeNode| 10] = - 1;
+ArrayNodes [FreeNodel [1]
+NodeData;
+ArrayNodes [FreeNodel [2] = -1;
+if (RootPointer == -1){
+RootPointer = 0;
+}elsel
+Boolean Placed = false;
+Integer CurrentNode = RootPointer;
+while (Placed == false) {
+if
+(NodeData ‹ ArrayNodes [CurrentNodel [1]) {
+if (ArrayNodes [CurrentNode] [0] == -1) ‹
+ArrayNodes [CurrentNodel [0] = FreeNode;
+Placed = true;
+jelse!
+CurrentNode = ArrayNodes [CurrentNodel [0];
+Jelse{
+(ArrayNodes [CurrentNodel [2] == -1) {
+ArrayNodes [CurrentNode] [2] = FreeNode;
+Placed = true;
+jelse{
+CurrentNode = ArrayNodes [CurrentNode] [2] ;
+}
+}
+}
+FreeNode = FreeNode + 1;
+Jelsel
+System.out.printIn ("Tree is
+}
+full");
+}
+© UCLES 2021
+Page 20 of 23
+
+--- Page 21 ---
+9618/41
+Question
+3(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+Marks
+4
+3(d)(i)
+1 mark per bullet point
+•...
+procedure header (and end, take array as parameter)
+Loops through all array elements // loops 20 times
+Prints data in index 0, 1, 2 in each array element...
+.... in the correct order and format (spaces between)
+Example program code:
+Python
+def PrintAll (ArrayNodes) :
+for X in range (0, 20):
+print (str (ArrayNodes [X] [0]),
+str (ArrayNodes [X] [2]))
+" ", str (ArrayNodes [X] [1]),
+VB.NET
+Sub PrintAll (ByRef ArrayNodes)
+For X = 0 To 19
+Console. WriteLine (ArrayNodes (X, 0)|
+& " " & ArrayNodes (X,
+1)
+& " " & ArrayNodes (X, 2))
+Next
+End Sub
+Java
+public static void PrintAll (){
+for (int X = 0; X < 20; X++) {
+System. out.println (ArrayNodes [X] [O] + " " +
+ArrayNodes [X] [1] + " " + ArrayNodes [X] [2]) ;
+}
+}
+1 mark per bullet point
+•
+looping 10 times
+calling AddNode 10 times (check parameters in 3b)
+calling PrintAll outside of loop (check parameters in 3c)
+Example program code:
+Python
+for X in range (0,10) :
+ArrayNodes, RootPointer, FreeNode =
+AdaNode (ArrayNodes, RootPointer, FreeNode)
+PrintAll (ArrayNodes)
+VB.NET
+For X = 0 To 9
+AdaNode (ArrayNodes, RootPointer,
+Next
+printall (ArrayNodes)
+FreeNode)
+Java
+for (int X = 0; X < 10; X++) {
+AdaNode () ;
+}
+PrintAll ();
+3
+© UCLES 2021
+Page 21 of 23
+
+--- Page 22 ---
+9618/41
+Question
+3(d) (ii)
+3(e)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for screenshot showing the following output:
+1 10 2
+9 5 3
+4 15 6
+5
+8 8
+7 12 - 1
+-1 6 -1
+-1 20-1
+-1 11 -1
+-1
+9-1
+-1 4 -1
+1 mark per belina mint
+procedure name Inorder taking a parameter (for current node being
+accessed
+•
+Checking if left Node is empty (-1)
+....(if not) calling procedure recursively with [Current Node][O] as parameter
+•
+•
+•
+outputting the [Current Nodell 1]
+checking if right Node is empty (- 1)
+...(if not) calling procedure recursively with [Current Node][2] as a parameter
+Order is correct, left, root, right
+Example program code:
+Python
+def InOrder (ArrayNodes, RootNode) :
+if ArrayNodes [RootNodel [0] != -1:
+InOrder (ArrayNodes, ArrayNodes [RootNodel [0])
+print (str (ArrayNodes [RootNodel [1]))
+if ArrayNodes [RootNode] [2] != -1:
+Inorder (ArrayNodes, ArrayNodes [RootNodel [2])
+October/November
+2021
+Marks
+1
+7
+VB.NET
+Sub InOrder (ArrayNodes, RootNode)
+If ArrayNodes (RootNode, 0)
+-1 Then
+InOrder (ArrayNodes, ArrayNodes (RootNode, 0))
+End If
+Console. Writeline (ArrayNodes (RootNode, 1))
+If ArrayNodes (RootNode, 2)
+<> -1 Then
+InOrder (ArrayNodes, ArrayNodes (RootNode, 2))
+End If
+End Sub
+Java
+public static void Inorder (Integer Root){
+if (ArrayNodes [Root] [0] != - 1) {
+InOrder (ArrayNodes [Root] [Ol) ;
+System.out.println (ArrayNodes [Root] [1]);
+if (ArrayNodes [Root] [2] != - 1) {
+InOrder (ArrayNodes [Root] [2]) ;
+}
+© UCLES 2021
+Page 22 of 23
+
+--- Page 23 ---
+9618/41
+Question
+3(e) (i)
+1 mark showing output:
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+Marks
+1
+5
+6
+8
+9
+10
+11
+12
+15
+20
+© UCLES 2021
+Page 23 of 23

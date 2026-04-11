@@ -1,0 +1,436 @@
+--- Page 1 ---
+* 0000800000001*
+ELS Cambridge Assessment
+International Education
+7
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+9618/31
+October/November 2025
+1 hour 30 minutes
+> 0
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+• Answer all questions.
+Use a black or dark blue pen.
+• Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided.
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 12 pages. Any blank pages are indicated
+DC (PB/JG) 346644/2
+© UCLES 2025
+L
+[Turn over
+J
+
+--- Page 2 ---
+* 0000800000002*
+DFD
+1
+2
+The composite record data type, ClubMember, is defined in pseudocode as:
+TYPE ClubMember
+DECLARE Code : INTEGER
+DECLARE LastName : STRING
+DECLARE FirstName : STRING
+DECLARE Telephone
+: STRING
+DECLARE JoinDate : DATE
+DECLARE Fees: REAL
+DECLARE FeesPaid : BOOLEAN
+ENDTYPE
+(a) (i) Write the pseudocode statement to set up a variable for one record of the composite
+data type, ClubMember.
+7
+DO NOT WRITE IN THIS MARGIN
+11]
+DO NOT WRITE IN THIS MARGIN
+(ii) Write the pseudocode statements to assign the following values to the variable set up in
+part (a)(i):
+984632 to Code
+TRUE to
+FeesPaid
+12]
+DO NOT WRITE IN THIS MARGIN
+(b) An enumerated data type, Activity, is required, so that a new field, Choice, can be added
+to the composite data type, ClubMember, to allow members to choose an activity.
+(i)
+Write the pseudocode statement for the type declaration of Activity to hold the
+names of the available activities:
+Badminton, Football, Golf, Snooker, Swimming, Tennis.
+DO NOT WRITE IN THIS MARGIN
+[2]
+(ii) Write the new pseudocode statement required to update the declaration of Choice in
+the definition of ClubMember.
+[1]
+OUCLES 2025
+9618/31/0/N/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 3 ---
+* 0000800000003*
+DFD
+DO NOT WRITE IN THIS MARGIN
+3
+7
+2
+Numbers are stored in a computer system using binary floating-point representation with:
+• 12 bits for the mantissa
+• 4 bits for the exponent
+• two's complement form for both the mantissa and the exponent.
+(a) Write the normalised floating-point representation of the following positive binary number
+using this system.
+0.00000001110101101
+DO NOT WRITE IN THIS MARGIN
+Mantissa
+Exponent
+DO NOT WRITE IN THIS MARGIN
+12]
+(b) Calculate the normalised binary floating-point representation of -76.1875 in this system.
+Show your working.
+Mantissa
+Exponent
+Working..
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/31/0/N/25
+[4]
+[Turn over
+
+--- Page 4 ---
+0000800000004*
+DFD
+4
+7
+3
+(a) Explain why protocols are essential for communication between computer systems.
+DO NOT WRITE IN THIS MARGIN
+12]
+(b) POP3 is an email communication protocol.
+Identify and describe two other communication protocols that are used when sending or
+receiving emails.
+Protocol 1
+Description
+DO NOT WRITE IN THIS MARGIN
+Protocol 2 ...
+Description
+14]
+DO NOT WRITE IN THIS MARGIN
+(c) Describe two ways in which packet switching ensures a complete message is received when
+passing messages across a network.
+1
+2
+DO NOT WRITE IN THIS MARGIN
+[4]
+LOUCLES 2025
+9618/31/0/N/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 5 ---
+0000800000005*
+DFD
+DO NOT WRITE IN THIS MARGIN
+5
+(a) A scheduling routine determines how processes are managed by the operating system.
+Identify two scheduling routines.
+7
+1
+2
+12]
+DO NOT WRITE IN THIS MARGIN
+(b) Describe two ways in which the complexities of the computer hardware are hidden from the
+user.
+1
+2
+DO NOT WRITE IN THIS MARGIN
+14]
+5
+(a) Identify two items commonly found within a digital certificate.
+1
+DO NOT WRITE IN THIS MARGIN
+2
+12]
+(b) Explain why a digital certificate is required to validate a digital signature.
+DO NOT WRITE IN THIS MARGIN
+[3]
+OUCLES 2025
+9618/31/0/N/25
+[Turn over
+
+--- Page 6 ---
+000080000006*
+DFD
+6
+6
+(a) The diagram shows a logic circuit.
+P
+A
+B
+C
+Complete the truth table for the given logic circuit.
+Show your working.
+A
+B
+C
+P
+Working space
+Q
+R
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+OUCLES 2025
+9618/31/0/N/25
+Z
+- Z
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 7 ---
+0000800000007*
+DFD
+DO NOT WRITE IN THIS MARGIN
+7
+7
+(b) (i) Complete the Karnaugh map (K-map) for the Boolean expression:
+Ã.B.C + Ã.B.E + A.B.C + A.B.C
+BC
+A
+00
+01
+10
+DO NOT WRITE IN THIS MARGIN
+1
+(ii) Draw loop(s) around appropriate group(s) in the K-map to produce an optimal
+sum-of-products.
+12]
+[2]
+(iii) Write the Boolean expression from your answer to part bii) as a simplified
+sum-of-products. Do not carry out any further simplification.
+DO NOT WRITE IN THIS MARGIN
+12]
+7 (a) Identify one Artificial Intelligence (AI) algorithm to find the shortest distance between two
+points on a graph.
+[1]
+(b) Describe Deep Learning.
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+.... [5]
+OUCLES 2025
+9618/31/0/N/25
+[Turn over
+
+--- Page 8 ---
+00008000000*
+DFD
+8
+8
+(a) Outline the purpose of lexical analysis during the compilation of a program.
+(b) Write the Reverse Polish Notation (RPN) for the given infix expression:
+(2 - 6) * 113 + 7) 15
+(c) The RPN expression:
+dab+ * ca - /
+is to be evaluated, where:
+a = 6, b = 12, c = 15 and d = 5.
+Show the changing contents of the stack as the RPN expression is evaluated.
+LOUCLES 2025
+9618/31/0/N/25
+7
+DO NOT WRITE IN THIS MARGIN
+12]
+DO NOT WRITE IN THIS MARGIN
+[2]
+DO NOT WRITE IN THIS MARGIN
+14]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 9 ---
+* 0000800000009*
+DFD
+DO NOT WRITE
+THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+9
+9
+(a) A stack has been implemented using pseudocode to store a maximum of 100 string items
+using the global variables in the following table:
+Identifier
+Base
+Top
+StackArray
+Max
+Data type
+INTEGER
+INTEGER
+STRING
+INTEGER
+Description
+Initialisation
+value
+pointer for the bottom of the stack
+pointer for the top of the stack
+1D array to implement the stack
+maximum number of items in the stack
+- 1
+10:991
+100
+The value of Top is incremented each time a data item is added to the stack and decremented
+every time a data item is removed.
+(i) Complete the pseudocode for the function to remove a data item from the stack.
+FUNCTION Pop ()
+DECLARE DataItem
+DataItem +
+STRING
+IF
+THEN
+DataItem ‹
+Top +
+ELSE
+DataItem +
+"You cannot remove data; the stack is empty"
+ENDIF
+ENDFUNCTION
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+[5]
+(ii) Write the pseudocode to output the data item removed from the stack with an appropriate
+message.
+........ [1]
+9618/31/0/N/25
+[Turn over
+
+--- Page 10 ---
+0000800000010*
+DFD
+10
+(b) A stack is used to implement recursion.
+State the three essential features of recursion.
+1
+2
+3
+10 Explain what is meant by exception handling.
+Include an example of a possible cause of an exception in your answer.
+Explanation
+Example.
+LOUCLES 2025
+9618/31/0/N/25
+[3]
+[3]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 11 ---
+* 0000800000011*
+DFD
+DO NOT WRITE IN THIS MARGIN
+11
+11
+The table shows assembly language instructions for a processor that has one register, the
+Accumulator (ACC).
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+Label
+Instruction
+Opcode
+LDM
+Operand
+LDD
+<address>
+LDI
+<address>
+ADD
+<address>
+SUB
+<address>
+STO
+<address>
+<label>:
+< data>
+Explanation
+Load the number n to ACC
+Load the contents of the location at the given
+address to the ACC
+The address to be used is at the given address.
+Load the contents of this second address to the
+ACC
+Add the contents of the given address to the
+ACC
+Subtract the contents of the given address from
+the ACC
+Store the contents of the ACC at the given
+address
+Gives a symbolic address <label› to the
+memory location with contents <data>
+# denotes a denary number, e.g. #123
+<label> can be used in place of <address>
+(a) Write assembly language code, using only the given instruction set to:
+store the denary value 100 as a named constant
+subtract the constant from the value contained in address 632
+store the result in variable Answer.
+Show the initialisation of the constant and Answer in the table provided.
+DO NOT WRITE IN THIS MARGIN
+Label
+Contents
+DO NOT WRITE IN THIS MARGIN
+[6]
+(b) The address 632 contains the value 45.
+State the value of Answer after the code described in part (a) has executed.
+[1]
+OUCLES 2025
+9618/31/0/N/25
+
+--- Page 12 ---
+* 0000800000012*
+DFD
+Г
+12
+BLANK PAGE
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+OUCLES 2025
+9618/31/0/N/25
+DO NOT WRITE IN THIS MARGIN

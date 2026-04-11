@@ -1,0 +1,644 @@
+--- Page 1 ---
+* CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+MARK SCHEME
+Maximum Mark: 75
+9618/32
+May/June 2025
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2025 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+This document consists of 12 printed pages.
+© Cambridge University Press & Assessment 2025
+[Turn over
+
+--- Page 2 ---
+9618/32
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level
+descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© Cambridge University Press & Assessment 2025
+Page 2 of 12
+
+--- Page 3 ---
+9618/32
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Annotations guidance for centres
+Examiners use a system of annotations as a shorthand for communicating their marking decisions to
+one another. Examiners are trained during the standardisation process on how and when to use
+annotations. The purpose of annotations is to inform the standardisation and monitoring processes
+and guide the supervising examiners when they are checking the work of examiners within their team.
+The meaning of annotations and how they are used is specific to each component and is understood
+by all examiners who mark the component.
+We publish annotations in our mark schemes to help centres understand the annotations they may
+see on copies of scripts. Note that there may not be a direct correlation between the number of
+annotations on a script and the mark awarded. Similarly, the use of an annotation may not be an
+indication of the quality of the response.
+The annotations listed below were available to examiners marking this component in this series.
+Annotations
+Symbol
+Use / Meaning
+Correct
+Incorrect
+To indicate where a key word/phrase/code is missing.
+Not relevant or used to separate parts of an answer.
+Highlighter
+TV
+REP
+NE
+BOD
+NAQ]
+SEEN
+FT
+Indicates a part of the answer that is incorrect.
+To draw attention to a particular aspect or to indicate where parts of an answer
+have been combined.
+Too vague.
+Repetition
+No examples or not enough.
+Benefit of Doubt.
+Not Answered Question.
+Indicates that work or a page has been seen including blank answer spaces and
+blank pages.
+Follow through.
+Ignore
+© Cambridge University Press & Assessment 2025
+Page 3 of 12
+
+--- Page 4 ---
+9618/32
+Question
+1(a)
+1 (b)(i)
+1 (b)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+One mark for each mark point
+Use of correct Flight 1 variable with given field names
+Correct assignments of four string data values
+Correct assignment of date data value
+Example answer
+Flight1.FlightNumber + "SB2789"
+Flightl. Destination ‹ "Dublin"
+Flightl.FlightDate ‹
+• 30/07/2025
+Flight1. Gate ‹ "NO3"
+Flightl.Airline ‹ "Cambridge Airways"
+One mark per mark point
+MP1
+TYPE GateID =
+MP2
+(NO1, NO2, NO3, WO1, WO2, WO3, WO4)
+Example answer
+TYPE GateID = (N01, NO2, NO3, W01, W02, WO3, W04)
+DECLARE Gate
+: GateID
+May/June 2025
+Marks
+3
+2
+1
+Question
+2(a)
+Answer
+Two marks for working
+: number converted to binary (0)1111100.0111
+use of exponent = 7 I/ Moving binary point the correct number (7) of
+places
+One mark for correct answer
+Mantissa
+• 1
+11
+1 1 0
+0 0 1 1
+1
+Exponent
+0 1 1
+1
+Marks
+3
+© Cambridge University Press & Assessment 2025
+Page 4 of 12
+
+--- Page 5 ---
+9618/32
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Answer
+Question
+2(b)
+Marks
+3
+Two marks for working
+• correct use of exponent seen
+• correct conversion method from binary to denary
+One mark for correct answer
+1010001.01011 // moving bp 6 places to right
+Evaluation of two's complement - 64 + 16 + 1 + 0.25 + 0.0625 + 0.03125 //
+-64 + 16 + 1 + 1/4 + 1/16 + 1/32 // Converting two's complement back and
+evaluating positive binary number 32 + 8 + 4 + 2 + 0.5 + 0.125 + 0.03125 // 32
++8+4+2+112+118 + 1/32
+Fractions methods - award both working marks for either
+(- 2048 + 512 + 32 + 8 + 2 + 1) / 2048 × 2° = -1493 / 32
+- 1 + 1/4 + 1/64 + 1/ 256 + 1/1024 + 1/2048 x 26 = - 1493 / 32
+Answer:
+-46.65625 // -462132
+Question
+3(a)
+Answer
+Marks
+1
+3(b)
+Two from
+: Transpor Layer
+Transport Layer
+:
+Internet Layer
+Link Layer
+One mark per mark point (Max 4)
+MP1
+MP2
+The TCP/IP suite can be viewed as layers within a stack
+Each layer can only accept input from the next higher or the next
+lower layer/adjacent layer
+MP3
+The user/sender/computer interfaces with the top layer/application
+layer to send/receive a message
+MP4
+The message when sent passes from the top layer/application layer
+to the bottom layer/link layer
+MP5
+The message when received passes from bottom layer/link layer to
+the top layer/application layer
+MP6
+The link layer interfaces directly with the network and sends/receives
+the message.
+4
+© Cambridge University Press & Assessment 2025
+Page 5 of 12
+
+--- Page 6 ---
+9618/32
+Question
+4
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+One mark for each benefit (Max 2)
+MP1
+Suitable for long continuous transmission once the connection is
+made, it is available until the end of the transmission
+MP2
+No time lost in resending/rearranging packets as no loss of packets
+or out of order packets
+MP3 Steady/high rate of transmission because the whole of the bandwidth
+is available
+MP4 Data loss unlikely as all data follows the same path
+One mark for each drawback (Max 2)
+MP5
+Delays due to dedicated connection required to be set up/established
+before transmission can begin
+The dedicated connection cannot be used to transmit any other data
+MP7
+System resources may be underutilised/inefficient/not very flexible
+because the bandwidth can't be shared/high bandwidth is required //
+Bandwidth may be wasted // May send empty frames // the circuit is always
+there whether or not used
+MP8
+There are no alternative routes if there is a failure or fault on the line
+MP9
+Reduced security due to use of single path
+MP10 Scalability is difficult
+May/June 2025
+Marks
+4
+Question
+5(a)
+Answer
+Marks
+3
+5(b)
+One mark per point
+• Running state
+• Ready state
+• Blocked state
+One mark per mark point (Max 3)
+MP1
+The processes are queued as they arrive
+MP2 The process with the shortest time to complete/burst time is selected
+first and executed
+MP3
+The process will continue until complete or put in a waiting state once
+execution has begun // it is non-pre-emptive
+MP4
+The scheduler will continue to choose shorter processes over longer
+processes if they continue to be added to the queue can cause starvation for
+longer jobs
+One mark for a benefit (Max 1)
+Shorter jobs don't have to wait for longer jobs to complete before
+processing // Significantly reduces the average overall waiting time for
+processes // Ensures starvation doesn't occur for process with shorter burst
+times
+MP6
+Higher throughput of processes
+4
+© Cambridge University Press & Assessment 2025
+Page 6 of 12
+
+--- Page 7 ---
+9618/32
+Question
+6(a)
+6(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+One mark per point (Max 2)
+A graph uses vertices/nodes to identify/represent entities such as
+destinations, people, etc
+Edges are used to connect nodes and can represent possible paths
+between them // a path is the list of nodes connected by edges between two
+given nodes
+Nodes/edges can be labelled/weighted, and this is a weighting that
+can be applied and used in the context of the application
+A cycle is a list of nodes that return to the same node.
+One mark per mark point (Max 4)
+MP1
+Supervised learning uses labelled data // Unsupervised learning
+makes use of unlabelled data.
+MP2
+Labelled data means that known outcomes are applied to specific
+inputs to help the Al predict outcomes.
+MP3
+Supervised learning requires initial human input/training //
+Unsupervised learning does not require human input/training.
+MP4
+With unlabelled data in unsupervised learning, outcomes are not
+known
+MP5
+MP6
+... the Al has to search for hidden patterns/structures/clusters
+... within the data in order to predict outcomes.
+May/June 2025
+Marks
+2
+4
+© Cambridge University Press & Assessment 2025
+Page 7 of 12
+
+--- Page 8 ---
+9618/32
+Question
+7(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+One mark for working, (all four columns P, Q, R and S)
+One mark for first eight rows of column Z (Shaded)
+One mark for second eight rows of column Z (Unshaded)
+Working space
+A
+B
+D
+P
+Q
+R
+1
+0
+1
+0
+0
+1
+0
+1
+0
+S
+1
+1
+1
+May/June 2025
+Marks
+Z
+3
+7(b)
+0
+1
+1
+1
+0
+0
+0
+1
+1
+1
+1
+1
+1
+0
+0
+1
+1
+1
+0
+1
+1
+1
+0
+1
+0
+1
+0
+•
+1
+0
+0
+1
+0
+0
+0
+0
+1
+One mark for correct answer (terms may be in any order)
+z = Ã.B.C.D + A.B.C.D + A.B.C.D + A.B.C.D
+0
+1
+1
+1
+1
+0
+1
+© Cambridge University Press & Assessment 2025
+Page 8 of 12
+
+--- Page 9 ---
+9618/32
+Question
+7(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+One mark for each mark point
+: Correct application of De Morgan's laws
+Correct application of Idempotent, Distributive or Absorption laws
+Correct application of Idempotent, Distributive or Absorption laws
+Correct final answer
+(A+B). (A.B+B.C)
+(Ã.B).(A+B+B+C)
+(Ã.B). (A+B+C)
+(Ã.Ă+Ã.B+Ã.Č).(B.Ã+B.B+B.č)
+(À+Ã.B+Ã.C).(Ã.B+B+B.C)
+May/June 2025
+Marks
+4
+Question
+8
+DeMorgan's laws
+Idempotent laws
+Distributive laws
+Idempotent laws
+Absorption laws
+Absorption laws / Final Answer
+Answer
+One mark per mark point (Max 4)
+MP1
+It is the first stage of compilation
+MP2
+White space and comments are removed
+MP3
+It takes modified source code and breaks it into a series of tokens
+MP4
+Each token is categorised and assigned types
+MP5
+Identifiers are stored in a symbol table
+MP6
+If the lexical analyser finds invalid tokens, it generates an error
+MPT Acceptable data from the lexical analyser passes to the syntax
+analyser
+Marks
+4
+Question
+9(a)
+9(b)
+9(c)
+Answer
+Variables must begin with a letter / not a digit
+‹operator> ::= + 1 - 1 * 1/1^
+One mark per mark point
+MP1
+Two variable boxes added to diagram
+One operator box added to diagram and all boxes in correct order
+additional boxes or connections
+expression
+• variable
+→ variable
+* operator
+• variable
+Marks
+1
+1
+3
+© Cambridge University Press & Assessment 2025
+Page 9 of 12
+
+--- Page 10 ---
+9618/32
+Question
+9(d)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Answer must begin with a valid letter. It can then be followed by any number
+of valid digits and/or letters, as long as it is at least four characters in length.
+Example answer
+AC768
+May/June 2025
+Marks
+1
+Question
+10
+Question
+11(a)
+Answer
+One mark for identifying a protocol and one mark for stating its purpose
+MP1
+Handshake protocol
+MP2
+To establish a secure and reliable connection between two devices,
+systems or networks // Permits the web server and client to authenticate each
+other to make use of encryption algorithms
+Record protocol
+MP4
+Provides a secure and reliable way to send and receive data over a
+network // To exchange records between the client and server // Responsible
+for securing application data end ensuring its integrity and authenticity during
+transmission // Encrypts and authenticates data exchanged between a client
+and a server // Deals with the format for data transmission
+Answer
+One mark per mark point
+Any two nodes added correctly with correct data (Aa, Mm, Ss, Xx)
+Remaining two nodes added with correct data (Aa, Mm, Ss, Xx) and
+all nodes with connecting arrows starting from correct pointer boxes
+Correct null pointers (0) added throughout
+... with no entries in other pointer boxes and all nodes correctly
+positioned and connected.
+Root pointer
+Marks
+4
+Marks
+4
+Pp
+Gg
+0
+Aa
+0
+Kk
+0 Ss
+0 Mm O
+© Cambridge University Press & Assessment 2025
+Page 10 of 12
+
+--- Page 11 ---
+9618/32
+Question
+11(b)
+Question
+12(a)
+12(b)(i)
+12(b)(ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+One mark for feature and one mark for example (Max 2)
+• Recursion is beneficial for algorithms when a problem naturally breaks
+down into smaller versions of itself.
+•
+... such as calculating a factorial / mathematical series / Fibonacci /
+compound interest / tree traversal / evaluation of RPN expressions.
+Answer
+One mark per mark point
+MP1 Two correct attributes (DateOfBirth : Date) and priority with a
+sensible name and integer data type
+MP2
+MP3
+SetPatientID (...) and SetDoctorID (..) seen
+... and appropriate parameters, with string data types
+MP4
+MP5
+GetPatientID () and GetDateOfBirth () seen
+Priority setter and getter fully correct with name matching Priority
+attribute, with appropriate parameter and correct data type.
+Patient
+PatientID
+Name
+DateOfBirth
+Priority
+DoctorID
+: STRING
+: STRINC
+• DATE
+• INTEGEF
+STRING
+SetPatientID (PatientNumber : STRING)
+SetName (FullName : STRING)
+SetDateOfBirth (DOB: DATE)
+SetPriority (Urgency : INTEGER)
+SetDoctorID (DocID :
+STRING)
+GetPatientID ()
+GetName ()
+GetDateOfBirth ()
+GetPriority ()
+GetDoctorID ()
+Instance // instantiation
+One mark for each mark point
+MP1
+Polymorphism is when methods with the same name are redefined /
+behave differently..
+MP2 ... in derived / inherited classes / subclasses
+May/June 2025
+Marks
+2
+Marks
+5
+1
+2
+© Cambridge University Press & Assessment 2025
+Page 11 of 12
+
+--- Page 12 ---
+9618/32
+Question
+13
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Answer
+One mark for each correctly completed line
+DECLARE Grade : StudentResult
+DECLARE Position : INTEGER
+OPENFILE "CurrentResults .dat" FOR RANDOM
+OPENFILE "StoredResults.dat" FOR RANDOM
+FOR Position + 1 IO 50
+SEEK "CurrentResults.dat", Position
+GETRECORD "CurrentResults.dat", Grade
+IF Grade. ExamGrade
+"" THEN
+Grade. ExamGrade + "Missing grade"
+ENDIF
+SEEK "StoredResults dat", Position
+PUTRECORD "StoredResults .dat", Grade
+NEXT Position
+CLOSEFILE
+"CurrentResults.dat"
+CLOSEFILE "StoredResults.dat"
+Marks
+5
+© Cambridge University Press & Assessment 2025
+Page 12 of 12

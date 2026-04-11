@@ -1,0 +1,582 @@
+--- Page 1 ---
+# CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+MARK SCHEME
+Maximum Mark: 75
+9618/33
+October/November 2024
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2024 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+This document consists of 17 printed pages.
+© Cambridge University Press & Assessment 2024
+[Turn over
+
+--- Page 2 ---
+9618/33
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Generic Marking Principles
+October/November 2024
+These general marking principles must be applied by all examiners when marking candidate answers. They should be applied alongside the
+specific content of the mark scheme or generic level descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+•
+•
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit is given for valid answers which go beyond
+the scope of the syllabus and mark scheme, referring to your Team Leader as appropriate
+marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these features are specifically assessed by the
+question as indicated by the mark scheme. The meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed instructions or in the application of generic level
+descriptors.
+© Cambridge University Press & Assessment 2024
+Page 2 of 17
+
+--- Page 3 ---
+9618/33
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November 2024
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question (however; the use of the full mark range may
+be limited according to the quality of the candidate responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should not be awarded with grade thresholds or
+grade descriptors in mind.
+© Cambridge University Press & Assessment 2024
+Page 3 of 17
+
+--- Page 4 ---
+9618/33
+Question
+1(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Marks
+3
+One mark per mark point (Max 1)
+:
+correct answer
+statement regarding number losing precision/rounding error
+One mark per mark point for working (Max 2)
+number converted to binary 201.125 = 11001001.001
+|| 128 + 64 + 8 + 1 + 0.125 / '½ seen
+use of the exponent e.g. moving the binary point 8 places / × 28.
+1(b)
+One mark per mark point (Max 2)
+application of exponent to go from 1.010110011 to 101011.0011 // x 25 // movement of binary point 5 places seen
+-32 + 8 + 2 + 1 + 125 + .0625 // -32 + 8 + 2 + 1 + ⅛ + '16 seen
+|| -1 + ¼ + 16+⅓2 + 256 + 512/1-1 + 17951211—333512
+One mark for correct answer (Max 1)
+• -20.8125 //
+-2013/16
+3
+© Cambridge University Press & Assessment 2024
+Page 4 of 17
+
+--- Page 5 ---
+9618/33
+Question
+2
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Marks
+4
+One mark per mark point (Max 4)
+MP1 low number of instruction formats I/low number of instruction sets
+MP2 uses single-clock cycle instructions
+uses fixed length instructions
+uses many general-purpose registers
+works well with pipelining
+hard-wired control unit
+makes extensive use of RAM
+uses a low number of addressing modes
+MP9 the design emphasis is on the software.
+Question
+3(a)
+Answer
+Marks
+3
+One mark per mark point (Max 3)
+MP1 A dedicated circuit / channel is required
+MP2
+The circuit is established before the transmission begins
+MP3
+The circuit lasts for the whole of the transmission // The circuit is closed at the end of the transmission
+MP4
+Data travels in a continuous stream along the same route
+MP5
+Transmission is usually bidirectional.
+© Cambridge University Press & Assessment 2024
+Page 5 of 17
+
+--- Page 6 ---
+9618/33
+Question
+3(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Marks
+2
+One mark for a benefit (Max 1)
+MP1 No need for data to be reassembled // data / frames arrive in the same order in which they were sent
+MP2
+Suitable for real time transmission // fast data transfer rate
+MP3 The whole of the bandwidth is available
+One mark for a drawback (Max 1)
+MP4 No other transmission can use the same circuit when it is in use // Bandwidth can be wasted as it cannot be used by
+other messages
+MP5 Not secure // Can be intercepted as all data travelling along the same route
+MP6 If there is a problem with the route the transmission ends // No other route is available without first doing the setup
+MP7 The circuit is always there whether or not it's being used
+MP8 Can take time to set up before transmission starts.
+Question
+4
+Answer
+Marks
+4
+One mark per mark point (Max 4)
+MP1 Each layer can only accept input from the next higher layer or the next lower layer
+MP2
+There is an interface between the adjacent layers which is the only interaction between layers
+MP3
+Data is added to the headers as the frames/packets pass through the layers
+MP4 The interactions are carried out by installed software
+MP5 User interaction takes place at the highest/Application layer of the stack through protocols associated with that layer
+of the stack
+MP6 Direct access to hardware takes place at the lowest/Link layer of the stack.
+© Cambridge University Press & Assessment 2024
+Page 6 of 17
+
+--- Page 7 ---
+9618/33
+Question
+5(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Marks
+3
+5(b)
+One mark per mark point (Max 3)
+MP1 A hashing algorithm is used in direct access methods on random and sequential files
+It is a mathematical formula
+MP3
+.. used to perform a calculation applied to the key field of the record being searched / stored
+MP4
+The result of the calculation gives the address where the record should be found / stored.
+One mark per mark point (Max 2)
+MP1 The record is stored in the next free memory space after the one identified by the hashing algorithm // Use
+linear progression
+MP2 An overflow area is set up and the record is stored in the next free memory space in the overflow area.
+2
+Question
+6(a)
+Answer
+Marks
+3
+One mark per mark point (Max 3)
+MP1 A set user-defined data type is a composite data type
+MP2 ... which includes a list of unordered elements
+Set theory operations, such as intersection and union, can be applied to these elements
+MP4 A set data type includes the type of data/data type it uses as part of its definition
+MP5
+All the elements are of the same data type.
+© Cambridge University Press & Assessment 2024
+Page 7 of 17
+
+--- Page 8 ---
+9618/33
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+6(b)
+October/November 2024
+Marks
+4
+One mark for each mark point (Max 4)
+MP1
+TYPE SymbolSet/Operators=
+MP2 SET OF CHAR
+MP3
+DEFINE Operators/SymbolSet
+MP4
+('t'
+'-',
+1 *'
+'/',
+"^1)
+MP5 : SymbolSet/Operators
+Example answers
+TYPE SymbolSet = SET OF CHAR
+DEFINE Operators
+('t',
+'-',
+.*.
+,'/',
+"^") : Symbolset
+TYPE Operators = SET OF CHAR
+DEFINE Symbolset ('t',
+'-',
+,'/', "^") : Operators
+Question
+7(a)
+Answer
+Marks
+3
+One mark for every two correct products (Max 3)
+(T =) Ã. B. C.D + Ã. B. C. D + A. B.C. D + A. B. C. D + A. B.C. D + A. B. C.D
+© Cambridge University Press & Assessment 2024
+Page 8 of 17
+
+--- Page 9 ---
+9618/33
+Question
+7(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Marks
+2
+Two marks if no errors present
+One mark if one error present
+AB
+CD
+O0
+01
+11
+10
+7(c)
+00
+01
+11
+10
+1
+1
+1
+1
+One mark for each correct loop (Max 2)
+AB
+1
+1
+2
+CD
+00
+01
+11
+10
+00
+01
+11
+10
+1
+1
+1
+© Cambridge University Press & Assessment 2024
+Page 9 of 17
+
+--- Page 10 ---
+9618/33
+Question
+7(d) (i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Marks
+2
+7 (d) (ii)
+One mark for each mark point (Max 2)
+:
+Any correct Boolean term
+Boolean terms and operator correct and no other terms present
+(T =) A. D + B. D // B.D. + A.D
+One mark for simplest form (Max 1)
+(T =) D. (A.B)
+Question
+8(a)
+Answer
+Marks
+4
+One mark per mark point (Max 4)
+MP1 In segmented memory, the logical / virtual address space is broken into varying sized blocks called segments /
+sections.
+Each segment has a name and size.
+During execution segments from logical / virtual memory are loaded into physical memory
+MP4 The address is specified by the user
+... it contains the segment name and offset value.
+Segments are numbered
+MP7
+... and this number is used as an index in the segment map table.
+MP8
+The offset value determines the size of the segment.
+MP9 A segment map table maps logical / virtual addresses to physical addresses / contains the segment number and
+offset.
+© Cambridge University Press & Assessment 2024
+Page 10 of 17
+
+--- Page 11 ---
+9618/33
+Question
+8(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Marks
+3
+One mark per mark point (Max 3)
+MP1 Disk thrashing is a problem that may occur when virtual memory is being used.
+As the main memory fills up, more and more pages need to be swapped in and out of virtual memory.
+This swapping leads to a very high rate of hard disk access / excessive disk head movements.
+MP4 Moving a hard disk read/write head takes a relatively long time / long latency time.
+Eventually, more time is spent swapping pages than processing data thrash point, which can cause the program to
+freeze or not run.
+© Cambridge University Press & Assessment 2024
+Page 11 of 17
+
+--- Page 12 ---
+9618/33
+Question
+9(a)
+9(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+To ensure that the attributes are only accessible using the class's own methods/within the class.
+One mark per mark point (Max 5)
+MP1 Two correct attributes with sensible names and correct data types.
+MP2 Constructor present.
+Two correct setters with exact names and appropriate parameters and data types.
+MP4 Two correct getters with appropriate names.
+MP5 Name assigned to pet name getter matches the attribute.
+Pet
+PetID
+PetType
+OwnerTelephone
+DateRegistered
+PetName
+OwnerName
+: STRING
+: STRING
+: STRING
+: DATE
+: STRING
+: STRING
+October/November 2024
+Marks
+1
+5
+Constructor ()
+SetPetID (APetID : STRING)
+SetDateRegistered (RegDate
+GetPetName ()
+GetOwnerTelephone ()
+: DATE)
+© Cambridge University Press & Assessment 2024
+Page 12 of 17
+
+--- Page 13 ---
+9618/33
+Question
+10(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Marks
+4
+10(b)(i)
+One mark per mark point (Max 4)
+•..
+<operator> : := + | - | * | /
+<label> ::= <letter>digit>|letter>digit><digit>
+‹equation› ::= <label> =
+<label><operator><label>
+One mark per mark point (Max 3)
+MP1 begin with either a letter or a symbol
+MP2 digi at allet er con tections and label correct.
+password
+3
+letter
+digit
+symbol
+symbol
+→
+symbol
+© Cambridge University Press & Assessment 2024
+Page 13 of 17
+
+--- Page 14 ---
+9618/33
+Question
+10(b) (ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November 2024
+Answer
+Marks
+2
+One mark per mark point (Max 2)
+‹password> ::= ‹letter><digit><symbol>|
+<letter><digit><symbol><symbol>|<symbol>digit><symbol>|
+<symbol>‹digit><symbol><symbol>
+‹password› ::= ‹letter>digit><symbol>|
+<letter>digitx<symbolxsymbol>|<symbol×digit>symbol>|
+‹symbol><digit>symbol><symbol>
+Alternative Answer
+One mark per mark point (Max 2)
+• All three lines correct
+• Any two lines correct
+‹first> ::= «letter>|<symbol>
+‹last> : := ‹symbol>|<symbol><symbol>
+‹password› : := ‹first>digit>last>
+© Cambridge University Press & Assessment 2024
+Page 14 of 17
+
+--- Page 15 ---
+9618/33
+Question
+11(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Marks
+4
+One mark per mark point (Max 4)
+MP1 Four additional nodes with correct data values
+MP2 Correct null pointers in all added nodes (6) with no extra null pointers where the arrow points to the next node
+MP3 Correct arrows to represent pointers joining parent nodes to child nodes
+MP4 All nodes in correct order and no extra data added to pointers.
+RootPtr
+LeftPtr
+• Data
+Red
+RightPtr
+Green
+Yellow
+- 1
+Blue
+- 1
+4 orange -1
+-1
+Indigo
+-1 Violet
+1-1
+© Cambridge University Press & Assessment 2024
+Page 15 of 17
+
+--- Page 16 ---
+9618/33
+Question
+11(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Marks
+4
+One mark per mark point (Max 4)
+MP1 Correct Red and Green rows
+MP2 Correct Yellow and Blue rows
+MP3 Correct Orange, Indigo and Violet rows
+MP4 Correct FreePtr with blank row 7
+RootPt
+Index Leftptr
+FreePt
+7
+1
+2
+3
+4
+5
+6
+7
+1
+3
+6
+-1
+5
+- 1
+- 1
+Data
+Red
+Green
+Yellow
+Blue
+Orange
+Indigo
+Violet
+RightPt
+I
+2
+4
+- 1
+- 1
+- 1
+- 1
+- 1
+© Cambridge University Press & Assessment 2024
+Page 16 of 17
+
+--- Page 17 ---
+9618/33
+Question
+11 (c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2024
+Marks
+4
+One mark for any correct row (Max 4)
+FUNCTION SearchTree (Item : STRING) RETURNS INTEGER
+NowPtr + RootPtr
+WHILE NowPtr <> -1
+IF BinTree [NowPtr] Data > Item THEN
+NowPtr ‹ BinTree [NowPtr]. LeftPtr
+ELSEC
+IF BinTree [NowPtr].Data < Item THEN
+NowPtr + BinTree [NowPtr]. RightPtr
+ELSE
+RETURN NowPtr
+ENDIF
+ENDIF
+ENDWHILE
+RETURN NowPtr
+ENDFUNCTION
+© Cambridge University Press & Assessment 2024
+Page 17 of 17

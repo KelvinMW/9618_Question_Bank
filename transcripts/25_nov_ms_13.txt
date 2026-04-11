@@ -1,0 +1,589 @@
+--- Page 1 ---
+* CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+MARK SCHEME
+Maximum Mark: 75
+9618/13
+October/November 2025
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2025 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+components.
+This document consists of 12 printed pages.
+© Cambridge University Press & Assessment 2025
+[Turn over
+
+--- Page 2 ---
+9618/13
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2025
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level
+descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+•..
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+• marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© Cambridge University Press & Assessment 2025
+Page 2 of 12
+
+--- Page 3 ---
+9618/13
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Annotations guidance for centres
+Examiners use a system of annotations as a shorthand for communicating their marking decisions to
+one another. Examiners are trained during the standardisation process on how and when to use
+annotations. The purpose of annotations is to inform the standard isation and monitoring processes
+and guide the supervising examiners when they are checking the work of examiners within their team.
+The meaning of annotations and how they are used is specific to each component and is understood
+by all examiners who mark the component.
+We publish annotations in our mark schemes to help centres understand the annotations they may
+see on copies of scripts. Note that there may not be a direct correlation between the number of
+annotations on a script and the mark awarded. Similarly, the use of an annotation may not be an
+indication of the quality of the response.
+The annotations listed below were available to examiners marking this component in this series.
+Annotations
+Annotation
+Meaning
+Correct
+Incorrect
+To indicate where a key word/phrase/code is missing.
+Not relevant or used to separate parts of an answer.
+Highlighter
+REP
+NE
+BOD
+NAQ
+SEEN
+FT
+Indicates a part of the answer that is incorrect.
+To draw attention to a particular aspect or to indicate where parts of an answer have
+been combined.
+Too vague.
+Repetition
+No examples or not enough.
+Benefit of Doubt.
+Not Answered Question.
+Indicates that work or a page has been seen including blank answer spaces and
+blank pages.
+Follow through.
+Ignore
+© Cambridge University Press & Assessment 2025
+Page 3 of 12
+
+--- Page 4 ---
+9618/13
+Question
+1(a)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+1 mark for each correctly connected change box, max 3 marks
+the file size gets
+bigger
+Marks
+3
+increase the duration
+of the recording
+no change in the file
+size
+the file size gets
+smaller
+increase the sampling
+rate
+the accuracy of the
+sound file improves
+decrease the
+sampling resolution
+no change to the
+accuracy of the sound
+file
+the accuracy of the
+sound file worsens
+1(b)
+1(c)
+1 mark per bullet point, max 2 marks
+:
+Each character has a unique code
+Each character in the text is replaced sequentially/ in order by its code
+1 mark per bullet point, max 2 marks
+..
+ASCIl uses 7 1 8 bits Unicode can use many more / up to 32 bits
+Unicode can represent a wider range of characters including different
+languages
+2
+2
+© Cambridge University Press & Assessment 2025
+Page 4 of 12
+
+--- Page 5 ---
+9618/13
+Question
+2(a)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+Marks
+3
+3 marks for 6 correct ticks
+2 mark for 4 or 5 correct ticks
+1 mark for 2 or 3 correct ticks
+Example of data
+4
+8
+Number of bits
+16
+24
+32
+64
+128
+2(b)
+2(c)
+2(d)
+the hexadecimal
+value F139
+16 000 000 unique
+amplitude values
+an IPv4 address
+256 unique colours
+an IPv6 address
+the denary value
+65 000
+1 mark
+1111 1001 0100
+1 mark
+1111 0010
+1 mark
+E33B
+r
+1
+1
+© Cambridge University Press & Assessment 2025
+Page 5 of 12
+
+--- Page 6 ---
+9618/13
+Question
+3(a)
+Cambridge International AS & A Level - Mark Scheme
+October/November
+PUBLISHED
+2025
+Answer
+1 mark per shaded area, max 2 marks
+A
+B
+C
+Marks
+2
+1
+3(b)
+0
+1
+1
+1
+1
+0
+1
+1
+0
+0
+1
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1 mark per bullet point, max 2 marks
+A AND B OR C
+C NOR D and final two gates
+2
+D.
+Question
+4(a)
+Answer
+Marks
+3
+1 mark for each benefit, max 3
+Devices can be more mobile as no physical connection is required
+No cabling is needed so easier to set up
+Easier to add additional devices
+Multiple different device types can be connected
+© Cambridge University Press & Assessment 2025
+Page 6 of 12
+
+--- Page 7 ---
+9618/13
+Question
+4(b)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+Marks
+1
+4(c)
+1 mark for a drawback
+Can be less secure
+Transmission speed can be slow
+Interference is possible
+The signal degrades quickly without repeaters/boosters
+One mark for each correct row
+Description
+A read only memory where the contents
+can be erased using a voltage pulse. The
+contents can be changed multiple times
+without physically removing the memory.
+A read only memory where the contents
+are erased using ultraviolet (UV) light. The
+memory must be physically removed to be
+reprogrammed.
+A read only memory where the contents
+can be written only once after manufacture.
+Memory
+Technology
+EEPROM
+EPROM
+PROM
+3
+© Cambridge University Press & Assessment 2025
+Page 7 of 12
+
+--- Page 8 ---
+9618/13
+Question
+5(a)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+1 mark for each correct relationship, max 3 marks
+Marks
+3
+CUSTOMER
+PRODUCT
+COMPLAINT
+STAFF
+5(b)
+1 mark per bullet point, max 4 marks
+•
+•
+..
+Create table with opening and closing brackets and commas separating
+the attributes
+Appropriate data types for StaffFirstName, StaffLastName and
+Department
+Appropriate data types for StaffID and RemoteWorker
+Primary key correctly defined
+Example Answer 1:
+CREATE TABLE STAFF (
+StaffID INTEGER,
+StaffFirstName VARCHAR,
+StaffLastName VARCHAR,
+Department CHAR,
+RemoteWorker BOOLEAN,
+PRIMARY KEY (StaffID)
+1;
+Example Answer 2:
+CREATE TABLE STAFF (
+StaffID INTEGER NOT NULL PRIMARY KEY,
+StaffFirstName VARCHAR,
+StaffLastName VARCHAR,
+Department CHAR,
+RemoteWorker BOOLEAN
+1 ;
+4
+© Cambridge University Press & Assessment 2025
+Page 8 of 12
+
+--- Page 9 ---
+9618/13
+Question
+5(c)
+5(d)
+Cambridge International AS & A Level - Mark Scheme
+October/November
+PUBLISHED
+2025
+Answer
+1 mark per bullet point, max 5 marks
+•••
+:
+SELECT and the correct attributes
+FROM and the correct tables
+Tables joined correctly
+Correct condition for the rating
+Correct ORDER BY clause
+Marks
+5
+Example Answer 1
+SELECT PRODUCT. ProductID, ProductName, ComplaintDetails
+FROM PRODUCT, COMPLAINT
+WHERE PRODUCT. ProductID = COMPLAINT. ProductID
+AND Rating <=5
+ORDER BY Rating DESC;
+Example Answer 2
+SELECT PRODUCT. ProductID, ProductName, ComplaintDetails
+FROM PRODUCT INNER JOIN COMPLAINT
+ON PRODUCT. ProductID = COMPLAINT. ProductID
+WHERE Rating <=5
+ORDER BY Rating DESC;
+One mark for identification of method one mark for corresponding description
+max 4 marks
+•
+•
+Authentication methods / passwords / biometrics / 2-factor authentication
+can be implemented
+... which prevents unauthorised access to the customer's data
+Access rights / privileges can be set
+... so that only those with correct permissions can read / edit customer's
+•.
+Regular backups can be scheduled
+.... so that a second copy of the customer's data is available in case of
+loss/damage
+The data can be encrypted
+... so that the customer's data cannot be understood by anyone who
+gains unauthorized access
+•.
+Different views can be created
+.... so that not everyone can see the customer's data
+4
+© Cambridge University Press & Assessment 2025
+Page 9 of 12
+
+--- Page 10 ---
+9618/13
+Question
+6(a)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+Marks
+4
+6(b)
+6(c)
+1 mark for each correct row
+Current contents
+of the ACC
+Instruction
+Contents of the ACC
+after the execution of
+the instruction
+0000 1111
+0000 0000
+0000 0001
+AND 101
+LDM #100
+XOR &F1
+0000 1110
+0110 0100
+1111 0000
+0001 0001
+CMP 101
+0001 0001
+1 mark for each bullet point, max 4 marks
+• MAR stores the address of the next instruction / data to be read from /
+or written to memory
+•
+The address is received from the Program Counter (PC)
+•
+The MDR stores the data / instruction in the address stored in the MAR
+which has been read / written
+•
+The instruction passes to the CIR for decoding and executing
+1 mark for each bullet point, max 3 marks
+•
+•
+Data movement
+Arithmetic operations
+Conditional and unconditional (jump) instructions
+4
+3
+© Cambridge University Press & Assessment 2025
+Page 10 of 12
+
+--- Page 11 ---
+9618/13
+Question
+7(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2025
+Answer
+Marks
+2
+7(b)
+7(c)
+1 mark per point, max 2 marks
+e.g.
+•
+The learning experience could be improved
+•.
+... by identifying students who are struggling
+.... and employing more personalised learning
+•
+•
+•
+There could be early Intervention
+... to determine which students require extra support
+:
+Teachers and students could understand the challenges better
+...and identify optimal times for learning
+There could be privacy concerns
+.... students / teachers could be uncomfortable with constant surveillance
+... students might not want their data / actions passed to third parties
+•
+•
+There could be Mental Health concerns
+.... due to constant monitoring and pressure
+....contributing to student stress and anxiety
+1 mark for the working
+1 mark for the correct answer
+Working:
+(4000*3000*30*16) / (8*1000*1000*1000)
+I|(4000*3000*30*2) / (1000*1000*1000)
+Answer: 0.72 gigabytes
+1 mark for the name 2 marks for the matching description, max 3 marks
+•
+Parity Byte Check
+a parity bit is added to each byte to make the number of 1s match the
+parity, odd or even
+each byte can be checked on receipt and request to be resent if the byte
+does not match parity
+•
+•
+•
+•
+Parity Block Check
+a bit is added to each byte, but a parity byte is also set for each block
+the location of an error can be found using vertical and horizontal parity
+Checksum
+A calculation is made from the data and transmitted with the data
+The receiver performs the same calculation and compares with received
+checksum to see if they match
+2
+3
+© Cambridge University Press & Assessment 2025
+Page 11 of 12
+
+--- Page 12 ---
+9618/13
+Question
+7(d)
+7(e)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+1 mark per reason, 1 mark for corresponding justification x2
+max 4 marks
+: Loser costph anacit storage
+... so the high capacity of storage required for large number of video files
+will be less costly
+•
+A large number of read/write operations are being performed
+•
+continuously
+...and magnetic storage is likely to have a longer life span compared with
+Marks
+4
+1 mark for each validation check correctly identified, max 3 marks
+Range Check
+Existence Check
+Format Check
+3
+Question
+8(a)
+Answer
+Marks
+2
+8(b)
+8(c)
+8(d)
+1 mark per bullet point, max 2
+• •
+Large amounts of source code take time to compile
+It can be slower to produce the object code than an interpreter
+The code must be recompiled when it is changed
+The program cannot run if there are errors
+•
+It is not possible to correct errors in real-time
+One error can cause false reporting of multiple further errors
+Sections of code / unfinished code cannot easily be tested
+1 mark per bullet point, max 3 marks
+•
+••.
+•
+Programming time is saved as code does not have to written from scratch
+Testing time is saved as code is already tested / documented
+A library routine is more likely to work, as code is already tested
+Library routines automatically update if they are changed / improved
+The programmer can use library routines to perform complex functions /
+procedures that they may not be able to write themselves
+1 mark per bullet point, max 2 marks
+Open Source (Initiative)
+Free Software (Foundation)
+1 mark for each bullet point, max 3 marks
+•.
+•
+File management
+Security management
+Hardware / peripheral management // input / output management
+Process management
+3
+2
+3
+© Cambridge University Press & Assessment 2025
+Page 12 of 12

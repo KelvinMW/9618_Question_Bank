@@ -1,0 +1,459 @@
+--- Page 1 ---
+5 Cambridge Assessmen
+shes International Educatior
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+9618/22
+May/June 2023
+2 hours
+You must answer on the question paper.
+You will need: Insert (enclosed)
+INSTRUCTIONS
+• Answer all questions.
+• Use a black or dark blue pen.
+• Write your name, centre number and candidate number in the boxes at the top of the page.
+• Write your answer to each question in the space provided
+• Do not use an erasable pen or correction fluid.
+• Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+• The insert contains all the resources referred to in the questions.
+This document has 20 pages. Any blank pages are indicated
+DC (EF/SG) 312086/3
+© UCLES 2023
+[Turn over
+
+--- Page 2 ---
+2
+Refer to the insert for the list of pseudocode functions and operators.
+1 A program calculates the postal cost based on the weight of the item and its destination.
+Calculations occur at various points in the program and these result in the choice of several
+possible postal costs. The programmer has built these postal costs into the program.
+For example, the postal cost of $3.75 is used in the following lines of pseudocode:
+IF Weight < 250 AND ValidAddress = TRUE THEN
+ItemPostalCost + 3.75
+I set postal cost for item to $3.75
+ItemStatus ‹ "Valid"
+/ item can be sent
+ENDIF
+(a) (i) Identify a more appropriate way of representing the postal costs.
+[1]
+(ii) Describe the advantages of your answer to part (a)(i) with reference to this program.
+... [3]
+(b) The lines of pseudocode contain features that make them easier to understand.
+State three of these features.
+1
+2....
+3
+[3]
+(c) Give the appropriate data types for the following variables:
+ValidAddress
+ItemPostalCost
+ItemStatus ..
+[3]
+© UCLES 2023
+9618/22/M/J/23
+
+--- Page 3 ---
+2
+3
+A program stores a user's date of birth using a variable MyDOB of type DATE.
+(a) Write a pseudocode statement, using a function from the insert, to assign the value
+corresponding to 17/11/2007 to MyDOB.
+.. 11]
+(b) MyDOB has been assigned a valid value representing the user's date of birth.
+Write a pseudocode statement to calculate the number of months from the month of the
+user's birth until the end of the year and to assign this to the variable NumMonths.
+For example, if MyDOB contains a value representing 02/07/2008, the value 5 would be
+assigned to NumMonths.
+12]
+(c) The program will output the day of the week corresponding to MyDOB.
+For example, given the date 22/06/2023, the program will output "Thursday".
+An algorithm is required. An array will be used to store the names of the days of the week.
+Define the array and describe the algorithm in four steps.
+Do not use pseudocode statements in your answer.
+Array definition
+Step 1
+Step 2
+Step 3
+Step 4
+© UCLES 2023
+9618/22/M/J/23
+16]
+[Turn over
+
+--- Page 4 ---
+4
+3
+A program stores data in a text file. When data is read from the file, it is placed in a queue.
+(a) The diagram below represents an Abstract Data Type (ADT) implementation of the queue.
+Each data item is stored in a separate location in the data structure. During initial design, the
+queue is limited to holding a maximum of 10 data items.
+The operation of this queue may be summarised as follows:
+•
+The Front of Queue Pointer points to the next data item to be removed.
+The End of Queue Pointer points to the last data item added.
+The queue is circular so that locations can be reused.
+0
+1
+2
+3
+4
+6
+7
+8
+9
+Red
+Green
+Blue
+Pink
+« Front of Queue Pointer
++ End of Queue Pointer
+(i) Describe how the data items Orange and Yellow are added to the queue shown in the
+diagram.
+[4]
+© UCLES 2023
+9618/22/M/J/23
+
+--- Page 5 ---
+5
+(ii) The following diagram shows the state of the queue after several operations have been
+performed. All queue locations have been used at least once.
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+D4
+D3
+D27
+D8
+D33
+D17
+D2
+D1
+D45
+D60
+« End of Queue Pointer
+< Front of Queue Pointer
+State the number of data items in the queue.
+11]
+(b) The design of the queue is completed and the number of locations is increased
+A function AddToQueue () has been written. It takes a string as a parameter and adds this to
+the queue. The function will return TRUE if the string was added successfully.
+A procedure FileToQueue () will add each line from the file to the queue. This procedure
+will end when all lines have been added or when the queue is full.
+Describe the algorithm for procedure FileToQueue ().
+Do not use pseudocode in your answer.
+© UCLES 2023
+9618/22/M/J/23
+[5]
+[Turn over
+
+--- Page 6 ---
+6
+4 A function GetNum () Will:
+1. take two parameters: a string and a character
+2.
+count the number of times that the character occurs in the string
+3.
+return the count.
+Any comparison between characters needs to be case sensitive. For example, character 'a' and
+character 'A' are not identical.
+Write pseudocode for function GetNum () .
+...... [6]
+© UCLES 2023
+9618/22/M/J/23
+
+--- Page 7 ---
+7
+BLANK PAGE
+© UCLES 2023
+9618/22/M/J/23
+[Turn over
+
+--- Page 8 ---
+8
+A programmer has produced the following pseudocode to output the square root of the numbers
+from 1 to 10
+Line numbers are for reference only.
+10
+11
+...
+40
+41
+42
+43
+...
+50
+51
+52
+53
+54
+DECLARE Num : REAL
+Num + 1.0
+REPEAT
+CALL DisplaySgrt (Num)
+Num < Num + 1.0
+UNTIL Num > 10
+PROCEDURE DisplaySgrt (BYREF ThisNum : REAL)
+OUTPUT ThisNum
+ThisNum < SQRT (ThisNum)
+// SQRT returns the square root
+OUTPUT " has a square root of ", ThisNum
+ENDPROCEDURE
+The pseudocode is correctly converted into program code.
+Function SQRT () is a library function and contains no errors.
+The program code compiles without errors, but the program gives unexpected results. These are
+caused by a design error.
+(a) Explain why the program gives unexpected results.
+[3]
+(b) Explain why the compiler does not identify this error.
+11]
+© UCLES 2023
+9618/22/M/J/23
+
+--- Page 9 ---
+9
+(c) Describe how a typical Integrated Development Environment (IDE) could be used to identify
+this error.
+13]
+(d) The pseudocode is converted into program code as part of a larger program.
+During compilation, a complex statement generates an error.
+The programmer does not want to delete the complex statement but wants to change the
+statement so that it is ignored by the compiler.
+State how this may be achieved.
+[1]
+© UCLES 2023
+9618/22/M/J/23
+[Turn over
+
+--- Page 10 ---
+10
+A procedure Square () will take an integer value in the range 1 to 9 as a parameter and output a
+number square.
+The boundary of a number square is made up of the character representing the parameter value.
+The inside of the number square is made up of the asterisk character (*).
+Parameter value
+1
+2
+3
+1
+4
+4444
+1 * * .
+. * *
+144
+.••
+9
+999999991
+9*******^
+9*******°
+9*******Õ
+Output
+The pseudocode OUTPUT command starts each output on a new line. For example, the following
+three OUTPUT statements would result in the outputs as shown:
+OUTPUT "Hello"
+OUTPUT "ginger"
+OUTPUT "cat"
+Resulting output:
+Hello
+ginger
+cat
+© UCLES 2023
+9618/22/M/J/23
+
+--- Page 11 ---
+11
+Write pseudocode for procedure Square ().
+Parameter validation is not required
+© UCLES 2023
+9618/22/M/J/23
+[Turn over
+
+--- Page 12 ---
+12
+16]
+© UCLES 2023
+9618/22/M/J/23
+
+--- Page 13 ---
+13
+BLANK PAGE
+© UCLES 2023
+9618/22/M/J/23
+[Turn over
+
+--- Page 14 ---
+14
+7 A computer system for a shop stores information about each customer. The items of information
+include name and address (both postal and email) together with payment details and order history.
+The system also stores the product categories they are interested in and how they would like to be
+contacted.
+(a) The shop wants to add a program module that will generate emails to be sent to customers
+who may be interested in receiving details of new products.
+(i) State three items of information that the new module would need. Justify your choice in
+each case.
+Information
+Justification
+Information
+Justification
+Information
+Justification
+13]
+(ii)
+Identify two items of customer information that would not be required by the new module.
+Justify your choice in each case.
+Information
+Justification
+Information
+Justification
+[2]
+© UCLES 2023
+9618/22/M/J/23
+
+--- Page 15 ---
+15
+(b) The program includes a module to validate a Personal Identification Number (PIN). This is
+used when customers pay for goods using a bank card.
+A state-transition diagram has been produced for this module.
+The table show the inputs, outputs and states for this part of the program:
+Current state
+Input
+Output
+Next state
+S1
+Input PIN
+S2
+Re-input PIN
+Cancel
+S2
+S2
+Valid PIN
+Too many tries
+Display error
+Re-prompt
+Enable payment
+Block Account
+S1
+S4
+S3
+Complete the state-transition diagram to represent the information given in the table.
+S2
+START
+S1
+Cancel | Re-prompt
+© UCLES 2023
+9618/22/M/J/23
+[4]
+[Turn over
+
+--- Page 16 ---
+16
+A computer shop assembles computers using items bought from several suppliers. A text file
+Stock. txt contains information about each item.
+Information for each item is stored as a single line in the Stock. txt file in the format:
+<ItemNum><SupplierCode><Description>
+Valid item information is as follows:
+Format
+ItemNum
+4 numeric characters
+Comment
+unique number for each item in the range
+"0001" to "5999" inclusive
+SupplierCode
+3 alphabetic characters
+to identify the supplier of the item
+Description
+a string
+a minimum of 12 characters
+The file is organised in ascending order of ItemNum and does not contain all possible values in
+the range.
+A programmer has started to define program modules as follows:
+Module
+onlyAlpha ()
+(already written)
+CheckInfo ()
+Description
+:called with a parameter of lyne sting
+returns TRUE if the string contains only alphabetic characters,
+otherwise returns FALSE
+• called with a parameter of type string representing a line of item
+information
+: checks lo see whether the im normation in the sting is valid
+returns TRUE if the item information is valid, otherwise returns
+© UCLES 2023
+9618/22/M/J/23
+
+--- Page 17 ---
+17
+(a) Write pseudocode for module CheckInfo ().
+Module On 1yAlpha () should be used as part of your solution.
+© UCLES 2023
+9618/22/M/J/23
+[Turn over
+
+--- Page 18 ---
+18
+[7]
+(b) A new module is defined as follows:
+Module
+AddItem ()
+•
+•
+Description
+called with a parameter of type string representing valid information
+for a new item that is not currently in the Stock. txt file
+creates
+a new file Newstock.txt from the contents of the file
+stock. txt and adds the new item information at the appropriate
+place in the Newstock. txt file
+As a reminder, the file Stock. txt is organised in ascending order of ItemNum and does not
+contain all possible values in the range.
+Write pseudocode for module AddItem ().
+© UCLES 2023
+9618/22/M/J/23
+
+--- Page 19 ---
+19
+[7]
+(c) The program contains modules SuppExists () and CheckSupplier (). These have been
+written but contain errors. These modules are called from several places in the main program
+and testing of the main program (integration testing) has had to stop.
+Identify a method that can be used to continue testing the main program before the errors in
+these modules have been corrected and describe how this would work.
+Method
+Description
+[3]
+© UCLES 2023
+9618/22/M/J/23
+
+--- Page 20 ---
+20
+BLANK PAGE
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2023
+9618/22/M/J/23

@@ -1,0 +1,497 @@
+--- Page 1 ---
+5 Cambridge Assessment
+a International Education
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+9618/12
+May/June 2021
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages. Any blank pages are indicated
+DC (LK) 205797/1
+© UCLES 2021
+[Turn over
+
+--- Page 2 ---
+2
+Raj owns houses that other people rent from him. He has a database that stores details about
+the people who rent houses, and the houses they rent. The database, HOUSE_RENTALS, has the
+following structure:
+CUSTOMER (CustomerID, FirstName, LastName, DateOfBirth, Email)
+HOUSE (HouseID, HouseNumber,
+Road,
+Town,
+Bedrooms, Bathrooms)
+RENTAL (RentalID, CustomerID, HouseID, MonthlyCost, DepositPaid)
+(a) Give the definition of the following database terms, using an example from the database
+HOUSE_RENTALS for each definition.
+Term
+Definition and example
+Field
+Entity
+Foreign key
+16]
+(b) Tick (v) one box to identify whether the database HOUSE_RENTALS is in Third Normal Form
+(3NF) or not in 3NF.
+Justify your choice using one or more examples from the database HOUSE_RENTALS.
+In 3NF
+Not in 3NF
+Justification
+[2]
+© UCLES 2021
+9618/12/M/J/21
+
+--- Page 3 ---
+3
+(c) Example data from the table RENTAL are given:
+RentalID
+1
+2
+3
+4
+CustomerID
+22
+13
+1
+3
+HouseID
+15B5L
+3F
+12AB
+37
+MonthlyCost
+1000.00
+687.00
+550.00
+444.50
+DepositPaid
+Yes
+NO
+Yes
+Yes
+(i) Complete the following Data Definition Language (DDL) statement to define the table
+RENTAL.
+CREATE.
+...
+(
+RentalID INTEGER NOT NULL,
+CustomerID INTEGER NOT NULL,
+HouseID
+... 15) NOT NULL,
+MonthlyCost
+... NOT NULL,
+DepositPaid
+BOOLEAN NOT NULL,
+(RentalID)
+) ;
+[4]
+(ii) Write a Data Manipulation Language (DML) script to return the first name and last name
+of all customers who have not paid their deposit.
+... [4]
+© UCLES 2021
+9618/12/M/J/21
+[Turn over
+
+--- Page 4 ---
+4
+2 Aisha manages a team of software developers.
+(a) Explain the reasons why it is important that Aisha acts ethically in relation to her team
+members.
+12]
+(b) The team are developing a computer game where the user plays a board game (such as
+chess) against the computer.
+Describe how the computer would use Artificial Intelligence (Al) to play the board game.
+13]
+(c) The final game will be released under a licence.
+Tick (/) one or more boxes in each row to identify the licence(s) each statement describes.
+Statement
+Free
+Software
+Foundation
+Open
+Source
+Initiative
+Shareware
+Commercial
+Software
+The user can edit the source code
+The user must always pay before being
+able to use the software
+The user can redistribute the software
+The user always gets a trial period
+[4]
+© UCLES 2021
+9618/12/M/J/21
+
+--- Page 5 ---
+5
+3 A logic expression is given:
+S = (A AND B AND C) OR (B XOR C)
+(a) Draw the logic circuit for the given expression.
+A —
+B -
+C -
+(b) Complete the truth table for the logic expression:
+S = (A AND B AND C) OR (B XOR C)
+A
+B
+C
+Working space
+0
+0
+0
+1
+0
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+© UCLES 2021
+9618/12/M/J/21
+- S
+14]
+S
+12]
+[Turn over
+
+--- Page 6 ---
+6
+4
+The table shows part of the instruction set for a processor. The processor has one general purpose
+register, the Accumulator (ACC), and an Index Register (IX).
+Instruction
+Opcode
+Operand
+LDM #n
+Explanation
+Immediate addressing. Load the number n to ACC
+LDD <address>
+Direct addressing. Load the contents of the location at the given address to
+ACC
+STO
+<address>
+Store contents of ACC at the given address
+ADD
+<address>
+Add the contents of the given address to the ACC
+INC
+<register>
+Add 1 to the contents of the register (ACC or IX)
+DEC
+<register>
+Subtract 1 from the contents of the register (ACC or IX)
+CMP
+<address>
+Compare the contents of ACC with the contents of <address>
+JPE
+<address>
+Following a compare instruction, jump to ‹address > if the compare was True
+JPN
+<address>
+Following a compare instruction, jump to <address> if the compare was False
+JMP
+<address>
+Jump to the given address
+IN
+Key in a character and store its ASCII value in ACC
+OUT
+Output to the screen the character whose ASCII value is stored in ACC
+END
+Return control to the operating system
+# denotes a denary number, e.g. #123
+The current contents of the main memory and selected values from the ASCII character set are:
+Address
+Instruction
+70
+IN
+71
+CMP 100
+72
+JPE 80
+73
+CMP 101
+74
+JPE 76
+75
+JMP 80
+76
+LDD 102
+77
+INC ACC
+78
+STO 102
+79
+JMP 70
+80
+LDD 102
+81
+DEC ACC
+82
+STO 102
+83
+JMP 70
+ASCIl code table (selected codes only)
+ASCI code
+Character
+65
+A
+66
+67
+68
+D
+...
+100
+101
+102
+68
+65
+100
+© UCLES 2021
+9618/12/M/J/21
+
+--- Page 7 ---
+7
+(a) Complete the trace table for the program currently in main memory when the following
+characters are input:
+AD
+Do not trace the program any further when the third input is required.
+Instruction
+address
+ACC
+100
+68
+Memory address
+101
+65
+102
+100
+14]
+© UCLES 2021
+9618/12/M/J/21
+[Turn over
+
+--- Page 8 ---
+8
+(b) Some bit manipulation instructions are shown in the table:
+Instruction
+Explanation
+Opcode
+Operand
+AND
+#n
+Bitwise AND operation of the contents of ACC with the operand
+AND
+<address>
+Bitwise AND operation of the contents of ACC with the contents of <address>
+XOR
+Bitwise XOR operation of the contents of ACC with the operand
+XOR
+<address>
+Bitwise XOR operation of the contents of ACC with the contents of <address›
+OR #n
+Bitwise OR operation of the contents of ACC with the operand
+OR <address>
+Bitwise OR operation of the contents of ACC with the contents of <address >
+<address> can be an absolute address or a symbolic address
+# denotes a denary number, e.g. #123
+The contents of the memory address 300 are shown:
+Bit Number
+7
+6
+5
+4
+3
+300
+1
+1
+2
+1
+1
+1
+(i) The contents of memory address 300 represent an unsigned binary integer.
+Write the denary value of the unsigned binary integer in memory address 300.
+... [1]
+(ii) An assembly language program needs to test if bit number 2 in memory address 300
+is al.
+Complete the assembly language instruction to perform this test.
+#4
+[1]
+(iii) An assembly language program needs to set bit numbers 4, 5, 6 and 7 to 0, but keep
+bits 0 to 3 with their existing values.
+Write the assembly language instruction to perform this action.
+[2]
+© UCLES 2021
+9618/12/M/J/21
+
+--- Page 9 ---
+9
+5
+Seth uses a computer for work.
+(a) Complete the following descriptions of internal components of a computer by writing the
+missing terms.
+The
+..transmits the signals to coordinate events based
+on the electronic pulses of the
+The
+carries data to the components, while the
+.. carries the address where data needs to be written to
+or read from.
+The
+logical comparisons.
+.. performs mathematical operations and
+[5]
+(b) Describe the ways in which the following factors can affect the performance of his laptop
+computer.
+Number of cores
+Clock speed
+14]
+© UCLES 2021
+9618/12/M/J/21
+[Turn over
+
+--- Page 10 ---
+10
+(c) Seth accesses both software and data using cloud computing.
+(i) Give two benefits of storing data using cloud computing.
+2
+(il) Give two drawbacks of Seth using cloud computing.
+1
+2
+© UCLES 2021
+9618/12/M/J/21
+12]
+[2]
+
+--- Page 11 ---
+11
+(d) Draw one line from each term to its most appropriate description.
+Term
+Description
+It is only visible to devices within the Local
+Area Network (LAN)
+Public IP address
+It increments by 1 each time the device
+connects to the internet
+Private IP address
+A new one is reallocated each time a device
+connects to the internet
+Dynamic IP address
+It can only be allocated to a router
+It is visible to any device on the internet
+Static IP address
+It does not change each time a device
+connects to the internet
+14]
+© UCLES 2021
+9618/12/M/J/21
+[Turn over
+
+--- Page 12 ---
+12
+6
+A computer uses the ASCII character set.
+(a) State the number of characters that can be represented by the ASCIl character set and the
+extended ASCIl character set.
+ASCIl
+Extended ASCII
+12]
+(b) Explain how a word such as 'HOUSE' is represented by the ASCII character set.
+12]
+(c) Unicode is a different character set.
+The Unicode value for the character '1' is denary value 49.
+(i) Write the hexadecimal value for the Unicode character '1'.
+...
+[1]
+(ii) Write the denary value for the Unicode character '5'.
+[1]
+© UCLES 2021
+9618/12/M/J/21
+
+--- Page 13 ---
+13
+7 Jennifer is writing a computer program for her A Level homework.
+(a) Jennifer uses a program library to help her write her computer program.
+Describe how a program library can be used while writing a computer program.
+[2]
+(b) Jennifer uses an Integrated Development Environment (IDE) to write her computer program.
+(i) The IDE allows Jennifer to use both an interpreter and a compiler while creating her
+computer program.
+Describe the ways in which Jennifer can use both a compiler and an interpreter while
+developing the program.
+[4]
+(ii) Identify two debugging tools that a typical IDE can provide.
+1
+2
+[2]
+© UCLES 2021
+9618/12/M/J/21
+[Turn over
+
+--- Page 14 ---
+14
+A company has several security measures in place to prevent unauthorised access to the data on
+its computers.
+(a) Describe the difference between the security and privacy of data.
+12]
+(b) Each employee has a username and password to allow them to log onto a computer. An
+employee's access rights to the data on the computers is set to either read-only, or read and
+write.
+Identify one other software-based measure that could be used to restrict the access to the
+data on the computers.
+11]
+(c) The company is also concerned about threats posed by networks and the internet.
+Identify two threats to the data that are posed by networks and the internet.
+Threat 1
+Threat 2
+12]
+© UCLES 2021
+9618/12/M/J/21
+
+--- Page 15 ---
+15
+BLANK PAGE
+© UCLES 2021
+9618/12/M/J/21
+
+--- Page 16 ---
+16
+BLANK PAGE
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of the University of
+Cambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.
+© UCLES 2021
+9618/12/M/J/21

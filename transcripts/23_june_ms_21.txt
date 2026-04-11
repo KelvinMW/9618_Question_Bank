@@ -1,0 +1,502 @@
+--- Page 1 ---
+AlE Cambridge Assessment
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+MARK SCHEME
+Maximum Mark: 75
+9618/21
+May/June 2023
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2023 series for most
+Cambridge IGCSE, Cambridge International A and AS Level and Cambridge Pre-U components, and some
+Cambridge O Level components.
+This document consists of 11 printed pages.
+© UCLES 2023
+[Turn over
+
+--- Page 2 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2023
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2023
+Page 2 of 11
+
+--- Page 3 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Question
+1(a)
+Marks
+4
+1 (b)
+For example:
+Could set a breakpoint to stop the program at a particular point / instruction
+then the value of variables could be checked using a report/watch window
+while single stepping can be used to execute one statement/line at a time.
+Marks available as follows:
+:
+One mark for each underlined term
+One mark for an explanation of each term
+Note: max 4 marks
+One mark for correct description of:
+Error 1: Brackets mismatch // 2/value should be added after
+brackets/function |I Addition between a string and a number is not valid //
+STR_TO_NUM / the function needs to be passed a string / not an integer
+Error 2: No Error
+Error 3: MONTH () returns an integer and this is being compared with a
+character/string // Integer cannot be compared to a string // 6 should not be
+in quotes
+3
+1(c)(i)
+2
+1 (c)(i)
+1
+2
+3
+4
+Expression
+(Points > 99) OR Active
+(Points MOD 2 = O) OR Exempt
+(Points <= 75) AND (Active OR Exempt)
+(Active OR NOT Active) AND NOT Exempt
+One mark for any two rows correct
+Two marks for all rows correct
+NOT Exempt
+Evaluation
+TRUE
+FALSE
+TRUE
+TRUE
+1
+© UCLES 2023
+Page 3 of 11
+
+--- Page 4 ---
+9618/21
+Question
+2(a)
+2(b)
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+4
+START
+INPUT Input
+Character*, MyChar
+INPUT Input Count*,MyCount
+Bat MyString
+NO
+Is MyCoont
+< 17
+YES
+Concatenate Mycher wit
+Mystrin
+Set MyCount 30
+MyCoont - 1
+DUTPUT Mystring
+END
+One mark per point:
+2
+Both prompts
+Both inputs using correct identifiers as given in question, MyChar and
+MyCount
+3
+Initialise Myst ring to empty string and subsequent output after loop
+4
+Loop MyCount iterations including decrement Mycount
+5 Use of Concatenate or equivalent pseudocode statement inside loop
+Max 4 Marks
+One mark for declaration:
+DECLARE StartDate : DATE
+One mark for each underlined part of assignment:
+StartDate +
+SETDATE (15, 11, 2005)
+3
+Page 4 of 11
+
+--- Page 5 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Question
+3(a)(i)
+Marks
+4
+3(a)(ii)
+3(b)
+One mark for structure
+Structure: Record
+One mark for each point
+Advantage:
+• A set of data / all data related to one customer
+• of different types
+• is held under a single identifier/entity
+A (1D) array of records // An array of the given type could be used
+One mark per underlined word
+One mark for reference to each:
+1
+Reference to the use of constants or variables for the two threshold
+values of 10 and 100 // Input amount spent (by customer and store in a
+numeric variable)
+2
+3
+4
+5
+Work out one band that amount maps to
+Work out all bands that amount maps to
+Calculate rounded value of amount / whole number part of amount
+Calculate the points by multiplying the (rounded) amount by the
+appropriate value for appropriate band /all bands
+6
+Output the number of points
+Note: Max 5 from available points
+2
+5
+© UCLES 2023
+Page 5 of 11
+
+--- Page 6 ---
+9618/21
+Question
+4
+Question
+5(a)(i)
+5(a) ii)
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Function Replace (OldString : STRING, Charl, Char2 :
+CHAR)
+RETURNS : STRING
+DECLARE NewString : STRING
+DECLARE ThisChar : CHAR
+DECLARE Index : INTEGER
+NewString + ""
+FOR Index ‹ 1 IO LENGTH (OldString)
+ThisChar + MID (OldString, Index, 1)
+IF ThisChar
+= Charl THEN
+ThisChar + Char2
+ENDIF
+Newstring
+• * NewString & ThisChar
+NEXT Index
+RETURN Newstring
+ENDFUNCTION
+Mark as follows:
+1
+Function heading and ending, including parameters and return type
+2
+3
+Declaration of local variables used including loop counter
+Loop for length of Oldstring
+4
+Extract char and test in a loop
+5
+Use of concatenate to build NewString replace char if necessary,
+in a loop
+6
+Return Newstring
+after reasonable attempt
+May/June 2023
+Marks
+6
+Answer
+Reasons include:
+1
+No working software until late in the life cycle so slower to market than
+competitors // Does not allow the creation of early versions/prototypes
+(which can be updated later)
+2
+More difficult/slower to cope with changes to the requirements //
+website slower to be updated to reflect new requirements
+3
+Needs high involvement/feedback of the stake holders /customer / client
+One mark per point
+Max 2 marks
+Iterative / Rapid Application Development / RAD
+Marks
+2
+1
+Page 6 of 11
+
+--- Page 7 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Question
+5(b)
+Marks
+3
+One mark for Stage
+Stage: Beta testing
+Max 2 marks for Description
+Description:
+1 Testing carried out by a small group of (potential) users
+2 Users will check that the website/software works as required / works in
+the real world //User will identify errors in the website/software
+4
+Users will feedback (problems) / suggestions for improvement
+Problems / suggestions identified are addressed (before the program is
+sold)
+Question
+6
+Answer
+PROCEDURE Mix ()
+DECLARE Count, Total ThisNum : INTEGER
+DECLARE ThisUser,
+ThisSample : INTEGER
+FOR ThisSample + 1 TO 128
+Count < 0
+Total
+_< O
+FOR ThisUser < 1 TO 6
+IF Sample|ThisUser,
+ThisSample] > 10 THEN
+Count + Count + 1
+Total:
+* Total + Sample[ThisUser, ThisSample]
+ENDIF
+NEXT ThisUser
+Result [ThisSample]
+‹ INT (Total / Count)
+NEXT ThisSample
+ENDPROCEDURE
+Mark as follows:
+1
+2
+3
+4
+5
+6
+7
+Declaration and initialisation before inner loop of Count and Total
+Outer Loop for 128 iterations
+Inner loop for six iterations
+Test for sample > 10 in a loop
+and if true sum Total and increment Count
+Calculate average value and assign to Result array after inner loop
+and within outer loop
+Use of INT () / DIV to convert average to integer
+Max 6 Marks
+Marks
+6
+© UCLES 2023
+Page 7 of 11
+
+--- Page 8 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Question
+7(a)
+Marks
+7(b)(i)
+Examples include:
+Module: GetOverdueLoan ()
+Use: Identifies an overdue book
+Module: Identifystudent ()
+Use: Identifies a student (with an overdue book)1
+Module: GetStudentEmail ()
+Use: Gets the email address of a student with an overdue book
+Module: CreateEmail ()
+Use: Generates an email to a student with an overdue book
+Module: SendEmail ()
+Use: Sends an email to a student with an overdue book
+One mark for name and use
+Note: Max 3 marks
+One mark per point:
+: Moe prod salis rep other three modules
+The process is repeated
+3
+2
+7(b)(ii)
+3
+Nodulo-D
+Module-Y
+One mark per bullet point:
+: All and only parameters as shown
+• All rectangles correctly labelled and interconnected
+Selection diamond
+© UCLES 2023
+Page 8 of 11
+
+--- Page 9 ---
+9618/21
+Question
+8(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+FUNCTION IsNewsupp (Thisstring : STRING) RETURNS BOOLEAN
+DECLARE Index : INTEGER
+DECLARE ThisChar : CHAR
+IF LENGTH (ThisString) <> 5 THEN
+RETURN FALSE
+| invalid supplierCode length
+ENDIF
+IF SuppExists (ThisString) THEN
+RETURN FALSE
+|/ SupplierCode already exists
+ENDIF
+FOR Index + 1 IO 5
+Thischar + TO_LOWER (MID (ThisString, Index, 1))
+IF ThisChar < 'a' OR ThisChar > 'z'THEN
+RETURN FALSE
+ENDIF
+NEXT Index
+RETURN TRUE
+ENDFUNCTION
+Mark as follows:
+Check Thisstring is exactly 5 characters in length
+2
+3
+4
+5
+6
+Use of SuppExists () with a string of 5 characters as a parameter
+Loop for 5 iterations // loops for length of string parameter
+Extract a character in a loop
+Test if char is alphabetic in a loop
+...catering for both upper and lower case
+7 Return Boolean following a reasonable attempt
+May/June 2023
+Marks
+7
+© UCLES 2023
+Page 9 of 11
+
+--- Page 10 ---
+9618/21
+Question
+8(b)
+8(c) (i)
+8 (c)(ii)
+8(d)
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2023
+Answer
+FUNCTION CheckNewItem (NewLine : STRING) RETURNS BOOLEAN
+DECLARE NotFound : BOOLEAN
+DECLARE NewItemNum, ThisItemNum, Thisline : STRING
+NotFound + TRUE
+OPENFILE "Stock.txt" FOR READ
+NewItemNum < LEFT (NewLine, 4)
+ThisItemNum ‹ "0000" I/rogue initial value
+WHILE NOT EOF ("Stock.tt") AND NotFound = TRUE AND_
+ThisItemNum < NewItemNum
+READFILE ("Stock. txt", Thisline) |/brackets optional
+InısItemNum + LEFI (Inisline, 4)
+IF ThisItemNum = NewItemNum THEN
+NotFound ‹ FALSE
+ENDIF
+ENDWHILE
+CLOSEFILE "Stock.txt"
+RETURN NotFound
+ENDFUNCTION
+Mark as follows:
+1
+2
+3
+4
+5
+6
+Open stock. txt in READ mode and subsequently close
+Extract NewItemNum from parameter
+Conditional loop until EOF ("Stock. txt")
+...OR NewItemNum found
+..OR when ThisItemNum < NewItemNum
+Read a line from stock. txt AND extract This ItemNum in a
+7
+loop
+If ThisItemNum = NewItemNum then terminate loop / set flag in
+a loop
+8 Return Boolean after reasonable attempt
+Max 7 marks
+Max 6 if function wrapper (heading and ending) missing or incorrect
+Integration testing
+Two marks for the description:
+• A dummy/simple module is written to replace the module that does not
+work properly
+•
+The dummy/simple module will return an expected value // will output a
+message to show it has been called
+Append
+Marks
+7
+1
+2
+1
+Page 10 of 11
+
+--- Page 11 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2023
+Answer
+Question
+8(e)
+Marks
+3
+One mark for each part:
+if the current value read from the file I/ current line in file
+is greater than the value being searched for
+© UCLES 2023
+Page 11 of 11

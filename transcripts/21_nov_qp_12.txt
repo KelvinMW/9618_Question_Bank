@@ -1,0 +1,416 @@
+--- Page 1 ---
+5 Cambridge Assessmen
+shes International Educatior
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+9618/12
+October/November 2021
+1 hour 30 minutes
+66O
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided.
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages. Any blank pages are indicated
+DC (RW/SG) 206391/2
+© UCLES 2021
+[Turn over
+
+--- Page 2 ---
+2
+1 When designing computer systems, it is important to consider the security, integrity and privacy of
+the data.
+Draw one line from each measure to indicate whether it keeps data secure or protects the integrity
+of data.
+Measure
+Firewall
+Double entry
+Data Security
+Presence check
+Data Integrity
+Access rights
+Password
+12]
+© UCLES 2021
+9618/12/0/N/21
+
+--- Page 3 ---
+3
+(a) Complete the truth table for each of the following two logic gates.
+A
+B
+Output
+A-
+0
+1
+1
+1
+1
+A
+0
+B
+Output
+0
+1
+1
+1
+1
+12]
+(b) Draw a logic circuit for the following logic expression.
+X = NOT(NOT (A AND B)AND C)
+A -
+B-
+- X
+C-
+12]
+© UCLES 2021
+9618/12/0/N/21
+[Turn over
+
+--- Page 4 ---
+4
+3 Andy likes to play computer games.
+(a) Andy uses several input devices to play the games. These include a keyboard and a
+microphone.
+Describe the principal operation of a microphone.
+13]
+(b) Andy plays some of the computer games over the internet. He has several devices that
+connect wirelessly to the router in his house.
+(i) Identify the topology of Andy's home network. Justify your choice.
+Topology
+Justification
+12]
+(ii)
+The router has a wireless access point (WAP) to allow the devices to connect wirelessly
+Identify three functions of the router in Andy's network.
+1
+3
+[3]
+© UCLES 2021
+9618/12/0/N/21
+
+--- Page 5 ---
+5
+BLANK PAGE
+© UCLES 2021
+9618/12/0/N/21
+Turn over
+
+--- Page 6 ---
+6
+4 A register stores the following binary number:
+1
+1
+1
+(a) The binary value in the register represents an unsigned binary integer.
+Convert the unsigned binary integer into denary.
+.... [1]
+(b) The binary value in the register represents a two's complement binary integer.
+Convert the two's complement binary integer into denary.
+[11
+(c) The binary value in the register represents a hexadecimal number.
+Convert the binary number into hexadecimal.
+[1]
+(d) State why the value in the register cannot be interpreted as a Binary Coded Decimal (BCD).
+[1]
+(e) The binary contents of two registers are:
+Register 1
+Register 2
+1
+1
+1
+1
+1
+1
+1
+1
+1
+(i) Add the contents of Register 1 and Register 2. Show your working.
+Answer
+12]
+© UCLES 2021
+9618/12/0/N/21
+
+--- Page 7 ---
+7
+(ii)
+Subtract the contents of Register 2 from the contents of Register 1. Show your working.
+Answer
+12]
+© UCLES 2021
+9618/12/0/N/21
+[Turn over
+
+--- Page 8 ---
+8
+5 Riya has created the following logo as a vector graphic.
+R
+(a) Complete the table by writing a description of each vector graphic term and give an example
+for this logo.
+Term
+Description
+Example from logo
+Property
+Drawing list
+14]
+(b) Riya takes a photograph using a digital camera. The photograph is stored as a bitmap image.
+(i) Describe two differences between a vector graphic and a bitmap image.
+2
+[4]
+© UCLES 2021
+9618/12/0/N/21
+
+--- Page 9 ---
+9
+(ii) Riya needs to email the photograph. She compresses the photograph before sending it
+using an email.
+Describe two lossy methods that Riya can use to compress the image.
+Method 1
+Method 2
+[4]
+© UCLES 2021
+9618/12/0/N/21
+[Turn over
+
+--- Page 10 ---
+10
+6 A shop sells plants to customers. The shop manager has a relational database to keep track of the
+sales.
+The database, PLANTSALES, has the following structure:
+PLANT (PlantName, QuantityInstock, Cost)
+CUSTOMER (CustomerID, FirstName, LastName, Address, Email)
+PURCHASE (PurchaseID, CustomerID)
+PURCHASE_ITEM (PurchaseID, PlantName, Quantity)
+(a) The database is normalised.
+(i) The table lists the following three stages of normalisation:
+• The first stage is from a database that is not normalised (ONF) to First Normal Form
+(1NF).
+:
+The second stage is from 1NF to Second Normal Form (2NF).
+The third stage is from 2NF to Third Normal Form (3NF).
+Tick (r) one box in each row to identify the appropriate stage for each task.
+Task
+Normalisation stage
+ONF to 1NF 1NF to 2NF
+2NF to 3NF
+Remove any partial key dependencies
+Remove any repeating groups of attributes
+Remove any non-key dependencies
+12]
+(ii) Draw an entity-relationship (E-R) diagram for the database PLANTSALES.
+PLANT
+CUSTOMER
+PURCHASE_ITEM
+PURCHASE
+[3]
+© UCLES 2021
+9618/12/0/N/21
+
+--- Page 11 ---
+11
+(b) The shop manager uses a Database Management System (DBMS).
+Describe the purpose and contents of the data dictionary in the DBMS.
+13]
+(c) The shop manager uses both Data Definition Language (DDL) and Data Manipulation
+Language (DML) statements to create and search the database.
+(i) Complete the DML statements to return the total number of items purchased with the
+purchase ID of 3011A.
+SELECT
+SUM (.
+....)
+FROM
+WHERE
+=
+14]
+(ii) Write DDL statements to include a field in the table PURCHASE to store the date of the
+order.
+.......... [3]
+© UCLES 2021
+9618/12/0/N/21
+[Turn over
+
+--- Page 12 ---
+12
+7 A computer has system software.
+(a) The Operating System handles interrupts.
+Tick (r) one box in each row to identify whether each event is an example of a hardware
+interrupt or a software interrupt.
+Event
+Hardware interrupt
+Software interrupt
+Buffer full
+Printer is out of paper
+User has pressed a key on the keyboard
+Division by zero
+Power failure
+Stack overflow
+13]
+(b) Describe the file management tasks that an Operating System performs.
+[4]
+(c) Identify two utility programs that can be used to improve the performance of a computer and
+state how they improve the performance.
+1
+2
+14]
+© UCLES 2021
+9618/12/0/N/21
+
+--- Page 13 ---
+13
+8 The Von Neumann model for a computer system uses registers.
+(a) Describe the role of the following special purpose registers in the fetch-execute (F-E) cycle.
+(i) Memory Address Register (MAR) ...
+Memory Data Register (MDR)
+14]
+("i)
+Another special purpose register is the Index Register.
+Identify one other special purpose
+register used in the Von Neumann model for a
+computer system.
+[1]
+© UCLES 2021
+9618/12/0/N/21
+Turn over
+
+--- Page 14 ---
+14
+(b) The following table shows part of the instruction set for a processor. The processor has one
+general purpose register, the Accumulator (ACC), and an Index Register (IX).
+Instruction
+Opcode
+Operand
+LDM
+LDD
+<address>
+Explanation
+Immediate addressing. Load the number n to ACC
+Direct addressing. Load the contents of the location at the given address to
+ACC
+STO
+<address>
+INC
+<register>
+CMP <address>
+JPN
+<address>
+JMP
+<address>
+IN
+OUT
+END
+XOR
+XOR <address>
+OR
+• #n
+AND
+AND
+LSL
+Store the contents of ACC at the given address
+Add 1 to the contents of the register (ACC or IX)
+Compare the contents of ACC with the contents of <address>
+Following a compare instruction, jump to <address> if the compare was False
+Jump to the given address
+Key in a character and store its ASCII value in ACC
+Output to the screen the character whose ASCIl value is stored in ACC
+Return control to the operating system
+Bitwise XOR operation of the contents of ACC with the operand
+Bitwise XOR operation of the contents of ACC with the contents of <address>
+Bitwise OR operation of the contents of ACC with the operand
+OR <address>
+Bitwise OR operation of the contents of ACC with the contents of <address>
+Bitwise AND operation of the contents of ACC with the operand
+<address>
+Bitwise AND operation of the contents of ACC with the contents of <address>
+#n
+Bits in ACC are shifted logically n places to the left. Zeros are introduced on
+the right hand end
+LSR #n
+Bits in ACC are shifted logically n places to the right. Zeros are introduced on
+the left hand end
+< address> can be an absolute or symbolic address
+# denotes a denary number, e.g. #123
+The current contents of main memory are shown:
+Address
+100
+101
+102
+103
+104
+Data
+01010101
+11110000
+00001111
+00000000
+11111111
+© UCLES 2021
+9618/12/0/N/21
+
+--- Page 15 ---
+15
+(i) In the following table, each row shows the current contents of the ACC in binary and the
+instruction that will be performed on those contents.
+Complete the table by writing the new contents of the ACC after the execution of each
+instruction.
+Current contents of the ACC
+Instruction
+New contents of the ACC
+01010101
+XOR 101
+11110000
+AND 104
+00001111
+ISL #4
+11111111
+OR 102
+14]
+(ii) The following table contains five assembly language instruction groups.
+Write an appropriate assembly language instruction for each instruction group, using the
+given instruction set. The first one has been completed for you.
+Instruction Group
+Data movement
+Input and output of data
+Arithmetic operations
+Unconditional and conditional instructions
+Compare instructions
+Instruction
+LDM #2
+14]
+© UCLES 2021
+9618/12/0/N/21
+[Turn over
+
+--- Page 16 ---
+16
+(ili) The opcode LDM uses immediate addressing. The opcode IDD uses direct addressing.
+Identify and describe one additional mode of addressing.
+Mode of addressing
+Description
+12]
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of the University of
+Cambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.
+© UCLES 2021
+9618/12/0/N/21

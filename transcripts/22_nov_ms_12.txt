@@ -1,0 +1,550 @@
+--- Page 1 ---
+15 Cambridge Assessmen
+Sles International Educatior
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+MARK SCHEME
+Maximum Mark: 75
+9618/12
+October/November 2022
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2022 series for most
+Cambridge IGCSE™
+', Cambridge International A and AS Level components and some Cambridge O Level
+This document consists of 10 printed pages.
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2022
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2022
+Page 2 of 10
+
+--- Page 3 ---
+9618/12
+Question
+1(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2022
+Answer
+Marks
+5
+1 mark for each correct line.
+Utility software
+virus checker
+Purpose
+to reorganise files so
+they are contiguous
+to scan for malicious
+program code
+disk formatter
+to decrease the file size
+backup
+1(b) (i)
+1 (b)(i)
+Question
+2(a) (i)
+2(a) (i)
+© UCLES 2022
+to initialise a disk
+disk repair
+to create copies of files
+in case the original is
+Inst
+defragmentation
+to check for and fix
+inconsistencies on a
+disk
+1 mark for each bullet point (max 2):
+larger amount of source code take time to compile
+slower to produce the object code than an interpreter
+code cannot be changed without recompilation
+the program will not run if there are any errors
+: soreant be ore in real mores
+one error may result in other false errors being reported
+cannot easily test specific sections of the source code // cannot easily test
+unfinished source code
+1 mark for each bullet point (max 2):
+• partially compiled programs can be used on different platforms as they
+•
+are interpreted when run
+code is optimised for the CPU as machine code is generated at run time
+Answer
+- 106
+96
+2
+2
+Marks
+1
+1
+Page 3 of 10
+
+--- Page 4 ---
+9618/12
+Question
+2(a) iii)
+2(b)
+Question
+3(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2022
+1 mark for each bullet point:
+:
+149 decimal
+0001 0100 1001
+1101 0010
+Answer
+Answer
+Marks
+2
+1
+Marks
+3
+1 mark for T AND NOT W
+1 mark for NOT R OR NOT M
+1 mark for final AND
+T
+W-
+- X
+3(b)
+R
+M
+Da
+1 mark for each set of rows as highlighted:
+A
+B
+C
+0
+0
+1
+1
+0
+1
+2
+3(C)
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1 mark for each bullet point:
+to store data that does not change
+• •
+data must be stored even when device is without power
+to store boot up instructions / system software / firmware / BIOS
+2
+© UCLES 2022
+Page 4 of 10
+
+--- Page 5 ---
+9618/12
+Question
+4(a)
+4(b)
+4(c)
+Question
+5(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+data verification is checking if input data is the same as the original whereas
+data validation is checking that the data is reasonable / sensible
+1 mark for each bullet point (max 3):
+•
+checksum value is calculated from the data before transmission //
+:
+correct description of a checksum algorithm
+....this calculated value is transmitted with the data
+receiving computer recalculates the checksum from the received data
+if the checksum received and calculated match, no error has occurred //
+if the checksum received and calculated do not match, an error has
+occurred
+1 mark for each bullet point (max 2).
+For example:
+• to make sure data is in the required format I/ only expected characters
+allowed
+• to make sure the data is already present in the system
+• to make sure the data contains the correct number of characters
+• to ensure that non-numeric data is entered
+Answer
+1 mark for each bullet point (max 3):
+Solution 1:
+• removing the many-to-many relationship between Owner and Tree
+• ... by removing TreeID and TreePosition from the Owner table
+... and creating a linking table between Owner and Tree
+• ...that contains OwnerID, TreeID and TreePosition
+• ... (composite) primary key of the linking table should be OwnerlD and
+TreeID // insert a named new primary key in the linking table
+Solution 2:
+• removing the many-to-many relationship between Owner and Tree
+• move TreePosition into TREE table
+•
+... put OwnerlD into TREE table
+create a new table with suitable name (for the species of tree)
+..
+... containing ScientificName, MaxHeight and FastGrowing
+... with ScientificName as primary key I/ or another suitable primary key
+October/November
+2022
+Marks
+1
+3
+2
+Marks
+3
+© UCLES 2022
+Page 5 of 10
+
+--- Page 6 ---
+9618/12
+Question
+5(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2022
+Answer
+Marks
+3
+5(c)
+5(d) (i)
+5(d) (ii)
+Question
+6(a) (i)
+1 mark for each bullet point:
+•
+INSERT INTO TREE
+VALUES () and correct values
+Values in correct order
+Option 1:
+INSERT INTO
+TREE (TreeID, ScientificName, MaxHeight, FastGrowing)
+VALUES ('LOW _1276', 'Salix_Alba', 30.00, TRUE) ;
+Option 2:
+INSERT INTO
+TREE
+VALUES ('LOW _1276", 'Salix_Alba', 30.00, TRUE) ;
+1 mark for:
+An attribute / field (or set of attributes / fields) that could be a primary key
+1 mark for description
+•
+stores metadata about the database
+1 mark for a correct example
+For example:
+:
+field / attribute names
+table name
+validation rules
+data types
+primary keys // foreign keys
+•
+relationships
+1 mark for each bullet point (max 2):
+:
+the overview of a database structure
+models the problem / situation
+... by using methods such as an ER diagram
+independent of any particular DBMS
+Answer
+1 mark for each method of ensuring authenticity (max 2):
+Digest encrypted with sender's private key (to create the digital signature)
+the (digital) signature can only be decrypted with matching sender's
+public key
+1
+2
+2
+Marks
+2
+© UCLES 2022
+Page 6 of 10
+
+--- Page 7 ---
+9618/12
+Question
+6(a) (ii)
+6(b) (i)
+6(b) (ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2022
+Answer
+Marks
+3
+1 mark for each bullet point:
+monitors incoming and outgoing packets / traffic
+checks against an allow list / deny list of IP addresses // checks against
+a set of rules for acceptable data / ports etc.
+blocks transmissions that do not meet criteria / rules // allows through is
+satisfies the criteria /rules
+1 mark for each bullet point (max 2):
+improves the accuracy of the sound file
+: w because (digital) waveform more closely resembles the analogue
+quantization errors are reduced
+increases the amount of detail stored
+1 mark for each bullet point:
+• decreases the file size of the sound file
+... because fewer bits are used to store each sample
+2
+2
+© UCLES 2022
+Page 7 of 10
+
+--- Page 8 ---
+9618/12
+Question
+7(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2022
+Marks
+5
+Answer
+1 mark for each set of highlighted rows.
+Instruction
+address
+Memory address
+ACC IX
+100 101 102| 103| 110
+111 112
+112
+4
+1
+4
+75
+76
+77
+78
+79
+80
+84
+85
+86
+87
+88
+89
+90
+76
+77
+78
+79
+80
+81
+82
+83
+86
+87
+88
+89
+90
+0100 1100
+1
+2
+0
+1
+2
+1
+1
+4
+6
+6
+1
+2
+2
+2
+7(b) (i)
+1
+© UCLES 2022
+Page 8 of 10
+
+--- Page 9 ---
+9618/12
+Question
+7(b)(ii)
+7(b) (iii)
+7(b) (iv)
+7(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2022
+Answer
+Marks
+1
+1
+1
+3
+Question
+8(a)
+8(b)
+8 (c)(i)
+0100 0001
+1001 1000
+1101 1111
+1 mark for each correct row:
+Description
+Copy the address of the next instruction into
+the Memory Address Register.
+Increment the Program Counter.
+Copy the contents of the Memory Data
+Register into the Current Instruction Register.
+Register transfer notation
+MAR < [PC]
+PC < [PC] + 1
+CIR < [MDR]
+Answer
+1 mark one or two correct row(s). 2 marks for all three correct rows.
+Action
+Increases
+Decreases
+the file size
+the file size
+No change to
+the file size
+Change the colour depth of
+the image file to 16 bits per
+pixel.
+Change the screen resolution
+to 1366 × 768 pixels
+Change the colour of the
+rectangle from black to red.
+r
+1 mark for each bullet point (max 2).
+For example:
+individual components of the image can be edited
+: intuite on mens drie may a reali
+generally a smaller file size
+1 mark for each correct underlined part:
+Uncompressed sound
+EA F1 F1 F2 F2 F2 EA
+AB AB FF FF 1D 67
+32 32 80 81 81
+RLE compressed sound
+1EA 2F1 3F2 1EA
+2AB 2FF 11D 167
+232 180 281
+Marks
+2
+2
+2
+© UCLES 2022
+Page 9 of 10
+
+--- Page 10 ---
+9618/12
+Question
+8(c)(ii)
+Question
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for each bullet point:
+..
+all the data is required // no data can be lost
+... otherwise text file will be corrupted / not make sense
+Answer
+1 mark for each bullet point (max 2).
+For example:
+• incorrect recognition of faces leads to mistakes such as
+•
+... access to facilities / systems may be denied
+privacy issues / people do not like data being stored
+individuals will feel safer
+... there might be a reduction in crime
+faster boarding
+catching criminals
+October/November
+2022
+Marks
+2
+Marks
+2
+Question
+10(a)
+10(b)(i)
+10(b) (ii)
+Answer
+all four computers directly connected to the switch and no other connections.
+1 mark for the device. 1 mark for corresponding reason.
+:
+Device: Server
+Reason: Server processes the requests and authorises traffic // firewall
+software on the server authorises traffic // server acts as the proxy
+:
+Device: Switch
+Reason: Switch is connected to all the computers // to share access to
+the router on the network
+1 mark for each bullet point (max 3):
+•
+•
+•
+receive packets from devices / internet
+find destination of packets using the IP address
+forward packets to the destination
+assign private IP addresses to devices on LAN
+store/update/maintain a routing table
+find most efficient path to destination
+maintain table of MAC and IP addresses
+provides the LAN with a public IP address
+acts as a gateway
+performs protocol conversion
+acts as a firewall
+Marks
+1
+2
+3
+© UCLES 2022
+Page 10 of 10

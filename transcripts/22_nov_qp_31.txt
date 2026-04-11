@@ -1,0 +1,311 @@
+--- Page 1 ---
+55 Cambridge Assessment
+a International Education
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+9618/31
+October/November 2022
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided.
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 12 pages. Any blank pages are indicated
+DC (LK/CGW) 302515/4
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+2
+Real numbers are stored in a computer system using floating-point representation with:
+:
+8 bits for the mantissa
+8 bits for the exponent
+two's complement form for both mantissa and exponent.
+(a) Write the normalised floating-point representation of +202 in this system.
+Show your working.
+Mantissa
+Exponent
+Working ..
+[3]
+(b) Write the normalised floating-point representation of -202 in this system.
+Show your working.
+Mantissa
+Exponent
+Working
+[3]
+© UCLES 2022
+9618/31/0/N/22
+
+--- Page 3 ---
+3
+(c) A binary number is stored in the computer system.
+Mantissa
+Exponent
+(i) State why the number is not normalised.
+....
+[1]
+(ii) Write the normalised floating-point representation of the number.
+Mantissa
+Exponent
+[2]
+Outline the functions of the Transport and Internet layers of the TCP/IP protocol suite.
+Transport layer
+Internet layer
+© UCLES 2022
+9618/31/0/N/22
+[Turn over
+
+--- Page 4 ---
+4
+3 (a) State what is meant by the term enumerated data type.
+[1]
+(b) State what is meant by the term pointer data type.
+[1]
+(c) The months of the year are: January, February, March, April, May, June, July, August,
+September, October, November and December.
+Write the pseudocode statement to define the data type Quarter1, to hold the names of the
+first three months of a year.
+12]
+(d) The composite data type Pet is used to store data about the various pets of a group of
+students. It uses these fields:
+Field name
+Pet Name
+AnimalType
+PetAge
+PetGender
+OwnerName
+Data type
+String
+String
+Integer
+Char
+String
+(i) Write the pseudocode statement to set up a variable for one record of the composite
+data type Pet.
+11]
+© UCLES 2022
+9618/31/0/N/22
+
+--- Page 5 ---
+5
+(ii) Write pseudocode to store the details of the following pet, in the variable you set up in
+part (d)(i).
+PetName
+Tibbles
+AnimalType
+Cat
+PetAge
+8
+PetGender
+OwnerName
+M
+Jasmine Smith
+.... [3]
+4 Draw one line to connect each stage of compilation to its most appropriate description.
+Stage of compilation
+Description
+minimising a program's execution time and
+memory requirement
+Lexical analysis
+converting an intermediate representation of
+source code into an executable form
+Syntax analysis
+converting a sequence of characters into a
+sequence of tokens
+Code generation
+directly executing instructions written in a
+scripting language
+Optimisation
+using parsing algorithms to interpret the
+meaning of a sequence of tokens
+14]
+© UCLES 2022
+9618/31/0/N/22
+[Turn over
+
+--- Page 6 ---
+6
+5 (a) Write the infix expression in Reverse Polish Notation (RPN).
+a*b+b- d t 15
+11]
+(b) (i) Write the RPN expression in infix form.
+b - cd + * a l
+11]
+(ii) Evaluate your infix expression from part (b)(i) when a = 5, b = 10, c = 27 and d = 12.
+11]
+6 A message is encrypted using a private key and sent to an individual using asymmetric encryption.
+(a) State what is meant by a private key.
+[2]
+(b) Describe the process of asymmetric encryption.
+12]
+© UCLES 2022
+9618/31/0/N/22
+
+--- Page 7 ---
+7
+(c) Explain how a digital signature is used to verify a message when it is received.
+... [4]
+7
+(a) Complete the Karnaugh map (K-map) for the Boolean expression.
+Z = A. B. C. D + A. B. C. D + A. B. C. D + A. B. C. D + A. B. C. D + A. B. C. D
+AB
+CD
+00
+01
+11
+10
+00
+01
+121
+(b) Draw loop(s) around appropriate group(s) in the K-map to produce an optimal
+sum-of-products.
+12]
+(c) Write the Boolean expression from your answer to part (b) as a simplified sum-of-products.
+Use Boolean algebra to give your answer in its simplest form.
+Simplified sum-of-products
+Z =
+Simplest form
+Z =
+13]
+© UCLES 2022
+9618/31/0/N/22
+[Turn over
+
+--- Page 8 ---
+8
+8 Virtual memory, paging and segmentation are used in memory management.
+(a) Explain what is meant by virtual memory.
+13]
+(b) State one difference between paging and segmentation in the way memory is divided.
+[1]
+9 Deep learning is used in Artificial Intelligence (Al).
+(a) Describe what is meant by deep learning.
+[2]
+(b) Outline the reasons for using deep learning.
+12]
+© UCLES 2022
+9618/31/0/N/22
+
+--- Page 9 ---
+9
+10 Reduced Instruction Set Computers (RISC) and Complex Instruction Set Computers (CISC) are
+two types of processor.
+(a) Tick (v) one box in each row to show if the statement applies to RISC or CISC processors.
+Statement
+uses a smaller instruction set
+uses single-cycle instructions and limited addressing modes
+uses fewer general-purpose registers
+uses both hardwired and micro-coded control unit
+uses a system where cache is split between data and
+instructions
+RISC
+CISC
+12]
+(b) Describe the process of pipelining during the fetch-execute cycle in RISC processors.
+[4]
+© UCLES 2022
+9618/31/0/N/22
+Turn over
+
+--- Page 10 ---
+10
+11 (a) Define these Object-Oriented Programming (OOP) terms:
+Instance
+Inheritance
+Polymorphism
+13]
+(b) In OOP, a class contains attributes and methods.
+Complete the pseudocode for the class Car to enable objects to be created. The class needs
+to include:
+string attributes to store the make, model, body type and fuel type
+an integer attribute to store the number of cars of that type built.
+The attributes must be available only through the methods of the class.
+CLASS
+PRIVATE Make
+: STRING
+PRIVATE
+PUBLIC PROCEDURE New (CarMake : STRING,
+....)
+Make t
+Model + ..
+BodyType + CarBodyType
+Fuel + ""
+NumberBuilt + 0
+ENDPROCEDURE
+GetFuel ()
+GetNumberBuilt ()
+[5]
+© UCLES 2022
+9618/31/0/N/22
+
+--- Page 11 ---
+11
+12 (a) The array Names [0: 99] is in alphabetical order.
+Complete this pseudocode binary search algorithm.
+Lower + 0
+Mid + 0
+Exit + FALSE
+OUTPUT "Enter the name to be found "
+INPUT Target
+REPEAT
+... THEN
+OUTPUT Target,
+Exit + TRUE
+" does
+not exist"
+ENDIF
+Mid + Lower + (Upper - Lower + 1) DIV 2
+IF Names [Mid] < Target THEN
+Lower +
+ENDIF
+IF Names [Mid] > Target THEN
+ENDIF
+..... THEN
+OUTPUT Target,
+Exit + TRUE
+was
+found
+at location ", Mid
+ENDIF
+(b) Big O notation is used to classify efficiency of algorithms.
+The Big O notation for time complexity in a binary search is O(log n).
+(i) State the Big O notation for time complexity of a linear search.
+(ii) Describe the meaning of O(log n) as it applies to a binary search algorithm.
+© UCLES 2022
+9618/31/0/N/22
+16]
+[1]
+12]
+
+--- Page 12 ---
+12
+BLANK PAGE
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2022
+9618/31/0/N/22

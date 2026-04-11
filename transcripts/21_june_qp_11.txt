@@ -1,0 +1,451 @@
+--- Page 1 ---
+55 Cambridge Assessment
+a International Education
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+9618/11
+May/June 2021
+1 hour 30 minutes
+3 4
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages.
+C (PQ) 21453
+UCIES 202
+[Turn over
+
+--- Page 2 ---
+2
+Anya scans an image into her computer for a school project.
+(a) The scanned image is a bitmapped image.
+(i) Complete the following table to describe the two terms about graphics.
+Term
+Description
+Pixel
+File header
+12]
+(ii) The image is scanned with an image resolution of 1024 × 512 pixels, and a colour depth
+of 8 bits per pixel.
+Calculate an estimate for the file size, giving your answer in mebibytes. Show your
+working.
+Working
+Answer
+mebibytes
+[3]
+(b) The image is compressed using lossless compression.
+Identify one method of lossless compression that can be used to compress the image and
+describe how the method will reduce the file size.
+Lossless compression method
+Description ...
+[3]
+© UCLES 2021
+9618/11/M/J/21
+
+--- Page 3 ---
+3
+(c) One of the colours used in the image has the hexadecimal colour code:
+#FC238A
+EC is the amount of red, 23 is the amount of green and 8A is the amount of blue in the colour.
+(i) Convert the hexadecimal code FC into denary.
+..... 111
+(ii) The amount of green in binary is 00100011. This has the denary number 15 added to it
+to create a second colour.
+Add the denary number 15 to the binary number 00100011 and give your answer in
+binary.
+Perform the addition in binary. Show your working.
+Working
+Answer (in binary)
+[3]
+(iii)
+Hexadecimal 23 in two's complement representation is 00100011. The denary number
+10 needs to be subtracted from this value.
+Subtract the denary number 10 from the two's complement representation 00100011.
+Give your answer in binary. Show your working.
+Working
+Answer (in binary)
+13]
+© UCLES 2021
+9618/11/M/J/21
+[Turn over
+
+--- Page 4 ---
+4
+(d) Anya made sure that the image was not subject to any copyright before scanning it.
+Describe what is meant by copyright.
+...
+12]
+© UCLES 2021
+9618/11/M/J/21
+
+--- Page 5 ---
+5
+2 Bingwen's computer comes with an Operating System and utility software.
+(a) Draw one line from each utility software to its correct description.
+Utility software
+Description
+Scans software for errors and repairs the
+problems
+Disk formatter
+Moves parts of files so that each file is
+contiguous in memory
+Defragmentation
+Creates a copy of data that is no longer
+required
+Back-up
+Sets up a disk so it is ready to store files
+Disk repair
+Scans for errors in a disk and corrects them
+Creates a copy of data in case the original is
+lost
+14]
+(b) Identify four key management tasks that the Operating System will perform.
+1
+2
+3
+4
+[4]
+© UCLES 2021
+9618/11/M/J/21
+[Turn over
+
+--- Page 6 ---
+6
+A processor has one general purpose register, the Accumulator (ACC), and several special
+purpose registers.
+(a) Complete the following description of the role of the registers in the fetch-execute cycle by
+writing the missing registers.
+The
+to be loaded. This address is sent to the
+The
+This data is sent to the
+decodes the instruction's opcode.
+The ...
+holds the address of the next instruction
+holds the data fetched from this address.
+.. and the Control Unit
+........... is incremented.
+[5]
+© UCLES 2021
+9618/11/M/J/21
+
+--- Page 7 ---
+7
+(b) The following table shows part of the instruction set for a processor. The processor has one
+general purpose register, the Accumulator (ACC), and an Index Register (IX).
+Instruction
+Opcode
+Operand
+LDM
+#n
+LDD
+‹address>
+Explanation
+Immediate addressing. Load the number n to ACC
+Direct addressing. Load the contents of the location at the given address to ACC
+LDI
+<address>
+Indirect addressing: The address to be used is at the given address. Load the
+contents of this second address to ACC
+Indexed addressing. Form the address from <address> + the contents of the
+LDX <address>
+Index Register. Copy the contents of this calculated address to ACC
+LDR #n
+MOV
+<register>
+STO
+<address>
+ADD
+<address>
+INC
+<register>
+CMP
+<address>
+JPE
+<address>
+JPN
+<address>
+JMP
+<address>
+OUT
+END
+Immediate addressing. Load the number n to IX
+Move the contents of the accumulator to the given register (IX)
+Store contents of ACC at the given address
+Add the contents of the given address to the ACC
+Add 1 to the contents of the register (ACC or IX)
+Compare the contents of ACC with the contents of <address>
+Following a compare instruction, jump to <address> if the compare was True
+Following a compare instruction, jump to <address> if the compare was False
+Jump to the given address
+Output to the screen the character whose ASCII value is stored in ACC
+Return control to the operating system
+LSL #n
+Bits in ACC are shifted logically n places to the left. Zeros are introduced on
+the right hand end
+LSR
+#n
+Bits in ACC are shifted logically n places to the right. Zeros are introduced on
+the left hand end
+<address> can be an absolute address or a symbolic address
+| # denotes a denary number, e.g. #123
+© UCLES 2021
+9618/11/M/J/21
+[Turn over
+
+--- Page 8 ---
+8
+The current contents of the main memory and selected values from the ASCII character set
+are shown.
+Address
+Instruction
+200
+LDD 365
+201
+CMP 366
+202
+JPE 209
+203
+INC ACC
+204
+STO 365
+205
+MOV IX
+206
+LDX 365
+207
+OUT
+208
+JMP 200
+209 END
+...
+365
+366
+367
+368
+IX
+1
+3
+65
+66
+ASCII code table (selected codes only)
+ASCIl code
+Character
+65
+A
+66
+68
+C
+D
+© UCLES 2021
+9618/11/M/J/21
+
+--- Page 9 ---
+9
+Complete the trace table for the program currently in main memory.
+Instruction
+address
+ACC
+365
+1
+Memory address
+366
+367
+3
+65
+368
+66
+IX
+Output
+[6]
+© UCLES 2021
+9618/11/M/J/21
+[Turn over
+
+--- Page 10 ---
+10
+(c) (i) The Accumulator currently contains the binary number:
+1
+Write the contents of the Accumulator after the processor has executed the following
+instruction:
+LSL #2
+11]
+(ii) The Accumulator currently contains the binary number:
+1
+1
+1
+0
+1
+Identify the mathematical operation that the following instruction will perform on the
+contents of the accumulator.
+LSR #3
+... 11]
+© UCLES 2021
+9618/11/M/J/21
+
+--- Page 11 ---
+11
+Melinda and her friends set up a peer-to-peer network between their computers to share data.
+(a) Describe the key features of a peer-to-peer network.
+12]
+(b) Describe two drawbacks to Melinda and her friends of using a peer-to-peer network.
+2
+[4]
+(c) Melinda connects her laptop to the internet through her router.
+(i) Tick (v) one box in each row to identify whether the task is performed by the router or
+not.
+Task
+Receives packets from devices
+Finds the IP address of a Uniform Resource Locator (URL)
+Directs each packet to all devices attached to it
+Stores the IP and/or MAC address of all devices attached to it
+Performed by
+router
+Not performed
+by router
+12]
+© UCLES 2021
+9618/11/M/J/21
+[Turn over
+
+--- Page 12 ---
+12
+(ii) Melinda mainly uses the internet to watch films and play computer games.
+Tick (r) one box to identify whether Melinda should connect to the router using a wired
+or wireless network and justify your choice.
+Wired
+Wireless
+Justification
+13]
+(d) Melinda sends emails from her webmail account (email account accessed through a website).
+Explain whether Melinda is using the internet, or the World Wide Web (WWW), or both.
+13]
+© UCLES 2021
+9618/11/M/J/21
+
+--- Page 13 ---
+13
+5 Kiara has a washing machine and a refrigerator.
+(a) She has an embedded system in her washing machine.
+Describe what is meant by an embedded system, using the washing machine as an example.
+12]
+(b) The washing machine's embedded system makes use of both Random Access Memory
+(RAM) and Read Only Memory (ROM).
+State the purpose of RAM and ROM within the washing machine's embedded system.
+RAM
+ROM
+12]
+(c) The temperature in her refrigerator must be kept between 4 and 6 degrees Celsius.
+The microprocessor in the refrigerator turns on the cooling if the temperature is too high, and
+turns off the cooling if the temperature is too low.
+Explain why the system in the refrigerator is a control and not a monitoring system.
+12]
+© UCLES 2021
+9618/11/M/J/21
+[Turn over
+
+--- Page 14 ---
+14
+Each of the following algorithms performs data validation.
+State the type of validation check that each of the algorithms performs.
+(a)
+INPUT X
+IF X < 0 OR x > 10 THEN
+OUTPUT "Invalid"
+ENDIF
+.......... [1]
+(b)
+INPUT ×
+IF X = "" THEN
+OUTPUT "Invalid"
+ENDIF
+....
+(c)
+INPUT ×
+IF NOT (x = "Red" OR x = "Yellow" OR x = "Blue") THEN
+OUTPUT "Invalid"
+ENDIF
+... ...
+......... [1]
+© UCLES 2021
+9618/11/M/J/21
+
+--- Page 15 ---
+15
+7 Bobby and Kim are discussing databases.
+(a) Bobby tells Kim that a file-based approach is usually better than a relational database.
+Explain why Bobby is incorrect.
+13]
+(b) Bobby has a shop that sells products to customers. His database will store data about his
+customers, their payment details, orders and the products he sells. Customers will have login
+details to access their accounts. The database will update customers' payment and login
+details without keeping any historical records.
+(i) Give one example of each of the following relationships from Bobby's database.
+one-to-one
+one-to-many
+many-to-many
+[3]
+(ii) Tick (V) one box to identify the relationship that cannot be directly implemented in a
+normalised relational database.
+Relationship
+Tick (v)
+one-to-one
+one-to-many
+many-to-many
+© UCLES 2021
+9618/11/M/J/21
+11]
+[Turn over
+
+--- Page 16 ---
+16
+(iii) Bobby wants to name his database SHOPORDERS.
+Write a Data Definition Language (DDL) statement to define a new database with the
+name SHOPORDERS.
+[1]
+(c) A database has a data dictionary.
+Give three items that are stored in a data dictionary.
+1
+2
+3 ....................
+8
+Tick (v) one box in each row to identify the logic gate that each statement describes.
+Statement
+AND
+NAND
+NOR
+XOR
+The output is 1 only when both inputs are 1
+The output is 1 only when both inputs are different
+The output is 1 only when both inputs are O
+OR
+[3]
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of the University of
+Cambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.
+© UCLES 2021
+9618/11/M/J/21

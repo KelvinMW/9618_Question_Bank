@@ -1,0 +1,464 @@
+--- Page 1 ---
+* 0000800000001*
+SIS Cambridge Assessment
+International Educatior
+•
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+0 cO
+9618/11
+October/November 2024
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided.
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages. Any blank pages are indicated
+DC (LK) 337419/3
+© UCLES 2024
+L
+[Turn over
+J
+
+--- Page 2 ---
+* 0000800000002*
+2
+(a) State one difference between a tebibyte and a gigabyte.
+(b) (i) Convert the unsigned binary integer into hexadecimal.
+110001100111
+Answer.
+(ii) Convert the two's complement binary number into denary.
+100110010111
+Answer ..
+(iii) Convert the Binary Coded Decimal (BCD) into denary.
+010101110011
+Answer
+(c) Subtract the denary number 23 from the two's complement binary number 01001010
+Perform this calculation using binary subtraction.
+Show your working.
+Working
+Answer
+LOUCLES 2024
+9618/11/0/N/24
+[1]
+[1]
+11]
+[1]
+[2]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 3 ---
+* 0000800000003*
+DO NOT WRITE
+IN THIS MARGIN
+3
+(d) State one reason why binary addition and subtraction can result in overflow.
+....
+11]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/11/0/N/24
+[Turn over J
+
+--- Page 4 ---
+* 0000800000004*
+4
+A shop repairs electronic devices, for example mobile phones and tablet computers. The shop
+owner stores the data about the repairs using a file-based approach.
+(a) Give one limitation of using a file-based approach to store the data and explain how a
+relational database addresses this limitation.
+Limitation
+DO NOT WRITE IN THIS MARGIN
+Explanation
+[3]
+DO NOT WRITE IN THIS MARGIN
+(b) The shop owner creates a relational database called FIXIT.
+The database stores data about the customers and the devices for repair.
+Some devices need new parts that are ordered from suppliers.
+The database FIXIT is designed to include the following tables:
+PART (PartID, Description, Price, SupplierID)
+CUSTOMER (CustomerID,
+FirstName, LastName, ContactNumber)
+REPAIR (RepairNumber, StartDate, EndDate, CustomerID, Device)
+REPAIR
+_PART (PartID, RepairNumber, Quantity)
+(i) Complete the entity-relationship (E-R) diagram for the given tables.
+DO NOT WRITE IN THIS MARGIN
+REPAIR_PART
+PART
+DO NOT WRITE IN THIS MARGIN
+REPAIR
+CUSTOMER
+LOUCLES 2021
+9618/11/0/N/24
+[3]
+J
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 5 ---
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+* 0000800000005*
+5
+(ii) The table shows sample data for the table REPAIR_PART.
+PartID
+ACD128SA
+PPOR543DWW
+TR453
+PPOR543DWW
+WED5
+Repair Number
+0022
+0022
+0023
+0023
+0024
+Quantity
+3
+1
+1
+2
+5
+Write a Structured Query Language (SQL) script to define the table REPAIR_PART.
+Include constraints (restrictions) on the data that can be entered into each field where
+appropriate.
+[5]
+OUCLES 2024
+9618/11/0/N/24
+(Turn over
+
+--- Page 6 ---
+* 0000800000006 *
+6
+(iii) Suppliers send invoices to the company for the parts that are used. A new table,
+INVOICE, stores the data about each invoice and whether it has been paid or not.
+The design for the table INVOICE is shown:
+INVOICE (InvoiceID, SupplierID, AmountDue, Paid, DatePaid)
+The table shows sample data for the table INVOICE.
+InvoiceID
+SupplierID
+000001
+JK675
+000002
+WR443
+000003
+JK675
+AmountDue
+22.50
+358.99
+10.21
+Paid
+TRUE
+FALSE
+FALSE
+DatePaid
+01/01/2024
+Write an SQL script to return the total amount due to the supplier with the ID of JK675 for
+all the invoices that have not currently been paid.
+13]
+(c) Complete the table by writing a definition for each of the database terms.
+Term
+Definition
+Referential integrity
+Candidate key
+Tuple
+[3]
+OUCLES 2024
+9618/11/0/N/24
+DONOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 7 ---
+* 0000800000007*
+DO NOT WRITE IN THIS MARGIN
+3
+7
+A computer system has a dual-core Central Processing Unit (CPU).
+(a) State the purpose of the system clock and the Control Unit (CU) in a CPU.
+System clock
+CU
+DO NOT WRITE IN THIS MARGIN
+12]
+(b) (i) The number of cores in the processor affects the performance of the computer system.
+Identify one other feature of a processor that can affect the performance of a computer
+system and state why it affects the performance.
+Feature
+Reason
+DO NOT WRITE IN THIS MARGIN
+[2]
+(ii) A solid state (flash) memory drive is automatically recognised by the computer when it is
+plugged into a port in the computer.
+Identify an appropriate type of port to connect the solid state memory drive to the
+computer.
+Explain how this port provides an automatic connection.
+Port
+Explanation
+DO NOT WRITE IN THIS MARGIN
+[3]
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2024
+9618/11/0/N/24
+(Turn over
+
+--- Page 8 ---
+* 0000000000*
+8
+(c) Identify two disadvantages of using Dynamic RAM (DRAM) instead of Static RAM (SRAM) in
+a computer system.
+2
+12]
+(d) The computer system is used to store data received from a temperature sensor every five
+seconds. The data is stored on an optical disc using an optical disc reader/writer.
+(i) Describe the principal operation of an optical disc reader/writer.
+[4]
+(ii) The computer uses a buffer when writing data to the optical disc.
+Explain the use of a buffer when writing data to the optical disc.
+LOUCLES 2024
+9618/11/0/N/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DONOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 9 ---
+* 0000800000009*
+DO NOT WRITE IN THIS MARGIN
+9
+A student uses a laptop to write a program that is saved as a text file.
+(a) The laptop has utility software and an Operating System (OS).
+(i) Describe the file management tasks carried out by an OS.
+DO NOT WRITE IN THIS MARGIN
+12]
+(ii) Explain the need for back-up software.
+12]
+DO NOT WRITE IN THIS MARGIN
+(b) The student compresses the file before it is emailed to their teacher as an attachment.
+(i) Explain the benefits to the teacher of the attachment being a compressed file.
+DO NOT WRITE IN THIS MARGIN
+.... 131
+(ii) Describe one lossless method of compressing a text file.
+DO NOT WRITE IN THIS MARGIN
+[3]
+LOUCLES 2024
+9618/11/0/N/24
+[Turn over
+
+--- Page 10 ---
+* 0000800000010*
+10
+(c) The student used a program library when writing their program.
+Explain the benefits to the student of using library files when writing a program.
+(d) The program code is written using an Integrated Development Environment (IDE).
+(i) One presentation feature found in a typical IDE is prettyprint.
+Identify and describe one other presentation feature found in a typical IDE.
+Feature
+Description
+(ii) One debugging feature found in a typical IDE is single stepping.
+Identify and describe one other debugging feature found in a typical IDE.
+Feature
+Description
+LOUCLES 2024
+9618/11/0/N/24
+[3]
+12]
+12]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 11 ---
+* 0000800000011 *
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+11
+5
+A security system has both a floodlight (very bright light) and an audio alarm.
+The data from multiple sensors is analysed and used to:
+• turn on the floodlight
+• sound the audio alarm.
+Sensors can be used to detect:
+• if doors are open
+the external daylight level
+• if people are detected within a set distance.
+(a) Complete the table to identify the most appropriate type of sensor for each scenario.
+Scenario
+Type of sensor
+A door is open.
+DO NOT WRITE IN THIS MARGIN
+The external daylight level is below a set amount.
+A person is detected within 2 metres.
+11]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/11/0/N/24
+[Turn over J
+
+--- Page 12 ---
+* 0000800000012*
+12
+(b) The floodlight (X) and audio alarm (Y) operate according to the following criteria:
+Parameter
+Description of parameter
+Binary value
+1
+A
+external daylight level
+front door
+C
+person is within 2m
+D
+back door
+E
+security system
+The floodlight turns on (X = 1) if:
+• the security system is switched on
+and
+• the external daylight level is low
+and
+• a person is detected within 2 m.
+The audio alarm turns on (Y = 1) if:
+• the security system is switched on
+and
+1
+1
+1
+0
+1
+Condition
+Low
+High
+Open
+Closed
+Detected
+Not detected
+Open
+Closed
+Switched on
+Switched off
+one or more doors are open, or a person is detected within 2 m.
+Write logic expressions for the security system.
+X=
+Y=
+12]
+(c) Explain whether the security system is an example of a monitoring system or a control
+system.
+[3]
+OUCLES 2024
+9618/11/0/N/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 13 ---
+* 0000800000013*
+DO NOT WRITE IN THIS MARGIN
+13
+6
+A car park system uses a camera to record the registration number of each car as it enters and
+leaves the car park.
+Explain how artificial intelligence is used in the car park system to identify the car's registration
+number.
+DO NOT WRITE IN THIS MARGIN
+14]
+DO NOT WRITE IN THIS MARGIN
+7 Software is distributed with a licence.
+(a) Give two benefits of distributing software using a shareware software licence.
+1
+2
+12]
+DO NOT WRITE IN THIS MARGIN
+(b) Give two benefits of distributing software using a commercial software licence.
+1
+2
+12]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/11/0/N/24
+[Turn over
+
+--- Page 14 ---
+0000800000014*
+8
+14
+A computer designed using the Von Neumann model for a computer system contains general
+purpose registers and special purpose registers.
+(a) Describe the purpose of the Status Register (SR).
+DO NOT WRITE IN THIS MARGIN
+12]
+(b) Identify two differences between general purpose registers and special purpose registers.
+1
+DO NOT WRITE IN THIS MARGIN
+2
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2024
+9618/11/0/N/24
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 15 ---
+* 0000800000015*
+DO NOT WRITE IN THIS MARGIN
+15
+BLANK PAGE
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/11/0/N/24
+J
+
+--- Page 16 ---
+* 0000800000016*
+16
+BLANK PAGE
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series. J
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+OUCLES 2024
+9618/11/0/N/24
+DO NOT WRITE IN THIS MARGIN

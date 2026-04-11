@@ -1,0 +1,353 @@
+--- Page 1 ---
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 32 Advanced Theory
+MARK SCHEME
+Maximum Mark: 75
+9618/32
+May/June 2022
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2022 series for most
+Cambridge O Level components.
+mege O Lovel componen remainal and and Lovel and Camordge Pre U componenis, and some
+This document consists of 9 printed pages.
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+9618/32
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Generic Marking Principles
+May/June 2022
+These general marking principles must be applied by all examiners when marking candidate answers. They should be applied alongside the
+specific content of the mark scheme or generic level descriptors for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+••
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit is given for valid answers which go beyond the
+scope of the syllabus and mark scheme, referring to your Team Leader as appropriate
+marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these features are specifically assessed by the
+question as indicated by the mark scheme. The meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed instructions or in the application of generic level
+descriptors.
+Page 2 of 9
+
+--- Page 3 ---
+9618/32
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2022
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question (however; the use of the full mark range may
+be limited according to the quality of the candidate responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should not be awarded with grade thresholds or
+grade descriptors in mind.
+Page 3 of 9
+
+--- Page 4 ---
+9618/32
+Question
+1(a)
+1(b)(i)
+1 (b)(ii)
+1(b)(iii)
+1 (c)(i)
+1(c)(ii)
+Question
+2(a)
+2(b)
+2(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+BuildingRegister. BuildingID < 1067
+BuildingRegister. BuildingGroup ‹ "house"
+One mark: TYPE BuildingType =
+One mark: (house, bungalow, apartment, farm)
+TYPE BuildingType = (house, bungalow, apartment, farm)
+DECLARE BuildingGroup : BuildingType
+BuildingRegister. BuildingGroup f house
+PRIVATE OwnerName : STRING
+To ensure that attributes can only be accessed by the class's own methods
+To enforce encapsulation // ensure they are hidden
+2
+2
+1
+1
+1
+2
+Answer
+Marks
+studies (sam, history).
+tutors (nina, sam) .
+freya, hua ll hua, freya
+one mark for correct use of X
+one mark for two other variables in correct positions
+one mark for three correct clauses in any order
+one mark for correct syntax
+studies (X, S),
+tutors (R, X).
+2
+1
+4
+Page 4 of 9
+
+--- Page 5 ---
+9618/32
+Question
+3(a)
+3(b)
+Question
+4(a)
+4(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+4
+Protocol one mark, description one mark, max four
+Any two from
+:
+HTTP(S) (1) for sending and receiving web pages / hypertext documents (1)
+FTP (1) for sending and receiving files over a network / between devices (1)
+•.
+SMTP (1) for sending/uploading emails /push protocol (1)
+POP(3) (1) for receiving/downloading emails /pull protocol (1)
+• IMAP (1) for receiving/downloading emails /pull protocol (1)
+Layer one mark, matching function one mark, max four
+Any two from
+Transport (1) handles packets (1)
+•
+Internet (1) handles transmission of data using
+IP addresses |/ provides (optimal) route (1)
+•
+Network Access (Interface) |/ (Data) Link // Physical (1) Handles how data is physically sent (1)
+4
+Answer
+• An unsigned integer,12, is used instead of the last variable
+|/ 12 is not a valid variable
+• The variable z is not a valid variable / missing an unsigned integer after the Z
+One mark per bullet point
+• <variable> ::= ‹letter><unsigned
+integer>
+• <unsigned integer> ::= <digit>|<digit><digit>
+• <digit> ::= 1 | 2 | 3
+and operator> ::=+-*
+• assignment_statement> : := ‹variable› =
+• ‹variable><operator><variable>
+Marks
+2
+5
+Page 5 of 9
+
+--- Page 6 ---
+9618/32
+Question
+4(c)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+unsigned integer
+Marks
+3
+One mark adding both boxes... unsigned integer
+One mark for correct position(s) and connector(s) ...
+One mark ... rest correct
+(assignment statement)
+unsigned integer
+unsigned integer
+4(c)(ii)
+→ variable
+•variable
+• operator
+• variable
+Max three
+One mark for
+‹assignment_statement›: :=<variable>=
+One mark two or three correct options or two marks if all four options correct
+‹variable><operator><variable>
+I‹variable><operator›<unsigned integer>
+unsigned integer><operator><variable>
+I'unsigned_integer>operator><unsigned_
+_integer>
+<assignment
+statement›::=<variable›= ‹variable>operator><variable>|<variable><operator>
+‹unsigned integer›|<unsigned integer><operator><variable>
+unsigned_integer ›operator›<unsigned_integer>
+or
+One mark for each section
+<operand›::=<variable>|<unsigned integer>
+<assignment
+_statement>::=<variable>=
+<operand›<operator><operand>
+<operand›::=<variable>|<unsigned integer>
+‹assignment_statement>::=<variable>=<operand›<operator>operand>
+3
+Page 6 of 9
+
+--- Page 7 ---
+9618/32
+Question
+5
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+SIMD (1) many/array processors execute the same instruction using different data sets (1)
+MISD (1) many processors (using different instructions) use the same data set (1)
+MIMD (1) many processors (using different instructions) using different data sets (1)
+Answer
+May/June 2022
+Marks
+6
+Question
+6(a)
+Marks
+1 mark per correct output column
+INPUT
+A
+OUTPUT
+E
+F
+2
+1
+1
+1
+0
+6(b)(i)
+6(b) (ii)
+1
+1
+1
+Half adder
+Purpose of E: Sum
+Purpose of F: Carry
+1
+1
+2
+© UCLES 2022
+Page 7 of 9
+
+--- Page 8 ---
+9618/32
+Question
+7(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+3
+7(b)(i)
+7(b)(ii)
+Any three from
+MP1
+enquiry made to Certificate Authority (CA)
+MP2
+enquirer's details checked by CA
+MP3
+if enquirer details verified by CA then public key is agreed
+MP4
+CA creates/issues certificate that includes the enquirers public key
+MP5
+encrypting data sent to/by CA with the CA's public/private key
+MP1
+The message is hashed with (the agreed hashing algorithm)...
+MP2
+... to produce a message digest
+MP3
+The message digest is then encrypted with the sender's private key to form the digital signature
+Any four from
+The message together with the digital signature is decrypted using the receiver's private key
+The digital signature received is decrypted with the sender's public key to recover the message digest sent
+The decrypted message received is hashed with the agreed hashing algorithm to reproduce the message digest
+MP4
+MP5
+... if they are the same the message has not been altered // if they are different the message has been altered
+Answer
+3
+4
+Question
+8(a)
+Marks
+4
+8 (b)(i)
+INTEGER
+9 |1 LENGTH (Mylist) - 1
+Index + 1
+"Value not found" (or any similar phrase)
+The list to be searched must be ordered/sorted
+1
+© UCLES 2022
+Page 8 of 9
+
+--- Page 9 ---
+9618/32
+Question
+8(b)(ii)
+8 (b)(iii)
+8(c)
+Question
+9
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2022
+Answer
+Marks
+4
+Any four from
+MP1
+MP2
+Find the middle item / index
+Check the value of middle item in the list to be searched
+MP3
+If equal item searched for is found
+MP4
+If this is not equal/greater/less than the item searched for
+MP5
+... discard the half of the list that does not contain the search item
+MP6
+Repeat the above steps until the item searched for is found
+MP7
+... or there is only one item left in the list and it is not the item searched for // lower bound > / = upper bound
+As the number of items in the list increases the time to search the list increases
+MP1
+MP2
+MP3
+Linear search O(n) and Binary search O(log2n) / O(Log n)
+time to search increases linearly in relation to the number of items in the list for a linear search and logarithmically
+time to searsh increases less rapidly for a binary search and time to search increases more rapidly for alinear
+1
+3
+Answer
+Marks
+To trap (some) runtime errors
+To prevent a program halting unexpectedly
+To produce meaningful error messages for these errors
+Example divide by zero // end of file I/ file not found
+4
+Page 9 of 9

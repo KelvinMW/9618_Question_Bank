@@ -1,0 +1,461 @@
+--- Page 1 ---
+5 Cambridge Assessmen
+shes International Educatior
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+9618/21
+May/June 2022
+2 hours
+You must answer on the question paper.
+You will need: Insert (enclosed)
+INSTRUCTIONS
+• Answer all questions.
+• Use a black or dark blue pen.
+• Write your name, centre number and candidate number in the boxes at the top of the page.
+• Write your answer to each question in the space provided
+• Do not use an erasable pen or correction fluid.
+• Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+• The insert contains all the resources referred to in the questions.
+This document has 20 pages. Any blank pages are indicated
+DC (RWICGW) 303754/3
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+2
+Refer to the insert for the list of pseudocode functions and operators.
+1 (a) A programmer draws a program flowchart to show the sequence of steps required to solve a
+problem.
+Give the technical term for a sequence of steps that describe how to solve a problem.
+[1]
+(b) The table lists some of the variables used in a program.
+(i) Complete the table by writing the most appropriate data type for each variable.
+Variable
+Temp
+PetName
+MyDOB
+Lighton
+Use of variable
+Data type
+Stores the average temperature
+Stores the name of my pet
+To calculate the number of days until my next
+birthday
+Stores state of light; light is only on or off
+14]
+(ii) One of the names used for a variable in the table in part 1(b)(i) is not an example of
+good practice.
+Identify the variable and give a reason why it is not good practice to use that name.
+Variable
+Reason
+12]
+(c) Complete the table by evaluating each expression.
+Expression
+INT ( (31 / 3) + 1)
+MID (IO_UPPER ("Version"), 4, 2)
+TRUE AND (NOT FALSE)
+NUM_TO_STR (27 MOD 3)
+Evaluation
+14]
+© UCLES 2022
+9618/21/M/J/22
+
+--- Page 3 ---
+3
+2
+Examine the following state-transition diagram.
+Button-Y
+Button-Z | Output-C
+START
+S1
+Button-Z
+S3
+Button-Y
+Button-Y | Output-A
+Button-X
+S2
+S4
+Button-Z | Output-B
+(a) Complete the table with reference to the diagram.
+Answer
+The number of different inputs
+The number of different outputs
+The single input value that could result in S4
+13]
+(b) The initial state is S1.
+Complete the table to show the inputs, outputs and next states.
+Input
+Button-Y
+Output
+none
+Next state
+Button-Z
+S2
+none
+14]
+© UCLES 2022
+9618/21/M/J/22
+[Turn over
+
+--- Page 4 ---
+4
+The manager of a cinema wants a program to allow users to book seats. The cinema has several
+screens. Each screen shows a different film.
+(a) Decomposition will be used to break the problem down into sub-problems.
+Describe three program modules that could be used in the design.
+Module 1
+Module 2
+Module 3
+[3]
+(b)
+Two types of program modules may be used in the design of the program.
+Identify the type of program module that should be used to return a value.
+11]
+© UCLES 2022
+9618/21/M/J/22
+
+--- Page 5 ---
+5
+BLANK PAGE
+© UCLES 2022
+9618/21/M/J/22
+Turn over
+
+--- Page 6 ---
+6
+A stack is created using a high-level language. Memory locations 200 to 207 are to be used to
+store the stack.
+The following diagram represents the current state of the stack.
+TopofStack points to the last value added to the stack.
+Stack
+Memory
+location
+Value
+200
+201
+202
+203
+204
+205
+206
+207
+'F'
+'''
+'D'
+'E'
+'H'
+Pointer
++ TopofStack
+(a) Complete the following table by writing the answers.
+Answer
+The value that has been on the stack for the longest time.
+The memory location pointed to by Topofstack if three POP
+operations are performed.
+12]
+© UCLES 2022
+9618/21/M/J/22
+
+--- Page 7 ---
+7
+(b) The following diagram shows the current state of the stack:
+Stack
+Pointer
+Memory
+location
+Value
+200
+201
+202
+203
+204
+205
+206
+207
+'W'
+‹TopOfStack
+'Y'
+'X'
+'Z'
+'N'
+'p'
+The following operations are performed:
+POP
+POP
+PUSH 'A'
+PUSH 'B'
+POP
+PUSH 'C'
+PUSH 'D'
+Complete the diagram to show the state of the stack after the operations have been
+performed.
+Pointer
+Stack
+Memory
+location
+200
+201
+202
+203
+204
+205
+206
+207
+Value
+14]
+© UCLES 2022
+9618/21/M/J/22
+[Turn over
+
+--- Page 8 ---
+8
+5
+Each line of a text file contains data organised into fixed-length fields as shown:
+<Field 1><Field 2><Field 3>
+An algorithm is required to search for the first instance of a given value of Field 2 and, if found, to
+output the corresponding values for Field 1 and Field 3.
+Describe the algorithm needed
+Do not include pseudocode statements in your answer.
+[6]
+© UCLES 2022
+9618/21/M/J/22
+
+--- Page 9 ---
+9
+6 (a) An algorithm will:
+•
+output each integer value between 100 and 200 that ends with the digit 7, for example,
+•
+output a final count of the number of values that are output.
+Write pseudocode for this algorithm.
+Any variables used must be declared.
+.............. [5]
+© UCLES 2022
+9618/21/M/J/22
+[Turn over
+
+--- Page 10 ---
+10
+(b) Study the following pseudocode.
+CASE OF MySwitch
+1: ThisChar
+"a'
+2: ThisChar
+"y'
+3: ThisChar ‹
+- "7'
+OTHERWISE: ThisChar < "*'
+ENDCASE
+Write pseudocode with the same functionality without using a CASE structure.
+14]
+© UCLES 2022
+9618/21/M/J/22
+
+--- Page 11 ---
+11
+7% A string is a palindrome if it reads the same forwards as backwards.
+The following strings are examples of palindromes:
+"Racecar"
+"madam"
+"12344321"
+Upper-case and lower-case characters need to be treated the same. For example, 'A' is equivalent
+to 'a'
+(a) Afunction IsPalindrome () Will take a string parameter. The function will return TRUE if the
+string is a palindrome and will return FALSE if the string is not a palindrome.
+Write pseudocode for IsPalindrome ().
+© UCLES 2022
+9618/21/M/J/22
+[Turn over
+
+--- Page 12 ---
+12
+© UCLES 2022
+9618/21/M/J/22
+
+--- Page 13 ---
+13
+(b) Strings may consist of several words separated by spaces.
+For example, the string "never odd or even" becomes a palindrome if the spaces are removed.
+The program flowchart represents an algorithm to produce a string Outstring by removing
+all spaces from a string Instring.
+START
+Set Index to 1
+A
+B
+NO
+E
+YES
+>
+F
+G
+D
+END
+Complete the table by writing the text that should replace each of the labels B, C, D, F and G.
+Note: the text may be written as a pseudocode statement.
+Label
+A
+Text
+Set Outstring to ""
+C
+D
+E
+F
+G
+Set Index to Index + 1
+© UCLES 2022
+9618/21/M/J/22
+[4]
+[Turn over
+
+--- Page 14 ---
+14
+8 A program allows a user to save passwords used to login to websites. A stored password is
+inserted automatically when the user logs into the corresponding website.
+A student is developing a program to generate a password. The password will be of a fixed format,
+consisting of three groups of four alphanumeric characters. The groups are separated by the
+hyphen character - .
+An example of a password is:
+"FxAf-3haV-Tq49"
+A global 2D array Secret of type STRING stores the passwords together with the website domain
+name where they are used. Secret contains 1000 elements organised as 500 rows by 2 columns.
+Unused elements contain the empty string ('"). These may occur anywhere in the array.
+An example of a part of the array is:
+Array element
+Secret |27, 1]
+Secret [27, 2]
+Secret [28, 1]
+Secret [28, 2]
+Value
+"www.thiswebsite.com"
+"'..
+"www.thatwebsite.com"
+Note:
+•
+For security, passwords are stored in an encrypted form, shown as
+example.
+The passwords cannot be used without being decrypted.
+Assume that the encrypted form of a password will not be an empty string.
+The programmer has started to define program modules as follows:
+Module
+RandomChar ()
+Description
+Generates a single random character from within one of the
+following ranges:
+'a'to'z'
+'A'to 'Z
+'O'to '9'
+• Returns the character
+Encrypt ()
+: Takes a password as a parameter of type string
+Returns the encrypted form of the password as a string
+Decrypt ()
+:
+Takes an encrypted password as a parameter of type string
+Returns the decrypted form of the password as a string
+For reference, relevant ASCII values are as follows:
+Character range
+'a'to 'z'
+'A'to 'Z
+'O'to'9'
+ASCIl range
+97 to 122
+65 to 90
+48 to 57
+ao." in the
+© UCLES 2022
+9618/21/M/J/22
+
+--- Page 15 ---
+15
+(a) Write pseudocode for module RandomChar () .
+You may wish to refer to the insert for a description of the CHR () function. Other functions
+may also be required
+... [6]
+© UCLES 2022
+9618/21/M/J/22
+[Turn over
+
+--- Page 16 ---
+16
+(b) A new module is defined as follows:
+Module
+FindPassword ()
+...
+Description
+Takes a website domain name as a parameter of type string
+Searches for the website domain name in the array Secret
+If the website domain name is found, the decrypted password
+is returned
+If the website domain name is not found, a warning message
+is output, and an empty string is returned
+Write pseudocode for module FindPassword ().
+Assume that modules Encrypt () and Decrypt () have already been written.
+17]
+© UCLES 2022
+9618/21/M/J/22
+
+--- Page 17 ---
+17
+(c) The modules Encrypt () and Decrypt () are called from several places in the main
+program.
+Identify a method that could have been used to test the main program before these modules
+were completed. Describe how this would work.
+Method
+Description
+[3]
+(d) A validation function is written to check that the passwords generated are valid.
+To be valid, each password must:
+• be 14 characters long
+• be organised as three groups of four case-sensitive alphanumeric characters. The
+groups are separated by hyphen characters
+• not include any duplicated characters, except for the hyphen characters.
+Note: lower-case and upper-case characters are not the same. For example, 'a' is not the
+same as 'A'.
+Give two password strings that could be used to test different areas of the validation rules.
+Password 1
+Password 2
+12]
+(e) The RandomChar () module is to be modified so that alphabetic characters are generated
+twice as often as numeric characters.
+Describe how this might be achieved.
+13]
+© UCLES 2022
+9618/21/M/J/22
+
+--- Page 18 ---
+18
+BLANK PAGE
+© UCLES 2022
+9618/21/M/J/22
+
+--- Page 19 ---
+19
+BLANK PAGE
+© UCLES 2022
+9618/21/M/J/22
+
+--- Page 20 ---
+20
+BLANK PAGE
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2022
+9618/21/M/J/22

@@ -1,0 +1,494 @@
+--- Page 1 ---
+alls Cambridge Assessment
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 13 Theory Fundamentals
+MARK SCHEME
+Maximum Mark: 75
+9618/13
+May/June 2022
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2022 series for most
+Cambridge O Level components.
+mage o over omponen nemational and AS Lovel and Cambridge ProU componens, and some
+This document consists of 10 printed pages.
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+9618/13
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2022
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2022
+Page 2 of 10
+
+--- Page 3 ---
+9618/13
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2022
+Answer
+Question
+1(a)(i)
+Marks
+2
+1(a)(ii)
+1 (a)(iii)
+1(a) (iv)
+1 (b)
+1 mark per point to max 2
+:
+All of the characters/symbols that the computer can use/represent
+Each character has a unique number/binary number/hexadecimal
+number
+1 mark for each character set to max 2, 1 mark for difference
+Extended ASCIl
+UNICODE
+ASCI has 7 bits whereas UNICODE has 16 bits
+Extended ASCIl has 8 bits whereas UNICODE has 16 bits
+ASCII has 7 bits whereas extended ASCII has 8 bits
+Unicode can represent more characters than ASCII/Extended// by
+example
+•
+Extended ASCII can represent more characters than ASCII
+1 mark per point to max 2
+Can use run-length encoding
+Identifies groups of repeated characters...
+... replaces them with a one copy of the character and the number of
+1 mark per point to max 2
+:
+None of the original data can be lost / deleted
+The (text) file would be corrupted // the (text) file cannot be opened
+1 mark for each correct value
+Statement
+The hexadecimal value 11 represented in denary
+The smallest denary number that be represented by an
+unsigned 8-bit binary integer
+The denary number 87 represented in Binary Coded
+Decimal (BCD)
+The denary number 240 represented in hexadecimal
+The denary number -20 represented in 8-bit two's
+complement binary
+Answer
+17
+1000 0111
+FO
+1110 1100
+3
+2
+2
+5
+© UCLES 2022
+Page 3 of 10
+
+--- Page 4 ---
+9618/13
+Question
+2(a)
+2(b)
+Question
+3(a)
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2022
+Answer
+Marks
+3
+1 mark for each correct description
+Step
+PC < [PC] + 1
+Description
+Address in PC is incremented
+MDR < [ [MAR]]
+MAR < [PC]
+The data in the address held in the MAR is copied
+to the MDR
+The contents of the PC are copied to the MAR
+1 mark per point to max 5
+: Priork for interrupt at star/end of an F-E cycle
+Priority is checked
+•
+•
+If lower priority than current process continue with F-E cycle
+If higher priority than current process..
+... state of current process is / registers are stored on stack
+•
+:
+Location/type of interrupt identified
+Appropriate ISR is called to handle the interrupt
+When ISR finished, check for further interrupts (of higher priority) /
+return to step 1
+•
+Otherwise load data from stack and continue with next F-E cycle (of
+process)
+5
+Answer
+Marks
+3
+1 mark for each correct value
+Instruction
+LDM #103
+LDD 102
+LDI 103
+Accumulator
+103
+104
+101
+Page 4 of 10
+
+--- Page 5 ---
+9618/13
+Question
+3(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2022
+Answer
+1 mark for group name, 1 mark for appropriate description
+Marks
+4
+3(c)
+e.g.
+:
+Input and output of data
+Takes an input from the user I/ outputs the character of the binary
+number
+:
+Arithmetic operations
+Perform addition and subtraction
+:
+Unconditional and conditional instructions
+Move to another instruction (identified by a label)
+Compare instructions
+: Compare instructits another value
+1 mark for each correct line
+Instruction
+3
+Result
+O1111101
+XOR 11110000
+00111101
+OR 01010101
+11111111
+AND 11111111
+11000010
+11001101
+© UCLES 2022
+Page 5 of 10
+
+--- Page 6 ---
+9618/13
+Question
+4(a)
+4(b)(i)
+4(b)(ii)
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Max orienting task, mas for tach description
+e.g.
+• •
+Memory management
+Controls the movement of data between RAM, processor, VM etc
+allocates memory to processes
+•..
+File management
+Creates files/folders
+Renames file/folders
+:
+Security management
+Creates accounts/passwords
+Provide /upgrade firewall / anti-malware
+:
+Hardware management
+Receives data from input devices I|/sends data to output device
+Use of device drivers
+•
+•
+Process management
+Decides which process to run next
+supports multitasking
+1 mark per point to max 2 for each
+Back-up
+•
+To make a copy of data at regular intervals
+•
+So that if it is lost/corrupted it can be retrieved
+Defragmentation
+Make individual files occupy contiguous blocks // move free space
+together
+•
+Improve disk access times // Data/files can be loaded faster
+1 mark from
+e.g.
+Compression software
+(Hard) disk formatter
+Virus checker
+Disk analysis software
+Disk repair software
+May/June 2022
+Marks
+4
+4
+1
+Page 6 of 10
+
+--- Page 7 ---
+9618/13
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2022
+Answer
+Question
+5(a)(i)
+Marks
+1
+5(a)(ii)
+5(b)(i)
+5(b)(ii)
+5(b(iii)
+1 mark from
+•..
+To stop the data being lost / corrupted / amended
+To make sure it can be recovered
+To prevent unauthorised access
+1 mark each
+e.g.
+• Install / run a firewall
+• Up to date Anti-virus / anti-malware
+•
+(Username and) (strong) password
+Encryption
+: Access rights
+1 mark each
+Visual check
+Manually compare the data entered with the original (document)
+:
+Double entry
+Enter the data twice and the system compares them to see if they are
+the same
+1 mark each
+e.g.
+Range check:
+• Make sure it is after and before a specific date // e.g. between 1900 and
+today's date // check month is between 1 and 12 I/ check day is
+between 1 and month end
+Presence check:
+• Make sure the date of birth has been entered
+Length check:
+Make sure there are at least 1 for day, 1 for month, 2/4 for year // must
+be 8 characters
+1 mark per bullet point to max 2
+• Validation checks data is reasonable/within bounds it does not check
+•
+that accurate data has been entered
+Verification checks if the data matches the data given it does not check
+if the original data is accurate
+2
+2
+3
+2
+© UCLES 2022
+Page 7 of 10
+
+--- Page 8 ---
+9618/13
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Question
+6(a)
+Marks
+4
+6(b)(i)
+6(b) (ii)
+6(c)
+1 mark per point
+••..
+Primary key Staf fID in STAFF...
+...links to foreign key staff ID in DEVICE
+One staff member can have many devices
+Each device can only be with one member of staff
+1 mark for each correctly completed statement
+SELECT COUNI (STAFF. StaffID)
+FROM STAFF
+INNER JOIN DEVICE
+ON STAFF. StaffId = DEVICE.StaffID
+WHERE STAFF. FirstName
+• = "Ali"
+AND STAFF. LastName = "Khan";
+1 mark per bullet point
+: ADDR propriate red ca
+ADD appropriate field name, appropriate data type
+e.g.
+ALTER TABLE DEVICE
+ADD Returned Boolean;
+Normal Form
+First Normal Form (1NF)
+Second Normal Form
+(2NF)
+Third Normal Form (3NF)
+4
+2
+Description
+No repeating groups or repeating attributes
+All attributes must be fully dependant on
+the (composite) primary key /i No partial
+dependencies
+All attributes must be fully dependent on the
+primary key and no other attributes // no
+non-key dependencies // no transitive
+dependencies
+1 mark for each correct description
+3
+© UCLES 2022
+Page 8 of 10
+
+--- Page 9 ---
+9618/13
+Question
+7(a)
+7(b)
+Question
+8(a)
+8(b)
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+3
+1 mark for each section
+A AND B
+NOT C AND B
+//B AND NOT C
+XOR (with remainder correct and bracketed and nothing extra)
+X = (A AND B) XOR (NOT C AND B)
+1 mark for first 4 rows, 1 mark for second 4 rows (shaded)
+A
+0
+1
+1
+1
+1
+B
+0
+1
+1
+0
+1
+1
+C
+Working space
+1
+1
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+2
+Answer
+Accessing a service/files/software on a remote server
+1 mark each from:
+Public e.g.
+• Computing services offered by 3rd party provider over the public
+•
+Internet
+Public is open/available to anyone with the appropriate
+equipment/software/credentials
+Private e.g.
+•
+Computing services offered either over the Internet or a private internal
+network
+:
+Only available to select users not the general public
+Private is a dedicated/bespoke system only accessible for/from the
+organisation
+Marks
+1
+2
+Page 9 of 10
+
+--- Page 10 ---
+9618/13
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2022
+Answer
+Marks
+Question
+8(c)
+1 mark for each benefit to max 2
+e.g.
+•
+•
+•
+•
+Can be accessed anywhere with Internet access
+Do not need to install security // security might be better
+Do not need to perform backups
+Do not need to buy specific software/hardware
+Can easily share documents
+Can have multiple people working on the same document
+1 mark for drawback
+e.g.
+•
+You cannot access it if no internet access
+•
+Reliant on someone else to backup
+Reliant on someone else for security I/ can have poorer security
+• Cannot access if server goes down
+3
+© UCLES 2022
+Page 10 of 10

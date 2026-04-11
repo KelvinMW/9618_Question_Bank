@@ -1,0 +1,1382 @@
+--- Page 1 ---
+* CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 4 Practical
+MARK SCHEME
+Maximum Mark: 75
+9618/43
+May/June 2025
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2025 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+This document consists of 45 printed pages.
+© Cambridge University Press & Assessment 2025
+[Turn over
+
+--- Page 2 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Generic Marking Principles
+May/June 2025
+These general marking principles must be applied by all examiners when marking candidate answers. They should be applied alongside the
+specific content of the mark scheme or generic level descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specitic skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+:
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit is given for valid answers which go beyond
+the scope of the syllabus and mark scheme, referring to your Team Leader as appropriate
+marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these features are specifically assessed by the
+question as indicated by the mark scheme. The meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed instructions or in the application of generic level
+descriptors.
+© Cambridge University Press & Assessment 2025
+Page 2 of 45
+
+--- Page 3 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question (however; the use of the full mark range may
+be limited according to the quality of the candidate responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should not be awarded with grade thresholds or
+grade descriptors in mind.
+© Cambridge University Press & Assessment 2025
+Page 3 of 45
+
+--- Page 4 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Annotations guidance for centres
+Examiners use a system of annotations as a shorthand for communicating their marking decisions to one another. Examiners are trained during the
+standardisation process on how and when to use annotations. The purpose of annotations is to inform the standardisation and monitoring
+processes and guide the supervising examiners when they are checking the work of examiners within their team. The meaning of annotations and
+how they are used is specific to each component and is understood by all examiners who mark the component.
+We publish annotations in our mark schemes to help centres understand the annotations they may see on copies of scripts. Note that there may
+not be a direct correlation between the number of annotations on a script and the mark awarded. Similarly, the use of an annotation may not be an
+indication of the quality of the response.
+The annotations listed below were available to examiners marking this component in this series.
+Annotations
+Annotation
+[BOD]
+FT
+ww
+Highlighted text
+(NAQ
+NBOD
+NE
+Meaning
+Benefit of the doubt
+To indicate where a key word/phrase/code is missing
+Incorrect
+Follow through
+Indicate a point in an answer
+To draw attention to a particular aspect or to indicate where parts of an answer have been combined
+Ignore
+Not answered question
+No benefit of doubt given
+No examples or not enough
+© Cambridge University Press & Assessment 2025
+Page 4 of 45
+
+--- Page 5 ---
+9618/43
+Annotation
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Meaning
+Not relevant or used to separate parts of an answer
+Off-page
+comment
+[REP
+SEEN
+[TV
+Allows comments to be entered at the bottom of the RM marking window and then displayed when the associated question
+item is navigated to.
+Repetition
+Indicates that work or a page has been seen including blank answer spaces and blank pages.
+Correct
+Too vague
+© Cambridge University Press & Assessment 2025
+Page 5 of 45
+
+--- Page 6 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Mark scheme abbreviations
+• Bold in mark scheme means that idea is required.
+• / in mark scheme means alternative.
+• I/ in mark scheme means alternative solution that gains the same mark point.
+….. at the end of one mark point without a ... at the start of the next just means the sentence follows on. There is no dependency.
+... at the end of one mark point and ... at the start of the next, this means the second cannot be awarded without the first.
+• O means what is in the brackets is not required, or it is not required in some languages but may be required in others.
+May/June 2025
+© Cambridge University Press & Assessment 2025
+Page 6 of 45
+
+--- Page 7 ---
+9618/43
+Question
+1(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+3
+1 mark each
+(Global) Queue array with 50 integer elements ...
+... all initialised to - 1
+• (Global) HeadPointer and TailPointer initialised with -1
+© Cambridge University Press & Assessment 2025
+Page 7 of 45
+
+--- Page 8 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+Example program code:
+Python
+Queue = Il #integer 50 elements
+HeadPointer
+-1
+TailPointer = -1
+#main
+HeadPointer = -1
+TailPointer
+-1
+for x in range (50):
+Queue. append (-1)
+VB.NET
+Dim Queue (49) As Integer
+Dim HeadPointer As Integer
+Dim TailPointer As Integer
+Sub Main (args As String())
+HeadPointer = -1
+TailPointer = -1
+For x = 0 To 49
+Marks
+public static Integer|] Queue = new Integer[50];
+public static Integer
+HeadPointer;
+public static Integer TailPointer;
+public static void main (String args[l){
+HeadPointer = -1:
+TailPointer = -1;
+for (Integer x = 0; x < 50; xt+) {
+Queue [x] = -1;
+© Cambridge University Press & Assessment 2025
+Page 8 of 45
+
+--- Page 9 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1(b)
+May/June 2025
+Marks
+6
+1 mark each
+•
+•
+Function Enqueue () header (and end) taking one (integer) parameter
+Checkina if Oueue is full
+.. returning FALSE if full and TRUE if not full
+(Otherwise) storing data item at TailPointer + 1 (check incrementing)
+Incrementing TailPointer
+Checking if this is the first element and incrementing/storing 0 in HeadPointer
+© Cambridge University Press & Assessment 2025
+Page 9 of 45
+
+--- Page 10 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+Question
+Example program code:
+Python
+def Enqueue (Data) :
+global Queue
+global TailPointer
+global HeadPointer
+if TailPointer < 49:
+TailPointer = TailPointer
+Queue [TailPointer] = Data
+if HeadPointer == -1:
+HeadPointer = 0
+return True
+else:
+return False
++
+1
+VB.NET
+Function Enqueue (DataValue As Integer)
+If TailPointer ‹ 49 Then
+TailPointer = TailPointer + 1
+Queue (TailPointer) = DataValue
+If HeadPointer = -1 Then
+HeadPointer = 0
+End If
+Return True
+Else
+Return False
+End If
+End Function
+© Cambridge University Press & Assessment 2025
+Page 10 of 45
+
+--- Page 11 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+Java
+public static Boolean Enqueue (Integer DataValue) {
+(TailPointer < 49){
+TailPointert+;
+Queue [TailPointer] = DataValue;
+if (HeadPointer == -1) {
+HeadPointer = 0;
+}
+}else!
+return true;
+return false;
+Marks
+}
+© Cambridge University Press & Assessment 2025
+Page 11 of 45
+
+--- Page 12 ---
+9618/43
+Question
+1(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+5
+1 mark each
+Function Dequeue () header (and close) and returning appropriate value in all cases.
+: Chacking if queue is emply...
+...and returning -1 if empty
+•
+Accessing and returning element at Queue [HeadPointer] (before HeadPointer is incremented)
+•
+Incrementing HeadPointer
+© Cambridge University Press & Assessment 2025
+Page 12 of 45
+
+--- Page 13 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+Example program code:
+Python
+def Dequeue () :
+global Queue
+global HeadPointer
+if HeadPointer > -1 and HeadPointer <= TailPointer:
+ReturnValue = Queue [HeadPointer]
+HeadPointer
+= HeadPointer + 1
+return ReturnValue
+else:
+return -1
+Marks
+VB.NET
+Function Dequeue ()
+Dim ReturnValue As Integer
+If HeadPointer › -1 And HeadPointer <= TailPointer Then
+ReturnValue = Queue (HeadPointer)
+HeadPointer = HeadPointer + 1
+Return ReturnValue
+Else
+Return -1
+End If
+End Function
+Java
+if
+public static Integer Dequeue () {
+(HeadPointer > -1 && HeadPointer <= TailPointer){
+Integer ReturnValue = Queue[HeadPointer];
+HeadPointertt;
+return ReturnValue:
+}else!
+return -1;
+}
+}
+© Cambridge University Press & Assessment 2025
+Page 13 of 45
+
+--- Page 14 ---
+9618/43
+Question
+1(d)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+6
+1 mark each
+CreateQueue () header (and end) and opening the file to read and closing file in appropriate place
+• Looping until end of file
+•
+Reading in each/all lines (and converting to integer and removing new line)
+.... calling Enqueue () once with each value ...
+•
+checking return value and outputting "Queue fuL1" if full (can output once or many times)
+Exception try, catch with appropriate output. All file access within try
+© Cambridge University Press & Assessment 2025
+Page 14 of 45
+
+--- Page 15 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+Example program code:
+Python
+def CreateQueue ():
+= open ("QueueData.txt")
+for Line in File:
+ReturnValue = Enqueue (int (Line))
+if ReturnValue == False:
+print ("'Queue full")
+break;
+File.close ()
+except:
+print ("Cannot open or
+read file")
+Marks
+VB.NET
+Sub CreateQueue ()
+Dim ReturnValue As Boolean
+Dim ReadData As Integer
+Dim FileReader As New System. IO. StreamReader ("QueueData.txt")
+While Not FileReader. EndofStream
+ReadData
+= FileReader. ReadLine ()
+ReturnValue = Enqueue (ReadData)
+If ReturnValue = False Then
+Console.Writeline ("Queue full")
+End If
+End While
+FileReader. Close ()
+Catch ex As Exception
+Console.WriteLine ("Cannot open or read file")
+End Try
+End Sub
+© Cambridge University Press & Assessment 2025
+Page 15 of 45
+
+--- Page 16 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+Java
+public static void CreateQueue () {
+Boolean ReturnValue;
+Integer ReadData;
+tryt
+FileReader f = new FileReader ("QueueData.txt") ;
+tryi
+BufferedReader Reader = new BufferedReader (f) ;
+String Line = Reader. readLine ();
+Line = Line.replace("\n","") ("\n","");
+while (Line
+!= null) {
+Line = Line. replace ("\n", "");
+ReturnValue
+= Enqueue (Integer parseInt (Line));
+if (ReturnValue
+== false) {
+System.out.println ("Queue full");
+Line = Reader. readLine ();
+Reader. close () ;
+}catch (IOException ex) {
+}catch (FileNotFoundException e)\ System.out.println("Cannot open or read file"); }
+Marks
+}
+© Cambridge University Press & Assessment 2025
+Page 16 of 45
+
+--- Page 17 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1(e) (i)
+May/June 2025
+Marks
+5
+1 mark each
+•
+Calling CreateQueue ()
+Calling Dequeue () and storing/using return value ...
+... repeatedly until return value is - 1
+•
+... adding together all return values to create a total within the loop...
+outputting the total
+Example program code:
+Python
+CreateQueue ()
+Total = 0
+ReturnValue = 0
+while ReturnValue > -1:
+ReturnValue = Dequeue ()
+if ReturnValue != -1:
+Total = Total + ReturnValue
+print("The total is", Total)
+© Cambridge University Press & Assessment 2025
+Page 17 of 45
+
+--- Page 18 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+Question
+VB.NET
+CreateQueue ()
+Dim Total As Integer = 0
+Dim ReturnValue As Integer = 0
+While ReturnValue > -1
+ReturnValue = Dequeue ()
+If ReturnValue <> -1 Then
+Total = Total + ReturnValue
+End While
+Console.WriteLine ("The total is " &
+Total)
+CreateQueue () ;
+Integer Total = 0;
+Integer ReturnValue = 0;
+while (ReturnValue > -1) {
+ReturnValue = Dequeue ();
+if (ReturnValue != -1) {
+Total = Total + ReturnValue;
+}
+System.out.println("The total is " + Total);
+1(e)(ii)
+1 mark for screenshot showing 3059
+The total is 3059
+© Cambridge University Press & Assessment 2025
+Page 18 of 45
+
+--- Page 19 ---
+9618/43
+Question
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+2(a)
+1 mark for array declared with data values: 0 3 4 56 67 44 43 32 31 345 45 6 54 1
+Example program code:
+Python
+DataArray = 10, 3, 4, 56, 67, 44, 43, 32, 31, 345, 45, 6, 54, 11
+Java
+Integer|| DataArray = 10,3, 4, 56, 67, 44, 43, 32, 31, 345, 45, 6, 54, 1);
+VB.NET
+May/June 2025
+Marks
+1
+Dim DataArray () As Integer = 10, 3, 4, 56, 67, 44, 43, 32, 31, 345, 45, 6, 54,
+© Cambridge University Press & Assessment 2025
+Page 19 of 45
+
+--- Page 20 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+2(b)
+May/June 2025
+Marks
+5
+1 mark each
+•
+Insertionsort () header (and close) taking array as a parameter and returning (attempt at) sorted array
+Looping through/for each element
+Extracting element and comparing to sorted list ...
+• •
+... moving elements in sorted list
+... and inserting element in correct position (ascending order)
+© Cambridge University Press & Assessment 2025
+Page 20 of 45
+
+--- Page 21 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+Example program code:
+Python
+def InsertionSort (DataArray):
+if
+(len (DataArray))
+1:
+return DataArray
+X in range (1, len (DataArray)):
+CurrentValue = DataArray[X]
+while Y >=0 and CurrentValue < DataArray[Y]:
+DataArray [Y+1] = DataArray[Y]
+DataArray[Y+1] = CurrentValue
+return DataArray
+Marks
+Java
+public static Integer|| InsertionSort(Integer[| DataArray){
+Integer CurrentValue = 0;
+Integer Y
+= 0;
+if (DataArray.length <= 1) {
+return DataArray;
+}
+for (Integer X = 1; X <= DataArray.length -1; X++) {
+CurrentValue = DataArray[X];
+Y = X -1:
+while (Y ›= O && CurrentValue ‹ DataArray[Y]) {
+DataArray[Y † 1] = DataArray[Y];
+y--;
+DataArray[Y+1] = CurrentValue;
+return DataArray;
+© Cambridge University Press & Assessment 2025
+Page 21 of 45
+
+--- Page 22 ---
+9618/43
+Question
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+Function InsertionSort (DataArray)
+Dim CurrentValue As Integer
+Dim Y As Integer
+If (DataArray.length ()) <= 1 Then
+Return DataArray
+For X = 1 To DataArray.length () - 1
+CurrentValue = DataArray (X)
+Y = X - 1
+While Y >= O AndAlso CurrentValue ‹ DataArray(Y)
+DataArray(Y † 1) = DataArray(Y)
+Y = Y - 1
+End While
+DataArray(Y + 1) = CurrentValue
+Next X
+Return DataArray
+End Function
+© Cambridge University Press & Assessment 2025
+Page 22 of 45
+
+--- Page 23 ---
+9618/43
+Question
+2(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+2
+1 mark each
+OutputArray () header (and close) taking an array parameter and outputting the array contents...
+... in correct format
+© Cambridge University Press & Assessment 2025
+Page 23 of 45
+
+--- Page 24 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+Example program code:
+Python
+def OutputArray (DataArray):
+Output = ""
+for Item in DataArray:
+Output = Output + str (Item)
+print (Output)
++""
+Marks
+Java
+public static void OutputArray(Integer[| DataArray) {
+String Output
+= "";
+Integer X = 0;
+while (X
+‹ DataArray.length) {
+if (DataArray[X] != -1) {
+Output = Output + DataArray[X]
++ "";
+}
+× = x + 1;
+}
+System.out.println (Output);
+}
+VB.NET
+Sub OutputArray (DataArray)
+Dim Output As String =""
+Dim X As Integer = 0
+While X < DataArray. length
+If DataArray(X) <> -1 Then
+Output = Output & DataArray (X) & " "
+X = X + 1
+End While
+Console.WriteLine (Output)
+End Sub
+© Cambridge University Press & Assessment 2025
+Page 24 of 45
+
+--- Page 25 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+2 (d)(i)
+May/June 2025
+Marks
+2
+1 mark each
+Calling InsertionSort () with array parameter and storing/using return array
+•
+... calling OutputArray () with array parameter before and after Insertionsort ()
+Example program code
+Python
+OutputArray (DataArray)
+DataArray
+= InsertionSort (DataArray)
+OutputArray (DataArray)
+OutputArray (DataArray);
+DataArray = InsertionSort (DataArray);
+OutputArray (DataArray);
+VB.NET
+OutputArray (DataArray)
+DataArray = InsertionSort (DataArray)
+OutputArray (DataArray)
+2(d)(ii)
+1 mark for output showing unsorted then sorted array
+e.g.
+1
+0 3 4 56 67 44 43 32 31 345 45 6 54 1
+013 4 6 31 32 43 44 45 54 56 67 345
+© Cambridge University Press & Assessment 2025
+Page 25 of 45
+
+--- Page 26 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+2(e)
+May/June 2025
+Marks
+6
+1 mark each
+Search () header (and close) taking array and integer as parameters
+Looping/recursive calls until no elements left/Low<=High and returning - 1 if not found
+... calculating middle index and accessing this value
+.. comparison of array at middle value to integer parameter
+... if they are equal return mid
+•
+... if array[mid] < parameter update low to middle + 1, if array[mid] > parameter update high to middle - 1 // recursive
+call with updated low and updated high
+© Cambridge University Press & Assessment 2025
+Page 26 of 45
+
+--- Page 27 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+Example program code:
+Python
+def Search (DataArray,
+ItemToFind):
+Low = 0
+High
+len (DataArray) - 1
+Middle = 0
+while Low <= High:
+Middle = (High + Low) // 2
+if DataArray[Middle] < ItemToFind:
+Low = Middle + 1
+elif DataArray[Middle] > ItemToFind:
+High = Middle -
+return Middle
+return -1
+Marks
+public static Integer Search (Integer|| DataArray, Integer ItemToFind) {
+Integer Low = 0;
+Integer High = DataArray.length - 1;
+Integer Middle = 0;
+while (Low <= High) {
+Middle = (High + Low) / 2;
+if (DataArray[Middle]
+< ItemToFind) {
+Low = Middle + 1;
+felse if (DataArray [Middle] > ItemToFind) {
+High = Middle - 1;
+lelse!
+return Middle;
+}
+return -1;
+© Cambridge University Press & Assessment 2025
+Page 27 of 45
+
+--- Page 28 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+Question
+VB.NET
+Function Search (DataArray, ItemToFind)
+Dim Low As Integer = 0
+Dim High As Integer = DataArray.length () - 1
+Dim Middle As Integer = 0
+While Low <= High
+Middle = (High + Low) \ 2
+If DataArray (Middle) < ItemToFind Then
+Low = Middle + 1
+ElseIf DataArray (Middle) > ItemToFind Then
+High = Middle - 1
+Return Middle
+End While
+End Function
+© Cambridge University Press & Assessment 2025
+Page 28 of 45
+
+--- Page 29 ---
+9618/43
+Question
+2(f)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+2
+1 mark each
+Calling Search () with all four sets of values 0 345 67 2
+... outputting 'not found' or index in appropriate message each time
+© Cambridge University Press & Assessment 2025
+Page 29 of 45
+
+--- Page 30 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+Example program code:
+Python
+Location = Search (DataArray, 0)
+if Location == -1:
+print ("Data not found")
+else:
+print ("Data found at", Location)
+Location = Search (DataArray, 345)
+if Location == -1:
+print ("Data not found")
+else:
+print ("Data found at", Location)
+Location = Search (DataArray, 67)
+if Location == -1:
+print ("Data not found")
+else:
+print ("Data found at", Location)
+Location = Search (DataArray, 2)
+if Location == -1:
+print ("Data not found")
+else:
+print ("Data found at", Location)
+Marks
+Java
+Integer Location = Search (DataArray, O);
+if (Location == -1) {
+System.out.println ("Data not found");
+}else!
+System. out println ("Data found at " +
+Location);
+Location = Search (DataArray, 345);
+© Cambridge University Press & Assessment 2025
+Page 30 of 45
+
+--- Page 31 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+if (Location == -1) {
+System.out.println("Data not found");
+}elsel
+System.out.println("Data found at
+" + Location);
+Location = Search (DataArray, 67) ;
+if (Location == -1) {
+System.out.println("Data not found");
+}elsel
+System.out.println("Data found
+at
+"+ Location);
+}
+Location = Search (DataArray, 2);
+if (Location == -1) {
+System.out.println("Data not found");
+System.out.println("Data found at
+11
++ Location) ;
+Marks
+}
+VB.NET
+Dim Location As Integer = Search (DataArray, 0)
+If Location = -1 Then
+Console.Writeline ("Data not found")
+Else
+Console.Writeline("Data found at "
+& Location)
+End If
+© Cambridge University Press & Assessment 2025
+Page 31 of 45
+
+--- Page 32 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+Question
+Location = Search (DataArray, 345)
+If Location = -1 Then
+Console.Writeline ("Data not found")
+Else
+Console.Writeline("Data found at
+& Location)
+End If
+Location = Search (DataArray, 67)
+If Location = -1 Then
+Console.Writeline ("Data not found")
+Else
+Console. Writeline ('Data found at "
+& Location)
+End If
+Location = Search (DataArray, 2)
+If Location = -1 Then
+Console.WriteLine ("Data not found")
+Else
+Console. Writeline ("Data found at " & Location)
+End If
+2(f)(ii)
+1 mark for output showing locations for first 3 and not found for 4th
+e.g.
+• found at index: 0
+345 found at index: 13
+67 found at index: 12
+2 not found
+1
+© Cambridge University Press & Assessment 2025
+Page 32 of 45
+
+--- Page 33 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(a)(i)
+May/June 2025
+Marks
+4
+1 mark each
+Class Node header (and end)
+TheData declared as Integer, NextNode declared as Node
+Constructor header (and end) taking (min) 1 parameter ...
+... storing parameter to TheData within constructor and storing null value to NextNode within constructor
+Example program code:
+Python
+class Node:
+_(self, NodeData) :
+self._
+TheData = NodeData #Integer
+self._NextNode = None #Node
+Java
+class Nodel
+public Integer TheData;
+public Node NextNode;
+public Node (Integer NodeData) {
+TheData = NodeData;
+NextNode = null;
+VB.NET
+Class Node
+Public TheData As Integer
+Public NextNode As Node
+Sub New (NodeData)
+TheData = NodeData
+NextNode = Nothing
+End Sub
+End Class
+© Cambridge University Press & Assessment 2025
+Page 33 of 45
+
+--- Page 34 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(a)(ii)
+May/June 2025
+Marks
+3
+1 mark each
+1 get method header (and close) taking no parameters...
+..
+... returning correct value (without overwriting)
+2nd correct get method
+Example program code:
+Python
+def GetData (self):
+return self.
+TheData
+def GetNextNode (self) :
+return self. NextNode
+Java
+public
+Integer GetData () {
+return TheData;
+public Node GetNextNode () {
+return NextNode;
+}
+VB.NET
+Function GetData ()
+Return TheData
+End Function
+Function GetNextNode ()
+Return NextNode
+End Function
+© Cambridge University Press & Assessment 2025
+Page 34 of 45
+
+--- Page 35 ---
+9618/43
+Question
+3(a)(iii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+2
+1 mark each
+•
+SetNextNode () method header (and close) taking 1 parameter (of type Node) ...
+... storing parameter in NextNode
+Example program code:
+Python
+def SetNextNode (self, pNextNode) :
+self. NextNode
+pNextNode
+Java
+public void SetNextNode (Node pNextNode) {
+NextNode = pNextNode;
+VB.NET
+Sub SetNextNode (pNextNode)
+NextNode = pNextNode
+End Sub
+© Cambridge University Press & Assessment 2025
+Page 35 of 45
+
+--- Page 36 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(b)(i)
+May/June 2025
+Marks
+2
+1 mark each
+Class LinkedList header (and close) and constructor header with no parameter (and close) ...
+... declaring HeadNode as type Node and storing null value in constructor
+Example program code:
+Python
+class LinkedList:
+init (self):
+self._HeadNode = None #Node
+Java
+class LinkedList{
+public Node HeadNode;
+public Linkedlist () 1
+HeadNode = null;
+VB.NET
+Class LinkedList
+Private HeadNode As Node
+Sub New()
+HeadNode = Nothing
+End sub
+End Class
+© Cambridge University Press & Assessment 2025
+Page 36 of 45
+
+--- Page 37 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(b)(ii)
+May/June 2025
+Marks
+4
+1 mark each
+InsertNode () method header (and close) taking one (integer) parameter
+Creating new instance of Node with the parameter as the argument
+•
+Calling Set NextNode () for new node with HeadNode as parameter
+Replacing HeadNode with new node
+Example program code:
+Python
+def InsertNode (self, NodeData) :
+TheNode = Node (NodeData)
+TheNode. SetNextNode (self._HeadNode)
+self. HeadNode = TheNode
+public void InsertNode (Integer NodeData) {
+Node TheNode = new Node (NodeData) ;
+TheNode. SetNextNode (HeadNode) ;
+HeadNode = TheNode;
+}
+VB.NET
+Sub InsertNode (NodeData)
+Dim TheNode As Node
+= New Node (NodeData)
+TheNode. SetNextNode (HeadNode)
+HeadNode = TheNode
+End Sub
+© Cambridge University Press & Assessment 2025
+Page 37 of 45
+
+--- Page 38 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(b)(iii)
+May/June 2025
+Marks
+3
+1 mark each
+Traverse () method header (and close) with no parameter and returns created string
+.
+Starts at head node and follows nodes using GetNextNode () until no nodes left ...
+... concatenates the data from each node and formats correctly
+© Cambridge University Press & Assessment 2025
+Page 38 of 45
+
+--- Page 39 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+Question
+Example program code:
+Python
+def Traverse (self):
+ReturnValue
+=
+11 11
+CurrentNode = self. HeadNode
+while (CurrentNode != None):
+ReturnValue = ReturnValue +
+str (CurrentNode. GetData ())+ " "
+CurrentNode = CurrentNode.GetNextNode ()
+return ReturnValue
+Java
+public String Traverse () {
+String ReturnValue
+"'';
+Node CurrentNode = new Node (-1);
+CurrentNode = HeadNode;
+while (CurrentNode != null) {
+ReturnValue = ReturnValue + CurrentNode.GetData ()
+CurrentNode = CurrentNode.GetNextNode ():
+return ReturnValue:
+"".
+}
+VB.NET
+Function Traverse ()
+Dim ReturnValue As String = ""
+Dim CurrentNode As Node = HeadNode
+While CurrentNode IsNot Nothing
+ReturnValue =
+ReturnValue & CurrentNode.GetData ()
+CurrentNode = CurrentNode. GetNextNode ()
+End While
+Return ReturnValue
+End Function
+© Cambridge University Press & Assessment 2025
+Page 39 of 45
+
+--- Page 40 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(b)(iv)
+May/June 2025
+Marks
+6
+1 mark each to max 6
+RemoveNode () method header (and close) taking (integer) parameter and returning Boolean in all cases
+Checking if head node is null and returning FALSE
+•
+•
+Checking if head node equals parameter and returning TRUE if true ..
+... and updating HeadNode to HeadNode. GetNextNode ()
+Following nodes comparing data from each node to parameter ..
+... if found updating next node and returning TRUE
+... if end of list returning FALSE
+© Cambridge University Press & Assessment 2025
+Page 40 of 45
+
+--- Page 41 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+Question
+Example program code:
+Python
+def RemoveNode (self, DataToRemove) :
+if self.
+HeadNode == None:
+return False
+elif self.
+HeadNode. GetData ()
+== DataToRemove:
+self._
+HeadNode = self._HeadNode. GetNextNode ()
+return True
+Found = False
+CurrentNode = self. HeadNode
+while not (Found)
+and CurrentNode != None:
+if ((CurrentNode) . GetNextNode ()) . GetData ()
+== DataToRemove:
+CurrentNode. SetNextNode (CurrentNode. GetNextNode () . GetNextNode())
+Found = True
+else:
+CurrentNode = CurrentNode.GetNextNode ()
+Java
+public Boolean RemoveNode (Integer DataToRemove) {
+if (HeadNode == null) {
+return false;
+lelse if (HeadNode.GetData (). equals (DataToRemove)) {
+HeadNode = HeadNode.GetNextNode ();
+return true:
+}
+Boolean Found = false;
+Node CurrentNode = new Node (-1);
+CurrentNode = HeadNode;
+Node NextNode = new Node (-1);
+while ! Found && CurrentNode
+!= null) {
+NextNode = CurrentNode. GetNextNode ();
+if (NextNode . GetData ().equals (DataToRemove)) {
+CurrentNode. SetNextNode (NextNode. GetNextNode ());
+surren Node. Set NextNode (NextNode. Get NextNode ()):
+© Cambridge University Press & Assessment 2025
+Page 41 of 45
+
+--- Page 42 ---
+9618/43
+Question
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+Jelset
+}
+return false;
+CurrentNode = CurrentNode.GetNextNode ();
+VB.NET
+Function RemoveNode (DataToRemove)
+If HeadNode Is Nothing Then
+15elt en Fode GetData() = DatatoRemove Then
+HeadNode = HeadNode. GetNextNode ()
+Return True
+End If
+Dim Found As Boolean = False
+Dim CurrentNode As Node = HeadNode
+While Not (Found) And CurrentNode IsNot Nothing
+If ((CurrentNode) .GetNextNode ()) .GetData () = DataToRemove Then
+CurrentNode. SetNextNode (CurrentNode.GetNextNode ().GetNextNode())
+Found = True
+CurrentNode = CurrentNode. GetNextNode ()
+End If
+End While
+Return Found
+End Function
+© Cambridge University Press & Assessment 2025
+Page 42 of 45
+
+--- Page 43 ---
+9618/43
+Question
+3(c) (i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+3
+1 mark each
+• Creating new LinkedList object
+: Calia ricy lead an a in orada, a sorerate.
+Calling RemoveNode (30) and calling Traverse () and store/output the return value, before RemoveNode () and
+Full marks can be awarded to students who may have stored and/or outputted the return value from the function call.
+© Cambridge University Press & Assessment 2025
+Page 43 of 45
+
+--- Page 44 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+Example program code:
+Python
+CreateList = Linkedlist ()
+Createlist. InsertNode (10)
+Createlist. InsertNode (20)
+Createlist. InsertNode (30)
+CreateList. InsertNode (40)
+CreateList. InsertNode (50)
+ReturnValuel = (Createlist.Traverse ())
+CreateList. RemoveNode (30)
+ReturnValue2 = (Createlist.Traverse())
+Java
+public static void main (String args|]){
+Linkedlist Createlist = new Linkedlist ();
+String ReturnValue2;
+String ReturnValuel;
+Createlist. InsertNode (10);
+Createlist. InsertNode (20);
+CreateList. InsertNode (30);
+CreateList. InsertNode (40);
+CreateList.InsertNode (50);
+ReturnValuel = (Createlist.Traverse());
+CreateList. RemoveNode (30);
+ReturnValue2 = (Createlist.Traverse ());
+Marks
+}
+VB.NET
+Sub Main (args As String())
+Dim CreateList As LinkedList = New LinkedList ()
+Dim ReturnValuel As Strina
+Dim ReturnValue2 As String
+© Cambridge University Press & Assessment 2025
+Page 44 of 45
+
+--- Page 45 ---
+9618/43
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Marks
+Question
+Createlist. InsertNode (10)
+Createlist. InsertNode (20)
+Createlist. InsertNode (30)
+Createlist. InsertNode (40)
+Createlist. InsertNode (50)
+ReturnValuel = (Createlist.Traverse ())
+CreateList. RemoveNode (30)
+ReturnValue2 = (Createlist.Traverse ())
+Console.ReadLine ()
+End Sub
+3(с)(ii)
+1 mark each
+• Output of linked list with 50 40 30 20 10
+• Output of 2nd linked list with 50 40 20 10
+2
+e.g.
+50 40 30 20 10
+50 40 20 10
+© Cambridge University Press & Assessment 2025
+Page 45 of 45

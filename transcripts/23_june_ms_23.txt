@@ -1,0 +1,536 @@
+--- Page 1 ---
+AlE Cambridge Assessment
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+MARK SCHEME
+Maximum Mark: 75
+9618/23
+May/June 2023
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2023 series for most
+Cambridge IGCSE, Cambridge International A and AS Level and Cambridge Pre-U components, and some
+Cambridge O Level components.
+This document consists of 10 printed pages.
+© UCLES 2023
+[Turn over
+
+--- Page 2 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2023
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+•..
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2023
+Page 2 of 10
+
+--- Page 3 ---
+9618/23
+Question
+1(a)
+1 (b)
+1(c)
+1(d)
+Question
+2(a)
+2(b)(i)
+2(b) (ii)
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Marks
+3
+Answer
+2
+The dimension of the array
+The name of the variable used as an array index
+The number of elements in the array
+PCount
+100
+One mark per point:
+• The (second dimension/index of the) array is declared from 1 to 50 but
+the loop runs from 0 to 49
+•
+Line number: 10 / 100 / 101 / 102
+Integer
+One mark for each of rows 2 - 5
+Pseudocode statement
+INPUT MyChoice
+Input Process
+Output
+OUTPUT FirstName & LastName
+r
+WRITEFILE OutputFile, IextLine
+READFILE MyFile, Textline
+Result ‹ SQRT (NextNum)
+2
+1
+4
+Answer
+One mark for each underlined part
+IF DAYINDEX (MyDOB)
+= 5
+THEN
+MP1
+MP2
+Value for month is between 1 and 12 (inclusive)
+Value of year is <= 2002
+MP1 Reference to month and day
+MP2
+Clear description for a check that the day number matches with a
+relevant month
+(Either day matches with month // month matches with day)
+Marks
+2
+2
+2
+Page 3 of 10
+
+--- Page 4 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2023
+Question
+3(a)(i)
+3(a)(ii)
+6
+Marks
+1
+4
+3(b)(i)
+3(b)(ii)
+Stack
+Memory location
+506
+505
+504
+503
+502
+501
+500
+Pointer
+Value
+BBB
+ARA
+xxx
+222
+NNN
+PPP
+* TopolStack
++ BottomOiStack
+Variable
+Datal
+Data2
+Value
+www
+AAA
+One mark for:
+MP1 Values 'BBB' and 'AAA'
+MP2 Values 'XXX' to 'PPP' (unchanged)
+Both pointers and labelled22
+MP4 Values of both variables
+So that the data may be recovered / restored (the next time the program is
+run)
+I/ the data is permanently saved / data is not lost when the program
+terminates
+Max 5 marks
+MP1
+MP2
+Open the text file in WRITE mode
+Check there is a value on the stack
+MP3
+POP value ...
+MP4
+Write value to the text file
+MP5
+Repeat from Step 2 I/ loop referencing the stack items
+Alternative solution: Not using POP primitive
+MP1
+MP2
+MP3
+MP4
+Open the text file in WRITE mode
+Check there is a value on the stack
+Read value from ToS location
+Write the value to the text file - Must some attempt at 'the value'
+NOT 'all the values'
+MP5
+MP6
+Decrement Tos
+Repeat from step 2 // loop referencing the stack items
+1
+5
+© UCLES 2023
+Page 4 of 10
+
+--- Page 5 ---
+9618/23
+Question
+4
+Question
+5(a)
+5(b)
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+FUNCTION MakeString (Count : INTEGER, AChar : CHAR)
+RETURNS STRING
+DECLARE MyString : STRING
+DECLARE Index
+: INTEGER
+IF Count ‹ 1 THEN
+Mystring ‹ "ERROR"
+ELSE
+Mystring + ""
+FOR Index + 1 IO Count
+Mystring & Mystring & Achar
+NEXT Index
+ENDIF
+RETURN Mystring
+ENDFUNCTION
+MP1
+MP2
+MP3
+MP4
+MP5
+MP6
+Function heading and end including parameters and return type
+Declaration of locals Index and MyString
+Test for Count < 1 and if true, assign "ERROR" to Mystring |
+Immediate RETURN
+Loop for Count iterations
+Use of concatenate - must have been initialised in a loop
+Return STRING (correctly in both cases)
+May/June 2023
+Marks
+6
+Answer
+Marks
+3
+Max 3 marks
+Additional Information:
+MP1
+The (program/source) code/specification
+MP2 test plan // inputs/test data and expected outputs
+Explanation:
+MP3 The structure / design / algorithm of the program of the program
+needs to be known
+MP4
+.... so that all paths through the program can be tested
+Perfective
+1
+Page 5 of 10
+
+--- Page 6 ---
+9618/23
+Question
+6(a)
+6(b)
+Question
+7(a)(i)
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Max 7 marks
+PROCEDURE Select (Start, End : INTEGER)
+DECLARE ThisNum,
+Total: INTEGER
+DECLARE ThisString : STRING
+DECLARE Charl, Char2
+: CHAR
+FOR ThisNum + Startt1 TO End-1
+ThisString < NUM_TO_STR (ThisNum)
+Charl ‹ RIGHT (Thisstring, 1)
+Char2 ‹ LEFT (RIGHT (ThisString, 2), 1)
+Total & STR_TO_NUM (Charl) + STR_TO_NUM (Char2)
+IF Total = 6 THEN
+OUTPUT ThisString
+ENDIF
+NEXT ThisNum
+ENDPROCEDURE
+MP1
+MP2
+MP3
+MP4
+MP5
+MP6
+MP7
+MP8
+Procedure heading and ending
+(Count-controlled) Loop
+.... with correct range from Start+1 to End-1
+Convert ThisNum (loop counter) to a string
+Extract the last two/first/second 'character digit(s)' required in a
+loop
+Extract the second individual 'character digit' required in a loop
+Calculate the sum of the last two digits
+If sum = 6 then OUTPUT the number (either string or integer) in a
+Max 4 marks
+MP1
+The function will take two integer parameters - the number and the
+(required) total
+MP2
+... and return a Boolean
+OR:
+CheckNum (Number, Total
+: INTEGER)
+MP1
+RETURNS BOOLEAN
+MP2
+Two marks for the advantages:
+MP3
+MP4
+MP5
+CheckNum () can be called repeatedly as and when required
+CheckNum () is designed and tested once (then used repeatedly)
+Any subsequent change to CheckNum () needs to be made once
+only I/ is easier to maintain/modify
+May/June 2023
+Marks
+7
+4
+Answer
+• To filter out information (that is not necessary to solve the problem) //
+to include only essential information
+Page 6 of 10
+Marks
+1
+
+--- Page 7 ---
+9618/23
+Question
+7(a)(ii)
+7(a)(iii)
+7(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2023
+Answer
+Marks
+2
+Required:
+Student:
+Student name / email (address)
+Loan:
+Return/Issue date
+Book:
+Book title
+Not Required:
+Student:
+Home address / DoB / tutor / subject choices
+Book:
+Library location / category / author / book title
+Max 2 marks
+Examples could include:
+• Clear the loan // indicate that the book has been returned // update loan
+history
+Take the student off 'block' Il allow the student to borrow further books
+Send acknowledgement to the student when book is returned
+Max 3 marks
+2
+3
+Overlay
+Module-X
+Module-Y
+Reset
+Replace
+MP1
+All modules correctly labelled and interconnected.
+MP2
+Correct parameters and return type to Module-X and Reset
+MP3
+Correct parameters and return type to Module-Y and Replace
+MP4
+Correct parameters and return type to Overlay and Module-Y
+© UCLES 2023
+Page 7 of 10
+
+--- Page 8 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2023
+Question
+8(a)
+Answer
+FUNCTION ChangeSupp (Codel, Code2 : STRING) RETURNS
+INTEGER
+DECLARE Count : INTEGER
+DECLARE ThisLine,
+ThisCode : STRING
+OPENFILE "Stock.txt" FOR READ
+OPENFILE "NewStock.txt" FOR WRITE
+Count < 0
+WHILE NOT EOF ("Stock.txt")
+READFILE ("Stock. txt ", Thisline) |/ brackets
+optional
+ThisCode + MID (Thisline, 5, 3)
+IF ThisCode = Codel THEN
+ThisLine & LEFT (Thisline, 4) & Code2
+& RIGHT (ThisLine,
+LENGTH (Thisline) - 7)
+Marks
+8
+Count + Count + 1
+ENDIF
+WRITEFILE ("NewStock.txt", Thisline) |/ brackets
+optional
+ENDWHILE
+CLOSEFILE
+"Newstock. txt"
+CLOSEFILE
+"Stock.txt"
+RETURN Count
+ENDFUNCTION
+MP1
+MP2
+MP3
+MP4
+Open both files, in correct modes, and subsequently close
+Conditional loop until EOF ("Stock. txt")
+Read a line from stock. txt AND extract ThisCode in a loop
+Test ThisCode = Codel AND if true, increment Count (must
+have been Initialised) in a loop
+MP5
+Update ThisLine using substring functions and '&' in a loop
+MP6
+completely correct update of Thisline in a loop
+MP7
+Write ThisLine to Newstock. txt in a loop
+MP8
+Return count after loop
+© UCLES 2023
+Page 8 of 10
+
+--- Page 9 ---
+9618/23
+Question
+8(b)
+8(c) (i)
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+PROCEDURE Report
+_1 (Supp : STRING)
+DECLARE Count : INTEGER
+DECLARE ThisItemNum, ThisDesc, Thisline, ThisCode :
+STRING
+May/June 2023
+Marks
+6
+Count + 0
+OPENFILE "Stock.txt" FOR READ
+OUTPUT "Report for Supplier:" & Supp
+OUTPUT ""
+//Blank line as per example
+OUTPUT "Item
+Description"
+OUTPUT "..
+//Blank line as per example
+WHILE NOT EOF ("Stock. txt")
+READFILE ("Stock.txt", ThisLine)
+ThisCode ‹ Mid(Thisline, 5, 3)
+IF ThisCode = Supp THEN
+ThisItemNum + LEFT (Thisline, 4)
+ThisDesc & RIGHT (ThisLine, LENGTH (ThisLine) - 7)
+OUTPUT ThisItem & "
+" & ThisDesc
+Count ‹ Count + 1
+ENDIF
+ENDWHILE
+CLOSEFILE "Stock.txt"
+OUTPUT "" I/Blank line as per example
+OUTPUT "Number of items listed: ", Count
+ENDPROCEDURE
+MP1
+MP2
+MP3
+MP4
+MP5
+MP6
+Output report header (blank lines optional) - Must contain the
+parameter code
+Conditional loop until EOF ("Stock.txt")
+Read a line from Stock. txt AND
+extract SupplierCode
+in a loop
+Test if SupplierCode = Supp then increment count (must
+have been Initialised)
+Extract AND output item and description in a loop
+Output the final line with count
+Max 2 marks
+MP1
+Must 'calculate' the count before any item + description output /
+after the file is read once
+MP2
+MP3
+Lines to be output have to be stored...
+The file has to be read twice
+2
+Page 9 of 10
+
+--- Page 10 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2023
+Answer
+Marks
+Question
+8(c)(ii)
+One mark per point:
+MP1
+MP2
+Loop through the file calculating the count
+Save 'selected' items in an array
+MP3 (After all lines have been read), output the header lines / count
+Loop through the array to output each array element
+3
+© UCLES 2023
+Page 10 of 10

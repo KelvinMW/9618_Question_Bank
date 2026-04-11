@@ -1,0 +1,551 @@
+--- Page 1 ---
+515 Cambridge Assessment
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 21 Fundamental Problem Solving & Programming Skills
+MARK SCHEME
+Maximum Mark: 75
+9618/21
+May/June 2022
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2022 series for most
+Cambridge IGCSE, Cambridge International A and AS Level and Cambridge Pre-U components, and some
+Cambridge O Level components.
+This document consists of 12 printed pages.
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2022
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2022
+Page 2 of 12
+
+--- Page 3 ---
+9618/21
+Question
+1(a)
+1(b)(i)
+1 (b)(ii)
+1(c)
+Question
+2(a)
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+1
+4
+An algorithm
+Variable
+Temp
+PetName
+MyDOB
+Lighton
+Use of variable
+Stores the average temperature
+Stores the name of my pet
+To calculate how many days until my
+next birthday
+Stores state of light; light is only on or off
+One mark for each data type
+One mark for variable name, and one for reason
+Variable: Temp
+Reason: Name does not indicate what the variable is used for
+Expression
+INT ( (31 / 3) + 1)
+MID (IO_UPPER ("Version"), 4, 2)
+TRUE AND (NOT FALSE)
+NUM_TO_
+_STR (27 MOD 3)
+One mark per row
+Data type
+REAL
+STRING
+DATE
+BOOLEAN
+2
+4
+Evaluation
+11
+"SI"
+TRUE
+"O"
+Answer
+Marks
+3
+One mark per row
+The number of different inputs
+The number of different outputs
+The single input value that could result in S4
+Answer
+3
+3
+Button-y
+Page 3 of 12
+
+--- Page 4 ---
+9618/21
+Question
+2(b)
+Question
+3(a)
+3(b)
+Question
+4(a)
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+4
+One mark per row
+Example answer
+Input
+Button-Y
+Button-Y
+Button-Z
+Button-Z
+Note: Accept other valid answers
+Output
+none
+none
+Output-B
+none
+Next state
+S3
+S4
+S2
+S1
+Answer
+One mark per description of appropriate sub-problem for given scenario.
+Examples include:
+• Allows the user to search for films being shown // input name of film they
+want to see
+•
+Allows the user to search for available seats
+•
+Calculate cost of booking
+• Book a given number of seats for a particular screening
+Function
+Marks
+3
+Answer
+One mark per row
+1
+Marks
+2
+The value that has been on the stack for the longest time.
+The memory location pointed to by TopofStack if three
+POP operations are performed.
+Answer
+'H'
+206
+Page 4 of 12
+
+--- Page 5 ---
+9618/21
+Question
+4(b)
+Question
+5
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Pointer
+May/June 2022
+Marks
+4
+Stack
+Memory
+location
+200
+201
+202
+203
+204
+205
+206
+207
+Value
+'D'
+'''
+'A'
+'''
+'Z'
+'N
+'p'
+< Topofstack
+One mark for:
+1 Topofstack pointing to 'D'
+: Value 'D' in 201
+Values 'C' & 'A' in 202 and 203
+Values 'X' to 'P' unchanged (204 to 207)
+Answer
+Marks
+6
+One mark per point to Max 6
+2 Setu file in readmande
+Set up a conditional loop, repeating until the value is found or the EOF ()
+is reached
+3
+4
+5
+Read a line from the file in a loop
+Extract Field 2
+Description of how Field 2 could be extracted e.g. using substring
+function and lengths of Field 1 and Field 2
+6
+7
+8
+Compare extracted field with search value
+If search value found, extract Field 1and Field 3 and output then
+Close the file after loop has finished
+Page 5 of 12
+
+--- Page 6 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Question
+6(a)
+Marks
+5
+Simple Solution:
+DECLARE ThisInt, Count : INTEGER
+Count < 0
+FOR ThisInt ‹ 100 TO 200
+IF ThisInt MOD 10 = 7 THEN
+OUTPUT ThisInt
+Count + Count + 1
+ENDIF
+NEXT ThisInt
+OUTPUT Count
+Mark as follows:
+2
+3
+4
+5
+Declare loop variable and counter as integers, counter initialised
+Loop 100 to 200, no step defined
+Test value in a loop
+Output selected value and incrementing a counter in a loop
+Output the counter, following a reasonable attempt, after the loop
+Alternative Solution:
+DECLARE ThisInt, Count : INTEGER
+Count < 0
+FOR ThisInt ‹ 107 TO 197 STEP 10
+OUTPUT ThisInt
+Count + Count + 1
+NEXT ThisInt
+OUTPUT Count
+Mark as follows:
+1
+2
+3
+4
+5
+Declare loop variable and counter as integers,, counter initialised
+Loop (107 to 197)
+STEP 10 or explicit increment if conditional loop used
+Output each value and incrementing a counter in a loop
+Output the counter, following a reasonable attempt, after the loop
+© UCLES 2022
+Page 6 of 12
+
+--- Page 7 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Question
+6(b)
+Marks
+4
+IF MySwitch = 1 THEN
+Thischar + 'a'
+ELSE
+IF MySwitch = 2 THEN
+Thischar + 'y'
+ELSE
+IF MySwitch = 3 THEN
+ThisChar + "7'
+ELSE
+ThisChar <
+...
+ENDIF
+ENDIF
+ENDIF
+Mark as follows:
+1. ANY test of MySwitch = 1,2 or 3
+All three comparisons and corresponding assignments
+OTHERWISE, or initial assignment of default value
+Completely correct IF...THEN...ELSE...ENDIF syntax
+© UCLES 2022
+Page 7 of 12
+
+--- Page 8 ---
+9618/21
+Question
+7(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+FUNCTION IsPalindrome (InString : STRING) RETURNS BOOLEAN
+DECLARE IsPal: BOOLEAN
+DECLARE Index, Num : INTEGER
+DECLARE CharA, CharB : CHAR
+IsPal ‹ TRUE
+Index + 1
+Num < INT (LENGTH (InString) / 2)
+WHILE Index <= Num AND IsPal = TRUE
+CharA + MID (InString, Index, 1)
+CharB
++ MID (Instring, LENGTH (Instring) - Index + 1,
+1)
+IF UCASE (CharA)
+< UCASE (CharB) THEN
+IsPal ‹ FALSE |/ RETURN FALSE
+ENDIF
+Index
+‹ Index + 1
+ENDWHILE
+RETURN IsPal
+V RETURN TRUE
+ENDFUNCTION
+Mark as follows:
+1
+2
+3
+4
+5
+6
+7
+Functions header including parameter, ending and return type
+Calculation of number of pairs to match (length or half length)
+Loop for half or whole string
+...Extracting characters to compare // create reverse string
+Convert characters to same case
+Check for_mismatch of characters inside loop / test for mismatch after
+loop for reversed string
+Returning Boolean in both cases
+May/June 2022
+Marks
+7
+© UCLES 2022
+Page 8 of 12
+
+--- Page 9 ---
+9618/21
+Question
+7(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Text
+May/June 2022
+Marks
+4
+Label
+A
+Set OutString to ""
+Is Index > LENGTH (InString)?
+C
+D
+IS MID (InString, Index, 1) = " "?
+Set Outstring to Outstring & MID (InString, Index,
+E
+Set Index to Index + 1
+F
+G
+YES
+NO
+Mark for each of:
+•
+B
+D
+C
+...F and G
+Note: The mark for F and G is dependent on a reasonable attempt at C
+© UCLES 2022
+Page 9 of 12
+
+--- Page 10 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2022
+Question
+8(a)
+Answer
+FUNCTION RandomChar () RETURNS CHAR
+DECLARE ThisRange : INTEGER
+DECLARE ThisChar
+: CHAR
+//First select the range
+ThisRange < INT(RAND (3)) + 1 // 1 to 3
+CASE OF ThisRange
+1: ThisChar < CHR(INT (RAND (26) + 65)) // 65 to 90:
+'A' to 'Z'
+ThisChar • LCASE (ThisChar)
+Il 'a' to "z'
+2: ThisChar < CHR(INT (RAND (26) + 65)) // 65 to 90:
+A
+to Z
+3: ThisChar < NUM_TO_STR (INT (RAND (10)) |/ 'O' to '9'
+ENDCASE
+RETURN ThisChar
+ENDFUNCTION
+Mark as follows:
+2
+3
+4
+5
+6
+Generation of any integer random number
+Randomly decide which of the three ranges to select
+Selection structure based on range
+One alphanumeric character range correct
+All alphanumeric character ranges correct
+Return ThisChar, following a reasonable attempt to generate a
+character in each range
+Marks
+6
+© UCLES 2022
+Page 10 of 12
+
+--- Page 11 ---
+9618/21
+Question
+8(b)
+8(c)
+8(d)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2022
+Answer
+FUNCTION FindPassword (Name: STRING) RETURNS STRING
+DECLARE Index : INTEGER
+DECLARE Password : STRING
+Marks
+7
+Password + ""
+Index + 1
+WHILE Password = "" AND Index <= 500
+IF Secret [Index, 1] = Name THEN
+Password ‹ Decrypt (Secret [Index, 21)
+ELSE
+Index ‹ Index + 1
+ENDIF
+ENDWHILE
+IF Password = "" THEN
+OUTPUT
+"Domain name
+ENDIF
+not found"
+RETURN Password
+ENDFUNCTION
+Mark as follows:
+1
+2
+3
+Declare all local variables used, attempted solution has to be reasonable
+Conditional loop while not found and not end of array
+Compare value of element in column 1 with parameter passed into
+function
+4
+...and use Decrypt () with element in column 2 as parameter
+5
+6
+...use the return value of Decrypt ()
+7
+Output warning message if parameter not found
+Return STRING value
+One mark for the name, one for the description
+Name:
+• Stub testing
+Description:
+•.
+A simple module is written to replace each of the modules.
+The simple module will return an expected value // will output a message
+to show they have been called
+Accept one example of a valid password to Max 2
+One mark for each password example that breaks one of the rules due to:
+• Length too long // length too short
+•
+Invalid character
+•
+Incorrect grouping (including number of hyphens)
+•
+Duplicated characters
+3
+2
+© UCLES 2022
+Page 11 of 12
+
+--- Page 12 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Question
+8(e)
+Marks
+3
+One mark for each part:
+:
+Generate a random integer divisible by 3
+Split range into 1/3 and set as numeric
+Else alphabetic character
+© UCLES 2022
+Page 12 of 12

@@ -1,0 +1,432 @@
+--- Page 1 ---
+55 Cambridge Assessment
+* International Education
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+9618/12
+October/November 2023
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided.
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages. Any blank pages are indicated
+DC (DE/FC) 318301/3
+© UCLES 2023
+[Turn over
+
+--- Page 2 ---
+2
+1
+A factory makes chocolate bars.
+The factory uses a conveyor belt that moves the products from one stage of production to the next
+stage.
+(a) An automated system counts the number of chocolate bars made at the end of production.
+The system includes a sensor positioned above the conveyor belt.
+Identify one appropriate type of sensor that can be used.
+..... [1]
+(b) A second automated system removes chocolate bars with an incorrect weight from the
+production line.
+Describe the role of an actuator in this second system.
+12]
+(c) The factory has many different machines with embedded systems.
+(i) Identify two features of embedded systems.
+1
+2
+12]
+(ii) Identify one drawback of embedded systems.
+......... [1]
+© UCLES 2023
+9618/12/0/N/23
+
+--- Page 3 ---
+3
+BLANK PAGE
+© UCLES 2023
+9618/12/0/N/23
+Turn over
+
+--- Page 4 ---
+4
+2 (a) State what is meant by the following terms in a relational database model.
+Entity
+Primary key ...
+Referential integrity
+13]
+(b) Authentication is one method a Database Management System (DBMS) can use to improve
+the security of a database.
+Describe other methods that a DBMS can use to improve the security of a database.
+..... [4]
+© UCLES 2023
+9618/12/0/N/23
+
+--- Page 5 ---
+(c) The following database table is not normalised.
+StudentName
+DateOfBirth
+Yuwei Chen
+01/09/2004
+5
+TutorGroup
+SMH
+Claudia Raj
+23/02/2005
+JMB
+Aamil Akram
+24/01/2005
+KMB
+Areeba Faraz
+21/12/2004
+SMH
+Subject
+English, Maths,
+Computer Science
+Maths, Physics, Art
+Art, Design, English
+language
+English language,
+Chemistry, Design
+Explain how to modify the table to put it into First Normal Form (1NF).
+SubjectCode
+EN, MA, CS
+MA, PY, AR
+AR, DE, EN
+EN, CH, DE
+[4]
+© UCLES 2023
+9618/12/0/N/23
+[Turn over
+
+--- Page 6 ---
+6
+(a) State one difference between a kibibyte and a megabyte.
+[1]
+(b) (i) Convert the denary value into a 12-bit two's complement binary integer.
+-196
+Answer
+(ii) Convert the Binary Coded Decimal (BCD) into denary.
+100001100101
+[1]
+(iii)
+Answer
+Convert the unsigned binary integer into denary.
+000111010110
+11]
+Answer
+.. [1]
+(c) Identify one practical application of BCD and justify why BCD is used in this application.
+Application
+......
+..........................
+....
+Justification
+[2]
+© UCLES 2023
+9618/12/0/N/23
+
+--- Page 7 ---
+7
+(a) Write the Boolean expression that corresponds to the following logic circuit.
+A
+_X
+......... [3]
+(b) Complete the truth table for the logic expression:
+X = A XOR (B AND (A NAND B) AND NOT C)
+B
+Working space
+A
+0
+0
+0
+0
+1
+1
+1
+1
+1
+0
+C
+0
+1
+0
+1
+0
+X
+1
+1
+12]
+© UCLES 2023
+9618/12/0/N/23
+Turn over
+
+--- Page 8 ---
+8
+5
+(a) State the meaning of privacy of data.
+(b) State the meaning of integrity of data.
+(c) Describe the following threats to a computer system.
+Phishing email
+Spyware
+© UCLES 2023
+9618/12/0/N/23
+•••
+•••
+[1]
+[4]
+
+--- Page 9 ---
+9
+(a) A real-time video of a music concert needs to be streamed to subscribers.
+Tick (v) one box to identify the most appropriate type of compression and justify your answer.
+Lossy
+Lossless
+Justification
+[3]
+(b) Explain the impact of changing the sampling resolution on the accuracy of a sound recording.
+[3]
+(c) A bitmap image has a resolution of 2048 pixels wide and 1024 pixels high.
+The image has a bit depth of 10 bits per pixel.
+Estimate the file size of the bitmap image in mebibytes. Show your working.
+Working
+Estimated file size in mebibytes
+12]
+© UCLES 2023
+9618/12/0/N/23
+[Turn over
+
+--- Page 10 ---
+10
+7 A Local Area Network (LAN) contains four devices:
+• a router
+two laptop computers
+a server.
+(a) The server has the IP address 192.168.3.2
+Explain why this is not an IPv6 address.
+(b) (i)
+The LAN is set up as a star topology.
+Draw a diagram of the topology of the LAN.
+(ii) Explain how data is transmitted between the two laptops in the LAN.
+© UCLES 2023
+9618/12/0/N/23
+.... [2]
+[2]
+12]
+
+--- Page 11 ---
+11
+(ill) Subnetting can be used to separate a network into logical segments.
+Describe two other reasons why subnetting is used in a network.
+1
+2
+14]
+(c) State three tasks performed by devices to deal with collisions when using the Carrier Sense
+Multiple Access/ Collision Detection (CSMA/CD) protocol in a network
+1
+2
+3
+13]
+© UCLES 2023
+9618/12/0/N/23
+Turn over
+
+--- Page 12 ---
+12
+(d) The following incomplete table contains types of IP addresses and their descriptions.
+Complete the table by writing the missing types of IP addresses and the missing descriptions.
+Type of IP address
+Description
+an IP address that is assigned to a device
+to allow direct access on the internet
+static IP address
+an IP address used for internal LAN
+communication only
+dynamic IP address
+14]
+© UCLES 2023
+9618/12/0/N/23
+
+--- Page 13 ---
+13
+8 A computer has an Operating System (OS).
+(a) State one purpose of the Operating System.
+11]
+(b) The Operating System has utility software.
+The purpose of some utility software is to improve security.
+Identify one example of utility software that is not intended to improve security.
+Explain why this software is needed.
+Utility software
+Explanation
+[3]
+(c) An optical disc reader/writer is connected to the computer.
+(i) Give the name of one port that can provide a connection for the optical disc reader/writer.
+11]
+(ii)
+Describe the roles of the address bus, the data bus and buffers in the process of writing
+data to the optical disc reader/writer.
+[3]
+© UCLES 2023
+9618/12/0/N/23
+[Turn over
+
+--- Page 14 ---
+9
+14
+The following table shows part of the instruction set for a processor. The processor has two
+registers, the Accumulator (ACC) and the Index Register (IX).
+Opcode
+Instruction
+Operand
+Explanation
+LDD <address>
+Direct addressing. Load the contents of the location at the given
+address to ACC
+Indexed addressing. Form the address from < address> +
+LDX <address>
+the contents of the index register. Copy the contents of this
+calculated address to ACC
+LDR #n
+STO
+‹address>
+ADD
+• #n
+JMP
+<address>
+INC
+<register>
+CMP
+<address>
+Immediate addressing. Load the number n to IX
+Store the contents of ACC at the given address
+Add the denary number n to the ACC
+Jump to the given address
+Add 1 to the contents of the register (ACC or IX)
+Compare the contents of ACC with the contents of <address>
+Indirect addressing. The address to be used is at the given
+CMI
+<address>
+address. Compare the contents of ACC with the contents of this
+second address
+JPE
+<address>
+Following a compare instruction, jump to <address > if the
+compare was True
+IN
+Key in a character and store its ASCII value in ACC
+OUT
+Output to the screen the character whose ASCII value is stored
+in ACC
+END
+Return control to the operating system
+<address> can be an absolute or a symbolic address
+# denotes a denary number, e.g. #123
+(a) The instructions in the processor's instruction set can be grouped according to their function.
+Identify the instruction group for each of the following opcodes.
+IN
+ADD
+JPE..
+CMI ...
+[4]
+(b) The current contents of main memory and selected values from the ASCII character set are
+given on page 15.
+Trace the program currently in memory using the trace table when the input is '1'.
+© UCLES 2023
+9618/12/0/N/23
+
+--- Page 15 ---
+15
+Address Instruction
+10 IDR #0
+11
+IN
+12 STO 101
+13
+LDX 110
+14
+CMP 100
+15
+JPE 21
+16
+LDD 101
+17
+ADD #16
+18
+INC IX
+19 STO 100
+20
+JMP 13
+21
+OUT
+22
+END
+Instruction
+address
+ACC
+IX
+100
+Memory address
+101 110
+51
+Output
+111
+65
+100
+101
+•..
+110
+111
+ASCIl
+value
+49
+50
+51
+52
+51
+65
+Character
+1
+2
+3
+4
+14]
+65
+66
+67
+68
+A
+B
+C
+D
+© UCLES 2023
+9618/12/0/N/23
+
+--- Page 16 ---
+16
+BLANK PAGE
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2023
+9618/12/0/N/23

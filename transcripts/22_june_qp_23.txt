@@ -1,0 +1,473 @@
+--- Page 1 ---
+5 Cambridge Assessmen
+shes International Educatior
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+9618/23
+May/June 2022
+2 hours
+You must answer on the question paper.
+You will need: Insert (enclosed)
+INSTRUCTIONS
+• Answer all questions.
+• Use a black or dark blue pen.
+• Write your name, centre number and candidate number in the boxes at the top of the page.
+• Write your answer to each question in the space provided
+• Do not use an erasable pen or correction fluid.
+• Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+• The insert contains all the resources referred to in the questions.
+This document has 20 pages. Any blank pages are indicated
+DC (PQ/CGW) 303773/3
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+2
+Refer to the insert for the list of pseudocode functions and operators.
+1 (a) The following table contains pseudocode examples.
+Each example may include all or part of:
+• selection
+• iteration (repetition)
+assignment.
+Complete the table by placing one or more ticks (V) in each row.
+Pseudocode example
+FOR Index ‹ 1 TO 3
+Safe[Index] ‹ GetResult ()
+NEXT Index
+OTHERWISE : OUTPUT "ERROR 1202"
+REPEAT UNTIL Index = 27
+INPUT MyName
+IF Mark > 74 THEN
+Grade + 'A'
+ENDIF
+Selection
+Iteration
+Assignment
+[5]
+(b) (i) Program variables have values as follows:
+Variable
+AAA
+Value
+TRUE
+BBB
+Count
+FALSE
+99
+Complete the table by evaluating each expression.
+Expression
+AAA AND (Count > 99)
+AAA AND (NOT BBB)
+(Count <= 99) AND (AAA OR BBB)
+(BBB AND Count > 50) OR NOT AAA
+Evaluation
+12]
+(ii) Give an example of when a variable of type Boolean would be used.
+.... [1]
+© UCLES 2022
+9618/23/M/J/22
+
+--- Page 3 ---
+3
+2 A program has been written to implement a website browser and maintenance is now required.
+One type of maintenance is called perfective.
+Name two other types of maintenance that the program may require and give a reason for each.
+Type 1
+Reason
+Type 2
+Reason
+[4]
+© UCLES 2022
+9618/23/M/J/22
+Turn over
+
+--- Page 4 ---
+4
+3 Four program modules are defined as follows:
+Pseudocode module header
+PROCEDURE Subl
+A (XT : INTEGER, PB : STRING)
+FUNCTION Sub1_B (RA : INTEGER) RETURNS BOOLEAN
+PROCEDURE Sub1_C (SB : INTEGER, BYREF SA : STRING)
+PROCEDURE Section_1 ()
+(a) A structure chart will be produced as part of the development process.
+Describe the purpose of a structure chart.
+12]
+(b) Module Section_1 () calls one of the other three modules. The module called will be
+selected when the program runs.
+Draw the structure chart.
+[5]
+© UCLES 2022
+9618/23/M/J/22
+
+--- Page 5 ---
+4
+5
+Items in a factory are weighed automatically. The weight is stored as an integer value representing
+the item weight to the nearest gram (g).
+A function is written to validate the weight of each item. The function will return "PASS" if the
+weight of the item is within the acceptable range, otherwise the function will return "FAIL".
+The acceptable weight range for an item is 150g to 155g inclusive.
+The validation function is to be properly tested. Black-box testing will be used and a test plan
+needs to be produced.
+Complete the table by writing additional tests to test this function.
+Type of
+test data
+Normal
+Example
+test value
+153
+Expected
+return value
+"PASS"
+Explanation
+Value within the acceptable range
+14]
+© UCLES 2022
+9618/23/M/J/22
+Turn over
+
+--- Page 6 ---
+6
+5 A program will store attendance data about each employee of a company.
+The data will be held in a record structure of type Employee. The fields that will be needed are as
+shown:
+Field
+EmployeeNumber
+Name
+Department
+Born
+Attendance
+Typical value
+123
+"Smith, Eric"
+"1B"
+13/02/2006
+97.40
+Comment
+A numeric value starting from 1
+Format: «last name›,'<first name>
+May contain letters and numbers
+Must not be before 04/02/1957
+Represents a percentage
+(a) (i) Write pseudocode to declare the record structure for type Employee.
+14]
+(ii) A 1D array Staff containing 500 elements will be used to store the employee records.
+Write pseudocode to declare the Staff array.
+12]
+(b) There may be more records in the array than there are employees in the company. In this
+case, some records of the array will be unused.
+(1)
+State why it is good practice to have a standard way to indicate unused array elements.
+... 11]
+(il) Give one way of indicating an unused record in the Staff array.
+11]
+© UCLES 2022
+9618/23/M/J/22
+
+--- Page 7 ---
+7
+(c) A procedure Absentees () will output the EmployeeNumber and the Name of all employees
+who have an Attendance value of 90.00 or less.
+Write pseudocode for the procedure Absentees () .
+Assume that the Staff array is global.
+.. [4]
+© UCLES 2022
+9618/23/M/J/22
+[Turn over
+
+--- Page 8 ---
+8
+6 (a) The factorial of a number is the product of all the integers from 1 to that number.
+For example:
+factorial of 5 is given by 1 × 2 × 3 × 4 × 5 = 120
+factorial of 7 is given by 1×2×3×4×5×6×7=5040
+factorial of 1 = 1
+Note: factorial of 0 = 1
+A function Factorial () will:
+• be called with an integer number as a parameter
+calculate and return the factorial of the number
+return - 1 if the number is negative.
+Write pseudocode for the function Factorial ().
+16]
+© UCLES 2022
+9618/23/M/J/22
+
+--- Page 9 ---
+9
+(b) A procedure FirstTen () will output the factorial of the numbers from 0 to 9. The procedure
+will use the function from part (a).
+The required output is:
+Factorial of 0 is 1
+Factorial of 1 is
+1
+Factorial of 2 is 2
+Factorial of 9 is 362880
+The program flowchart represents an algorithm for FirstTen ().
+START
+Set Num to 0
+B
+D
+E
+END
+Complete the table by writing the text that should replace each label A to F.
+Label
+A
+Text
+C
+D
+E
+F
+© UCLES 2022
+9618/23/M/J/22
+14]
+[Turn over
+
+--- Page 10 ---
+10
+7 The following pseudocode represents an algorithm intended to output the last three lines as they
+appear in a text file. Line numbers are provided for reference only.
+PROCEDURE LastLines (ThisFile : STRING)
+DECLARE Thisline : STRING
+DECLARE Buffer: ARRAY[1: ARRAY[1:3]
+OF STRING
+DECLARE LineNum
+: INTEGER
+LineNum < 1
+OPENFILE ThisFile FOR READ
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+WHILE NOT EOF (ThisFile)
+READFILE Thisfile, ThisLine |/ read a line
+Buffer [LineNum] ‹ ThisLine
+LineNum < LineNum + 1
+IF LineNum = 4 THEN
+LineNum < 1
+ENDIF
+ENDWHILE
+CLOSEFILE ThisFile
+FOR LineNum < 1 TO 3
+OUTPUT Buffer[LineNum]
+NEXT LineNum
+ENDPROCEDURE
+(a) There is an error in the algorithm. In certain cases, a text file will have at least three lines but
+the output will be incorrect.
+(i) State how the output may be incorrect.
+... [1]
+(ii)
+Describe the error in the algorithm and explain how it may be corrected.
+Description
+Explanation
+14]
+© UCLES 2022
+9618/23/M/J/22
+
+--- Page 11 ---
+11
+(b) The original algorithm is implemented and sometimes the last three lines of the text file are
+output correctly.
+State the condition that results in the correct output.
+[1]
+(c) Lines 20 to 23 inclusive could be replaced with a single pseudocode statement.
+Write the pseudocode statement.
+12]
+© UCLES 2022
+9618/23/M/J/22
+Turn over
+
+--- Page 12 ---
+12
+The following diagram shows the incomplete waterfall model of the program development life
+cycle.
+(a) Complete the diagram.
+Analysis
+Maintenance
+|3]
+(b) Explain the meaning of the downward and upward arrows.
+Downward arrows ..
+Upward arrows
+[2]
+(c) Identify another type of model for the program development life cycle.
+11]
+© UCLES 2022
+9618/23/M/J/22
+
+--- Page 13 ---
+13
+BLANK PAGE
+© UCLES 2022
+9618/23/M/J/22
+Turn over
+
+--- Page 14 ---
+14
+9 A program allows a user to save passwords used to log in to websites. A stored password is then
+inserted automatically when the user logs in to the corresponding website.
+A student is developing a program to generate a strong password. The password will be of a fixed
+format, consisting of three groups of four alphanumeric characters, separated by the hyphen
+character -.
+An example of a password is: "FxAf-3hzV-Aq49"
+A valid password:
+• must be 14 characters long
+• must
+be organised as three groups of four alphanumeric characters. The groups are
+separated by hyphen characters
+• may include duplicated characters, provided these appear in different groups.
+The programmer has started to define program modules as follows:
+Module
+Description
+• Generates a single random character from within one of the following
+RandomChar ()
+Exists ()
+Generate ()
+ranges:
+• 'a'to'l'
+• 'A'to 'Z
+• 'O'to '9'
+• Returns the character
+• Takes two parameters:
+o a string
+o a character
+• Performs a case-sensitive search for the character in the string
+• Returns TRUE if the character occurs in the string, otherwise returns
+FALSE
+• Generates a valid password
+• Uses RandomChar () and Exists ()
+• Returns the password
+Note: in a case-sensitive comparison, 'a' is not the same as 'A'.
+© UCLES 2022
+9618/23/M/J/22
+
+--- Page 15 ---
+15
+(a) Write pseudocode for the module Generate ().
+17]
+© UCLES 2022
+9618/23/M/J/22
+[Turn over
+
+--- Page 16 ---
+16
+(b) A global 2D array Secret of type STRING stores the passwords together with the website
+domain name where they are used. Secret contains 1000 elements organised as 500 rows
+by 2 columns.
+Unused elements contain the empty string ('"). These may occur anywhere in the array.
+An example of part of the array is:
+Array element
+Secret [27, 1]
+Value
+"www.thiswebsite.com"
+"00'
+Secret |27, 2]
+Secret |28, 1]
+Secret [28, 2]
+www.thatwebsite.com"
+"00aa00000000"
+Note:
+• For security, the passwords are stored in an encrypted form, shown as "...
+in the example.
+:
+The passwords cannot be used without being decrypted.
+You may assume that the encrypted form of a password will not be an empty string.
+a0o"
+Additional modules are defined as follows:
+Module
+Encrypt ()
+Decrypt ()
+FindPassword ()
+AddPassword ()
+Description
+• Takes a password as a string
+• Returns the encrypted form of the password as a string
+• Takes an encrypted password as a string
+• Returns the decrypted form of the password as a string
+• Takes a website domain name as a string
+• Searches for the website domain name in the array secret
+• If the website domain name is found, the decrypted password is
+returned
+• If the website domain name is not found, an empty string is
+returned
+• Takes two parameters as strings: a website domain name and a
+password
+• Searches for the website domain name in the array secret and
+if not found, adds the website domain name and the encrypted
+password to the array
+• Returns TRUE if the website domain name and encrypted
+password are added to the array, otherwise returns FALSE
+The first three modules have been written.
+© UCLES 2022
+9618/23/M/J/22
+
+--- Page 17 ---
+17
+Write pseudocode for the module AddPassword ().
+[6]
+© UCLES 2022
+9618/23/M/J/22
+[Turn over
+
+--- Page 18 ---
+18
+(c) The content of the array Secret is to be stored in a text file for backup.
+It must be possible to read the data back from the file and extract the website domain name
+and the encrypted password.
+Both the website domain name and encrypted password are stored in the array as strings of
+characters.
+The encrypted password may contain any character from the character set used and the
+length of both the encrypted password and the website domain name is variable.
+Explain how a single line of the text file can be used to store the website domain name and
+the encrypted password
+[3]
+© UCLES 2022
+9618/23/M/J/22
+
+--- Page 19 ---
+19
+BLANK PAGE
+© UCLES 2022
+9618/23/M/J/22
+
+--- Page 20 ---
+20
+BLANK PAGE
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2022
+9618/23/M/J/22

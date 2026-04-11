@@ -1,0 +1,500 @@
+--- Page 1 ---
+* CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+MARK SCHEME
+Maximum Mark: 75
+9618/21
+May/June 2024
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2024 series for most
+Cambridge IGCSE, Cambridge International A and AS Level and Cambridge Pre-U components, and some
+Cambridge O Level components.
+This document consists of 12 printed pages.
+© Cambridge University Press & Assessment 2024
+[Turn over
+
+--- Page 2 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2024
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level
+descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+•..
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+• marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind
+© Cambridge University Press & Assessment 2024
+Page 2 of 12
+
+--- Page 3 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2024
+Mark scheme abbreviations
+underline
+max
+()
+separates alternative words / phrases within a marking point
+separates alternative answers within a marking point
+actual word given must be used by candidate (grammatical variants accepted)
+indicates the maximum number of marks that can be awarded
+the word / phrase in brackets is not required, but sets the context
+Note: No marks are awarded for using brand names of software packages or hardware.
+© Cambridge University Press & Assessment 2024
+Page 3 of 12
+
+--- Page 4 ---
+9618/21
+Question
+1(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2024
+Answer
+Data type
+CHAR / STRING
+INTEGER / REAL
+REAL
+STRING
+Marks
+4
+1(b)
+1(c)(i)
+1(c)(ii)
+1 (c)(iii)
+Assignment statement
+A < LEFT (MyName, 1)
+B ‹ Total * 2
+C < INT (ItemCost) / 3
+D < "Odd OR Even"
+One mark per row
+Expression
+Evaluates to
+Tries < 10 AND NOT Sorted
+Tries MOD 4
+IO_LOWER (MID (ID, 3, 1))
+LENGTH (ID & "xx") >= Tries
+TRUE
+1
+'a'll "a"
+TRUE
+One mark per row
+The names do not reflect / indicate the purpose of the variable // the names
+are not meaningful
+They make the program more difficult to understand / debug / maintain
+One mark from:
+Indentation / use of white space
+•
+Capitalisation of keywords
+•
+Use of comments
+•
+Use of modular programming
+• Use of local variables
+Note: max 1 mark
+4
+1
+1
+1
+© Cambridge University Press & Assessment 2024
+Page 4 of 12
+
+--- Page 5 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Question
+2(a)
+Marks
+5
+START
+Set Tries to 0
+Set Count to 0
+INPUT A, B
+Set Tries to Tries
+-1
+Set Count Io count +
+Is Count
+Yes
+END
+2(b)
+One mark per outlined region:
+1
+2
+3
+4
+5
+Initialise both counts
+Increment Tries every time a pair is input
+Compare A > B and increment Count if TRUE
+Test for Count = 10 (10th time A > B) - MUST include Yes / No labels
+If so output Iries, otherwise loop
+One mark per point:
+1
+A (variable of type) string will be input // by example e.g. "67,72"
+2
+A special / identified character would need to be used to separate each
+numeric value // all numbers are fixed length
+2
+© Cambridge University Press & Assessment 2024
+Page 5 of 12
+
+--- Page 6 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Question
+3(a)
+Marks
+3
+3(b)
+One mark per point:
+The PS contains a null pointer
+2
+The PF points to the first element on the free list
+3
+All the nodes are on the free list
+Max 2 marks for 'Variables':
+The two variables will be of type Integer
+The two variables will be used as pointers / indexes to the
+arrays.
+The values stored in the two variables will indicate the first
+element in each list
+The first 1D array will be of type String
+The first 1D array will be used to store the values // data items
+/I User IDs
+The second 1D array will be of type Integer
+The second 1D array will be used to store the pointers // point
+to next item
+Mark as follows:
+One mark for each of the first three rows
+One mark for both Array 1 rows
+One mark for both Array 2 rows
+5
+© Cambridge University Press & Assessment 2024
+Page 6 of 12
+
+--- Page 7 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2024
+Answer
+Question
+4
+Marks
+6
+Example:
+FUNCTION Check () RETURNS STRING
+DECLARE Odd, Even, Index : INTEGER
+Odd < 0
+Even < 0
+FOR Index + 1 TO 100
+IF Index MOD 2 = 0 THEN
+Even ‹ Even + Data [Index]
+ELSE
+Odd ‹ Odd + Data [Index]
+ENDIF
+NEXT Index
+ENDFUNCTION
+Mark as follows:
+1. Function heading, ending and return type
+2. Declare local variables Odd, Even and Index as integers
+3. Initialise Odd and Even
+4. Loop for 100 iterations // through array
+5.
+Sum odd and Even element values in a loop
+6. Compare Odd and Even after the loop and Return appropriate string
+© Cambridge University Press & Assessment 2024
+Page 7 of 12
+
+--- Page 8 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2024
+Question
+5(a)
+Count
+Index
+Answer
+Result
+*****.
+Marks
+6
+Data (1]
+Data [2]
+Data [3]
+"aaaaaa" | "bbbbbb" | "cecece"
+3
+1
+"AAAAA
+A"
+"AAA"
+3
+"y'
+2
+2
+"bbbbb
+b"
+"bbbb"
+5(b)(i)
+5(b) (ii)
+One mark per zone.
+OTHERWISE : CALL Error (C)
+After the 'Z' clause in the CASE construct // before the ENDCASE
+1
+1
+© Cambridge University Press & Assessment 2024
+Page 8 of 12
+
+--- Page 9 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2024
+Question
+6(a)
+6(b)
+Question
+7(a)(i)
+Answer
+FUNCTION ISRA (x1, y1, x2, Y2, x3, y3 : INTEGER) RETURNS
+BOOLEAN
+DECLARE Len1, Len2, Len3 : INTEGER
+Lenl
+< (x1 - x2) ^ 2 + (yl - y2) ^ 2
+Len2 < (x1 - x3) ^ 2 + (yl - y3) ^ 2
+Len3 + (82 - x3) ^ 2 + (y2 - y3) ^ 2
+IF (Len1 = Len2 + Len3) OR
+(Len 2
+= len1 + Len3)
+OR
+(Len3 = Lenl
++ Len2) THEN
+RETURN TRUE
+ELSE
+RETURN FALSE
+ENDIF
+ENDFUNCTION
+Mark as follows:
+1
+Calculate the square of the length of at least one side
+2
+Calculation of all three lengths squared correctly
+3
+One correct comparison of square of three lengths
+4
+5
+All three comparisons.
+combined using logical operators / nested IF I/ completely correct
+selection
+Return result correctly in both cases
+1 mark for statement of problem:
+Problem:
+•
+The function will return an incorrect value // the test will fail
+1 mark for solution:
+Solution:
+•.
+Round the calculated values (to a known number of decimal places)
+Define a threshold below which any difference can be ignored
+Answer
+To make the solution easier to design / implement / solve
+Marks
+6
+2
+Marks
+1
+© Cambridge University Press & Assessment 2024
+Page 9 of 12
+
+--- Page 10 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Question
+7(a)(ii)
+Marks
+3
+7(a)(iii)
+One mark per item and justification
+Item: mobile phone number
+Justification: to send the text message
+Item: name
+Justification: to personalise the text message
+Item: exercise interest
+Justification: to determine whether this member would be interested
+Examples include:
+Add a member to a list of those interested in the new class
+Remove the member from future SMS messages
+Read/process Message
+•
+Identify who from
+One mark for each.
+Max 2 marks
+2
+7(b)(i)
+7(b) (ii)
+Means that Update calls (one of) either Sub-A, Sub-B or sub-c
+One mark for each point:
+• reference to selection / decision / if
+• naming all four modules correctly
+PROCEDURE Sub-A (Name : STRING, BYREF P2 : BOOLEAN)
+FUNCTION Sub-B (P1 : REAL) RETURNS REAL
+One mark per underlined part in each case
+2
+4
+© Cambridge University Press & Assessment 2024
+Page 10 of 12
+
+--- Page 11 ---
+9618/21
+Question
+8(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2024
+Answer
+Marks
+FUNCTION DeleteComment (Line : STRING) RETURNS STRING
+DECLARE Newline, IwoChars
+: STRING
+DECLARE Count, TrimTo : INTEGER
+CONSTANT Comment = "//"
+8
+Newline + Line
+TrimTo <
+Count + 1
+WHILE Count < LENGTH (Line) AND TrimTo = O
+IwoChars + MID (Line, Count, 2) I/ extract 2 chars
+IF IwoChars
+= Comment THEN
+TrimTo ‹ Count
+ENDIF
+Count + Count + 1
+ENDWHILE
+IF TrimTo <> O THEN
+NewLine + LEFT (Line,
+TrimTo - 1)
+ENDIF
+RETURN NewLine
+ENDFUNCTION
+Mark as follows:
+2
+3
+4
+5
+6
+7
+8
+Loop to length of Line (parameter) // length of Line -1
+Terminate loop on first double slash
+Attempt to extract one/two characters in a loop
+Check for "/' after attempt at extraction in a loop
+Record start position of comment // Calculate amount of trim required
+Attempt to trim Line from start of comment
+Completely correct trimmed Line from start of comment
+Return Line after a reasonable overall attempt
+© Cambridge University Press & Assessment 2024
+Page 11 of 12
+
+--- Page 12 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Question
+8(b)
+Marks
+7
+Example:
+FUNCTION Stage_1 (StudentName : STRING) RETURNS INTEGER
+DECLARE OldFile, NewFile,
+Line : STRING
+DECLARE
+Count
+: INTEGER
+OldFile « StudentName & "_src.txt"
+NewFile « StudentName & "
+_S1.txt"
+OPENFILE OldFile FOR READ
+OPENFILE NewFile
+• FOR WRITE
+Count ‹ 0
+WHILE NOT EOF (OldFile)
+READFILE OldFile, Line
+Line ‹ DeleteComment (Line)
+IF LENGTH (Line) <> 0 THEN
+WRITEFILE NewFile,
+Line
+Count + Count + 1
+ENDIF
+ENDWHILE
+CLOSEFILE OldFile
+CLOSEFILE NewFile
+RETURN Count
+ENDFUNCTION
+Mark as follows:
+1
+Generate filenames condone missing " "
+2
+Open both files in correct modes and subsequently close
+3
+Loop to EOF (01dFile)
+4
+Read a line from 01dFile and execute DeleteComment () in a loop
+5
+Skip blank lines after DeleteComment () in a loop
+6
+Write Line to stage 1 file and increment Count
+7
+Return the number of lines after a reasonable attempt at counting
+© Cambridge University Press & Assessment 2024
+Page 12 of 12

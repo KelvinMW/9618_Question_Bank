@@ -1,0 +1,334 @@
+--- Page 1 ---
+5 Cambridge Assessment
+a International Education
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+9618/32
+October/November 2022
+1 hour 30 minutes
+C /
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided.
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 12 pages. Any blank pages are indicated
+DC (RWICGW) 302516/4
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+2
+1
+Normalised floating-point numbers are stored in a computer system using two's complement for
+both the mantissa and the exponent with:
+11 bits for the mantissa
+5 bits for the exponent.
+(a) Write the largest positive two's complement binary number that can be stored in this system.
+Mantissa
+Exponent
+111
+(b) Calculate the denary value of the given binary floating-point number.
+Show your working.
+Mantissa
+1
+0
+1
+1
+1
+0 0
+1
+1
+0
+Exponent
+1 0
+1
+Working ..
+Answer
+[3]
+(c) State when underflow occurs in a binary floating-point system.
+.... [2]
+© UCLES 2022
+9618/32/0/N/22
+
+--- Page 3 ---
+3
+Lexical analysis and syntax analysis are stages in the compilation of a program.
+(a) Identify two other stages that take place during the compilation of a program.
+1
+2
+12]
+(b) Outline the purpose of syntax analysis.
+12]
+3 (a) Explain why a protocol is used in communication between computers.
+.... [2]
+(b) The TCP/IP protocol implementation can be viewed as a stack.
+Complete the diagram for the TCP/IP protocol stack.
+Transport
+Link
+12]
+(c) Describe the purpose of the IMAP protocol.
+© UCLES 2022
+9618/32/0/N/22
+....... 12]
+[Turn over
+
+--- Page 4 ---
+4
+4 A program to manage regular flight details at an airport requires some user-defined data types.
+(a) Write pseudocode statements to declare the enumerated data type Aircraft to hold data
+about the types of aircraft used for a flight.
+These types of aircraft are: C300, C350, D242, E757, X380.
+12]
+(b) Write pseudocode statements to declare the composite data type Flight to hold data about
+flights to a specific destination. These include:
+flight number, which could be any combination of letters and numbers
+destination
+date of departure
+type of aircraft used
+Use the enumerated data type you created in part (a).
+[4]
+(c) (i) Write the pseudocode statement to set up a variable for one record of the composite
+data type Flight.
+[1]
+© UCLES 2022
+9618/32/0/N/22
+
+--- Page 5 ---
+5
+(i) Write pseudocode to store the details of the following flight in the variable you set up in
+part (c)(i).
+Field
+flight number
+destination
+date of departure
+type of aircraft used
+Use the field names you created in part (b).
+Data
+XA782
+Cambridge
+12/12/2022
+C350
+[3]
+5
+Describe what is meant by a virtual machine.
+Include in your answer two benefits and two drawbacks of using a virtual machine.
+Description
+Benefit 1
+Benefit 2
+Drawback 1
+Drawback 2
+[6]
+© UCLES 2022
+9618/32/0/N/22
+[Turn over
+
+--- Page 6 ---
+6
+(a) State two differences between symmetric and asymmetric encryption.
+(b) Explain the process by which an organisation may acquire its digital certificate.
+7 Supervised and unsupervised learning are two categories of machine learning.
+Describe supervised learning and unsupervised learning.
+Supervised learning
+Unsupervised learning
+© UCLES 2022
+9618/32/0/N/22
+12]
+[4]
+[4]
+
+--- Page 7 ---
+7
+(a) Draw a logic circuit for an SR flip-flop and label the inputs.
+Q
+[4]
+(b)
+State the purpose of a flip-flop.
+[1]
+(c) Simplify the following expression using Boolean algebra, including De Morgan's laws.
+Show your working.
+==:
+(A.B.(A.C) (B.D)
+Working ..
+Answer
+© UCLES 2022
+9618/32/0/N/22
+13]
+[Turn over
+
+--- Page 8 ---
+8
+9 (a) Explain the need for scheduling in process management.
+(b) Describe these scheduling routines and identify a benefit for each one.
+Shortest job first.
+Round robin
+First come first served
+© UCLES 2022
+9618/32/0/N/22
+[6]
+
+--- Page 9 ---
+9
+10 (a) Define these Object-Oriented Programming (OOP) terms:
+Encapsulation
+Getter
+Setter
+13]
+(b) A school has a program written using OOP to maintain its staff and student records.
+The object SubstituteTeacher allows the details of the school's substitute teachers to be
+stored. This includes their full name, telephone number and whether or not they are in school
+today. For example:
+SubName
+Telephone
+InSchool
+Sarah Jones
+01223658721
+TRUE
+Complete the diagram for the object SubstituteTeacher, including appropriate properties
+and their getters and setters.
+SubstituteTeacher
+SubName
+STRING
+InSchool
+: BOOLEAN
+SetTelephone (Tel
+STRING)
+GetSubName ()
+13]
+© UCLES 2022
+9618/32/0/N/22
+[Turn over
+
+--- Page 10 ---
+10
+11 A simplified linked list is used to store the names of flowers in alphabetical order. It is implemented
+using two 1D arrays:
+• •
+Flower stores the names of the flowers.
+NextPointer stores the pointer to the next flower name in the list.
+HeadPointer indicates the index of the first flower name in the linked list.
+HeadPointer
+6
+When the end of the linked list is reached, the next pointer has the value of 0.
+The following table shows the initial content of the arrays.
+Index
+1
+2
+3
+4
+5
+7
+8
+9
+10
+Flower
+Rose
+Marigold
+Foxglove
+Iris
+Daisy
+Dahlia
+Saxifrage
+Lupin
+Lily
+Hydrangea
+NextPointer
+7
+1
+10
+9
+3
+5
+2
+8
+4
+(a) Several flower names have been deleted from the linked list. These are crossed out in the
+following table.
+Complete the table to show the new values of HeadPointer and NextPointer to keep the
+remaining flower names in alphabetical order.
+HeadPointer
+Index
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+Flower
+Rose
+Marigold
+Foxglove
+Iris
+Daisy
+Dahlia
+Saxifrage
+Lupin
+Lily
+Hydrangea
+NextPointer
+© UCLES 2022
+9618/32/0/N/22
+13]
+
+--- Page 11 ---
+11
+(b) Complete the pseudocode algorithm so that it achieves the following when applied to the
+arrays:
+The flower name is input.
+• The linked list is searched, in order, for the flower name.
+• If the flower name is found, an appropriate message is output to indicate it has been
+• If the flower name is not found, an appropriate message is output to indicate it has not
+been found
+• The algorithm terminates when the next pointer value is 0.
+Pointer ‹ HeadPointer
+Found + 0
+OUTPUT "Enter a flower name "
+IF Flower[Pointer] = FlowerName THEN
+Found ‹ Pointer
+Pointer ‹ 0
+ELSE
+ENDIE
+ENDWHILE
+OUTPUT Flower [Found], " is found"
+ELSE
+ENDIF
+15]
+(c) Explain how you could improve the simplified linked list structure.
+....2
+© UCLES 2022
+9618/32/0/N/22
+
+--- Page 12 ---
+12
+BLANK PAGE
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2022
+9618/32/0/N/22

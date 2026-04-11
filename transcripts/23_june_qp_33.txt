@@ -1,0 +1,340 @@
+--- Page 1 ---
+5 Cambridge Assessmen
+shes International Educatior
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+9618/33
+May/June 2023
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 12 pages.
+DC (KN) 338135/4
+© UCLES 2023
+[Turn over
+
+--- Page 2 ---
+2
+Numbers are stored in two different computer systems by using floating-point representation.
+System 1 uses:
+10 bits for the mantissa
+6 bits for the exponent
+two's complement form for both the mantissa and the exponent.
+System 2 uses:
+8 bits for the mantissa
+8 bits for the exponent
+two's complement form for both the mantissa and the exponent.
+(a) Calculate the normalised floating-point representation of 113.75 and show how it would be
+represented in each of these two systems.
+Show your working.
+System 1
+Mantissa
+Exponent
+System 2
+Mantissa
+Exponent
+Working ..
+[4]
+© UCLES 2023
+9618/33/M/J/23
+
+--- Page 3 ---
+3
+(b) Explain the problem that occurred in part (a) when representing the number in system 2.
+. [2]
+2
+(a) Draw one line from each machine learning category to its most appropriate description.
+Machine learning category
+Description
+simulates the data-processing
+capabilities of the human brain to
+make decisions
+Supervised
+learning
+Reinforcement
+learning
+enables learning by mapping an input
+to an output based on example input-
+output pairs
+enables information related to errors
+produced by the neural network to be
+transmitted
+Deep
+learning
+Unsupervised
+learning
+enables learning in an interactive
+environment by trial and error using
+its own experiences
+enables learning by allowing the
+process to discover patterns on its
+own that were previously undetected
+14]
+(b) Describe the purpose of both the A* algorithm and Dijkstra's algorithm.
+12]
+© UCLES 2023
+9618/33/M/J/23
+[Turn over
+
+--- Page 4 ---
+3
+4
+(a) A hashing algorithm is used to calculate storage locations for records in a random access file.
+It calculates hash values by using the function modulus 3.
+The function modulus gives the remainder after integer division.
+For example, 1030 modulus 3 = 1. Therefore, the record key 1030 gives a hash value of 1.
+Complete the table to show the remaining hash values.
+Record key
+1030
+1050
+1025
+Hash value
+1
+12]
+(b) Describe what happens, in relation to the storage or retrieval of a record in the file, when
+the calculated hash value is a duplicate of a previously calculated hash value for a different
+record key.
+[4]
+© UCLES 2023
+9618/33/M/J/23
+
+--- Page 5 ---
+5
+4 Two descriptions of user-defined data types are given.
+Give appropriate type declaration statements for each, including appropriate names.
+(a) A data type to hold a set of prime numbers below 20. These prime numbers are:
+2, 3, 5, 7, 11, 13, 17, 19
+12]
+(b) A data type to point to a day in the week, for example Monday.
+12]
+5 (a) State, with a reason, where it would be appropriate to use circuit switching.
+12]
+(b) Give two benefits and two drawbacks of circuit switching.
+Benefit 1
+Benefit 2
+Drawback 1 ..
+Drawback 2
+© UCLES 2023
+9618/33/M/J/23
+[4]
+[Turn over
+
+--- Page 6 ---
+6
+6
+Several syntax diagrams are shown.
+operator
+digit
+•
+symbol
+$
+%
+&
+letter
+password
+letter
+digit
+symbol
+© UCLES 2023
+9618/33/M/J/23
+
+--- Page 7 ---
+7
+(a) State whether each of the following passwords is valid or invalid and give a reason for your
+choice.
+DPAD99$
+Reason
+DAD# 95
+Reason
+ADY123?
+Reason
+[3]
+(b) Complete the Backus-Naur Form (BNF) for the syntax diagrams shown.
+<symbol> ::=
+<letter>
+[1]
+(c) An identifier begins with one or more letters, followed by zero digits or one digit or more
+digits.
+Valid letters and digits are shown in the syntax diagrams on page 6.
+Draw a syntax diagram for an identifier.
+[4]
+© UCLES 2023
+9618/33/M/J/23
+[Turn over
+
+--- Page 8 ---
+8
+7 (a) Complete the Karnaugh map (K-map) for the following Boolean expression.
+z = Ã.B.C.D + A.B.C.D + Ã.B.C.D + Ã.B.C.D + A.B.C.D + A.B.C.D
+AB
+CD
+00
+01
+10
+00
+01
+10
+12]
+12]
+(b) Draw loop(s) around appropriate group(s) in the K-map to produce an optimal
+sum-of-products.
+(c) Write the Boolean logic expression from your answer to part (b) as a simplified
+sum-of-products.
+Z=
+12]
+(d) Use Boolean algebra to give your answer to part (c) in its simplest form.
+Z=
+.... [1]
+© UCLES 2023
+9618/33/M/J/23
+
+--- Page 9 ---
+9
+8
+Outline the characteristics of massively parallel computers.
+[3]
+9 (a) Encryption is used to alter data into a form that makes it meaningless if intercepted.
+Describe the purpose of asymmetric key cryptography.
+12]
+(b) Identify two benefits and two drawbacks of quantum cryptography.
+Benefit 1
+Benefit 2
+Drawback 1
+Drawback 2
+[4]
+© UCLES 2023
+9618/33/M/J/23
+[Turn over
+
+--- Page 10 ---
+10
+10 The pseudocode algorithm shown copies an active accounts text file ActiveFile.txt to an
+archive accounts text file ArchiveFile.txt, one line at a time. Any blank lines found in the
+active accounts text file are replaced with the words "Account not present" in the archive
+accounts text file.
+Complete this file-handling pseudocode.
+DECLARE Account : STRING
+OPENFILE "ArchiveFile.txt" FOR WRITE
+WHILE NOT
+READFILE "ActiveFile.txt", Account
+IF Account = "" THEN
+WRITEFILE "ArchiveFile.txt", "
+ELSE
+WRITEFILE "ArchiveFile.txt",
+ENDIF
+ENDWHILE
+....."
+CLOSEFILE "ArchiveFile.txt"
+[5]
+11 Pseudocode is to be written to implement a queue Abstract Data Type (ADT) with items of the
+string data type. This will be implemented using the information in the table.
+Identifier
+FrontPointer
+RearPointer
+Length
+Data type
+INTEGER
+INTEGER
+INTEGER
+Description
+points to the start of the queue
+points to the end of the queue
+the current size of the queue
+Queue
+STRING
+1D array to implement the queue
+A constant, with identifier MaxSize, limits the size of the queue to 60 items.
+(a) Write the pseudocode to declare MaxSize, FrontPointer, RearPointer, Length and
+Queue.
+[3]
+© UCLES 2023
+9618/33/M/J/23
+
+--- Page 11 ---
+11
+(b) Complete the following pseudocode for the function Dequeue to remove the front item from
+the queue.
+FUNCTION Dequeue RETURNS STRING
+DECLARE Item : STRING
+> 0 THEN
+Item -
+FrontPointer ‹
+FrontPointer +
+1
+IF Length
+0 THEN
+CALL Initialise I reset the pointers
+ELSE
+IF FrontPointer > MaxSize THEN
+.............................F
+1
+ENDIF
+ENDIF
+"The print queue was empty - error!"
+Item -
+ENDIF
+RETURN Item
+ENDFUNCTION
+[4]
+(c) Explain how a new element can be added to the queue if it is implemented using two stacks.
+[4]
+12 (a) Describe what is meant by recursion.
+12]
+© UCLES 2023
+9618/33/M/J/23
+[Turn over
+
+--- Page 12 ---
+12
+(b) A Fibonacci sequence is a series of numbers formed by adding together the two preceding
+numbers, for example:
+0, 1, 1, 2, ...
+This function calculates and returns values in the Fibonacci sequence and uses recursion.
+FUNCTION Fib(Number : INTEGER)
+IF Number <=
+1 THEN
+Result - Number
+RETURNS INTEGER
+ELSE
+ENDIF
+RETURN Result
+ENDFUNCTION
+Result ‹ Fib (Number - 1) † Fib (Number - 2)
+Complete the trace table for the function when it is called as Fib (5).
+Call number
+Function call
+Number
+Result
+Return value
+5
+15]
+rmission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Ev
+asonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included,
+publisher will be pleased to make amends at the earliest possible opportunity.
+• avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambrid
+ssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to downlo
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2023
+9618/33/M/J/23

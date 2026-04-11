@@ -1,0 +1,472 @@
+--- Page 1 ---
+5 Cambridge Assessmen
+shes International Educatior
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+•T O
+9618/21
+May/June 2024
+2 hours
+You must answer on the question paper.
+You will need: Insert (enclosed)
+INSTRUCTIONS
+• Answer all questions.
+• Use a black or dark blue pen.
+• Write your name, centre number and candidate number in the boxes at the top of the page.
+• Write your answer to each question in the space provided
+• Do not use an erasable pen or correction fluid.
+• Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+• The insert contains all the resources referred to in the questions.
+This document has 24 pages. Any blank pages are indicated
+DC (PQ/CGW) 329348/4
+© UCLES 2024
+[Turn over
+
+--- Page 2 ---
+2
+Refer to the insert for the list of pseudocode functions and operators.
+1 An algorithm is developed in pseudocode before being coded in a programming language.
+(a) The following table shows four valid pseudocode assignment statements.
+Complete the table by giving an appropriate data type to declare each of the variables A, B, C
+and D.
+Assignment statement
+A + LEFT (MyName, 1)
+B ‹ Total * 2
+Data type
+C + INT (ItemCost) / 3
+D + "Odd OR Even"
+14]
+(b) Other variables in the program have example values as shown:
+Variable
+Value
+Sorted
+Tries
+False
+9
+ID
+"ZGAC001"
+Complete the table by evaluating each expression, using the example values.
+Expression
+Tries < 10 AND NOT Sorted
+Tries MOD 4
+TO_LOWER (MID(ID, 3, 1))
+LENGTH (ID & "XX") >= Tries
+Evaluates to
+[4]
+© UCLES 2024
+9618/21/M/J/24
+
+--- Page 3 ---
+3
+(c) The variable names A, B, C and D in part (a) are not good programming practice.
+(i) State why these variable names are not suitable.
+11]
+(ii) Identify one problem that these variable names might cause.
+(ill)
+The choice of suitable variable names is one example of good programming practice.
+Give one other example.
+11]
+© UCLES 2024
+9618/21/M/J/24
+Turn over
+
+--- Page 4 ---
+4
+2
+An algorithm has three steps. It will:
+repeatedly input a pair of numeric values A and B
+2. count the number of pairs that are input until A has been greater than B 10 times
+3. output the number of pairs that were input.
+(a) Complete the program flowchart.
+START
+INPUT A, B
+Yes
+No
+END
+[5]
+© UCLES 2024
+9618/21/M/J/24
+
+--- Page 5 ---
+5
+(b) Step 1 of the algorithm is changed.
+A variable ThisSequence is used to enter a sequence of 10 pairs of numeric values, using
+a single input statement.
+Following the input of ThisSequence the revised algorithm will extract the pairs of numbers.
+Describe the variable ThisSequence and how the numbers are extracted
+12]
+© UCLES 2024
+9618/21/M/J/24
+Turn over
+
+--- Page 6 ---
+6
+3 The diagram shows an Abstract Data Type (ADT) representation of a linked list after data items
+have been added.
+: PS is the statist neer.
+PF is the free list pointer.
+• Labels Df, Do, Db and Dy represent the data items of nodes in the list.
+Labels Fg, Fh, Fm and Fw represent the data items of nodes in the free list.
+• The symbol Ø represents a null pointer.
+PF
+→ F9 -
+- Fm
+- Fw
+(a) Describe the linked list immediately after initialisation, before any data items are added.
+[3]
+© UCLES 2024
+9618/21/M/J/24
+
+--- Page 7 ---
+7
+(b) A program will be written to include a linked list to store alphanumeric user IDs.
+The design uses two variables and two 1D arrays to implement the linked list.
+Each array element contains data of a single data type and not a record.
+The statements below describe the design.
+Complete the statements.
+The two variables will be of type ..
+The two variables will be used as
+The values stored in the two variables will indicate
+to the arrays.
+The first 1D array will be of type
+The first 1D array will be used to
+The second 1D array will be of type
+The second 1D array will be used to
+[5]
+© UCLES 2024
+9618/21/M/J/24
+Turn over
+
+--- Page 8 ---
+8
+4 A global 1D array Data contains 100 elements of type integer.
+A function Check () will:
+•
+total the element values in odd index locations (1, 3, 5 ... 97, 99)
+• total the element values in even index locations (2, 4, 6 ... 98, 100)
+return one of three strings 'Odd', 'Even' or 'Same' to indicate which total is the greater, or
+whether the totals are the same.
+Write pseudocode for the function Check ().
+16]
+© UCLES 2024
+9618/21/M/J/24
+
+--- Page 9 ---
+9
+BLANK PAGE
+© UCLES 2024
+9618/21/M/J/24
+Turn over
+
+--- Page 10 ---
+10
+5 A global 1D array of strings contains three elements which are assigned values as shown:
+Data [1] ‹ "aaaaaa"
+Data [2] + "bbbbbb"
+Data [3] ‹ "ceccac"
+Procedure Process () manipulates the values in the array.
+The procedure is written in pseudocode as follows:
+PROCEDURE Process (Format : STRING)
+DECLARE Count, Index, I : INTEGER
+DECLARE Result : STRING
+DECLARE C : CHAR
+Result < "****"
+FOR Count < 1 TO LENGTH (Format) STEP 2
+C + MID (Format, Count, 1)
+I + STR_TO_NUM (MID (Format, Count + 1, 1))
+Index + (Count + 1) DIV 2
+CASE OF C
+'X' : Result + TO_UPPER (Data [Index])
+'Y' : Result ‹ TO LOWER (Data[Index])
+'Z' : Result +
+"'**" & Data[Index]
+ENDCASE
+Data [Index] ‹ LEFT (Result, L)
+NEXT Count
+ENDPROCEDURE
+© UCLES 2024
+9618/21/M/J/24
+
+--- Page 11 ---
+11
+(a) Complete the trace table by dry running the procedure when it is called as follows:
+CALL Process ("X3Y2W4")
+Count
+Index
+Result
+Data [1]
+Data [2]
+Data [3]
+[6]
+(b) The procedure is to be modified. If variable C is assigned a value other than 'X', "Y" or 'z',
+then procedure Error () is called and passed the value of variable C as a parameter.
+This modification can be implemented by adding a single line of pseudocode.
+(i) Write the single line of pseudocode.
+.... 11]
+(ii)
+State where this new line should be placed.
+.. 11]
+© UCLES 2024
+9618/21/M/J/24
+[Turn over
+
+--- Page 12 ---
+6
+12
+Three points on a grid form a triangle with sides of length A, B and C as shown in the example:
+10
+9
+7
+B
+4
+A
+1
+1
+" 2
+3
+4
+5
+6
+7 8
+9
+- x
+10
+A triangle is said to be right-angled if the following test is true (where A is the length of the longest
+side):
+A2 = B2 + C2
+A2 means A multiplied by A, for example 32 means 3 × 3 which evaluates to 9
+You can calculate A?, B2 and C2 by using the coordinates of the endpoints of each line.
+For example, B2 is calculated as follows:
+10
+9
+8
+P2
+5
+4
+3
+2
+1
+B
+P1
+-(X1, У1)
+0
+1
+2
+3
+4 5
+6 7 8 910 х
+The endpoints, P1 and P2, have the coordinates (3, 2) and (6, 6).
+The value B2 is given by the formula:
+B2= (x, -x2)2+(11-1212
+In this example:
+B2 = (3-6)2+(2-612
+B2 = (-3)2+ (-4)2
+B2 = 9 + 16
+B2 = 25
+© UCLES 2024
+9618/21/M/J/24
+
+--- Page 13 ---
+13
+(a) A function IsRA () Will:
+• take three sets of integers as parameters representing the coordinates of the three
+endpoints that form a triangle
+• return TRUE if the endpoints form a right-angled triangle, otherwise return FALSE.
+In pseudocode, the operator '^' represents an exponent, which is the number of times a value
+is multiplied by itself. For example, the expression Value? may be written in pseudocode as
+Value ^ 2
+Complete the pseudocode for the function IsRA () .
+FUNCTION ISRA (x1, y1, x2, y2, x3, y3 : INTEGER) RETURNS BOOLEAN
+ENDFUNCTION
+[6]
+© UCLES 2024
+9618/21/M/J/24
+[Turn over
+
+--- Page 14 ---
+14
+(b) The test used to check if a triangle is right-angled can be written in two ways:
+A2 = B2 + C2
+or
+A= V(B2 + C2)
+The symbol V represents the square root operation. For example, \81 = 9
+A new function SQRT () is written to perform the square root operation. The function takes an
+integer number as a parameter and returns a positive real value representing the square root
+of the number.
+During testing it is found that the SQRT () function returns a value that is only accurate to
+4 decimal places.
+For example, SQRT (25) returns 5.0000125 rather than the correct value of 5.0
+The function IsRA () from part (a) is modified to use the new SQRT () function to test if a
+triangle is right-angled.
+Describe a problem that might occur when using the modified IsRA () function and suggest
+a solution that still allows the SQRT () function to be used.
+Problem
+Solution
+12]
+© UCLES 2024
+9618/21/M/J/24
+
+--- Page 15 ---
+15
+BLANK PAGE
+© UCLES 2024
+9618/21/M/J/24
+Turn over
+
+--- Page 16 ---
+16
+7 A fitness club has a computerised membership system. The fitness club offers a number of
+different exercise classes.
+The following information is stored for each club member: name, home address, email address,
+mobile phone number, date of birth and the exercise(s) they are interested in.
+(a) When an exercise class is planned, a new module will send personalised text messages to
+each member who has expressed an interest in that exercise. Members wishing to join the
+class send a text message back. Members may decide not to receive future text messages
+by replying with the message 'STOP'.
+The process of abstraction is used to filter out unnecessary information.
+(i) State one advantage of applying abstraction to this problem.
+11]
+(ii) Identify three items of information that will be required by the new module.
+Justify your choices with reference to the given scenario.
+Item 1 required
+Justification
+Item 2 required
+Justification
+Item 3 required
+Justification
+[3]
+(iii) Identify two operations that would be required to process data when the new module
+receives a text message back from a member.
+Operation 1
+Operation 2
+[2]
+© UCLES 2024
+9618/21/M/J/24
+
+--- Page 17 ---
+17
+(b) The structure chart illustrates part of the membership program:
+Update
+A
+P2
+Name
+Sub-A
+Sub-B
+Sub-C
+Data item notes:
+Name contains the name of a club member
+P1 and T1 are of type real.
+(i) Explain the meaning of the diamond symbol (labelled with the letter A) in the chart.
+12]
+(ii) Write the pseudocode module headers for Sub-A and Sub-B.
+Sub-A
+Sub-B
+14]
+© UCLES 2024
+9618/21/M/J/24
+[Turn over
+
+--- Page 18 ---
+18
+8 A teacher is designing a program to process pseudocode projects written by her students.
+Each student project is stored in a text file.
+The process is split into a number of stages. Each stage performs a different task and creates a
+new file named as shown:
+File name
+MichaelAday_src.txt
+MichaelAday_S1.txt
+MichaelAday_S2.txt
+Comment
+student project file produced by student Michael Aday
+file produced by stage 1
+file produced by stage 2
+The teacher has defined the first program module as follows:
+Module
+DeleteComment ()
+Description
+• called with a parameter of type string representing a line of
+pseudocode from a student's project file
+• returns the line after removing any comments
+Note on comments:
+A comment starts with two forward slash characters and includes all the
+remaining characters on the line.
+The following example shows a string before and after the comment has
+been removed:
+Before: IF X2 > 13 THEN
+After:
+IF X2 > 13 THEN
+check if limit exceeded
+© UCLES 2024
+9618/21/M/J/24
+
+--- Page 19 ---
+19
+(a) Complete the pseudocode for module DeleteComment ().
+FUNCTION DeleteComment (Line : STRING) RETURNS STRING
+ENDFUNCTION
+18]
+© UCLES 2024
+9618/21/M/J/24
+[Turn over
+
+--- Page 20 ---
+20
+(b) A second module is defined:
+Module
+Stage_1 ()
+Description
+• called with a parameter of type string representing a student name
+• creates a new stage 1 file
+• copies each line from the student's project file to the stage 1 file after
+removing any comment from each line
+• does not write blank lines to the stage 1 file
+• returns the number of lines written to the stage 1 file
+Write pseudocode for module Stage_1 ().
+Module DeleteComment () must be used in your solution.
+© UCLES 2024
+9618/21/M/J/24
+
+--- Page 21 ---
+21
+17%
+© UCLES 2024
+9618/21/M/J/24
+
+--- Page 22 ---
+22
+BLANK PAGE
+© UCLES 2024
+9618/21/M/J/24
+
+--- Page 23 ---
+23
+BLANK PAGE
+© UCLES 2024
+9618/21/M/J/24
+
+--- Page 24 ---
+24
+BLANK PAGE
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2024
+9618/21/M/J/24

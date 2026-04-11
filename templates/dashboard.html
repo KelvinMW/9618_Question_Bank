@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cs_exam_bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">    <style>
+    :root {
+        --sidebar-width: 350px;
+        --deep-space: #2c3036; /* Slightly lighter, softer charcoal */
+        --panel-dark: #23272d; /* Header/Footer dark */
+        --active-purple: #bb86fc; /* Vibrant light purple */
+        --text-muted: #a0a6ad;
+    }
+
+    body { background-color: #f8f9fa; height: 100vh; overflow: hidden; }
+
+    .wrapper { display: flex; height: 100vh; }
+
+    /* Sidebar Styling */
+    .sidebar {
+        width: var(--sidebar-width);
+        background: var(--deep-space);
+        border-right: 1px solid #1b1e22;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .sidebar-header {
+        background: var(--panel-dark) !important;
+        border-bottom: 1px solid #3d444d !important;
+    }
+
+    .sidebar-header h5 {
+        color: #ffffff !important;
+        letter-spacing: 0.5px;
+    }
+
+    .sidebar-scroll { overflow-y: auto; flex-grow: 1; }
+
+    /* Sidebar List Items */
+    .list-group-item {
+        background-color: transparent !important;
+        color: var(--text-muted) !important;
+        border: none !important;
+        border-left: 4px solid transparent;
+        padding: 0.4rem 1.25rem !important;
+        transition: all 0.2s ease;
+    }
+
+    .list-group-item:hover {
+        background-color: #3d444d !important;
+        color: #fff !important;
+    }
+
+    .list-group-item.active {
+        background-color: rgba(187, 134, 252, 0.1) !important; /* Subtle purple tint */
+        color: var(--active-purple) !important;
+        border-left: 4px solid var(--active-purple);
+        font-weight: 600;
+    }
+
+    /* Update Toggle Buttons to match purple theme */
+    .btn-primary {
+        background-color: var(--active-purple) !important;
+        border-color: var(--active-purple) !important;
+        color: #121212 !important; /* Dark text for contrast on purple */
+        font-weight: 600;
+    }
+
+    .btn-outline-primary {
+        color: var(--active-purple) !important;
+        border-color: var(--active-purple) !important;
+    }
+
+    .btn-outline-primary:hover {
+        background-color: var(--active-purple) !important;
+        color: #121212 !important;
+    }
+
+    /* Main Content Styling */
+    .main-content { flex-grow: 1; overflow-y: auto; padding: 40px; }
+
+    /* Question Row */
+    .q-row {
+        background: white;
+        border-radius: 10px;
+        border: 1px solid #e1e4e8;
+        margin-bottom: 14px;
+        padding: 20px;
+        transition: transform 0.2s, box-shadow 0.2s;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    .q-row:hover {
+        border-color: var(--active-purple);
+        box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+        transform: translateY(-2px);
+    }
+
+    .title-text {
+        font-size: 1.1rem;
+        color: #24292e;
+        font-weight: 500;
+    }
+
+    /* Custom Scrollbar */
+    .sidebar-scroll::-webkit-scrollbar { width: 6px; }
+    .sidebar-scroll::-webkit-scrollbar-track { background: var(--deep-space); }
+    .sidebar-scroll::-webkit-scrollbar-thumb { background: #4b525d; border-radius: 10px; }
+
+    .hacker-purple {
+        color: #bf00ff; /* Electric Neon Purple */
+        font-family: 'Courier New', Courier, monospace;
+        /*text-transform: lowercase;*/
+        letter-spacing: 2px;
+        text-shadow: 0 0 5px #bf00ff, 0 0 10px rgba(191, 0, 255, 0.4);
+        display: inline-block;
+    }
+
+
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+    <nav class="sidebar">
+        <div class="sidebar-header p-3 border-bottom bg-light">
+          <h5 class="mb-3 fw-bold hacker-purple">./cs_9618.cie</h5>
+
+          <div class="selector-group w-100 mb-3" role="group">
+            <div class="btn-group w-100" role="group">
+                <a href="/level/AS" class="btn btn-sm {% if current_level == 'AS' %}btn-primary{% else %}btn-outline-primary{% endif %}">AS</a>
+                <a href="/level/AL" class="btn btn-sm {% if current_level == 'AL' %}btn-primary{% else %}btn-outline-primary{% endif %}">A2</a>
+                <!--<a href="/level/IB" class="btn btn-sm {% if current_level == 'IB' %}btn-primary{% else %}btn-outline-primary{% endif %}">IB</a>!-->
+                <a href="/" class="btn btn-sm {% if not current_level %}btn-primary{% else %}btn-outline-primary{% endif %}">All</a>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="sidebar-scroll">
+            <div class="list-group list-group-flush">
+              {% for topic in topics %}
+              <a href="{{ url_for('show_topic', target_level=current_level, topic_name=topic.key) if current_level else url_for('show_topic', topic_name=topic.key) }}"
+                 class="list-group-item list-group-item-action py-3 {% if topic.key == current_topic %}active{% endif %} {% if topic.key == 'P4' %}fw-bold text-warning{% endif %}"
+                 style="font-size: 0.9rem;">
+                  {{ topic.key }} {{ topic.name }}
+              </a>
+              {% endfor %}
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        {% if current_topic %}
+            <div class="mb-5">
+              <h2 class="fw-bold">
+  {{ current_topic }}
+  {% for topic in topics %}
+      {% if topic.key == current_topic %}
+          — {{ topic.name }}
+      {% endif %}
+  {% endfor %}
+</h2>
+                <hr class="mt-4 mb-4">
+            </div>
+
+            {% for sub_tag, questions in data.items() %}
+                <h5 class="text-secondary mb-3 mt-4 text-uppercase small fw-bold" style="letter-spacing: 1px;">
+                    {{ sub_tag }}
+                </h5>
+
+                {% for q in questions %}
+                <div class="q-row" onclick="window.open('/view/{{ q.paper }}/{{ q.question }}', '_blank')">
+                    <div class="badge-paper">
+                        <span class="badge bg-dark px-2 py-2 mb-1">{{ q.paper }}</span>
+                        <div class="text-muted small">Question {{ q.question }}</div>
+                    </div>
+
+                    <div class="ms-4 flex-grow-1">
+                        <div class="title-text">
+                            {{ q.title }}
+                        </div>
+                        {% if q.tags %}
+                        <div class="mt-2">
+                            {% for tag in q.tags %}
+                            <span class="tag-pill">{{ tag }}</span>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                    </div>
+
+                    <div class="text-muted ms-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+                {% endfor %}
+            {% endfor %}
+        {% else %}
+            <div class="text-center mt-5 py-5">
+                <!--<div class="display-1 text-light mb-4">📚</div>!-->
+                <h3 class="text-secondary">Select a syllabus topic to begin</h3>
+                <p class="text-muted">Use the toggle on the left to select your course.</p>
+            </div>
+        {% endif %}
+    </main>
+</div>
+
+</body>
+</html>

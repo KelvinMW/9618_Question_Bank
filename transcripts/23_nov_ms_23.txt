@@ -1,0 +1,485 @@
+--- Page 1 ---
+15 Cambridge Assessmen
+sS International Educatior
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+MARK SCHEME
+Maximum Mark: 75
+9618/23
+October/November 2023
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2023 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+This document consists of 11 printed pages.
+© UCLES 2023
+[Turn over
+
+--- Page 2 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+•
+•
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2023
+Page 2 of 11
+
+--- Page 3 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Mark scheme abbreviations
+/ separates alternative words / phrases within a marking point
+Il separates alternative answers within a marking point
+underline actual word given must be used by the candidate (grammatical variants accepted)
+max indicates the maximum number of marks that can be awarded
+() the word / phrase in brackets is not required but sets the context
+© UCLES 2023
+Page 3 of 11
+
+--- Page 4 ---
+9618/23
+Question
+1(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Answer
+Marks
+4
+Assignment statement
+MyVarl + Totall
+/ Total2
+MyVar2 + 27/10/2023
+MyVar3 + "Sum1 / Sum2"
+MyVar4 « Resultl AND Result2
+Data type
+REAL
+DATE
+STRING
+BOOLEAN
+1(b)
+4
+1(c)
+1 (d)
+Expression
+Fraction >= 0.2 AND NOT Active
+INT ( (Fraction1 * 100) + 13.3)
+STR_TO_NUM (MID(Code, 4, 2)) + 5
+LENGTH ("TRUE" & Code)
+Evaluates to
+FALSE
+33
+28
+11
+The use of a program library (routines)
+MP1 Type: Adaptive
+MP2 Reason: The (user) requirement(s) changes // to accommodate
+legislative changes
+1
+2
+© UCLES 2023
+Page 4 of 11
+
+--- Page 5 ---
+9618/23
+Question
+2(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Answer
+Marks
+5
+START
+Set Min to Data [1]
+Set MinIndex to 1
+Set Index to 2
+NO
+Is Index
+> 30?
+YES
+Set Index 10 Index
+NO
+IS
+Data (Index]
+< Min ?
+YES
+Set MinIndex to Index
+Set Min to Data [Index]
+OUTPUT MinIndex
+2(b)
+2(c)
+END
+MP1 Initialise Min to first value in Data and MinIndex to 1
+MP2 Loop through 29 more values (or 30 values in total)
+MP3 Compare element from Data [ ] with Min
+MP4 Set new Min AND save MinIndex when element value < Min in a loop
+MP5 Output MinIndex
+MP1 Simplifies the algorithm // easier to write / understand / test / debug
+MP2 It is possible to iterate through the values I/ can use a loop // allows the
+storage of many values using a single identifier
+One mark per underlined section
+DECLARE Data : ARRAY[1:1201 OF REAL
+2
+2
+© UCLES 2023
+Page 5 of 11
+
+--- Page 6 ---
+9618/23
+Question
+3(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Answer
+Marks
+3
+Index
+1
+2
+3
+4
+5
+Array
+D3
+D4
+D1
+D2
+D5
+Variable
+FrontofQueue
+EndofQueue
+NumItems
+2
+6
+5
+8
+MPI D3, D4, D1, D2 and Ds in question order or reversed - in any five
+consecutive locations
+MP2 Fod value matches index with D3
+MP3 Eod value matches index with D5
+3(b)
+MP1 If NumItems is / = 8 // (queue) full then jump to step 6
+MP2 Increment EndofQueue
+MP3 If EndofQueue = 9 then set EndOfQueue to 1
+MP4 Increment NumItems
+1P5 Set the Element at the index ..
+1P6 stored in EndofQueue to value/data/item being adde
+Mark as follows:
+Steps 1 to 4: One mark for gaps filled as shown
+Step 5: One mark for 'element' and one mark for other two terms
+6
+© UCLES 2023
+Page 6 of 11
+
+--- Page 7 ---
+9618/23
+Question
+4(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Answer
+Marks
+6
+4(b)
+PROCEDURE RandList ()
+DECLARE Count, BaseNum, ThisNum : INTEGER
+CONSTANT StepVal = 10
+BaseNum < O
+FOR Count + 1 TO 25
+ThisNum ‹ BaseNum + INT (RAND (StepVal))
+OUTPUT ThisNum
+BaseNum ‹ BaseNum + StepVal
+NEXT Count
+ENDPROCEDURE
+MP1 Procedure heading and ending
+MP2 Local loop counter Count as integer
+MP3 Loop to iterate 25 times or more for each unique number
+MP4 'Attempt to generate a random number including use of INT () in a
+loop
+MP5 Ensure that number generated is greater than previous and change
+'previous'
+MP6 Output random number after an attempt at MP5 in a loop
+One mark for simplified logical expression:
+MP1 Result[x † 1] <= Result [x]
+ALTERNATIVE SOLUTION:
+Result [x] >= Result[x + 1]
+1
+© UCLES 2023
+Page 7 of 11
+
+--- Page 8 ---
+9618/23
+Question
+5
+Cambridge International AS & A Level - Mark Scheme
+October/November
+PUBLISHED
+2023
+Answer
+Mix [1]
+4
+Marks
+Mix [3]
+3
+Mix [4]
+5
+6
+Index
+2
+3
+4
+2
+Value
+2
+3
+Total
+2
+5
+Mix [2]
+2
+5
+8
+5
+5
+13
+9
+15
+28
+13
+21
+2
+56
+MP1 Row 1 (initialisation)
+Each iteration (1 - 5):
+MP2 1 - Total 2
+MP3 2 - Total 5
+MP4 3 - Total 10
+MP5 4 - Total 15
+MP6 5 - Total 28 and final Mix [1] = 56
+© UCLES 2023
+Page 8 of 11
+
+--- Page 9 ---
+9618/23
+Question
+6
+Question
+7(a)
+7(b) (i)
+7(b)(ii)
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+FUNCTION TestNum (ThisNum : STRING) RETURNS INTEGER
+IF LEFT (ThisNum, 3) = RIGHT (ThisNum 3) THEN
+RETURN 3
+ENDIF
+IF RIGHT (ThisNum, 3) = "000" THEN
+RETURN 2
+ENDIF
+IF MID (ThisNum, 4, 1) = MID (ThisNum, 5, 1)
+AND MID (ThisNum,
+5, 1) = MID (ThisNum, 6, 1) THEN
+RETURN 1
+ENDIF
+RETURN O
+ENDFUNCTION
+MP1 Function heading and ending including parameter and return type
+MP2 Test for Condition 1
+MP3 Test for Condition 2
+MP4 Test for Condition 3
+MP5 Return the highest value if more than one condition is satisfied
+MP6 Return zero if no condition matched
+Answer
+MP1 iteration / looping
+MP2 naming all four modules correctly in the correct sequence //_e.g.
+Module-A repeatedly calls Sub-Y1, then suby2 then sub- 9
+TYPE MyType
+DECLARE RA
+: INTEGE]
+DECLARE RB
+• STRIN
+DECLARE RC : BOOLEAN
+ENDTYPE
+MP1 TYPE MyType... ENDTYPE
+MP2 RA as integer and RB3 as string
+MP3 RC as Boolean
+PROCEDURE Sub-9 (BYREF Param : MyType)
+MP 1 One mark for BYREF
+MP 2 One mark for the rest of the statement
+October/November
+2023
+Marks
+6
+Marks
+2
+3
+2
+Page 9 of 11
+
+--- Page 10 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+8(a)
+October/November
+2023
+Marks
+7
+DECLARE FileData
+DECLARE CharCount
+CONSTANT Terminator
+OPENFILE FileName FOR WRITE
+FileData ‹ GetData ()
+CharCount + 0
+WHILE FileData <> Terminator
+WRITEFILE FileName, FileData
+CharCount + CharCount + LENGTH (FileData)
+FileData ‹ GetData ()
+ENDWHILE
+CLOSEFILE FileName
+OUTPUT CharCount
+I, " characters were written to ",
+FileName)
+8(b)
+ENDPROCEDURE
+MP1 OPEN file in WRITE mode and subsequently CLOSE
+MP2 Conditional loop until terminator received
+MP3 'Attempted' use of GetData () - Ignore CALL ...
+MP4 Fully correct use Get Data () to return the data in a loop
+MP5 Maintain CharCount in a loop
+MP6 Write each line to the file - except the terminator in a loop
+MP7 Final output of message giving number of characters written outside
+loop
+Max 3 marks
+Problem:
+then the file being written by ReceiveFile () will end at this point //
+subsequent file lines will be lost
+Solution:
+• Read the file (at the sending end) to find the number of lines it contains
+• Send an initial message which defines the number of lines in the file
+ALTERNATIVE SOLUTION:
+•
+(Transmitter program) chooses a different terminator string / character
+that doesn't occur in the file
+•
+Transmitter program sends the terminator string / character before first
+line of file / before the transfer begins
+3
+© UCLES 2023
+Page 10 of 11
+
+--- Page 11 ---
+9618/23
+Question
+8(c)
+8(d)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+PROCEDURE Chat Destina SIRIN STRING, POrt : INTEGER)
+DECLARE Data
+DECLARE Finished
+BOOLEAN
+CONSTANT Terminator = "Bye"
+CONSTANT STX = CHR (2)
+CONSTANT
+ETX
+= CHR (3)
+Finished ‹ FALSE
+REPEAT
+Data + GetData ()
+OUTPUT Data
+IF Data = Terminator THEN
+Finished + TRUE
+ENDIF
+IF NOT Finished THEN
+labout to reply
+INPUT Data
+Transmit (STX & Destination & MyID & Data & ETX,
+IF Data = Terminator THEN
+Finished ‹ TRUE
+ENDIF
+ENDIF
+UNTIL Finished = TRUE
+ENDPROCEDURE
+Conditional loop
+MP1 Conditional loop
+MP2 Test for terminator in both cases
+MP3 Use GetData () to get the data from the message
+MP4 OUTPUT the data in a loop
+MP5 INPUT the data reply
+MP6 'Attempted ' use of Transmit to send it in a loop
+MP7 Correct formation of parameters to Transmit ()
+Note: Max 3 marks (from either limitation or modification list)
+Limitation:
+1 GetData () does not return a value until a message has been received
+2 So once a message has been sent the user has to wait for a reply // chat
+is half-duplex
+Modification:
+3 If no response allow the receiver to exit chat at any time ...
+4 GetData () should immediately return a suitable message // set a time
+5
+...which Chat () can detect and respond by allowing the conversation to
+continue
+October/November
+2023
+Marks
+7
+3
+© UCLES 2023
+Page 11 of 11

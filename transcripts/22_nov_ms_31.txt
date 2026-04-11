@@ -1,0 +1,534 @@
+--- Page 1 ---
+15 Cambridge Assessmen
+ls International Educatior
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 3 Problem Solving & Programming
+MARK SCHEME
+Maximum Mark: 75
+9618/31
+October/November 2022
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2022 series for most
+Cambridge IGCSE™
+', Cambridge International A and AS Level components and some Cambridge O Level
+This document consists of 15 printed pages.
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+9618/31
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Generic Marking Principles
+October/November 2022
+These general marking principles must be applied by all examiners when marking candidate answers. They should be applied alongside the
+specific content of the mark scheme or generic level descriptors for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+•
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit is given for valid answers which go beyond the
+scope of the syllabus and mark scheme, referring to your Team Leader as appropriate
+marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these features are specifically assessed by the
+question as indicated by the mark scheme. The meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed instructions or in the application of generic level
+descriptors.
+Page 2 of 15
+
+--- Page 3 ---
+9618/31
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November 2022
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question (however; the use of the full mark range may
+be limited according to the quality of the candidate responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should not be awarded with grade thresholds or
+grade descriptors in mind.
+Page 3 of 15
+
+--- Page 4 ---
+9618/31
+Question
+1(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2022
+Marks
+3
+1(b)
+1(c)(i)
+1(c) (ii)
+Two marks for working
+One mark for correct answer
+Working:
+Conversion to binary + 202 = 11001010 // repeated division by 2 // 128 + 64 + 8 + 2
+Appropriate shifting of binary point for + 202 = 0.1100101 × 28 // exponent = 8
+Answer:
+= 01100101 00001000 (stored as mantissa and exponent)
+Two marks for working
+One mark for correct answer
+Working:
+• Appropriate method of conversion e.g
+= 10011010 (one's complement of 8-bit mantissa)
+= 10011011 (two's complement of 8-bit mantissa)
+-256 + 32 + 16 + 4 +2
+• Realisation that the exponent doesn't change // value of exponent = 8 I/ appropriate shifting of binary point
+Answer:
+= 10011011 00001000 (stored as mantissa and exponent)
+The mantissa does not begin with 01/10 (as its most significant bits)
+I/ the mantissa begins with 00 // first two digits are the same.
+One mark for each point:
+:
+Correct mantissa
+Correct exponent
+3
+1
+2
+Page 4 of 15
+
+--- Page 5 ---
+9618/31
+Question
+2
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2022
+Marks
+5
+Question
+3(a)
+3(b)
+3(c)
+3(d)(i)
+One mark for each point (Max 3)
+MP1
+MP2
+MP3
+MP4
+MP5
+The Transport Layer breaks data into manageable packets / performs segmentation
+It sequences the packets I/ adds data to the packet header I/ adds a packet header
+It sends the packets to the Internet / Network Layer // It receives data from the Application Layer
+It controls the flow of packets
+It handles packet loss/corruption // Acknowledges receipt of complete error free packets
+One mark for each point (Max 3)
+MP6 The Internet Layer identifies the intended network and host
+It transmits packets to the (Data) Link / Physical Layer
+It routes the packets independently through the optimum route
+MP9 It addresses packets with their source and destination IP addresses
+MP10 It then uses an IP address and port number to form a socket.
+Answer
+A (user-defined non-composite) data type with an ordered list of possible values.
+A user-defined non-composite data type used to reference a memory location.
+Marks as shown in the square brackets:
+TYPE Quarter1 = (January, February, March)
+TYPE Quarter1 = [1]
+(January, February, March) [1]
+DECLARE Petl: Pet
+Marks
+1
+1
+2
+1
+© UCLES 2022
+Page 5 of 15
+
+--- Page 6 ---
+9618/31
+Question
+3(d) (ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2022
+Marks
+3
+One mark for each point:
+Correct assignment of all string data values
+Correct assignment of char data value
+Correct assignment of integer data value
+Example answer:
+Petl. PetName ‹ "Tibbles"
+Pet1. AnimalType ‹ "Cat"
+Pet1. PetAge + 8
+Pet1. PetGender + 'M'
+Pet1. OwnerName ‹ "Jasmine
+Smith"
+Page 6 of 15
+
+--- Page 7 ---
+9618/31
+Question
+4
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+One mark for each correct line connecting one stage of compilation to a description
+Stage of compilation
+Description
+minimising a program's execution time and
+memory requirement
+October/November 2022
+Marks
+4
+Lexical analysis
+converting an intermediate representation of
+source code into an executable form
+Syntax analysis
+converting a sequence of characters into a
+sequence of tokens
+Code generation
+directly executing instructions written in a
+scripting language
+Optimisation
+using parsing algorithms to interpret the
+meaning of a sequence of tokens
+Question
+5(a)
+5(b)(i)
+5(b)(ii)
+Answer
+Marks
+1
+ab*b + d - 15 +
+(a -b) * (C + d) / a
+-39
+1
+© UCLES 2022
+Page 7 of 15
+
+--- Page 8 ---
+9618/31
+Question
+6(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2022
+Marks
+2
+6(b)
+6(c)
+One mark for each correct point (Max 2)
+• . .
+A private key is the unpublished/secret key/never transmitted anywhere.
+It has a matching public key
+It is used to decrypt data that was encrypted with its matching public key.
+One mark for each correct point (Max 2)
+•
+The message to be sent is encrypted using the recipient's public key. // The message to be sent is encrypted using
+the sender's private key.
+•
+The message is decrypted using the recipient's private key. // The message is decrypted using the sender's public
+key.
+One mark for each correct point (Max 4)
+: The message tother with the digital signature is decrypted using the receiver's private key
+The digital signature received is decrypted with the sender's public key to recover the message digest sent
+The decrypted message received is hashed with the agreed hashing algorithm to reproduce the message digest of the
+message received
+:
+The two message digests are compared
+.... if both digests are the same the message has not been altered // if they are different the message has been
+altered.
+2
+4
+Page 8 of 15
+
+--- Page 9 ---
+9618/31
+Question
+7(a)
+7(b)
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2022
+Marks
+2
+Two marks if no errors present
+One mark if one error present
+AB
+CD
+00
+01
+11
+10
+00
+01
+11
+1
+1
+1
+1
+One mark for correct loop (Max 2)
+AB
+00
+01
+11
+CD
+00
+01
+0
+11
+0
+0
+10
+0
+0
+10
+1
+1
+2
+10
+0
+0
+Page 9 of 15
+
+--- Page 10 ---
+9618/31
+Question
+7(c)
+Question
+8(a)
+8(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2022
+Marks
+3
+One mark for each point
+:
+Any correct Boolean term
+Boolean terms and operator correct and no other terms present
+(Z =) BC + AC
+One mark for simplest form
+(Z=) C (A + B)
+Answer
+Marks
+3
+One mark for each correct point (Max 3)
+• Disk / secondary storage is used to extend the RAM / memory available
+•
+….. so the CPU appears to be able to access more memory space than the available RAM
+Only the data in use needs to be in main memory so data can be swapped between RAM and virtual memory as
+necessary
+Virtual memory is created temporarily.
+One mark for a correct statement about the difference between paging and segmentation e.g.
+• Paging allows the memory to be divided into fixed size blocks and
+Segmentation divides the memory into variable sized blocks.
+• The operating system divides the memory into pages, the compiler is responsible for calculating the segment size.
+• Access times for paging is faster than for segmentation.
+1
+Page 10 of 15
+
+--- Page 11 ---
+9618/31
+Question
+9(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2022
+Marks
+2
+9(b)
+One mark for each correct point (Max 2)
+:
+:
+•
+Uses artificial neural network(s)
+.. that contain(s) a high number of hidden lavers
+.. modelled on the human brain.
+Deep learning uses many layers to progressively extract higher level features from the (raw) input.
+Deep learning is a specialised form of machine learning.
+One mark for each correct point (Max 2)
+• •
+•
+Deep learning makes good use of unstructured data.
+Deep learning outperforms other methods if the data size is large.
+Deep learning systems enable machines to process data with a nonlinear approach.
+Deep learning is effective at identifying (hidden) patterns / patterns that humans might not be able to see / patterns that
+are too complex / time consuming for humans to carry out.
+It can provide a more accurate outcome with higher numbers of hidden layers.
+Answer
+2
+Question
+10(a)
+Marks
+Two marks for all five rows correct
+One mark for four rows correct
+Statement
+uses a smaller instruction set
+uses single-cycle instructions and limited addressing modes
+uses fewer general-purpose registers
+uses both hardwired and micro coded control unit
+uses a system where cache is split between data and
+instructions
+2
+RISC
+r
+CISC
+r
+r
+© UCLES 2022
+Page 11 of 15
+
+--- Page 12 ---
+9618/31
+Question
+10(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2022
+Marks
+4
+One mark for each correct point (Max 4)
+: Instructions are divided into subtasks / 5 stages
+backstescion fetch / IF, Instruction decode / ID, operand fetch / OF, opcode/instruction execute IE, result store / write
+Each subtask is completed during one clock cycle
+No two instructions can execute their same stage at the same clock cycle
+The second instruction begins in the second clock cycle, while the first instruction has moved on to its second subtask.
+The third instruction begins in the third clock cycle while the first and second instructions move on to their second and
+third subtasks, respectively, etc.
+Question
+11(a)
+Answer
+Marks
+3
+One mark for each correct OOP term definition:
+Instance - an occurrence of an object // a specific object based on the class /I an instantiation of a class.
+Inheritance - the capability of defining a new class of objects that has all the attributes and methods from a parent
+• Polymorphism - allows the same method to take on different behaviours depending on which class is instantiated //
+methods can be redefined for derived classes.
+Page 12 of 15
+
+--- Page 13 ---
+9618/31
+Question
+11 (b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2022
+Marks
+5
+One mark for each point:
+•
+•
+•
+•
+•
+Car and ENDCLASS
+Four declarations - must use the identifiers used in the assignments
+Constructor header - must use CarBodyType
+Two assignments - must use CarMake
+Constructor identifier for the car model and the identifier in the Model assignment statement match
+CLASS Car
+PRIVATE Make : STRING
+PRIVATE Model : STRING
+PRIVATE BodyType : STRING
+PRIVATE Fuel: STRING
+PRIVATE NumberBuilt : INTEGER
+PUBLIC PROCEDURE NEW
+(CarMake : STRING,
+CarModel: STRING, CarBodyType : STRING)
+Make ‹ CarMake
+Model + CarModel
+BodyType ‹ CarBodyType
+Fuel + "''
+NumberBuilt < 0
+ENDPROCEDURE
+getFuel ()
+ENDCASNumber BuiLt ()
+Page 13 of 15
+
+--- Page 14 ---
+9618/31
+Question
+12(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November 2022
+Marks
+6
+One mark for each point (Max 6)
+:
+•.
+:
+Initialisation of upper bound
+Test if upper bound is less than lower bound
+Re-setting of mid value if current value is lower than the target
+Re-setting of mid value if current value is higher than the target
+Correct termination of loop
+Lower +
+Upper +
+99
+Mid + 0
+Exit ‹ FALSE
+OUTPUT "Enter the name to be found "
+INPUT Target
+REPEAT
+IF Upper ‹ Lower THEN
+OUTPUT Target,
+"does not exist"
+Exit & TRUE
+ENDIF
+Mid + Lower + (Upper - Lower + 1) DIV 2
+IF Names [Mid] < Target THEN
+Lower + Mid + 1
+ENDIF
+IF Names [Mid] > Target THEN
+Upper + Mid - 1
+ENDIF
+IF Names [Mid] = Target THEN
+OUTPUT Target,
+was found at location ", Mid
+Exit ‹ TRUE
+ENDIF
+UNTIL Exit |/ UNTIL Exit = TRUE
+O(n)
+12(b)(i)
+© UCLES 2022
+Page 14 of 15
+
+--- Page 15 ---
+9618/31
+Question
+12(b)(ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+One mark for each point (Max 2)
+October/November 2022
+Marks
+2
+The time taken goes up linearly as the number of items rises exponentially
+• O(log n) is the worst case scenario (time complexity for a binary search).
+Page 15 of 15

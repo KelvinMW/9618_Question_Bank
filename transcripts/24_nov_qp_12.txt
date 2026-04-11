@@ -1,0 +1,534 @@
+--- Page 1 ---
+* 0000800000001*
+SIS Cambridge Assessment
+International Educatior
+•
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+9618/12
+October/November 2024
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided.
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages. Any blank pages are indicated
+DC (WW/CB) 337421/2
+© UCLES 2024
+L
+[Turn over
+J
+
+--- Page 2 ---
+* 0000800000002*
+2
+(a) Complete the truth table for the logic expression:
+X = (A XOR B) NAND (A AND (B XOR C))
+A
+B
+C
+Working space
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+(b) Draw the logic circuit for the logic expression:
+W = P NAND ((Q OR NOT R) XOR (P XOR Q))
+P-
+Q-
+R-
+LOUCLES 2021
+9618/12/0/N/24
+X
+- W
+121
+12]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 3 ---
+* 0000800000003*
+DO NOT WRITE IN THIS MARGIN
+3
+Embedded systems are used in many electronic devices.
+(a) Describe the drawbacks of embedded systems.
+DO NOT WRITE IN THIS MARGIN
+[3]
+(b) An embedded system has Dynamic RAM (DRAM).
+Identify one benefit of using DRAM instead of Static RAM (SRAM) in an embedded system.
+11]
+DO NOT WRITE IN THIS MARGIN
+(c) Give two differences between Erasable Programmable ROM (EPROM) and Electrically
+Erasable Programmable ROM (EEPROM).
+Difference 1
+Difference 2
+DO NOT WRITE IN THIS MARGIN
+12]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/12/0/N/24
+(Turn over
+
+--- Page 4 ---
+* 0000800000004*
+4
+3
+A student has a computer.
+(a) The computer is designed using the Von Neumann model for a computer system.
+Complete the table by describing the purpose of each of the given registers.
+Register
+Purpose
+DO NOT WRITE IN THIS MARGIN
+Program Counter
+(PC)
+Memory Address
+Register (MAR)
+DO NOT WRITE IN THIS MARGIN
+Memory Data
+Register (MDR)
+Index Register (IX)
+DONOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2024
+9618/12/0/N/24
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 5 ---
+* 0000800000005*
+DO NOT WRITE IN THIS MARGIN
+5
+(b) The student needs to connect the computer to a monitor that has a screen resolution of
+2560 × 1600 pixels. The monitor also has built-in speakers.
+The computer has a Video Graphics Array (VGA) port and a High Definition Multimedia
+Interface (HDMI) port.
+Explain the benefits of connecting the monitor to the computer using the HDMI port instead of
+the VGA port.
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+[4]
+(c) The computer has an Operating System (OS). One of the key management tasks of the OS is
+process management.
+Describe the process management tasks performed by an OS.
+DO NOT WRITE IN THIS MARGIN
+[4]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/12/0/N/24
+[Turn over
+
+--- Page 6 ---
+* 0000800000006*
+6
+4
+A program is written in a high-level language by a team of three programmers using an Integrated
+Development Environment (IDE).
+(a) Describe how the programmers can use the debugging features of a typical IDE during the
+development of the program.
+[4]
+(b) The programmers created a new program library whilst developing the program.
+Describe the benefits to the programmers of creating a program library.
+[3]
+(c) The file containing the final program code will be sent by email for beta testing.
+Identify one security method that can be used to protect the program code from unauthorised
+access during email transfer.
+Explain how your chosen method protects the program code.
+Security method
+Explanation
+[3]
+LOUCLES 2024
+9618/12/0/N/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 7 ---
+* 0000800000007*
+DO NOT WRITE IN THIS MARGIN
+7
+A computer programmer is learning about the importance of acting ethically at work.
+(a) Explain the reasons why the computer programmer needs to act ethically towards colleagues
+and the public.
+Colleagues
+DO NOT WRITE IN THIS MARGIN
+The public
+14]
+DO NOT WRITE IN THIS MARGIN
+(b) The programmer writes a program to be used in a business. The source code of the program
+can be modified by the business. The business pays the programmer for the maintenance
+and security updates.
+(i) Identify one suitable type of software licence for the program and describe the reasons
+for your choice.
+Type of software licence
+Reasons for choice
+DO NOT WRITE IN THIS MARGIN
+[3]
+(ii) Explain the reasons why the programmer should copyright their program.
+DO NOT WRITE IN THIS MARGIN
+12]
+OUCLES 2024
+9618/12/0/N/24
+[Turn over
+
+--- Page 8 ---
+* 0000800000008*
+8
+A company uses a relational database to store data about its customers, employees and the
+individual repair jobs that customers have booked.
+(a) Explain the benefits of using a relational database instead of a file-based approach.
+[3]
+(b) The company decides which employees will work on each repair job. An employee can log
+into the database to access information about their repair jobs.
+The database is normalised and includes these tables:
+CUSTOMER stores personal data about each customer
+• EMPLOYEE stores personal data about each employee
+LOGIN DATA stores the username and password for each employee
+•
+JOB stores the data about each repair job
+_EMPLOYEE stores the employees that are working on each repair job.
+(i)
+Identify each relationship between the database tables and explain how each relationship
+can be implemented in the normalised database.
+[6]
+OUCLES 2024
+9618/12/0/N/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 9 ---
+* 0000800000009*
+DO NOT WRITE IN THIS MARGIN
+9
+DO NOT WRITE IN THIS MARGIN
+(i) The database also has the table INVOICE that stores data about each invoice that is
+sent to a customer.
+Example data from the table INVOICE is given.
+InvoiceID
+29262
+26765
+13290
+34090
+Datesent
+12/12/2023
+11/11/2023
+02/01/2024
+05/02/2024
+Amount
+105.20
+200.00
+50.00
+25.95
+Paid
+Y
+Y
+Y
+N
+JobID
+221
+315
+315
+569
+Write a Structured Query Language (SQL) script to return the total amount of all the
+invoices sent in the year 2023 that have been paid.
+• ... --....
+DO NOT WRITE IN THIS MARGIN
+13]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/12/0/N/24
+(Turn over
+
+--- Page 10 ---
+* 0000800000010*
+10
+A student takes a photograph of a science experiment.
+(a) The photograph is saved as a bitmapped image.
+(i) Define the following bitmap terms.
+Colour depth
+File header
+12]
+(ii) Explain why changing the image resolution will affect the image quality and file size.
+Image quality
+File size
+12]
+(ill) Identify one lossless method of compressing an image.
+[1]
+(b) The student draws a picture on paper that is scanned into the computer and saved as a
+vector graphic.
+Define the vector graphic terms property and drawing list.
+Property
+Drawing list
+12]
+LOUCLES 2024
+9618/12/0/N/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 11 ---
+* 0000800000011*
+DO NOT WRITE IN THIS MARGIN
+11
+BLANK PAGE
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/12/0/N/24
+(Turn over
+
+--- Page 12 ---
+* 0000800000012*
+12
+8 The following table shows part of the instruction set for a processor. The processor has two
+registers, the Accumulator (ACC) and the Index Register (IX).
+Instruction
+Opcode
+Operand
+LDM
+#n
+LDD
+‹address>
+Explanation
+Immediate addressing. Load the number n to ACC
+Direct addressing. Load the contents of the location at the
+given address to ACC
+LDI
+<address>
+Indirect addressing. The address to be used is at the given
+address.
+Load the contents of this second address to ACC
+LDX
+<address>
+Indexed addressing. Form the address from <address> + the
+contents of the index register. Copy the contents of this
+calculated address to ACC
+LDR
+#n
+Immediate addressing. Load the number n to IX
+ADD #n/Bn/&n
+Add the number n to the ACC
+ADD
+<address>
+Add the contents of the given address to the ACC
+SUB #n/Bn/&n
+Subtract the number n from the ACC
+SUB
+<address>
+Subtract the contents of the given address from the ACC
+INC
+<register>
+Add 1 to the contents of the register (ACC or IX)
+DEC
+<register>
+Subtract 1 from the contents of the register (ACC or IX)
+<address> can be an absolute or a symbolic address
+# denotes a denary number, e.g. #123
+B denotes a binary number, e.g. B01001010
+& denotes a hexadecimal number, e.g. &4A
+LOUCLES 2024
+9618/12/0/N/24
+DO NOT WRITE IN THIS MARGI
+IN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 13 ---
+* 0000800000013*
+DO NOT WRITE IN THIS MARGIN
+13
+DO NOT WRITE IN THIS MARGIN
+(a) The current contents of memory are shown:
+Address
+19
+20
+21
+22
+23
+24
+25
+Data
+25
+23
+2
+4
+15
+50
+22
+The current contents of the ACC and IX are shown:
+ACC
+50
+IX
+20
+Complete the table by writing the content of the ACC and the IX after each set of instructions
+has run.
+DO NOT WRITE IN THIS MARGIN
+1
+2
+3
+4
+Instructions
+LDM #19
+DEC ACC
+IDD 23
+ADD 19
+LDI 25
+INC ACC
+LDR #21
+LDX 2
+ACC content
+IX content
+DO NOT WRITE IN THIS MARGIN
+[5]
+DO NOT WRITE IN THIS MARGIN
+© UCLES 2024
+9618/12/0/N/24
+[Turn over
+
+--- Page 14 ---
+0000800000014*
+14
+(b) The instruction set also includes these bit manipulation instructions:
+Opcode
+Instruction
+Operand
+AND
+#n/Bn/&n
+Explanation
+Bitwise AND operation of the contents of ACC with the operand
+Bitwise AND operation of the contents of ACC with the
+AND
+<address>
+contents of <address>
+XOR
+#n/Bn/&n
+Bitwise XOR operation of the contents of ACC with the operand
+Bitwise XOR operation of the contents of ACC with the
+XOR
+<address>
+contents of <address>
+OR
+Bitwise OR operation of the contents of ACC with the operand
+OR
+<address>
+Bitwise OR operation of the contents of ACC with the
+contents of <address>
+ISL #n
+Bits in ACC are shifted logically n places to the left. Zeros
+are introduced on the right-hand end
+ISR #n
+Bits in ACC are shifted logically n places to the right. Zeros
+are introduced on the left-hand end.
+< address> can be an absolute or a symbolic address
+# denotes a denary number, e.g. #123
+B denotes a binary number, e.g. B01001010
+& denotes a hexadecimal number, e.g. &4A
+The current content of the ACC is shown:
+ACC
+1
+1
+1
+1
+(i) The table has three sets of instructions. The binary number 10011010 is reloaded into
+the ACC before each set of instructions is run.
+Complete the table by writing the content of the ACC after each set of instructions has run.
+Instructions
+ACC content
+1
+ISL #2
+DO NOT WRITE IN THIS MARGIN
+2
+3
+ADD #5
+AND #30
+OR B11110010
+INC ACC
+OUCLES 2024
+9618/12/0/N/24
+13]
+J
+
+--- Page 15 ---
+* 0000800000015*
+DO NOT WRITE IN THIS MARGIN
+15
+(ii)
+Explain how bit manipulation can be used to test whether the binary number stored in
+the ACC represents an odd denary number.
+Write the bit manipulation instruction that will be used.
+Explanation
+DO NOT WRITE IN THIS MARGIN
+Instruction
+13]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/12/0/N/24
+(Turn over
+
+--- Page 16 ---
+* 0000800000016*
+9
+16
+A road bridge has a weight limit and a height limit for vehicles. For example, a vehicle must weigh
+less than 10000 kg and must have a height of less than 3 m.
+The bridge has a warning system. If a vehicle is approaching the bridge and it exceeds one or
+both limits, a sign displays a warning telling the driver of the vehicle to stop.
+(a) The bridge warning system uses sensors to detect if a vehicle exceeds the limits.
+Complete the table by identifying two different sensors that could be used by the system and
+describe how each sensor is used by the system.
+Sensor
+Use in bridge warning system
+[2]
+(b) Explain whether the bridge warning system is an example of a monitoring system or of a
+control system.
+12]
+ermission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Eve
+easonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, th
+publisher will be pleased to make amends at the earliest possible opportunity.
+) avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridg
+ssessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to downloa
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+©UCLES 2024
+9618/12/0/N/24
+Z
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN

@@ -1,0 +1,1642 @@
+--- Page 1 ---
+* CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 4 Practical
+MARK SCHEME
+Maximum Mark: 75
+9618/42
+May/June 2024
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2024 series for most
+Cambridge IGCSE, Cambridge International A and AS Level and Cambridge Pre-U components, and some
+Cambridge O Level components.
+This document consists of 39 printed pages.
+© Cambridge University Press & Assessment 2024
+[Turn over
+
+--- Page 2 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+May/June 2024
+PUBLISHED
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers. They should be applied alongside the
+specific content of the mark scheme or generic level descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+•
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit is given for valid answers which go beyond
+the scope of the syllabus and mark scheme, referring to your Team Leader as appropriate
+•
+marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these features are specifically assessed by the
+question as indicated by the mark scheme. The meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed instructions or in the application of generic level
+descriptors.
+© Cambridge University Press & Assessment 2024
+Page 2 of 39
+
+--- Page 3 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2024
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question (however; the use of the full mark range may
+be limited according to the quality of the candidate responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should not be awarded with grade thresholds or
+grade descriptors in mind.
+© Cambridge University Press & Assessment 2024
+Page 3 of 39
+
+--- Page 4 ---
+9618/42
+Question
+1(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2024
+Answer
+Marks
+6
+1 mark each to max 6
+•
+Procedure declaration (and end where appropriate) taking (string) parameter
+•
+Opening file using parameter filename to read..
+....using exception handling with try and catch and output
+•
+Reading in the data for each line in that file ...
+... and storing in (global) array
+Removing carriage return from each line read in (Java, Python)
+Counting the number of answers (excluding main word)
+• Closing the file (might be within the Python opening file statement)
+e.g.
+public static String[l WordArray;
+public static Integer NumberWords;
+public static void Readwords (String FileName) {
+tryt
+FileReader f = new FileReader (FileName);
+tryf
+BufferedReader Reader = new BufferedReader (f) ;
+String Line= Reader. readLine ();
+while (Line != null){
+WordArray[NumberWords] = Line.replace ("\n","") ;
+NumberWords++;
+Line = Reader. readLine ();
+Reader. close ();
+}catch (IOException ex) {}
+}catch (FileNotFoundException e) {
+System.out.println("File not found");
+}
+© Cambridge University Press & Assessment 2024
+Page 4 of 39
+
+--- Page 5 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Marks
+Question
+1(a)
+VB.NET
+Sub Readwords (FileName As String)
+Dim DataReader As StreamReader = New StreamReader (FileName)
+NumberWords
+= -1
+Do Until DataReader.EndofStream
+WordArray (NumberWords) = DataReader.ReadLine ()
+NumberWords = NumberWords + 1
+DataReader. Close ()
+Catch ex As
+Exception
+Console.Writeline("Invalid file")
+End Try
+End Sub
+Python
+def Readwords (FileName) :
+global WordArray
+global Numberwords
+try:
+File = open (FileName, 'r')
+DataRead = File.read() .strip()
+File.close ()
+WordArray = DataRead. split ()
+NumberWords = len (WordArray)
+except:
+print ("Cannot read
+file")
+© Cambridge University Press & Assessment 2024
+Page 5 of 39
+
+--- Page 6 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Question
+1 (b)
+Marks
+4
+1 mark each
+•
+•
+•
+•
+Outputting appropriate message to ask user to enter choice
+Taking input from user, storing/using the input value
+Conversion of input to filename...
+...calling Readwords () with correct filename in each case
+public static void main (String args[]) {
+WordArray
+= new String[100];
+NumberWords
+Scanner scanner = new Scanner (System.in);
+System.out.println ("Easy, medium
+or hard?");
+String Choice = scanner.nextLine ();
+if (Choice. equals ("Easy")){
+Readwords ("Easy.txt") ;
+}else if (Choice.equals ("medium")) {
+ReadWords ("Medium.txt");
+}else!
+Readwords ("Hard.txt") ;
+}
+}
+VB.NET
+Sub Main (args As String())
+Console.Writeline ("Easy, medium or hard?")
+Dim FileName As String
+Dim Choice As String = Console. ReadLine () . ToLower ()
+If Choice = "easy" Then
+FileName = "Easy.txt"
+ElseIf Choice = "medium" Then
+FileName = "Medium.txt"
+© Cambridge University Press & Assessment 2024
+Page 6 of 39
+
+--- Page 7 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Question
+1(b)
+Marks
+Else
+FileName = "Hard.txt"
+End If
+Readwords (FileName)
+End Sub
+Python
+WordArray = []
+NumberWords
+= 0
+Choice = input ("Easy, medium or hard?
+").lower ()
+if Choice
+File = "Easy.txt"
+elif Choice
+"medium":
+File = "Medium.txt"
+else:
+File
+= "Hard.txt"
+Readwords (File)
+© Cambridge University Press & Assessment 2024
+Page 7 of 39
+
+--- Page 8 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1(c) (i)
+May/June 2024
+Marks
+6
+1 mark each
+•
+••
+Procedure start (and end) outputting the main word and the number of answers. No parameters
+Takes word as input and compares input to each answer in array but not the main word (index O) ...
+….. replaces correct answer with a null value (e.g. '''
+, null)
+... outputs if the word input is found and if the word input is not found
+. counts the number of answers found
+Loops MPs 2-5 until user requests to stop (enters "no")
+e.g.
+Java
+public static void Play () {
+System.out.println (NumberWords);
+Scanner scanner = new Scanner (System.in);
+String WordChosen = WordArray[0];
+System.out.println("The word is
++ WordChosen) ;
+System.out.println ("There are
+" t NumberWords
+" words that can be made with 3 or more
+letters");
+WordArray[0] = "'';
+Integer QuantityFound = 0;
+String WordInput;
+Boolean Found
+=false:
+String Answer = "yes";
+whilel! (Answer.equals ("no") )){
+System.out.println("Enter your word or no to stop");
+Answer = scanner.nextLine ();
+Found = false;
+if\! (Answer. equals ("no"))) {
+for (Integer x = 1; x <= NumberWords; x++) {
+if (Answer. equals (WordArray[x])){
+WordArray [x] = "";
+QuantityFound+t;
+System.out.println("Correct, you have found " + QuantityFound + " words");
+= true;
+© Cambridge University Press & Assessment 2024
+Page 8 of 39
+
+--- Page 9 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Question
+1(c) (i)
+Marks
+if (Found == false) {
+System.out.println("Sorry that was incorrect");
+}
+VB.NET
+Sub Play ()
+Dim Word
+As String
+= WordArray (0)
+Console.Writeline ("The word is: "
+& Word)
+Console.Writeline ("There are " & NumberWords & " words that can be made with 3 or more
+letters")
+WordArray (0) = ""
+Dim Contin As Boolean = True
+Dim QuantityFound As Integer = 0
+Dim Found As Boolean
+Dim Answer As String = "yes"
+While Answer <> "no"
+Console. Writeline ("Enter your word or no to stop")
+Answer = Console. ReadLine () .ToLower ()
+Found = False
+If Answer <> "no" Then
+For x
+= 1 To NumberWords
+If
+Answer = WordArray (x) Then
+WordArray (X) = "''
+QuantityFound = QuantityFound + 1
+Console.Writeline ("Correct, you have found "
+& QuantityFound
+& "
+words")
+Found = True
+× = NumberWords + 1
+End If
+Next x
+If Found = False Then
+Console.Writeline ("Sorry that was incorrect")
+End If
+© Cambridge University Press & Assessment 2024
+Page 9 of 39
+
+--- Page 10 ---
+9618/42
+Question
+1(c) (i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Marks
+End If
+End While
+End Sub
+Python
+def Play ():
+global WordArray
+global Numberwords
+Word = WordArray[0]
+print ("The word is:
+", Word)
+print ("'There are"
+• Numberwords-1, "words that can be made with 3 or more letters")
+WordArray [0]
+77 71
+Answer =
+QuantityFound
+while Answer !=
+"no":
+Answer
+= input ("Enter your word or no to stop "). lower ()
+Found = False
+if Answer != "no":
+for X in range (1, NumberWords+1) :
+if Answer == WordArray[x]:
+WordArray[x] = "'
+QuantityFound = QuantityFound † 1
+print ("Correct, you have found", QuantityFound, "words")
+Found = True
+if Found == False:
+print ("Sorry that was incorrect")
+© Cambridge University Press & Assessment 2024
+Page 10 of 39
+
+--- Page 11 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1(c)(ii)
+1 mark each
+•
+•
+•
+Calculates and outputs percentage of answers found
+Method of identifying answers not found ...
+...and outputting those answers
+double Correct = ((Double.value0f (QuantityFound) / Double.valueOf (NumberWords))
+System.out.println ("You found " + Correct + "g");
+if (Correct ‹ 100){
+System.out.println ("The words you missed are");
+for (Integer x = 1; x <= NumberWords; x++) {
+if (WordArray [x] != "") {
+System.out.println (WordArray[x]);
+}
+}
+VB.NET
+Dim Correct As Double
+Correct = (QuantityFound / Numberwords) * 100
+Console.Writeline ("You found " & Correct &
+If Correct < 100 Then
+Console.Writeline ("The words you missed are ")
+For x = 1 To NumberWords
+If WordArray (x)
+Then
+Console.WriteLine (WordArray (x))
+End If
+Next x
+End If
+© Cambridge University Press & Assessment 2024
+Page 11 of 39
+May/June 2024
+Marks
+3
+* 100.0) ;
+
+--- Page 12 ---
+9618/42
+Question
+1 (c)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Python
+Correct
+= QuantityFound / (NumberWords-1)) * 100
+print ("You found", Correct, "'")
+if Correct < 100:
+print ("The words you missed are")
+for x in range (1, NumberWords+1) :
+if WordArray[x] != ''':
+print (WordArray [x])
+May/June 2024
+Marks
+1 (d)(i)
+1 mark for:
+• Calling Play ()
+e.g.
+Java
+Play () ;
+VB.NET
+Play ()
+Python
+Play ()
+1
+© Cambridge University Press & Assessment 2024
+Page 12 of 39
+
+--- Page 13 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1 (d) (ii)
+May/June 2024
+Marks
+1
+1 mark for screenshot showing the inputs "easy", "she", "out", "no" and the matching outputs e.g.
+Easy, medium or hard?easy
+The word is: house
+There are 14 words that can be made with 3 or more letters
+Enter your wordshe
+Correct, you have found 1 words
+Enter your wordout
+Sorry that was incorrect
+Enter your wordno
+You found 7.142857142857142 8
+The words you missed are
+hues
+hose
+hoes
+shoe
+sou
+ohs
+ose
+oes
+sue
+use
+hue
+hoe
+hes
+© Cambridge University Press & Assessment 2024
+Page 13 of 39
+
+--- Page 14 ---
+9618/42
+Question
+1 (d)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for screenshot showing the inputs "hard", "fine", "fined", "idea", "no" and the matching outputs e.g.
+May/June 2024
+Marks
+1
+Easy, medium or hard?
+hard
+97
+The word is fainted
+There are 97 words that can be made with 3 or more letters
+Enter your word or no to stop
+fine
+Correct, you have found 1 words
+Enter your word or no to stop
+fined
+Correct, you have found 2 words
+Enter your word or no to stop
+idea
+Correct, you have found 3 words
+Enter your word or no to stop
+no
+You found 3.0927835051546393%
+The words you missed are
+defiant
+detain
+fadein
+nidate
+teind
+entia tine
+fetid aft
+tenia and
+faint ate
+fiend die
+tinea eat
+adit fad
+daft
+fen
+defi
+fin
+diet
+nit
+dite
+tea
+fain
+fend
+aid
+neif
+tend
+ane
+dan
+aide
+dif
+date
+eft
+deft
+fan
+dine
+fet
+edit
+fit
+fane
+feta
+tad
+nide
+ted
+ain
+tide
+ant
+ante def
+deaf
+din
+deni
+enc
+dint
+fat
+fate fid
+fiat
+nae
+naif
+tae
+nite
+ten
+tied
+anti
+ait
+ant
+dean
+den
+dent dit
+dita
+fade
+feat
+fed
+fie
+find
+neat
+net
+tan
+tain
+tie
+© Cambridge University Press & Assessment 2024
+Page 14 of 39
+
+--- Page 15 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+2(a)(i)
+May/June 2024
+Marks
+4
+1 mark each to max 4
+Class Node declaration (and end where appropriate)
+LeftPointer, Data and RightPointer declared as (public) integer
+Constructor header (and end) taking one parameter within class ...
+...assigning parameter to Data, initialising LeftPointer and RightPointer to - 1
+•
+•
+. •
+e.g.
+Java
+public class Nodel
+private Integer LeftPointer;
+private Integer Data;
+private Integer RightPointer;
+public Node (Integer PData) {
+LeftPointer = -1;
+Data = PData;
+RightPointer = -1;
+VB.NET
+Class Node
+Private LeftPointer As Integer
+Private Data As Integer
+Private RightPointer As Integer
+Sub New (PData)
+LeftPointer = -1
+Data = PData
+RightPointer = -1
+End Sub
+End Class
+© Cambridge University Press & Assessment 2024
+Page 15 of 39
+
+--- Page 16 ---
+9618/42
+Question
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Marks
+Python
+class Node ():
+def _init
+(self,
+LeftPointer
+self._
+RightPointer
+© Cambridge University Press & Assessment 2024
+Page 16 of 39
+
+--- Page 17 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Question
+2(a)(ii)
+Marks
+3
+1 mark each
+1 get method with no parameter...
+...returning correct attribute
+Remaining 2 correct
+e.g.
+Java
+public Integer Getleft () {
+return LeftPointer;
+}
+public Integer GetRight () {
+return RightPointer;
+public Integer GetData () {
+return Data;
+VB.NET
+Function GetLeft ()
+Return LeftPointer
+End Function
+Function GetRight ()
+Return RightPointer
+End Function
+Function GetData ()
+Return Data
+End Function
+Python
+def GetLeft (self):
+return self. LeftPointer
+def GetRight (self):
+return self.
+RightPointer
+def GetData (self) :
+return self._
+Data
+© Cambridge University Press & Assessment 2024
+Page 17 of 39
+
+--- Page 18 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+2(a)(iii)
+May/June 2024
+Marks
+3
+1 mark each
+1 set method header (and end) with parameter...
+...assigning parameter to correct attribute
+Remaining 2 correct
+public void Setleft (Integer Newleft) {
+LeftPointer
+= NewLeft;
+}
+public void SetRight (Integer NewRight) {
+RightPointer
+NewRight;
+}
+public void SetData (Integer NewData) {
+Data = NewData;
+VB.NET
+Sub Setleft (NewLeft)
+LeftPointer = NewLeft
+End Sub
+Sub SetRight (NewRight)
+RightPointer = NewRight
+End Sub
+Sub SetData (NewData)
+Data = NewData
+End Sub
+def Setleft (self, NewLeft):
+LeftPointer = NewLeft
+def SetRight (self, NewRight) :
+RightPointer = NewRight
+def SetData (self, NewData) :
+self._Data = NewData
+© Cambridge University Press & Assessment 2024 |
+Page 18 of 39
+
+--- Page 19 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Question
+2(b)(i)
+Marks
+4
+1 mark each
+•
+•
+•
+Class TreeClass header (and end)
+Declaration of the attributes: array Tree of type Node with 20 elements, FirstNode and NumberNodes as integers
+Constructor header (and end) with 0 parameters, assigns - 1 to FirstNode and 0 to NumberNodes ...
+... initialises all Tree (20) elements to Node object with data value - 1
+e.g.
+Java
+class TreeClass{
+private static Nodell Tree = new Node [20];
+private
+static Integer FirstNode;
+private static Integer NumberNodes;
+public TreeClass () {
+FirstNode = -1;
+NumberNodes
+= 0;
+Integer MinusOne = -1;
+for (Integer x = 0; x < 20; x++) {
+Tree [x] = new Node (MinusOne) ;
+VB.NET
+Class TreeClass
+Private Tree (20) As Node
+Private FirstNode As Integer
+Private NumberNodes As Integer
+Sub New ()
+FirstNode = -1
+NumberNodes
+For x = 0 To 19
+Tree (X) = New Node (-1)
+© Cambridge University Press & Assessment 2024
+Page 19 of 39
+
+--- Page 20 ---
+9618/42
+Question
+2(b)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Marks
+Next
+End Sub
+End Class
+Python
+class TreeClass ():
+def
+Tree = Il #type node 20 spaces
+self._
+FirstNode = -1 #int
+NumberNodes = 0 #int
+for x in range (20):
+Tree.append (Node (-1))
+© Cambridge University Press & Assessment 2024
+Page 20 of 39
+
+--- Page 21 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Question
+2(b)(ii)
+Marks
+6
+1 mark each to max 6
+:
+Method header and end, taking a Node as parameter
+Checking if empty
+and (if it is empty) inserting parameter node into first position
+and updating FirstNode to O
+and incrementing NumberNodes
+(otherwise) inserting parameter node in array Tree at index NumberNodes
+Accessing tree root node and comparing data...
+...checking whether to go left or right...
+... repeatedly until correct position found ...
+... updating left or right pointer for parent node and updating NumberNodes
+•
+•
+•
+e.g.
+Java
+public void InsertNode (Node NewNode) {
+Integer NodeAccess;
+Integer Previous = -1;
+String Direction;
+if (NumberNodes == 0) {
+Tree[01 = NewNode:
+FirstNode = 0;
+NumberNodes++;
+}elsel
+Tree [NumberNodes] = NewNode;
+NodeAccess
+= FirstNode;
+Direction = "";
+while (NodeAccess != -1){
+Previous = NodeAccess;
+if (NewNode .GetData () < Tree [NodeAccess] .GetData ()) {
+NodeAccess = Tree[NodeAccess] .GetLeft ();
+Direction = "left".
+lelse
+if (NewNode. GetData () > Tree[NodeAccess].GetData ()) {
+© Cambridge University Press & Assessment 2024
+Page 21 of 39
+
+--- Page 22 ---
+9618/42
+Question
+2(b)(ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2024
+Answer
+NodeAccess
+= Tree [NodeAccess ] .GetRight ();
+Direction =
+"right";
+Marks
+}
+}
+if (Direction. equals ("left")){
+Tree [Previous].SetLeft (NumberNodes);
+}elsel
+Tree [Previous].SetRight (NumberNodes);
+NumberNodes++;
+VB.NET
+Sub InsertNode (NewNode)
+Dim NodeAccess As Integer
+Dim Direction As String
+Dim Previous As Integer
+If NumberNodes = 0 Then
+Tree (0) = NewNode
+FirstNode = 0
+NumberNodes += 1
+Else
+Tree (NumberNodes) = NewNode
+NodeAccess = FirstNode
+Direction = ""
+While NodeAccess <> -1
+Previous = NodeAccess
+If NewNode.GetData () < Tree (NodeAccess) .GetData () Then
+NodeAccess = Tree (NodeAccess) .GetLeft ()
+Direction = "left"
+ElseIf NewNode. GetData () > Tree (NodeAccess) .GetData () Then
+NodeAccess = Tree (NodeAccess) . GetRight ()
+Direction = "right"
+End If
+End While
+© Cambridge University Press & Assessment 2024
+Page 22 of 39
+
+--- Page 23 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Question
+2(b)(ii)
+Marks
+If Direction = "left" Then
+Tree (Previous) . SetLeft (NumberNodes)
+Else
+End If
+NumberNodes += 1
+End If
+End Sub
+Tree (Previous). SetRight (NumberNodes)
+Python
+def InsertNode (self, NewNode) :
+if (self.
+NumberNodes
+self
+== 0):
+Tree [0] = NewNode
+self.
+FirstNode = 0
+self.
+NumberNodes
+= self.
+NumberNodes +
+1
+else:
+self.
+Tree [self._
+NodeAccess
+_NumberNodes] = NewNode
+= self._FirstNode
+Direction = ""
+while (NodeAccess != -1):
+Previous = NodeAccess
+if NewNode.GetData () < self.
+Tree [NodeAccess].GetData():
+NodeAccess = self
+Direction = "left" Tree [NodeAccess]. GetLeft ()
+elif NewNode. GetData () > self._Tree [NodeAccess] .GetData ():
+NodeAccess
+= self.
+Tree [NodeAccess]. GetRight ()
+Direction = "right"
+¡f (Direction == "left"):
+@156 01f IIc/Previous| Sctleft (self. _NumberNodes)
+self._
+Tree[Previous].Setleft(self. NumberNodes)
+self._
+Tree [Previous].SetRight (self. NumberNodes)
+self.
+NumberNodes = self. NumberNodes + 1
+© Cambridge University Press & Assessment 2024
+Page 23 of 39
+
+--- Page 24 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+2(b)(iii)
+May/June 2024
+Marks
+4
+1 mark each
+•
+Method header (and end) with no parameter and if no nodes output "No nodes"
+(otherwise) Loop from index 0 to NumberNodes (or equivalent)...
+...outputting LeftPointer, Data then RightPointer
+...using get methods
+e.g.
+public void OutputTree () {
+if (NumberNodes == 0) {
+System.out.println("No nodes");
+}elsel
+for (Integer x = 0; x < NumberNodes; x++) {
+System.out.println (Tree[x].GetLeft ()
++ "" + Tree[x]. GetData () + "
+Tree[x]. GetRight ());
+VB.NET
+Sub OutputTree ()
+If NumberNodes = 0 Then
+Console.WriteLine("No nodes")
+For x = 0 To NumberNodes - 1
+Console.WriteLine (Tree(X) .GetLeft () & " " & Tree (X). GetData () & " "
+Tree (x). GetRight ())
+Next
+End If
+End Sub
+© Cambridge University Press & Assessment 2024
+Page 24 of 39
+
+--- Page 25 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Marks
+Question
+2(b)(iii)
+Python
+def OutputTree (self) :
+if self.
+NumberNodes
+== 0:
+print ("No nodes")
+for x in range (0, self.
+NumberNodes):
+print (self.
+Tree [x]. GetLeft (),
+_Tree[x]. GetRight ())
+", self._
+Tree[x]. GetData (), "
+2(c)(i)
+1 mark for
+Instance of TreeClass created with identifier TheTree
+Java
+public static void main (String argsl]) {
+TreeClass TheTree = new
+TreeClass ();
+}
+VB.NET
+Sub Main (args As String())
+Dim TheTree As TreeClass = New
+End sub
+TreeClass ()
+Python
+TheTree = TreeClass ()
+1
+© Cambridge University Press & Assessment 2024
+Page 25 of 39
+
+--- Page 26 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Question
+2(c)(ii)
+Marks
+4
+1 mark each
+•
+•
+•
+•
+Creating one instance of Node with one correct value (e.g. 10)
+Calling InsertNode for TheTree for seven new Node
+All seven nodes created and inserted in order
+Calling OutputTree () for the tree created
+Java
+TreeClass TheTree = new TreeClass () ;
+TheTree. InsertNode (new Node (10));
+TheTree. InsertNode (new Node (11)) ;
+TheTree. InsertNode (new Node (5)) ;
+TheTree. InsertNode (new Node (1));
+TheTree. InsertNode (new Node (20)) ;
+TheTree. InsertNode (new Node (7)) ;
+TheTree. InsertNode (new Node (15)) ;
+TheTree. OutputTree ();
+VB.NET
+Dim TheTree As TreeClass = New
+TreeClass ()
+TheTree. InsertNode (New Node (10))
+TheTree. InsertNode (New Node (11))
+TheTree. InsertNode (New Node (5))
+TheTree. InsertNode (New Node (1))
+TheTree. InsertNode (New Node (20))
+TheTree. InsertNode (New Node (7))
+TheTree. InsertNode (New Node (15))
+TheTree. OutputTree ()
+© Cambridge University Press & Assessment 2024
+Page 26 of 39
+
+--- Page 27 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Marks
+Question
+2 (c)(ii)
+2(c)(iii)
+Python
+= TreeClass ()
+TheTree. InsertNode (Node (10))
+TheTree. InsertNode (Node (11))
+TheTree. InsertNode (Node (5))
+TheTree. InsertNode (Node (1))
+TheTree. InsertNode (Node (20))
+TheTree. InsertNode (Node (7))
+TheTree. InsertNode (Node (15))
+TheTree. OutputTree ()
+1 mark for correct output e.g.
+2
+-1
+3
+-1
+6
+- 1
+- 1
+10
+11
+1
+4
+5
+5
+1
+20
+7
+15
+-1
+-1
+- 1
+-1
+1
+© Cambridge University Press & Assessment 2024
+Page 27 of 39
+
+--- Page 28 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(a)
+May/June 2024
+Marks
+1
+1 mark for
+• NumberArray declared (in main) with the 7 correct integer values in the correct order
+Integer|] NumberArray = new Integer[7];
+NumberArray [0] = 100;
+NumberArray [1]
+= 85;
+NumberArray [2]
+= 644;
+NumberArray [3]
+NumberArray[4]
+NumberArray [5]
+NumberArray [6]
+VB.NET
+Dim NumberArray (7)
+As Integer
+NumberArray (0)
+= 100
+NumberArray (1)
+NumberArray (2)
+= 644
+NumberArray (3)
+= 22
+NumberArray (4)
+= 15
+NumberArray (5)
+NumberArray (6) = 1
+Endsub
+Python
+NumberArray = 1100,
+85, 644, 22, 15, 8, 1]
+© Cambridge University Press & Assessment 2024
+Page 28 of 39
+
+--- Page 29 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(b)(i)
+May/June 2024
+Marks
+4
+1 mark each
+:
+:
+Recursive function header (and end where appropriate) taking only 2 parameters with a recursive call
+Correct base case and return
+Correct while loop control and the loop
+All correct and structure followed
+public static Integer|| RecursiveInsertion(Integer|| IntegerArray, Integer NumberElements) {
+Integer LastItem;
+Integer CheckItem;
+if (NumberElements <= 1) {
+return IntegerArray;
+Jelse!
+RecursiveInsertion (IntegerArray, NumberElements - 1);
+LastItem
+= IntegerArray[NumberElements - 1];
+CheckItem = NumberElements - 2;
+Boolean LoopAgain = true;
+if (CheckItem < 0) {
+LoopAgain = false;
+Jelse if (IntegerArray [CheckItem] < LastItem) {
+LoopAgain = false;
+while (LoopAgain) {
+IntegerArray [CheckItem + 1] = IntegerArray[CheckItem];
+CheckItem = CheckItem - 1;
+if (CheckItem < 0){
+LoopAgain = false;
+Jelse if (IntegerArray [CheckItem] < LastItem) {
+LoopAgain = false;
+© Cambridge University Press & Assessment 2024
+Page 29 of 39
+
+--- Page 30 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Question
+3(b) (i)
+Marks
+IntegerArray[CheckItem + 1] = LastItem;
+return
+IntegerArray;
+}
+VB.NET
+Function
+RecursiveInsertion (IntegerArray, NumberElements)
+Dim LastItem, CheckItem
+As Integer
+If NumberElements <= 1 Then
+Return
+IntegerArray
+Else
+RecursiveInsertion (IntegerArray, NumberElements - 1)
+LastItem
+= IntegerArray (NumberElements - 1)
+CheckItem = NumberElements - 2
+End
+If
+Dim LoopAgain As Boolean = True
+If CheckItem < 0 Then
+LoopAgain
+Elself IntegerArray (CheckItem) < LastItem Then
+LoopAgain = False
+End If
+While LoopAgain
+IntegerArray (CheckItem † 1) = IntegerArray (CheckItem)
+CheckItem = CheckItem - 1
+If CheckItem < 0 Then
+LoopAgain = False
+Elself IntegerArray (CheckItem) < LastItem Then
+LoopAgain = False
+End While
+IntegerArray(CheckItem † 1) = LastItem
+Return IntegerArray
+End Function
+© Cambridge University Press & Assessment 2024
+Page 30 of 39
+
+--- Page 31 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Question
+3(b)(i)
+Marks
+Python
+def RecursiveInsertion (IntegerArray, NumberElements) :
+if NumberElements <= 1:
+return
+IntegerArray
+RecursiveInsertion (IntegerArray, NumberElements - 1)
+LastItem = IntegerArray [NumberElements - 1]
+CheckItem = NumberElements - 2
+LoopAgain = True
+if CheckItem < 0:
+LoopAgain = False
+elif IntegerArray[CheckItem]
+< LastItem:
+LoopAgain
+= False
+while (LoopAgain):
+IntegerArray[CheckItem + 1] = IntegerArray[CheckItem]
+CheckItem = CheckItem - 1
+if CheckItem < 0:
+LoopAgain = False
+elif IntegerArray[CheckItem] < LastItem:
+LoopAgain = False
+IntegerArray[CheckItem + 1] = LastItem
+return IntegerArray
+© Cambridge University Press & Assessment 2024
+Pade 31 of 39
+
+--- Page 32 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(b)(ii)
+May/June 2024
+Marks
+2
+1 mark each
+:
+Calling Recursive Insertion () with array and number of elements as parameters
+Outputting "recursive" and then each element in returned array
+e.g.
+Integer|| SortedArray
+= new Integer [7];
+SortedArray = RecursiveInsertion (NumberArray, 7);
+System.out.println ("Recursive");
+for (Integer x = 0; x < 7; xt+) {
+System.out.println (SortedArray[x]);
+}
+VB.NET
+SortedArray
+= RecursiveInsertion (NumberArray, 7)
+Console. Writeline ("Recursive")
+For x = 0 To 6
+Console.Writeline (SortedArray (x))
+Next x
+Python
+SortedArray = RecursiveInsertion (NumberArray, len (NumberArray))
+print ("Recursive", SortedArray)
+3(b)(iii)
+1 mark for screenshot with:
+Recursive
+1
+8
+15
+22
+85
+100
+644
+© Cambridge University Press & Assessment 2024
+Page 32 of 39
+1
+
+--- Page 33 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Question
+3 (c)(i)
+Marks
+4
+1 mark each
+•
+•
+Iterative insertion algorithm header (and end)
+and taking array parameter (minimum)
+and returning the sorted array
+External loop while there are still elements left (e.g. NumberElements > 0)..
+... internal loop ...
+... and selection accurate
+public static Integer|| IterativeInsertion(Integer|| IntegerArray, Integer NumberElements) {
+Integer LastItem;
+Integer CheckItem;
+while (NumberElements > 0) {
+LastItem = IntegerArray[NumberElements - 1];
+CheckItem = NumberElements - 2;
+Boolean LoopAgain = true;
+if (CheckItem < 0) {
+LoopAgain = false;
+}else if (IntegerArray [CheckItem] < LastItem) {
+LoopAgain = false;
+while (LoopAgain) {
+IntegerArray [CheckItem † 1] = IntegerArray[CheckItem];
+CheckItem = CheckItem - 1;
+if (CheckItem < 0) {
+LoopAgain = false;
+Jelse if (IntegerArray[CheckItem] < LastItem) {
+LoopAgain = false;
+}
+IntegerArray[CheckItem + 1] = LastItem;
+NumberElements = NumberElements - 1:
+© Cambridge University Press & Assessment 2024
+Page 33 of 39
+
+--- Page 34 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Question
+3(c) (i)
+Marks
+return IntegerArray;
+}
+VB.NET
+Function IterativeInsertion (IntegerArray, NumberElements)
+Dim LastItem, CheckItem As Integer
+While NumberElements > 0
+LastItem = IntegerArray (NumberElements - 1)
+CheckItem = NumberElements - 2
+Dim LoopAgain As Boolean = True
+If CheckItem < 0 Then
+LoopAgain
+= False
+Elself IntegerArray (CheckItem) < LastItem Then
+LoopAgain = False
+While LoopAgain
+IntegerArray (CheckItem † 1) = IntegerArray (CheckItem)
+= CheckItem - 1
+If CheckItem < 0 Then
+LoopAgain = False
+Elself IntegerArray (CheckItem)
+<= LastItem Then
+LoopAgain = False
+End If
+End while
+IntegerArray (CheckItem + 1) = LastItem
+NumberElements = NumberElements - 1
+End While
+Return IntegerArray
+End Function
+© Cambridge University Press & Assessment 2024
+Page 34 of 39
+
+--- Page 35 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Question
+3(c) (i)
+Marks
+Python
+IterativeInsertion (IntegerArray, NumberElements) :
+while NumberElements > 0:
+LastItem = IntegerArray[NumberElements - 1]
+CheckItem = NumberElements - 2
+LoopAgain = True
+if CheckItem < 0:
+LoopAgain = False
+elif IntegerArray[CheckItem] < LastItem:
+LoopAgain = False
+while (LoopAgain):
+IntegerArray[CheckItem + 1] = IntegerArray[CheckItem]
+CheckItem
+= CheckItem - 1
+if CheckItem < 0:
+LoopAgain = False
+elif IntegerArray[CheckItem] <= LastItem:
+LoopAgain
+= False
+IntegerArray[CheckItem + 1] = LastItem
+NumberElements = NumberElements - 1
+return IntegerArray
+© Cambridge University Press & Assessment 2024
+Pade 35 of 39
+
+--- Page 36 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(с)(ii)
+May/June 2024
+Marks
+1
+1 mark each
+Calling IterativeInsertion () with original unsorted array
+and outputting "Iterative"
+and outputting the content of the returned array
+Integer [l
+Sorted2Array
+Integer [7];
+Sorted2Array = IterativeInsertion (NumberArray, 7);
+System.out.println ("Iterative");
+for (Integer x = 0; x
+< 7; x++) {
+System.out.println (Sorted2Array[x]);
+3(c)(iii)
+VB.NET
+Sorted2Array = IterativeInsertion (NumberArray, 7)
+Console.WriteLine("Iterative")
+For x =
+0 To 6
+Console.Writeline (Sorted2Array (x))
+Next x
+Python
+Sorted2Array = IterativeInsertion (NumberArray, len (NumberArray))
+print("Iterative", Sorted2Array)
+1 mark for screenshot showing:
+Iterative
+1 8 15 22 85 100 644
+1
+© Cambridge University Press & Assessment 2024
+Page 36 of 39
+
+--- Page 37 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(d) (i)
+May/June 2024
+Marks
+6
+1 mark each to max 6
+•
+•
+•
+•
+•
+Recursive function BinarySearch taking 4 parameters
+Suitable base case (e.g. First > Last) ...
+... returning - 1
+Calculating integer middle element
+Comparing ToFind with Middle element
+and returning Middle if equal
+If ToFind « Middle, recursive call with Last as Middle - 1
+If ToFind > Middle, recursive call with First as Middle
++ 1
+Java
+Integer ToFind) {
+Integer Middle;
+if (First > Last) {;
+return -1;
+}elsel
+Middle = (Last
+public static Integer BinarySearch(Integer|| IntegerArray, Integer First, Integer last,
++ First) / 2;
+if (IntegerArray [Middlel. equals (ToFind)) {
+return Middle;
+lelse if (IntegerArray[Middle] > ToFind) {
+return BinarySearch (IntegerArray, First, Middle - 1, ToFind);
+}elsel
+return BinarySearch (IntegerArray, Middle + 1, Last, ToFind);
+}
+}
+}
+© Cambridge University Press & Assessment 2024
+Page 37 of 39
+
+--- Page 38 ---
+9618/42
+Question
+3(d) (i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2024
+Marks
+VB.NET
+Function BinarySearch (IntegerArray, First, Last, ToFind)
+Dim Middle As Integer
+If First > Last Then
+Return -1
+Middle = (Last + First) \ 2
+If IntegerArray (Middle) = ToFind Then
+Return Middle
+ElseIf IntegerArray (Middle) > ToFind Then
+Return BinarySearch (IntegerArray, First, Middle - 1, ToFind)
+Else
+Return BinarySearch (IntegerArray, Middle † 1, Last, ToFind)
+End If
+End If
+End Function
+Python
+def BinarySearch (IntegerArray, First, Last, ToFind) :
+if First > Last:
+return -1
+Middle = int|(Last + First) / 2)
+if IntegerArray[Middle] == ToFind:
+return Middle
+elif IntegerArray [Middle] > ToFind:
+return BinarySearch (IntegerArray, First, Middle - 1, ToFind)
+else:
+return BinarySearch (IntegerArray, Middle + 1, Last, ToFind)
+© Cambridge University Press & Assessment 2024
+Page 38 of 39
+
+--- Page 39 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(d)(ii)
+May/June 2024
+Marks
+2
+1 mark each
+• •
+Calling BinarySearch function with sorted array, 0, 6 (/len (array) - 1), 644 as parameters
+Checking return value and outputting "Not found" if -1 and returned index otherwise
+Java
+Position
+= BinarySearch (Sorted2Array, 0, 6, 644) ;
+if (Position == -1) {
+System.out.println("Not found");
+}else!
+System.out.println (Position);
+}
+VB.NET
+Position
+= BinarySearch (Sorted2Array, 0, 6, 644)
+If Position = -1 Then
+Console Writeline ("Not found")
+Else
+Console. Writeline (Position)
+End If
+3(d)(iii)
+Position = BinarySearch (Sorted2Array, 0, len (NumberArray)-1, 644)
+if Position == -1:
+print ("Not found")
+else:
+print (Position)
+1 mark for screenshot showing found in index 6
+e.g.
+Recursive [1,
+8, 15, 22, 85, 100, 644]
+Iterative [1, 8, 15, 22, 85, 100, 644]
+6
+1
+© Cambridge University Press & Assessment 2024
+Page 39 of 39

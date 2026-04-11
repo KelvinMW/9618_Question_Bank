@@ -1,0 +1,505 @@
+--- Page 1 ---
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+MARK SCHEME
+Maximum Mark: 75
+9618/12
+October/November 2021
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2021 series for most
+Cambridge IGCSE™
+', Cambridge International A and AS Level components and some Cambridge O Level
+This document consists of 10 printed pages.
+© UCLES 2021
+[Turn over
+
+--- Page 2 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2021
+Page 2 of 10
+
+--- Page 3 ---
+9618/12
+Question
+1
+Question
+2(a)
+© UCLES 2021
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for 3 correct lines only from Data Security
+1 mark for 2 correct lines only from Data Integrity
+Firewall
+October/November
+2021
+Marks
+2
+Double entry
+Data Security
+Presence check
+Access rights
+Data Integrity
+Password
+Answer
+1 mark for each completely correct truth table
+NOR
+A
+Output
+Marks
+2
+1
+1
+NAND
+A
+0
+0
+1
+1
+B
+0
+1
+1
+B
+0
+1
+0
+1
+Output
+1
+1
+1
+Page 3 of 10
+
+--- Page 4 ---
+9618/12
+Question
+2(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+Marks
+2
+1 mark for each correct bullet point
+:
+NOT (A AND B) I/ A NAND B
+NOT the result AND C // the result NAND C
+A
+B
+→>o
+Dox
+OR
+- x
+Question
+3(a)
+3(b)(i)
+3(b) (ii)
+Answer
+1 mark for each bullet point to max 3
+••.
+The microphone has a diaphragm / ribbon
+The incoming sound waves cause vibrations of the diaphragm
+... causing a coil to move past a magnet // causing a magnet to move
+past a coil (dynamic microphone) |/ changing the capacitance (condenser
+microphone) |/ deforms the crystal (crystal microphone)
+•
+An electrical signal is produced
+1 mark for identification of star topology
+1 mark for justification
+Devices are connected directly to the router independently
+Il all devices are only connected to the router
+1 mark for each correct function to max 3
+•
+•
+•
+To receive packets from devices or the Internet
+To forward / route packets to the destination
+To find the destination of the packet
+To assign / allocate private IP addresses to devices on LAN
+To store / update / maintain a routing table
+To find the most efficient path to the destinatior
+To maintain a table of MAC and IP addresse
+Marks
+3
+2
+3
+© UCLES 2021
+Page 4 of 10
+
+--- Page 5 ---
+9618/12
+Question
+4(a)
+4(b)
+4(c)
+4(d)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+Marks
+1
+1
+1
+1
+4(e) (i)
+4(e) (ii)
+205
+-51
+CD
+1 mark for:
+The denary value in each group of 4 bits is greater than 9
+I/ the denary value in each nibble is greater than 9
+1 mark for working, 1 mark for answer
+0011 1101
++0010 1101
+0110 1010
+11111
+1 mark for working, 1 mark for answer
+0011 1101
++1101 0011 (two's complement)
+0001 0000
+1111 111
+2
+2
+Question
+5(a)
+Answer
+1 mark for each description, 1 mark for each valid example
+Term
+Property
+Drawing
+list
+Description
+data about the shapes
+Il defines one aspect of the
+appearance of the drawing
+object
+the list of shapes involved in
+Il a list that stores the
+command/description required
+to draw each object
+Example from logo
+biack line // white fil / black fill
+Isolid (line) // font of letter //
+colour of triangle
+e.g.
+triangle // capital letter R //
+rectangle // line
+Marks
+4
+© UCLES 2021
+Page 5 of 10
+
+--- Page 6 ---
+9618/12
+Question
+5(b)(i)
+5(b) (ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+Marks
+1 mark for each bullet point to max 2 for each difference
+•
+•
+Bitmap made up of pixels // bitmap is made of colours stored for
+individual pixels
+Vector graphic store a set of instructions about how to draw the shape
+••
+When bitmap is enlarged the pixels get bigger and it pixelates
+When vector is enlarged it is recalculated and does not pixelate
+•
+•
+:
+Bitmap files are usually bigger than vector graphics files because of the
+need to store data about each pixel
+Vector graphics have smaller file size because they contain just the
+instructions to create the shapes
+Bitmap images can be compressed with significant reduction in file size
+Vector graphic images do not compress well because of little redundant
+1 mark for each bullet point to max 2 for each method
+•
+Reduce bit depth
+... reduces the number of bits per colour / pixel which means each pixel
+has fewer bits
+:
+Reduce colour palette // reduce number of colours
+... fewer colours mean fewer bits needed to store each colour
+Reduce image resolution
+....fewer pixels per unit measurement means less binary to store
+Answer
+4
+4
+Question
+6(a)(i)
+Marks
+2
+1 mark for 1 tick in the correct place
+2 marks for all 3 ticks correct
+Task
+Remove any partial key dependencies
+Remove any repeating groups of attributes
+Remove any non-key dependencies
+Normalisation stage
+ONF to
+1NF to 2NF to
+INF
+2NF
+3NF
+© UCLES 2021
+Page 6 of 10
+
+--- Page 7 ---
+9618/12
+Question
+6(a)(ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+Marks
+3
+1 mark for each correct relationship
+PLANT
+CUSTOMER
+PURCHASE_ITEM
+A
+PURCHASE
+6(b)
+6(c)(i)
+6(c) (ii)
+1 mark for description of purpose
+•
+Stores metadata about the database
+1 mark for each example of contents to max 2
+e.g.
+table name
+validation rules
+data types
+•
+primary keys // foreign keys
+relationships
+1 mark for each correctly completed space
+SELECT SUM (Quantity)
+FROM PURCHASE ITEM
+WHERE PurchaseID = "3011A";
+1 mark per bullet point
+ALTER TABLE PURCHASE
+• Suitable data type, e.g. DATE
+ALTER TABLE PURCHASE
+ADD OrderDate DATE;
+3
+4
+3
+© UCLES 2021
+Page 7 of 10
+
+--- Page 8 ---
+9618/12
+Question
+7(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark per pair of rows (shaded & unshaded)
+Event
+October/November
+2021
+Marks
+3
+7(b)
+7(c)
+Hardware Software
+Interrupt
+Interrupt
+Buffer full
+1
+Printer is out of paper
+User has pressed a key on the keyboard
+r
+1
+Division by zero
+Power failure
+1
+Stack overflow
+1 mark for each bullet point to max 4
+•
+•
+•
+•
+•
+Storage space is divided into file allocation units
+Space is allocated to particular files
+Maintains / creates directory structures
+Specifies the logical method of file storage (e.g. FAT or NTFS)
+Provides file naming conventions
+Controls access // implements access rights // implements password
+protection // Makes file sharing possible
+Specifies tasks that can be performed on a file (e.g. open, close, delete,
+copy, create, move etc.)
+1 mark for identifying program 1 mark for description, max 2 per program
+e.g.
+•
+Defragmentation
+Less time is taken to access files because each one is contiguous so
+there is less head movement
+..
+•
+Virus checker
+makes more RAM available for programs to run
+... because it removes software that might be taking up memory /
+replicating
+•
+•
+Disk repair / Disk contents analysis
+preventing bad sectors being used because it identifies / marks them
+reduces access times by optimising storage
+•
+Disk/system clean up
+releases storage by removing unwanted / temporary files
+4
+4
+© UCLES 2021
+Page 8 of 10
+
+--- Page 9 ---
+9618/12
+Question
+8(a)(i)
+8(a)(ii)
+8(b)(i)
+8(b)(ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for each bullet point to max 2 for each register
+MAR
+• Stores the next address to be fetched
+... held in the Program Counter (PC)
+The data at this address is then fetched
+MDR
+:
+Stores the data from the address pointed to by the MAR
+The data in it is copied to the Current Instruction Register (CIR)
+1 mark for a correct register
+Program Counter (PC)
+Current Instruction Register (CIR)
+Status register
+Interrupt register
+1 mark for each correct answer
+Current contents of
+the ACC
+01010101
+Instruction
+XOR 101
+11110000
+00001111
+11111111
+AND 104
+LSL #4
+OR 102
+New contents of
+the ACC
+1010 0101
+1111 0000
+1111 0000
+1111 1111
+1 mark for each correct instruction
+Instruction Group
+Data movement
+Input and output of data
+Arithmetic Operations
+Unconditional and conditional instructions
+Instruction
+LDM #2
+Compare instructions
+IN / OUT
+INC ACC / INC IX
+JPN 100 / JMP 100
+CMP 100
+October/November
+2021
+Marks
+4
+1
+4
+4
+© UCLES 2021
+Page 9 of 10
+
+--- Page 10 ---
+9618/12
+Question
+8(b) (iii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+Marks
+1 mark for name, 1 mark for description
+••
+Indirect addressing
+the address to be used is at the given address
+••
+Relative addressing
+the address to be used is an offset number of locations away, relative to
+the address of the current instruction
+:
+Indexed addressing
+form the address from the given address plus the contents of the index
+register
+2
+© UCLES 2021
+Page 10 of 10

@@ -1,0 +1,421 @@
+--- Page 1 ---
+5 Cambridge Assessmen
+shes International Educatior
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+9618/13
+October/November 2021
+1 hour 30 minutes
+J <
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided.
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages. Any blank pages are indicated
+DC (RW/FC) 206387/2
+© UCLES 2021
+[Turn over
+
+--- Page 2 ---
+2
+(a) Draw one line from each binary value to its equivalent (same) value on the right.
+Binary value
+1 kibibyte
+8 bits
+1 gigabyte
+8000 bits
+1 byte
+1000 kilobytes
+1 kilobyte
+1024 mebibytes
+1 gibibyte
+8192 bits
+1 megabyte
+1 mebibyte
+(b) (i) Perform the following binary addition. Show your working.
+10101010
++ 00110111
+(ii)
+State how an overflow can occur when adding two binary integers.
+(c) Convert the hexadecimal value FO into denary.
+© UCLES 2021
+9618/13/0/N/21
+15]
+12]
+[1]
+[1]
+
+--- Page 3 ---
+3
+2 Xanthe wants to maintain the integrity and security of data stored on her computer.
+(a) Explain the difference between data security and data integrity.
+12]
+(b) Xanthe uses both data validation and data verification when entering data on her computer.
+(i) Describe how data validation helps to protect the integrity of the data. Give an example
+in your answer.
+Description
+Example
+12]
+(ii) Describe how data verification helps to protect the integrity of the data. Give an example
+in your answer.
+Description
+Example
+12]
+(c) Two malware threats are spyware and viruses.
+Give two similarities and one difference between spyware and a virus.
+Similarity 1
+Similarity 2
+Difference
+[3]
+© UCLES 2021
+9618/13/0/N/21
+[Turn over
+
+--- Page 4 ---
+4
+3 A logic circuit is shown:
+A-
+C
+(a) Write the logic expression for the logic circuit.
+(b) Complete the truth table for the given logic circuit.
+A
+B
+C
+Working space
+0
+0
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+1
+© UCLES 2021
+9618/13/0/N/21
+.......... [3]
+12]
+
+--- Page 5 ---
+5
+(c) Identify one logic gate not used in the given logic circuit. Draw the symbol for the logic gate
+and complete its truth table.
+Logic gate:
+Symbol:
+Truth table:
+A
+Output
+1
+1
+1
+0
+1
+[3]
+© UCLES 2021
+9618/13/0/N/21
+[Turn over
+
+--- Page 6 ---
+6
+Francis is starting his first job as a software developer for a multinational company.
+(a) Francis has been advised to join a professional ethical body.
+Describe the benefits to Francis of joining a professional ethical body.
+13]
+(b) Francis is shown the software he will be working on. He is unfamiliar with the Integrated
+Development Environment (IDE) he is required to use.
+(i) Describe the ways in which Francis can act ethically in this situation.
+12]
+(ii) A typical IDE provides debugging tools to support the testing of a program.
+Identify three other tools or features found in a typical IDE to support the writing of the
+program.
+1
+2 ...
+3
+[3]
+(c) Francis is part of a team writing a program. He finds an error in part of the program that
+has already been tested. He decides not to tell anyone because he is worried about the
+consequences.
+Explain the reasons why Francis acted unethically in this situation.
+[2]
+© UCLES 2021
+9618/13/0/N/21
+
+--- Page 7 ---
+7
+(d) Francis's team use language translators.
+Complete the descriptions of language translators by writing the missing words.
+usually used when a high-level language program is
+complete. They translate all the code at the same time and then run the program.
+They produce
+files that can be run without the source code.
+translate one line of a high-level language program at a time,
+and then run that line of code. They are most useful while developing the programs because
+errors can be corrected and then the program continues from that line.
+Assemblers are used to translate assembly code into ...........
+[4]
+© UCLES 2021
+9618/13/0/N/21
+[Turn over
+
+--- Page 8 ---
+8
+5 Javier owns many shops that sell cars. He employs several managers who are each in charge of
+one or more shops. He uses the relational database CARS to store the data about his business.
+Part of the database is shown:
+SHOP (ShopID, ManagerID, Address, Town, TelephoneNumber)
+MANAGER (ManagerID, FirstName, LastName, DateOfBirth, Wage)
+CAR (RegistrationNumber, Make, Model, NumberOfMiles, ShopID)
+(a) Tick (r) one box in each row to identify whether each field is a primary key or a foreign key.
+Table
+Field name
+Primary key
+Foreign key
+MANAGER
+ManagerID
+SHOP
+ManagerID
+CAR
+RegistrationNumber
+CAR
+Shop ID
+12]
+(b) Describe the ways in which access rights can be used to protect the data in Javier's database
+from unauthorised access.
+13]
+© UCLES 2021
+9618/13/0/N/21
+
+--- Page 9 ---
+9
+(c) Javier uses Data Definition Language (DDL) and Data Manipulation Language (DML)
+statements in his database
+(i) Complete the following DML statements to return the number of cars for sale in each
+shop.
+SELECT COUNT (...
+FROM
+......
+.... ShopID
+13]
+(ii) Complete the DML statement to include the following car in the table CAR.
+Field
+RegistrationNumber
+Make
+Model
+NumberOfMiles
+ShopID
+Data
+123AA
+Tiger
+Lioness
+10500
+12BSTREET
+.... CAR
+("12ЗAA", "Tiger"
+, "Lioness"
+,10500, "12BSTREET")
+12]
+© UCLES 2021
+9618/13/0/N/21
+[Turn over
+
+--- Page 10 ---
+BLANK PAGE
+© UCLES 2021
+9618/13/0/N/21
+
+--- Page 11 ---
+11
+(a) There are two errors in the following register transfer notation for the fetch-execute cycle.
+1 MAR <[PC]
+2 PC < [PC] - 1
+3 MDR < [MAR]
+4 CIR < [MDR]
+Complete the following table by:
+• identifying the line number of each error
+describing the error
+writing the correct statement.
+Line
+number
+Description of the error
+Correct statement
+14]
+© UCLES 2021
+9618/13/0/N/21
+[Turn over
+
+--- Page 12 ---
+12
+(b) The following table shows part of the instruction set for a processor. The processor has one
+general purpose register, the Accumulator (ACC), and an Index Register (IX).
+Instruction
+Opcode
+Operand
+LDM
+LDD
+Explanation
+Immediate addressing. Load the number n to ACC
+<address>
+Direct addressing. Load the contents of the location at the given address to
+ACC
+<address>
+STO
+INC
+<register>
+CMP <address>
+JPN
+<address>
+JMP
+<address>
+Store the contents of ACC at the given address
+Add 1 to the contents of the register (ACC or IX)
+Compare the contents of ACC with the contents of <address>
+Following a compare instruction, jump to <address> if the compare was False
+Jump to the given address
+IN
+OUT
+Key in a character and store its ASCIl value in ACC
+Output to the screen the character whose ASCIl value is stored in ACC
+END
+XOR
+XOR <address>
+AND
+• #n
+AND
+<address>
+OR
+• #n
+Return control to the operating system
+Bitwise XOR operation of the contents of ACC with the operand
+Bitwise XOR operation of the contents of ACC with the contents of <address>
+Bitwise AND operation of the contents of ACC with the operand
+Bitwise AND operation of the contents of ACC with the contents of <address>
+Bitwise OR operation of the contents of ACC with the operand
+OR
+LSL
+<address>
+Bitwise OR operation of the contents of ACC with the contents of <address>
+#n
+Bits in ACC are shifted logically n places to the left. Zeros are introduced on
+the right hand end
+LSR
+#n
+Bits in ACC are shifted logically n places to the right. Zeros are introduced on
+the left hand end
+<address> can be an absolute or symbolic address
+# denotes a denary number, e.g. #123
+B denotes a binary number, e.g. BO1001101
+The current contents of main memory are shown:
+Address
+100
+101
+102
+103
+104
+Data
+00001111
+11110000
+01010101
+11111111
+00000000
+© UCLES 2021
+9618/13/0/N/21
+
+--- Page 13 ---
+13
+Each row of the following table shows the current contents of ACC in binary and the instruction
+that will be performed on those contents.
+Complete the table by writing the new contents of the ACC after the execution of each
+instruction.
+Current contents of the ACC
+Instruction
+New contents of the ACC
+11111111
+OR 101
+00000000
+XOR #15
+10101010
+LSR #2
+01010101
+AND 104
+[4]
+© UCLES 2021
+9618/13/0/N/21
+Turn over
+
+--- Page 14 ---
+14
+7 Bobby is recording a sound file for his school project.
+(a) He repeats the recording of the sound several times, with a different sample rate each time.
+(i) Describe the reasons why the sound is closer to the original when a higher sample rate
+is used.
+12]
+(ii) Describe the reasons why the sound file size increases when a higher sample rate is
+used.
+12]
+(b) Bobby wants to email the sound file to his school email address. He compresses the file
+before sending the email.
+(i) Explain the reasons why Bobby compresses the sound file.
+12]
+(ii) Bobby uses lossless compression.
+Describe how lossless compression can compress the sound file.
+.... [2]
+© UCLES 2021
+9618/13/0/N/21
+
+--- Page 15 ---
+15
+8 A school is setting up a network within one of its buildings.
+(a) State whether the network will be a LAN (local area network) or a WAN (wide area network).
+Justify your choice.
+[3]
+(b) One classroom in the building has 30 computers. The computers need to be connected to the
+network. Each computer has a network interface card (NIC).
+Identify two possible devices that can be used to physically connect the 30 computers to the
+rest of the network.
+1
+2
+12]
+(c) The school has several laptops. Each laptop has a Wireless Network Interface Card (WNIC).
+Describe the functions of a Wireless Network Interface Card
+[4]
+© UCLES 2021
+9618/13/0/N/21
+
+--- Page 16 ---
+16
+BLANK PAGE
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of the Cambridge Assessment Group. Cambridge Assessment is the brand name of the University of
+Cambridge Local Examinations Syndicate (UCLES), which itself is a department of the University of Cambridge.
+© UCLES 2021
+9618/13/0/N/21

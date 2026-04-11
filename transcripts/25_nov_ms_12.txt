@@ -1,0 +1,631 @@
+--- Page 1 ---
+* CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+MARK SCHEME
+Maximum Mark: 75
+9618/12
+October/November 2025
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2025 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+components.
+This document consists of 11 printed pages.
+© Cambridge University Press & Assessment 2025
+[Turn over
+
+--- Page 2 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2025
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level
+descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+•..
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+• marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© Cambridge University Press & Assessment 2025
+Page 2 of 11
+
+--- Page 3 ---
+9618/12
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Annotations guidance for centres
+Examiners use a system of annotations as a shorthand for communicating their marking decisions to
+one another. Examiners are trained during the standardisation process on how and when to use
+annotations. The purpose of annotations is to inform the standard isation and monitoring processes
+and guide the supervising examiners when they are checking the work of examiners within their team.
+The meaning of annotations and how they are used is specific to each component and is understood
+by all examiners who mark the component.
+We publish annotations in our mark schemes to help centres understand the annotations they may
+see on copies of scripts. Note that there may not be a direct correlation between the number of
+annotations on a script and the mark awarded. Similarly, the use of an annotation may not be an
+indication of the quality of the response.
+The annotations listed below were available to examiners marking this component in this series.
+Annotations
+Annotation
+Meaning
+Correct
+Incorrect
+To indicate where a key word/phrase/code is missing.
+Not relevant or used to separate parts of an answer.
+Highlighter
+TV
+REP
+NE
+BOD
+NAQ
+SEEN
+FT
+Indicates a part of the answer that is incorrect.
+To draw attention to a particular aspect or to indicate where parts of an answer
+have been combined.
+Too vague.
+Repetition
+No examples or not enough.
+Benefit of Doubt.
+Not Answered Question.
+Indicates that work or a page has been seen including blank answer spaces and
+blank pages.
+Follow through.
+Ignore
+© Cambridge University Press & Assessment 2025
+Page 3 of 11
+
+--- Page 4 ---
+9618/12
+Question
+1
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+1 mark for 2 or 3 correctly connected verification method boxes, 2 marks for
+all 4 correct
+Marks
+2
+Verification Method
+Use
+Parity byte check
+Checksum
+Data transfer
+Visual check
+Data entry
+Parity block
+check
+Question
+2(a)
+Answer
+1 mark for each correct row, max 4 marks
+Term
+Copyright
+Open Source
+(Initiative)
+Shareware
+Software
+Licence
+Description
+Gives the holder the legal right of ownership of
+intellectual property
+Software can be freely copied, distributed or
+adapted
+Gives the user a trial period / limited functionality
+before a payment/sign up may be required
+A (legal) agreement that defines the rights and
+terms of usage for the software
+Marks
+4
+© Cambridge University Press & Assessment 2025
+Page 4 of 11
+
+--- Page 5 ---
+9618/12
+Question
+2(b)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+1 mark per bullet point, max 2 marks
+Marks
+2
+eig.
+to create a safe, respectable and professional working environment for all
+employees
+•
+•
+•
+•
+•
+to ensure that employees understand the expectations
+... and the consequences of their actions
+to provide a clear outline of what is considered good practice
+so there are clear rules to follow in certain situations
+to protect the reputation of the organisation // maintain public trust
+Answer
+Question
+3(a) (i)
+Marks
+1
+3(a)(ii)
+3(b)
+3(c)
+1 mark
+• The value of the operand is an offset value which is added to another
+base value to give the address from which the contents are loaded to the
+accumulator
+1 mark per bullet point, max 2 marks
+:
+Program counter (PC)
+Memory Data Register (MDR)
+• • •
+Memory Address Register (MAR)
+Current Instruction Register (CIR)
+Status Register
+1 mark for each correct value, max 3 marks
+Instruction
+LDM #98
+LDI 101
+LDX 100
+Value in ACC
+98
+8
+32
+1 mark per bullet point, max 2 marks for each
+Clock Speed:
+• Processor can perform more F-E cycles per second
+• ... so more instructions / data can be processed each second
+Cache Memory:
+• Can store more of the most frequently used instructions
+....which reduces the need to access slower RAM
+2
+3
+4
+© Cambridge University Press & Assessment 2025
+Page 5 of 11
+
+--- Page 6 ---
+9618/12
+Question
+4(a)
+4(b)
+4(c)
+4(d)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+Marks
+1 mark per bullet point, max 2 marks
+2
+•
+The relationship between SHIP and CONTAINER is one-to-many (1:M)
+The primary key ShipID in the SHIP table is linked to the foreign key
+ShipID in the CONTAINER table
+1 mark per bullet point, max 2 marks
+2
+:
+ALTER TABLE statement
+Including the additional field with a suitable field name and suitable field
+type
+Example answer
+ALTER TABLE CONTAINER
+ADD InspectionDate DATE;
+1 mark per bullet point, max 4 marks
+4
+•
+•
+•
+SELECT COUNT statement
+Using the correct tables
+Joining the tables
+The condition for the name
+Example Answer 1:
+SELECT COUNT (ContainerID)
+FROM CONTAINER, SHIP
+WHERE CONTAINER.ShipID = SHIP.ShipID
+AND ShipName = "Caledonia";
+Example Answer 2:
+SELECT COUNT (ContainerID)
+FROM CONTAINER INNER JOIN SHIP
+ON CONTAINER. ShipID = SHIP.ShipID
+WHERE ShipName = "Caledonia";
+1 mark per bullet point, max 2 marks
+2
+•
+To allow the user to create / modify / delete tables // maintain the
+•
+•
+•
+•
+•
+database
+To allow the user to set up / modify relationships
+To allow the user to create a form for data input
+To allow a user to add tools to a form // for example, drop-down boxes /
+buttons etc.
+To allow a user to design a report (to show the output in an organised
+manner)
+To allow a user to add a menu to enable a choice of different actions
+To allow a user to inspect the database contents and metadata
+....by creating and/or running different SQL queries
+© Cambridge University Press & Assessment 2025
+Page 6 of 11
+
+--- Page 7 ---
+9618/12
+Question
+5(a)
+5(b)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+1 mark per bullet point, max 2 marks
+•..
+Covers a small geographical area
+Normally privately owned / dedicated infrastructure
+Can use wired or wireless communication
+1 mark per bullet point, max 2 marks
+:
+All computers directly connected to switch and no other connections
+Switch connected directly to server
+Computer
+Computer
+Computer
+Computer
+Marks
+2
+2
+Computer
+Server
+Switch
+5(c)
+5(d)
+1 mark per bullet point, max 3 marks
+• •
+The sending device sends the packets to the switch
+The switch checks the destination address on each packet
+.... and sends them only to the intended receiver
+1 mark per bullet point, max 3 marks
+•
+The use of CSMACD // Carrier Sense Multiple Access with Collision
+Detection
+:
+The workstations listen to the communication channel
+.... and send data only when there is no data being transmitted / the line is
+idle
+If a collision is detected, transmission is aborted
+...and a jamming signal is sent
+•
+•
+The workstation calculates a random wait time before trying to re-transmit
+The random time is increased if there are multiple collisions
+3
+3
+© Cambridge University Press & Assessment 2025
+Page 7 of 11
+
+--- Page 8 ---
+9618/12
+Question
+5(e)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+Marks
+3
+1 mark for correct threat
+1 mark corresponding description
+1 mark for correct method of prevention
+Threat
+Malware /
+Virus
+Spyware
+Hacking
+Phishing
+Pharming
+Description
+Malicious code that can
+alter/delete files
+Records keystrokes which are
+sent to third party
+Emails supposedly from
+reputable companies are sent to
+trick people into revealing
+personal information
+Users are directed to a bogus
+website that looks legitimate to
+obtain personal information
+Prevention
+Anti-virus // Anti-
+malware // Firewall
+Anti-spyware //
+Firewall // Anti-
+malware
+Authentication //
+Firewall
+Use a spam filter //
+Do not open emails
+from unknown
+sources
+Use a VPN // Anti-
+malware// Do not
+open links or
+download
+attachments
+Question
+6(a)
+Answer
+Marks
+1
+6(b)
+1 mark for correct answer
+Type of compression: lossy
+Justification: There will be fewer samples per second, so data will be
+permanently lost
+// There will be fewer samples per second, so the original sound cannot be re-
+created
+1 mark for correct words in the correct order
+Binary Value
+Word
+0011 1000
+Science
+0011 1100
+is
+0011 1110
+Amazing!
+1
+© Cambridge University Press & Assessment 2025
+Page 8 of 11
+
+--- Page 9 ---
+9618/12
+Question
+6 (c)(i)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+1 mark for correct answer
+Answer
+parity
+bit
+Marks
+1
+6(c) (ii)
+6(d)
+0 1
+1
+1 mark for correct answer
+1
+1 mark for the working
+1 mark for the correct answer
+Working:
+(1000 * 2000 * 16) / (8 * 1000 * 1000)
+/I (1000 * 2000 * 2/ (1000 *1000)
+Answer: 4 megabytes
+1
+1
+1
+1
+parity byte→
+1
+1
+1
+1
+0 °
+1
+1
+1
+Answer
+1
+0
+1
+1 0
+1
+1
+parity
+bit
+1
+1
+111
+2
+Question
+7(a)
+7(b)
+7(c)(i)
+7(c)(ii)
+1 mark for the correct answer
+1100 0000
+1 mark for the correct answer
+8 // 16 // 32 |/ 64
+1 mark for the correct answer
+0001 0000 0100
+1 mark for the correct answer
+68
+Marks
+1
+1
+1
+1
+© Cambridge University Press & Assessment 2025
+Page 9 of 11
+
+--- Page 10 ---
+9618/12
+Question
+8(a)(i)
+8(a)(ii)
+8(b)(i)
+8(b) (ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2025
+Answer
+1 mark per bullet point, max 2 marks
+Marks
+2
+:
+•..
+Cloud storage can be free of charge for a limited amount
+There is no need for personal storage devices
+The data can be accessed from any computer with an internet
+connection
+Cloud data services usually include data backup and recovery services
+It is easier to share data / collaborate with colleagues
+Cloud storage capacity can be quickly and easily increased if needed
+1 mark per bullet point, max 2 marks
+The storage/cloud can only be accessed with an internet connection
+There may be no backups // possibly no control over backups // reliance
+on third party for backups
+•
+Uploading / downloading data could take a long time
+• Potential issues with the cloud storage company impacting access e.g.
+downtime or technical problems
+• Potential compatibility issues if wanting to move the data
+• Limited storage availability without paying extra
+... meaning (possibly) more expensive in the long term
+Possibly security issues
+1 mark per bullet point, max 4 marks
+Methods to determine point of touch (Max 2)
+Resistive // two layers of material make contact and complete a circuit
+Capacitive // contact with the screen creates a change in charge
+Infrared // the beams are broken by the pointing device
+•
+Optical imaging I/ a shadow is created when the surface is touched
+Acoustic pulse // the acoustic wave is absorbed by the pointing device
+Selection from the menu (Max 2)
+The point of touch is used to determine the x and y coordinates
+The menu item corresponding to the coordinate position is recognised
+and the menu item is added to the order
+1 mark per bullet point, max 2 marks
+•
+•
+Disk repair / disk contents analysis
+Back-up software
+2
+4
+2
+Question
+9(a)
+Answer
+Marks
+2
+1 mark per bullet point, max 2 marks
+NOT (A XOR B)
+NAND ((B AND C) OR A)
+X= (NOT (A XOR B)) NAND ((B AND C) OR A)
+// X = ((B AND C) OR A) NAND (NOT (A XOR B))
+© Cambridge University Press & Assessment 2025
+Page 10 of 11
+
+--- Page 11 ---
+9618/12
+Question
+9(b)
+Cambridge International AS & A Level - Mark Scheme October/November
+PUBLISHED
+2025
+Answer
+1 mark for 1 or 2 row numbers correct, 2 marks all three correct
+Row 2
+Row 4
+Row 7
+Marks
+2
+Question
+10(a)
+Answer
+Marks
+4
+10(b)
+10(c)
+1 mark per bullet point, max 4 marks
+Max 2 from each section.
+Interpreter:
+... to test / debug the partially completed program
+... because errors can be corrected and processing continue from where
+the execution stopped // errors can be corrected in real time // errors are
+identified one at a time
+Compiler:
+•
+•
+Use the compiler after the program is complete
+... to create an executable file so source code not seen
+•
+Use the compiler to repeatedly test the same completed section without
+having to re-interpret every time
+1 mark per bullet point, max 2
+•
+•
+•
+The software is free of restrictions
+The software is not necessarily free of charge
+The source code comes with the program // A user can edit the source
+code to add functionality / suit their needs
+•
+Users can share the software with others
+1 mark for a correct answer
+•
+Digital Signature
+2
+1
+Question
+11
+Answer
+1 mark per bullet point, max 3 marks
+Identification: Control system (no mark)
+Justification:
+:
+The system uses an actuator to open or close the doors
+The output / opening the doors allows people to move, which changes the
+input to the sensor
+•
+The system acts autonomously on the feedback from a sensor
+Marks
+3
+© Cambridge University Press & Assessment 2025
+Page 11 of 11

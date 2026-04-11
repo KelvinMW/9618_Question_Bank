@@ -1,0 +1,526 @@
+--- Page 1 ---
+15 Cambridge Assessmen
+International Educatior
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+MARK SCHEME
+Maximum Mark: 75
+9618/11
+October/November 2023
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2023 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+This document consists of 10 printed pages.
+© UCLES 2023
+[Turn over
+
+--- Page 2 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+•
+•
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2023
+Page 2 of 10
+
+--- Page 3 ---
+9618/11
+Question
+1(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Answer
+Marks
+2
+2 marks for all 3 lines correct
+1 mark for 1 line correct
+Term
+drawing list
+drawing object
+property
+Description
+a component created
+using a formula
+defines one characteristic
+of a component
+data required to create all
+components in the
+graphic
+1(b)
+1(c)
+1 mark for the definition
+•
+The number of bits used to represent each colour
+1 mark for each bullet point for the explanation
+•
+Increase in bit depth means the image has a greater range of colours //
+Decrease in bit depth means the image has a smaller range of colours
+•
+Increase in bit depth makes the image closer to the original / more
+realistic // Decrease in bit depth makes the image less like the original /
+less realistic
+1 mark for each bullet point (max 2)
+• •
+Reduced bandwidth usage when transmitting the message
+Reduced transmission time from email client to email server
+Reduced storage space on the email
+Email accounts often have a maximum size for an attachment
+3
+2
+© UCLES 2023
+Page 3 of 10
+
+--- Page 4 ---
+9618/11
+Question
+2(a)
+2(b)
+2(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Answer
+Marks
+1 mark for each bullet point (max 3)
+Receives packets from internet / external network
+Implements a firewall
+Analyses the destination IP address of each packet
+Forwards the packet towards its destination // send packets onto local
+network or external network
+:
+...using the routing table
+Maintains / updates the routing
+Allocates private IP addresses
+Finds the most efficient route to the destination
+:
+Changes the packet format for transmission over the next network //
+Network Address Translation (NAT):NAT is a technique used by routers
+to allow multiple devices in a private local area network (LAN) to share a
+single public IP address.
+Switch: 1 mark for each bullet point (max 1)
+•
+•
+To allow two or more devices to communicate with one another
+To connect individual devices to each other
+To receive transmissions and forward them to their destination
+Wireless Access Point (WAP): 1 mark for each bullet point (max 1)
+•
+..
+To allow connection of devices (to the central device) using radio
+signals / Wi-Fi
+To allow the central device to send / receive radio signals / Wi-Fi signals
+To allow wireless enabled devices to connect to a wired network
+Bridge:1 mark for each bullet point (max 1)
+• .
+To connect two LANs / segments with the same protocol
+To transmit data between two networks with the same protocol
+1 mark for each bullet point (max 2)
+• The students cannot access their files without a reliable internet
+connection
+The amount of space for no payment may be limited so students will have
+to purchase more space if needed
+•
+The students do not have control over the backup (or security) of their
+work // the students are dependent on a third party for the (security and)
+backing up of their work
+3
+3
+2
+© UCLES 2023
+Page 4 of 10
+
+--- Page 5 ---
+9618/11
+Question
+2(d)
+Question
+3(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for each advantage and 1 mark for valid corresponding expansion
+Star topology is more resilient to faults
+:..because there is no siegle cable and leads to less disruption to teaching
+:
+Higher performance as fewer collisions
+....because each device in the classroom is only connected to the switch
+:
+Easier to add new nodes
+....because each device in the classroom connects directly to the switch
+Easier to fault find compared to bus topology
+Answer
+1 mark for each correct relationship or relationships
+1:M between SUPPLIER and ITEM
+1:M between SHOP_ORDER and ORDER_ITEM and M:1 between
+ORDER_ITEM and ITEM
+October/November
+2023
+Marks
+2
+Marks
+3
+SHOP_ORDER
+CUSTOMER
+ORDER ITEM
+V
+SUPPLIER
+ITEM
+3(b)
+1 mark for each bullet point (max 3)
+•.
+Reduced data redundancy
+•
+Improved data integrity / consistency / referential integrity
+•
+Allows for views/ improved privacy
+Allows for program-data independence
+•
+Complex queries can be executed
+3
+© UCLES 2023
+Page 5 of 10
+
+--- Page 6 ---
+9618/11
+Question
+3(c)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Answer
+Marks
+1
+3(с)(ii)
+1 mark for
+CREATE DATABASE SHOP;
+1 mark for each line (max 4)
+SELECT SUM (Quantity)
+FROM ORDER_ITEM, SHOP_ORDER
+WHERE ORDER_ITEM.OrderNo = SHOP_ORDER. OrderNo
+AND SHOP_ORDER. CustomerID = 'HJ231';
+SELECT SUM (Quantity)
+FROM ORDER ITEM (INNER) JOIN SHOP ORDER
+ON ORDER_ITEM. OrderNo = SHOP
+ON OR SOON. COMED 230 de No
+4
+Question
+4(a)
+1 mark for each set of 4 rows (shaded)
+A
+Answer
+B
+C
+Marks
+2
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+© UCLES 2023
+Page 6 of 10
+
+--- Page 7 ---
+9618/11
+Question
+4(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for both AND gates
+1 mark for NOT gate and OR gate and NOR gate
+A
+October/November
+2023
+Marks
+2
+-x
+Question
+5(a)
+5(b)
+5(c) (i)
+Answer
+1 mark for identification of the register and 1 mark for role (max 2 for each
+register)
+•.
+• •
+Program Counter (PC)
+stores the address where the next instruction is to be read from
+Memory Address Register (MAR)
+stores the address of the memory location (or an I/O component)
+currently being read from or written to
+:
+Current Instruction Register (CIR)
+holds the instruction currently being decoded and/or executed
+:
+Status Register
+Contains bits which can be referenced individually and set or cleared
+depending on the operation e.g. overflow, underflow
+1 mark for each bullet point (max 2)
+• Immediate Access Store holds all the data / instructions / programs
+currently in use
+:
+Immediate Access Store is volatile memory
+Immediate Access Store has fast access times
+1 mark for each bullet point (max 1)
+:
+The CPU can now perform nearly twice as many F-E cycles per second
+Instead of 2.1 billion F-E cycles per second, the CPU can now perform 4
+billion FE cycles per second
+Marks
+4
+2
+1
+© UCLES 2023
+Page 7 of 10
+
+--- Page 8 ---
+9618/11
+Question
+5 (c)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Answer
+1 mark for each bullet point (max 5)
+• •
+•
+Multiple cores introduce additional overheads
+...because of the need for communication between cores
+Software may not be designed for multiple cores...
+...so one of the cores will be left idle
+Memory access speed may not match speed of cores...
+..so causing delay
+The two computers may have more differences than just the cores
+...one may have more RAM which allows faster multitasking
+...one may have a GPU
+•
+...etc.
+Marks
+5
+Question
+6(a)
+Answer
+Marks
+4
+6(b)
+6(c) (i)
+6(c) (ii)
+1 mark for each bullet point (max 4)
+• easier to debug the program
+• ... because it translates line-by-line and stops when an error is found
+whereas the compiler translates all the program at the same time
+• ... only reporting one error at a time
+•
+... which allows the error to be corrected in real time
+whereas the program would need to be corrected and recompiled
+• ... and the program can restart at same point when error occurred
+with a compiler the program needs to be re-run
+• The effect of any changes made by the programmer can be seen
+immediately with a compiler the effects can only be seen after re-running
+• A partially completed program can be translated / tested on its own
+a compiler cannot translate a partial program
+1 mark for each bullet point (max 1)
+• Partially compiled programs can be used on different platforms as they
+are interpreted when run
+: Source codeded fort he pe comicino more erier to at run time
+Source code does not need recompiling so more efficient to run
+1 mark for each bullet point (max 2)
+:
+Prettyprint
+Expand/collapse code blocks
+•
+Auto indentation / formatting
+1 mark for each bullet point (max 2)
+•..
+Single stepping
+Breakpoints
+Report window
+Variable expressions
+1
+2
+2
+© UCLES 2023
+Page 8 of 10
+
+--- Page 9 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+7(a)
+October/November
+2023
+Marks
+3
+7(b)
+7(c)
+1 mark for each bullet point (max 3)
+Generic mark points:
+•
+Additive manufacturing
+•.
+Uses a digital 3D model or a Computer Aided Design (CAD) (file)
+Builds up the model one layer at a time
+•
+...starting from the bottom
+•
+...using x, y and z co-ordinates
+•
+The material is fused / cured together layer by layer
+Specific mark points:
+Fused Deposition Modelling (FDM)
+Material is heated and pushed through nozzle / extruder
+Stereolithography (SLA)
+Photosensitive liquid resin is exposed to a UV-laser beam
+Digital Light Processing (DLP)
+• Uses liquid plastic resin melted with arc lamps
+Selective Laser Sintering (SLS)
+•
+Uses a laser to form objects from powdered material
+1 mark for each bullet point (max 2)
+To prevent overheating // ensure material is hot enough
+...by identifying the temperature of the object (being printed)
+•
+...by identifying the temperature of the material being used
+1 mark for each bullet point (max 2)
+•
+Dynamic RAM has lower cost per unit
+..
+A fast access speed is not needed
+Higher bit density I/ more data can be stored per chip
+2
+2
+© UCLES 2023
+Page 9 of 10
+
+--- Page 10 ---
+9618/11
+Question
+8(a)
+8(b) (i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Answer
+Marks
+1
+3
+8(b) (ii)
+8(b)(ii)
+8(c) (i)
+8(c)(ii)
+8(c)(ii)
+1 mark for:
+•
+To create a symbol table
+1 mark for each bullet point
+• • •
+Data movement: e.g. LDR #50 // STO 201
+Arithmetic operation: e.g. ADD 100 // INC IX
+Conditional instruction: e.g. JPE 96
+1 mark for each bullet point (max 2)
+Similarity:
+• both load the contents of an address into the Accumulator
+Difference:
+• direct accesses the address given by the operand whereas indexed adds
+the contents of IX to the operand and accesses the data at that calculated
+address
+1 mark for
+:
+Indirect (addressing)
+Relative (addressing)
+0000 0101
+0000 0010
+1101 0010
+2
+Question
+9(a)
+1
+1
+1
+1
+Marks
+2
+9(b)
+Answer
+One mark for each bullet point (max 2)
+• Feedback ensures that a system operates within set criteria / constraints
+...by enabling system output to affect (subsequent) system input
+...thus allowing conditions to be automatically adjusted
+One mark for each reason to max 3 to match the example given
+•
+•
+•
+•
+•
+Dedicated to one task applied to example
+Does not require much processing power applied to example
+Built into a larger system applied to example
+Contains firmware that cannot be easily updated applied to example
+The system does not have its own operating system
+An embedded system must contain a processor, memory and an /O
+capability // Dedicated hardware
+3
+© UCLES 2023
+Page 10 of 10

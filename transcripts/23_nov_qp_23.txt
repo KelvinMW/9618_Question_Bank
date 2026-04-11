@@ -1,0 +1,450 @@
+--- Page 1 ---
+5 Cambridge Assessmen
+shes International Educatior
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+G O
+9618/23
+October/November 2023
+2 hours
+You must answer on the question paper.
+You will need: Insert (enclosed)
+INSTRUCTIONS
+• Answer all questions.
+• Use a black or dark blue pen.
+• Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided
+• Do not use an erasable pen or correction fluid.
+• Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+• The insert contains all the resources referred to in the questions.
+This document has 20 pages.
+DC (LK/CT) 315870/2
+© UCLES 2023
+[Turn over
+
+--- Page 2 ---
+2
+Refer to the insert for the list of pseudocode functions and operators.
+A program is being developed in pseudocode before being converted into a programming
+language.
+(a) The following table shows four valid pseudocode assignment statements.
+Complete the table by giving the data type that should be used to declare the variable
+underlined in each assignment statement.
+Assignment statement
+Data type
+MyVarl • Totall / Total2
+MyVar2 + 27/10/2023
+MyVar3 + "Suml / Sum2"
+MyVar4 + Result1 AND Result2
+14]
+(b) Other variables in the program have example values as shown:
+Variable
+Active
+Fraction
+Code
+Value
+TRUE
+0.2
+"Ab12345"
+Complete the table by evaluating each expression using the example values.
+Expression
+Fraction >= 0.2 AND NOT Active
+INT ( (Fraction * 100) + 13.3)
+STR_TO_NUM (MID (Code, 4, 2)) + 5
+LENGTH ("TRUE" & Code)
+Evaluates to
+14]
+© UCLES 2023
+9618/23/0/N/23
+
+--- Page 3 ---
+3
+(c) The program makes use of complex statistical functions. The required functions are not
+built-in to the programming language and are too complicated for the programmer to write.
+One solution would be to employ another programmer who has experience of writing these
+functions, as there is no time to train the existing programmer.
+State one other way that these functions may be provided for inclusion in the program.
+11]
+(d) The hardware that runs the program is changed and the program needs to be modified so
+that it works with the new hardware.
+Identify the type of maintenance that this represents and give one other reason why this type
+of maintenance may be needed
+Type
+Reason
+12]
+© UCLES 2023
+9618/23/0/N/23
+Turn over
+
+--- Page 4 ---
+4
+Data is a 1D array of integers, containing 30 elements. All element values are unique.
+(a) An algorithm will output the index of the element with the smallest value.
+Draw a program flowchart to represent the algorithm.
+START
+END
+[5]
+© UCLES 2023
+9618/23/0/N/23
+
+--- Page 5 ---
+5
+(b) The 30 data values could have been stored in separate variables rather than in an array.
+Explain the benefits of using an array when designing a solution to part (a).
+12]
+(c) The requirement changes. Array Data needs to hold 120 elements and each value may
+include a decimal place.
+Write a pseudocode statement to declare the modified array.
+..... [2]
+© UCLES 2023
+9618/23/0/N/23
+Turn over
+
+--- Page 6 ---
+3
+6
+The diagram represents a queue Abstract Data Type (ADT).
+The organisation of this queue may be summarised as follows:
+: The Frontorqueue pointer points to the next data item to be removed.
+The Endo fQueue pointer points to the last data item added.
+Queue
+D3
+D4
+D1
+D2
+D5
+‹ FrontOfQueue
++ EndOfQueue
+The queue is implemented using three variables and a 1D array of eight elements as shown. The
+variable NumItems stores the number of items in the queue.
+The pointer variables store indices (index numbers) of the array.
+(a) Complete the diagram to represent the state of the queue as shown above.
+Index
+Array
+1
+2
+3
+4
+5
+Variable
+FrontOfQueue
+6
+EndOfQueue
+7
+NumItems
+5
+8
+13]
+© UCLES 2023
+9618/23/0/N/23
+
+--- Page 7 ---
+7
+(b) A module AddIo () will add a value to the queue by manipulating the array and variables in
+part (a).
+The queue implementation is circular. When pointers reach the end of the queue, they will
+'wrap around' to the beginning.
+Before a value can be added to the queue, it is necessary to check the queue is not full.
+The algorithm to add a value to the queue is expressed in six steps.
+Complete the steps.
+1.
+If NumItems
+2. Increment
+3. If........
+4.
+Increment
+5.
+Set the
+being added
+6.
+Stop.
+then jump to step 6.
+..... then set EndO fQueue to ........................
+.••••
+at the index stored in
+. to the ..
+16]
+© UCLES 2023
+9618/23/0/N/23
+[Turn over
+
+--- Page 8 ---
+8
+4 A procedure Randlist () will output a sequence of 25 random integers, where each integer is
+larger than the previous one.
+(a) Write pseudocode for procedure Randlist ().
+[6]
+© UCLES 2023
+9618/23/0/N/23
+
+--- Page 9 ---
+9
+(b) Procedure RandList () is modified so that the random numbers are also written into a
+1D array Result.
+A new module is written to confirm that the numbers in the array are in ascending order.
+This module contains an IF statement that performs a comparison between elements:
+IF (Result[x † 1] = Result[x]) OR (Result[x] > Result[x † 11) THEN
+Sequence +
+ENDIF
+Write a simplified version of the conditional clause.
+.... [1]
+© UCLES 2023
+9618/23/0/N/23
+[Turn over
+
+--- Page 10 ---
+10
+5 Aglobal 1D array of integers contains four elements, which are assigned values as shown:
+Mix [1] <
+4
+Mix 2. +
+- 2
+Mix [3] < 3
+Mix[4] + 5
+A procedure Process () manipulates the values in the array.
+The procedure is written in pseudocode as follows:
+PROCEDURE Process (Start : INTEGER)
+DECLARE Value,
+Index, Total : INTEGER
+Index + Start
+Total + 0
+WHILE Total < 20
+Value + Mix[Index]
+Total
+Total + Value
+IF Index ‹ 4 THEN
+Mix[Index] + Mix[Index]|
++ Mix[Index+1]
+ELSE
+ENDIF
+Mix|Index] ‹ Mix [Index]
++ Mix[1]
+Index + (Value MOD 4) + 1
+ENDWHILE
+Mix[l] + Total * Index
+ENDPROCEDURE
+Complete the trace table on the opposite page by dry running the procedure when it is called as
+follows:
+CALL
+Process (2)
+© UCLES 2023
+9618/23/0/N/23
+
+--- Page 11 ---
+Index
+Value
+Total
+11
+Mix[1]
+Mix [2]
+Mix [3]
+Mix [4]
+16]
+© UCLES 2023
+9618/23/0/N/23
+[Turn over
+
+--- Page 12 ---
+12
+6 A function TestNum () will take a six-digit string as a parameter.
+The function will test whether the string meets certain conditions and will return an integer value
+as follows:
+Return value
+1
+2
+3
+Condition
+The last three digits are the same but non-zero.
+The last three digits are zero.
+The first three and last three digits are the same.
+The function will return the highest possible value for the given string.
+If the string does not meet any of the conditions, zero is returned.
+Example
+"253444"
+"253000"
+"410410"
+© UCLES 2023
+9618/23/0/N/23
+
+--- Page 13 ---
+13
+Write pseudocode for function TestNum () .
+Assume that the parameter is valid.
+...... [6]
+© UCLES 2023
+9618/23/0/N/23
+[Turn over
+
+--- Page 14 ---
+14
+A structure chart shows the modular structure of a program:
+Module-A()
+T1
+RA
+RB
+Sub-Y1()
+Sub-Y2()
+Sub-9()
+(a) Explain the meaning of the curved arrow symbol which begins and ends at Module-A().
+© UCLES 2023
+9618/23/0/N/23
+12]
+
+--- Page 15 ---
+15
+(b) The structure chart shows that Sub-9() is a function.
+A Boolean value is returned by Sub-9() for processing by Module-A().
+The original parameter RA is of type integer and RB is of type string.
+A record type MyType will be defined with three fields to store the values passed between the
+two modules.
+(i) Write pseudocode to define MyType.
+[3]
+(ii) The design is modified and Sub-9() is changed to a procedure.
+The procedure will be called with a single parameter of type MyType.
+Write the pseudocode header for procedure Sub- 9 () .
+[2]
+© UCLES 2023
+9618/23/0/N/23
+Turn over
+
+--- Page 16 ---
+16
+A class of students are developing a program to send data between computers. Many computers
+are connected together to form a wired network. Serial ports are used to connect one computer to
+another.
+Each computer:
+• is assigned a unique three-digit ID
+•
+has three ports, each identified by an integer value
+is connected to between one and three other computers.
+Messages are sent between computers as a string of characters organised into fields as shown:
+<STX><DestinationID><SourceID><Data><ETX>
+Field name
+STX
+Description
+a single character marking the start of the message
+(ASCII value 02)
+DestinationID
+three numeric characters identifying the destination computer
+SourceID
+three numeric characters identifying the source computer
+Data
+ETX
+a variable length string containing the data being sent
+(Minimum length is 1 character)
+a single character marking the end of the message
+(ASCII value 03)
+For example, the following message contains the data "Hello Jack" being sent from computer
+"202" to computer "454":
+<STX>"454202Hel1o Jack"<ETX>
+Each computer will run a copy of the same program. Each program will contain a global variable
+MyID of type string which contains the unique ID of the computer in which the program is running.
+The first two program modules are defined as follows:
+Module
+GetData ()
+(already written)
+:
+ReceiveFile ()
+Description
+returns the data field from a message that has been received
+If no message is available, the module waits until one has been
+received.
+takes a file name as a parameter of type string
+creates a text file with the given file name (no checking required)
+writes the data field returned by GetData () to the file
+repeats until the data field is "****, which is not written to the file
+outputs a final message giving the total number of characters
+written to the file, for example:
+132456 characters were written to newfile. txt
+© UCLES 2023
+9618/23/0/N/23
+
+--- Page 17 ---
+17
+(a) Write pseudocode for module ReceiveFile ().
+Module GetData () has already been written and must be used.
+... [7]
+© UCLES 2023
+9618/23/0/N/23
+[Turn over
+
+--- Page 18 ---
+18
+(b) The use of the string "****"
+as explained in the module description for ReceiveFile () may
+cause a problem.
+Explain the problem and suggest a solution.
+Problem
+Solution
+[3]
+(c) Two new modules are defined, which will allow two users to exchange messages.
+Module
+Description
+•
+Transmit ()
+(already written)
+•
+Chat ()
+•
+takes two parameters:
+a string representing a message
+• an integer representing a port number
+transmits the message using the given port
+takes two parameters:
+a string representing a Destination ID
+an integer representing a port number
+extracts data from a received message using Get Data () and
+outputs it
+forms a message using data input by the user and sends it
+using Transmit ()
+repeats until either the output string or the sent string is "Bye"
+Reminders:
+• Each program contains a global variable MyID of type string which contains the unique ID of
+the computer in which the program is running.
+Messages are sent between computers as a string of characters organised into fields as
+shown:
+<STX>DestinationID><SourceID><Data><ETX>
+© UCLES 2023
+9618/23/0/N/23
+
+--- Page 19 ---
+19
+Write pseudocode for module Chat () .
+Modules GetData () and Transmit () must be used.
+[7]
+© UCLES 2023
+9618/23/0/N/23
+[Turn over
+
+--- Page 20 ---
+20
+(d) Module GetData () returns the data field from a message that has been received. If no
+message is available, the module waits until one has been received
+Explain the limitation of this on module Chat () from part (c).
+Describe a modification to GetData () to address this limitation.
+Limitation
+Modification
+13]
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2023
+9618/23/0/N/23

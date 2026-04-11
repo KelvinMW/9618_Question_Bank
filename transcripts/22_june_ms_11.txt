@@ -1,0 +1,407 @@
+--- Page 1 ---
+alls Cambridge Assessment
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 11 Theory Fundamentals
+MARK SCHEME
+Maximum Mark: 75
+9618/11
+May/June 2022
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2022 series for most
+Cambridge O Level components.
+mage o over omponen nemational and AS Lovel and Cambridge ProU componens, and some
+This document consists of 8 printed pages.
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2022
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2022
+Page 2 of 8
+
+--- Page 3 ---
+9618/11
+Question
+1(a)
+1(b)
+1(c)
+1 (d)
+Question
+2(a)(i)
+2(a)(ii)
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2022
+Answer
+Marks
+1
+1 mark for:
+one tebibyte is 1024 gibibytes and one terabyte is 1000 gigabytes
+1001 1100
+1 mark for working e.g.
+• Dividing by 16 // converting to binary (11111011)
+1 mark for answer
+FB
+1000 1110
+1
+2
+Answer
+1
+Marks
+5
+1 mark for each correct term.
+Random Access Memory (RAM) and Read Only Memory (ROM) are both
+examples of primary memory.
+One item that is stored in RAM is currently running software/data/part of
+OS.
+One item that is stored in ROM is the start-up/boot-up instructions/BIOS.
+RAM can be either Static RAM (SRAM) or Dynamic RAM (DRAM).
+SRAM uses transistors arranged as flip-flops/latches.
+DRAM uses transistors and capacitors.
+1 mark per bullet point to max 3
+• PROM can be set once, EPROM and EEPROM can be overwritten
+multiple times.
+• EPROM needs to be removed from device EEPROM can be erased in
+•
+EPROM and can be erased using UV light, EEPROM can be erased
+using voltage // is flash storage.
+•
+EPROM must be entirely erased before rewriting, EEPROM does not
+have to be entirely erased before rewriting.
+3
+Page 3 of 8
+
+--- Page 4 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2022
+Answer
+Question
+2(b)
+Marks
+5
+2(c)(i)
+1 mark per bullet point to max 5
+• .
+The hard disk has (one or more) platter/plate/disk
+Each surface of the platter/disk is (ferrous oxide which is) capable of
+being magnetised
+:
+•
+The platters/disks are mounted on a (central) spindle
+The entire mechanism is contained inside a sealed (aluminium) box.
+The disks are rotated (at high-speed)
+(Each surface of the disk) has a read/write head mounted on an arm
+(positioned just above the surface)
+•
+Electronic circuits control the movement of the arm (and hence the
+heads)
+The surface of the platter/disk is divided into concentric tracks / circles
+The surface of the platter/disk is divided into sectors
+One track in one sector is the basic unit of storage called a block
+The data is encoded as a magnetic pattern for each block
+• When writing to disk, a variation in the current in the head produces a
+variation in magnetic field on the disk
+•
+When reading from disk, a variation in magnetic field produces a
+variation in current through the head
+1 mark for each correct row.
+Gate
+AND
+Input 1
+Input 2
+1
+1
+0
+NAND
+1
+1
+0
+1
+4
+2(c)(i)
+XOR
+NOR
+1 mark per bullet point
+• ANAND B
+• B XOR C
+• OR
+(A NAND B) OR (B XOR C)
+3
+© UCLES 2022
+Page 4 of 8
+
+--- Page 5 ---
+9618/11
+Question
+3(a)
+3(b)
+Question
+4(a)
+4(b)
+© UCLES 2022
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Security prevents against loss while privacy prevents unauthorised access
+1 mark for identifying threat, 1 mark for description, 1 mark for security
+measure (times 2)
+e.g.
+:
+Malware
+Malicious software that replicates and can delete/damage the
+examination papers
+•
+Install and run anti-malware
+•.
+Hacker/unauthorised access
+Illegal access in order to delete/damage the examination papers
+Use a firewall // strong passwords
+•
+Spyware
+Software installed on the computer without the teacher's knowledge
+which records keystrokes and sends the data gathered about the
+examination papers to a third party
+Use a firewall / install and run anti-spyware / use a virtual (onscreen)
+keyboard
+May/June 2022
+Marks
+1
+6
+Answer
+Marks
+4
+1 mark per bullet point to max 4
+e.g.
+•
+Reduced data redundancy // less repeated data
+...because each item of data is only stored once
+Maintains data consistency // improves data integrity
+...changes in one table will automatically update in another
+... linked data cannot be entered differently in two tables
+Program-data independence
+...changes to the data do not require programs to be re-written
+Complex queries are easier to run
+Can provide different views
+....so users can only see specific aspects of the database
+1 mark for 3NF
+1 mark per bullet for justification to max 2
+• There are no repeated attributes // it is already in 2NF
+• Each field is fully dependent on the corresponding primary key // no
+•
+partial dependencies
+No transitive dependencies
+3
+Page 5 of 8
+
+--- Page 6 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Question
+4(c)(i)
+Marks
+5
+1 mark per bullet point
+••
+Create table, table name, opening and closing brackets
+student ID and Mark as integer
+Test ID as Varchar
+•
+Primary key correctly set up
+Foreign keys correctly set up
+e.g.
+CREATE TABLE STUDENT_TEST (
+StudentId INTEGER,
+TestID VARCHAR,
+Mark INTEGER,
+PRIMARY KEY (StudentID, TestID),
+FOREIGN KEY (TestID) REFERENCES TEST (TestID).
+FOREIGN KEY (StudentID) REFERENCES STUDENT (StudentID)
+4 (c)(ii)
+4(d)
+1 mark for each point
+• AVG(Mark)
+SELECT and FROM STUDENT_TEST
+• WHERE clause
+e.g.
+SELECT AVG (Mark)
+FROM STUDENT
+_TEST
+WHERE TestID = "A7";
+1 mark per bullet point to max 3 for validation
+• range check to make sure it is between O and max marks
+presence check to make sure a mark is entered
+•
+type check to make sure an integer value is entered
+1 mark per bullet point to max 2 for verification
+: double entry - enter the mark twice and the computer compares them
+visual check - manually compare the mark entered with the mark on the
+input document
+3
+4
+© UCLES 2022
+Page 6 of 8
+
+--- Page 7 ---
+9618/11
+Question
+5(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for 1 correct line, 2 marks for 2 correct lines, 3 marks for 3 or 4
+correct lines, 4 marks for all 5 correct lines
+IDE feature
+Context-sensitive
+prompt
+Description
+Executes one line of the
+1 program and then stops
+May/June 2022
+Marks
+4
+Dynamic syntax
+check
+Underlines or highlights
+statements that do not meet
+the rules of the language
+Breakpoint
+Outputs the contents of
+variables and data
+/ structures
+Single stepping
+Report window
+Stops the code executing at
+a set line
+\ Displays predictions of the
+code being entered
+5(b)
+5(c)
+1 mark each:
+:
+Open Source Initiative
+Free Software Foundation
+1 mark per bullet point to max 3
+• Saves (programming/testing) time as code does not have to be
+written/re-written from scratch // code does not have to be tested
+:
+Code is already tested so it is more robust/likely to work
+If there is an improvement in the library routine the program updates
+automatically
+•
+can perform complex calculations that the programmer may be unable to
+do
+2
+3
+© UCLES 2022
+Page 7 of 8
+
+--- Page 8 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Question
+6(a)(i)
+Marks
+5
+6(a)(ii)
+6(b)
+6(c)(i)
+6(c)(ii)
+6(c)(iii)
+1 mark per bullet point to max 5
+• The Program Counter (PC) holds the address of the next instruction ...
+...and the contents are incremented / changed to the next address each
+The Memory Address Register (MAR) holds the address to fetch the data
+(from the PC)
+:
+The Memory Data Register (MDR) holds the data at the address in MAR
+The instruction is transferred to Current Instruction Register (CIR) for
+decoding and execution
+1 mark for detection
+• At the start/end of a FE cycle
+1 mark for handling to max 4
+Priority is checked
+• If lower priority than current process continue with F-E cycle
+• If higher priority than current process ...
+... state of current process is / registers are stored on stack
+•
+Location / type of interrupt identified...
+...appropriate ISR is called to handle the interrupt
+• When ISR finished, check for further interrupts (of high priority) / return to
+step 1
+• Otherwise load data from stack and continue with process
+1 mark for factor 1 mark for impact
+e.g.
+Clock speed...
+• ...higher clock speed means more FE cycles per second
+• Number of cores...
+•
+....means more instructions can be carried out simultaneously
+Bus width ...
+...allows the transfer of more data each time I/ allows more memory
+locations to be directly accessed
+: cachenig
+.... the higher capacity the more frequently used instructions it can store
+for fast access
+0000 0000
+0110 1101
+1101 0000
+5
+2
+1
+1
+1
+© UCLES 2022
+Page 8 of 8

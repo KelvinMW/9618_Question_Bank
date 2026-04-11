@@ -1,0 +1,618 @@
+--- Page 1 ---
+* 0000800000001*
+ELS Cambridge Assessment
+International Education
+7
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+9618/11
+May/June 2025
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided.
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 20 pages. Any blank pages are indicated
+DC (SL/FC) 341015/3
+© UCLES 2025
+L
+[Turn over
+J
+
+--- Page 2 ---
+0000800000002*
+Г
+1
+2
+(a) Write the logic expressions for the following logic circuit.
+P
+Q
+R
+\ Y
+X=
+Y=
+LOUCLES 2025
+9618/11/M/J/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 3 ---
+* 0000800000003*
+DO NOT WRITE IN THIS MARGIN
+3
+(b) Complete the truth table for the following logic circuit.
+A
+B
+Do
+DO NOT WRITE IN THIS MARGIN
+C
+B
+C
+Working space
+0
+DO NOT WRITE IN THIS MARGIN
+0
+1
+1
+0
+1
+1
+1
+0
+0
+1
+DO NOT WRITE IN THIS MARGIN
+1
+1
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/11/M/J/25
+7
+X
+X
+12]
+Turn over
+
+--- Page 4 ---
+0000800000004*
+4
+7
+2
+Programmers in a software development company take part in live video conferences to discuss
+their work.
+The live video conferences take place using real-time bit streaming. The video is compressed
+before it is transmitted
+(a) Explain how data is transferred using real-time bit streaming.
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+14]
+(b) (i)
+Explain the reasons why a video is compressed before it is transmitted using real-time
+bit streaming.
+DO NOT WRITE IN THIS MARGIN
+[4]
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2025
+9618/11/M/J/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 5 ---
+000080000005*
+DO NOT WRITE IN THIS MARGIN
+5
+(ii) Identify whether the lossy or lossless compression method is more appropriate for
+real-time bit streaming. Justify your answer.
+Compression method
+Justification
+DO NOT WRITE IN THIS MARGIN
+[3]
+(c) The video conference is accessed over the internet.
+Complete the table by stating how modems and dedicated lines are used when data is
+transmitted over the internet.
+Hardware
+Use
+DO NOT WRITE
+IN THIS MARGIN
+modems
+dedicated
+lines
+DO NOT WRITE IN THIS MARGI
+12]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/11/M/J/25
+(Turn over
+
+--- Page 6 ---
+* 0000800000006 *
+6
+7
+3
+A computer stores images and text files.
+(a) One of the images is a bitmapped image.
+Complete the table by writing the answer for each statement.
+Statement
+Answer
+DO NOT WRITE IN THIS MARGIN
+the term for the smallest
+element that makes up
+an image
+the largest number of
+different colours that can
+be represented with a bit
+depth of 8 bits
+DO NOT WRITE IN THIS MARGIN
+the term for the dots per
+inch (dpi) when an image
+is displayed
+13]
+(b) The text in the files is stored using the Unicode character set.
+(i) Give two advantages of using the Unicode character set instead of using the ASCI
+character set.
+DO NOT WRITE IN THIS MARGIN
+2
+12]
+(ii) The Unicode character'‹' has the binary value: 0010 0111 0110 1110
+Convert the binary value for the character '‹' into denary.
+DO NOT WRITE IN THIS MARGIN
+[11
+(iii) The Unicode character 'Z' has the hexadecimal value 2140
+Convert the hexadecimal code for the character 'E' into denary.
+111
+OUCLES 2025
+9618/11/M/J/25
+
+--- Page 7 ---
+0000800000007*
+DO NOT WRITE IN THIS MARGIN
+7
+7
+4
+A shop installs a new system that allows users to purchase items without going through a manual
+checkout.
+The new system:
+: identifies customers when they enter the shop and matches ther to their account
+prevents a customer from walking through the automatic barriers if they do not have an
+account
+• automatically detects the items that a customer has taken from a shelf and charges these to
+the customer's account.
+(a) The new system uses digital cameras and Artificial Intelligence (Al) to identify the customers.
+Explain how the new system uses Al to identify each customer.
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+[4]
+DO NOT WRITE IN THIS MARGIN
+(b) The new system uses sensors to identify the items taken from a shelf.
+Identify one type of sensor that can be used in this new system.
+State how the sensor can be used to identify the items taken from a shelf.
+Sensor
+Use
+12]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/11/M/J/25
+[Turn over
+
+--- Page 8 ---
+00008000000*
+Г
+5
+8
+A company builds and sells furniture to customers. The company stores data about customers,
+their payment cards and their furniture orders in a database.
+The database, FURNITURE, has the following tables:
+CUSTOMER (CustomerID, Name, Phone)
+CUSTOMER
+_CARD_DATA (CardID, CustomerID, CardType, CardNumber, EndDate)
+ORDER (OrderID, CustomerID, TotalCost, Paid, OrderDate, Complete)
+ORDER_ITEM (OrderItemID, OrderID, Type, Height, Width, Depth, Details)
+The primary keys are underlined in each table.
+The attribute Complete in the table ORDER stores the Boolean value TRUE if the order has been
+built and FALSE if the order has not been built.
+(a) Complete the entity-relationship (E-R) diagram for the database.
+CUSTOMER
+CUSTOMER_CARD_DATA
+DO NOT WRITE IN THIS MARGI
+ORDER
+ORDER_ITEM
+[3]
+DO NOT WRITE IN THIS MARGIN
+(b) Identify one attribute in the table CUSTOMER_CARD_DATA that could be a candidate key.
+.... [1]
+(c) Identify two tables in the database that contain one or more foreign keys.
+Give one attribute that is a foreign key in each table.
+Table
+Foreign key
+1
+2
+DO NOT WRITE IN THIS MARGIN
+121
+OUCLES 2025
+9618/11/M/J/25
+J
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 9 ---
+* 0000800000009*
+DO NOT WRITE IN THIS MARGIN
+9
+7
+(d) Explain the reasons why the data in the table ORDER_ITEM cannot be stored in the table
+ORDER
+DO NOT WRITE IN THIS MARGIN
+13]
+(e) Write an Structured Query Language (SQL) script to output the customer ID, the customer's
+name and the total cost of the customer's orders that have not been paid.
+The output of the total cost must have an appropriate title.
+DO NOT WRITE IN THIS MARGIN
+14]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/11/M/J/25
+[Turn over |
+
+--- Page 10 ---
+* 0000800000010*
+Г
+6
+10
+7
+A programmer is buying a new computer.
+(a) The programmer is considering the following two computers:
+Computer 1
+Computer 2
+Quad-core 2.2 GHz processor
+16-bit architecture
+1GB Random Access Memory (RAM)
+500GB magnetic hard disk
+Dual-core 3.8 GHz processor
+32-bit architecture
+2GB RAM
+500 GB solid state drive (SSD)
+(i) Computer 1 has a magnetic hard disk.
+Complete the description of the principal operation of a magnetic hard disk by writing
+the missing words.
+The magnetic hard disk has one or more
+that can be
+magnetised. These are mounted on a
+and rotate at
+high speed.
+A..
+When data is read, the changes in the
+a change in the electric current.
+• is moved across the surface on an arm.
+.. produce
+14]
+(ii)
+The two computers have different amounts of RAM.
+Explain how different amounts of RAM affect the performance of a computer.
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2025
+9618/11/M/J/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 11 ---
+* 0000800000011*
+DO NOT WRITE IN THIS MARGIN
+11
+(iii) The two computers have different bus widths.
+Explain how different bus widths affect the performance of a computer.
+7
+DO NOT WRITE IN THIS MARGIN
+12]
+(b) Both computers have an Operating System (OS).
+Describe the purpose of an OS in a computer.
+DO NOT WRITE IN THIS MARGIN
+[5]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2025
+9618/11/M/J/25
+[Turn over |
+
+--- Page 12 ---
+* 0000800000012*
+7
+12
+A banker stores personal data on their work computer.
+(a) The banker needs to transfer confidential data across the internet.
+Identify and describe one method of restricting the risks posed by an unauthorised person
+intercepting the data whilst it is being transferred across the internet.
+Method
+Description
+7
+DO NOT WRITE IN THIS MARGIN
+[3]
+DO NOT WRITE IN THIS MARGIN
+(b) The banker receives
+confidential data across the internet. The data includes a digital
+signature.
+Explain how a digital signature can make sure the data has not been changed during
+transmission.
+DONOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2025
+9618/11/M/J/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 13 ---
+* 0000800000013*
+DO NOT WRITE IN THIS MARGIN
+13
+(c) The data that is transferred can also be verified using a checksum.
+Explain how data can be verified using a checksum.
+DO NOT WRITE IN THIS MARGIN
+13]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/11/M/J/25
+[Turn over |
+
+--- Page 14 ---
+* 0000800000014*
+8
+14
+(a) The following table shows part of the instruction set for a processor. The processor has two
+registers: the Accumulator (ACC) and an Index Register (IX).
+Instruction
+Operand
+Opcode
+LDM
+#n
+Explanation
+Immediate addressing. Load the number n to ACC
+LDD
+<address>
+Direct addressing. Load the contents of the location at the given
+address to ACC
+LDI
+<address>
+Indirect addressing. The address to be used is at the given
+address. Load the contents of this second address to ACC
+INC
+<register>
+STO
+<address>
+ADD#n/Bn/&n
+DEC
+<register>
+JMP
+<address>
+CMP
+‹address>
+Add 1 to the contents of the register (ACC or IX)
+Store the contents of ACC at the given address
+Add the number n to the ACC
+Subtract 1 from the contents of the register (ACC or IX)
+Jump to the given address
+Compare the contents of ACC with the contents of <address>
+JPE
+<address>
+Following a compare instruction, jump to <address> if the
+compare was True
+END
+Return control to the operating system
+ACC denotes Accumulator
+<address> can be an absolute or a symbolic address
+# denotes a denary number, e.g. #123
+B denotes a binary number, e.g. B01001010
+& denotes a hexadecimal number, e.g. &4A
+7
+MARGI
+DO NOT WRITE
+DO NOT WRITE IN THIS MAI
+LOUCLES 2025
+9618/11/M/J/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 15 ---
+* 0000800000015*
+DO NOT WRITE IN THIS MARGIN
+15
+The current contents of memory are:
+address
+80
+81
+82
+83
+Instruction
+10
+8
+80
+81
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+LDD 81
+INC ACC
+STO 83
+IDI 82
+CMP 83
+JPE 209
+LDD 83
+ADD #10
+JMP 210
+DEC ACC
+STO 81
+END
+Trace the program currently in memory using the following trace table.
+Instruction address
+ACC
+80
+10
+Memory address
+81
+82
+8
+80
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+© UCLES 2025
+9618/11/M/J/25
+7
+83
+14]
+[Turn over
+
+--- Page 16 ---
+* 0000800000016*
+Г
+16
+(b) The table shows part of the instruction set for a processor. The processor has one register:
+the Accumulator (ACC).
+Opcode
+Instruction
+Operand
+Explanation
+AND
+#n/Bn/&n
+Bitwise AND operation of the contents of ACC with the
+operand
+AND
+<address>
+Bitwise AND operation of the contents of ACC with the
+contents of <address>
+Bitwise XOR operation of the contents of ACC with the
+XOR
+#n/Bn/&n
+operand
+XOR
+<address>
+Bitwise XOR operation of the contents of ACC with the
+contents of <address>
+OR
+•#n/Bn/&n
+Bitwise OR operation of the contents of ACC with the
+operand
+OR
+<address>
+Bitwise OR operation of the contents of ACC with the
+contents of < address>
+LSL| #n
+Bits in ACC are shifted logically n places to the left.
+Zeros are introduced on the right-hand end
+Bits in ACC are shifted logically n places to the right.
+LSR
+• #n
+Zeros are introduced on the left-hand end
+< address> can be an absolute or symbolic address
+• denotes a denary number, e.g. #12:
+denotes a binary number, e.g. B01001011
+& denotes a hexadecimal number, e.g. &4A
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2025
+9618/11/M/J/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 17 ---
+* 0000800000017*
+DO NOT WRITE IN THIS MARGIN
+17
+(i) Write the bit manipulation instruction that can be used to set the least significant bit to 1
+in an 8-bit register. All other bits must remain unchanged.
+The instruction needs to work on a register that contains any 8-bit binary number.
+7
+... 11]
+(ii) The ACC currently contains the following binary value.
+1
+1
+0
+1
+DO NOT WRITE IN THIS MARGIN
+Write the result after the instruction XOR &FE is run.
+111
+(ili) The ACC currently contains the following binary value.
+1
+1 O
+1
+Write the result after the instruction LSR #5 is run.
+1
+DO NOT WRITE IN THIS MARGIN
+[11
+DO NOT WRITE IN THIS MARGI
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/11/M/J/25
+
+--- Page 18 ---
+* 0000800000018*
+Г
+18
+BLANK PAGE
+LOUCLES 2025
+9618/11/M/J/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 19 ---
+* 0000800000019*
+DO NOT WRITE IN THIS MARGIN
+19
+BLANK PAGE
+7
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/11/M/J/25
+
+--- Page 20 ---
+* 0000800000020*
+Г
+20
+BLANK PAGE
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series. J
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+OUCLES 2025
+9618/11/M/J/25
+DO NOT WRITE IN THIS MARGIN

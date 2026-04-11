@@ -1,0 +1,543 @@
+--- Page 1 ---
+* CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+MARK SCHEME
+Maximum Mark: 75
+9618/11
+May/June 2025
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2025 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+This document consists of 12 printed pages.
+© Cambridge University Press & Assessment 2025
+[Turn over
+
+--- Page 2 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level
+descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© Cambridge University Press & Assessment 2025
+Page 2 of 12
+
+--- Page 3 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Annotations guidance for centres
+Examiners use a system of annotations as a shorthand for communicating their marking decisions to
+one another. Examiners are trained during the standardisation process on how and when to use
+annotations. The purpose of annotations is to inform the standardisation and monitoring processes
+and guide the supervising examiners when they are checking the work of examiners within their team.
+The meaning of annotations and how they are used is specific to each component and is understood
+by all examiners who mark the component.
+We publish annotations in our mark schemes to help centres understand the annotations they may
+see on copies of scripts. Note that there may not be a direct correlation between the number of
+annotations on a script and the mark awarded. Similarly, the use of an annotation may not be an
+indication of the quality of the response.
+The annotations listed below were available to examiners marking this component in this series.
+Annotations
+Annotation
+Meaning
+X
+Correct
+Incorrect
+To indicate where a key word/phrase/code is missing.
+Not relevant or used to separate parts of an answer.
+ww
+Highlighter
+[REP
+NE
+BOD
+NAQ
+SEEN
+Indicates a part of the answer that is incorrect.
+To draw attention to a particular aspect or to indicate where parts of an answer
+have been combined.
+Too vague.
+Repetition
+No examples or not enough.
+Benefit of Doubt.
+Not Answered Question.
+Indicates that work or a page has been seen including blank answer spaces and
+blank pages.
+Follow through.
+Ignore
+© Cambridge University Press & Assessment 2025
+Page 3 of 12
+
+--- Page 4 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Question
+1(a)
+Answer
+Marks
+2
+1(b)
+1 mark each:
+X= Q AND (NOT P OR R)
+Y = S XOR (Q NOR R)
+1 mark for first 4 rows, 1 mark for second 4 rows
+2
+A
+0
+0
+0
+0
+1
+1
+1
+1
+B
+0
+0
+1
+Working space
+1
+X
+1
+1
+1
+0
+1
+0
+0
+0
+0
+1
+1
+1
+© Cambridge University Press & Assessment 2025
+Page 4 of 12
+
+--- Page 5 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Answer
+Question
+2(a)
+Marks
+4
+2(b)(i)
+2(b)(ii)
+2(c)
+1 mark each to max 4
+••.
+•
+• •
+Video is transmitted continuously
+as a series of bits
+The video is uploaded to a media server
+The users download from the media server
+On download, the media server sends the data to a buffer on the user's
+device
+buffer is used when there is a difference in speed between transmission
+Buffer stores data from server until recipient can receive it
+Recipient views bit stream from the buffer
+1 mark each to max 4
+e.g.
+•
+Video is data-intensive
+•
+The file size needs reducing in order to
+•
+reduce the amount of bandwidth used
+•
+and reduce buffering
+•
+This means people are not behind in the conversation
+•
+and people with lower bandwidth can still take part
+No mark for choice but lossy is most appropriate
+1 mark each to max 3
+e.g.
+•
+Reduces file size more than lossless
+•
+so significantly less bandwidth / data is needed
+•
+so buffering is reduced even more than with lossless
+•
+Data can be removed which cannot be seen
+• •
+reducing quality without impacting experience
+for example, because resolution of video can be reduced // sample rate of
+audio can be reduced
+1 mark each
+modems:
+• Converts digital data into analogue for transmission down phone lines //
+Converts analogue data into digital after transmission down phone lines
+dedicated lines:
+• Used to provide a direct / private connection which therefore provides
+faster transmission
+4
+3
+2
+© Cambridge University Press & Assessment 2025
+Page 5 of 12
+
+--- Page 6 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+3(a)
+Marks
+3
+3(b)(i)
+3(b) (ii)
+3(b) (iii)
+1 mark for each correct answer
+Statement
+The term for the smallest element that
+makes up an image.
+The largest number of different colours that
+can be represented with a bit depth of 8 bits.
+The term for the dots per inch (dpi) when an
+image is displayed.
+1 mark each to max 2
+: S viharaters to characters can be carese reed
+so characters from more languages can be represente
+, and symbols such as emojis can be use
+1 mark for:
+10,094
+1 mark for:
+8,512
+Answer
+pixel
+256//28
+Screen resolution
+2
+1
+1
+© Cambridge University Press & Assessment 2025
+Page 6 of 12
+
+--- Page 7 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+4(a)
+Marks
+4
+4(b)
+1 mark each to max 4
+e.g.
+•
+Uses image recognition / facial recognition
+...
+Measures the distance between facial features of the customer
+and stores the values in a database of user information
+An image is captured using the digital camera
+the Al identifies that the image is a face
+by analysing the pixels to find patterns
+the distance between features is calculated and compared to those in
+database
+1 mark for sensor, 1 mark for corresponding use
+e.g.
+2
+Sensor
+Pressure
+Infrared
+Use
+Detects when the pressure of an item is removed
+from a shelf / put back on a shelf
+Detects when the beam is broken for an item
+removed / added
+© Cambridge University Press & Assessment 2025
+Page 7 of 12
+
+--- Page 8 ---
+9618/11
+Question
+5(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for each relationship. Max 2 if any extra
+CUSTOMER
+CUSTOMER_CARD_DATA
+May/June 2025
+Marks
+3
+ORDER
+ORDER_ITEM
+5(b)
+5(c)
+5(d)
+1 mark for:
+CardNumber
+1 mark per row to max 2
+Table
+Foreign key
+ORDER_ITEM
+ORDER
+CUSTOMER_CARD_DATA
+OrderlD
+CustomerID
+CustomerID
+1 mark each to max 3
+e.g.
+••
+• •
+Each order would only be able to have one item
+or the database would not be normalised
+it would not be in 1NF
+due to repeated groups of attributes
+in the ORDER table
+1
+2
+3
+© Cambridge University Press & Assessment 2025
+Page 8 of 12
+
+--- Page 9 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+5(e)
+Marks
+4
+1 mark each
+•
+•..
+Selecting the customer ID, customer name and sum of TotalCost with
+appropriate identifier
+FROM clause with suitable join of tables (ON or WHERE)
+ORDER. Paid = FALSE condition (with correct key word)
+GROUP BY condition
+e.g.
+SELECT CUSTOMER.CustomerID, CUSTOMER.Name,
+Sum(ORDER. TotalCost) AS TotalOwed
+FROM CUSTOMER INNER JOIN ORDER
+ON CUSTOMER. CustomerID = ORDER. CustomerID
+WHERE ORDER. Paid = FALSE
+GROUP BY CUSTOMER. CustomerID;
+Alternative JOIN Statement
+SELECT CUSTOMER.CustomerlD, CUSTOMER.Name,
+Sum(ORDER. TotalCost) AS TotalOwed
+FROM CUSTOMER,ORDER
+WHERE CUSTOMER. CustomerlD = ORDER.CustomerlD
+AND ORDER Paid = FALSE
+GROUP BY CUSTOMER. CustomerlD;
+© Cambridge University Press & Assessment 2025
+Page 9 of 12
+
+--- Page 10 ---
+9618/11
+Question
+6(a)(i)
+6(a)(ii)
+6(a)(iii)
+6(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for each correctly completed space
+: platters
+spindle
+: magnetite head
+magnetic field
+The magnetic hard disk has one or more platters that can be magnetised.
+These are mounted on a spindle and rotate at high speed.
+A read/write head is moved across the surface on an arm.
+When data is read the changes in the magnetic field produce a change in the
+electric current.
+1 mark each to max 3
+•
+More RAM means more currently running data and instructions can be
+stored
+•• • • i
+without needing to use virtual memory
+without having to fetch the data from secondary storage first
+which has a slower access time
+Less latency / delay waiting for instructions / data
+1 mark each to max 2
+Wider data bus means more data can be transferred between
+components at a time
+:
+•
+there is less delay / latency when fetching data for a running process
+Wider address bus means larger memory addresses can be used
+allowing more memory locations to be accessed directly
+so less likely to run out of memory
+1 mark each to max 5
+e.g.
+To provide a user interface
+so that the user is able to communicate with the hardware
+•
+•
+To manage memory
+so that data can be stored and accessed
+and multitasking is possible
+..
+To manage files
+allowing the user to create, edit, update and delete files and folders
+• To manage inputs and outputs from hardware/peripherals
+To handle processes
+to make sure each process has fair access
+May/June 2025
+Marks
+4
+3
+2
+5
+© Cambridge University Press & Assessment 2025
+Page 10 of 12
+
+--- Page 11 ---
+9618/11
+Question
+7(a)
+7(b)
+7(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for a correct method:
+1 mark each to max 2 for a corresponding description
+Method: Encryption
+Description:
+• Data is encoded/scrambled using a key to create cipher text
+if intercepted it cannot be understood
+•
+without being decrypted using a key
+1 mark each to max 5
+•...
+•
+The sender hashes the document / message
+to produce a digest
+The sender encrypts the digest to create the digital signature
+The message and the signature are sent to the banker / receiver
+The receiver decrypts the signature to reproduce the digest
+The receiver uses the same hashing algorithm on the document received
+to produce a second digest
+The receiver compares this digest with the one from the digital signature
+•
+If both of the receiver's digests are the same the document has not
+changed
+1 mark each to max 3
+••
+•
+The data is put through an algorithm to create a checksum value
+The data and checksum are sent to the receive
+The receiver performs the same algorithm on the dat
+if both checksums match the data is verified
+May/June 2025
+Marks
+3
+5
+3
+© Cambridge University Press & Assessment 2025
+Page 11 of 12
+
+--- Page 12 ---
+9618/11
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+8(a)
+Marks
+4
+1 mark for each shaded section
+Instruction
+address
+ACC
+80
+10
+Memory address
+81
+82
+8
+80
+83
+81
+9
+19
+8(b) (i)
+8(b)(ii)
+8(b)(iii)
+200
+201
+202
+203
+204
+206
+207
+208
+210
+8
+9
+10
+9
+19
+1 mark for:
+OR BO00O 0001 |/ OR #1 |/ OR &1
+1 mark for:
+1010 1011
+1 mark for:
+0000 0011
+1
+1
+1
+© Cambridge University Press & Assessment 2025
+Page 12 of 12

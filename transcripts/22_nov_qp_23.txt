@@ -1,0 +1,385 @@
+--- Page 1 ---
+5 Cambridge Assessmen
+shes International Educatior
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+9618/23
+October/November 2022
+2 hours
+• 3 <
+You must answer on the question paper.
+You will need: Insert (enclosed)
+INSTRUCTIONS
+• Answer all questions.
+• Use a black or dark blue pen.
+• Write your name, centre number and candidate number in the boxes at the top of the page.
+• Write your answer to each question in the space provided
+• Do not use an erasable pen or correction fluid.
+• Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+• The insert contains all the resources referred to in the questions.
+This document has 20 pages. Any blank pages are indicated
+DC (NF/CB) 302729/4
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+2
+Refer to the insert for the list of pseudocode functions and operators.
+1 A program is required for a shopping website.
+(a) Part of the program requires four variables. The following table describes the use of each
+variable.
+Complete the table by adding the most appropriate data type for each variable.
+Variable use
+Data type
+Store the number of days in the current month
+Store the first letter of the customer's first name
+Store an indication of whether a year is a leap year
+Store the average amount spent per customer visit
+14]
+(b) The designer considers the use of a development life cycle to split the development of the
+website into several stages.
+(i) State one benefit of a development life cycle when developing the website.
+... 11]
+(ii) Analysis is one stage of a development life cycle.
+State one document that may be produced from the analysis stage of the website project.
+[1]
+© UCLES 2022
+9618/23/0/N/22
+
+--- Page 3 ---
+3
+(c) The program will be developed using the Rapid Application Development (RAD) life cycle.
+(i) State one principle of this life cycle.
+11]
+(ii) Give two benefits and one drawback of its use compared to the waterfall life cycle.
+Benefit 1
+Benefit 2
+Drawback
+[3]
+(d) Adaptive maintenance needs to be carried out on the website program.
+Give two reasons why adaptive maintenance may be required.
+2
+12]
+© UCLES 2022
+9618/23/0/N/22
+[Turn over
+
+--- Page 4 ---
+4
+2 A program is being designed for a smartphone to allow users to send money to the charity of their
+Decomposition will be used to break the problem down into sub-problems.
+Identify three program modules that could be used in the design and describe their use.
+Module 1
+Use
+Module 2
+Use
+Module 3
+Use ....
+[3]
+© UCLES 2022
+9618/23/0/N/22
+
+--- Page 5 ---
+5
+3 An algorithm is needed to process a sequence of numbers. Numbers may be positive or negative
+and may be integer or decimal.
+The algorithm will:
+• prompt and input one number at a time until the value zero is input
+• sum the negative numbers
+sum the positive numbers
+• when zero is input, output the two sum values and then end.
+Describe the algorithm needed. Do not include pseudocode statements in your answer.
+© UCLES 2022
+9618/23/0/N/22
+Turn over
+
+--- Page 6 ---
+6
+4 (a) A program contains a 1D array DataItem with 100 elements.
+State the one additional piece of information required before the array can be declared.
+11]
+(b) A programmer decides to implement a queue Abstract Data Type (ADT) in order to store
+characters received from the keyboard. The queue will need to store at least 10 characters
+and will be implemented using an array.
+(i) Describe two operations that are typically required when implementing a queue.
+State the check that must be carried out before each operation can be completed.
+Operation 1
+Check 1
+Operation 2
+Check 2
+[4]
+(ii) Describe the declaration and initialisation of the variables and data structures used to
+implement the queue.
+[5]
+© UCLES 2022
+9618/23/0/N/22
+
+--- Page 7 ---
+7
+5 (a) A text string contains three data items concatenated as shown:
+<StockID><Description><Cost>
+Item lengths are:
+Item
+StockID
+Description
+Cost
+Length
+5
+32
+the remainder of the string
+calling program after the procedure ends.
+(i) Write pseudocode for the procedure Unpack () .
+[6]
+(ii) Explain the term procedure interface with reference to procedure Unpack ().
+12]
+© UCLES 2022
+9618/23/0/N/22
+[Turn over
+
+--- Page 8 ---
+8
+(b) The design changes and a record structure is defined to store the three data items.
+A user-defined data type StockItem is created as shown:
+TYPE StockItem
+DECLARE StockID: STRING
+DECLARE Description : STRING
+DECLARE Cost : REAL
+ENDTYPE
+(i) A variable LineData of type StockItem is declared.
+Write the pseudocode statement to assign the value 12.99 to the Cost field of
+LineData.
+.. [1]
+(ii) Procedure Unpack () is modified and converted to a function which takes the original
+text string as the only parameter.
+Explain the other changes that need to be made to convert the procedure into a function.
+12]
+© UCLES 2022
+9618/23/0/N/22
+
+--- Page 9 ---
+9
+(c) Unpack () is part of a program made up of several modules. During the design stage, it is
+important to follow good programming practice. One example of good practice is the use of
+meaningful identifier names.
+Give the reason why this is good practice. Give two other examples of good practice.
+Reason
+Example 1
+Example 2
+[3]
+(d) The program that includes Unpack () is tested using the walkthrough method.
+Describe this method and explain how it can be used to identify an error.
+13]
+© UCLES 2022
+9618/23/0/N/22
+[Turn over
+
+--- Page 10 ---
+10
+Components are weighed during manufacture. Weights are measured to the nearest whole gram.
+Components that weigh at least 3 grams more than the maximum weight, or at least 3 grams less
+than the minimum weight, are rejected.
+A component is rechecked if it weighs within 2 grams of either the maximum or minimum weight.
+The final outcome of weighing each component is shown below:
+Outcome
+Weight
+Reject
+Recheck
+Max + 2
+Max
+Max - 2
+— Maximum weight
+Accept
+Recheck
+Min +2
+Min
+Min - 2
+— Minimum weight
+Reject
+A function status () will be called with three parameters. These are integers representing the
+weight of an individual component together with the minimum and maximum weights.
+The value returned from the function will be as follows:
+Outcome
+Accept
+Reject
+Recheck
+Return value
+'A'
+'R'
+'C'
+(a) Complete the following test plan for five tests that could be performed on function status () .
+The tests should address all possible outcomes.
+Test number
+1
+2
+3
+4
+5
+Component weight
+Min
+Max
+Expected return value
+'A'
+© UCLES 2022
+9618/23/0/N/22
+15]
+
+--- Page 11 ---
+11
+(b) Write pseudocode for Status ().
+...... [6]
+© UCLES 2022
+9618/23/0/N/22
+[Turn over
+
+--- Page 12 ---
+12
+A teacher is designing a program to perform simple syntax checks on programs written by
+students.
+Two global 1D arrays are used to store the syntax error data. Both arrays contain 500 elements.
+:
+Array ErrCode contains integer values that represent an error number in the range 1 to 800.
+Array ErrText contains string values that represent an error description.
+The following diagram shows an example of the arrays.
+Index
+1
+2
+3
+4
+ErrCode
+10
+20
+50
+60
+ErrText
+"Invalid identifier name"
+"Bracket mismatch"
+"Type mismatch in assignment"
+...
+500
+999
+<Undefined>
+Note:
+• There are less than 500 error codes so corresponding elements in both arrays may be
+unused. Unused elements in Er rCode have the value 999. These will occur at the end of the
+array. The value of unused elements in ErrText is undefined.
+•
+Values in the ErrCode array are stored in ascending order but not all values may be present.
+For example, there may be no error code 31.
+Some error numbers are undefined. In these instances, the ErrCode array will contain a
+valid error number but the corresponding ErrText element will contain an empty string.
+The teacher has defined one program module as follows:
+Module
+Description
+• Prompts for input of two error numbers
+• Outputs a list of error numbers between the two numbers input
+(inclusive) together with the corresponding error description
+• Outputs a warning message when the error description is
+missing as for error number 50 in the example
+• Outputs a suitable header and a final count of error numbers
+found
+OutputRange ()
+Output based on the example array data above:
+List of error numbers from 1 to 60
+10 : Invalid
+identifier
+name
+20
+50
+: Bracket mismatch
+: Error
+Text Missing
+60 : Type mismatch in assignment
+© UCLES 2022
+4 error numbers output
+9618/23/0/N/22
+
+--- Page 13 ---
+13
+(a) Write pseudocode for module OutputRange (). Assume that the two numbers input
+represent a valid error number range.
+© UCLES 2022
+9618/23/0/N/22
+[Turn over
+
+--- Page 14 ---
+14
+............
+© UCLES 2022
+9618/23/0/N/22
+
+--- Page 15 ---
+Question 7 continues on the next page.
+© UCLES 2022
+9618/23/0/N/22
+[Turn over
+
+--- Page 16 ---
+16
+(b) (i) Two additional modules are defined:
+Module
+SortArrays ()
+AddError ()
+Description
+• Sorts the arrays into ascending order of ErrCode
+• Takes two parameters:
+• an error number as an integer
+• an error description as a string
+• Writes the error number and error description to the first
+unused element of the two arrays. Ensures the ErrCode
+array is still in ascending order
+• Returns the number of unused elements after the new error
+number has been added
+• Returns - 1 if the new error number could not be added
+Write pseudocode for the module AddError (). Assume that the error code is not
+already in the ErrCode array.
+© UCLES 2022
+9618/23/0/N/22
+
+--- Page 17 ---
+17
+16]
+(ii) A new Module RemoveError () Will remove a given error number from the array.
+Describe the algorithm that would be required. Do not include pseudocode statements in
+your answer.
+.... [3]
+© UCLES 2022
+9618/23/0/N/22
+
+--- Page 18 ---
+18
+BLANK PAGE
+© UCLES 2022
+9618/23/0/N/22
+
+--- Page 19 ---
+19
+BLANK PAGE
+© UCLES 2022
+9618/23/0/N/22
+
+--- Page 20 ---
+20
+BLANK PAGE
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2022
+9618/23/0/N/22

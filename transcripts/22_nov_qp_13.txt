@@ -1,0 +1,577 @@
+--- Page 1 ---
+55 Cambridge Assessment
+a International Education
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+9618/13
+October/November 2022
+1 hour 30 minutes
+Q O
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided.
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 20 pages. Any blank pages are indicated
+DC (RW/SG) 302753/2
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+2
+BLANK PAGE
+© UCLES 2022
+9618/13/0/N/22
+
+--- Page 3 ---
+3
+1
+A digital audio message needs to be recorded.
+(a) Tick (r) one box in each row to identify the effect of each action on the accuracy of the
+recording.
+Accuracy
+increases
+Accuracy
+decreases
+Accuracy does
+not change
+Action
+Change the sampling rate from 40 kHZ
+to 60kHz.
+Change the duration of the recording
+from 20 minutes to 40 minutes.
+Change the sampling resolution from
+24 bits to 16 bits.
+12]
+(b) The audio message is recorded with a sampling rate of 50 kHz and a sampling resolution of
+16 bits.
+The recording is 20 minutes in length.
+Calculate the file size of the recording.
+Give your answer in megabytes and show your working.
+Working ...
+Answer
+megabytes
+12]
+(c) A computer uses a buffer when playing the audio message.
+Explain the purpose of a buffer in a computer system using one other example.
+[3]
+© UCLES 2022
+9618/13/0/N/22
+[Turn over
+
+--- Page 4 ---
+4
+2 The relational database ASTRONOMY is used to store data about telescopes, the companies that
+own the telescopes and the photographs taken by the telescopes.
+The database has these three tables:
+COMPANY (TelephoneNumber, CompanyID, CompanyName)
+PHOTOGRAPH (PhotoID, TelescopeID, DateTaken, TimeTaken, Elevation)
+TELESCOPE (TelescopeID, CompanyID, SerialNumber)
+(a) Complete the following table by writing the correct answer for each item.
+Item
+Answer
+a suitable field for the primary key in
+COMPANY
+a candidate key in TELESCOPE
+the degree of relationship between
+TELESCOPE and PHOTOGRAPH
+[3]
+(b) A Database Management System (DBMS) has several features.
+Identify the feature that describes the relationship between data and its structure.
+...... [1]
+(c) Complete the SQL script to return the total number of telescopes owned by the company
+whose ID begins with HW.
+SELECT
+FROM TELESCOPE
+(......
+WHERE
+.... LIKE
+......
+.........;
+14]
+© UCLES 2022
+9618/13/0/N/22
+
+--- Page 5 ---
+5
+(d) Write the SQL script to add one field to the table PHOTOGRAPH to store the resolution of the
+photograph, e.g. 1920 × 1068.
+12]
+(e) The photographs are stored as bitmap images.
+Complete the statements about bitmap images by writing the missing words.
+The
+bits that are used to store each pixel.
+Metadata about the image is stored in the ...
+of the file.
+of a bitmap image is the number of
+12]
+(f)
+Describe the purpose of a query processor in a DBMS.
+12]
+© UCLES 2022
+9618/13/0/N/22
+Turn over
+
+--- Page 6 ---
+6
+Draw one line from each Operating System (OS) management task to its most appropriate
+description.
+OS Management task
+Description
+dynamically allocates memory to
+processes
+hardware management
+marks unallocated file storage
+for availability
+security management
+installs programs for devices
+connected to external ports
+memory management
+validates user and
+process authenticity
+process management
+allows processes to transfer
+data to and from each other
+14]
+© UCLES 2022
+9618/13/0/N/22
+
+--- Page 7 ---
+7
+4 (a) A Central Processing Unit (CPU) contains several special purpose registers and other
+components.
+(i) State the roles of the following registers.
+Memory Address Register (MAR) ...
+Memory Data Register (MDR) ..
+12]
+(ii) State when interrupts are detected during the Fetch-Execute (F-E) cycle.
+11]
+(b) A computer system contains a system clock.
+Describe the purpose of the system clock.
+12]
+(c) Upgrading secondary storage to solid state typically improves the performance of computer
+systems.
+Identify one other upgrade to the hardware and explain why it improves the performance of
+a computer system.
+Upgrade
+Explanation
+12]
+© UCLES 2022
+9618/13/0/N/22
+[Turn over
+
+--- Page 8 ---
+8
+(a) Draw a logic circuit for the logic expression:
+X = NOT ((NOT (A AND B)) OR (NOT (B AND C)))
+A-
+B -
+→x
+c-
+[31
+(b) Complete the truth table for the logic expression:
+Y = (NOT P AND Q) OR (Q AND NOT R)
+Working space
+P
+Q
+R
+Y
+0
+0
+0
+0
+1
+1
+1
+1
+1
+0
+1
+0
+1
+1
+1
+1
+1
+1
+[2]
+© UCLES 2022
+9618/13/0/N/22
+
+--- Page 9 ---
+9
+Question 6 begins on page 10.
+© UCLES 2022
+9618/13/0/N/22
+Turn over
+
+--- Page 10 ---
+10
+The following table shows part of the instruction set for a processor. The processor has one
+general purpose register, the Accumulator (ACC), and an Index Register (IX).
+Instruction
+Operand
+Explanation
+Opcode
+LDM
+LDD
+#n
+<address>
+Immediate addressing. Load the number n to ACC
+Direct addressing. Load the contents of the location at the given
+address to ACC
+IDX
+<address>
+Indexed addressing. Form the address from <address> + the contents
+of the index register. Copy the contents of this calculated address to
+ACC
+LDR
+#n
+MOV
+<register>
+STO
+<address>
+ADD
+<address>
+ADD
+#n
+SUB
+#n
+INC
+<register>
+JMP
+<address>
+CMP
+#n
+CMI
+<address>
+Immediate addressing. Load the number n to IX
+Moves the contents of the accumulator to the given register (IX)
+Store contents of ACC at the given address
+Add the contents of the given address to the ACC
+Add the denary number n to the ACC
+Subtract the denary number n from the ACC
+Add 1 to the contents of the register (ACC or IX)
+Jump to the given address
+Compare the contents of ACC with number n
+Indirect addressing. The address to be used is at the given address.
+Compare the contents of ACC with the contents of this second
+address
+JPE
+<address>
+Following a compare instruction, jump to <address > if the compare
+was True
+JPN
+<address>
+Following a compare instruction, jump to <address> if the compare
+was False
+OUT
+Output to the screen the character whose ASCII value is stored in
+ACC
+END
+Return control to the operating system
+< address> can be an absolute or a symbolic address
+# denotes a denary number, e.g. #123
+B denotes a binary number, e.g. B01001101
+© UCLES 2022
+9618/13/0/N/22
+
+--- Page 11 ---
+11
+(a) The current contents of main memory and selected values from the ASCII character set are
+given.
+(i) Trace the program currently in memory using the trace table.
+Address Instruction
+75
+LDR #0
+76
+LDD 100
+77
+78
+CMP #2
+JPE 91
+79
+LDX 110
+80
+SUB #32
+81
+82
+CMP #65
+JPN 86
+83
+LDM #1
+84
+ADD 101
+85
+STO 101
+86
+LDM #1
+87
+ADD
+100
+88
+STO 100
+89
+INC IX
+90
+JMP 76
+91
+LDD 101
+92
+ADD #48
+93
+OUT
+94
+END
+Instruction
+address
+ACC IX
+Memory address
+100
+101
+110
+111
+1
+97
+98
+Output
+112
+97
+••.
+100
+101
+1
+•..
+110
+97
+111
+98
+112 97
+ASCII
+value
+49
+50
+51
+52
+Character
+H N
+3
+65
+66
+67
+68
+A
+C
+D
+© UCLES 2022
+9618/13/0/N/22
+14]
+[Turn over
+
+--- Page 12 ---
+12
+(ii) Explain the purpose of relative addressing in an assembly language program.
+12]
+(b) The following table shows another part of the instruction set for the processor.
+Instruction
+Opcode
+Operand
+AND
+Explanation
+#n
+Bitwise AND operation of the contents of ACC with the operand
+AND
+Bn
+Bitwise AND operation of the contents of ACC with the binary number n
+AND
+XOR
+XOR
+<address>
+Bitwise AND operation of the contents of ACC with the contents of <address>
+#n
+Bitwise XOR operation of the contents of ACC with the operand
+<address>
+Bitwise XOR operation of the contents of ACC with the contents of <address>
+OR
+#n
+Bitwise OR operation of the contents of ACC with the operand
+OR
+Bn
+Bitwise OR operation of the contents of ACC with the binary number n
+OR
+<address>
+Bitwise OR operation of the contents of ACC with the contents of <address>
+LSL
+#n
+Bits in ACC are shifted logically n places to the left. Zeros are introduced on
+the right-hand end
+LSR
+#n
+Bits in ACC are shifted logically n places to the right. Zeros are introduced on
+the left-hand end
+<address> can be an absolute or a symbolic address
+# denotes a denary number, e.g. #123
+B denotes a binary number, e.g. BO1001101
+(i) The current contents of the ACC are:
+1
+1
+1
+1
+Show the contents of the ACC after the execution of the following instruction.
+AND B01001100
+[1]
+© UCLES 2022
+9618/13/0/N/22
+
+--- Page 13 ---
+13
+(ii) The current contents of the ACC are:
+Show the contents of the ACC after the execution of the following instruction.
+OR B01001111
+[1]
+(iii) The current contents of the ACC are:
+Show the contents of the ACC after the execution of the following instruction.
+LSR
+#2
+[1]
+(c) One instruction group is data movement.
+Give the name of one other instruction group.
+[11
+© UCLES 2022
+9618/13/0/N/22
+[Turn over
+
+--- Page 14 ---
+14
+(a) The diagram shows the hardware and software used to retrieve files stored on the cloud.
+Laptop
+Firewall
+A
+Internet
+Service
+Provider
+X
+B
+Complete the following table by writing the answer for each row.
+Answer
+The name of device A that allows the
+laptop to connect to the internet
+A type of cloud, X
+An example of an application, B, that
+can run on the cloud
+13]
+(b) Give one advantage and two disadvantages of transmitting data using satellites instead of
+copper cables.
+Advantage 1
+Disadvantage 1
+Disadvantage 2
+13]
+© UCLES 2022
+9618/13/0/N/22
+
+--- Page 15 ---
+15
+(c) Local Area Networks (LANs) can be made up of several subnetworks.
+(i) Give two benefits of dividing a network into subnetworks by subnetting the LAN.
+2
+12]
+(ii) A subnet mask is used when subnetting a LAN.
+Two devices on the LAN are located in different subnetworks.
+The IP addresses and corresponding subnet masks are shown:
+Device IP address
+Subnet mask
+10.10.12.1
+255.0.0.0
+192.168.12.4
+255.255.255.0
+Identify the following network ID and host ID.
+The network ID for the device with the IP address 10.10.12.1
+The host ID for the device with the IP address 192.168.12.4
+12]
+© UCLES 2022
+9618/13/0/N/22
+[Turn over
+
+--- Page 16 ---
+16
+8 (a) (i) Explain why some programs are distributed under an open source licence.
+12]
+(ii) Explain how a programmer benefits from distributing a program under a commercial
+licence.
+12]
+(b) A commercial program for a vehicle repair garage includes an Artificial Intelligence (AI)
+module that can diagnose faults and suggest repairs.
+Describe one economic impact the Al module may have on the garage.
+12]
+© UCLES 2022
+9618/13/0/N/22
+
+--- Page 17 ---
+17
+(a) (i) Convert the unsigned binary value into hexadecimal.
+10010011
+Answer ..
+(ii) Convert the unsigned binary value into denary.
+10010011
+11]
+Answer
+(b) State two benefits of using Binary Coded Decimal (BCD) to represent values.
+Benefit 1
+[1]
+Benefit 2
+[2]
+© UCLES 2022
+9618/13/0/N/22
+[Turn over
+
+--- Page 18 ---
+18
+10 (a) Explain the importance of feedback in a control system.
+(b) (i) Identify one sensor that could be used in a car alarm system.
+Justify your choice.
+Sensor
+Justification
+(ii) The car alarm is an example of an embedded system.
+Describe the characteristics of an embedded system.
+© UCLES 2022
+9618/13/0/N/22
+13]
+12]
+... [3]
+
+--- Page 19 ---
+19
+BLANK PAGE
+© UCLES 2022
+9618/13/0/N/22
+
+--- Page 20 ---
+20
+BLANK PAGE
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2022
+9618/13/0/N/22

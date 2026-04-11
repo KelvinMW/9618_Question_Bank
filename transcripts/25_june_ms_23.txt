@@ -1,0 +1,662 @@
+--- Page 1 ---
+* CAMBRIDGE
+International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+MARK SCHEME
+Maximum Mark: 75
+9618/23
+May/June 2025
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2025 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+This document consists of 14 printed pages.
+© Cambridge University Press & Assessment 2025
+[Turn over
+
+--- Page 2 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level
+descriptions for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© Cambridge University Press & Assessment 2025
+Page 2 of 14
+
+--- Page 3 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Annotations guidance for centres
+Examiners use a system of annotations as a shorthand for communicating their marking decisions to
+one another. Examiners are trained during the standardisation process on how and when to use
+annotations. The purpose of annotations is to inform the standardisation and monitoring processes
+and guide the supervising examiners when they are checking the work of examiners within their team.
+The meaning of annotations and how they are used is specific to each component and is understood
+by all examiners who mark the component.
+We publish annotations in our mark schemes to help centres understand the annotations they may
+see on copies of scripts. Note that there may not be a direct correlation between the number of
+annotations on a script and the mark awarded. Similarly, the use of an annotation may not be an
+indication of the quality of the response.
+The annotations listed below were available to examiners marking this component in this series.
+Annotations
+Annotation
+BOD
+X
+LFT
+Highlighted text
+NAQ]
+NE
+Meaning
+Benefit of the doubt
+To indicate where a key word/phrase/code is missing
+Incorrect
+Follow through
+Indicate a point in an answer
+To draw attention to a particular aspect or to indicate where parts of an answer
+have been combined
+Ignore
+Not answered question
+No examples or not enough
+Not relevant or used to separate parts of an answer
+Off-page
+comment
+REP]
+SEEN
+Allows comments to be entered at the bottom of the RM marking window and
+then displayed when the associated question item is navigated to.
+Repetition
+Indicates that work or a page has been seen including blank answer spaces
+and blank pages.
+Correct
+© Cambridge University Press & Assessment 2025
+Page 3 of 14
+
+--- Page 4 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Annotation
+TV
+Meaning
+Too vague
+© Cambridge University Press & Assessment 2025
+Page 4 of 14
+
+--- Page 5 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Mark scheme abbreviations
+separates alternative words / phrases within a marking point
+separates alternative answers within a marking point
+Underline
+Max
+1).
+bold
+actual word given must be used by candidate (grammatical variants accepted)
+indicates the maximum number of marks that can be awarded
+the word / phrase in brackets is not required, but sets the context
+word/phrase in bold indicates this is a key word/phrase in the candidates answer and
+this word/phrase or a word/phrase with a similar meaning must be present
+© Cambridge University Press & Assessment 2025
+Page 5 of 14
+
+--- Page 6 ---
+9618/23
+Question
+1(a)(i)
+1(a)(ii)
+1(a)(ii)
+1(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+MP1
+MP2
+MP3
+MP4
+MP5
+Max 2
+MP1
+MP2
+MP3
+Answer
+When a task/module is repeated / reused / called // performed in
+several places
+A specific task can be identified /coded as a module / subroutine /
+procedure / function.
+Reduces complexity of program / code // Program / code is
+simplified
+Module / subroutine / procedure / function already available.
+Testing / debugging / maintenance is easier
+Local variables are used within a module I/ are accessible only within
+the module (in which they are declared)
+Global variables are accessible to all parts of the program /
+Local variables use memory only while the module in is executing //
+Global variables use memory for the whole time the program is
+running
+Max 1
+MP1
+MP2
+MP3
+MP4
+The same variable name can be reused in other parts of the
+program
+Using local variables makes modules self-contained // cannot
+accidentally change the same identifier outside of the module
+Using local variables aids modularisation.
+Memory allocated to local variables can be reused when module not
+in use
+Max 2
+Mark as follows:
+Expression
+CHR (68)
+MONTH (04/02/2025)
+Evaluates to
+'D'
+2
+Mark
+1
+1
+// -2 + DAY (04/02/2025)
+// -2023 + YEAR (04/02/2025)
+NOT TRUE
+FALSE
+1
+// FALSE = TRUE
+SIR_IO_NUM (MID ("Courtl. 4Upper", 6, 3))
+1.4
+2
+Mark Row 4 as follows:
+STR_TO_NUM
+MID ("'Courtl. 4Upper", 6, 3)
+1 mark
+1 mark
+May/June 2025
+Marks
+2
+1
+2
+5
+© Cambridge University Press & Assessment 2025
+Page 6 of 14
+
+--- Page 7 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+1(c)
+Marks
+4
+Variable
+MemberCount
+TotalTakings
+BookingConfirmed
+MemberDOB
+Mark as follows:
+1 mark per row
+Data type
+INTEGER
+REAL
+BOOLEAN
+DATE
+Question
+2(a)(i)
+2(a)(ii)
+Answer
+MP1
+MP2
+400
+6
+Memory
+location
+409
+408
+407
+406
+405
+404
+403
+402
+401
+400
+Stack
+Marks
+2
+3
+Value
+MP1
+MP2
+MP3
+'Y'
+'Z'
+< TopofStack
+'F'
+'к'
+'B'
+'s
+'R'
+'D'
+IopOEStack pointing to "Y' and value "Y' in location 408
+Values 'C' and 'Z' in 406 and 407
+Values 'D' to 'F' unchanged in 400 to 405 and 409 is empty
+© Cambridge University Press & Assessment 2025
+Page 7 of 14
+
+--- Page 8 ---
+9618/23
+Question
+2(b)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Answer
+Pointer
+Marks
+3
+Index
+0
+1
+2
+3
+4
+5
+Data
+"Neptune"
+"Jupiter"
+"Saturn"
+"Earth"
+"Mercury"
+"Uranus"
+Earth pointer 1
+Uranus pointer - 1
+Other four correct pointers
+2
+4
+5
+MP3
+1
+MP1
+-1
+MP2
+2(b)(ii)
+2(c)
+MP1
+MP2
+MP3
+3
+MP1
+MP2
+MP3
+MP4
+Max 2
+1
+2
+First value added to queue is the first value removed // FIFO // LILO
+Two pointers needed to indicate the start and end of the queue
+May behave as a circular queue
+Manipulated using enqueue () / dequeue () operations // by
+description
+© Cambridge University Press & Assessment 2025
+Page 8 of 14
+
+--- Page 9 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2025
+Answer
+Question
+3
+Marks
+7
+Example solution:
+FUNCTION RollDice (NoOfTimes : INTEGER) RETURNS REAL
+DECLARE RollValue : INTEGER
+DECLARE Average : REAL
+DECLARE Count : INTEGER
+DECLARE Sum : INTEGER
+Sum < 0
+FOR Count + 1 TO NoOfTimes
+RollValue < INT (RAND (6)) + 1
+OUTPUT
+RollValue
+Sum & Sum + RollValue
+NEXT Count
+Average + Sum / NoOfTimes
+RETURN Average
+ENDFUNCTION
+MP1
+MP2
+MP3
+MP4
+MP5
+MP6
+MP7
+Declare all variables used and initialise Sum to o
+Loop for 'number of times' parameter
+Use RAND() function with Integer parameter
+in a loop
+Use INT() function in a loop
+Generate a random integer between 1 and 6
+in a loop
+Output each value generated
+in a loop
+Calculate Sum and if Average used check declared as REAL and
+return Average and check function header returns REAL
+Question
+4(a)
+Answer
+MP1 Open the file (Sales. txt) in read mode and subsequently close
+MP2
+MP3
+MP4
+MP5
+MP6
+Max 5
+Read a line (from the text file)
+Convert the line read (string) to a number
+If the number is greater than 500 and then output week number
+Increment week number (must have been Initialised ...)
+Repeat from step 2 for 52 times // Repeat from step 2 until end of file
+Marks
+5
+© Cambridge University Press & Assessment 2025
+Page 9 of 14
+
+--- Page 10 ---
+9618/23
+Question
+4(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+MP1
+Answer
+Going through the program a line / statement at a time
+I/ doing a dry run
+Il single-stepping (at run-time with an IDE)
+// Peer testing/review is carried out
+MP2
+MP3
+MP4
+MP5
+Creating a trace table
+Draw up test data I/ draw up list of inputs with expected output
+I/ boundary, normal, abnormal data is used
+Errors will be indicated when a variable / output gives an
+unexpected value
+Faults in the logic of the program can be detected // Errors may be
+indicated by an unexpected path through the program
+Max 3
+May/June 2025
+Marks
+3
+Question
+5
+Answer
+Marks
+8
+Example solution:
+FUNCTION Parity (Bitstring : STRING) RETURNS STRING
+DECLARE Index, Count: INTEGER
+Count < 0
+FOR Index + 1 IO LENGTH (Bitstring)
+IF MID(BitString, Index, 1) = '1' THEN
+Count + Count + 1
+ENDIF
+NEXT Index
+IF Count MOD 2 = 1 THEN
+BitString ‹ BitString & '1'
+ELSE
+Bitstring ‹ Bitstring & 'O'
+ENDIF
+RETURN Bitstring
+ENDFUNCTION
+MP1
+MP2
+MP3
+MP4
+MP5
+MP6
+MP7
+MP8
+Function heading and ending and parameter (STRING) and return
+type STRING
+Loop for length of Bitstring
+Extract current character in a loop
+Compare current character to '1' or 'O' in a loop
+Increment count and was Initialised earlier in a loop
+Check if even/odd number of 1s
+Append ' 1' or '0' as appropriate
+Return amended Bitstring
+© Cambridge University Press & Assessment 2025
+Page 10 of 14
+
+--- Page 11 ---
+9618/23
+Question
+6(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+A function returns a (single) value and a procedure does not
+A procedure can pass parameters by ByRef
+May/June 2025
+Marks
+1
+6(b)
+MP1
+MP2
+Max 1
+Sub_Part1A:
+PROCEDURE Sub PartlA (R: INTEGER)
+Sub_Part2A:
+FUNCTION Sub Part2A (I : REAL) RETURNS BOOLEAN
+5
+1 Mark
+2 Marks
+Sub_Part3A:
+PROCEDURE Sub Part3A (V: INTEGER, W: BOOLEAN, BYREF U :
+STRING)
+2 Marks
+6(c)
+Symbol
+Explanation
+The module Main calls either Sub_A or Sub_B (which one
+is called is determined at run time)
+The module Sub_A will repeatedly call Sub_Part1A followed
+by Sub_Part2A then by Sub_Part3A
+MP1 Shape1: reference to selection
+MP2 Shape2: reference to repetition // iteration
+MP3 Descption (×2) including correct use of all module names in both parts
+3
+© Cambridge University Press & Assessment 2025
+Page 11 of 14
+
+--- Page 12 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+7(a)(i)
+Marks
+5
+7(a)(ii)
+Example solution:
+PROCEDURE UpdateVisit (BYREF LastVisitDate : DATE,
+BYREF LoyaltyPoints : INTEGER)
+IF MONTH (TODAY ()) = MONTH (LastVisitDate) THEN
+LoyaltyPoints & LoyaltyPoints + 4
+ELSE
+ENDIF
+LoyaltyPoints & LoyaltyPoints + 1
+LastVisitDate ‹ TODAY ()
+ENDPROCEDURE
+MP1
+MP2
+Procedure heading and ending and two parameters of correct type
+.….. both passed BYREF
+MP3
+MP4
+Use of TODAY () function to obtain current date
+Use MONTH function (×2) and one parameter is the header parameter
+and 2nd parameter is TODAY () / assigned variable
+MP5
+MP6
+If visit is same month, increase LoyaltyPoints by 4 otherwise
+increase by 1
+LastVisitDate set to TODAY () / 'current date' variable (assigned
+or unassigned)
+Max 5
+DAYINDEX (LastVisitDate) = DAYINDEX (TODAY ())
+1
+© Cambridge University Press & Assessment 2025
+Page 12 of 14
+
+--- Page 13 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+7(b)(i)
+Marks
+8
+Example solution:
+FUNCTION (MondayCheck (CustomerID : STRING) RETURNS
+INTEGER
+DECLARE LoyaltyPoints
+: INTEGER
+DECLARE
+LoyaltyPointsString : STRING
+DECLARE Line : STRING
+Line ‹ FindCustomer (CustomerID)
+LoyaltyPointsString
+* MID (Line,
+8, LENGTH (Line)
+16))
+LoyaltyPoints < STR_TO_NUM (LoyaltyPointsString)
+DAYINDEX (TODAY ()) = 2 THEN
+Loyaltypoints + LoyaltyPoints + 10
+ENDIF
+RETURN LoyaltyPoints
+ENDFUNCTION
+MP1
+Value is returned from FindCustomer (CustomerID) and stored
+MP2
+MP3
+MP4
+Function MID used
+Attempt to extract LoyaltyPoints from the string returned by
+FindCustomer ()
+Correct extraction of LoyaltyPoints from the string returned by
+FindCustomer ()
+MP5
+Conversion of LoyaltyPoints extracted to an integer
+MP6
+MP7
+MP8
+Check - is today's date a Monday using TODAY ()
+... increase LoyaltyPoints by 10
+Return LoyaltyPoints
+© Cambridge University Press & Assessment 2025
+Page 13 of 14
+
+--- Page 14 ---
+9618/23
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2025
+Question
+7(b)(i)
+Marks
+7(b)(ii)
+Alternative example solution:
+Uses a loop to calculate the number of digits in the LoyaltyPoints string
+FUNCTION MondayCheck (CustomerID : STRING) RETURNS INTEGER
+DECLARE LoyaltyPoints : INTEGER
+DECLARE LoyaltyPointsString : STRING
+DECLARE Index : INTEGER
+DECLARE Line
+STRING
+Line ‹ FindCustomer (CustomerID)
+Index < 9
+WHILE MID (Line, Index, 1) < '
+Index ‹ Index + 1
+ENDWHILE
+Il calculate the number of digits in LoyaltyPoints
+string
+LoyaltyPointsString & MID(Line,
+8,
+Index - 8)
+LoyaltyPoints & STR_TO_NUM (LoyaltyPointsString)
+IF DAYINDEX (TODAY ()) = 2 THEN
+LoyaltyPoints ‹ LoyaltyPoints + 10
+ENDIF
+RETURN LoyaltyPoints
+ENDFUNCTION
+Example solution:
+DayInt < STR_TO_NUM (LEFT (LastVisitDateString, 2))
+MonthInt + STR_TO_NUM (MID (LastVisitDateString, 3, 2))
+YearInt ‹ STR_TO_NUM (RIGHT (LastVisitDateString, 4))
+LastVisitDate < SETDATE (DayInt, MonthInt, YearInt)
+Mark as follows:
+MP1 Use of one substring function
+MP2
+DayInt, MonthInt and YearInt all correctly extracted
+MP3 Use of STR_TO_NUM X 3
+MP4 SETDATE () function used to convert to a date type and assigned to
+LastVisitDate
+4
+© Cambridge University Press & Assessment 2025
+Page 14 of 14

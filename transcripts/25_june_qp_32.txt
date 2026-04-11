@@ -1,0 +1,510 @@
+--- Page 1 ---
+* 0000800000001*
+ELS Cambridge Assessment
+International Education
+7
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+• 205
+9618/32
+May/June 2025
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided.
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages. Any blank pages are indicated
+DC (WW/FC) 342253/2
+© UCLES 2025
+L
+[Turn over
+J
+
+--- Page 2 ---
+* 0000800000002*
+Г
+2
+1
+Data types can be defined using pseudocode.
+The composite record data type, Departure, is used to represent flights from Cambridge Airport
+and is defined in pseudocode as:
+TYPE Departure
+DECLARE FlightNumber : STRING
+DECLARE Destination
+: STRING
+DECLARE FlightDate : DATE
+DECLARE Gate : STRING
+DECLARE Airline : STRING
+ENDTYPE
+A variable, Flight1, is declared in pseudocode as:
+DECLARE Flightl: Departure
+(a) Write pseudocode to store the following details to Flight1:
+Field
+Data
+FlightNumber
+SB2789
+Destination
+Dublin
+FlightDate
+30/07/2025
+Gate
+N03
+Airline
+Cambridge Airways
+7
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+13]
+(b) The data type for Gate is changed to an enumerated data type, GateID.
+(i) Write a pseudocode statement to declare GateID to hold the identity codes for the
+airport gates:
+N01, N02, NO3, W01, WO2, W03, W04
+12]
+(ii) Write the new pseudocode statement required to replace the declaration of Gate in
+Departure.
+[1]
+OUCLES 2025
+9618/32/M/J/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 3 ---
+* 0000800000003*
+DO NOT WRITE IN THIS MARGIN
+3
+7
+2
+Numbers are stored in a computer using binary floating-point representation with:
+12 bits for the mantissa
+• 4 bits for the exponent
+• two's complement form for both the mantissa and the exponent.
+(a) Calculate the normalised binary floating-point representation of +124.4375 in this system.
+Show your working.
+Mantissa
+Exponent
+DO NOT WRITE IN THIS MARGIN
+Working
+DO NOT WRITE IN THIS MARGIN
+[3]
+(b) Calculate the denary value of the following normalised binary floating-point number.
+Show your working.
+Mantissa
+0 1 0 1 1
+Exponent
+0 1 1 0
+Working ..
+DO NOT WRITE IN THIS MARGIN
+Denary value
+[3]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/32/M/J/25
+[Turn over
+
+--- Page 4 ---
+0000800000004*
+4
+7
+3
+(a) Identify two different layers of the TCP/IP protocol suite.
+11]
+DO NOT WRITE IN THIS MARGIN
+(b) Describe how the TCP/IP protocol suite is applied when a message is sent through the
+internet from one host to another. Do not describe the function of individual layers of the
+TCP/IP protocol suite.
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+14]
+4 Circuit switching may be used as a method of data transmission.
+State two benefits and two drawbacks of circuit switching.
+Benefit 1
+Benefit 2
+DO NOT WRITE IN THIS MARGIN
+Drawback 1
+Drawback 2
+[4]
+LOUCLES 2025
+9618/32/M/J/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 5 ---
+0000800000005*
+DO NOT WRITE IN THIS MARGIN
+5
+5
+The management and scheduling of processes are tasks carried out by an operating system.
+(a) Identify three process states.
+7
+2
+3
+[3]
+DO NOT WRITE IN THIS MARGIN
+(b) Describe the function of the shortest job first scheduling routine and give a benefit of this
+routine.
+Function
+DO NOT WRITE IN THIS MARGIN
+Benefit
+[4]
+6
+(a) Describe the structure of a graph as used in an Artificial Intelligence (Al) system.
+DO NOT WRITE IN THIS MARGIN
+12]
+(b) Explain how supervised learning and unsupervised learning differ from each other.
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/32/M/J/25
+14]
+[Turn over
+
+--- Page 6 ---
+0000800000006*
+Г
+7
+6
+The diagram shows a logic circuit
+A
+Q
+B
+P
+C
+R
+D
+(a) Complete the truth table for the given logic circuit.
+Show your working.
+A
+B
+D
+P
+Working space
+Q
+0
+0
+0
+0
+0
+0
+0
+0
+0
+1
+1
+1
+C
+0
+0
+1
+1
+1
+0
+1
+0
+1
+0
+1
+1
+1
+1
+1
+1
+0
+1
+1
+1
+1
+1
+0
+1
+© UCLES 2025
+9618/32/M/J/25
+Z
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+[3]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 7 ---
+* 0000800000007 *
+DO NOT WRITE IN THIS MARGIN
+7
+7
+(b) Write the Boolean logic expression that corresponds to the given logic circuit as the
+sum-of-products.
+Z =
+[1]
+(c) Use Boolean algebra including De Morgan's laws to simplify the following expression.
+Show all working.
+(A +B). (A. B + B. C)
+DO NOT WRITE IN THIS MARGIN
+Working
+DO NOT WRITE IN THIS MARGIN
+Simplified expression
+[4]
+8
+Explain what is meant by lexical analysis during program compilation.
+DO NOT WRITE IN THIS MARGIN
+[4]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/32/M/J/25
+[Turn over
+
+--- Page 8 ---
+0000800000008*
+9
+Several syntax diagrams are shown.
+letter
+digit
+A
+E
+operator
+variable
+letter
+letter
+digit
+OUCLES 2025
+9618/32/M/J/25
+7
+DO NOT WRITE IN THIS MARGIN
+2)
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 9 ---
+* 0000800000009*
+DO NOT WRITE IN THIS MARGIN
+9
+7
+(a) State why 9K is not a valid variable for the given syntax diagrams.
+[1]
+(b) Complete the Backus-Naur Form (BNF) for < operator›.
+‹operator> ::=
+DO NOT WRITE IN THIS MARGIN
+[1]
+(c) An expression is defined as follows:
+• •
+A variable is assigned to a variable followed by an operator followed by another variable.
+The operator and final variable stage can be repeated as many times as necessary.
+Complete the syntax diagram for an expression.
+expression
+variable
+→
+=
+DO NOT WRITE
+IN THIS MARGIN
+13]
+(d) A character can be a letter or a digit.
+An additional constraint has been applied to the definition of variable. It must comply with the
+given syntax diagram, but it will only pass validation if it has at least four characters.
+State one example of a valid variable.
+DO NOT WRITE IN THIS MARGIN
+... 1]
+10 Identify the two main protocols that form Transport Layer Security (TLS) and state the purpose of
+each.
+Protocol 1
+Purpose..
+DO NOT WRITE IN THIS MARGIN
+Protocol 2
+Purpose ..
+OUCLES 2025
+9618/32/M/J/25
+[4]
+[Turn over
+
+--- Page 10 ---
+* 0000800000010*
+10
+11 (a) A linked list of nodes is used to store an ordered list of strings. Each node consists of the
+data, a left pointer and a right pointer.
+Left pointer Data Right pointer
+Pp
+The linked list will be organised as a binary tree.
+O is used to represent a null pointer.
+Complete the binary tree, including null pointers, to show how the data will be organised after
+the following strings have been added:
+Aa, Mm, Ss, Xx
+7
+DO NOT WRITE IN THIS MARGIN
+Root pointer
+DO NOT WRITE IN THIS MARGIN
+Pp
+Gg
+DONOT WRITE IN THIS MARGIN
+Kk
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2025
+9618/32/M/J/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 11 ---
+* 0000800000011 *
+DO NOT WRITE IN THIS MARGIN
+11
+(b) A binary tree can be used to implement recursion.
+Identify one feature of an algorithm that makes it beneficial to use recursion.
+Give one example of an application that could use a recursive algorithm.
+Feature ..
+7
+Example
+DO NOT WRITE IN THIS MARGIN
+12]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/32/M/J/25
+[Turn over
+
+--- Page 12 ---
+* 0000800000012*
+12
+12 (a) A medical clinic uses objects of the class patient to assign a priority and a doctor to a
+patient. Some of the attributes required in the class are listed in the table.
+Attribute
+PatientID
+Data type
+STRING
+Name
+STRING
+DoctorID
+STRING
+Description
+Unique identifier of the patient
+Patient's full name, surname first
+ID of doctor administering treatment
+Treatment is prioritised with a numeric scale of 1 to 5.
+Complete the class diagram for Patient, to include:
+attribute and data type for the date of birth
+attribute and data type for the priority
+methods to assign the patient ID, priority and doctor ID
+methods to return the patient ID, patient date of birth and the priority.
+Patient
+PatientID
+: STRING
+Name
+: STRING
+:
+...
+•..•
+DoctorID
+: STRING
+7
+DO NOT WRITE IN THIS MARGIN
+SetName (FullName : STRING)
+SetDateOfBirth (DOB : DATE)
+DO NOT WRITE IN THIS MARGIN
+GetName ()
+GetDoctorID ()
+LOUCLES 2025
+9618/32/M/J/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 13 ---
+* 0000800000013*
+DO NOT WRITE IN THIS MARGIN
+13
+7
+(b) (i) Identify the object-oriented programming (OOP) term described as 'an occurrence of an
+object'.
+11]
+(ii) Describe what is meant by the OOP term polymorphism.
+DO NOT WRITE IN THIS MARGIN
+12]
+13
+DO NOT WRITE IN THIS MARGIN
+The pseudocode algorithm below uses random file access to copy 50 records from a live file
+CurrentResults. dat to a stored file storedResults. dat one record at a time. It uses the
+user-defined type StudentResult.
+TYPE StudentResult
+DECLARE LastName : STRING
+DECLARE FirstName : STRING
+DECLARE ExamGrade : STRING
+ENDTYPE
+If any grades are missing in CurrentResults. dat, the text "Missing grade" is added to the
+ExamGrade field in StoredResults.dat
+Complete this file handling pseudocode algorithm.
+DECLARE Grade: StudentResult
+DECLARE Position : INTEGER
+DO NOT WRITE IN THIS MARGIN
+OPENFILE "StoredResults.dat" FOR RANDOM
+• . . . ............ - CC - . - . . . • •
+SEEK "CurrentResults.dat", Position
+GETRECORD "CurrentResults.dat", Grade
+IF Grade.ExamGrade = "" THEN
+ENDIF
+DO NOT WRITE IN THIS MARGIN
+NEXT Position
+CLOSEFILE "CurrentResults.dat"
+CLOSEFILE "StoredResults.dat"
+OUCLES 2025
+[5]
+9618/32/M/J/25
+
+--- Page 14 ---
+* 0000800000014*
+Г
+14
+BLANK PAGE
+LOUCLES 2025
+9618/32/M/J/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 15 ---
+* 0000800000015*
+DO NOT WRITE IN THIS MARGIN
+15
+BLANK PAGE
+7
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/32/M/J/25
+
+--- Page 16 ---
+* 0000800000016*
+Г
+16
+BLANK PAGE
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series. J
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+OUCLES 2025
+9618/32/M/J/25
+DO NOT WRITE IN THIS MARGIN

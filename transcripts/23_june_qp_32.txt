@@ -1,0 +1,458 @@
+--- Page 1 ---
+5 Cambridge Assessment
+a International Education
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+9618/32
+May/June 2023
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages. Any blank pages are indicated
+DC (RW/FC) 313065/3
+© UCLES 2023
+[Turn over
+
+--- Page 2 ---
+2
+Numbers are stored in a computer using floating point representation with:
+10 bits for the mantissa
+6 bits for the exponent
+two's complement form for both the mantissa and exponent.
+(a) Write the normalised floating-point representation of the following binary number using this
+system:
+0101010.111
+Show your working.
+Working
+Mantissa
+Exponent
+12]
+(b) Describe the reason why the normalised form of the following binary number cannot be
+represented accurately using this system.
+0101011.111001
+13]
+© UCLES 2023
+9618/32/M/J/23
+
+--- Page 3 ---
+3
+2 (a) Describe how records are organised and accessed in a sequential file.
+[3]
+(b) A hashing algorithm is used to calculate storage locations for records in a random access file.
+The algorithm calculates hash values using the function modulus 5.
+The function modulus gives the remainder after integer division.
+For example, 3003 modulus 5 = 3, so the record key 3003 gives a hash value of 3.
+Complete the table to show the remaining hash values.
+Record key
+3003
+Hash value
+3
+1029
+7630
+121
+© UCLES 2023
+9618/32/M/J/23
+[Turn over
+
+--- Page 4 ---
+4
+3
+Several syntax diagrams are shown.
+digit
+letter
+3
+4
+(r)
+variable
+letter
+digit
+→
+© UCLES 2023
+9618/32/M/J/23
+
+--- Page 5 ---
+5
+(a) State whether each variable is valid or invalid and give a reason for your choice in each case.
+9SW
+Reason
+UWY
+Reason
+12]
+(b) <word> contains one or more letters.
+Complete the Backus-Naur Form (BNF) for <word> and use this to complete the BNF for
+‹variable›.
+‹word>
+::=
+‹variable> ::=
+[3]
+(c) Vehicle registrations must begin with two letters and be followed by one, two or three digits.
+Valid letters and digits are shown in the syntax diagrams on page 4.
+(i) State an example of a valid vehicle registration.
+..... 11]
+(ii)
+Draw a syntax diagram for a vehicle registration.
+[3]
+© UCLES 2023
+9618/32/M/J/23
+[Turn over
+
+--- Page 6 ---
+4
+6
+Draw one line from each Object-Oriented Programming (OOP) term to its most appropriate
+description.
+OOP term
+Encapsulation
+Description
+methods used to return the value of
+a property
+the process of putting data and
+methods together as a single unit
+Getters
+methods used to update the value of
+a property
+Polymorphism
+allows methods to be redefined for
+derived classes
+Setters
+enables the defining of a new class
+that inherits from a parent class
+14]
+5 (a) Encryption is used to scramble data to make it meaningless if intercepted.
+Describe the purpose of quantum cryptography.
+[2]
+(b) Explain the differences between symmetric and asymmetric cryptography when encrypting
+and decrypting data.
+[3]
+© UCLES 2023
+9618/32/M/J/23
+
+--- Page 7 ---
+7
+6 (a) Write pseudocode statements to declare the composite data type, TAppointments, to hold
+data about patients for a dental clinic. It will include for each patient:
+•
+name (first name and last name)
+• date of birth
+telephone number
+date of last appointment
+date of next appointment
+• all treatments are complete (yes or no).
+14]
+(b) This pseudocode algorithm reads dental records stored in a random file using the user-defined
+data type TAppointments and prints the contents of the file, one record at a time.
+Complete this file handling pseudocode:
+DECLARE DentalRecord: ARRAY |1:250] OF TAppointments
+DECLARE Dentalfile: STRING
+DECLARE Count
+: INTEGER
+DentalFile ‹ "DentalFile.dat"
+OUTPUT "The file ", Dentalfile, " contains these records:"
+OPENFILE
+< 1
+REPEAT
+SEEK DentalFile, Count
+OUTPUT DentalRecord[Count]
+Count + Count + 1
+.... (DentalFile)
+15]
+© UCLES 2023
+9618/32/M/J/23
+[Turn over
+
+--- Page 8 ---
+8
+7 (a) State two examples of where it would be appropriate to use packet switching.
+12]
+(b) Give four differences between circuit switching and packet switching.
+1
+2
+3
+4
+14]
+© UCLES 2023
+9618/32/M/J/23
+
+--- Page 9 ---
+9
+8 (a) Describe the use of pipelining in Reduced Instruction Set Computers (RISC).
+12]
+(b) The processing of instructions is divided into five stages:
+instruction fetch (IF)
+instruction decode (ID)
+operand fetch (OF)
+instruction execute (IE)
+write back result (WB)
+Each stage is carried out using a different register when pipelining is used.
+Complete the table to show how a program consisting of six instructions would be completed
+using pipelining.
+1
+2
+3
+4
+5
+Clock cycles
+6
+7
+8
+9
+10
+11
+12
+Processor stages
+IF
+ID
+OF
+lE
+WB
+14]
+© UCLES 2023
+9618/32/M/J/23
+[Turn over
+
+--- Page 10 ---
+10
+This truth table represents a logic circuit.
+INPUT
+A
+B
+C
+D
+0
+0
+0
+0
+0
+0
+1
+1
+0
+0
+1
+1
+1
+1
+0
+1
+1
+1
+0
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+0
+1
+1
+OUTPUT
+Z
+1
+1
+1
+1
+0
+0
+1
+1
+0
+0
+0
+0
+1
+1
+1
+1
+1
+1
+0
+1
+0
+1
+0
+0
+(a) Write the Boolean logic expression that corresponds to the given truth table as the
+sum-of-products.
+Z = ...
+... [3]
+© UCLES 2023
+9618/32/M/J/23
+
+--- Page 11 ---
+11
+(b) Complete the Karnaugh map (K-map) for the given truth table.
+AB
+CD
+00
+01
+11
+10
+00
+01
+10
+12]
+(c) Draw loop(s) around appropriate group(s) in the K-map to produce an optimal sum-of-products.
+12]
+(d) Write the Boolean logic expression from your answer to part (c) as a simplified
+sum-of-products.
+Z=
+[2]
+(e) Use Boolean algebra to give your answer to part (d) in its simplest form.
+Z=
+11]
+10 (a) State one category of machine learning.
+[1]
+© UCLES 2023
+9618/32/M/J/23
+[Turn over
+
+--- Page 12 ---
+12
+(b) Calculate the path that takes the shortest time to travel from the Begin node to the End node,
+using the A* algorithm.
+Show your working in the table provided.
+The first two rows have already been completed.
+12
+h = 8
+9 = 5
+Begin
+4
+A
+5
+6
+8
+8,
+E
+7
+End
+2
+7
+11
+D
+6
+G
+5
+4
+1
+Start node
+Begin
+Begin
+F
+Destination
+node
+Begin
+A
+Cost from
+start node
+(g)
+5
+Heuristic
+(h)
+12
+8
+Total
+(f= g + h)
+12
+13
+Final path
+© UCLES 2023
+15]
+9618/32/M/J/23
+
+--- Page 13 ---
+13
+11 (a) The pseudocode shown represents a queue Abstract Data Type (ADT) with procedures for
+initialisation and to add new items. It is incomplete.
+CONSTANT MaxLength = 50
+DECLARE FrontPointer : INTEGER
+DECLARE RearPointer : INTEGER
+DECLARE Length : INTEGER
+DECLARE Queue : ARRAYIO : Maxlength - 1] OF STRING
+Il initialisation of queue
+PROCEDURE Initialise
+FrontPointer ‹ -1
+ENDPROCEDURE
+Il adding a new item to the queue
+PROCEDURE
+Enqueue (NewItem : STRING)
+IF
+THEN
+RearPointer ‹
+IF RearPointer > MaxLength
+- 1 THEN
+RearPointer < O
+ENDIF
+Length + Length +
+1
+ENDIF
+ENDPROCEDURE
+(i) Study the pseudocode and insert the identifiers to complete this table.
+Identifier
+Data type
+STRING
+INTEGER
+INTEGER
+INTEGER
+Description
+An array to store the contents of the queue.
+Points to the last item of the queue.
+Indicates the number of items in the queue.
+Points to the first item of the queue.
+(i) Complete the given pseudocode.
+12]
+15]
+© UCLES 2023
+9618/32/M/J/23
+[Turn over
+
+--- Page 14 ---
+14
+(b) Explain the reasons why a queue ADT works better than a stack ADT in organising print jobs.
+13]
+© UCLES 2023
+9618/32/M/J/23
+
+--- Page 15 ---
+15
+BLANK PAGE
+© UCLES 2023
+9618/32/M/J/23
+
+--- Page 16 ---
+16
+BLANK PAGE
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2023
+9618/32/M/J/23

@@ -1,0 +1,471 @@
+--- Page 1 ---
+5 Cambridge Assessmen
+shes International Educatior
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 2 Fundamental Problem-solving and Programming Skills
+9618/22
+May/June 2022
+2 hours
+776 F
+You must answer on the question paper.
+You will need: Insert (enclosed)
+INSTRUCTIONS
+• Answer all questions.
+• Use a black or dark blue pen.
+• Write your name, centre number and candidate number in the boxes at the top of the page.
+• Write your answer to each question in the space provided
+• Do not use an erasable pen or correction fluid.
+• Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+• The insert contains all the resources referred to in the questions.
+This document has 20 pages. Any blank pages are indicated
+DC (KN/SW) 303772/3
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+2
+Refer to the insert for the list of pseudocode functions and operators.
+(a) A programmer is testing a program using an Integrated Development Environment (IDE)
+The programmer wants the program to stop when it reaches a specific instruction or program
+statement in order to check the value assigned to a variable.
+Give the technical term for the position at which the program stops.
+.... 11]
+(b) The following table lists some activities from the program development life cycle.
+Complete the table by writing the life cycle stage for each activity.
+Activity
+Life cycle stage
+An identifier table is produced.
+Syntax errors can occur.
+The developer discusses the program requirements with the customer.
+A trace table is produced.
+14]
+(c) An identifier table includes the names of identifiers used.
+State two other pieces of information that the identifier table should contain.
+1
+2
+12]
+(d) The pseudocode statements in the following table may contain errors.
+State the error in each case or write 'NO ERROR' if the statement contains no error.
+You can assume that none of the variables referenced are of an incorrect type.
+Statement
+Error
+Status < TRUE AND FALSE
+IF LENGTH ("Password") ‹ "10" THEN
+Code + LCASE ("Electrical")
+Result + IS_NUM (-27.3)
+14]
+© UCLES 2022
+9618/22/M/J/22
+
+--- Page 3 ---
+3
+2 An algorithm is described as follows:
+1.
+2.
+3.
+4.
+5.
+Input an integer value.
+Jump to step 6 if the value is less than zero.
+Call the function IsPrime () using the integer value as a parameter.
+Keep a count of the number of times function IsPrime () returns TRUE.
+Repeat from step 1.
+6. Output the value of the count with a suitable message.
+Draw a program flowchart to represent the algorithm.
+START
+END
+14]
+© UCLES 2022
+9618/22/M/J/22
+[Turn over
+
+--- Page 4 ---
+4
+3(a) The module headers for five modules in a program are defined in pseudocode as follows:
+Pseudocode module header
+FUNCTION Mod_V (S2 : INTEGER) RETURNS BOOLEAN
+PROCEDURE Mod
+LW(P4 : INTEGER)
+PROCEDURE Mod
+L_X(I4 : INTEGER, BYREF P3 : REAL)
+PROCEDURE Mod
+LY (W3 : REAL, 28 : INTEGER)
+FUNCTION Mod_Z (F3 : REAL) RETURNS INTEGER
+An additional module Head () repeatedly calls three of the modules in sequence.
+A structure chart has been partially completed.
+(i) Complete the structure chart to include the information given about the six modules.
+Do not label the parameters and do not write the module names.
+A
+B
+C
+D
+E
+F
+[3]
+© UCLES 2022
+9618/22/M/J/22
+
+--- Page 5 ---
+5
+(ii) Complete the table using the information in part 3(a) by writing each module name to
+replace the labels A to F.
+Label
+A
+B
+C
+D
+E
+F
+Module name
+[3]
+(b) The structure chart represents part of a complex problem. The process of decomposition is
+used to break down the complex problem into sub-problems.
+Describe three benefits of this approach.
+2
+3
+[3]
+© UCLES 2022
+9618/22/M/J/22
+Turn over
+
+--- Page 6 ---
+6
+4 (a) Aprocedure LastLines () will:
+• •
+take the name of a text file as a parameter
+output the last three lines from that file, in the same order as they appear in the file.
+Note:
+Use local variables LineX, Liney and Linez to store the three lines from the file.
+You may assume the file exists and contains at least three lines.
+Write pseudocode for the procedure Lastlines ().
+[6]
+© UCLES 2022
+9618/22/M/J/22
+
+--- Page 7 ---
+7
+(b) The algorithm in part (a) is to be amended. The calling program will pass the number of lines
+to be output as well as the name of the text file.
+The number of lines could be any value from 1 to 30.
+It can be assumed that the file contains at least the number of lines passed.
+Outline three changes that would be needed
+2
+3
+13]
+© UCLES 2022
+9618/22/M/J/22
+[Turn over
+
+--- Page 8 ---
+8
+5 Study the following pseudocode. Line numbers are for reference only
+10 PROCEDURE Encode ()
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+DECLARE CountA, CountB, ThisNum
+: INTEGER
+DECLARE ThisChar : CHAR
+DECLARE Flag : BOOLEAN
+CountA < 0
+CountB ‹ 10
+Flag + TRUE
+INPUT ThisNum
+WHILE ThisNum <> 0
+ThisChar ‹ LEFT (NUM_TO_STR (ThisNum) ,
+IF Flag = TRUE THEN
+CASE OF ThisChar
+"1'
+: CountA ‹ CountA + 1
+"2'
+: IF CountB < 10 THEN
+CountA + CountA + 1
+ENDIE
+"3'
+'4'
+: CountB + CountB - 1
+: CountB + CountB - 1
+Flag + FALSE
+OTHERWISE : OUTPUT "Ignored"
+ENDCASE
+ELSE
+IF
+CountA > 2 THEN
+Flag & NOT Flag
+OUTPUT "Flip"
+ELSE
+CountA + 4
+ENDIF
+ENDIF
+INPUT ThisNum
+ENDWHILE
+OUTPUT CountA
+42 ENDPROCEDURE
+1)
+(a) Procedure Encode () contains a loop structure.
+Identify the type of loop and state the condition that ends the loop.
+Do not include pseudocode statements in your answer.
+Type
+Condition
+12]
+© UCLES 2022
+9618/22/M/J/22
+
+--- Page 9 ---
+9
+(b) Complete the trace table below by dry running the procedure Encode () when the following
+values are input:
+12, 24, 57, 43, 56, 22, 31, 32, 47, 99, 0
+The first row is already complete.
+ThisNum
+ThisChar
+Counta
+OUTPUT
+CountB
+10
+Flag
+TRUE
+[6]
+(c) Procedure Encode () is part of a modular program. Integration testing is to be carried out on
+the program.
+Describe integration testing.
+12]
+© UCLES 2022
+9618/22/M/J/22
+[Turn over
+
+--- Page 10 ---
+10
+6 A string represents a series of whole numbers, separated by commas.
+For example:
+"12,13,451,22"
+Assume that:
+the comma character',' is used as a separator
+: the string contains only the characters 'O' to '9' and the comma character"!
+A procedure Parse Will:
+• take the string as a parameter
+extract each number in turn
+• calculate the total value and average value of all the numbers
+• output the total and average values with a suitable message.
+Write pseudocode for the procedure.
+PROCEDURE Parse (InString : STRING)
+© UCLES 2022
+9618/22/M/J/22
+
+--- Page 11 ---
+11
+ENDPROCEDURE
+[7
+© UCLES 2022
+9618/22/M/J/22
+Turn over
+
+--- Page 12 ---
+12
+7 A programming language has string functions equivalent to those given in the insert
+The language includes a LEFT () and a RIGHT () function, but it does not have a MID () function.
+(a) Write pseudocode for an algorithm to implement your own version of the MID () function
+which will operate in the same way as that shown in the insert.
+Do not use the MID () function given in the insert, but you may use any of the other functions.
+Assume that the values passed to the function will be correct.
+[4]
+(b) The values passed to your MID () function in part (a) need to be validated.
+Assume that the values are of the correct data type.
+State two checks that could be applied to the values passed to the function.
+1
+2
+[2]
+© UCLES 2022
+9618/22/M/J/22
+
+--- Page 13 ---
+13
+BLANK PAGE
+© UCLES 2022
+9618/22/M/J/22
+Turn over
+
+--- Page 14 ---
+14
+8 A program allows a user to save passwords used to log in to websites. A stored password is then
+inserted automatically when the user logs in to the corresponding website.
+A global 2D array Secret of type STRING stores the passwords together with the website domain
+name where they are used. Secret contains 1000 elements organised as 500 rows by 2 columns.
+Unused elements contain the empty string ('''). These may occur anywhere in the array
+An example of a part of the array is:
+Array element
+Secret[27, 11
+Secret[27, 2]
+Secret 128, 1]
+Secret [28, 2]
+Value
+"thiswebsite.com"
+"dooooooooooo"
+"thatwebsite.com"
+"aaoooooooooo"
+Note:
+• For security, the passwords are stored in an encrypted form, shown as "..
+example.
+:
+The passwords cannot be used without being decrypted.
+You may assume that the encrypted form of a password will NOT be an empty string.
+The programmer has started to define program modules as follows:
+Module
+Description
+..ooo" in the
+Exists ()
+Encrypt ()
+Decrypt ()
+•
+Takes two parameters:
+o a string
+o a character
+•
+Performs a case-sensitive search for the character in the string
+Returns TRUE if the character occurs in the string, otherwise
+returns FALSE
+:
+Takes a password as a parameter of type string
+Returns the encrypted form of the password as a string
+Takes an encrypted password as a parameter of type string
+Returns the decrypted form of the password as a string
+Note: in a case-sensitive comparison, 'a' is not the same as 'A'.
+© UCLES 2022
+9618/22/M/J/22
+
+--- Page 15 ---
+15
+(a) Write pseudocode for the module Exists ().
+..... [5]
+© UCLES 2022
+9618/22/M/J/22
+[Turn over
+
+--- Page 16 ---
+16
+(b) A new module SearchDuplicates () Will:
+•
+search for the first password that occurs more than once in the array and output a
+message each time a duplicate is found.
+For example, if the same password was used for the three websites ThisWebsite.com,
+website27.net and websiteZ99.org, then the following messages will be output:
+"Password for ThisWebsite.com also used for website27.net"
+"Password for Ihiswebsite.com also used for websiteZ99.org"
+• end once all messages have been output.
+The module will output a message if no duplicates are found.
+For example:
+"No duplicate passwords found"
+Write efficient pseudocode for the module SearchDuplicates (). Encrypt () and
+Decrypt () functions have been written.
+Note: It is necessary to decrypt each password before checking its value.
+© UCLES 2022
+9618/22/M/J/22
+
+--- Page 17 ---
+17
+..... 18]
+© UCLES 2022
+9618/22/M/J/22
+[Turn over
+
+--- Page 18 ---
+18
+(c) A password has a fixed format, consisting of three groups of four alphanumeric characters,
+separated by the hyphen character '-'.
+An example of a password is:
+"FxAf-3haV-Tq49"
+Each password must:
+• be 14 characters long
+• be organised as three groups of four alphanumeric characters. The groups are separated
+by hyphen characters
+• not include any duplicated characters, except for the hyphen characters.
+An algorithm is needed for a new function GeneratePassword (), which will generate and
+return a password in this format.
+Assume that the following modules have already been written:
+Module
+Description
+Exists ()
+RandomChar ()
+•
+Takes two parameters:
+o a string
+o a character
+•
+Performs a case-sensitive search for the character in the
+string
+Returns TRUE if the character occurs in the string, otherwise
+returns FALSE
+•
+Generates a single random character from within one of the
+following ranges:
+o 'a'to'z'
+• 'A'to 'Z'
+• '0'to'9'
+•
+Returns the character
+Note: in a case-sensitive comparison, 'a' is not the same as 'A'.
+© UCLES 2022
+9618/22/M/J/22
+
+--- Page 19 ---
+19
+Describe the algorithm for GeneratePassword ().
+Do not use pseudocode statements in your answer.
+[6]
+© UCLES 2022
+9618/22/M/J/22
+
+--- Page 20 ---
+20
+BLANK PAGE
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2022
+9618/22/M/J/22

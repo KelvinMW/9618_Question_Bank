@@ -1,0 +1,316 @@
+--- Page 1 ---
+55 Cambridge Assessment
+a International Education
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+9618/11
+May/June 2022
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages. Any blank pages are indicated
+DC (LK/CGW) 301923/2
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+2
+1
+Computers store data in binary form.
+(a) State the difference between a tebibyte and a terabyte.
+11]
+(b) Convert the signed denary value -100 into an 8-bit two's complement binary integer.
+Working ..
+Answer
+(c) Convert the denary number 251 into hexadecimal. Show your working.
+Working
+[1]
+Answer
+12]
+(d) Add the following unsigned binary integers.
+01010000
++00111110
+[1]
+© UCLES 2022
+9618/11/M/J/22
+
+--- Page 3 ---
+3
+A computer has hardware and software.
+(a) The hardware includes different types of memory.
+(i) Complete the description of computer memory.
+Random Access Memory (RAM) and Read Only Memory (ROM) are both examples of
+memory.
+One item that is stored in RAM is …...
+One item that is stored in ROM is ....
+RAM can be either Static RAM (SRAM) or Dynamic RAM (DRAM).
+SRAM uses transistors arranged as...
+DRAM uses transistors and
+(ii)
+Explain the difference between Programmable ROM (PROM), Erasable Programmable
+ROM (EPROM) and Electrically Erasable Programmable ROM (EEPROM).
+13]
+© UCLES 2022
+9618/11/M/J/22
+Turn over
+
+--- Page 4 ---
+4
+(b) A magnetic hard disk is used to store data on the computer.
+Describe the principal operations of a magnetic hard disk.
+[5]
+© UCLES 2022
+9618/11/M/J/22
+
+--- Page 5 ---
+5
+(c) Computers consist of logic gates.
+(i) Complete the table by writing one set of values (input 1 and input 2) for each gate that
+will give the output 1.
+Gate
+Input 1
+Input 2
+Output
+AND
+1
+NAND
+1
+XOR
+1
+NOR
+1
+14]
+(ii) Write the logic expression for the given logic circuit.
+A
+B
+-x
+C
+........ [3]
+© UCLES 2022
+9618/11/M/J/22
+[Turn over
+
+--- Page 6 ---
+6
+A teacher is writing examination papers on a laptop computer. The computer is connected to the
+internet. The teacher is concerned about the security and privacy of the papers.
+(a) State the difference between the security of data and the privacy of data.
+11]
+(b) Identify and describe two threats to the data. Identify one security measure to protect against
+each threat. Each security measure must be different.
+Threat 1
+Description
+Security measure
+Threat 2
+Description
+Security measure
+[6]
+© UCLES 2022
+9618/11/M/J/22
+
+--- Page 7 ---
+7
+4 A teacher uses a relational database, MARKS, to store data about students and their test marks.
+The database has the following structure:
+STUDENT (StudentID, FirstName, LastName)
+TEST (TestID, Description, TotalMarks)
+STUDENT_TEST (StudentID, TestID, Mark)
+(a) Describe the advantages of using a relational database compared to a file-based approach.
+14]
+(b) Give the highest level of Normal Form (NF) the database MARKS is in and justify your choice.
+Normal Form
+Justification
+13]
+© UCLES 2022
+9618/11/M/J/22
+[Turn over
+
+--- Page 8 ---
+8
+(c) (i)
+Sample data to be stored in the table STUDENT
+_TEST is shown.
+StudentID
+12
+12
+13
+14
+TestID
+Al
+P10
+A1
+P10
+Mark
+50
+100
+75
+60
+Write a Structured Query Language (SQL) script to create the table STUDENT_TEST.
+[5]
+(ii)
+Write a Structured Query Language (SQL) script to find the average mark of students in
+test A7.
+.. [3]
+© UCLES 2022
+9618/11/M/J/22
+
+--- Page 9 ---
+9
+(d) The mark a student is awarded in a test will be entered into the database. This mark needs to
+be a whole number between 0 and the maximum number of marks for that test (inclusive).
+Explain how data validation and data verification can be used when a mark is entered
+[4]
+© UCLES 2022
+9618/11/M/J/22
+Turn over
+
+--- Page 10 ---
+10
+A programmer uses an Integrated Development Environment (IDE) to develop a program.
+(a) Draw one line from each IDE feature to its correct description.
+IDE feature
+Context-sensitive prompt
+Description
+Executes one line of the program and
+then stops
+Dynamic syntax check
+Underlines or highlights statements
+that do not meet the rules of the
+language
+Breakpoint
+Outputs the contents of variables and
+data structures
+Single stepping
+Stops the code executing at a set line
+Report window
+Displays predictions of the code being
+entered
+(b) The programmer wants to allow users to edit, improve and redistribute the program.
+Identify two different types of software licence that the programmer could use.
+1
+2.......
+© UCLES 2022
+9618/11/M/J/22
+14]
+121
+
+--- Page 11 ---
+11
+(c) Explain the benefits to the programmer of using program libraries.
+...... [3]
+© UCLES 2022
+9618/11/M/J/22
+[Turn over
+
+--- Page 12 ---
+12
+6 (a) A computer system is designed using the basic Von Neumann model.
+(i) Describe the role of the registers in the Fetch-Execute (F-E) cycle.
+[5]
+(ii) Describe when interrupts are detected in the F-E cycle and how the interrupts
+are
+handled.
+Detected
+Handled
+[5]
+© UCLES 2022
+9618/11/M/J/22
+
+--- Page 13 ---
+13
+(b) Identify one factor that can affect the performance of the computer system and state how it
+impacts the performance.
+Factor
+Impact
+12]
+Question 6 continues on the next page.
+© UCLES 2022
+9618/11/M/J/22
+Turn over
+
+--- Page 14 ---
+14
+(c) The table shows part of the instruction set for a processor. The processor has one general
+purpose register, the Accumulator (ACC).
+Instruction
+Opcode
+AND #n
+XOR #n
+OR #n
+ISL #n
+Explanation
+Operand
+Bitwise AND operation of the contents of ACC with the operand
+Bitwise XOR operation of the contents of ACC with the operand
+Bitwise OR operation of the contents of ACC with the operand
+Bis iuc a tehied laidaly places to the left. eros are
+LSR #n
+Bits in ACC are shifted logically n places to the right. Zeros are
+introduced on the left hand end
+# denotes a denary number, e.g. #123
+(i) Complete the register to show the result after the instruction AND #2 is executed.
+Register before:
+1
+1
+1
+1
+0
+1
+Register after:
+[1]
+(ii) Complete the register to show the result after the instruction OR #8 is executed.
+Register before:
+1
+1
+0
+1
+1
+0
+1
+Register after:
+[1]
+© UCLES 2022
+9618/11/M/J/22
+
+--- Page 15 ---
+15
+(iii) Complete the register to show the result after the operation LSL #4 is executed.
+Register before:
+Register after:
+11]
+© UCLES 2022
+9618/11/M/J/22
+
+--- Page 16 ---
+16
+BLANK PAGE
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2022
+9618/11/M/J/22

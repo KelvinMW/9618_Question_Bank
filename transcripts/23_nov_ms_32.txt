@@ -1,0 +1,548 @@
+--- Page 1 ---
+15 Cambridge Assessmen
+International Educatior
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 3 Advanced Theory
+MARK SCHEME
+Maximum Mark: 75
+9618/32
+October/November 2023
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2023 series for most
+Cambridge IGCSE, Cambridge International A and AS Level components, and some Cambridge O Level
+This document consists of 9 printed pages.
+© UCLES 2023
+[Turn over
+
+--- Page 2 ---
+9618/32
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+•
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+• marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+• marks are not deducted for omissions
+• answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2023
+Page 2 of 9
+
+--- Page 3 ---
+9618/32
+Question
+1(a)
+1(b)
+Question
+2
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Answer
+Marks
+One mark per mark point (Max 1)
+•
+conversion of -96.75 to binary e.g., positive 96.75, flip the bits + 1 to give
+10011111.01
+|I -128 + 16 + 8 + 4 + 2 + 1 + 0.25 / ¼ seen
+3
+One mark per mark point (Max 2)
+correct mantissa
+•
+correct exponent
+1
+Mantissa
+1 11
+1
+1
+Exponent
+0 1 1
+One mark per mark point (Max 3)
+MP1
+Real numbers (can) have a fractional part (such as '/3 and ½) / (such
+MP2
+as 0.4 and 0.25)
+The fixed length of the storage means that you can't store very large /
+MP3
+very small numbers
+Binary numbers represent numbers based on powers of 2, with limited
+MP4
+fractional representations such as 1/2, 1/4, 1/8, 1/16, etc.
+It isn't possible to store all fractions with the level of precision provided
+by this system
+MP5
+....the fractional part of the number is as close as possible within these
+constraints.
+3
+Answer
+Marks
+One mark per mark point - composite (Max 2)
+MP1
+A (user defined) data type that is a collection of data that can consist
+of multiple elements
+MP2
+MP3
+...of different or the same data types
+...grouped under a single identifier.
+4
+One mark per mark point - non-composite (Max 2)
+MP4
+MP5
+It can be defined without referencing another data type.
+It can be a primitive type available in a programming language, or a
+user- defined type.
+Question
+3(a)
+Answer
+One mark per mark point (Max 2)
+MP1
+A collision is when the two values / data items in the key field for two
+'ecords (pass through a hashing algorithm and) result in the same
+nash value
+MP2
+...so the location identified (by the hashing algorithm) may already be
+in use // two records cannot occupy the same address.
+Marks
+2
+© UCLES 2023
+Page 3 of 9
+
+--- Page 4 ---
+9618/32
+Question
+3(b)
+Question
+4
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+One mark per mark point (Max 3)
+MP1
+MP2
+MP3
+MP4
+OR
+A process of collision resolution is used
+Start at the original hashed storage space
+...go through the following spaces in a linear fashior
+...and store the data item in the first available slot.
+MP5
+MP6
+MP7
+OR
+Search the overflow area
+...go through the following spaces in a linear fashion
+...and store the data item in the first available slot.
+MP8
+Each storage space holds a reference to a collection / chain of items
+MP9
+...which can be searched individually.
+MP10 The data item is stored in the first available space in this chain.
+Answer
+One mark for each correct word (Max 3)
+The protocols in a stack determine the interconnectivity rules for a layered
+network model such as the TCP/IP model.
+October/November
+2023
+Marks
+3
+Marks
+3
+Question
+5(a)
+5(b)
+Answer
+One mark per mark point (Max 2)
+Virtual memory is used when RAM is running low
+..such as when a computer is running many processes at once.
+Virtual memory may be used for efficient use of RAM / the processor
+...such as if data / programs are not immediately needed, they can be
+moved from RAM to virtual memory
+One mark per mark point (Max 3)
+MP1
+Disk thrashing is a problem that may occur when frequent transfers
+between main memory and secondary memory take place // Disk
+thrashing is a problem that may occur when virtual memory is being
+used
+MP2
+As main memory fills up, more pages need to be swapped in and out
+of secondary/virtual memory
+MP3
+MP4
+his swapping leads to a very high rate of hard disk head movemer
+ventually, more time is spent swapping the pages/data tha
+MarksR
+2
+3
+© UCLES 2023
+Page 4 of 9
+
+--- Page 5 ---
+9618/32
+Question
+6(a)
+6(b)
+Question
+7(a)
+7(b)
+© UCLES 2023
+Cambridge International AS & A Level - Mark Scheme
+October/November
+PUBLISHED
+2023
+One mark per ring (Max 4).
+Answer
+Marks
+4
+20
+3
+20
+60
+2
+60
+30
+10
+30
+5
+10
+30
+2
+30
+60
+OR
+20
+3
+20
+60
+2
+60
+30
+/10
+30
+5
+10
+30
+2
+30
+60
+One mark per mark point (Max 3)
+MP1
+The (RPN) expression is read from left to right, one item at a time
+MP2
+Each element is checked to see if it as operator or a value
+MP3
+Values are pushed onto a stack until an operator is found
+MP4
+The operator is applied to the last two values on the stack and the
+result is pushed back onto the stack
+MP5
+This repeats until a single value remains, which is the solution.
+Answer
+3
+Marks
+1
+A
+1
+1
+1
+X= Ã.B.C
+B
+1
+1
+1
+1
+C
+X
+1
+0
+0
+1
+1
+Page 5 of 9
+
+--- Page 6 ---
+9618/32
+Question
+7(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+(Max 2) for correct working from points shown
+(T=) X.Y.Z+X.V.Z+X
+Distributive law
+(T=)X.Z.(Y + Y)+X
+Complement law
+(T=)XZ (1) +X
+Identity law
+(T=) X.Z+X
+Redundancy law (to get final answer)
+One mark for correct answer
+(T=)X +Z
+October/November
+2023
+Marks
+3
+Question
+8
+Question
+9(a) (i)
+© UCLES 2023
+Answer
+One mark per mark point - working (Max 3)
+May be seen on diagram or in working section
+MP1
+MP2
+MP3
+MP4
+MP5
+MP6
+Initialisation - setting Start to O
+...and the rest of the towns to
+Evidence to show values at nodes being updated
+Evidence to show 'visited node(s)'
+Evidence to show a correct calculation of at least one route
+Evidence to show more than one route has been calculated for at
+least one town
+Correct Answers (Max 2)
+Two marks for all six correct values
+One mark for four or five correct values.
+A
+8
+B
+12
+19
+D
+14
+E
+16
+F
+10
+Answer
+Two marks for all five empty boxes correct
+One mark for any three or four empty boxes correct
+Identifier
+BasePointer
+TopPointer
+Stack
+Data type
+INTEGER
+INTEGER
+REAL
+Description
+Points to the bottom of the stack
+Points to the top of the stack
+List of decimal numbers stored in the stack
+Page 6 of 9
+Marks
+5
+Marks
+2
+
+--- Page 7 ---
+9618/32
+Question
+9(a)(i)
+9(b)
+9(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2023
+Answer
+One mark for each correctly completed line (Max 5)
+Marks
+CONSTANT MaxSize = 40
+DECLARE BasePointer
+: INTEGER
+DECLARE TopPointer : INTEGER
+DECLARE Stack
+: ARRAY |1: 40] OF REAL
+/ initialisation of stack
+PROCEDURE Initialise()
+BasePointer < 1
+TopPointer < 0
+ENDPROCEDURE
+Il adding an item to the stack
+PROCEDURE Push (NewItem)
+IF TopPointer ‹ MaxSize THEN
+Toppointer + Toppointer + 1
+Stack [Toppointer] < NewItem
+ENDIF
+ENDPROCEDURE
+One mark for linked list and one mark for array (Max 2)
+Linked list
+MP1
+A linked list is a dynamic data structure / not restricted in size
+MP2
+Has greater freedom to expand or contract by adding or removing
+MP3
+nodes as necessary
+Allows more efficient editing using pointers (instead of moving the
+data).
+Array
+MP4
+MP5
+An array is a static data structure1 generally fixed in size
+When the array is full, the stack cannot be extended any further.
+One mark per mark point (Max 1)
+MP1
+The compiler must produce object code to
+5
+2
+4
+One mark per mark point (Max 3)
+MP2
+....push return addresses / values of local variables onto a stack
+MP3
+MP4
+...with each recursive call // ... to set up winding
+MP5
+...pop return addresses / values of local variables off the stack ...
+...after the base case is reached //... to implement unwinding.
+© UCLES 2023
+Page 7 of 9
+
+--- Page 8 ---
+9618/32
+Question
+10
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+One mark per mark point - SIMD (Max 2)
+Single Instruction, Multiple Data (architecture) // Performs the same
+operation on multiple different data streams simultaneously.
+The instructions can be performed sequentially, taking advantage of
+pipelining.
+MP3
+Parallel computers with multiple processors.
+One mark per mark point - MISD (Max 2)
+Multiple Instruction, Single Data (architecture) // Performs different
+operations on the same data stream.
+MP5
+MP6
+Each processor works on the same data stream independently.
+Parallel computers with multiple processors.
+October/November
+2023
+Marks
+4
+Question
+11(a)
+11(b)
+11(c)
+Answer
+One mark for each correctly completed clause (Max 4)
+20 person (carlos).
+hobby (cycling).
+enjoys (carlos, cycling).
+dislikes (carlos, music).
+P = toby, nina
+One mark per mark point (Max 4)
+•
+•
+•
+•
+person (N)
+hobby (H)
+dislikes (N, H)
+all logical operators correct with no additional code (see example
+answers)
+Example answers:
+might_enjoy (N, H)
+IF person (N) AND hobby (H) AND NOT dislikes (N, H)
+might_enjoy (N, H)
+IF NOT dislikes (N, H), person (N), hobby (H)
+Marks
+4
+1
+4
+© UCLES 2023
+Page 8 of 9
+
+--- Page 9 ---
+9618/32
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Question
+12(a)
+October/November
+2023
+Marks
+2
+12(b)
+Answer
+One mark for description, for example:
+An exception is an event that occurs during the execution of a program that
+disrupts the normal flow of instructions / causes the program to halt execution
+One mark for example:
+: Hardware failure ro hard disk crash
+Programming error // trying to access out-of-bounds array element // divide
+›y zero error // runtime error
+•
+User error // typing incorrect filename / data type
+One mark for each correctly completed blank (Max 7)
+DECLARE Customer : TAccount
+DECLARE Location : INTEGER
+DECLARE MaxSize : INTEGER
+DECLARE: FoundFlag : BOOLEAN
+DECLARE SearchCustomer : STRING
+MaxSize < 1000
+OPENFILE "AccountRecord.dat" FOR RANDOM
+Location ‹ 1
+FoundFlag < FALSE
+OUTPUT "Enter the customer's name"
+INPUT SearchCustomer
+WHILE NOT FoundFlag AND Location <= MaxSize
+SEEK "AccountRecord.dat", Location
+GETRECORD "AccountRecord.dat", Customer
+IF SearchCustomer = Customer.Name THEN
+OUTPUT "Customer found:
+OUTPUT Customer
+FoundFlag ‹ TRUE
+ENDIF
+Location ‹ Location + 1
+ENDWHILE
+IF NOT FoundFlag THEN
+OUTPUT "Customer does not exist."
+ENDIF
+7
+© UCLES 2023
+Page 9 of 9

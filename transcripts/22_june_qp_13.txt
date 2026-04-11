@@ -1,0 +1,349 @@
+--- Page 1 ---
+5 Cambridge Assessmen
+shes International Educatior
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+9618/13
+May/June 2022
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages. Any blank pages are indicated
+DC (PQ/CGW) 301925/5
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+2
+Text and numbers are examples of data stored in a computer.
+(a) A character set is used to represent characters in a computer.
+(i) Describe what is meant by a character set.
+12]
+(ii) Identify two character sets and state one difference between them.
+Character set 1
+Character set 2
+Difference
+[3]
+(ill) Describe how lossless compression can be used to reduce the file size of a text file.
+12.
+(iv) Explain why lossy compression should not be used on a text file.
+[2]
+© UCLES 2022
+9618/13/M/J/22
+
+--- Page 3 ---
+3
+(b) A computer can represent numerical data in different forms.
+Complete the table by writing the answer to each statement.
+Statement
+The hexadecimal value 11 represented in denary
+The smallest denary number that can be represented
+by an unsigned 8-bit binary integer
+The denary number 87 represented in Binary Coded
+Decimal (BCD)
+The denary number 240 represented in hexadecimal
+The denary number -20 represented in 8-bit two's
+complement binary
+Answer
+[5]
+Working space
+© UCLES 2022
+9618/13/M/J/22
+[Turn over
+
+--- Page 4 ---
+4
+(a) The Fetch-Execute (F-E) cycle is represented in register transfer notation.
+Describe each of the given steps.
+Step
+Description
+PC ≤ [PC] + 1
+MDR 5 [[MARIJ
+MAR < [PC]
+(b) Explain how interrupts are handled during the F-E cycle.
+© UCLES 2022
+9618/13/M/J/22
+13]
+[5]
+
+--- Page 5 ---
+5
+BLANK PAGE
+© UCLES 2022
+9618/13/M/J/22
+Turn over
+
+--- Page 6 ---
+3
+6
+(a) The table shows part of the instruction set for a processor. The processor has one general
+purpose register, the Accumulator (ACC).
+Opcode
+Instruction
+LDM
+Explanation
+Operand
+Immediate addressing. Load the number n to ACC
+LDD
+<address>
+Direct addressing. Load the contents of the location at the
+given address to ACC
+LDI
+<address>
+Indirect addressing. The address to be used is at the given
+address. Load the contents of this second address to ACC
+<address> can be an absolute or symbolic address
+# denotes a denary number, e.g. #123
+The current contents of main memory are:
+Address
+100
+101
+101
+67
+102
+104
+103
+100
+104
+68
+Complete the table by writing the value stored in the accumulator after the execution of each
+instruction.
+Instruction
+Accumulator
+LDM #103
+LDD 102
+LDI 103
+[3]
+© UCLES 2022
+9618/13/M/J/22
+
+--- Page 7 ---
+7
+(b) The instructions in part (a) are examples of the data movement group.
+Describe two other instruction groups.
+2
+[4]
+© UCLES 2022
+9618/13/M/J/22
+[Turn over
+
+--- Page 8 ---
+8
+(c) The table shows part of the instruction set for a processor. The processor has one general
+purpose register, the Accumulator (ACC).
+Instruction
+Opcode
+AND
+Bn
+XOR
+Bn
+OR
+•Bn
+Explanation
+Operand
+Bitwise AND operation of the contents of ACC with the operand
+Bitwise XOR operation of the contents of ACC with the operand
+Bitwise OR operation of the contents of ACC with the operand
+B denotes a binary number, e.g. B01001010
+The binary value 00111101 is stored in the memory address 200.
+Each instruction in the diagram is performed on the data in memory address 200.
+Draw one line from each instruction to its correct result.
+Instruction
+Result
+01111101
+XOR B11110000
+00111101
+OR B01010101
+11111111
+AND B11111111
+11000010
+11001101
+13]
+© UCLES 2022
+9618/13/M/J/22
+
+--- Page 9 ---
+9
+4 A computer has system software including an operating system.
+(a) Describe the key management tasks of an operating system.
+14]
+(b) Utility software is a type of system software.
+(i) Describe the purpose of back-up software and defragmentation software.
+Back-up software
+Defragmentation software
+14]
+(ii)
+Give one other example of utility software.
+... [1]
+© UCLES 2022
+9618/13/M/J/22
+[Turn over
+
+--- Page 10 ---
+5
+10
+A company wants to store data about its employees in a computer system. The owner of the
+company wants to ensure the security and integrity of the data.
+(a) (i) State why data needs to be kept secure.
+11]
+(ii) One way the data stored in a computer can be kept secure is by using back-up software.
+Give two other ways the data stored in a computer can be kept secure.
+1
+2
+[2]
+(b) The data about the employees is currently stored on paper. The data needs to be transferred
+into the computer system.
+Data validation and verification are used to help maintain the integrity of the data.
+(i)
+Identify and describe one method of data verification that can be used when transferring
+the data from paper to the computer.
+Method
+Description
+[2]
+(ii) The company needs to transfer the date of birth of each employee into the computer
+system.
+Give one example of how each of the following data validation rules can be used to
+validate the date of birth when it is entered into the system.
+Range check
+Presence check
+Length check
+13]
+© UCLES 2022
+9618/13/M/J/22
+
+--- Page 11 ---
+11
+(ili) Explain why the data in the system may not be correct even after validating and verifying
+the data.
+12]
+© UCLES 2022
+9618/13/M/J/22
+[Turn over
+
+--- Page 12 ---
+12
+6 A relational database, TECHNOLOGY, stores data about the staff in a company and the computer
+devices used by the staff.
+The database has the following tables:
+STAFF (StaffID, FirstName, LastName, DateOfBirth, JobTitle)
+DEVICE (DeviceID, Type, DatePurchased, StaffID)
+(a) Describe the relationship between the two tables. Refer to the primary and foreign keys in
+your answer.
+14]
+(b) The database uses a Data Definition Language (DDL) and Data Manipulation Language
+(DML).
+(i) Complete the SQL script to return the number of devices stored in the database for the
+staff member with the first name 'Ali' and last name 'Khan'.
+SELECT
+(STAFF. StaffID)
+FROM
+INNER JOIN DEVICE
+WHERE STAFF.FirstName
+..... STAFF StaffID = DEVICE.StaffID
+'Ali'
+…... STAFF.LastName = 'Khan';
+14]
+© UCLES 2022
+9618/13/M/J/22
+
+--- Page 13 ---
+13
+(il) The table DEVICE needs a new attribute to store whether the device has been returned
+by the staff member, or not.
+Write a Structured Query Language (SQL) script to insert the new attribute into the table
+DEVICE.
+12]
+(c) The database is in Third Normal Form (3NF).
+Complete the table by describing the three normal forms.
+Normal Form
+Description
+First Normal Form (1NF)
+Second Normal Form (2NF)
+Third Normal Form (3NF)
+[3]
+© UCLES 2022
+9618/13/M/J/22
+[Turn over
+
+--- Page 14 ---
+14
+7 (a) Write the logic expression for the following logic circuit.
+A
+B
+C -
+(b) Complete the truth table for the following logic expression:
+X = (A NAND B) OR (A AND NOT C)
+Working space
+A
+B
+C
+1
+1
+0
+1
+1
+1
+1
+1
+1
+0
+1
+1
+© UCLES 2022
+9618/13/M/J/22
+D
+- X
+[3]
+12]
+
+--- Page 15 ---
+15
+8
+A company uses cloud computing.
+(a) Define cloud computing.
+(b) State what is meant by a public cloud and a private cloud.
+Public cloud
+Private cloud
+(c) Give two benefits and one drawback of using cloud computing.
+Benefit 1
+Benefit 2
+Drawback
+© UCLES 2022
+9618/13/M/J/22
+11]
+[2]
+[3]
+
+--- Page 16 ---
+16
+BLANK PAGE
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+© UCLES 2022
+9618/13/M/J/22

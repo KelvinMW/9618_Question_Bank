@@ -1,0 +1,525 @@
+--- Page 1 ---
+* 0000800000001*
+ELS Cambridge Assessment
+International Education
+7
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+9618/12
+May/June 2025
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+• Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided.
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 16 pages. Any blank pages are indicated
+DC (WW/SG) 341016/3
+© UCLES 2025
+L
+[Turn over
+J
+
+--- Page 2 ---
+* 0000800000002*
+2
+7
+1
+(a) The table has six statements about the Von Neumann model for a computer system.
+Three of the statements are incorrect.
+Statement number
+1
+2
+3
+4
+5
+6
+Statement
+The Program Counter (PC) stores the next instruction to be fetched from
+memory.
+The Arithmetic and Logic Unit (ALU) performs mathematical and logical
+operations.
+The Control Unit (CU) sends signals to other components on the data bus.
+The Memory Data Register (MDR) transfers data to the memory address
+stored in the Memory Address Register (MAR).
+The MAR stores an address from memory.
+The Accumulator (ACC) stores the result of calculations.
+Complete the table by writing the three incorrect statement numbers and the corrected
+statements.
+Incorrect
+statement number
+Corrected statement
+DO NOT WRITE IN THIS MARGI
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+[3]
+OUCLES 2025
+9618/12/M/J/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 3 ---
+* 0000800000003*
+DO NOT WRITE IN THIS MARGIN
+3
+7
+(b) Registers that are used in the Fetch-Execute (F-E) cycle include the PC, MAR, MDR and the
+ACC.
+Identify one other register and describe its role in the Fetch-Execute (F-E) cycle.
+Register
+Role
+DO NOT WRITE IN THIS MARGIN
+12]
+(c) Explain how an interrupt from an input device will be detected and handled in the F-E cycle.
+DO NOT WRITE IN THIS MARGIN
+[4]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/12/M/J/25
+[Turn over
+
+--- Page 4 ---
+0000800000004*
+4
+7
+(a) Convert the denary integer 558 into 12-bit binary and hexadecimal.
+Binary
+Hexadecimal
+DO NOT WRITE IN THIS MARGIN
+12]
+(b) (i) Convert the two's complement binary integer 11100010 into denary.
+11]
+DO NOT WRITE IN THIS MARGIN
+(ii) Write the smallest and the largest two's complement binary integers that can be
+represented in 8 bits.
+Smallest
+Largest
+12]
+(c) Give one application where Binary Coded Decimal (BCD) is used and justify its use.
+Application
+Justification
+DO NOT WRITE IN THIS MARGIN
+12]
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2025
+9618/12/M/J/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 5 ---
+* 0000800000005 *
+DO NOT WRITE IN THIS MARGIN
+3
+5
+A computer program uses a digital camera to read the words on an item.
+The program can read the words that are written on the item, translate the words to a chosen
+language and then output the words as audio. For example, when used in a supermarket, the
+program can output the words written on the labels on products.
+The program uses Artificial Intelligence (Al).
+(a) Explain how Al is used in the computer program described.
+7
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+14]
+(b) State two social benefits of the use of Al in the computer program described.
+1
+2
+DO NOT WRITE IN THIS MARGIN
+12]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/12/M/J/25
+Turn over
+
+--- Page 6 ---
+000080000006*
+6
+(c) The computer program is released under a commercial software licence.
+(i) Describe the features of a commercial software licence.
+7
+DO NOT WRITE IN THIS MARGIN
+[3]
+(ii) Explain the reasons why an open source software licence might not be appropriate for
+the computer program described.
+DO NOT WRITE IN THIS MARGIN
+[3]
+4 (a) Write the logic expressions for the following logic circuit.
+R
+DO NOT WRITE IN THIS MARGIN
+S
+I
+DO NOT WRITE IN THIS MARGIN
+U
+X=
+Y= .....
+LOUCLES 2025
+9618/12/M/J/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 7 ---
+* 0000800000007*
+DO NOT WRITE IN THIS MARGIN
+7
+(b) Complete the truth table for the logic expression:
+X = NOT (A AND (B XOR C))
+7
+A
+B
+C
+Working space
+x
+0
+0
+DO NOT WRITE IN THIS MARGIN
+1
+1
+0
+1
+1
+1
+1
+DO NOT WRITE IN THIS MARGIN
+1
+1
+1
+12
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/12/M/J/25
+[Turn over
+
+--- Page 8 ---
+00008000000*
+8
+5
+An online game has a database that stores data about users and the characters each user
+creates in the game. Each user can create multiple characters and purchase multiple items for
+each character.
+The normalised database has the following design:
+USER (Username, Password, DateOfBirth)
+CHARACTER (CharacterName, CharacterID, Username, Level, Money)
+ITEM (ItemName, MinimumLevel, Cost)
+CHARACTER_ITEM (CharacterID, ItemName)
+(a) Explain the purpose of the table CHARACTER_ITEM in the database.
+12]
+(b) Underline the attribute, or attributes, that form the primary key in each of the tables.
+USER (Username,
+Password, DateOfBirth)
+CHARACTER (CharacterName, CharacterID, Username, Level, Money)
+ITEM (ItemName, MinimumLevel, Cost)
+CHARACTER_ITEM (CharacterID, ItemName)
+[2]
+LOUCLES 2025
+9618/12/M/J/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 9 ---
+000080000009*
+DO NOT WRITE IN THIS MARGIN
+9
+7
+(c) A Database Management System (DBMS) provides data security.
+(i) Identify two methods the DBMS can use to protect the data in the table USER from
+unauthorised access.
+Explain how each method protects the data.
+Method 1
+Explanation
+DO NOT WRITE IN THIS MARGIN
+Method 2
+Explanation
+[4]
+DO NOT WRITE IN THIS MARGIN
+(ii) The DBMS also supports data integrity.
+Give two ways that a DBMS can support data integrity
+2
+DO NOT WRITE IN THIS MARGIN
+12]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/12/M/J/25
+[Turn over
+
+--- Page 10 ---
+0000800000010*
+Г
+(d) (i)
+10
+Write a Structured Query Language (SQL) script to count the number of items purchased
+by the user with the username "KAT123".
+[3]
+(ii) The following changes need to be made to the character with the ID "0002":
+.
+level changed to 3
+money changed to 10000.00
+Write an SQL script to change the character's data.
+13]
+LOUCLES 2025
+9618/12/M/J/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 11 ---
+* 0000800000011*
+DO NOT WRITE IN THIS MARGIN
+6
+11
+A company has multiple sites in different cities.
+The company has drivers who deliver products to customers. Each driver can connect to the
+company's WAN (Wide Area Network) whilst out of the office using a smartphone.
+(a) State two ways that a WAN is different to a LAN (Local Area Network).
+7
+DO NOT WRITE IN THIS MARGIN
+2
+12]
+(b) The smartphones use the cell phone network to connect to the WAN
+Explain how data is transmitted using the cell phone network.
+DO NOT WRITE IN THIS MARGIN
+14]
+DO NOT WRITE IN THIS MARGIN
+(c) Devices that connect to the WAN have an IP address.
+Complete the following description of IP addresses by writing the missing words.
+IPv4 is displayed as four groups of 8-bit numbers separated by ..
+Each IPv4 address is 32 bits.
+IPv6 is made of eight groups of 4
+numbers separated by colons.
+Multiple consecutive groups of
+can be replaced with a double colon.
+Each IPv6 address is
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+.... bits.
+IP address can change each time the computer connects to a
+network.
+• IP address can only be accessed by other devices in the same
+LAN and is assigned by the router within the LAN.
+9618/12/M/J/25
+[6]
+[Turn over
+
+--- Page 12 ---
+* 0000800000012*
+12
+7
+(d) The main office for the company has four wired computers, one server, two printers, one
+central switch and a device providing a single point of access for the internet. The network is
+set up as a star topology.
+Draw the topology for the main office network. Label all devices.
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+[4]
+(e) Describe the role of a switch in a network.
+DO NOT WRITE IN THIS MARGIN
+[3]
+LOUCLES 2025
+9618/12/M/J/25
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 13 ---
+* 0000800000013*
+DO NOT WRITE IN THIS MARGIN
+13
+BLANK PAGE
+7
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+9618/12/M/J/25
+[Turn over
+
+--- Page 14 ---
+* 0000800000014*
+7
+14
+(a) The following table shows part of the instruction set for a processor. The processor has one
+register: the Accumulator (ACC).
+Opcode
+Instruction
+Operand
+Explanation
+LDD
+<address>
+Direct addressing. Load the contents of the location at the given
+address to ACC
+LDM
+STO
+ADD
+ADD
+INC
+CMP
+CMP
+#n
+<address>
+#n/Bn/&n
+<address>
+‹register>
+<address>
+Immediate addressing. Load the number n to ACC
+Store the contents of ACC at the given address
+Add the number n to the ACC
+Add the contents of the given address to the ACC
+Add 1 to the contents of the register (ACC)
+Compare the contents of ACC with the contents of <address>
+Compare the contents of ACC with number n
+JPE
+<address>
+Following a compare instruction, jump to <address> if the compare
+was True
+JMP
+<address>
+Jump to the given address
+END
+Return control to the operating system
+ACC denotes Accumulator
+<address> can be an absolute or a symbolic address
+# denotes a denary number, e.g. #123
+B denotes a binary number, e.g. BO1001010
+& denotes a hexadecimal number, e.g. &4A
+The current contents of memory are:
+Address Instruction
+10
+12
+=
+11
+12 10
+13
+22
+14
+22
+---.
+.•.
+100
+| LDD 10
+101
+ADD 12
+102 STO 11
+103 CMP 14
+104 JPE 107
+105 INC ACC
+106 JMP 101
+107
+STO 10
+108 END
+OUCLES 2025
+9618/12/M/J/25
+DO NOT WRITE IN THIS MAI
+MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 15 ---
+* 0000800000015*
+DO NOT WRITE IN THIS MARGIN
+15
+7
+(i) Trace the program currently in memory using the following trace table.
+Instruction address
+ACC
+10
+12
+Memory address
+11
+12
+13
+11
+10
+22
+14
+22
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+13]
+(ii)
+State the effect of changing instruction LDD 10 in address 100 to LDM #10
+DO NOT WRITE IN THIS MARGIN
+[1]
+(ili) Identify and describe one mode of addressing not given in the table of instructions in
+part (a).
+Mode of addressing
+Description
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2025
+[2]
+9618/12/M/J/25
+[Turn over
+
+--- Page 16 ---
+* 0000800000016*
+Г
+16
+(b) The table shows part of the instruction set for a processor. The processor has one register:
+the Accumulator (ACC).
+Opcode
+AND
+AND
+Instruction
+Operand
+#n/Bn/&n
+<address>
+Explanation
+Bitwise AND operation of the contents of ACC with the operand
+Bitwise AND operation of the contents of ACC with the contents of
+<address>
+XOR
+XOR
+#n/Bn/&n
+<address>
+Bitwise XOR operation of the contents of ACC with the operand
+Bitwise XOR operation of the contents of ACC with the contents of
+<address>
+OR
+#n/Bn/&n
+OR
+<address>
+Bitwise OR operation of the contents of ACC with the operand
+Bitwise OR operation of the contents of ACC with the contents of
+<address>
+<address> can be an absolute or symbolic address
+# denotes a denary number, e.g. #123
+B denotes a binary number, e.g. B01001010
+& denotes a hexadecimal number, e.g. &4A
+(i) The ACC currently contains the following binary value.
+1
+1
+1
+1
+0
+Write the result after the instruction OR B00001111 is run.
+11]
+(ii) The ACC currently contains the following binary value.
+1
+1
+1
+Write the result after the instruction XOR #30 is run.
+1
+[1]
+Cal an Assent it 5), with papat camorine Assest on Cambridge Assessment is the brand name of the university of Cambridge
+© UCLES 2025
+9618/12/M/J/25
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN

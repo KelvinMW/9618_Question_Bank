@@ -1,0 +1,554 @@
+--- Page 1 ---
+* 0000800000001*
+SIS Cambridge Assessment
+International Educatior
+•
+Cambridge International AS & A Level
+CANDIDATE
+NAME
+CENTRE
+NUMBER
+CANDIDATE
+NUMBER
+COMPUTER SCIENCE
+Paper 1 Theory Fundamentals
+9618/13
+October/November 2024
+1 hour 30 minutes
+You must answer on the question paper.
+No additional materials are needed
+INSTRUCTIONS
+Answer all questions.
+Use a black or dark blue pen.
+Write your name, centre number and candidate number in the boxes at the top of the page.
+Write your answer to each question in the space provided.
+Do not use an erasable pen or correction fluid.
+Do not write on any bar codes.
+• You may use an HB pencil for any diagrams, graphs or rough working.
+• Calculators must not be used in this paper.
+INFORMATION
+• The total mark for this paper is 75.
+• The number of marks for each question or part question is shown in brackets [ ].
+• No marks will be awarded for using brand names of software packages or hardware.
+This document has 20 pages. Any blank pages are indicated
+DC (WW/SW) 337423/4
+© UCLES 2024
+L
+[Turn over
+J
+
+--- Page 2 ---
+* 0000800000002*
+1
+2
+(a) Describe the operation of a 2-input XOR gate.
+(b) Write the logic expression for the following logic circuit.
+A -
+B
+C
+X=
+(c) Draw the logic circuit for the logic expression:
+X = ((NOT A AND (B AND C)) OR (B NAND C)) AND NOT A
+A-
+B
+C-
+LOUCLES 2024
+9618/13/0/N/24
+.... 11]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+.............. 2]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+12]
+J
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 3 ---
+* 0000800000003 *
+DO NOT WRITE IN THIS MARGIN
+3
+2
+A memory buffer uses Dynamic RAM (DRAM).
+(a) Identify two differences between DRAM and Static RAM (SRAM).
+Difference 1
+DO NOT WRITE IN THIS MARGIN
+Difference 2
+[2]
+(b) Explain how a memory buffer is used when a computer is transferring data to its magnetic
+hard disk drive.
+DO NOT WRITE IN THIS MARGIN
+[4]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/13/0/N/24
+Turn over
+
+--- Page 4 ---
+* 0000800000004*
+4
+A car has an automatic braking system.
+A sensor is used to measure the distance to objects that are in front of the car.
+The car automatically brakes if an object is too close to the front of the car or the distance between
+the car and the object is decreasing too quickly. The closer the object is to the front of the car, the
+harder the car brakes so that the car slows down more quickly.
+Explain the reasons why the automatic braking system of the car is a control system.
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2024
+9618/13/0/N/24
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 5 ---
+* 0000800000005*
+DO NOT WRITE
+IN THIS MARGIN
+5
+DO NOT WRITE IN THIS MARGIN
+A company makes ice cream and sells it to shops.
+The ice cream is made in batches: a large quantity of one type and flavour of ice cream that is
+then split into smaller quantities for sale.
+The company's owner has designed a relational database, ICECREAM, to store data about their
+ice cream and customers.
+Some of the tables in the database are given. The database is not normalised.
+BATCH (BatchID, Type, Flavour, Size, SellingPrice, EndDate)
+CUSTOMER (CustomerID, CompanyName, EmailAddress, TelephoneNumber)
+SALE (SaleID, BatchID, CustomerID, Quantity, Date)
+(a) Identify two foreign keys in the table SALE and the table that each foreign key references.
+Foreign key 1
+Table name 1
+Foreign key 2
+Table name 2
+DO NOT WRITE IN THIS MARGIN
+[2]
+(b) Write an SQL script to return the total quantity of ice cream sold to the customer with the ID of
+0034E in the year 2023.
+DO NOT WRITE IN THIS MARGIN
+...... [3]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/13/0/N/24
+(Turn over
+
+--- Page 6 ---
+* 0000800000006*
+6
+(c) The table definition for BATCH is repeated here:
+BATCH (BatchID, Type,
+Flavour, Size, SellingPrice, EndDate)
+Sample data for the table BATCH is given:
+BatchID
+KIV12
+RIC14
+TYL1
+FYV2
+BIV13
+Type
+Plain
+Plain
+Non-dairy
+Non-dairy
+Plain
+Flavour
+Vanilla
+Chocolate
+Lemon
+Vanilla
+Vanilla
+Size
+1
+0.5
+0.5
+0.25
+1
+SellingPrice
+2.20
+1.80
+2.10
+1.50
+2.20
+EndDate
+12/12/2024
+12/12/2024
+01/02/2025
+02/02/2025
+02/02/2024
+(i) Write an SQL script to define the table BATCH.
+Include constraints (restrictions) on the data that can be entered into each field where
+appropriate.
+......... [5]
+LOUCLES 2024
+9618/13/0/N/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 7 ---
+* 0000800000007*
+DO NOT WRITE IN THIS MARGIN
+7
+(ii) The table BATCH is not normalised
+Normalise the database table BATCH.
+Write the table definitions for your new tables.
+Identify any primary and foreign keys in your tables.
+Do not change or include the tables CUSTOMER and SALE.
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+14]
+(d) Complete the following table by defining each database term.
+Database term
+Definition
+Entity
+DO NOT WRITE IN THIS MARGIN
+Attribute
+12]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/13/0/N/24
+(Turn over
+
+--- Page 8 ---
+* 00008000000*
+8
+(e) A Database Management System (DBMS) supports data integrity.
+Explain how a DBMS supports data integrity.
+13]
+LOUCLES 2024
+9618/13/0/N/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 9 ---
+000080000009*
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+9
+A computer programmer writes programs that are distributed with a software licence.
+(a) Complete the table by writing the type of software licence each statement describes.
+Statement
+Software licence
+A fee is charged for the software. The source
+code cannot be accessed. Users do not get
+a free trial.
+Users can try the software before buying it.
+Users may not be able to access all features
+during the trial.
+Software is usually free of charge. Users can
+access the source code and alter the program
+to their needs.
+[3]
+(b) Explain the reasons why it is important for the computer programmer to join a professional
+ethical body.
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+13]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/13/0/N/24
+(Turn over
+
+--- Page 10 ---
+* 00000000010*
+10
+A computer system stores text, images and sound.
+(a) A character set is used to represent characters in a computer.
+Identify and describe one character set.
+Character set
+Description
+12]
+(b) The colour of each pixel in a bitmapped image is represented by 8 bits.
+(i) State the largest number of different colours that can be represented by 8 bits.
+[1]
+(ii) State one drawback of increasing the number of bits that represents each pixel in the
+bitmap image.
+11]
+(ili) A bitmap image can be compressed using lossy compression.
+Explain the reasons why lossy compression is often suitable for a bitmap image.
+12]
+LOUCLES 2024
+9618/13/0/N/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 11 ---
+* 0000800000011*
+DO NOT WRITE IN THIS MARGIN
+11
+(c) (i) Explain how an analogue sound wave is converted into digital data.
+12]
+DO NOT WRITE IN THIS MARGIN
+(ii) Describe one method of compressing a sound file using lossy compression.
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/13/0/N/24
+Turn over
+
+--- Page 12 ---
+* 0000800000012*
+12
+7 The following table shows part of the instruction set for a processor. The processor has two
+registers, the Accumulator (ACC) and the Index Register (IX).
+Instruction
+Opcode
+Operand
+LDM
+#n
+LDD
+‹address>
+Explanation
+Immediate addressing. Load the number n to ACC
+Direct addressing. Load the contents of the location at the given
+address to ACC
+Indirect addressing. The address to be used is at the given
+LDI
+<address>
+address.
+Load the contents of this second address to ACC
+Indexed addressing. Form the address from <address> + the
+LDX
+<address>
+contents of the index register. Copy the contents of this calculated
+address to ACC
+LDR #n
+Immediate addressing. Load the number n to IX
+ADD #n/Bn/&n
+Add the number n to the ACC
+ADD
+<address>
+Add the contents of the given address to the ACC
+SUB
+#n/Bn/&n
+Subtract the number n from the ACC
+SUB
+<address>
+Subtract the contents of the given address from the ACC
+INC
+<register>
+Add 1 to the contents of the register (ACC or IX)
+DEC
+<register>
+Subtract 1 from the contents of the register (ACC or IX)
+<address> can be an absolute or a symbolic address
+# denotes a denary number, e.g. #123
+B denotes a binary number, e.g. B01001010
+& denotes a hexadecimal number, e.g. &4A
+DO NOT WRITE
+DO NOT WRITE IN THIS MAR
+GIN
+LOUCLES 2021
+9618/13/0/N/24
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 13 ---
+* 0000800000013*
+DO NOT WRITE IN THIS MARGIN
+13
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+(a) The current contents of memory are shown:
+Address
+50
+51
+52
+53
+54
+55
+56
+Data
+54
+55
+50
+52
+100
+25
+50
+The current contents of the ACC and IX are shown:
+ACC
+50
+IX
+45
+Complete the table by writing the content of the ACC after each program has run.
+1
+2
+Instructions
+IDD 50
+ADD #4
+ADD 54
+LDI 53
+DEC ACC
+ADD 56
+ACC content
+3
+LDM #55
+SUB #5
+DO NOT WRITE IN THIS MARGIN
+[3]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/13/0/N/24
+(Turn over
+
+--- Page 14 ---
+* 0000800000014*
+14
+(b) The instruction set also includes these bit manipulation instructions:
+Instruction
+Opcode
+Operand
+AND
+#n/Bn/&n
+Explanation
+Bitwise AND operation of the contents of ACC with the operand
+Bitwise AND operation of the contents of ACC with the contents
+AND
+<address>
+of <address>
+XOR
+#n/Bn/&n
+Bitwise XOR operation of the contents of ACC with the operand
+XOR <address>
+Bitwise XOR operation of the contents of ACC with the contents
+of <address>
+OR #n/Bn/&n
+Bitwise OR operation of the contents of ACC with the operand
+Bitwise OR operation of the contents of ACC with the contents of
+OR
+<address>
+<address>
+<address> can be an absolute or a symbolic address
+# denotes a denary number, e.g. #123
+B denotes a binary number, e.g. B01001010
+& denotes a hexadecimal number, e.g. &4A
+Explain how bit manipulation can be used to clear the data in an 8-bit register.
+Write the bit manipulation instruction that will be used.
+Explanation .
+Instruction
+LOUCLES 2024
+9618/13/0/N/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 15 ---
+* 0000800000015*
+DO NOT WRITE IN THIS MARGIN
+8
+15
+(a) Convert the hexadecimal number 1FAB into denary.
+Working.
+DO NOT WRITE IN THIS MARGIN
+Denary value
+11]
+(b) Explain how to convert the two's complement integer 10011111 into denary. Give the denary
+value after conversion.
+Explanation
+DO NOT WRITE IN THIS MARGIN
+Denary value
+[3]
+(c) Describe the difference between a right logical binary shift and a right arithmetic binary shift.
+12]
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/13/0/N/24
+(Turn over
+
+--- Page 16 ---
+* 0000800000016*
+16
+A computer is connected to a Local Area Network (LAN) that connects to a Wide Area Network
+(WAN).
+(a) Describe the characteristics of a WAN.
+DO NOT WRITE IN THIS MARGIN
+12]
+(b) Copper cable can be used to transmit data in a network.
+Complete the table by identifying and describing two other transmission media that can be
+used to transfer data in the WAN.
+Transmission medium
+Description
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+LOUCLES 2024
+9618/13/0/N/24
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 17 ---
+* 0000800000017*
+DO NOT WRITE IN THIS MARGIN
+17
+(c) The computer on the LAN is used for real-time video conferences, where people connected
+to the internet communicate in real-time using video and audio.
+Explain how bit streaming is used in a real-time video conference.
+DO NOT WRITE IN THIS MARGIN
+[4]
+DO NOT WRITE IN THIS MARGIN
+(d) The LAN has a router. The router has a public IP address and a private IP address.
+(i) State the purpose of a public IP address and a private IP address.
+Public IP address
+Private IP address
+12]
+DO NOT WRITE IN THIS MARGIN
+(ii) The LAN uses subnetting.
+Describe the purpose of subnetting in a network.
+.. [2]
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/13/0/N/24
+
+--- Page 18 ---
+* 0000800000018*
+18
+BLANK PAGE
+LOUCLES 2024
+9618/13/0/N/24
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+
+--- Page 19 ---
+* 0000800000019*
+DO NOT WRITE IN THIS MARGIN
+19
+BLANK PAGE
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+OUCLES 2024
+9618/13/0/N/24
+J
+
+--- Page 20 ---
+* 0000800000020*
+20
+BLANK PAGE
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+DO NOT WRITE IN THIS MARGIN
+Permission to reproduce items where third-party owned material protected by copyright is included has been sought and cleared where possible. Every
+reasonable effort has been made by the publisher (UCLES) to trace copyright holders, but if any items requiring clearance have unwittingly been included, the
+publisher will be pleased to make amends at the earliest possible opportunity.
+To avoid the issue of disclosure of answer-related information to candidates, all copyright acknowledgements are reproduced online in the Cambridge
+Assessment International Education Copyright Acknowledgements Booklet. This is produced for each series of examinations and is freely available to download
+at www.cambridgeinternational.org after the live examination series.
+Cambridge Assessment International Education is part of Cambridge Assessment. Cambridge Assessment is the brand name of the University of Cambridge
+Local Examinations Syndicate (UCLES), which is a department of the University of Cambridge.
+OUCLES 2024
+9618/13/0/N/24
+DO NOT WRITE IN THIS MARGIN

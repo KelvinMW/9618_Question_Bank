@@ -1,0 +1,327 @@
+folder,filename,q_num,start_page,end_page,topic,manual_tag
+qp,21_june_qp_11,1,2,4,1;7,
+qp,21_june_qp_11,2,5,5,5,
+qp,21_june_qp_11,3,6,10,4,
+qp,21_june_qp_11,4,11,12,2,
+qp,21_june_qp_11,5,13,13,3,
+qp,21_june_qp_11,6,14,14,6,
+qp,21_june_qp_11,7,15,16,8,
+qp,21_june_qp_11,8,16,16,3,
+ms,21_june_ms_11,1,3,4,,
+ms,21_june_ms_11,2,4,4,,
+ms,21_june_ms_11,3,5,6,,
+ms,21_june_ms_11,4,6,7,,
+ms,21_june_ms_11,5,8,8,,
+ms,21_june_ms_11,6,8,8,,
+ms,21_june_ms_11,7,9,9,,
+ms,21_june_ms_11,8,10,10,,
+qp,21_june_qp_31,1,2,3,13.3,
+qp,21_june_qp_31,2,4,4,13.1,
+qp,21_june_qp_31,3,5,5,16,
+qp,21_june_qp_31,4,6,6,16.2,RPN
+qp,21_june_qp_31,5,7,8,18.1,Dijsktra;Graphs
+qp,21_june_qp_31,6,8,8,14.2,
+qp,21_june_qp_31,7,9,9,15.2,Full/Half Adders
+qp,21_june_qp_31,8,10,11,19.1,Insertion Sort
+qp,21_june_qp_31,9,12,12,20.1,
+ms,21_june_ms_31,1,3,4,,
+ms,21_june_ms_31,2,4,4,,
+ms,21_june_ms_31,3,5,5,,
+ms,21_june_ms_31,4,5,6,,
+ms,21_june_ms_31,5,6,7,,
+ms,21_june_ms_31,6,7,7,,
+ms,21_june_ms_31,7,8,8,,
+ms,21_june_ms_31,8,8,9,,
+ms,21_june_ms_31,9,9,10,,
+qp,22_june_qp_31,1,2,3,13.1,
+qp,22_june_qp_31,2,4,5,20.1,Declarative Programming
+qp,22_june_qp_31,3,6,6,14.2,
+qp,22_june_qp_31,4,7,7,15.1,RISC/CISC
+qp,22_june_qp_31,5,8,9,16.2,RPN
+qp,22_june_qp_31,6,9,9,15.1,Virtual Machines
+qp,22_june_qp_31,7,10,11,20.1,OOP
+qp,22_june_qp_31,8,12,12,17.1,Quantum Cryptography
+qp,22_june_qp_31,9,14,15,20.1,Low-Level Programming
+ms,22_june_ms_31,1,4,4,,
+ms,22_june_ms_31,2,4,4,,
+ms,22_june_ms_31,3,5,5,,
+ms,22_june_ms_31,4,6,6,,
+ms,22_june_ms_31,5,7,7,,
+ms,22_june_ms_31,6,6,6,,
+ms,22_june_ms_31,7,9,10,,
+ms,22_june_ms_31,8,10,10,,
+ms,22_june_ms_31,9,11,11,,
+qp,21_nov_qp_31,1,2,2,13.3,
+qp,21_nov_qp_31,2,3,3,20.1,
+qp,21_nov_qp_31,3,3,3,13.1,
+qp,21_nov_qp_31,4,4,5,16.2,BNF/Syntax Diagrams
+qp,21_nov_qp_31,5,6,6,20.2,
+qp,21_nov_qp_31,6,7,7,14.2,
+qp,21_nov_qp_31,7,8,9,15.2,
+qp,21_nov_qp_31,8,10,10,17.1,SSL/TLS
+qp,21_nov_qp_31,9,11,12,18.1,A*;Neural Networks
+qp,21_nov_qp_31,10,13,14,19.2,
+ms,21_nov_ms_31,1,3,3,,
+ms,21_nov_ms_31,2,4,4,,
+ms,21_nov_ms_31,3,4,4,,
+ms,21_nov_ms_31,4,5,5,,
+ms,21_nov_ms_31,5,5,5,,
+ms,21_nov_ms_31,6,6,6,,
+ms,21_nov_ms_31,7,7,7,,
+ms,21_nov_ms_31,8,8,8,,
+ms,21_nov_ms_31,9,8,9,,
+ms,21_nov_ms_31,10,10,10,,
+qp,22_june_qp_32,1,2,3,13.1;20.1,OOP
+qp,22_june_qp_32,2,4,5,20.1,Declarative Programming
+qp,22_june_qp_32,3,5,5,14.1,
+qp,22_june_qp_32,4,6,7,16.2,BNF/Syntax Diagrams
+qp,22_june_qp_32,5,8,8,15.1,SISD/SIMD/MISD/MIMD
+qp,22_june_qp_32,6,9,9,15.2,
+qp,22_june_qp_32,7,10,10,17.1,Digital Certificates & Signatures
+qp,22_june_qp_32,8,11,12,19.1,Binary Search
+qp,22_june_qp_32,9,12,12,20.2,Exception Handling
+ms,22_june_ms_32,1,4,4,,
+ms,22_june_ms_32,2,4,4,,
+ms,22_june_ms_32,3,5,5,,
+ms,22_june_ms_32,4,5,6,,
+ms,22_june_ms_32,5,6,6,,
+ms,22_june_ms_32,6,6,6,,
+ms,22_june_ms_32,7,7,7,,
+ms,22_june_ms_32,8,7,8,,
+ms,22_june_ms_32,9,9,9,,
+qp,22_nov_qp_32,1,2,2,13.3,
+qp,22_nov_qp_32,2,3,3,16.2,
+qp,22_nov_qp_32,3,3,3,14.1,
+qp,22_nov_qp_32,4,4,5,13.1,
+qp,22_nov_qp_32,5,5,5,15.1,Virtual Machines
+qp,22_nov_qp_32,6,6,6,17.1,Digital Certificates & Signatures;Types of Encryption
+qp,22_nov_qp_32,7,6,6,18.1,Machine Learning
+qp,22_nov_qp_32,8,7,7,15.2,Flip Flops;Boolean Algebra
+qp,22_nov_qp_32,9,8,8,16.1,Scheduling
+qp,22_nov_qp_32,10,9,9,20.1,OOP
+qp,22_nov_qp_32,11,10,11,19.1,Linked Lists
+ms,22_nov_ms_32,1,4,4,,
+ms,22_nov_ms_32,2,4,5,,
+ms,22_nov_ms_32,3,5,5,,
+ms,22_nov_ms_32,4,6,7,,
+ms,22_nov_ms_32,5,8,8,,
+ms,22_nov_ms_32,6,8,9,,
+ms,22_nov_ms_32,7,9,9,,
+ms,22_nov_ms_32,8,10,12,,
+ms,22_nov_ms_32,9,12,13,,
+ms,22_nov_ms_32,10,13,14,,
+ms,22_nov_ms_32,11,15,16,,
+qp,23_june_qp_31,1,2,3,13.3,
+qp,23_june_qp_31,2,3,3,18.1,Machine Learning;A*;Dijkstra
+qp,23_june_qp_31,3,4,4,13.2,
+qp,23_june_qp_31,4,5,5,13.1,
+qp,23_june_qp_31,5,5,5,14.2,
+qp,23_june_qp_31,6,6,7,16.2,BNF/Syntax Diagrams
+qp,23_june_qp_31,7,8,8,15.2,K-Map;Boolean Algebra
+qp,23_june_qp_31,8,9,9,15.1,Parallel Processing
+qp,23_june_qp_31,9,9,9,17.1,Quantum Cryptography
+qp,23_june_qp_31,10,10,10,20.2,File Processing
+qp,23_june_qp_31,11,10,11,19.1,Queues
+qp,23_june_qp_31,12,11,12,19.2,
+ms,23_june_ms_31,1,3,3,,
+ms,23_june_ms_31,2,3,4,,
+ms,23_june_ms_31,3,4,4,,
+ms,23_june_ms_31,4,4,4,,
+ms,23_june_ms_31,5,5,5,,
+ms,23_june_ms_31,6,5,6,,
+ms,23_june_ms_31,7,6,7,,
+ms,23_june_ms_31,8,7,7,,
+ms,23_june_ms_31,9,7,7,,
+ms,23_june_ms_31,10,8,8,,
+ms,23_june_ms_31,11,8,9,,
+ms,23_june_ms_31,12,9,10,,
+qp,23_june_qp_32,1,2,2,13.3,
+qp,23_june_qp_32,2,3,3,,
+qp,23_june_qp_32,3,4,5,16.2,BNF/Syntax Diagrams
+qp,23_june_qp_32,4,6,6,20.1,OOP
+qp,23_june_qp_32,5,6,6,17.1,Quantum Cryptography
+qp,23_june_qp_32,6,7,7,13.1;20.2,File Processing
+qp,23_june_qp_32,7,8,8,14.2,
+qp,23_june_qp_32,8,9,9,15.1,RISC/CISC;Pipelining
+qp,23_june_qp_32,9,10,11,15.2,K-Map;Boolean Algebra
+qp,23_june_qp_32,10,11,12,18.1,A*
+qp,23_june_qp_32,11,13,14,19.1,Queues
+ms,23_june_ms_32,1,4,4,,
+ms,23_june_ms_32,2,4,4,,
+ms,23_june_ms_32,3,5,5,,
+ms,23_june_ms_32,4,6,6,,
+ms,23_june_ms_32,5,6,6,,
+ms,23_june_ms_32,6,7,7,,
+ms,23_june_ms_32,7,7,8,,
+ms,23_june_ms_32,8,8,9,,
+ms,23_june_ms_32,9,9,10,,
+ms,23_june_ms_32,10,10,11,,
+ms,23_june_ms_32,11,12,12,,
+qp,23_nov_qp_31,1,2,2,13.3,
+qp,23_nov_qp_31,2,3,3,14.1,
+qp,23_nov_qp_31,3,3,3,13.1,
+qp,23_nov_qp_31,4,4,4,13.2,
+qp,23_nov_qp_31,5,4,4,15.1,SISD/SIMD/MISD/MIMD
+qp,23_nov_qp_31,6,6,7,15.2,Boolean Algebra
+qp,23_nov_qp_31,7,7,7,16.1,Scheduling
+qp,23_nov_qp_31,8,8,8,20.2,File Processing;Exception Handling
+qp,23_nov_qp_31,9,9,9,16.2,RPN
+qp,23_nov_qp_31,10,10,11,19.1,Stacks
+qp,23_nov_qp_31,11,12,13,20.1,Declarative Programming
+qp,23_nov_qp_31,12,14,14,18.1,Neural Networks
+ms,23_nov_ms_31,1,3,3,,
+ms,23_nov_ms_31,2,3,3,,
+ms,23_nov_ms_31,3,4,4,,
+ms,23_nov_ms_31,4,4,4,,
+ms,23_nov_ms_31,5,4,4,,
+ms,23_nov_ms_31,6,5,5,,
+ms,23_nov_ms_31,7,6,6,,
+ms,23_nov_ms_31,8,6,6,,
+ms,23_nov_ms_31,9,7,7,,
+ms,23_nov_ms_31,10,8,8,,
+ms,23_nov_ms_31,11,8,9,,
+ms,23_nov_ms_31,12,9,9,,
+qp,23_nov_qp_32,1,2,2,13.3,
+qp,23_nov_qp_32,2,3,3,13.1,
+qp,23_nov_qp_32,3,3,3,13.2,
+qp,23_nov_qp_32,4,4,4,14.1,
+qp,23_nov_qp_32,5,4,4,16.1,Virtual Memory;Disk Thrashing
+qp,23_nov_qp_32,6,5,5,16.2,RPN
+qp,23_nov_qp_32,7,6,6,15.2,Boolean Algebra
+qp,23_nov_qp_32,8,7,7,18.1,Dijkstra
+qp,23_nov_qp_32,9,8,9,19.1,Stacks
+qp,23_nov_qp_32,10,9,9,15.1,SISD/SIMD/MISD/MIMD
+qp,23_nov_qp_32,11,10,11,20.1,Declarative Programming
+qp,23_nov_qp_32,12,11,12,20.2,File Processing;Exception Handling
+ms,23_nov_ms_32,1,3,3,,
+ms,23_nov_ms_32,2,3,3,,
+ms,23_nov_ms_32,3,3,4,,
+ms,23_nov_ms_32,4,4,4,,
+ms,23_nov_ms_32,5,4,4,,
+ms,23_nov_ms_32,6,5,5,,
+ms,23_nov_ms_32,7,5,6,,
+ms,23_nov_ms_32,8,6,6,,
+ms,23_nov_ms_32,9,7,8,,
+ms,23_nov_ms_32,10,8,8,,
+ms,23_nov_ms_32,11,8,8,,
+ms,23_nov_ms_32,12,9,9,,
+qp,21_june_qp_41,1,2,4,P4,P4-Linked List
+qp,21_june_qp_41,2,6,7,P4,P4-Linear Search;P4-Bubble Sort
+qp,21_june_qp_41,3,8,11,P4,P4-OOP;P4-File Processing
+ms,21_june_ms_41,1,4,13,,
+ms,21_june_ms_41,2,14,20,,
+ms,21_june_ms_41,3,20,30,,
+qp,21_nov_qp_41,1,2,3,P4,P4-Recursion/Iteration
+qp,21_nov_qp_41,2,4,6,P4,P4-OOP;P4-File Processing
+qp,21_nov_qp_41,3,8,11,P4,P4-Binary Tree
+ms,21_nov_ms_41,1,3,8,,
+ms,21_nov_ms_41,2,8,16,,
+ms,21_nov_ms_41,3,17,23,,
+qp,22_june_qp_41,1,2,4,P4,P4-File Processing
+qp,22_june_qp_41,2,5,7,P4,P4-OOP
+qp,22_june_qp_41,3,8,10,P4,P4-Queue
+ms,22_june_ms_41,1,4,18,,
+ms,22_june_ms_41,2,18,26,,
+ms,22_june_ms_41,3,27,34,,
+qp,22_june_qp_42,1,2,3,P4,P4-Stack
+qp,22_june_qp_42,2,4,6,P4,P4-2D Array;P4-Bubble Sort;P4-Binary Search
+qp,22_june_qp_42,3,7,9,P4,P4-OOP;P4-File Processing
+ms,22_june_ms_42,1,4,12,,
+ms,22_june_ms_42,2,13,24,,
+ms,22_june_ms_42,3,25,36,,
+qp,22_nov_qp_41,1,2,3,P4,P4-File Processing;P4-Bubble Sort
+qp,22_nov_qp_41,2,4,7,P4,P4-OOP
+qp,22_nov_qp_41,3,8,11,P4,P4-Binary Tree
+ms,22_nov_ms_41,1,3,8,,
+ms,22_nov_ms_41,2,9,15,,
+ms,22_nov_ms_41,3,16,23,,
+qp,22_nov_qp_42,1,2,4,P4,P4-2D Array;P4-Insertion Sort
+qp,22_nov_qp_42,2,5,7,P4,P4-OOP;P4-File Processing
+qp,22_nov_qp_42,3,8,9,P4,P4-Queue;P4-Recursion/Iteration
+ms,22_nov_ms_42,1,3,10,,
+ms,22_nov_ms_42,2,11,20,,
+ms,22_nov_ms_42,3,20,24,,
+qp,23_june_qp_41,1,2,3,P4,P4-File Processing
+qp,23_june_qp_41,2,4,7,P4,P4-OOP;
+qp,23_june_qp_41,3,8,10,P4,P4-Stack;P4-File Processing
+ms,23_june_ms_41,1,4,11,,
+ms,23_june_ms_41,2,12,25,,
+ms,23_june_ms_41,3,26,38,,
+qp,23_june_qp_42,1,2,4,P4,P4-Bubble Sort
+qp,23_june_qp_42,2,5,7,P4,P4-Queue
+qp,23_june_qp_42,3,8,12,P4,P4-OOP;P4-File Processing
+ms,23_june_ms_42,1,4,10,,
+ms,23_june_ms_42,2,11,22,,
+ms,23_june_ms_42,3,23,37,,
+qp,23_nov_qp_41,1,2,3,P4,P4-Recursion/Iteration
+qp,23_nov_qp_41,2,4,7,P4,P4-Queue;P4-File Processing
+qp,23_nov_qp_41,3,8,11,P4,P4-OOP;
+ms,23_nov_ms_41,1,4,8,,
+ms,23_nov_ms_41,2,9,24,,
+ms,23_nov_ms_41,3,25,37,,
+qp,23_nov_qp_42,1,2,4,P4,P4-Stack;P4-File Processing
+qp,23_nov_qp_42,2,6,8,P4,P4-Recursion/Iteration
+qp,23_nov_qp_42,3,10,13,P4,P4-OOP
+ms,23_nov_ms_42,1,4,16,,
+ms,23_nov_ms_42,2,17,21,,
+ms,23_nov_ms_42,3,22,34,,
+qp,24_june_qp_41,1,2,5,P4,P4-Bubble Sort;P4-Binary Search
+qp,24_june_qp_41,2,6,10,P4,P4-OOP;P4-File Processing
+qp,24_june_qp_41,3,11,13,P4,P4-Queue
+ms,24_june_ms_41,1,4,13,,
+ms,24_june_ms_41,2,14,28,,
+ms,24_june_ms_41,3,29,38,,
+qp,24_june_qp_42,1,2,4,P4,P4-File Processing
+qp,24_june_qp_42,2,6,9,P4,P4-OOP;P4-Binary Tree
+qp,24_june_qp_42,3,10,13,P4,P4-Binary Search;P4-Insertion Sort; P4-Recursion/Iteration
+ms,24_june_ms_42,1,4,14,,
+ms,24_june_ms_42,2,15,27,,
+ms,24_june_ms_42,3,28,39,,
+qp,24_nov_qp_41,1,2,5,P4,P4-Bubble Sort;P4-File Processing
+qp,24_nov_qp_41,2,6,11,P4,P4-OOP
+qp,24_nov_qp_41,3,12,15,P4,P4-Linked List
+ms,24_nov_ms_41,1,4,11,,
+ms,24_nov_ms_41,2,12,25,,
+ms,24_nov_ms_41,3,26,37,,
+qp,24_nov_qp_42,1,2,7,P4,P4-OOP
+qp,24_nov_qp_42,2,8,11,P4,P4-Queue
+qp,24_nov_qp_42,3,12,14,P4,P4-2D Array;P4-File Processing;P4-Bubble Sort
+ms,24_nov_ms_42,1,4,17,,
+ms,24_nov_ms_42,2,18,30,,
+ms,24_nov_ms_42,3,31,39,,
+qp,25_june_qp_41,1,2,3,P4,P4-Queue
+qp,25_june_qp_41,2,4,5,P4,P4-File Processing
+qp,25_june_qp_41,3,6,9,P4,P4-OOP;P4-Binary Tree
+ms,25_june_ms_41,1,7,17,,
+ms,25_june_ms_41,2,18,30,,
+ms,25_june_ms_41,3,30,43,,
+qp,25_june_qp_42,1,2,5,P4,P4-Stack;P4-File Processing
+qp,25_june_qp_42,2,6,8,P4,P4-Hash Table;P4-File Processing
+qp,25_june_qp_42,3,9,12,P4,P4-OOP
+ms,25_june_ms_42,1,7,18,,
+ms,25_june_ms_42,2,19,32,,
+ms,25_june_ms_42,3,33,45,,
+qp,25_june_qp_43,1,2,3,P4,P4-Queue;P4-File Processing
+qp,25_june_qp_43,2,4,6,P4,P4-Insertion Sort;P4-Binary Search
+qp,25_june_qp_43,3,7,10,P4,P4-OOP;P4-Linked List
+ms,25_june_ms_43,1,7,18,,
+ms,25_june_ms_43,2,19,32,,
+ms,25_june_ms_43,3,33,45,,
+qp,25_nov_qp_41,1,2,3,P4,P4-Stack
+qp,25_nov_qp_41,2,4,8,P4,P4-OOP
+qp,25_nov_qp_41,3,9,12,P4,P4-Hash Table;P4-2D Array;P4-File Processing
+ms,25_nov_ms_41,1,6,14,,
+ms,25_nov_ms_41,2,15,25,,
+ms,25_nov_ms_41,3,26,36,,
+qp,25_nov_qp_42,1,2,5,P4,P4-OOP
+qp,25_nov_qp_42,2,6,8,P4,P4-Bubble Sort;P4-Binary Search
+qp,25_nov_qp_42,3,10,12,P4,P4-Binary Tree;P4-File Processing
+ms,25_nov_ms_42,1,6,17,,
+ms,25_nov_ms_42,2,18,26,,
+ms,25_nov_ms_42,3,27,38,,
+qp,25_nov_qp_43,1,2,8,P4,P4-OOP;P4-2D Array
+qp,25_nov_qp_43,2,9,11,P4,P4-Queue;P4-File Processing
+qp,25_nov_qp_43,3,12,13,P4,P4-Recursion/Iteration
+ms,25_nov_ms_43,1,7,19,,
+ms,25_nov_ms_43,2,20,30,,
+ms,25_nov_ms_43,3,31,39,,

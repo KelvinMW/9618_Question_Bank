@@ -1,0 +1,1377 @@
+--- Page 1 ---
+- Cambridge Assessment
+*F International Educatior
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 42 Practical
+MARK SCHEME
+Maximum Mark: 75
+9618/42
+May/June 2022
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the May/June 2022 series for most
+Cambridge IGCSE, Cambridge International A and AS Level and Cambridge Pre-U components, and some
+Cambridge O Level components.
+This document consists of 36 printed pages.
+© UCLES 2022
+[Turn over
+
+--- Page 2 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Generic Marking Principles
+May/June 2022
+These general marking principles must be applied by all examiners when marking candidate answers. They should be applied alongside the
+specific content of the mark scheme or generic level descriptors for a question. Each question paper and mark scheme will also comply with these
+marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+••
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit is given for valid answers which go beyond the
+scope of the syllabus and mark scheme, referring to your Team Leader as appropriate
+marks are awarded when candidates clearly demonstrate what they know and can do
+marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these features are specifically assessed by the
+question as indicated by the mark scheme. The meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed instructions or in the application of generic level
+descriptors.
+Page 2 of 36
+
+--- Page 3 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+May/June 2022
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question (however; the use of the full mark range may
+be limited according to the quality of the candidate responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should not be awarded with grade thresholds or
+grade descriptors in mind.
+Page 3 of 36
+
+--- Page 4 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+Question
+1(a)
+1 mark per mark point
+•
+•
+•
+declaring array StackData and pointer StackPointer as (global data structures)
+StackData has 10 integer elements
+stackPointer initialised to (
+Example program code:
+VB.NET
+Dim StackData (9) As Integer
+Dim StackPointer
+Integer
+Sub Main ()
+StackPointer = 0
+end Sub
+Python
+global StackData #integer
+global StackPointer
+StackData = 10,0,0,0,0,0,0,0,0,01 #integer
+StackPointer = 0
+3
+Java
+import java.util.Scanner;
+class Question1{
+public static IntegerIl StackData;
+public static Integer
+StackPointer;
+public static void main (String args []) {
+StackData = new Integer [10];
+StackPointer = 0;
+}
+}
+Page 4 of 36
+
+--- Page 5 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+Question
+1(b)
+1 mark per mark point
+•
+procedure header with sensible identifier (and end where appropriate)
+•
+outputting StackPointer
+•
+outputting all 10 elements in array
+Example program code:
+VB.NET
+Sub PrintArray ()
+Console. WriteLine (StackPointer)
+For x = 0 To 9
+Console. WriteLine (StackData (x))
+Next
+3
+End Sub
+Python
+def PrintArray () :
+global StackData
+global StackPointer
+print (StackPointer)
+for x in range (0, 10):
+print (StackData [x])
+public static void PrintArray () {
+System.out.println (StackPointer);
+for lint x = 0; x < 10 ;x++) {
+System.out.println(StackData[x]);
+Page 5 of 36
+
+--- Page 6 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Question
+1(c)
+Marks
+1 mark per mark point
+•
+function Push () taking an integer parameter
+• •
+checking if stack is full
+...and returning FALSE
+•
+•
+•
+(if not full) storing parameter to stack at StackPointer ...
+...incrementing StackPointer
+...returning TRUE
+Example program code:
+VB.Net
+Function
+Push (DataToPush)
+If StackPointer
+= 10 Then
+Return False
+Else
+StackData (StackPointer) = DataToPush
+StackPointer
+StackPointer
+Return True
+End Function
+Python
+def Push (DataToPush) :
+global StackData
+global StackPointer
+if StackPointer == 10:
+return False
+else:
+StackData [StackPointer] = DataToPush
+StackPointer = StackPointer + 1
+return True
+6
+Page 6 of 36
+
+--- Page 7 ---
+9618/42
+Question
+1(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+Java
+public static Boolean
+Push (Integer DataToPush) {
+if (StackPointer == 10) {
+return
+false;
+StackData[StackPointer] = DataToPush;
+StackPointer
+= StackPointer + 1;
+return true:
+Page 7 of 36
+
+--- Page 8 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+Question
+1 (d) (i)
+1 mark per mark point
+•
+•
+•
+Inputting 11 numbers ...
+...calling Push () with each number input as a parameter...
+....outputting appropriate message if TRUE returned
+...outputting appropriate message if FALSE returned
+• Calling their output procedure after all 11 additions
+Example program code:
+VB.NET
+Sub Main ()
+StackPointer = 0
+Dim TempNumber As Integer
+For x = 0 To 10
+Console.Writeline("Enter a number")
+TempNumber = Console. ReadLine ()
+If Push (TempNumber)
+Then
+Console. Writeline ("Stored")
+Else
+Console.Writeline ("Stack full")
+End If
+Next
+PrintArray ()
+Console. ReadLine ()
+End Sub
+5
+Page 8 of 36
+
+--- Page 9 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Question
+1 (d)(i)
+Marks
+Python
+#main
+StackPointer = 0
+StackData =
+10,0,0.0.0.0.0.0.0.01
+for
+x in range (0,
+11):
+TempNumber
+int (input ("Enter a number"))
+if Push (TempNumber) == True:
+print ("Stored")
+else:
+PrintArray ()
+print("Stack full")
+Java
+public static void main (String[| args) {
+StackData = new Integer[10];
+StackPointer = 0;
+Integer TempNumber = 0;
+for lint x = 0; x < 10; x++) {
+System.out.println("Enter a number");
+Scanner scanner = new Scanner (System.in);
+TempNumber = Integer.parseInt(scanner.nextLine());
+if (Push (TempNumber)) {
+System.out.println("Stored");
+}elsel
+System.out.println("Stack full");
+}
+PrintArray ();
+}
+Page 9 of 36
+
+--- Page 10 ---
+9618/42
+Question
+1 (d) (ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+1 mark for inputting all 11 numbers, message for first 10 saying added (11 to 20), message stating 11th number stating
+stack full. Full array contents output (11 12 13 14 15 16 17 18 19 20).
+May/June 2022
+Marks
+1
+Enter a nurber
+stored
+Enter a nurber
+12
+Stored
+Enter a nurber
+L3
+stared
+Enter a nurber
+14
+Stored
+inter a number
+5
+stared
+Enter a number
+15
+stared
+Entor a nurbor
+17
+stared
+Enter a number
+tored
+Enter a nurber
+19
+stared
+Enter a number
+Stared
+inter a number
+21
+Stack full
+pointor 10
+butput
+11
+12
+Page 10 of 36
+
+--- Page 11 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Question
+1 (e)(i)
+Marks
+1 mark per mark point
+•
+Pop () function header (and close where appropriate) and returning a number in all possible situations
+checking if stack is empty (StackPointer is 0) and returning - 1
+•
+(otherwise) accessing the item at the top of the stack ...
+...decrementing the stack pointer
+•
+...returning the item removed
+Example Program code:
+VB.NET
+Function Pop ()
+Dim ReturnData As Integer
+If StackPointer = 0 Then
+Return -1
+Else
+ReturnData = StackData (StackPointer - 1)
+StackPointer = StackPointer - 1
+Return ReturnData
+End If
+End Function
+Python
+def Pop () :
+global StackData
+global StackPointer
+if StackPointer == 0:
+return -1
+else:
+ReturnData = StackData StackPointer - 11
+StackPointer = StackPointer - 1
+return ReturnData
+5
+Page 11 of 36
+
+--- Page 12 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Question
+1(e)(i)
+Marks
+Java
+public static Integer Pop (){
+Integer ReturnData
+= 0;
+if (StackPointer ==
+return
+- 1;
+lelsel
+ReturnData
+= StackData [StackPointer - 1];
+StackPointer
+= StackPointer - 1;
+return ReturnData;
+1 (e)(ii)
+1 mark per mark point
+•
+output of before removed with 11 inputs
+output of stack (after, this could be 11-20, 11-18, or 11-18 then 'null' 'null's)
+e.g.
+Enter a nunber11
+Stored
+Enter a nunber12
+Stored
+Enter a number13 Enter a number21
+Stored
+number 13 Enack formber 21
+Enter a number14 g
+Stored
+Enter a nunber15
+Output
+Stared
+11
+Enter a nunber16 12
+Stared
+13
+Enter a nunber17 |14
+Stored
+15
+Enter a nunber18
+Stored
+Enter a nunber19
+Stoted
+Enter a nuber20
+Stored
+19
+20
+2
+Page 12 of 36
+
+--- Page 13 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+Question
+2(a)
+1 mark per mark point
+in main local 2D array declared...
+... with 10 × 10 integer elements
+initialising all array elements to a number...
+...that is random between 1 and 100 (allow inclusive or exclusive)
+Example program code:
+VB.NET
+Dim Random As New Random
+Dim ArrayData (10, 10) As Integer
+For x = 0 To 9
+For y = 0 To 9
+ArrayData (x, y) = Random.Next (1, 100)
+4
+Next
+Console. ReadLine ()
+End Sub
+Python
+import random
+#main
+ArrayData= [[O]*10 for
+i in range (10)] #integer
+for x in range (0, 10):
+for y in range (0,10):
+ArrayData [x] [y]
+random.randint (1, 100)
+Page 13 of 36
+
+--- Page 14 ---
+9618/42
+Question
+2(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+Java
+import java.util.Scanner;
+import java.util.Random;
+class Question2{
+public static Integer[||| ArrayData;
+public
+static void main (String args [l) {
+Random Rand = new Random () ;
+ArrayData = new Integer [10][10];
+for (int x=0; x < 10; xt+){
+forlint y = 0; y ‹ 10; yt+){
+ArrayData [x][y] = Rand.nextInt (100);}
+}
+Page 14 of 36
+
+--- Page 15 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Question
+2(b) (i)
+Marks
+1 mark per mark point
+•
+1 st outer loop (dimension 1)
+•
+2nd loop (dimension 2)
+inner for loop for all second dimension
+•
+Selection statement ...
+...swapping the numbers correctly
+Example program code:
+VB.NET
+Dim TempNumber As
+Integer
+Dim Arraylength As Integer
+= 10
+For X = 0 To Arraylength
+- ]
+= 0 To Arraylength
+For Z = 0 To Arraylength
+- Y - 2
+if ArrayData (X, Z) > ArrayData(X, Z † 1) then
+TempNumber = ArrayData (X, Z)
+ArrayData (X,
+Z) = ArrayData (X, Z+1)
+ArrayData (X,
+Z t 1) = TempNumber
+end if
+Next Z
+Next Y
+Next X
+Python
+ArrayLength = 10
+for X in range (0,
+Arraylength):
+for Y in range (0, Arraylength-1):
+Z in range (0, Arraylength - Y - 1):
+if (ArrayData [X|[Z] > ArrayData[X][Z+1]):
+TempNumber = ArrayData [X] [Z]
+ArrayData [X] [Z]
+= ArrayData [X] [Z+1]
+ArrayData [X] [Z+1] = TempNumber
+Accept for MP5:
+ArrayData [X] [Z], ArrayData [X] [Z+1] = ArrayData[X] [Z+1], ArrayData [X] [Z]
+5
+Pade 15 of 36
+
+--- Page 16 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Question
+2(b)(i)
+Marks
+Integer Arraylength = 10;
+for (int X = 0; X ‹ Arraylength; X++) {
+for (int Y
+= 0; y < Arraylength; Y++) {
+for(int Z = 0; Z < Arraylength - Y - 1; Zt+) {
+if (ArrayData [X] [Z] > ArrayData[X][Z † 1]) {
+TempNumber = ArrayData [X] [Z];
+ArravData [X| [Z] = ArravData[X| [Z+11:
+ArrayData [X] [Z † 1] = TempNumber;
+}
+Page 16 of 36
+
+--- Page 17 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+Question
+2(b)(ii)
+1 mark per mark point
+procedure header (and end where appropriate)
+• Outputting all 10 × 10 values with each 2nd dimension on a complete line
+• Calling procedure before and after bubble sort
+Example program code:
+VB.NET
+Sub Main ()
+Dim random As New Random
+Dim ArrayData (10, 10) As Integer
+= 0 To 9
+For y = 0 To 9
+ArrayData (X, y) = random.Next (1, 100)
+Next
+Next
+Console.WriteLine ("before")
+printarray (ArrayData)
+Dim TempNumber As Integer
+Dim Arraylength As Integer = 10
+For X = 0 To Arraylength - 1
+= O To Arraylength
+For Z = 0 To Arraylength - Y - 2
+if ArrayData (X, Z) > ArrayData (X, Z † 1) then
+TempNumber = ArrayData (X, Z)
+ArrayData (X, Z) = ArrayData (X, Z+1)
+ArrayData (X, Z t 1) = TempNumber
+end if
+Next Z
+Next Y
+Next X
+Console.Writeline ("after")
+printarray (ArrayData)
+Console. ReadLine ()
+End Sub
+3
+Page 17 of 36
+
+--- Page 18 ---
+9618/42
+Question
+2(b) (ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+Sub Printarray (ByRef ArrayData (,) As Integer)
+For x = 0
+To 9
+For y = 0 To 9
+Console.Write (ArrayData (x, y) & " ")
+Next
+Console .WriteLine ()
+Next
+End Sub
+Python
+import random
+Jef Printarrav (ArravData):
+for x in range (0, 10):
+for y in range (0, 10):
+print (ArrayData[x] [yl,
+" ", end='")
+print("")
+#main
+ArrayData= [[0]*10 for i in range(10)] #integer
+for x in range (0, 10):
+for y in range (0,10):
+ArrayData [x] [y]
+= random.randint (1, 100)
+print ("Before")
+printarray (ArrayData)
+Arraylength = 10
+for X in range (0, Arraylength) :
+for Y in range (0, Arraylength) :
+for Z in range (0, Arraylength - Y - 1) :
+if (ArrayData [X][Z] > ArrayData[X] [Z+1]):
+TempNumber = ArrayData [X] [Z]
+ArrayData[X][Z] = ArrayData[X][Z+1]
+ArrayData [X] [Z+1] = TempNumber
+print ("After")
+Printarray (ArrayData)
+Pade 18 of 36
+
+--- Page 19 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+Question
+2(b)(ii)
+Java
+import java.util.Scanner;
+import java.util.Random;
+class Question2{
+public
+static Integer[||| ArrayData;
+public static void printArray(Integer||[| theArrayData) {
+for lint x = 0; x ‹ 10; xt+){
+forlint y = 0; y ‹ 10; yt+) {
+System.out.printf(theArrayData[x][y] + " ");
+System.out.println();
+}
+public static void main (String args [l){
+Random rand
+= new Random () {
+ArrayData = new Integer[10][10];
+for (int x=0; x < 10; x++) {
+forlint y = 0; y ‹ 10; yt+) {
+ArrayData [x][y] = rand.nextInt (100);
+}
+Integer TempNumber = 0;
+System.out.println("Before");
+printArray (ArrayData);
+Integer ArrayLength = 10;
+for lint X = 0; X < Arraylength; X++) {
+for (int Y = 0; Y < Arraylength; Y++) {
+for lint Z = 0; 2 < Arraylength - Y - 1; z++) {
+if (ArrayData [X][Z] > ArrayData[X][Z † 1]) {
+Page 19 of 36
+
+--- Page 20 ---
+9618/42
+Question
+2(b) (ii)
+}
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+TempNumber = ArrayData [X] [Z];
+ArrayData [X] [Z]
+= ArrayData [X] [Z+1];
+ArrayData [X] [Z † 1]
+= TempNumber;
+May/June 2022
+Marks
+}
+System.out.println("After");
+PrintArray (ArrayData);
+}
+Page 20 of 36
+
+--- Page 21 ---
+9618/42
+Question
+2(b) (iii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+1 mark for output showing array unsorted and then sorted on 1 of the dimensions
+e.g.
+before
+87 37 36
+72 85
+58
+82 34 6 90
+71 44
+24
+• 26 47
+80
+22 28 68 70
+45
+52
+95 31 18 91 91 73 19 10
+25
+52
+47 4 78 70 46 62 74 49
+38
+9 95 80 16 81 99 69 78 72
+81
+98 95 43 96 35 42 6 54 93
+67 9 16 95 65 20 97 20 48 76
+35 59 54 20 33 36 56 16 15 36
+91 22 95 46 29 27 57 4 8 43
+29 41 9 80 81 29 93 1 15 96
+after
+6 34 36 37
+58
+72 82 85 87 90
+22 24
+26 28 44
+47 68 70 71 80
+10 18 19 31 45 52 73 91 91 95
+4 25 46 47
+49
+52
+62 70 74 78
+9
+16 38 69 72
+78 80
+81
+95 99
+6
+35 42 43
+54 81 93 95 96 98
+9
+16 20 20 48 65 67 76 95 97
+15 16 20 33 35 36 36 54 56 59
+4 8 22 27 29 43 46 57 91 95
+1
+9
+15 29
+29 41 80 81 93 96
+Page 21 of 36
+
+--- Page 22 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+2(c) (i)
+May/June 2022
+Marks
+8
+1 mark for each completed statement (6)
+1 mark per mark point
+•
+function declaration taking appropriate parameters and recursive calls
+remainder of the function is accurate including appropriate DIV operator.
+Example program code:
+VB.NET
+Function BinarySearch (ByVal SearchArray(,) As Integer, Lower As Integer, Upper As Integer,
+SearchValue As Integer)
+Dim Mid As Integer
+If Upper ›= 0 Then
+Mid = (Lower + (Upper - 1)) \ 2
+If SearchArray (0, Mid) = SearchValue Then
+Return Mid
+ElseIf SearchArray (0, Mid) > SearchValue Then
+Return BinarySearch (SearchArray, Lower, Mid - 1, SearchValue)
+Else
+Return BinarySearch (SearchArray, Mid + 1, Upper, SearchValue)
+End If
+End If
+Return -1
+End Function
+Python
+def BinarySearch (SearchArray, Lower, Upper, SearchValue) :
+if Upper >= 0:
+Mid = int (Lower + (Upper - 1)) /2)
+If SearchArray[0] [Mid] == SearchValue:
+return Mid
+elif SearchArray[0| [Mid] > SearchValue:
+return BinarySearch (SearchArray, Lower, Mid-1, SearchValue)
+return BinarySearch (SearchArray, Midt1, Upper, SearchValue)
+return -1
+© UCLES 2022
+Page 22 of 36
+
+--- Page 23 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+Question
+2(c) (i)
+public static Integer BinarySearch (Integer|||| SearchArray, Integer Lower,
+Integer Upper,
+Integer SearchValue) {
+Integer Mid = 0;
+If Upper >= 0 {
+Mid = (Lower +
+(Upper - 1)) / 2;
+If SearchArray[0] [Mid]
+== SearchValue ){
+return Mid;
+Jelse if SearchArray[0][Mid] > SearchValue {
+return BinarySearch (SearchArray, Lower, Mid-1, SearchValue);
+return BinarySearch (SearchArray, Midt1, Upper, SearchValue);
+}
+return -1;
+Page 23 of 36
+
+--- Page 24 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Question
+2(c) (ii)
+Marks
+1 mark per mark point
+•
+screenshot outputting the index when Number is found
+•
+screenshot outputting - 1 with a Number not found
+e.g.
+beforg
+85 61 28 29 47 62 7 11 10 5
+85 68 13 63 43 70 12 92 33 34
+38 55 62 7 4 31 45 18 63 49
+83 58
+60
+76 9 23
+28 77 21 66
+25 g g9
+14
+51: 32
+66
+•85
+49 94
+72 31
+71
+83
+25 31
+18 88
+48
+60
+21
+99
+22 26 16
+28 9
+37
+55 21
+43 35
+71
+66
+10
+30 56 49 56 71
+64 59
+68
+69
+76 53
+86
+77
+51 78
+24 7 52 6 49
+36 60
+39
+92 23
+5 7 18 11 78 20 47 61
+62
+85
+12 13 33 34 43 63 68 78 85 97
+4 7 18 31 38 45 49 55 62 63
+9 21 23 28 S8 60 66 76 77 83
+8 14 25 32 49 51 66 85 94 99
+16 22 25 26 31 31 71 72 83 99
+19 18 21 21 28 37 48 55 60 88
+10 30 35 43 49 56 56 66 71 71
+51 53 59 64 68 69 76 77 78 86
+6 7 23 24 36 39 49 52 60 92
+2
+2
+Page 24 of 36
+
+--- Page 25 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+Question
+3(a)
+1 mark per mark point
+•
+Card class declaration (and end where appropriate)
+Both attributes (Number and Colour) declared with suitable data types ...
+...as private
+•
+•
+correct constructor header (and end where appropriate) with two parameters...
+...both parameters assigned to the attributes
+Example program code:
+VB.NET
+Class Card
+Private Number As Integer
+Private Colour As String
+Sub New (Numberp, Colourp)
+Number = Numberp
+Colour
+= Colourp
+End Sub
+End Class
+Python
+class Card:
+#Number as
+Integer
+#Colour as
+string
+def
+init
+(self,
+Numberp, Colourp):
+self.__
+Number = Numberp
+self.
+Colour = Colourp
+5
+Page 25 of 36
+
+--- Page 26 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+Question
+3(a)
+Java
+import java.util.Scanner;
+import java.io.*;
+class Card!
+private Integer Number;
+private String Colour;
+public Card (Integer pNumber, String pColour) {
+Number = pNumber;
+Colour = pColour;
+}
+public static void main (String args[]){
+}
+Page 26 of 36
+
+--- Page 27 ---
+9618/42
+Question
+3(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+1 mark per mark point
+•
+1 get method header (and close where appropriate) with no parameter...
+... returning attribute
+•
+2nd correct get method
+Example program code:
+VB.NET
+Function GetNumber ()
+Return Number
+End Function
+Function GetColour ()
+Return Colour
+End Function
+Python
+def GetNumber (self) :
+return self.
+Number
+GetColour (self):
+self._
+Colour
+3
+Java
+public Integer GetNumber () {
+return Number;
+public String GetColour () {
+return Colour;
+Page 27 of 36
+
+--- Page 28 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+Question
+3(c)
+1 mark per mark point to max 7
+Declaration of array with 30 elements of type Card
+Opening the text file CardValues. txt for read
+• Looping until EOF/30 times
+•
+•
+•
+Reading in all sets of 2 lines (number then colour) ...
+...creating object of type Card...
+...with number and colour read in from file ...
+...storing in next array element
+: Try and catch for file handling...s
+....with appropriate outputs
+• Closing the file in a suitable place
+Example program code:
+VB.NET
+Sub Main ()
+Dim CardArray (0 To 29) As Card
+Dim NumberRead As Integer
+Dim ColourRead As String
+Try
+Dim Filename As String = "CardValues.txt"
+Dim FileReader As New System. IO. StreamReader (filename)
+For x = 0 To 29
+NumberRead = FileReader.ReadLine ()
+ColourRead = FileReader. ReadLine ()
+CardArray (x) = New Card (NumberRead, ColourRead)
+Next
+FileReader. Close ()
+Catch ex As Exception
+7
+Page 28 of 36
+
+--- Page 29 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Question
+3(c)
+Marks
+Console.WriteLine('Invalid file")
+End Try
+End Sub
+PytdArray = 10,0,0.0,0,0,0,0,0,0,0,0.0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,01 #integer
+try:
+Filename = "CardValues.txt"
+File = open (Filename, 'r')
+for x in range (0,30) :
+NumberRead =
+int (File.readline())
+ColourRead
+File.readline ()
+CardArray[x] = Card (NumberRead, ColourRead)
+File.close
+except IOError:
+print ("Could not find file")
+Java
+public static void main (String args []) {
+Card[l CardArray = new Card[30];
+Integer NumberRead;
+String ColourRead;
+String FileName = "CardValues.txt";
+FileReader F = new FileReader (FileName);
+BufferedReader Reader = new BufferedReader (f) ;
+for (Integer x = 0; x < 30; x++) {
+NumberRead = Integer.parseInt (Reader.readLine ());
+ColourRead = Reader. readLine ();
+CardArray[x] = new Card (NumberRead, ColourRead);
+Reader. close () ;
+Page 29 of 36
+
+--- Page 30 ---
+9618/42
+Question
+3(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+catch (FileNotFoundException ex){
+System.out.println("No file found");
+}
+catch (IOException ex) |
+System.out.println("No file found");
+}
+Page 30 of 36
+
+--- Page 31 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+3(d)
+May/June 2022
+Marks
+6
+1 mark per mark point to max 6
+Implementing a suitable way of storing which card have been selected
+• Function ChooseCard () header (and close) and returning an integer (index) in all cases
+Reading in array index from the user ...
+...with suitable validation looping until it is between 1 and 30 (inclusive)
+• Converting input to array index (e.g. -1 each time)
+•
+•
+•
+Check if the input is already selected.
+... if it is selected, loop until index input is not already selected
+... returning index of available card selected
+• Stores the valid Card chosen as taken (using any suitable method)
+Example program code:
+VB.NET
+Dim NumbersChosen (0 To 29) As Boolean
+Sub Main ()
+For x = 0 To 29
+NumbersChosen (x) = False
+Next
+End Sub
+Function chooseCard ()
+Dim CardSelected As Integer
+Dim flagContinue As Boolean = True
+While flagContinue = True
+Console.Writeline("Select a Card from 1 to 30")
+Cardselected = Console. ReadLine ()
+If CardSelected < 1 Or Cardselected > 30 Then
+Console. WriteLine ("Number must be between ")
+Page 31 of 36
+
+--- Page 32 ---
+9618/42
+Question
+3(d)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+ElseIf NumbersChosen (CardSelected - 1) = True Then
+Console.WriteLine ("Already
+taken")
+Else
+Console.Writeline ("valid")
+flagContinue
+= False
+End If
+End While
+Number sChosen (CardSelected - 1) = True
+Return Cardselected - 1
+End Function
+Python
+global NumbersChosen
+•..
+def chooseCard ():
+global NumbersChosen
+flagContinue = True
+while flagContinue == true:
+Cardselected = int (input ("Select a Card from 1 to
+if CardSelected ‹ 1 or CardSelected > 30:
+print ("Number must be between 1 and 30")
+elif NumbersChosen (CardSelected - 1) == True:
+print ("Already taken")
+else:
+print ("Valid")
+flaqContinue = False
+NumbersChosen [CardSelected-11 = True
+return CardSelected-1
+May/June 2022
+Marks
+#main
+NumbersChosen = [False for i in range (30)]
+Page 32 of 36
+
+--- Page 33 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Question
+3(d)
+Marks
+Java
+public static Boolean[| NumbersChosen = new Boolean [30];
+public Integer chooseCard () {
+Boolean flagContinue = true;
+Integer CardSelected = -1;
+while (flagContinue){
+System.out.println ("Select a Card from 1 to 30");
+Scanner scanner = new Scanner (System.in);
+CardSelected = Integer.parseInt(scanner.nextLine ());
+if (CardSelected < 1 || CardSelected > 30) {
+System.out.println("Number must be between 1 and 30");
+}else if (NumbersChosen [CardSelected - 1]) {
+System.out.println("Already taken");
+System.out.println("Valid");
+flagContinue = false;
+}
+}
+NumbersChosen [CardSelected - 1] = true;
+return CardSelected - 1;
+}
+Page 33 of 36
+
+--- Page 34 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+Question
+3(e) (i)
+1 mark per mark point
+•
+•
+declaring array Playerl of type Card
+calling the function ChooseCard () four times
+storing the card, that is in the index returned, in the array Player1
+•
+outputting all four numbers and colours in Player1...
+.... using the get methodss
+Example program code:
+VB.NET
+Dim Player1 (0 To 3) As Card
+For x = 0 To 3
+Player1 (x) = CardArray (ChooseCard (NumbersChosen))
+for x = 0 to 3
+console.writeline (Player1(x).GetColour)
+console.writeline (Player1(x).GetNumber)
+next x
+5
+Player1 = [] #of type Card
+for x in range (0, 4) :
+type card
+ReturnNumber
+= ChooseCard ()
+Playerl.append (CardArray|ReturnNumber])
+for x in range (0, 4):
+print (Player1 [x] .GetColour ())
+print (Player1 [x]. GetNumber ())
+Page 34 of 36
+
+--- Page 35 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Question
+3(e)(i)
+Marks
+Java
+Card|l Player1 = new
+Card [5];
+for (Integer x = 0;
+x < 5; x++) {
+Player1[x] = CardArray[ChooseCard ()];
+}
+for (Integer x = 0; x < 5; x++) {
+System.out.println(Player1|x].GetColour ());
+System.out.println (Player1[x].GetNumber ());
+3(e)(ii)
+1 mark for both tests
+Test 1: inputting 1, 5, 9, 10. Outputting: 1 red 9 green 9 orange 10 red
+Test 2: inputting 2 2 3 4 4 5. Outputting: 2 already taken. Then 5 black 2 while 4 red 9 green
+Test 1 e.g.
+card from
+1 to 301
+Valid
+Valid
+Valid
+Valid
+Select a card from 1 to 305
+Select a card from 1 to 309
+Select a card from 1 to 3010
+red
+1
+green
+9
+orange
+10
+red
+Page 35 of 36
+
+--- Page 36 ---
+9618/42
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+May/June 2022
+Marks
+Question
+3(e) (ii)
+Test 2 e.g.
+Select a card from 1 to 302
+Valid
+Select a card from 1 to 302
+Already taken
+Select a card from 1 to 303
+Valid
+Select a card from 1 to 304
+Valid
+Select a card from 1 to 304
+Already taken
+Select a card from 1 to 305
+Valid
+5
+black
+2
+white
+4
+red
+9
+green
+Page 36 of 36

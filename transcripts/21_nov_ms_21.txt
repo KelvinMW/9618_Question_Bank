@@ -1,0 +1,567 @@
+--- Page 1 ---
+SE Cambridge Assessment
+5|5 International Education
+Cambridge International AS & A Level
+COMPUTER SCIENCE
+Paper 2 Problem Solving & Programming
+MARK SCHEME
+Maximum Mark: 75
+9618/21
+October/November 2021
+Published
+This mark scheme is published as an aid to teachers and candidates, to indicate the requirements of the
+examination. It shows the basis on which Examiners were instructed to award marks. It does not indicate the
+details of the discussions that took place at an Examiners' meeting before marking began, which would have
+considered the acceptability of alternative answers.
+Mark schemes should be read in conjunction with the question paper and the Principal Examiner Report for
+Teachers.
+Cambridge International will not enter into discussions about these mark schemes.
+Cambridge International is publishing the mark schemes for the October/November 2021 series for most
+Cambridge IGCSE ™
+', Cambridge International A and AS Level components and some Cambridge O Level
+This document consists of 11 printed pages.
+© UCLES 2021
+[Turn over
+
+--- Page 2 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Generic Marking Principles
+These general marking principles must be applied by all examiners when marking candidate answers.
+They should be applied alongside the specific content of the mark scheme or generic level descriptors
+for a question. Each question paper and mark scheme will also comply with these marking principles.
+GENERIC MARKING PRINCIPLE 1:
+Marks must be awarded in line with:
+the specific content of the mark scheme or the generic level descriptors for the question
+the specific skills defined in the mark scheme or in the generic level descriptors for the question
+the standard of response required by a candidate as exemplified by the standardisation scripts.
+GENERIC MARKING PRINCIPLE 2:
+Marks awarded are always whole marks (not half marks, or other fractions).
+GENERIC MARKING PRINCIPLE 3:
+Marks must be awarded positively:
+marks are awarded for correct/valid answers, as defined in the mark scheme. However, credit
+is given for valid answers which go beyond the scope of the syllabus and mark scheme,
+referring to your Team Leader as appropriate
+• marks are awarded when candidates clearly demonstrate what they know and can do
+• marks are not deducted for errors
+marks are not deducted for omissions
+answers should only be judged on the quality of spelling, punctuation and grammar when these
+features are specifically assessed by the question as indicated by the mark scheme. The
+meaning, however, should be unambiguous.
+GENERIC MARKING PRINCIPLE 4:
+Rules must be applied consistently, e.g. in situations where candidates have not followed
+instructions or in the application of generic level descriptors.
+GENERIC MARKING PRINCIPLE 5:
+Marks should be awarded using the full range of marks defined in the mark scheme for the question
+(however; the use of the full mark range may be limited according to the quality of the candidate
+responses seen).
+GENERIC MARKING PRINCIPLE 6:
+Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should
+not be awarded with grade thresholds or grade descriptors in mind.
+© UCLES 2021
+Page 2 of 11
+
+--- Page 3 ---
+9618/21
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Question
+1(a)(i)
+October/November
+2021
+Marks
+1
+1(a)(ii)
+One from:
+The program obeys the rules / grammar of the programming language
+used
+The program will run // it can be compiled / interpreted
+Accept by example. e.g. 'no mis-spelt keywords' / 'all brackets match'
+One mark for type plus one for corresponding description
+Type of error: A logic error
+Description:
+• An error in the algorithm / design of the solution
+the program does not behave as expected / give the expected output.
+Accept by example e.g. wrong arithmetic operator used / wrong loop
+OR
+Type of error: Run-time error
+Description:
+The program performs an illegal instruction / invalid operation
+Accept by example: divide by zero or endless loop or simply 'crashes /
+freezes
+2
+1(b)
+Use of variable
+The average mark in a class of 40 students
+An email address
+The number of students in the class
+Indicate whether an email has been read
+One mark per row
+Data type
+REAL
+STRING
+INTEGER
+BOOLEAN
+4
+© UCLES 2021
+Page 3 of 11
+
+--- Page 4 ---
+9618/21
+Question
+1(c)(i)
+1(c) (ii)
+1(c)(ii)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+Information
+Essential
+Not essential
+Marks
+3
+Departure time
+Flight Number
+Departure airport
+Aircraft type
+Ticket price
+Number of seats in aircraft
+r
+r
+One mark for two rows correct
+Two mark for four rows correct
+Three mark for all rows correct
+One mark for technique and one for benefit, Max 1 mark for 'Benefit'
+Technique: Abstraction
+Benefit:
+•
+The solution is simplified so easier / quicker to design / implement
+•
+The system is tailored to the need of the user
+Answers include:
+•
+•
+•
+•
+•
+Destination / arrival airport
+Arrival time / flight duration
+Date of flight
+Seat number
+Seat availability
+Max 2 marks
+2
+2
+Question
+2(a)
+Answer
+One mark for reference to:
+1
+2
+3
+4
+5
+6
+7
+The use a variable as an index to the array
+A loop to iterate through the array
+An Inner loop (with a reducing range)
+Test if current element is greater than next element
+if so then swap elements
+Description of swap
+Attempt at efficient algorithm
+Max 6 marks
+Marks
+6
+© UCLES 2021
+Page 4 of 11
+
+--- Page 5 ---
+9618/21
+Question
+2(b)
+Question
+3(a)(i)
+3(a) (ii)
+3(a)(iii)
+© UCLES 2021
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+October/November
+2021
+Marks
+6
+count + 1
+Flag < FALSE
+WHILE Flag = FALSE AND Count <= 5
+CALL ReBoot ()
+Count + Count + 1
+Flag & Check()
+ENDWHILE
+IF Flag = FALSE THEN
+CALL Alert (27)
+ENDIF
+One mark per point:
+1 Initialisation of Count AND Flag
+2
+WHILE
+... ENDWHILE // REPEAT ... UNTIL loop
+...including both conditions
+Call ReBoot () AND increment Count inside the loop
+Assign return value from Check () to Flag inside the loop
+Final test of Flag AND call to Alert (27) not in a loop
+Answer
+Marks
+2
+One mark per point:
+•.
+Eod pointer will move to point to location 4 I/ incremented Eod (by 1)
+Data value "Octopus" will be stored in location pointed to be Eo@ /
+location 4
+One mark for each bullet
+•
+•
+Value "Frog" // value pointed to by Fod / location O is assigned to variable
+AnimalName
+Fol (by 1)
+Fol pointer will move to point to location 1 / point to "Cat" // incremented
+0
+1
+Frog
+Cat
+- Front of queue pointer
+2
+Fish
+3
+Elk
+< End of queue pointer
+There is only one data item in the queue
+2
+1
+Page 5 of 11
+
+--- Page 6 ---
+9618/21
+Question
+3(b)(i)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+One mark for data values plus one mark for pointers
+1
+2
+3
+4
+5
+6
+Frog
+Cat
+Fish
+Elk
+Wasp
+Bee
+Mouse
+- Front of queue pointer
++ End of queue pointer
+October/November
+2021
+Marks
+3
+3(b) (ii)
+3(c)
+One mark for each pointer
+One mark for three new data values
+1
+2
+3
+4
+5
+6
+7
+Shark
+(Cat)
+(Fish)
+(Elk)
+Wasp
+Bee
+Mouse
+Dolphin
+< End of queue pointer
++ Front of queue pointer
+One mark for BOTH pointers
+One mark for all data values as shown
+One mark per point:
+If incremented Eod = Fol then error condition: queue is full
+Increment the Eod
+Manage wrap-around
+2
+3
+© UCLES 2021
+Page 6 of 11
+
+--- Page 7 ---
+9618/21
+Question
+4(a)
+4(b)
+Question
+5(a)
+5(b)
+© UCLES 2021
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+Test Test data value
+1
+23
+2
+3
+4
+5
+40
+>= 41
+<= -1
+Explanation
+Normal Data
+Boundary Data
+Boundary Data
+Abnormal Data
+Abnormal Data
+One mark per row for rows 2 to 5.
+Temp < 10
+Expected Outcome
+Data is accepted
+Data is accepted
+Data is accepted
+Data is rejected
+Data is rejected
+October/November
+2021
+Marks
+4
+3
+Start
+Heaters
+Off
+Heaters
+On
+Temp >= 10
+Temp <= 20
+Temp > 20
+One mark for each label:
+..
+Temp < 10 (Heaters Off to Heaters On)
+Temp > 20 (Heaters On to Heaters Off)
+on BOTH loops (non-contradictory values)
+Answer
+One mark for the character and one for the corresponding reason.
+Character: Any except alphabetic, numeric, ''":' or space
+•
+Reason: character doesn't occur in data to be recorded
+Design
+Marks
+2
+1
+Page 7 of 11
+
+--- Page 8 ---
+9618/21
+Question
+5(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+FUNCTION LogEvents (StudentID : STRING) RETURNS INTEGER
+DECLARE FileData: STRING
+DECLARE Index, Count : INTEGER
+CONSTANT LogFile = "LogFile"
+Count + 0
+OPENFILE LogFile FOR APPEND
+FOR Index + 1 TO 2000
+FileData < LogArray [Index]
+IF LEFT (FileData, 6) = StudentID THEN
+WRITEFILE (LogFile, FileData) |/brackets optional
+Count + Count + 1
+LogArray [Index]
+4""
+1l clear the element
+ENDIF
+NEXT Index
+CLOSEFILE LogFile
+RETURN Count
+ENDFUNCTION
+1 mark for each of the following:
+1
+2
+3
+4
+5
+6
+Function heading and ending including parameter and return type
+OPEN file LogFile for APPEND and subsequent CLOSE
+Loop for 2000 iterations
+Extract first 6 characters from array element in a loop
+Compare first 6 characters with parameter in a loop
+If equal:
+• write whole array element string to file and
+• increment Count and
+• clear array element in a loop
+7 Return Count (must have been declared and initialised)
+October/November
+2021
+Marks
+7
+© UCLES 2021
+Page 8 of 11
+
+--- Page 9 ---
+9618/21
+Question
+6(a)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+October/November
+2021
+Answer
+PROCEDURE SetRow (Row, SkipNum, SetNum : INTEGER)
+DECLARE Col : INTEGER
+Marks
+5
+1l array is 1280 × 800
+FOR Col + SkipNum + 1 TO SkipNum + SetNum
+Screen [Row, Coll + 1
+NEXT Index
+ENDPROCEDURE
+ALTERNATIVE 1:
+FOR Col + 1 TO SetNum
+Screen [Row, SkipNum + COll < 1
+NEXT Col
+ALTERNATIVE 2:
+WHILE SetNum
+> 0
+Screen [Row, SkipNum
+• + SetNum]
+< 1
+SetNum + SetNum - 1
+ENDWHILE
+Mark as follows:
+1
+2
+Procedure heading and ending including parameters
+3
+Declaration of local Integer for Col
+Count-controlled loop with meaningful start number
+4
+5
+correct stop number
+Reference Screen Array element and set to 1 in a loop
+© UCLES 2021
+Page 9 of 11
+
+--- Page 10 ---
+9618/21
+Question
+6(b)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+FUNCTION SearchInRow (ThisRow, StartCol : INTEGER) RETURNS
+INTEGER
+DECLARE ThisCol, Step : INTEGER
+DECLARE Found: BOOLEAN
+1l array is 1280 × 800
+Found - FALSE
+ThisCol ‹ StartCol
+I first decide which way to search
+IF StartCol = 1 THEN
+Step < 1
+Endcol + 1281
+ELSE
+step + -1
+Enacol + o
+ENDIF
+October/November
+2021
+Marks
+8
+WHILE ThisCol <> Endcol AND Found = FALSE
+IF Screen [ThisRow, ThisCol] <> 1 THEN
+Thiscol ‹ Thiscol
++ Step
+ELSE
+Found + TRUE
+ENDIF
+ENDWHILE
+IF Found = FALSE THEN
+Thiscol
+< -1
+ENDIF
+RETURN Thiscol
+ENDFUNCTION
+Mark as follows:
+1
+2
+3
+4
+5
+6
+Interpreting StartCol parameter to determine direction of search
+An attempt at searching both up and down
+Conditional Loop / Count-controlled loop with use of Thiscol index
+Using correct values for StartCol, EndCol and Step
+Reference a Screen element and compare with 1 in a loop
+If equal save column or immediately Return column in a loop
+7 Return column number or -1
+Loop(s) terminate when element with value = 1 found
+Max 7 marks if function heading, including return type, and ending is incorrect
+or incomplete
+© UCLES 2021
+Page 10 of 11
+
+--- Page 11 ---
+9618/21
+Question
+6(c)
+Cambridge International AS & A Level - Mark Scheme
+PUBLISHED
+Answer
+FUNCTION GetCentreCol (ThisRow : INTEGER) RETURNS INTEGER
+DECLARE StartCol, Endcol, CentreCol : INTEGER
+StartCol + SearchInRow (ThisRow, 1)
+IF StartCol = -1 THEN
+Centrecol ‹ Startcol
+ELSE
+Endcol + SearchInRow (ThisRow, 1280)
+Centrecol ‹ INT (StartCol + EndCol) /2)
+ENDIF
+RETURN Centrecol
+ENDFUNCTION
+Mark as follows:
+1
+2
+3
+Declaration of local INTEGER for return value
+Use SearchInRow () with correct parameters and check for - 1
+Use SearchInRow (ThisRow, 1)
+and SearchInRow (ThisRow,
+4
+5
+6
+Calculate centre column
+Use of INT () function // use of DIV
+Return -1 or centre value
+Max 5 marks if function heading, including return type, and ending is incorrect
+or incomplete
+October/November
+2021
+Marks
+6
+© UCLES 2021
+Page 11 of 11
