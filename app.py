@@ -1,11 +1,13 @@
-from flask import Flask, render_template, send_from_directory, abort, request, send_file
+from flask import Flask, render_template, send_from_directory, abort, request, send_file, jsonify
 import csv
 import json
 import os
 import re
 from collections import OrderedDict
+from datetime import datetime
 from functools import lru_cache
 from io import BytesIO
+from uuid import uuid4
 
 import fitz
 from PIL import Image, ImageChops
@@ -19,6 +21,7 @@ MANUAL_TITLES_FILE = 'manual_titles.json'
 SYLLABUS_FILE = 'map.json'
 CROP_FOLDER = 'static/crops'
 MAP_FILE = 'map.csv'
+SAVED_PAPERS_FILE = 'saved_papers.json'
 PDF_PAGE_WIDTH = 595
 PDF_PAGE_HEIGHT = 842
 PDF_MARGIN_X = 50
@@ -75,6 +78,47 @@ def load_json(filepath):
         with open(filepath, 'r', encoding='utf-8') as f:
             return json.load(f)
     return {}
+
+
+def save_json(filepath, payload):
+    with open(filepath, 'w', encoding='utf-8') as f:
+        json.dump(payload, f, ensure_ascii=False, indent=2)
+
+
+def now_iso():
+    return datetime.now().astimezone().isoformat(timespec='seconds')
+
+
+def question_key(paper, q_num):
+    return f"{paper}::{q_num}"
+
+
+@lru_cache(maxsize=1)
+def load_question_lookup():
+    full_index = load_json(INDEX_FILE)
+    lookup = {}
+
+    for topic_key, topic_data in full_index.items():
+        topic_name = get_topic_name(topic_key)
+        flattened_questions = flatten_topic_questions(topic_data, topic_key)
+
+        for question in flattened_questions:
+            normalized_q_num = str(question.get('question'))
+            paper = question.get('paper')
+            key = (paper, normalized_q_num)
+
+            lookup[key] = {
+                "title": question.get('title') or get_display_title(paper, normalized_q_num, topic_key),
+                "tags": list(question.get('tags', [])),
+                "paper": paper,
+                "question": normalized_q_num,
+                "img": question.get("img") or f"{paper}_q{normalized_q_num}.png",
+                "ms_img": question.get("ms_img") or f"{paper.replace('_qp_', '_ms_')}_q{normalized_q_num}.png",
+                "topic_key": topic_key,
+                "topic_name": topic_name,
+            }
+
+    return lookup
 
 
 def get_display_title(paper, q_num, topic_key):
@@ -240,22 +284,10 @@ def flatten_topic_questions(topic_data, topic_name):
 
 
 def find_question_metadata(paper, q_num):
-    full_index = load_json(INDEX_FILE)
     normalized_q_num = str(q_num)
-
-    for topic_key, topic_data in full_index.items():
-        flattened_questions = flatten_topic_questions(topic_data, topic_key)
-
-        for question in flattened_questions:
-            if question.get('paper') == paper and str(question.get('question')) == normalized_q_num:
-                return {
-                    "title": question.get('title') or get_display_title(paper, normalized_q_num, topic_key),
-                    "tags": question.get('tags', []),
-                    "paper": paper,
-                    "question": normalized_q_num,
-                    "img": question.get("img") or f"{paper}_q{normalized_q_num}.png",
-                    "ms_img": question.get("ms_img") or f"{paper.replace('_qp_', '_ms_')}_q{normalized_q_num}.png",
-                }
+    metadata = load_question_lookup().get((paper, normalized_q_num))
+    if metadata:
+        return metadata.copy()
 
     return {
         "title": None,
@@ -264,6 +296,109 @@ def find_question_metadata(paper, q_num):
         "question": normalized_q_num,
         "img": f"{paper}_q{normalized_q_num}.png",
         "ms_img": f"{paper.replace('_qp_', '_ms_')}_q{normalized_q_num}.png",
+    }
+
+
+def normalize_saved_question_refs(questions):
+    normalized = []
+    seen = set()
+
+    for item in questions or []:
+        paper = str(item.get('paper', '')).strip()
+        question = str(item.get('question', '')).strip()
+        if not paper or not question:
+            continue
+
+        key = (paper, question)
+        if key in seen:
+            continue
+
+        normalized.append({"paper": paper, "question": question})
+        seen.add(key)
+
+    return normalized
+
+
+def load_saved_papers():
+    payload = load_json(SAVED_PAPERS_FILE)
+
+    if isinstance(payload, dict):
+        papers = payload.get('papers', [])
+    elif isinstance(payload, list):
+        papers = payload
+    else:
+        papers = []
+
+    normalized = []
+    for item in papers:
+        title = str(item.get('title', '')).strip()
+        questions = normalize_saved_question_refs(item.get('questions', []))
+        if not title or not questions:
+            continue
+
+        normalized.append({
+            "id": str(item.get('id') or f"paper_{uuid4().hex[:12]}"),
+            "title": title,
+            "questions": questions,
+            "created_at": item.get('created_at') or now_iso(),
+            "updated_at": item.get('updated_at') or item.get('created_at') or now_iso(),
+        })
+
+    return normalized
+
+
+def save_saved_papers(papers):
+    save_json(SAVED_PAPERS_FILE, {"papers": papers})
+
+
+def build_saved_paper_assignment_map(saved_papers):
+    assignments = {}
+
+    for paper in saved_papers:
+        paper_ref = {
+            "id": paper["id"],
+            "title": paper["title"],
+        }
+        for question in paper.get("questions", []):
+            key = question_key(question["paper"], question["question"])
+            assignments.setdefault(key, []).append(paper_ref)
+
+    return assignments
+
+
+def attach_assignments_to_questions(questions, assignment_map):
+    enriched = []
+
+    for question in questions:
+        item = question.copy()
+        assignments = assignment_map.get(question_key(item.get("paper"), item.get("question")), [])
+        item["assigned_papers"] = assignments
+        item["assigned_count"] = len(assignments)
+        enriched.append(item)
+
+    return enriched
+
+
+def serialize_saved_paper(saved_paper):
+    enriched_questions = []
+    for question in saved_paper.get("questions", []):
+        metadata = find_question_metadata(question["paper"], question["question"])
+        enriched_questions.append({
+            "paper": metadata["paper"],
+            "question": metadata["question"],
+            "title": metadata.get("title"),
+            "tags": metadata.get("tags", []),
+            "img": metadata.get("img"),
+            "ms_img": metadata.get("ms_img"),
+        })
+
+    return {
+        "id": saved_paper["id"],
+        "title": saved_paper["title"],
+        "question_count": len(enriched_questions),
+        "questions": enriched_questions,
+        "created_at": saved_paper.get("created_at"),
+        "updated_at": saved_paper.get("updated_at"),
     }
 
 
@@ -926,7 +1061,12 @@ def home(target_level=None):
     full_index = load_json(INDEX_FILE)
     topic_list = build_topic_list(full_index, target_level)
     paper_list = build_paper_list(full_index, target_level)
-    search_questions = build_global_question_list(full_index, target_level)
+    saved_papers = load_saved_papers()
+    assignment_map = build_saved_paper_assignment_map(saved_papers)
+    search_questions = attach_assignments_to_questions(
+        build_global_question_list(full_index, target_level),
+        assignment_map,
+    )
 
     return render_template(
         'dashboard.html',
@@ -934,6 +1074,7 @@ def home(target_level=None):
         papers=paper_list,
         data={},
         search_questions=search_questions,
+        saved_paper_count=len(saved_papers),
         current_topic=None,
         current_level=target_level
         ,
@@ -950,7 +1091,12 @@ def show_topic(topic_name, target_level=None):
         abort(404)
 
     topic_data = full_index[topic_name]
-    questions_with_metadata = flatten_topic_questions(topic_data, topic_name)
+    saved_papers = load_saved_papers()
+    assignment_map = build_saved_paper_assignment_map(saved_papers)
+    questions_with_metadata = attach_assignments_to_questions(
+        flatten_topic_questions(topic_data, topic_name),
+        assignment_map,
+    )
 
     topic_list = build_topic_list(full_index, target_level)
     paper_list = build_paper_list(full_index, target_level)
@@ -961,6 +1107,7 @@ def show_topic(topic_name, target_level=None):
         papers=paper_list,
         data=questions_with_metadata,
         search_questions=[],
+        saved_paper_count=len(saved_papers),
         current_topic=topic_name,
         current_level=target_level,
         current_level_name=get_level_name(target_level) if target_level else None
@@ -973,8 +1120,10 @@ def view_question(paper, q_num):
     ms_paper = paper.replace('_qp_', '_ms_')
     ms_img = f"{ms_paper}_q{q_num}.png"
     metadata = find_question_metadata(paper, q_num)
+    assignment_map = build_saved_paper_assignment_map(load_saved_papers())
     question_title = request.args.get('title') or metadata["title"] or f"Question {q_num}"
     question_tags = [tag for tag in request.args.getlist('tag') if tag] or metadata["tags"]
+    question_assignments = assignment_map.get(question_key(paper, str(q_num)), [])
 
     return render_template(
         'viewer.html',
@@ -985,18 +1134,94 @@ def view_question(paper, q_num):
         question_title=question_title,
         question_tags=question_tags,
         question_metadata=metadata,
+        question_assignments=question_assignments,
     )
 
 
 @app.route('/builder')
 def paper_builder():
-    return render_template('builder.html')
+    return render_template('builder.html', saved_paper_count=len(load_saved_papers()))
+
+
+def parse_requested_question_refs(payload):
+    return normalize_saved_question_refs((payload or {}).get("questions", []))
+
+
+@app.route('/api/saved-papers', methods=['GET'])
+def api_saved_papers():
+    saved_papers = load_saved_papers()
+    serialized = sorted(
+        (serialize_saved_paper(paper) for paper in saved_papers),
+        key=lambda item: (item.get('updated_at') or '', item.get('title') or ''),
+        reverse=True,
+    )
+    return jsonify({"papers": serialized})
+
+
+@app.route('/api/saved-papers', methods=['POST'])
+def create_saved_paper():
+    payload = request.get_json(silent=True) or {}
+    title = str(payload.get("title", "")).strip()
+    questions = parse_requested_question_refs(payload)
+
+    if not title or not questions:
+        abort(400)
+
+    timestamp = now_iso()
+    saved_papers = load_saved_papers()
+    new_paper = {
+        "id": f"paper_{uuid4().hex[:12]}",
+        "title": title,
+        "questions": questions,
+        "created_at": timestamp,
+        "updated_at": timestamp,
+    }
+    saved_papers.append(new_paper)
+    save_saved_papers(saved_papers)
+    return jsonify({"paper": serialize_saved_paper(new_paper)}), 201
+
+
+@app.route('/api/saved-papers/<paper_id>', methods=['PUT'])
+def update_saved_paper(paper_id):
+    payload = request.get_json(silent=True) or {}
+    title = str(payload.get("title", "")).strip()
+    questions = parse_requested_question_refs(payload)
+
+    if not title or not questions:
+        abort(400)
+
+    saved_papers = load_saved_papers()
+    for index, saved_paper in enumerate(saved_papers):
+        if saved_paper["id"] != paper_id:
+            continue
+
+        updated_paper = saved_paper.copy()
+        updated_paper["title"] = title
+        updated_paper["questions"] = questions
+        updated_paper["updated_at"] = now_iso()
+        saved_papers[index] = updated_paper
+        save_saved_papers(saved_papers)
+        return jsonify({"paper": serialize_saved_paper(updated_paper)})
+
+    abort(404)
+
+
+@app.route('/api/saved-papers/<paper_id>', methods=['DELETE'])
+def delete_saved_paper(paper_id):
+    saved_papers = load_saved_papers()
+    remaining = [paper for paper in saved_papers if paper["id"] != paper_id]
+
+    if len(remaining) == len(saved_papers):
+        abort(404)
+
+    save_saved_papers(remaining)
+    return ('', 204)
 
 
 @app.route('/generate-paper', methods=['POST'])
 def generate_paper():
     payload = request.get_json(silent=True) or {}
-    requested_questions = payload.get("questions", [])
+    requested_questions = parse_requested_question_refs(payload)
     paper_title = (payload.get("title") or "Custom Question Paper").strip()
     export_type = (payload.get("export_type") or "questions").strip().lower()
 

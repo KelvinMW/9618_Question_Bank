@@ -132,6 +132,12 @@
             color: #6f7782;
         }
 
+        .assignment-chip {
+            background: #fff7e6;
+            border-color: #f2ddab;
+            color: #7c5d20;
+        }
+
         .viewer-controls {
             display: flex;
             align-items: center;
@@ -185,6 +191,9 @@
                             <span class="paper-chip">{{ paper }}</span>
                             {% for tag in question_tags %}
                             <span class="tag-chip">{{ tag }}</span>
+                            {% endfor %}
+                            {% for saved_paper in question_assignments %}
+                            <span class="tag-chip assignment-chip">Saved in {{ saved_paper.title }}</span>
                             {% endfor %}
                         </div>
                     </div>

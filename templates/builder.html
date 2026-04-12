@@ -88,6 +88,80 @@
             gap: 12px;
         }
 
+        .saved-papers-card {
+            padding: 18px;
+        }
+
+        .saved-papers-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+
+        .saved-papers-title {
+            font-size: 1rem;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .saved-papers-subtitle {
+            margin: 4px 0 0;
+            color: var(--muted);
+            font-size: 0.84rem;
+        }
+
+        .saved-papers-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .saved-paper-item {
+            border: 1px solid #e3e8ef;
+            border-radius: 14px;
+            padding: 14px 16px;
+            background: #fbfcff;
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .saved-paper-item.active {
+            border-color: var(--accent);
+            box-shadow: inset 0 0 0 1px rgba(187, 134, 252, 0.2);
+            background: #fffaff;
+        }
+
+        .saved-paper-name {
+            font-size: 0.96rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .saved-paper-meta {
+            color: var(--muted);
+            font-size: 0.8rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .saved-paper-actions {
+            display: flex;
+            gap: 8px;
+            flex: 0 0 auto;
+        }
+
+        .save-status {
+            min-height: 20px;
+            font-size: 0.82rem;
+            color: var(--muted);
+        }
+
         .export-group {
             display: flex;
             gap: 10px;
@@ -181,26 +255,47 @@
                     <input type="text" class="form-control" id="paper-title" value="Custom Question Paper" placeholder="Paper title shown at the top of the PDF">
                 </div>
                 <div class="export-group">
+                    <button type="button" class="btn btn-outline-secondary" id="save-paper-btn">Save paper</button>
+                    <button type="button" class="btn btn-outline-secondary" id="save-copy-btn">Save as new</button>
                     <button type="button" class="btn btn-primary" id="generate-btn">Export Questions PDF</button>
                     <button type="button" class="btn btn-outline-primary" id="generate-ms-btn">Export Mark Scheme PDF</button>
                 </div>
                 <button type="button" class="btn btn-outline-secondary" id="clear-all-btn">Clear selection</button>
                 <span class="text-muted small" id="question-count">0 questions selected</span>
             </div>
+            <div class="save-status mt-3" id="save-status"></div>
         </div>
 
         <div id="question-list" class="question-list"></div>
+
+        <div class="builder-card saved-papers-card">
+            <div class="saved-papers-header">
+                <div>
+                    <h2 class="saved-papers-title">Saved Papers</h2>
+                    <p class="saved-papers-subtitle">Saved papers store the question list so you can reopen and reuse them later.</p>
+                </div>
+                <span class="text-muted small" id="saved-paper-count">{{ saved_paper_count }} saved</span>
+            </div>
+            <div id="saved-papers-list" class="saved-papers-list"></div>
+        </div>
     </div>
 
     <script>
         const QUESTION_STORAGE_KEY = 'qbank.paperBuilder.questions';
         const PAPER_TITLE_STORAGE_KEY = 'qbank.paperBuilder.title';
+        const ACTIVE_SAVED_PAPER_KEY = 'qbank.paperBuilder.activeSavedPaperId';
         const questionList = document.getElementById('question-list');
         const questionCount = document.getElementById('question-count');
         const paperTitleInput = document.getElementById('paper-title');
         const generateButton = document.getElementById('generate-btn');
         const generateMsButton = document.getElementById('generate-ms-btn');
         const clearAllButton = document.getElementById('clear-all-btn');
+        const savePaperButton = document.getElementById('save-paper-btn');
+        const saveCopyButton = document.getElementById('save-copy-btn');
+        const saveStatus = document.getElementById('save-status');
+        const savedPapersList = document.getElementById('saved-papers-list');
+        const savedPaperCount = document.getElementById('saved-paper-count');
+        let savedPapers = [];
 
         paperTitleInput.value = localStorage.getItem(PAPER_TITLE_STORAGE_KEY) || 'Custom Question Paper';
 
@@ -215,6 +310,67 @@
         function saveQuestions(questions) {
             localStorage.setItem(QUESTION_STORAGE_KEY, JSON.stringify(questions));
             renderQuestions();
+        }
+
+        function loadActiveSavedPaperId() {
+            return localStorage.getItem(ACTIVE_SAVED_PAPER_KEY) || '';
+        }
+
+        function saveActiveSavedPaperId(paperId) {
+            if (paperId) {
+                localStorage.setItem(ACTIVE_SAVED_PAPER_KEY, paperId);
+            } else {
+                localStorage.removeItem(ACTIVE_SAVED_PAPER_KEY);
+            }
+        }
+
+        function getActiveSavedPaper() {
+            const activeId = loadActiveSavedPaperId();
+            return savedPapers.find((paper) => paper.id === activeId) || null;
+        }
+
+        function getDraftSignature(title, questions) {
+            return JSON.stringify({
+                title: (title || '').trim(),
+                questions: (questions || []).map((question) => ({
+                    paper: question.paper,
+                    question: question.question,
+                })),
+            });
+        }
+
+        function hasUnsavedChanges() {
+            const activePaper = getActiveSavedPaper();
+            if (!activePaper) {
+                return false;
+            }
+            return getDraftSignature(paperTitleInput.value, loadQuestions()) !== getDraftSignature(activePaper.title, activePaper.questions);
+        }
+
+        function updateSaveControls() {
+            const questions = loadQuestions();
+            const activePaper = getActiveSavedPaper();
+            const disabled = questions.length === 0;
+            const unsavedChanges = hasUnsavedChanges();
+
+            savePaperButton.disabled = disabled;
+            saveCopyButton.disabled = disabled;
+
+            if (!questions.length) {
+                saveStatus.textContent = 'Add some questions, then save the paper for later.';
+                savePaperButton.textContent = 'Save paper';
+                return;
+            }
+
+            if (activePaper) {
+                savePaperButton.textContent = unsavedChanges ? 'Update saved paper' : 'Saved';
+                saveStatus.textContent = unsavedChanges
+                    ? `Editing saved paper: ${activePaper.title} (unsaved changes)`
+                    : `Editing saved paper: ${activePaper.title}`;
+            } else {
+                savePaperButton.textContent = 'Save paper';
+                saveStatus.textContent = 'Working draft not yet saved.';
+            }
         }
 
         function moveQuestion(index, direction) {
@@ -250,6 +406,7 @@
                         <p class="mb-0">Go back to the bank and use the Add button on any question card.</p>
                     </div>
                 `;
+                updateSaveControls();
                 return;
             }
 
@@ -272,6 +429,168 @@
                     </div>
                 </div>
             `).join('');
+
+            updateSaveControls();
+        }
+
+        function formatSavedPaperDate(value) {
+            if (!value) {
+                return 'Saved recently';
+            }
+
+            const date = new Date(value);
+            if (Number.isNaN(date.getTime())) {
+                return 'Saved recently';
+            }
+
+            return new Intl.DateTimeFormat(undefined, {
+                dateStyle: 'medium',
+                timeStyle: 'short',
+            }).format(date);
+        }
+
+        function renderSavedPapers() {
+            const activeId = loadActiveSavedPaperId();
+
+            if (savedPaperCount) {
+                savedPaperCount.textContent = `${savedPapers.length} saved`;
+            }
+
+            if (!savedPapers.length) {
+                savedPapersList.innerHTML = `
+                    <div class="builder-card empty-state">
+                        <p class="mb-2">No saved papers yet.</p>
+                        <p class="mb-0">Save a working draft here once you want to reuse it later.</p>
+                    </div>
+                `;
+                updateSaveControls();
+                return;
+            }
+
+            savedPapersList.innerHTML = savedPapers.map((paper) => `
+                <div class="saved-paper-item ${paper.id === activeId ? 'active' : ''}">
+                    <div class="flex-grow-1">
+                        <div class="saved-paper-name">${paper.title}</div>
+                        <div class="saved-paper-meta">
+                            <span class="pill">${paper.question_count} question${paper.question_count === 1 ? '' : 's'}</span>
+                            <span>Updated ${formatSavedPaperDate(paper.updated_at)}</span>
+                        </div>
+                    </div>
+                    <div class="saved-paper-actions">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-action="load" data-paper-id="${paper.id}">
+                            ${paper.id === activeId ? 'Loaded' : 'Load'}
+                        </button>
+                        <button type="button" class="btn btn-sm btn-outline-danger" data-action="delete" data-paper-id="${paper.id}">Delete</button>
+                    </div>
+                </div>
+            `).join('');
+
+            updateSaveControls();
+        }
+
+        async function refreshSavedPapers() {
+            const response = await fetch('/api/saved-papers');
+            if (!response.ok) {
+                throw new Error('Failed to load saved papers');
+            }
+
+            const payload = await response.json();
+            savedPapers = payload.papers || [];
+
+            if (loadActiveSavedPaperId() && !getActiveSavedPaper()) {
+                saveActiveSavedPaperId('');
+            }
+
+            renderSavedPapers();
+        }
+
+        async function saveCurrentPaper(forceNew = false) {
+            const questions = loadQuestions();
+            if (!questions.length) {
+                return;
+            }
+
+            const title = paperTitleInput.value.trim() || 'Custom Question Paper';
+            const activePaper = getActiveSavedPaper();
+            const activeButton = forceNew ? saveCopyButton : savePaperButton;
+            const originalLabel = activeButton.textContent;
+            const shouldUpdate = Boolean(activePaper && !forceNew);
+
+            activeButton.disabled = true;
+            activeButton.textContent = shouldUpdate ? 'Updating...' : 'Saving...';
+
+            try {
+                const response = await fetch(
+                    shouldUpdate ? `/api/saved-papers/${activePaper.id}` : '/api/saved-papers',
+                    {
+                        method: shouldUpdate ? 'PUT' : 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            title,
+                            questions,
+                        }),
+                    }
+                );
+
+                if (!response.ok) {
+                    throw new Error('Failed to save paper');
+                }
+
+                const payload = await response.json();
+                const savedPaper = payload.paper;
+                localStorage.setItem(PAPER_TITLE_STORAGE_KEY, savedPaper.title);
+                saveActiveSavedPaperId(savedPaper.id);
+                await refreshSavedPapers();
+                renderQuestions();
+            } catch (error) {
+                alert('The paper could not be saved. Please try again.');
+            } finally {
+                activeButton.disabled = false;
+                activeButton.textContent = originalLabel;
+            }
+        }
+
+        function loadSavedPaper(paperId) {
+            const savedPaper = savedPapers.find((paper) => paper.id === paperId);
+            if (!savedPaper) {
+                return;
+            }
+
+            localStorage.setItem(QUESTION_STORAGE_KEY, JSON.stringify(savedPaper.questions));
+            localStorage.setItem(PAPER_TITLE_STORAGE_KEY, savedPaper.title);
+            paperTitleInput.value = savedPaper.title;
+            saveActiveSavedPaperId(savedPaper.id);
+            renderQuestions();
+            renderSavedPapers();
+        }
+
+        async function deleteSavedPaper(paperId) {
+            const savedPaper = savedPapers.find((paper) => paper.id === paperId);
+            if (!savedPaper) {
+                return;
+            }
+
+            if (!confirm(`Delete "${savedPaper.title}"?`)) {
+                return;
+            }
+
+            const response = await fetch(`/api/saved-papers/${paperId}`, {
+                method: 'DELETE',
+            });
+
+            if (!response.ok) {
+                alert('The saved paper could not be deleted. Please try again.');
+                return;
+            }
+
+            if (loadActiveSavedPaperId() === paperId) {
+                saveActiveSavedPaperId('');
+            }
+
+            await refreshSavedPapers();
+            renderQuestions();
         }
 
         async function generatePaper(exportType) {
@@ -323,16 +642,43 @@
 
         clearAllButton.addEventListener('click', () => {
             localStorage.removeItem(QUESTION_STORAGE_KEY);
+            saveActiveSavedPaperId('');
             renderQuestions();
+            renderSavedPapers();
         });
 
         paperTitleInput.addEventListener('input', () => {
             localStorage.setItem(PAPER_TITLE_STORAGE_KEY, paperTitleInput.value);
+            updateSaveControls();
         });
 
+        savePaperButton.addEventListener('click', () => saveCurrentPaper(false));
+        saveCopyButton.addEventListener('click', () => saveCurrentPaper(true));
         generateButton.addEventListener('click', () => generatePaper('questions'));
         generateMsButton.addEventListener('click', () => generatePaper('markscheme'));
 
+        savedPapersList.addEventListener('click', (event) => {
+            const button = event.target.closest('button[data-action][data-paper-id]');
+            if (!button) {
+                return;
+            }
+
+            const paperId = button.dataset.paperId;
+            const action = button.dataset.action;
+
+            if (action === 'load') {
+                loadSavedPaper(paperId);
+            } else if (action === 'delete') {
+                deleteSavedPaper(paperId);
+            }
+        });
+
+        window.moveQuestion = moveQuestion;
+        window.removeQuestion = removeQuestion;
+
+        refreshSavedPapers().catch(() => {
+            saveStatus.textContent = 'Saved papers could not be loaded right now.';
+        });
         renderQuestions();
     </script>
 </body>

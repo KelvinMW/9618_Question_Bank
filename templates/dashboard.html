@@ -163,6 +163,29 @@
         padding: 3px 8px;
     }
 
+    .saved-toggle {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        padding: 8px 10px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 10px;
+        color: #edf0f5;
+        font-size: 0.78rem;
+    }
+
+    .saved-toggle input {
+        margin-top: 2px;
+    }
+
+    .saved-toggle small {
+        display: block;
+        color: #b8bec8;
+        font-size: 0.72rem;
+        margin-top: 2px;
+    }
+
     .sidebar-scroll { overflow-y: auto; flex-grow: 1; }
 
     /* Sidebar List Items */
@@ -257,6 +280,15 @@
         flex-wrap: wrap;
         align-items: center;
         gap: 6px;
+    }
+
+    .assigned-meta {
+        color: #7c5d20;
+        background: #fff7e6;
+        border: 1px solid #f2ddab;
+        border-radius: 999px;
+        padding: 2px 8px;
+        font-size: 0.7rem;
     }
 
     .q-actions {
@@ -422,6 +454,19 @@
                       <div id="paper-filter-options" data-papers='{{ papers|tojson }}'></div>
                   </div>
               </div>
+              <label class="saved-toggle">
+                  <input type="checkbox" id="hide-assigned-toggle" {% if saved_paper_count == 0 %}disabled{% endif %}>
+                  <span>
+                      Hide saved-paper questions
+                      <small id="hide-assigned-caption">
+                          {% if saved_paper_count %}
+                              {{ saved_paper_count }} saved paper{{ '' if saved_paper_count == 1 else 's' }} tracked
+                          {% else %}
+                              No saved papers yet
+                          {% endif %}
+                      </small>
+                  </span>
+              </label>
           </div>
         </div>
 
@@ -490,6 +535,8 @@
                      data-view-tags="{{ q.tags|sort|join('|') }}"
                      data-paper="{{ q.paper }}"
                      data-question="{{ q.question }}"
+                     data-assigned-count="{{ q.assigned_count }}"
+                     data-assigned-papers='{{ q.assigned_papers|tojson }}'
                      data-search-text="{{ (q.title ~ ' ' ~ q.paper ~ ' ' ~ (q.tags|sort|join(' ')))|lower }}"
                      onclick="openQuestionViewer(this)">
                     <div class="flex-grow-1">
@@ -501,6 +548,11 @@
                             {% if q.tags %}
                             <span>{{ q.tags|sort|join(' • ') }}</span>
                             {% endif %}
+                            <span class="assigned-meta" data-assignment-meta {% if not q.assigned_papers %}hidden{% endif %}>
+                                {% if q.assigned_papers %}
+                                    In saved papers: {{ q.assigned_papers|map(attribute='title')|list|join(' • ') }}
+                                {% endif %}
+                            </span>
                         </div>
                     </div>
 
@@ -564,6 +616,8 @@
                      data-view-tags="{{ q.tags|sort|join('|') }}"
                      data-paper="{{ q.paper }}"
                      data-question="{{ q.question }}"
+                     data-assigned-count="{{ q.assigned_count }}"
+                     data-assigned-papers='{{ q.assigned_papers|tojson }}'
                      data-search-text="{{ (q.title ~ ' ' ~ q.paper ~ ' ' ~ q.topic_key ~ ' ' ~ q.topic_name ~ ' ' ~ (q.tags|sort|join(' ')))|lower }}"
                      onclick="openQuestionViewer(this)">
                     <div class="flex-grow-1">
@@ -576,6 +630,11 @@
                             {% if q.tags %}
                             <span>{{ q.tags|sort|join(' • ') }}</span>
                             {% endif %}
+                            <span class="assigned-meta" data-assignment-meta {% if not q.assigned_papers %}hidden{% endif %}>
+                                {% if q.assigned_papers %}
+                                    In saved papers: {{ q.assigned_papers|map(attribute='title')|list|join(' • ') }}
+                                {% endif %}
+                            </span>
                         </div>
                     </div>
 
@@ -599,6 +658,7 @@
 
 <script>
     const QUESTION_STORAGE_KEY = 'qbank.paperBuilder.questions';
+    const HIDE_ASSIGNED_STORAGE_KEY = 'qbank.browser.hideAssigned';
     const filterBar = document.getElementById('tag-filter-bar');
     const builderCount = document.getElementById('builder-count');
     const builderClearButton = document.getElementById('builder-clear-btn');
@@ -613,6 +673,35 @@
     const paperSelections = new Set();
     const searchResultsHeader = document.getElementById('search-results-header');
     const searchResultsSummary = document.getElementById('search-results-summary');
+    const hideAssignedToggle = document.getElementById('hide-assigned-toggle');
+    const hideAssignedCaption = document.getElementById('hide-assigned-caption');
+
+    function parseAssignedPapers(row) {
+        try {
+            return JSON.parse(row.dataset.assignedPapers || '[]');
+        } catch {
+            return [];
+        }
+    }
+
+    function renderAssignedMeta(row, assignments) {
+        row.dataset.assignedCount = String(assignments.length);
+        row.dataset.assignedPapers = JSON.stringify(assignments);
+
+        const meta = row.querySelector('[data-assignment-meta]');
+        if (!meta) {
+            return;
+        }
+
+        if (!assignments.length) {
+            meta.hidden = true;
+            meta.textContent = '';
+            return;
+        }
+
+        meta.hidden = false;
+        meta.textContent = `In saved papers: ${assignments.map((paper) => paper.title).join(' • ')}`;
+    }
 
     function loadSelectedQuestions() {
         try {
@@ -724,7 +813,8 @@
             const matchesSearch = !searchTerm || (row.dataset.searchText || '').includes(searchTerm);
             const matchesPaper = paperSelections.size === 0 ? false : paperSelections.has(row.dataset.paper);
             const isTagVisible = !filterBar || row.dataset.tagVisible !== 'false';
-            const isVisible = matchesSearch && matchesPaper && isTagVisible;
+            const matchesAssigned = !hideAssignedToggle?.checked || Number(row.dataset.assignedCount || '0') === 0;
+            const isVisible = matchesSearch && matchesPaper && isTagVisible && matchesAssigned;
             row.style.display = isVisible ? 'flex' : 'none';
             if (isVisible) {
                 visibleCount += 1;
@@ -742,6 +832,56 @@
             if (searchResultsSummary) {
                 searchResultsSummary.textContent = `${visibleCount} matching question${visibleCount === 1 ? '' : 's'}`;
             }
+        }
+    }
+
+    async function refreshSavedAssignments() {
+        const rows = getVisibleQuestionRows();
+        if (!rows.length) {
+            return;
+        }
+
+        try {
+            const response = await fetch('/api/saved-papers');
+            if (!response.ok) {
+                throw new Error('Failed to load saved papers');
+            }
+
+            const payload = await response.json();
+            const assignmentMap = new Map();
+            const savedPapers = payload.papers || [];
+
+            savedPapers.forEach((paper) => {
+                (paper.questions || []).forEach((question) => {
+                    const key = `${question.paper}::${question.question}`;
+                    const assignments = assignmentMap.get(key) || [];
+                    assignments.push({ id: paper.id, title: paper.title });
+                    assignmentMap.set(key, assignments);
+                });
+            });
+
+            rows.forEach((row) => {
+                const key = `${row.dataset.paper}::${row.dataset.question}`;
+                renderAssignedMeta(row, assignmentMap.get(key) || []);
+            });
+
+            if (hideAssignedToggle) {
+                hideAssignedToggle.disabled = savedPapers.length === 0;
+                if (savedPapers.length === 0) {
+                    hideAssignedToggle.checked = false;
+                    localStorage.removeItem(HIDE_ASSIGNED_STORAGE_KEY);
+                }
+            }
+
+            if (hideAssignedCaption) {
+                hideAssignedCaption.textContent = savedPapers.length
+                    ? `${savedPapers.length} saved paper${savedPapers.length === 1 ? '' : 's'} tracked`
+                    : 'No saved papers yet';
+            }
+
+            applyCombinedFilters();
+        } catch {
+            // Keep the last rendered assignment state if the refresh fails.
         }
     }
 
@@ -905,18 +1045,36 @@
         });
     }
 
+    if (hideAssignedToggle) {
+        hideAssignedToggle.checked = localStorage.getItem(HIDE_ASSIGNED_STORAGE_KEY) === 'true';
+        hideAssignedToggle.addEventListener('change', () => {
+            if (hideAssignedToggle.checked) {
+                localStorage.setItem(HIDE_ASSIGNED_STORAGE_KEY, 'true');
+            } else {
+                localStorage.removeItem(HIDE_ASSIGNED_STORAGE_KEY);
+            }
+            applyCombinedFilters();
+        });
+    }
+
     window.addEventListener('storage', (event) => {
         if (event.key === QUESTION_STORAGE_KEY) {
             updateSelectionUI();
         }
     });
 
-    window.addEventListener('focus', updateSelectionUI);
+    window.addEventListener('focus', () => {
+        updateSelectionUI();
+        refreshSavedAssignments();
+    });
     document.addEventListener('visibilitychange', () => {
         if (!document.hidden) {
             updateSelectionUI();
+            refreshSavedAssignments();
         }
     });
+
+    refreshSavedAssignments();
 </script>
 
 </body>
