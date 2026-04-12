@@ -49,6 +49,26 @@
         .pane-content { padding: 20px; opacity: 0; visibility: hidden; transition: opacity 0.3s; }
         .viewport.expanded .pane-content { opacity: 1; visibility: visible; }
 
+        .ms-loading {
+            min-height: 220px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6b7280;
+        }
+
+        .ms-loading[hidden] {
+            display: none !important;
+        }
+
+        .ms-image {
+            display: none;
+        }
+
+        .ms-image.ready {
+            display: block;
+        }
+
         .header-bar {
             background: #f8f9fa;
             padding: 14px 20px;
@@ -125,6 +145,12 @@
             flex: 0 0 auto;
         }
 
+        .builder-btn {
+            border-radius: 999px;
+            font-size: 0.8rem;
+            padding: 6px 12px;
+        }
+
         img { width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
 
         .collapsed-label {
@@ -165,6 +191,9 @@
                 </div>
 
                 <div class="viewer-controls">
+                    <button class="btn btn-sm btn-outline-primary builder-btn" id="builder-toggle-btn" type="button">
+                        Add To Paper
+                    </button>
                     <div class="d-flex align-items-center bg-light border rounded px-2">
                     <label for="zoomRange" class="small me-2 text-muted">Scale:</label>
                     <input type="range" class="form-range" id="zoomRange" min="30" max="100" step="5" value="60" style="width: 120px;" oninput="updateZoom(this.value)">
@@ -188,16 +217,60 @@
                 <span>MARK SCHEME</span>
                 <button class="btn btn-sm btn-danger" onclick="closeMS(event)">Hide</button>
             </div>
-            <img src="/crops/ms/{{ ms_img }}" alt="Mark Scheme">
+            <div class="ms-loading" id="ms-loading">
+                <div class="d-flex flex-column align-items-center gap-2">
+                    <div class="spinner-border spinner-border-sm text-secondary" role="status" aria-hidden="true"></div>
+                    <div class="small text-muted">Loading mark scheme...</div>
+                </div>
+            </div>
+            <img data-src="/crops/ms/{{ ms_img }}" alt="Mark Scheme" class="ms-image" id="ms-image">
         </div>
     </div>
 </div>
 
 <script>
+    const QUESTION_STORAGE_KEY = 'qbank.paperBuilder.questions';
     const viewport = document.getElementById('main-viewport');
     const zoomTarget = document.getElementById('zoom-target');
     const zoomSlider = document.getElementById('zoomRange');
     const zoomLabel = document.getElementById('zoomPercent');
+    const builderToggleButton = document.getElementById('builder-toggle-btn');
+    const msImage = document.getElementById('ms-image');
+    const msLoading = document.getElementById('ms-loading');
+    let msRequested = false;
+    const viewerQuestion = {
+        paper: {{ question_metadata.paper|tojson }},
+        question: {{ question_metadata.question|tojson }},
+        title: {{ question_title|tojson }},
+        tags: {{ question_tags|tojson }},
+    };
+
+    function loadSelectedQuestions() {
+        try {
+            return JSON.parse(localStorage.getItem(QUESTION_STORAGE_KEY) || '[]');
+        } catch {
+            return [];
+        }
+    }
+
+    function saveSelectedQuestions(items) {
+        localStorage.setItem(QUESTION_STORAGE_KEY, JSON.stringify(items));
+    }
+
+    function questionKey(question) {
+        return `${question.paper}::${question.question}`;
+    }
+
+    function updateBuilderButton() {
+        if (!builderToggleButton) {
+            return;
+        }
+        const selected = loadSelectedQuestions();
+        const isSelected = selected.some((item) => questionKey(item) === questionKey(viewerQuestion));
+        builderToggleButton.textContent = isSelected ? 'Added To Paper' : 'Add To Paper';
+        builderToggleButton.classList.toggle('btn-outline-primary', !isSelected);
+        builderToggleButton.classList.toggle('btn-primary', isSelected);
+    }
 
     function updateZoom(val) {
         zoomTarget.style.width = val + "%";
@@ -205,9 +278,33 @@
         zoomSlider.value = val;
     }
 
+    function requestMarkScheme() {
+        if (msRequested || !msImage) {
+            return;
+        }
+
+        msRequested = true;
+
+        msImage.addEventListener('load', () => {
+            msImage.classList.add('ready');
+            if (msLoading) {
+                msLoading.hidden = true;
+            }
+        }, { once: true });
+
+        msImage.addEventListener('error', () => {
+            if (msLoading) {
+                msLoading.innerHTML = '<div class="small text-danger">Mark scheme could not be loaded.</div>';
+            }
+        }, { once: true });
+
+        msImage.src = msImage.dataset.src;
+    }
+
     function handlePaneClick(e) {
         if (!viewport.classList.contains('expanded')) {
             viewport.classList.add('expanded');
+            requestMarkScheme();
             // AUTOMATICALLY ZOOM TO 100% WHEN MS IS OPENED
             updateZoom(100);
         }
@@ -219,6 +316,25 @@
         // AUTOMATICALLY RESET TO 60% WHEN MS IS CLOSED
         updateZoom(60);
     }
+
+    if (builderToggleButton) {
+        builderToggleButton.addEventListener('click', () => {
+            const selected = loadSelectedQuestions();
+            const key = questionKey(viewerQuestion);
+            const existingIndex = selected.findIndex((item) => questionKey(item) === key);
+
+            if (existingIndex >= 0) {
+                selected.splice(existingIndex, 1);
+            } else {
+                selected.push(viewerQuestion);
+            }
+
+            saveSelectedQuestions(selected);
+            updateBuilderButton();
+        });
+    }
+
+    updateBuilderButton();
 </script>
 
 </body>

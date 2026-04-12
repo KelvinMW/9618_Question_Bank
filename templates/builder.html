@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paper Builder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #bb86fc;
+            --accent-soft: rgba(187, 134, 252, 0.12);
+            --ink: #2a2f36;
+            --muted: #7b8491;
+            --surface: #ffffff;
+            --surface-alt: #f5f7fb;
+        }
+
+        body {
+            margin: 0;
+            background: linear-gradient(180deg, #f8faff 0%, #eef2f8 100%);
+            color: var(--ink);
+            min-height: 100vh;
+        }
+
+        .builder-shell {
+            max-width: 1040px;
+            margin: 0 auto;
+            padding: 32px 20px 48px;
+        }
+
+        .builder-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 24px;
+        }
+
+        .builder-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0 0 6px;
+        }
+
+        .builder-subtitle {
+            margin: 0;
+            color: var(--muted);
+        }
+
+        .builder-card,
+        .question-card {
+            background: var(--surface);
+            border: 1px solid #e3e8ef;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(27, 31, 36, 0.05);
+        }
+
+        .builder-card {
+            padding: 18px;
+            margin-bottom: 20px;
+        }
+
+        .toolbar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .title-control {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            min-width: 280px;
+            flex: 1 1 360px;
+        }
+
+        .title-label {
+            font-size: 0.78rem;
+            color: var(--muted);
+            font-weight: 600;
+            letter-spacing: 0.02em;
+        }
+
+        .question-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .export-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .question-card {
+            padding: 14px 16px;
+            display: flex;
+            justify-content: space-between;
+            gap: 14px;
+            align-items: flex-start;
+        }
+
+        .question-index {
+            width: 34px;
+            height: 34px;
+            border-radius: 10px;
+            background: var(--accent-soft);
+            color: #5b2d91;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex: 0 0 auto;
+        }
+
+        .question-title {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .question-meta {
+            color: var(--muted);
+            font-size: 0.82rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .pill {
+            display: inline-flex;
+            align-items: center;
+            border-radius: 999px;
+            padding: 3px 9px;
+            border: 1px solid #dbe1e8;
+            background: #f8fafc;
+        }
+
+        .question-actions {
+            display: flex;
+            gap: 8px;
+            flex: 0 0 auto;
+        }
+
+        .empty-state {
+            text-align: center;
+            padding: 48px 20px;
+            color: var(--muted);
+        }
+
+        @media (max-width: 720px) {
+            .builder-header,
+            .question-card {
+                flex-direction: column;
+            }
+
+            .question-actions {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="builder-shell">
+        <div class="builder-header">
+            <div>
+                <h1 class="builder-title">Paper Builder</h1>
+                <p class="builder-subtitle">Reorder your selected questions, then export them as a numbered PDF.</p>
+            </div>
+            <a href="/" class="btn btn-outline-secondary">Back to Bank</a>
+        </div>
+
+        <div class="builder-card">
+            <div class="toolbar">
+                <div class="title-control">
+                    <label class="title-label" for="paper-title">Paper Title</label>
+                    <input type="text" class="form-control" id="paper-title" value="Custom Question Paper" placeholder="Paper title shown at the top of the PDF">
+                </div>
+                <div class="export-group">
+                    <button type="button" class="btn btn-primary" id="generate-btn">Export Questions PDF</button>
+                    <button type="button" class="btn btn-outline-primary" id="generate-ms-btn">Export Mark Scheme PDF</button>
+                </div>
+                <button type="button" class="btn btn-outline-secondary" id="clear-all-btn">Clear selection</button>
+                <span class="text-muted small" id="question-count">0 questions selected</span>
+            </div>
+        </div>
+
+        <div id="question-list" class="question-list"></div>
+    </div>
+
+    <script>
+        const QUESTION_STORAGE_KEY = 'qbank.paperBuilder.questions';
+        const PAPER_TITLE_STORAGE_KEY = 'qbank.paperBuilder.title';
+        const questionList = document.getElementById('question-list');
+        const questionCount = document.getElementById('question-count');
+        const paperTitleInput = document.getElementById('paper-title');
+        const generateButton = document.getElementById('generate-btn');
+        const generateMsButton = document.getElementById('generate-ms-btn');
+        const clearAllButton = document.getElementById('clear-all-btn');
+
+        paperTitleInput.value = localStorage.getItem(PAPER_TITLE_STORAGE_KEY) || 'Custom Question Paper';
+
+        function loadQuestions() {
+            try {
+                return JSON.parse(localStorage.getItem(QUESTION_STORAGE_KEY) || '[]');
+            } catch {
+                return [];
+            }
+        }
+
+        function saveQuestions(questions) {
+            localStorage.setItem(QUESTION_STORAGE_KEY, JSON.stringify(questions));
+            renderQuestions();
+        }
+
+        function moveQuestion(index, direction) {
+            const questions = loadQuestions();
+            const targetIndex = index + direction;
+
+            if (targetIndex < 0 || targetIndex >= questions.length) {
+                return;
+            }
+
+            const [question] = questions.splice(index, 1);
+            questions.splice(targetIndex, 0, question);
+            saveQuestions(questions);
+        }
+
+        function removeQuestion(index) {
+            const questions = loadQuestions();
+            questions.splice(index, 1);
+            saveQuestions(questions);
+        }
+
+        function renderQuestions() {
+            const questions = loadQuestions();
+            questionCount.textContent = `${questions.length} question${questions.length === 1 ? '' : 's'} selected`;
+            generateButton.disabled = questions.length === 0;
+            generateMsButton.disabled = questions.length === 0;
+            clearAllButton.disabled = questions.length === 0;
+
+            if (questions.length === 0) {
+                questionList.innerHTML = `
+                    <div class="builder-card empty-state">
+                        <p class="mb-2">No questions selected yet.</p>
+                        <p class="mb-0">Go back to the bank and use the Add button on any question card.</p>
+                    </div>
+                `;
+                return;
+            }
+
+            questionList.innerHTML = questions.map((question, index) => `
+                <div class="question-card">
+                    <div class="d-flex gap-3 flex-grow-1">
+                        <div class="question-index">${index + 1}</div>
+                        <div class="flex-grow-1">
+                            <div class="question-title">${question.title || `Question ${question.question}`}</div>
+                            <div class="question-meta">
+                                <span class="pill">${question.paper}</span>
+                                ${(question.tags || []).map((tag) => `<span>${tag}</span>`).join('')}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question-actions">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="moveQuestion(${index}, -1)">Up</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="moveQuestion(${index}, 1)">Down</button>
+                        <button type="button" class="btn btn-sm btn-outline-danger" onclick="removeQuestion(${index})">Remove</button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        async function generatePaper(exportType) {
+            const questions = loadQuestions();
+            if (!questions.length) {
+                return;
+            }
+
+            const activeButton = exportType === 'markscheme' ? generateMsButton : generateButton;
+            const originalLabel = activeButton.textContent;
+            activeButton.disabled = true;
+            activeButton.textContent = 'Generating...';
+
+            try {
+                const response = await fetch('/generate-paper', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        title: paperTitleInput.value.trim() || (exportType === 'markscheme' ? 'Custom Mark Scheme' : 'Custom Question Paper'),
+                        export_type: exportType,
+                        questions,
+                    }),
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to generate PDF');
+                }
+
+                const blob = await response.blob();
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.href = url;
+                const baseName = (paperTitleInput.value.trim() || (exportType === 'markscheme' ? 'Custom Mark Scheme' : 'Custom Question Paper')).replace(/[^A-Za-z0-9._-]+/g, '_');
+                const prefix = exportType === 'markscheme' ? 'ms_' : 'qp_';
+                link.download = `${prefix}${baseName}.pdf`;
+                document.body.appendChild(link);
+                link.click();
+                link.remove();
+                URL.revokeObjectURL(url);
+            } catch (error) {
+                alert('The PDF could not be generated. Please try again.');
+            } finally {
+                activeButton.disabled = false;
+                activeButton.textContent = originalLabel;
+            }
+        }
+
+        clearAllButton.addEventListener('click', () => {
+            localStorage.removeItem(QUESTION_STORAGE_KEY);
+            renderQuestions();
+        });
+
+        paperTitleInput.addEventListener('input', () => {
+            localStorage.setItem(PAPER_TITLE_STORAGE_KEY, paperTitleInput.value);
+        });
+
+        generateButton.addEventListener('click', () => generatePaper('questions'));
+        generateMsButton.addEventListener('click', () => generatePaper('markscheme'));
+
+        renderQuestions();
+    </script>
+</body>
+</html>

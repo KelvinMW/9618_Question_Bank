@@ -38,6 +38,131 @@
         letter-spacing: 0.5px;
     }
 
+    .builder-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 8px;
+        width: 100%;
+        padding: 0.45rem 0.7rem;
+        border: 1px solid rgba(187, 134, 252, 0.45);
+        border-radius: 8px;
+        color: #f4eaff;
+        text-decoration: none;
+        font-size: 0.8rem;
+    }
+
+    .builder-link-group {
+        display: flex;
+        gap: 8px;
+        align-items: stretch;
+    }
+
+    .builder-link:hover {
+        background: rgba(187, 134, 252, 0.12);
+        color: #ffffff;
+    }
+
+    .builder-count {
+        background: rgba(255, 255, 255, 0.14);
+        border-radius: 999px;
+        min-width: 22px;
+        text-align: center;
+        padding: 1px 7px;
+        font-size: 0.72rem;
+    }
+
+    .builder-clear {
+        flex: 0 0 auto;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        background: rgba(255, 255, 255, 0.06);
+        color: #f4eaff;
+        border-radius: 8px;
+        padding: 0.45rem 0.65rem;
+        font-size: 0.76rem;
+    }
+
+    .builder-clear:hover {
+        background: rgba(255, 255, 255, 0.12);
+        color: #ffffff;
+    }
+
+    .sidebar-tools {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 12px;
+    }
+
+    .sidebar-search {
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        color: #ffffff;
+    }
+
+    .sidebar-search::placeholder {
+        color: #b8bec8;
+    }
+
+    .paper-filter {
+        position: relative;
+    }
+
+    .paper-filter-btn {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.06);
+        color: #f4eaff;
+        border-radius: 8px;
+        padding: 0.45rem 0.7rem;
+        font-size: 0.8rem;
+    }
+
+    .paper-filter-menu {
+        position: absolute;
+        top: calc(100% + 6px);
+        left: 0;
+        right: 0;
+        z-index: 20;
+        background: #2d3239;
+        border: 1px solid #434a54;
+        border-radius: 10px;
+        padding: 10px;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.22);
+        display: none;
+        max-height: 240px;
+        overflow-y: auto;
+    }
+
+    .paper-filter.open .paper-filter-menu {
+        display: block;
+    }
+
+    .paper-filter-option {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        color: #e7eaf0;
+        font-size: 0.78rem;
+        margin-bottom: 6px;
+    }
+
+    .paper-filter-actions {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+
+    .paper-filter-actions button {
+        flex: 1;
+        border-radius: 999px;
+        font-size: 0.72rem;
+        padding: 3px 8px;
+    }
+
     .sidebar-scroll { overflow-y: auto; flex-grow: 1; }
 
     /* Sidebar List Items */
@@ -101,6 +226,11 @@
         transform: translateY(-2px);
     }
 
+    .q-row.selected {
+        border-color: var(--active-purple);
+        box-shadow: 0 0 0 2px rgba(187, 134, 252, 0.12);
+    }
+
     .title-text {
         font-size: 0.95rem;
         color: #24292e;
@@ -127,6 +257,17 @@
         flex-wrap: wrap;
         align-items: center;
         gap: 6px;
+    }
+
+    .q-actions {
+        margin-left: 12px;
+        flex: 0 0 auto;
+    }
+
+    .select-btn {
+        border-radius: 999px;
+        font-size: 0.74rem;
+        padding: 4px 10px;
     }
 
     .filter-bar {
@@ -217,6 +358,14 @@
         margin-bottom: 0;
     }
 
+    .search-results-header {
+        margin-bottom: 16px;
+    }
+
+    .search-results-header[hidden] {
+        display: none !important;
+    }
+
     /* Custom Scrollbar */
     .sidebar-scroll::-webkit-scrollbar { width: 6px; }
     .sidebar-scroll::-webkit-scrollbar-track { background: var(--deep-space); }
@@ -243,12 +392,36 @@
 
           <div class="selector-group w-100 mb-3" role="group">
             <div class="btn-group w-100" role="group">
-                <a href="/level/AS" class="btn btn-sm {% if current_level == 'AS' %}btn-primary{% else %}btn-outline-primary{% endif %}">AS</a>
-                <a href="/level/AL" class="btn btn-sm {% if current_level == 'AL' %}btn-primary{% else %}btn-outline-primary{% endif %}">A2</a>
-                <!--<a href="/level/IB" class="btn btn-sm {% if current_level == 'IB' %}btn-primary{% else %}btn-outline-primary{% endif %}">IB</a>!-->
-                <a href="/" class="btn btn-sm {% if not current_level %}btn-primary{% else %}btn-outline-primary{% endif %}">All</a>
-
+                <a href="/level/P1" class="btn btn-sm {% if current_level == 'P1' %}btn-primary{% else %}btn-outline-primary{% endif %}">P1</a>
+                <a href="/level/P2" class="btn btn-sm {% if current_level == 'P2' %}btn-primary{% else %}btn-outline-primary{% endif %}">P2</a>
+                <a href="/level/P3" class="btn btn-sm {% if current_level == 'P3' %}btn-primary{% else %}btn-outline-primary{% endif %}">P3</a>
+                <a href="/level/P4" class="btn btn-sm {% if current_level == 'P4' %}btn-primary{% else %}btn-outline-primary{% endif %}">P4</a>
             </div>
+          </div>
+
+          <div class="builder-link-group">
+              <a href="/builder" class="builder-link">
+                  <span>Paper Builder</span>
+                  <span class="builder-count" id="builder-count">0</span>
+              </a>
+              <button type="button" class="builder-clear" id="builder-clear-btn" title="Clear paper builder">Clear</button>
+          </div>
+
+          <div class="sidebar-tools">
+              <input type="text" class="form-control form-control-sm sidebar-search" id="sidebar-search" placeholder="Search topics, tags, titles">
+              <div class="paper-filter" id="paper-filter">
+                  <button type="button" class="paper-filter-btn" id="paper-filter-btn">
+                      <span id="paper-filter-label">All papers</span>
+                      <span>▾</span>
+                  </button>
+                  <div class="paper-filter-menu" id="paper-filter-menu">
+                      <div class="paper-filter-actions">
+                          <button type="button" class="btn btn-sm btn-outline-light" id="paper-select-all">All</button>
+                          <button type="button" class="btn btn-sm btn-outline-light" id="paper-clear-all">None</button>
+                      </div>
+                      <div id="paper-filter-options" data-papers='{{ papers|tojson }}'></div>
+                  </div>
+              </div>
           </div>
         </div>
 
@@ -257,6 +430,7 @@
               {% for topic in topics %}
               <a href="{{ url_for('show_topic', target_level=current_level, topic_name=topic.key) if current_level else url_for('show_topic', topic_name=topic.key) }}"
                  class="list-group-item list-group-item-action py-3 {% if topic.key == current_topic %}active{% endif %} {% if topic.key == 'P4' %}fw-bold text-warning{% endif %}"
+                 data-topic-search="{{ (topic.key ~ ' ' ~ topic.name)|lower }}"
                  style="font-size: 0.9rem;">
                   {{ topic.key }} {{ topic.name }}
               </a>
@@ -269,12 +443,16 @@
         {% if current_topic %}
             <div class="mb-4">
               <h2 class="fw-bold">
-  {{ current_topic }}
-  {% for topic in topics %}
-      {% if topic.key == current_topic %}
-          — {{ topic.name }}
-      {% endif %}
-  {% endfor %}
+  {% if current_topic == 'P4' and current_level_name %}
+      {{ current_topic }} — {{ current_level_name }}
+  {% else %}
+      {{ current_topic }}
+      {% for topic in topics %}
+          {% if topic.key == current_topic %}
+              — {{ topic.name }}
+          {% endif %}
+      {% endfor %}
+  {% endif %}
 </h2>
                 <hr class="mt-3 mb-3">
             </div>
@@ -310,6 +488,9 @@
                      data-view-url="{{ url_for('view_question', paper=q.paper, q_num=q.question) }}"
                      data-view-title="{{ q.title }}"
                      data-view-tags="{{ q.tags|sort|join('|') }}"
+                     data-paper="{{ q.paper }}"
+                     data-question="{{ q.question }}"
+                     data-search-text="{{ (q.title ~ ' ' ~ q.paper ~ ' ' ~ (q.tags|sort|join(' ')))|lower }}"
                      onclick="openQuestionViewer(this)">
                     <div class="flex-grow-1">
                         <div class="title-text">
@@ -323,6 +504,12 @@
                         </div>
                     </div>
 
+                    <div class="q-actions">
+                        <button type="button" class="btn btn-sm btn-outline-secondary select-btn" onclick="toggleQuestionSelection(event, this.closest('.q-row'))">
+                            Add
+                        </button>
+                    </div>
+
                     <div class="text-muted ms-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
@@ -331,17 +518,232 @@
                 </div>
             {% endfor %}
         {% else %}
-            <div class="text-center mt-5 py-5">
-                <!--<div class="display-1 text-light mb-4">📚</div>!-->
-                <h3 class="text-secondary">Select a syllabus topic to begin</h3>
-                <p class="text-muted">Use the toggle on the left to select your course.</p>
+            {% if current_level and current_level_name %}
+            <div class="mb-4">
+                <h2 class="fw-bold">{{ current_level }} — {{ current_level_name }}</h2>
+                <hr class="mt-3 mb-3">
+            </div>
+            {% endif %}
+
+            {% set ns = namespace(tags=[]) %}
+            {% for q in search_questions %}
+                {% for tag in q.tags|sort %}
+                    {% if tag not in ns.tags %}
+                        {% set ns.tags = ns.tags + [tag] %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+
+            {% if ns.tags %}
+            <div class="filter-bar" id="tag-filter-bar">
+                {% for tag in ns.tags|sort %}
+                <button type="button" class="btn filter-chip" data-filter="{{ tag }}">{{ tag }}</button>
+                {% endfor %}
+            </div>
+            <div class="filter-actions">
+                <div class="filter-summary" id="filter-summary">Filter by one or more tags</div>
+                <div class="filter-mode" id="filter-mode">
+                    <button type="button" class="filter-mode-btn" data-mode="all">Match all</button>
+                    <button type="button" class="filter-mode-btn active" data-mode="any">Match any</button>
+                </div>
+                <button type="button" class="btn clear-filter-btn" id="clear-filter-btn" disabled>Clear filters</button>
+            </div>
+            {% endif %}
+
+            <div class="search-results-header" id="search-results-header" hidden>
+                <h3 class="fw-bold mb-2">Search Results</h3>
+                <p class="text-muted mb-0" id="search-results-summary">Matching questions across topics</p>
+            </div>
+
+            <div id="global-search-results">
+            {% for q in search_questions %}
+                <div class="q-row"
+                     data-tags="{{ q.tags|sort|join('|') }}"
+                     data-view-url="{{ url_for('view_question', paper=q.paper, q_num=q.question) }}"
+                     data-view-title="{{ q.title }}"
+                     data-view-tags="{{ q.tags|sort|join('|') }}"
+                     data-paper="{{ q.paper }}"
+                     data-question="{{ q.question }}"
+                     data-search-text="{{ (q.title ~ ' ' ~ q.paper ~ ' ' ~ q.topic_key ~ ' ' ~ q.topic_name ~ ' ' ~ (q.tags|sort|join(' ')))|lower }}"
+                     onclick="openQuestionViewer(this)">
+                    <div class="flex-grow-1">
+                        <div class="title-text">
+                            {{ q.title }}
+                        </div>
+                        <div class="question-meta">
+                            <span class="paper-chip">{{ q.paper }}</span>
+                            <span>{{ q.topic_key }} {{ q.topic_name }}</span>
+                            {% if q.tags %}
+                            <span>{{ q.tags|sort|join(' • ') }}</span>
+                            {% endif %}
+                        </div>
+                    </div>
+
+                    <div class="q-actions">
+                        <button type="button" class="btn btn-sm btn-outline-secondary select-btn" onclick="toggleQuestionSelection(event, this.closest('.q-row'))">
+                            Add
+                        </button>
+                    </div>
+
+                    <div class="text-muted ms-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </div>
+                </div>
+            {% endfor %}
             </div>
         {% endif %}
     </main>
 </div>
 
 <script>
+    const QUESTION_STORAGE_KEY = 'qbank.paperBuilder.questions';
     const filterBar = document.getElementById('tag-filter-bar');
+    const builderCount = document.getElementById('builder-count');
+    const builderClearButton = document.getElementById('builder-clear-btn');
+    const sidebarSearch = document.getElementById('sidebar-search');
+    const topicLinks = Array.from(document.querySelectorAll('.list-group-item[data-topic-search]'));
+    const paperFilter = document.getElementById('paper-filter');
+    const paperFilterButton = document.getElementById('paper-filter-btn');
+    const paperFilterLabel = document.getElementById('paper-filter-label');
+    const paperFilterOptions = document.getElementById('paper-filter-options');
+    const paperSelectAll = document.getElementById('paper-select-all');
+    const paperClearAll = document.getElementById('paper-clear-all');
+    const paperSelections = new Set();
+    const searchResultsHeader = document.getElementById('search-results-header');
+    const searchResultsSummary = document.getElementById('search-results-summary');
+
+    function loadSelectedQuestions() {
+        try {
+            return JSON.parse(localStorage.getItem(QUESTION_STORAGE_KEY) || '[]');
+        } catch {
+            return [];
+        }
+    }
+
+    function saveSelectedQuestions(items) {
+        localStorage.setItem(QUESTION_STORAGE_KEY, JSON.stringify(items));
+        updateSelectionUI();
+    }
+
+    function questionKey(question) {
+        return `${question.paper}::${question.question}`;
+    }
+
+    function buildQuestionPayload(row) {
+        return {
+            paper: row.dataset.paper,
+            question: row.dataset.question,
+            title: row.dataset.viewTitle || '',
+            tags: (row.dataset.viewTags || '').split('|').filter(Boolean),
+        };
+    }
+
+    function updateSelectionUI() {
+        const selected = loadSelectedQuestions();
+        const selectedKeys = new Set(selected.map(questionKey));
+        const rows = document.querySelectorAll('.q-row[data-paper]');
+
+        if (builderCount) {
+            builderCount.textContent = String(selected.length);
+        }
+
+        rows.forEach((row) => {
+            const key = `${row.dataset.paper}::${row.dataset.question}`;
+            const isSelected = selectedKeys.has(key);
+            row.classList.toggle('selected', isSelected);
+
+            const button = row.querySelector('.select-btn');
+            if (button) {
+                button.textContent = isSelected ? 'Added' : 'Add';
+                button.classList.toggle('btn-outline-secondary', !isSelected);
+                button.classList.toggle('btn-primary', isSelected);
+            }
+        });
+    }
+
+    function getVisibleQuestionRows() {
+        return Array.from(document.querySelectorAll('.q-row[data-paper]'));
+    }
+
+    function initializePaperFilter() {
+        if (!paperFilterOptions) {
+            return;
+        }
+
+        const papers = JSON.parse(paperFilterOptions.dataset.papers || '[]');
+
+        papers.forEach((paper) => paperSelections.add(paper));
+
+        paperFilterOptions.innerHTML = papers.map((paper) => `
+            <label class="paper-filter-option">
+                <input type="checkbox" value="${paper}" checked>
+                <span>${paper}</span>
+            </label>
+        `).join('');
+
+        paperFilterOptions.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+            checkbox.addEventListener('change', () => {
+                if (checkbox.checked) {
+                    paperSelections.add(checkbox.value);
+                } else {
+                    paperSelections.delete(checkbox.value);
+                }
+                updatePaperFilterLabel();
+                applyCombinedFilters();
+            });
+        });
+
+        updatePaperFilterLabel();
+    }
+
+    function updatePaperFilterLabel() {
+        if (!paperFilterLabel || !paperFilterOptions) {
+            return;
+        }
+
+        const total = paperFilterOptions.querySelectorAll('input[type="checkbox"]').length;
+        const selected = paperSelections.size;
+
+        if (selected === total) {
+            paperFilterLabel.textContent = 'All papers';
+        } else if (selected === 0) {
+            paperFilterLabel.textContent = 'No papers';
+        } else {
+            paperFilterLabel.textContent = `${selected} paper${selected === 1 ? '' : 's'} shown`;
+        }
+    }
+
+    function applyCombinedFilters() {
+        const searchTerm = (sidebarSearch?.value || '').trim().toLowerCase();
+        const rows = getVisibleQuestionRows();
+        let visibleCount = 0;
+
+        rows.forEach((row) => {
+            const matchesSearch = !searchTerm || (row.dataset.searchText || '').includes(searchTerm);
+            const matchesPaper = paperSelections.size === 0 ? false : paperSelections.has(row.dataset.paper);
+            const isTagVisible = !filterBar || row.dataset.tagVisible !== 'false';
+            const isVisible = matchesSearch && matchesPaper && isTagVisible;
+            row.style.display = isVisible ? 'flex' : 'none';
+            if (isVisible) {
+                visibleCount += 1;
+            }
+        });
+
+        topicLinks.forEach((link) => {
+            const matchesTopic = !searchTerm || (link.dataset.topicSearch || '').includes(searchTerm);
+            link.style.display = matchesTopic ? '' : 'none';
+        });
+
+        if (searchResultsHeader) {
+            const showResults = Boolean(searchTerm);
+            searchResultsHeader.hidden = !showResults;
+            if (searchResultsSummary) {
+                searchResultsSummary.textContent = `${visibleCount} matching question${visibleCount === 1 ? '' : 's'}`;
+            }
+        }
+    }
 
     function openQuestionViewer(row) {
         const baseUrl = row.dataset.viewUrl;
@@ -357,6 +759,23 @@
 
         const fullUrl = params.toString() ? `${baseUrl}?${params.toString()}` : baseUrl;
         window.open(fullUrl, '_blank');
+    }
+
+    function toggleQuestionSelection(event, row) {
+        event.stopPropagation();
+
+        const selected = loadSelectedQuestions();
+        const payload = buildQuestionPayload(row);
+        const key = questionKey(payload);
+        const existingIndex = selected.findIndex((item) => questionKey(item) === key);
+
+        if (existingIndex >= 0) {
+            selected.splice(existingIndex, 1);
+        } else {
+            selected.push(payload);
+        }
+
+        saveSelectedQuestions(selected);
     }
 
     if (filterBar) {
@@ -375,7 +794,7 @@
                     || (filterMode === 'all'
                         ? Array.from(activeFilters).every((tag) => tags.includes(tag))
                         : Array.from(activeFilters).some((tag) => tags.includes(tag)));
-                row.style.display = visible ? 'flex' : 'none';
+                row.dataset.tagVisible = visible ? 'true' : 'false';
             });
 
             chips.forEach((chip) => {
@@ -399,6 +818,8 @@
                     filterSummary.textContent = `Showing questions with ${modeLabel}: ${selectedTags}`;
                 }
             }
+
+            applyCombinedFilters();
         }
 
         chips.forEach((chip) => {
@@ -430,6 +851,72 @@
             });
         }
     }
+
+    updateSelectionUI();
+    initializePaperFilter();
+    document.querySelectorAll('.q-row[data-paper]').forEach((row) => {
+        row.dataset.tagVisible = 'true';
+    });
+    applyCombinedFilters();
+
+    if (builderClearButton) {
+        builderClearButton.addEventListener('click', () => {
+            localStorage.removeItem(QUESTION_STORAGE_KEY);
+            updateSelectionUI();
+        });
+    }
+
+    if (sidebarSearch) {
+        sidebarSearch.addEventListener('input', applyCombinedFilters);
+    }
+
+    if (paperFilter && paperFilterButton) {
+        paperFilterButton.addEventListener('click', () => {
+            paperFilter.classList.toggle('open');
+        });
+
+        document.addEventListener('click', (event) => {
+            if (!paperFilter.contains(event.target)) {
+                paperFilter.classList.remove('open');
+            }
+        });
+    }
+
+    if (paperSelectAll && paperFilterOptions) {
+        paperSelectAll.addEventListener('click', () => {
+            paperSelections.clear();
+            paperFilterOptions.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+                checkbox.checked = true;
+                paperSelections.add(checkbox.value);
+            });
+            updatePaperFilterLabel();
+            applyCombinedFilters();
+        });
+    }
+
+    if (paperClearAll && paperFilterOptions) {
+        paperClearAll.addEventListener('click', () => {
+            paperSelections.clear();
+            paperFilterOptions.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+                checkbox.checked = false;
+            });
+            updatePaperFilterLabel();
+            applyCombinedFilters();
+        });
+    }
+
+    window.addEventListener('storage', (event) => {
+        if (event.key === QUESTION_STORAGE_KEY) {
+            updateSelectionUI();
+        }
+    });
+
+    window.addEventListener('focus', updateSelectionUI);
+    document.addEventListener('visibilitychange', () => {
+        if (!document.hidden) {
+            updateSelectionUI();
+        }
+    });
 </script>
 
 </body>

@@ -2,7 +2,7 @@ import csv
 import os
 
 import fitz  # PyMuPDF
-from PIL import Image, ImageDraw
+from PIL import Image, ImageChops, ImageDraw
 
 
 RENDER_SCALE = 4
@@ -107,6 +107,21 @@ def stitch_images(images):
     return master_canvas
 
 
+def trim_outer_whitespace(image, padding=10):
+    background = Image.new(image.mode, image.size, "white")
+    diff = ImageChops.difference(image, background)
+    bbox = diff.getbbox()
+
+    if not bbox:
+        return image
+
+    left = max(0, bbox[0] - padding)
+    top = max(0, bbox[1] - padding)
+    right = min(image.width, bbox[2] + padding)
+    bottom = min(image.height, bbox[3] + padding)
+    return image.crop((left, top, right, bottom))
+
+
 def extract_question_images(doc, start_page, end_page, q_num):
     page_images = []
 
@@ -182,7 +197,7 @@ def run_bulletproof_clipper(csv_path):
                 print(f"!! No pages rendered for {current_file} Q{q_num}")
                 continue
 
-            master_canvas = stitch_images(page_images)
+            master_canvas = trim_outer_whitespace(stitch_images(page_images))
             master_canvas.save(output_path, format="PNG")
             generated += 1
             print(f"   -> Saved: {output_path}")
