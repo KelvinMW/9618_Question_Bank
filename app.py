@@ -1,7 +1,8 @@
-from flask import Flask, render_template, send_from_directory, abort
+from flask import Flask, render_template, send_from_directory, abort, request
 import json
 import os
 import re
+from collections import OrderedDict
 
 app = Flask(__name__)
 
@@ -102,6 +103,52 @@ def build_topic_list(full_index, target_level):
     return topic_list
 
 
+def flatten_topic_questions(topic_data, topic_name):
+    deduped_questions = OrderedDict()
+
+    for sub_tag, questions in topic_data.items():
+        for q in questions:
+            key = (q['paper'], str(q['question']))
+
+            if key not in deduped_questions:
+                q_item = q.copy()
+                q_item['title'] = get_display_title(q['paper'], q['question'], topic_name)
+                q_item['tags'] = []
+                deduped_questions[key] = q_item
+
+            if sub_tag not in deduped_questions[key]['tags']:
+                deduped_questions[key]['tags'].append(sub_tag)
+
+    return sorted(
+        deduped_questions.values(),
+        key=lambda item: (
+            item.get('title', '').lower(),
+            item.get('paper', '').lower(),
+            int(item.get('question', 0))
+        )
+    )
+
+
+def find_question_metadata(paper, q_num):
+    full_index = load_json(INDEX_FILE)
+    normalized_q_num = str(q_num)
+
+    for topic_key, topic_data in full_index.items():
+        flattened_questions = flatten_topic_questions(topic_data, topic_key)
+
+        for question in flattened_questions:
+            if question.get('paper') == paper and str(question.get('question')) == normalized_q_num:
+                return {
+                    "title": question.get('title') or get_display_title(paper, normalized_q_num, topic_key),
+                    "tags": question.get('tags', []),
+                }
+
+    return {
+        "title": None,
+        "tags": [],
+    }
+
+
 # --- ROUTES ---
 
 @app.route('/')
@@ -128,15 +175,7 @@ def show_topic(topic_name, target_level=None):
         abort(404)
 
     topic_data = full_index[topic_name]
-    questions_with_metadata = {}
-
-    for sub_tag, qs in topic_data.items():
-        questions_with_metadata[sub_tag] = []
-
-        for q in qs:
-            q_item = q.copy()
-            q_item['title'] = get_display_title(q['paper'], q['question'], topic_name)
-            questions_with_metadata[sub_tag].append(q_item)
+    questions_with_metadata = flatten_topic_questions(topic_data, topic_name)
 
     topic_list = build_topic_list(full_index, target_level)
 
@@ -154,13 +193,18 @@ def view_question(paper, q_num):
     qp_img = f"{paper}_q{q_num}.png"
     ms_paper = paper.replace('_qp_', '_ms_')
     ms_img = f"{ms_paper}_q{q_num}.png"
+    metadata = find_question_metadata(paper, q_num)
+    question_title = request.args.get('title') or metadata["title"] or f"Question {q_num}"
+    question_tags = [tag for tag in request.args.getlist('tag') if tag] or metadata["tags"]
 
     return render_template(
         'viewer.html',
         qp_img=qp_img,
         ms_img=ms_img,
         paper=paper,
-        q_num=q_num
+        q_num=q_num,
+        question_title=question_title,
+        question_tags=question_tags
     )
 
 

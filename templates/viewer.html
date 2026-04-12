@@ -51,15 +51,78 @@
 
         .header-bar {
             background: #f8f9fa;
-            padding: 12px 20px;
-            font-weight: bold;
+            padding: 14px 20px;
             border-bottom: 1px solid #dee2e6;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
             position: sticky;
             top: 0;
             z-index: 10;
+        }
+
+        .header-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .viewer-header-left {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            min-width: 0;
+            flex: 1 1 auto;
+        }
+
+        .viewer-title-block {
+            min-width: 0;
+        }
+
+        .viewer-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #24292e;
+            line-height: 1.25;
+            margin-bottom: 4px;
+        }
+
+        .viewer-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            align-items: center;
+            margin-top: 6px;
+        }
+
+        .paper-chip,
+        .tag-chip {
+            border-radius: 999px;
+            font-size: 0.72rem;
+            line-height: 1.2;
+            padding: 4px 9px;
+            border: 1px solid #d8dee4;
+        }
+
+        .paper-chip {
+            background: #eef1f4;
+            color: #6b7280;
+        }
+
+        .tag-chip {
+            background: white;
+            color: #6f7782;
+        }
+
+        .viewer-controls {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            flex: 0 0 auto;
+        }
+
+        .back-btn {
+            flex: 0 0 auto;
         }
 
         img { width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
@@ -85,16 +148,28 @@
 <div class="viewport" id="main-viewport">
     <div class="question-pane">
         <div class="header-bar">
-            <div class="d-flex align-items-center">
-                <button class="btn btn-sm btn-outline-secondary me-3" onclick="window.close()">
-                    &larr; Back
-                </button>
-                <span class="text-primary me-4">{{ paper }} — Q{{ q_num }}</span>
+            <div class="header-main">
+                <div class="viewer-header-left">
+                    <button class="btn btn-sm btn-outline-secondary back-btn" onclick="window.close()">
+                        &larr; Back
+                    </button>
+                    <div class="viewer-title-block">
+                        <div class="viewer-title">{{ question_title }}</div>
+                        <div class="viewer-meta">
+                            <span class="paper-chip">{{ paper }}</span>
+                            {% for tag in question_tags %}
+                            <span class="tag-chip">{{ tag }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                </div>
 
-                <div class="d-flex align-items-center bg-light border rounded px-2">
+                <div class="viewer-controls">
+                    <div class="d-flex align-items-center bg-light border rounded px-2">
                     <label for="zoomRange" class="small me-2 text-muted">Scale:</label>
                     <input type="range" class="form-range" id="zoomRange" min="30" max="100" step="5" value="60" style="width: 120px;" oninput="updateZoom(this.value)">
                     <span id="zoomPercent" class="small ms-2 text-muted" style="min-width: 40px;">60%</span>
+                    </div>
                 </div>
             </div>
         </div>

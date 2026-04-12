@@ -21,6 +21,7 @@
     /* Sidebar Styling */
     .sidebar {
         width: var(--sidebar-width);
+        flex: 0 0 var(--sidebar-width);
         background: var(--deep-space);
         border-right: 1px solid #1b1e22;
         display: flex;
@@ -80,19 +81,19 @@
     }
 
     /* Main Content Styling */
-    .main-content { flex-grow: 1; overflow-y: auto; padding: 40px; }
+    .main-content { flex: 1 1 auto; min-width: 0; overflow-y: auto; padding: 24px; }
 
     /* Question Row */
     .q-row {
         background: white;
-        border-radius: 10px;
+        border-radius: 8px;
         border: 1px solid #e1e4e8;
-        margin-bottom: 14px;
-        padding: 20px;
+        margin-bottom: 8px;
+        padding: 10px 12px;
         transition: transform 0.2s, box-shadow 0.2s;
         cursor: pointer;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
     }
     .q-row:hover {
         border-color: var(--active-purple);
@@ -101,9 +102,119 @@
     }
 
     .title-text {
-        font-size: 1.1rem;
+        font-size: 0.95rem;
         color: #24292e;
         font-weight: 500;
+        line-height: 1.25;
+    }
+
+    .paper-chip {
+        font-size: 0.62rem;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        padding: 0.22rem 0.38rem !important;
+        background: #eef1f4 !important;
+        color: #6b7280 !important;
+        border: 1px solid #d8dee4;
+        border-radius: 6px;
+    }
+
+    .question-meta {
+        font-size: 0.75rem;
+        color: #8b949e;
+        margin-top: 4px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 6px;
+    }
+
+    .filter-bar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 10px;
+    }
+
+    .filter-chip {
+        border: 1px solid #d0d7de;
+        background: #f6f8fa;
+        color: #57606a;
+        border-radius: 999px;
+        padding: 4px 10px;
+        font-size: 0.76rem;
+        line-height: 1.2;
+        transition: all 0.2s ease;
+    }
+
+    .filter-chip:hover {
+        border-color: var(--active-purple);
+        color: #24292e;
+    }
+
+    .filter-chip.active {
+        background: rgba(187, 134, 252, 0.14);
+        border-color: var(--active-purple);
+        color: #5b2d91;
+        font-weight: 600;
+    }
+
+    .filter-actions {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin-bottom: 16px;
+    }
+
+    .filter-mode {
+        display: inline-flex;
+        align-items: center;
+        border: 1px solid #d0d7de;
+        border-radius: 999px;
+        overflow: hidden;
+        background: white;
+    }
+
+    .filter-mode-btn {
+        border: 0;
+        background: transparent;
+        color: #57606a;
+        padding: 4px 10px;
+        font-size: 0.75rem;
+        line-height: 1.2;
+    }
+
+    .filter-mode-btn.active {
+        background: rgba(187, 134, 252, 0.14);
+        color: #5b2d91;
+        font-weight: 600;
+    }
+
+    .clear-filter-btn {
+        border: 1px solid #d0d7de;
+        background: white;
+        color: #57606a;
+        border-radius: 999px;
+        padding: 4px 10px;
+        font-size: 0.75rem;
+        line-height: 1.2;
+    }
+
+    .clear-filter-btn:hover {
+        border-color: #b6bec8;
+        color: #24292e;
+    }
+
+    .clear-filter-btn:disabled {
+        opacity: 0.45;
+        cursor: default;
+    }
+
+    .filter-summary {
+        font-size: 0.78rem;
+        color: #8b949e;
+        margin-bottom: 0;
     }
 
     /* Custom Scrollbar */
@@ -156,7 +267,7 @@
 
     <main class="main-content">
         {% if current_topic %}
-            <div class="mb-5">
+            <div class="mb-4">
               <h2 class="fw-bold">
   {{ current_topic }}
   {% for topic in topics %}
@@ -165,41 +276,59 @@
       {% endif %}
   {% endfor %}
 </h2>
-                <hr class="mt-4 mb-4">
+                <hr class="mt-3 mb-3">
             </div>
 
-            {% for sub_tag, questions in data.items() %}
-                <h5 class="text-secondary mb-3 mt-4 text-uppercase small fw-bold" style="letter-spacing: 1px;">
-                    {{ sub_tag }}
-                </h5>
+            {% set ns = namespace(tags=[]) %}
+            {% for q in data %}
+                {% for tag in q.tags|sort %}
+                    {% if tag not in ns.tags %}
+                        {% set ns.tags = ns.tags + [tag] %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
 
-                {% for q in questions %}
-                <div class="q-row" onclick="window.open('/view/{{ q.paper }}/{{ q.question }}', '_blank')">
-                    <div class="badge-paper">
-                        <span class="badge bg-dark px-2 py-2 mb-1">{{ q.paper }}</span>
-                        <div class="text-muted small">Question {{ q.question }}</div>
-                    </div>
+            {% if ns.tags %}
+            <div class="filter-bar" id="tag-filter-bar">
+                {% for tag in ns.tags|sort %}
+                <button type="button" class="btn filter-chip" data-filter="{{ tag }}">{{ tag }}</button>
+                {% endfor %}
+            </div>
+            <div class="filter-actions">
+                <div class="filter-summary" id="filter-summary">Filter by one or more tags</div>
+                <div class="filter-mode" id="filter-mode">
+                    <button type="button" class="filter-mode-btn" data-mode="all">Match all</button>
+                    <button type="button" class="filter-mode-btn active" data-mode="any">Match any</button>
+                </div>
+                <button type="button" class="btn clear-filter-btn" id="clear-filter-btn" disabled>Clear filters</button>
+            </div>
+            {% endif %}
 
-                    <div class="ms-4 flex-grow-1">
+            {% for q in data %}
+                <div class="q-row"
+                     data-tags="{{ q.tags|sort|join('|') }}"
+                     data-view-url="{{ url_for('view_question', paper=q.paper, q_num=q.question) }}"
+                     data-view-title="{{ q.title }}"
+                     data-view-tags="{{ q.tags|sort|join('|') }}"
+                     onclick="openQuestionViewer(this)">
+                    <div class="flex-grow-1">
                         <div class="title-text">
                             {{ q.title }}
                         </div>
-                        {% if q.tags %}
-                        <div class="mt-2">
-                            {% for tag in q.tags %}
-                            <span class="tag-pill">{{ tag }}</span>
-                            {% endfor %}
+                        <div class="question-meta">
+                            <span class="paper-chip">{{ q.paper }}</span>
+                            {% if q.tags %}
+                            <span>{{ q.tags|sort|join(' • ') }}</span>
+                            {% endif %}
                         </div>
-                        {% endif %}
                     </div>
 
-                    <div class="text-muted ms-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <div class="text-muted ms-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
                             <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                         </svg>
                     </div>
                 </div>
-                {% endfor %}
             {% endfor %}
         {% else %}
             <div class="text-center mt-5 py-5">
@@ -210,6 +339,98 @@
         {% endif %}
     </main>
 </div>
+
+<script>
+    const filterBar = document.getElementById('tag-filter-bar');
+
+    function openQuestionViewer(row) {
+        const baseUrl = row.dataset.viewUrl;
+        const title = row.dataset.viewTitle || '';
+        const tags = (row.dataset.viewTags || '').split('|').filter(Boolean);
+        const params = new URLSearchParams();
+
+        if (title) {
+            params.append('title', title);
+        }
+
+        tags.forEach((tag) => params.append('tag', tag));
+
+        const fullUrl = params.toString() ? `${baseUrl}?${params.toString()}` : baseUrl;
+        window.open(fullUrl, '_blank');
+    }
+
+    if (filterBar) {
+        const chips = Array.from(filterBar.querySelectorAll('.filter-chip'));
+        const rows = Array.from(document.querySelectorAll('.q-row'));
+        const clearButton = document.getElementById('clear-filter-btn');
+        const filterSummary = document.getElementById('filter-summary');
+        const modeButtons = Array.from(document.querySelectorAll('.filter-mode-btn'));
+        const activeFilters = new Set();
+        let filterMode = 'any';
+
+        function applyTagFilter() {
+            rows.forEach((row) => {
+                const tags = (row.dataset.tags || '').split('|').filter(Boolean);
+                const visible = activeFilters.size === 0
+                    || (filterMode === 'all'
+                        ? Array.from(activeFilters).every((tag) => tags.includes(tag))
+                        : Array.from(activeFilters).some((tag) => tags.includes(tag)));
+                row.style.display = visible ? 'flex' : 'none';
+            });
+
+            chips.forEach((chip) => {
+                chip.classList.toggle('active', activeFilters.has(chip.dataset.filter));
+            });
+
+            modeButtons.forEach((button) => {
+                button.classList.toggle('active', button.dataset.mode === filterMode);
+            });
+
+            if (clearButton) {
+                clearButton.disabled = activeFilters.size === 0;
+            }
+
+            if (filterSummary) {
+                if (activeFilters.size === 0) {
+                    filterSummary.textContent = 'Filter by one or more tags';
+                } else {
+                    const selectedTags = Array.from(activeFilters).sort().join(' + ');
+                    const modeLabel = filterMode === 'all' ? 'all selected tags' : 'at least one selected tag';
+                    filterSummary.textContent = `Showing questions with ${modeLabel}: ${selectedTags}`;
+                }
+            }
+        }
+
+        chips.forEach((chip) => {
+            chip.addEventListener('click', () => {
+                const tag = chip.dataset.filter;
+
+                if (activeFilters.has(tag)) {
+                    activeFilters.delete(tag);
+                } else {
+                    activeFilters.add(tag);
+                }
+
+                applyTagFilter();
+            });
+        });
+
+        modeButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                filterMode = button.dataset.mode;
+                applyTagFilter();
+            });
+        });
+
+        if (clearButton) {
+            clearButton.addEventListener('click', () => {
+                activeFilters.clear();
+                filterMode = 'any';
+                applyTagFilter();
+            });
+        }
+    }
+</script>
 
 </body>
 </html>
