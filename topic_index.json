@@ -124,6 +124,96 @@
                 "tags": [
                     "Whole Topic"
                 ]
+            },
+            {
+                "img": "24_june_qp_31_q3.png",
+                "ms_img": "24_june_ms_31_q3.png",
+                "paper": "24_june_qp_31",
+                "question": "3",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "24_june_qp_32_q3.png",
+                "ms_img": "24_june_ms_32_q3.png",
+                "paper": "24_june_qp_32",
+                "question": "3",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "24_nov_qp_31_q6.png",
+                "ms_img": "24_nov_ms_31_q6.png",
+                "paper": "24_nov_qp_31",
+                "question": "6",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "24_nov_qp_32_q3.png",
+                "ms_img": "24_nov_ms_32_q3.png",
+                "paper": "24_nov_qp_32",
+                "question": "3",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "25_june_qp_31_q1.png",
+                "ms_img": "25_june_ms_31_q1.png",
+                "paper": "25_june_qp_31",
+                "question": "1",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "25_june_qp_32_q1.png",
+                "ms_img": "25_june_ms_32_q1.png",
+                "paper": "25_june_qp_32",
+                "question": "1",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "25_june_qp_33_q1.png",
+                "ms_img": "25_june_ms_33_q1.png",
+                "paper": "25_june_qp_33",
+                "question": "1",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "25_nov_qp_31_q1.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_31",
+                "question": "1",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "25_nov_qp_32_q1.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_32",
+                "question": "1",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "25_nov_qp_33_q1.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_33",
+                "question": "1",
+                "tags": [
+                    "Whole Topic"
+                ]
             }
         ]
     },
@@ -152,6 +242,42 @@
                 "ms_img": "23_nov_ms_32_q3.png",
                 "paper": "23_nov_qp_32",
                 "question": "3",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "24_june_qp_31_q4.png",
+                "ms_img": "24_june_ms_31_q4.png",
+                "paper": "24_june_qp_31",
+                "question": "4",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "24_june_qp_32_q7.png",
+                "ms_img": "24_june_ms_32_q7.png",
+                "paper": "24_june_qp_32",
+                "question": "7",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "24_nov_qp_31_q5.png",
+                "ms_img": "24_nov_ms_31_q5.png",
+                "paper": "24_nov_qp_31",
+                "question": "5",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "24_nov_qp_32_q2.png",
+                "ms_img": "24_nov_ms_32_q2.png",
+                "paper": "24_nov_qp_32",
+                "question": "2",
                 "tags": [
                     "Whole Topic"
                 ]
@@ -222,10 +348,148 @@
                 "tags": [
                     "Whole Topic"
                 ]
+            },
+            {
+                "img": "24_june_qp_31_q1.png",
+                "ms_img": "24_june_ms_31_q1.png",
+                "paper": "24_june_qp_31",
+                "question": "1",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "24_june_qp_32_q1.png",
+                "ms_img": "24_june_ms_32_q1.png",
+                "paper": "24_june_qp_32",
+                "question": "1",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "24_nov_qp_31_q1.png",
+                "ms_img": "24_nov_ms_31_q1.png",
+                "paper": "24_nov_qp_31",
+                "question": "1",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "24_nov_qp_32_q4.png",
+                "ms_img": "24_nov_ms_32_q4.png",
+                "paper": "24_nov_qp_32",
+                "question": "4",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "25_june_qp_31_q2.png",
+                "ms_img": "25_june_ms_31_q2.png",
+                "paper": "25_june_qp_31",
+                "question": "2",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "25_june_qp_32_q2.png",
+                "ms_img": "25_june_ms_32_q2.png",
+                "paper": "25_june_qp_32",
+                "question": "2",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "25_june_qp_33_q2.png",
+                "ms_img": "25_june_ms_33_q2.png",
+                "paper": "25_june_qp_33",
+                "question": "2",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "25_nov_qp_31_q2.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_31",
+                "question": "2",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "25_nov_qp_32_q2.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_32",
+                "question": "2",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "25_nov_qp_33_q2.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_33",
+                "question": "2",
+                "tags": [
+                    "Whole Topic"
+                ]
             }
         ]
     },
     "14.1": {
+        "BitTorrent": [
+            {
+                "img": "25_nov_qp_32_q3.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_32",
+                "question": "3",
+                "tags": [
+                    "Email",
+                    "HTTP",
+                    "BitTorrent"
+                ]
+            }
+        ],
+        "Email": [
+            {
+                "img": "25_nov_qp_31_q3.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_31",
+                "question": "3",
+                "tags": [
+                    "Email"
+                ]
+            },
+            {
+                "img": "25_nov_qp_32_q3.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_32",
+                "question": "3",
+                "tags": [
+                    "Email",
+                    "HTTP",
+                    "BitTorrent"
+                ]
+            }
+        ],
+        "HTTP": [
+            {
+                "img": "25_nov_qp_32_q3.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_32",
+                "question": "3",
+                "tags": [
+                    "Email",
+                    "HTTP",
+                    "BitTorrent"
+                ]
+            }
+        ],
         "Whole Topic": [
             {
                 "img": "22_june_qp_32_q3.png",
@@ -262,10 +526,93 @@
                 "tags": [
                     "Whole Topic"
                 ]
+            },
+            {
+                "img": "24_june_qp_31_q2.png",
+                "ms_img": "24_june_ms_31_q2.png",
+                "paper": "24_june_qp_31",
+                "question": "2",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "24_june_qp_32_q2.png",
+                "ms_img": "24_june_ms_32_q2.png",
+                "paper": "24_june_qp_32",
+                "question": "2",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "24_nov_qp_31_q4.png",
+                "ms_img": "24_nov_ms_31_q4.png",
+                "paper": "24_nov_qp_31",
+                "question": "4",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "24_nov_qp_32_q5.png",
+                "ms_img": "24_nov_ms_32_q5.png",
+                "paper": "24_nov_qp_32",
+                "question": "5",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "25_june_qp_31_q3.png",
+                "ms_img": "25_june_ms_31_q3.png",
+                "paper": "25_june_qp_31",
+                "question": "3",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "25_june_qp_32_q3.png",
+                "ms_img": "25_june_ms_32_q3.png",
+                "paper": "25_june_qp_32",
+                "question": "3",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "25_june_qp_33_q4.png",
+                "ms_img": "25_june_ms_33_q4.png",
+                "paper": "25_june_qp_33",
+                "question": "4",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "25_nov_qp_33_q4.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_33",
+                "question": "4",
+                "tags": [
+                    "Whole Topic"
+                ]
             }
         ]
     },
     "14.2": {
+        "Email": [
+            {
+                "img": "25_nov_qp_31_q3.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_31",
+                "question": "3",
+                "tags": [
+                    "Email"
+                ]
+            }
+        ],
         "Whole Topic": [
             {
                 "img": "21_june_qp_31_q6.png",
@@ -311,6 +658,51 @@
                 "tags": [
                     "Whole Topic"
                 ]
+            },
+            {
+                "img": "24_nov_qp_31_q3.png",
+                "ms_img": "24_nov_ms_31_q3.png",
+                "paper": "24_nov_qp_31",
+                "question": "3",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "24_nov_qp_32_q1.png",
+                "ms_img": "24_nov_ms_32_q1.png",
+                "paper": "24_nov_qp_32",
+                "question": "1",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "25_june_qp_32_q4.png",
+                "ms_img": "25_june_ms_32_q4.png",
+                "paper": "25_june_qp_32",
+                "question": "4",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "25_nov_qp_32_q4.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_32",
+                "question": "4",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "25_nov_qp_33_q3.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_33",
+                "question": "3",
+                "tags": [
+                    "Whole Topic"
+                ]
             }
         ]
     },
@@ -336,6 +728,16 @@
                     "RISC/CISC",
                     "Pipelining"
                 ]
+            },
+            {
+                "img": "24_june_qp_31_q11.png",
+                "ms_img": "24_june_ms_31_q11.png",
+                "paper": "24_june_qp_31",
+                "question": "11",
+                "tags": [
+                    "RISC/CISC",
+                    "Pipelining"
+                ]
             }
         ],
         "RISC/CISC": [
@@ -356,6 +758,34 @@
                 "tags": [
                     "RISC/CISC",
                     "Pipelining"
+                ]
+            },
+            {
+                "img": "24_june_qp_31_q11.png",
+                "ms_img": "24_june_ms_31_q11.png",
+                "paper": "24_june_qp_31",
+                "question": "11",
+                "tags": [
+                    "RISC/CISC",
+                    "Pipelining"
+                ]
+            },
+            {
+                "img": "24_nov_qp_31_q2.png",
+                "ms_img": "24_nov_ms_31_q2.png",
+                "paper": "24_nov_qp_31",
+                "question": "2",
+                "tags": [
+                    "RISC/CISC"
+                ]
+            },
+            {
+                "img": "24_nov_qp_32_q8.png",
+                "ms_img": "24_nov_ms_32_q8.png",
+                "paper": "24_nov_qp_32",
+                "question": "8",
+                "tags": [
+                    "RISC/CISC"
                 ]
             }
         ],
@@ -403,6 +833,15 @@
                 "ms_img": "22_nov_ms_32_q5.png",
                 "paper": "22_nov_qp_32",
                 "question": "5",
+                "tags": [
+                    "Virtual Machines"
+                ]
+            },
+            {
+                "img": "24_june_qp_32_q9.png",
+                "ms_img": "24_june_ms_32_q9.png",
+                "paper": "24_june_qp_32",
+                "question": "9",
                 "tags": [
                     "Virtual Machines"
                 ]
@@ -458,6 +897,35 @@
                 "tags": [
                     "Boolean Algebra"
                 ]
+            },
+            {
+                "img": "24_nov_qp_31_q7.png",
+                "ms_img": "24_nov_ms_31_q7.png",
+                "paper": "24_nov_qp_31",
+                "question": "7",
+                "tags": [
+                    "K-Map",
+                    "Boolean Algebra"
+                ]
+            },
+            {
+                "img": "25_june_qp_32_q7.png",
+                "ms_img": "25_june_ms_32_q7.png",
+                "paper": "25_june_qp_32",
+                "question": "7",
+                "tags": [
+                    "Boolean Algebra"
+                ]
+            },
+            {
+                "img": "25_nov_qp_33_q6.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_33",
+                "question": "6",
+                "tags": [
+                    "K-Map",
+                    "Boolean Algebra"
+                ]
             }
         ],
         "Flip Flops": [
@@ -503,6 +971,89 @@
                     "K-Map",
                     "Boolean Algebra"
                 ]
+            },
+            {
+                "img": "24_june_qp_31_q6.png",
+                "ms_img": "24_june_ms_31_q6.png",
+                "paper": "24_june_qp_31",
+                "question": "6",
+                "tags": [
+                    "K-Map"
+                ]
+            },
+            {
+                "img": "24_june_qp_32_q6.png",
+                "ms_img": "24_june_ms_32_q6.png",
+                "paper": "24_june_qp_32",
+                "question": "6",
+                "tags": [
+                    "K-Map"
+                ]
+            },
+            {
+                "img": "24_nov_qp_31_q7.png",
+                "ms_img": "24_nov_ms_31_q7.png",
+                "paper": "24_nov_qp_31",
+                "question": "7",
+                "tags": [
+                    "K-Map",
+                    "Boolean Algebra"
+                ]
+            },
+            {
+                "img": "24_nov_qp_32_q6.png",
+                "ms_img": "24_nov_ms_32_q6.png",
+                "paper": "24_nov_qp_32",
+                "question": "6",
+                "tags": [
+                    "K-Map"
+                ]
+            },
+            {
+                "img": "25_june_qp_31_q5.png",
+                "ms_img": "25_june_ms_31_q5.png",
+                "paper": "25_june_qp_31",
+                "question": "5",
+                "tags": [
+                    "K-Map"
+                ]
+            },
+            {
+                "img": "25_june_qp_33_q3.png",
+                "ms_img": "25_june_ms_33_q3.png",
+                "paper": "25_june_qp_33",
+                "question": "3",
+                "tags": [
+                    "K-Map"
+                ]
+            },
+            {
+                "img": "25_nov_qp_31_q6.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_31",
+                "question": "6",
+                "tags": [
+                    "K-Map"
+                ]
+            },
+            {
+                "img": "25_nov_qp_32_q6.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_32",
+                "question": "6",
+                "tags": [
+                    "K-Map"
+                ]
+            },
+            {
+                "img": "25_nov_qp_33_q6.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_33",
+                "question": "6",
+                "tags": [
+                    "K-Map",
+                    "Boolean Algebra"
+                ]
             }
         ],
         "Whole Topic": [
@@ -537,6 +1088,70 @@
                     "Virtual Memory",
                     "Disk Thrashing"
                 ]
+            },
+            {
+                "img": "24_nov_qp_31_q8.png",
+                "ms_img": "24_nov_ms_31_q8.png",
+                "paper": "24_nov_qp_31",
+                "question": "8",
+                "tags": [
+                    "Memory Management",
+                    "Disk Thrashing"
+                ]
+            }
+        ],
+        "Interrupts": [
+            {
+                "img": "25_nov_qp_32_q5.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_32",
+                "question": "5",
+                "tags": [
+                    "Scheduling",
+                    "Interrupts"
+                ]
+            }
+        ],
+        "Memory Management": [
+            {
+                "img": "24_nov_qp_31_q8.png",
+                "ms_img": "24_nov_ms_31_q8.png",
+                "paper": "24_nov_qp_31",
+                "question": "8",
+                "tags": [
+                    "Memory Management",
+                    "Disk Thrashing"
+                ]
+            }
+        ],
+        "Multitasking": [
+            {
+                "img": "24_nov_qp_32_q9.png",
+                "ms_img": "24_nov_ms_32_q9.png",
+                "paper": "24_nov_qp_32",
+                "question": "9",
+                "tags": [
+                    "Multitasking"
+                ]
+            },
+            {
+                "img": "25_june_qp_31_q8.png",
+                "ms_img": "25_june_ms_31_q8.png",
+                "paper": "25_june_qp_31",
+                "question": "8",
+                "tags": [
+                    "Multitasking",
+                    "Scheduling"
+                ]
+            },
+            {
+                "img": "25_nov_qp_33_q5.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_33",
+                "question": "5",
+                "tags": [
+                    "Multitasking"
+                ]
             }
         ],
         "Scheduling": [
@@ -556,6 +1171,53 @@
                 "question": "7",
                 "tags": [
                     "Scheduling"
+                ]
+            },
+            {
+                "img": "25_june_qp_31_q8.png",
+                "ms_img": "25_june_ms_31_q8.png",
+                "paper": "25_june_qp_31",
+                "question": "8",
+                "tags": [
+                    "Multitasking",
+                    "Scheduling"
+                ]
+            },
+            {
+                "img": "25_june_qp_32_q5.png",
+                "ms_img": "25_june_ms_32_q5.png",
+                "paper": "25_june_qp_32",
+                "question": "5",
+                "tags": [
+                    "Scheduling"
+                ]
+            },
+            {
+                "img": "25_june_qp_33_q6.png",
+                "ms_img": "25_june_ms_33_q6.png",
+                "paper": "25_june_qp_33",
+                "question": "6",
+                "tags": [
+                    "Scheduling"
+                ]
+            },
+            {
+                "img": "25_nov_qp_31_q4.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_31",
+                "question": "4",
+                "tags": [
+                    "Scheduling"
+                ]
+            },
+            {
+                "img": "25_nov_qp_32_q5.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_32",
+                "question": "5",
+                "tags": [
+                    "Scheduling",
+                    "Interrupts"
                 ]
             }
         ],
@@ -620,6 +1282,62 @@
                 "tags": [
                     "BNF/Syntax Diagrams"
                 ]
+            },
+            {
+                "img": "24_nov_qp_31_q10.png",
+                "ms_img": "24_nov_ms_31_q10.png",
+                "paper": "24_nov_qp_31",
+                "question": "10",
+                "tags": [
+                    "BNF/Syntax Diagrams"
+                ]
+            },
+            {
+                "img": "24_nov_qp_32_q7.png",
+                "ms_img": "24_nov_ms_32_q7.png",
+                "paper": "24_nov_qp_32",
+                "question": "7",
+                "tags": [
+                    "BNF/Syntax Diagrams"
+                ]
+            },
+            {
+                "img": "25_june_qp_31_q7.png",
+                "ms_img": "25_june_ms_31_q7.png",
+                "paper": "25_june_qp_31",
+                "question": "7",
+                "tags": [
+                    "BNF/Syntax Diagrams"
+                ]
+            },
+            {
+                "img": "25_june_qp_32_q9.png",
+                "ms_img": "25_june_ms_32_q9.png",
+                "paper": "25_june_qp_32",
+                "question": "9",
+                "tags": [
+                    "BNF/Syntax Diagrams"
+                ]
+            },
+            {
+                "img": "25_june_qp_33_q9.png",
+                "ms_img": "25_june_ms_33_q9.png",
+                "paper": "25_june_qp_33",
+                "question": "9",
+                "tags": [
+                    "BNF/Syntax Diagrams"
+                ]
+            }
+        ],
+        "Compilers/Interpreters": [
+            {
+                "img": "25_june_qp_31_q6.png",
+                "ms_img": "25_june_ms_31_q6.png",
+                "paper": "25_june_qp_31",
+                "question": "6",
+                "tags": [
+                    "Compilers/Interpreters"
+                ]
             }
         ],
         "RPN": [
@@ -656,6 +1374,104 @@
                 "paper": "23_nov_qp_32",
                 "question": "6",
                 "tags": [
+                    "RPN"
+                ]
+            },
+            {
+                "img": "24_june_qp_31_q5.png",
+                "ms_img": "24_june_ms_31_q5.png",
+                "paper": "24_june_qp_31",
+                "question": "5",
+                "tags": [
+                    "RPN"
+                ]
+            },
+            {
+                "img": "24_june_qp_32_q5.png",
+                "ms_img": "24_june_ms_32_q5.png",
+                "paper": "24_june_qp_32",
+                "question": "5",
+                "tags": [
+                    "RPN"
+                ]
+            },
+            {
+                "img": "25_nov_qp_31_q8.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_31",
+                "question": "8",
+                "tags": [
+                    "Stages of Compilation",
+                    "RPN"
+                ]
+            },
+            {
+                "img": "25_nov_qp_32_q8.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_32",
+                "question": "8",
+                "tags": [
+                    "Stages of Compilation",
+                    "RPN"
+                ]
+            },
+            {
+                "img": "25_nov_qp_33_q7.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_33",
+                "question": "7",
+                "tags": [
+                    "Stages of Compilation",
+                    "RPN"
+                ]
+            }
+        ],
+        "Stages of Compilation": [
+            {
+                "img": "25_june_qp_32_q8.png",
+                "ms_img": "25_june_ms_32_q8.png",
+                "paper": "25_june_qp_32",
+                "question": "8",
+                "tags": [
+                    "Stages of Compilation"
+                ]
+            },
+            {
+                "img": "25_june_qp_33_q8.png",
+                "ms_img": "25_june_ms_33_q8.png",
+                "paper": "25_june_qp_33",
+                "question": "8",
+                "tags": [
+                    "Stages of Compilation"
+                ]
+            },
+            {
+                "img": "25_nov_qp_31_q8.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_31",
+                "question": "8",
+                "tags": [
+                    "Stages of Compilation",
+                    "RPN"
+                ]
+            },
+            {
+                "img": "25_nov_qp_32_q8.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_32",
+                "question": "8",
+                "tags": [
+                    "Stages of Compilation",
+                    "RPN"
+                ]
+            },
+            {
+                "img": "25_nov_qp_33_q7.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_33",
+                "question": "7",
+                "tags": [
+                    "Stages of Compilation",
                     "RPN"
                 ]
             }
@@ -701,6 +1517,33 @@
                     "Digital Certificates & Signatures",
                     "Types of Encryption"
                 ]
+            },
+            {
+                "img": "24_june_qp_31_q7.png",
+                "ms_img": "24_june_ms_31_q7.png",
+                "paper": "24_june_qp_31",
+                "question": "7",
+                "tags": [
+                    "Digital Certificates & Signatures"
+                ]
+            },
+            {
+                "img": "25_nov_qp_31_q5.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_31",
+                "question": "5",
+                "tags": [
+                    "Digital Certificates & Signatures"
+                ]
+            },
+            {
+                "img": "25_nov_qp_33_q9.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_33",
+                "question": "9",
+                "tags": [
+                    "Digital Certificates & Signatures"
+                ]
             }
         ],
         "Quantum Cryptography": [
@@ -741,6 +1584,33 @@
                 "tags": [
                     "SSL/TLS"
                 ]
+            },
+            {
+                "img": "25_june_qp_31_q9.png",
+                "ms_img": "25_june_ms_31_q9.png",
+                "paper": "25_june_qp_31",
+                "question": "9",
+                "tags": [
+                    "SSL/TLS"
+                ]
+            },
+            {
+                "img": "25_june_qp_32_q10.png",
+                "ms_img": "25_june_ms_32_q10.png",
+                "paper": "25_june_qp_32",
+                "question": "10",
+                "tags": [
+                    "SSL/TLS"
+                ]
+            },
+            {
+                "img": "25_june_qp_33_q7.png",
+                "ms_img": "25_june_ms_33_q7.png",
+                "paper": "25_june_qp_33",
+                "question": "7",
+                "tags": [
+                    "SSL/TLS"
+                ]
             }
         ],
         "Types of Encryption": [
@@ -752,6 +1622,26 @@
                 "tags": [
                     "Digital Certificates & Signatures",
                     "Types of Encryption"
+                ]
+            }
+        ],
+        "Whole Topic": [
+            {
+                "img": "24_june_qp_32_q4.png",
+                "ms_img": "24_june_ms_32_q4.png",
+                "paper": "24_june_qp_32",
+                "question": "4",
+                "tags": [
+                    "Whole Topic"
+                ]
+            },
+            {
+                "img": "25_nov_qp_32_q7.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_32",
+                "question": "7",
+                "tags": [
+                    "Whole Topic"
                 ]
             }
         ]
@@ -787,6 +1677,27 @@
                 "tags": [
                     "A*"
                 ]
+            },
+            {
+                "img": "25_june_qp_33_q10.png",
+                "ms_img": "25_june_ms_33_q10.png",
+                "paper": "25_june_qp_33",
+                "question": "10",
+                "tags": [
+                    "A*",
+                    "Dijsktra"
+                ]
+            },
+            {
+                "img": "25_nov_qp_31_q7.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_31",
+                "question": "7",
+                "tags": [
+                    "A*",
+                    "Dijkstra",
+                    "Neural Networks"
+                ]
             }
         ],
         "Dijkstra": [
@@ -809,6 +1720,26 @@
                 "tags": [
                     "Dijkstra"
                 ]
+            },
+            {
+                "img": "25_nov_qp_31_q7.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_31",
+                "question": "7",
+                "tags": [
+                    "A*",
+                    "Dijkstra",
+                    "Neural Networks"
+                ]
+            },
+            {
+                "img": "25_nov_qp_33_q8.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_33",
+                "question": "8",
+                "tags": [
+                    "Dijkstra"
+                ]
             }
         ],
         "Dijsktra": [
@@ -821,6 +1752,16 @@
                     "Dijsktra",
                     "Graphs"
                 ]
+            },
+            {
+                "img": "25_june_qp_33_q10.png",
+                "ms_img": "25_june_ms_33_q10.png",
+                "paper": "25_june_qp_33",
+                "question": "10",
+                "tags": [
+                    "A*",
+                    "Dijsktra"
+                ]
             }
         ],
         "Graphs": [
@@ -831,6 +1772,26 @@
                 "question": "5",
                 "tags": [
                     "Dijsktra",
+                    "Graphs"
+                ]
+            },
+            {
+                "img": "25_june_qp_31_q10.png",
+                "ms_img": "25_june_ms_31_q10.png",
+                "paper": "25_june_qp_31",
+                "question": "10",
+                "tags": [
+                    "Graphs",
+                    "Neural Networks"
+                ]
+            },
+            {
+                "img": "25_june_qp_32_q6.png",
+                "ms_img": "25_june_ms_32_q6.png",
+                "paper": "25_june_qp_32",
+                "question": "6",
+                "tags": [
+                    "Machine Learning",
                     "Graphs"
                 ]
             }
@@ -855,6 +1816,25 @@
                     "A*",
                     "Dijkstra"
                 ]
+            },
+            {
+                "img": "24_june_qp_32_q11.png",
+                "ms_img": "24_june_ms_32_q11.png",
+                "paper": "24_june_qp_32",
+                "question": "11",
+                "tags": [
+                    "Machine Learning"
+                ]
+            },
+            {
+                "img": "25_june_qp_32_q6.png",
+                "ms_img": "25_june_ms_32_q6.png",
+                "paper": "25_june_qp_32",
+                "question": "6",
+                "tags": [
+                    "Machine Learning",
+                    "Graphs"
+                ]
             }
         ],
         "Neural Networks": [
@@ -876,6 +1856,45 @@
                 "tags": [
                     "Neural Networks"
                 ]
+            },
+            {
+                "img": "24_june_qp_31_q9.png",
+                "ms_img": "24_june_ms_31_q9.png",
+                "paper": "24_june_qp_31",
+                "question": "9",
+                "tags": [
+                    "Neural Networks"
+                ]
+            },
+            {
+                "img": "25_june_qp_31_q10.png",
+                "ms_img": "25_june_ms_31_q10.png",
+                "paper": "25_june_qp_31",
+                "question": "10",
+                "tags": [
+                    "Graphs",
+                    "Neural Networks"
+                ]
+            },
+            {
+                "img": "25_nov_qp_31_q7.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_31",
+                "question": "7",
+                "tags": [
+                    "A*",
+                    "Dijkstra",
+                    "Neural Networks"
+                ]
+            },
+            {
+                "img": "25_nov_qp_32_q9.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_32",
+                "question": "9",
+                "tags": [
+                    "Neural Networks"
+                ]
             }
         ]
     },
@@ -889,6 +1908,54 @@
                 "tags": [
                     "Binary Search"
                 ]
+            },
+            {
+                "img": "24_june_qp_31_q10.png",
+                "ms_img": "24_june_ms_31_q10.png",
+                "paper": "24_june_qp_31",
+                "question": "10",
+                "tags": [
+                    "Binary Search"
+                ]
+            }
+        ],
+        "Binary Tree": [
+            {
+                "img": "24_nov_qp_31_q11.png",
+                "ms_img": "24_nov_ms_31_q11.png",
+                "paper": "24_nov_qp_31",
+                "question": "11",
+                "tags": [
+                    "Binary Tree"
+                ]
+            },
+            {
+                "img": "24_nov_qp_32_q11.png",
+                "ms_img": "24_nov_ms_32_q11.png",
+                "paper": "24_nov_qp_32",
+                "question": "11",
+                "tags": [
+                    "Binary Tree"
+                ]
+            },
+            {
+                "img": "25_june_qp_31_q4.png",
+                "ms_img": "25_june_ms_31_q4.png",
+                "paper": "25_june_qp_31",
+                "question": "4",
+                "tags": [
+                    "Binary Tree"
+                ]
+            },
+            {
+                "img": "25_june_qp_32_q11.png",
+                "ms_img": "25_june_ms_32_q11.png",
+                "paper": "25_june_qp_32",
+                "question": "11",
+                "tags": [
+                    "Binary Tree",
+                    "Recursion"
+                ]
             }
         ],
         "Insertion Sort": [
@@ -899,6 +1966,26 @@
                 "question": "8",
                 "tags": [
                     "Insertion Sort"
+                ]
+            },
+            {
+                "img": "25_june_qp_33_q12.png",
+                "ms_img": "25_june_ms_33_q12.png",
+                "paper": "25_june_qp_33",
+                "question": "12",
+                "tags": [
+                    "Insertion Sort"
+                ]
+            }
+        ],
+        "Linear Search": [
+            {
+                "img": "24_june_qp_32_q8.png",
+                "ms_img": "24_june_ms_32_q8.png",
+                "paper": "24_june_qp_32",
+                "question": "8",
+                "tags": [
+                    "Linear Search"
                 ]
             }
         ],
@@ -933,6 +2020,38 @@
                 ]
             }
         ],
+        "Recursion": [
+            {
+                "img": "25_june_qp_32_q11.png",
+                "ms_img": "25_june_ms_32_q11.png",
+                "paper": "25_june_qp_32",
+                "question": "11",
+                "tags": [
+                    "Binary Tree",
+                    "Recursion"
+                ]
+            },
+            {
+                "img": "25_nov_qp_31_q9.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_31",
+                "question": "9",
+                "tags": [
+                    "Stacks",
+                    "Recursion"
+                ]
+            },
+            {
+                "img": "25_nov_qp_32_q12.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_32",
+                "question": "12",
+                "tags": [
+                    "Stacks",
+                    "Recursion"
+                ]
+            }
+        ],
         "Stacks": [
             {
                 "img": "23_nov_qp_31_q10.png",
@@ -951,10 +2070,123 @@
                 "tags": [
                     "Stacks"
                 ]
+            },
+            {
+                "img": "25_nov_qp_31_q9.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_31",
+                "question": "9",
+                "tags": [
+                    "Stacks",
+                    "Recursion"
+                ]
+            },
+            {
+                "img": "25_nov_qp_32_q12.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_32",
+                "question": "12",
+                "tags": [
+                    "Stacks",
+                    "Recursion"
+                ]
+            },
+            {
+                "img": "25_nov_qp_33_q10.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_33",
+                "question": "10",
+                "tags": [
+                    "Stacks"
+                ]
             }
         ]
     },
     "19.2": {
+        "Binary Tree": [
+            {
+                "img": "25_june_qp_32_q11.png",
+                "ms_img": "25_june_ms_32_q11.png",
+                "paper": "25_june_qp_32",
+                "question": "11",
+                "tags": [
+                    "Binary Tree",
+                    "Recursion"
+                ]
+            }
+        ],
+        "Recursion": [
+            {
+                "img": "25_june_qp_32_q11.png",
+                "ms_img": "25_june_ms_32_q11.png",
+                "paper": "25_june_qp_32",
+                "question": "11",
+                "tags": [
+                    "Binary Tree",
+                    "Recursion"
+                ]
+            },
+            {
+                "img": "25_june_qp_33_q13.png",
+                "ms_img": "25_june_ms_33_q13.png",
+                "paper": "25_june_qp_33",
+                "question": "13",
+                "tags": [
+                    "Recursion"
+                ]
+            },
+            {
+                "img": "25_nov_qp_31_q9.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_31",
+                "question": "9",
+                "tags": [
+                    "Stacks",
+                    "Recursion"
+                ]
+            },
+            {
+                "img": "25_nov_qp_32_q12.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_32",
+                "question": "12",
+                "tags": [
+                    "Stacks",
+                    "Recursion"
+                ]
+            },
+            {
+                "img": "25_nov_qp_33_q11.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_33",
+                "question": "11",
+                "tags": [
+                    "Recursion"
+                ]
+            }
+        ],
+        "Stacks": [
+            {
+                "img": "25_nov_qp_31_q9.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_31",
+                "question": "9",
+                "tags": [
+                    "Stacks",
+                    "Recursion"
+                ]
+            },
+            {
+                "img": "25_nov_qp_32_q12.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_32",
+                "question": "12",
+                "tags": [
+                    "Stacks",
+                    "Recursion"
+                ]
+            }
+        ],
         "Whole Topic": [
             {
                 "img": "21_nov_qp_31_q10.png",
@@ -1026,6 +2258,24 @@
                 "tags": [
                     "Declarative Programming"
                 ]
+            },
+            {
+                "img": "24_june_qp_31_q8.png",
+                "ms_img": "24_june_ms_31_q8.png",
+                "paper": "24_june_qp_31",
+                "question": "8",
+                "tags": [
+                    "Declarative Programming"
+                ]
+            },
+            {
+                "img": "24_june_qp_32_q10.png",
+                "ms_img": "24_june_ms_32_q10.png",
+                "paper": "24_june_qp_32",
+                "question": "10",
+                "tags": [
+                    "Declarative Programming"
+                ]
             }
         ],
         "Low-Level Programming": [
@@ -1034,6 +2284,33 @@
                 "ms_img": "22_june_ms_31_q9.png",
                 "paper": "22_june_qp_31",
                 "question": "9",
+                "tags": [
+                    "Low-Level Programming"
+                ]
+            },
+            {
+                "img": "25_nov_qp_31_q11.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_31",
+                "question": "11",
+                "tags": [
+                    "Low-Level Programming"
+                ]
+            },
+            {
+                "img": "25_nov_qp_32_q11.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_32",
+                "question": "11",
+                "tags": [
+                    "Low-Level Programming"
+                ]
+            },
+            {
+                "img": "25_nov_qp_33_q13.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_33",
+                "question": "13",
                 "tags": [
                     "Low-Level Programming"
                 ]
@@ -1072,6 +2349,51 @@
                 "ms_img": "23_june_ms_32_q4.png",
                 "paper": "23_june_qp_32",
                 "question": "4",
+                "tags": [
+                    "OOP"
+                ]
+            },
+            {
+                "img": "24_nov_qp_31_q9.png",
+                "ms_img": "24_nov_ms_31_q9.png",
+                "paper": "24_nov_qp_31",
+                "question": "9",
+                "tags": [
+                    "OOP"
+                ]
+            },
+            {
+                "img": "24_nov_qp_32_q10.png",
+                "ms_img": "24_nov_ms_32_q10.png",
+                "paper": "24_nov_qp_32",
+                "question": "10",
+                "tags": [
+                    "OOP"
+                ]
+            },
+            {
+                "img": "25_june_qp_31_q11.png",
+                "ms_img": "25_june_ms_31_q11.png",
+                "paper": "25_june_qp_31",
+                "question": "11",
+                "tags": [
+                    "OOP"
+                ]
+            },
+            {
+                "img": "25_june_qp_32_q12.png",
+                "ms_img": "25_june_ms_32_q12.png",
+                "paper": "25_june_qp_32",
+                "question": "12",
+                "tags": [
+                    "OOP"
+                ]
+            },
+            {
+                "img": "25_june_qp_33_q5.png",
+                "ms_img": "25_june_ms_33_q5.png",
+                "paper": "25_june_qp_33",
+                "question": "5",
                 "tags": [
                     "OOP"
                 ]
@@ -1128,6 +2450,33 @@
                     "File Processing",
                     "Exception Handling"
                 ]
+            },
+            {
+                "img": "25_nov_qp_31_q10.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_31",
+                "question": "10",
+                "tags": [
+                    "Exception Handling"
+                ]
+            },
+            {
+                "img": "25_nov_qp_32_q10.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_32",
+                "question": "10",
+                "tags": [
+                    "Exception Handling"
+                ]
+            },
+            {
+                "img": "25_nov_qp_33_q12.png",
+                "ms_img": null,
+                "paper": "25_nov_qp_33",
+                "question": "12",
+                "tags": [
+                    "Exception Handling"
+                ]
             }
         ],
         "File Processing": [
@@ -1167,6 +2516,33 @@
                 "tags": [
                     "File Processing",
                     "Exception Handling"
+                ]
+            },
+            {
+                "img": "25_june_qp_31_q12.png",
+                "ms_img": "25_june_ms_31_q12.png",
+                "paper": "25_june_qp_31",
+                "question": "12",
+                "tags": [
+                    "File Processing"
+                ]
+            },
+            {
+                "img": "25_june_qp_32_q13.png",
+                "ms_img": "25_june_ms_32_q13.png",
+                "paper": "25_june_qp_32",
+                "question": "13",
+                "tags": [
+                    "File Processing"
+                ]
+            },
+            {
+                "img": "25_june_qp_33_q11.png",
+                "ms_img": "25_june_ms_33_q11.png",
+                "paper": "25_june_qp_33",
+                "question": "11",
+                "tags": [
+                    "File Processing"
                 ]
             }
         ],

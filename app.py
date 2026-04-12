@@ -9,6 +9,7 @@ from io import BytesIO
 
 import fitz
 from PIL import Image, ImageChops
+import clipper
 
 app = Flask(__name__)
 
@@ -36,12 +37,35 @@ PDF_MAJOR_GAP_MIN_ROWS = 48
 PDF_BLOCK_PADDING = 8
 PDF_MIN_SPLIT_GAP_ROWS = 10
 PDF_MIN_SEGMENT_HEIGHT_PX = 140
+PDF_GAP_SIDE_IGNORE = 24
+PDF_GAP_WHITE_RATIO = 0.999
+PDF_GAP_MIN_PIXEL = 245
+PDF_DOTTED_PIXEL_THRESHOLD = 190
+PDF_DOTTED_SPREAD_MIN = 0.65
+PDF_DOTTED_DENSITY_MIN = 0.003
+PDF_DOTTED_DENSITY_MAX = 0.12
+PDF_DOTTED_BAND_MAX_ROWS = 8
+PDF_DOTTED_GROUP_GAP = 36
+PDF_DOTTED_MIN_BANDS = 3
+PDF_DOTTED_PROTECT_LEAD = 16
+PDF_DOTTED_PROTECT_TRAIL = 120
+PDF_FORM_BLOCK_MIN_HEIGHT = 80
+PDF_FORM_BLOCK_MAX_HEIGHT = 150
+PDF_FORM_RUN_MIN_BLOCKS = 3
+PDF_FORM_BLOCK_VARIANCE = 28
+PDF_FORM_ATTACH_MAX_HEIGHT = 700
 PDF_RENDER_SCALE = 4
 PDF_HEADER_CUTOFF = 52
 PDF_FOOTER_CUTOFF = 48
 PDF_LEFT_ANCHOR_LIMIT = 90
 PDF_ANCHOR_PADDING = 6
 PDF_PART_ANCHOR_LIMIT = 120
+PDF_CONTENT_THRESHOLD = 230
+PDF_MARGIN_STRIP_SCAN_WIDTH = 60
+PDF_MARGIN_STRIP_MEAN_MAX = 245
+PDF_MARGIN_STRIP_DARK_ROW_RATIO_MIN = 0.25
+PDF_MARGIN_CLEAR_MEAN_MIN = 248
+PDF_MARGIN_CLEAR_DARK_ROW_RATIO_MAX = 0.10
 
 
 # --- HELPERS ---
@@ -264,6 +288,50 @@ def find_map_row(paper, q_num, folder='qp'):
     return None
 
 
+def load_question_source_image(question, source_folder, image_name, source_image_cache):
+    cache_key = (source_folder, question.get('paper'), str(question.get('question')), image_name)
+    cached = source_image_cache.get(cache_key)
+    if cached is not None:
+        image, top_trim = cached
+        return image.copy(), top_trim
+
+    if source_folder == 'qp':
+        row = find_map_row(question['paper'], question['question'], folder='qp')
+        if row:
+            try:
+                start_page = int(row['start_page']) - 1
+                end_page = int(row['end_page']) - 1
+            except (ValueError, TypeError):
+                start_page = end_page = None
+
+            pdf_path = os.path.join('qp', f"{question['paper']}.pdf")
+            if start_page is not None and os.path.exists(pdf_path):
+                doc = fitz.open(pdf_path)
+                try:
+                    page_images = clipper.extract_question_images(doc, start_page, end_page, question['question'])
+                finally:
+                    doc.close()
+
+                if page_images:
+                    stitched_image = clipper.stitch_images(page_images)
+                    prepared_image, trim_bbox = trim_outer_whitespace(stitched_image, return_bbox=True)
+                    top_trim = trim_bbox[1]
+                    source_image_cache[cache_key] = (prepared_image.copy(), top_trim)
+                    return prepared_image, top_trim
+
+    image_path = os.path.join(CROP_FOLDER, source_folder, image_name)
+    if not os.path.exists(image_path):
+        return None, 0
+
+    with Image.open(image_path) as image:
+        prepared_image = trim_edge_gutters(image.convert("RGB"))
+        prepared_image, trim_bbox = trim_outer_whitespace(prepared_image, return_bbox=True)
+
+    top_trim = trim_bbox[1]
+    source_image_cache[cache_key] = (prepared_image.copy(), top_trim)
+    return prepared_image, top_trim
+
+
 def get_pdf_words(page):
     return page.get_text('words', sort=True)
 
@@ -321,9 +389,12 @@ def insert_page_number(page, page_number):
 
 
 def trim_outer_whitespace(image, padding=10, return_bbox=False):
-    background = Image.new(image.mode, image.size, "white")
-    diff = ImageChops.difference(image, background)
-    bbox = diff.getbbox()
+    grayscale = image.convert("L")
+    mask = grayscale.point(
+        lambda pixel: 255 if pixel < PDF_CONTENT_THRESHOLD else 0,
+        mode="L",
+    )
+    bbox = mask.getbbox()
 
     if not bbox:
         return (image, (0, 0, image.width, image.height)) if return_bbox else image
@@ -339,9 +410,12 @@ def trim_outer_whitespace(image, padding=10, return_bbox=False):
 
 
 def trim_vertical_whitespace(image, padding=8):
-    background = Image.new(image.mode, image.size, "white")
-    diff = ImageChops.difference(image, background)
-    bbox = diff.getbbox()
+    grayscale = image.convert("L")
+    mask = grayscale.point(
+        lambda pixel: 255 if pixel < PDF_CONTENT_THRESHOLD else 0,
+        mode="L",
+    )
+    bbox = mask.getbbox()
 
     if not bbox:
         return image
@@ -349,6 +423,49 @@ def trim_vertical_whitespace(image, padding=8):
     top = max(0, bbox[1] - padding)
     bottom = min(image.height, bbox[3] + padding)
     return image.crop((0, top, image.width, bottom))
+
+
+def get_band_stats(grayscale, x0, x1):
+    band = grayscale.crop((x0, 0, x1, grayscale.height))
+    pixels = list(band.getdata())
+    mean = sum(pixels) / max(1, len(pixels))
+
+    dark_rows = 0
+    for y in range(grayscale.height):
+        row = band.crop((0, y, band.width, y + 1))
+        if min(row.getdata()) < 120:
+            dark_rows += 1
+
+    return mean, dark_rows / max(1, grayscale.height)
+
+
+def trim_edge_gutters(image):
+    grayscale = image.convert("L")
+    width, height = grayscale.size
+    scan = min(PDF_MARGIN_STRIP_SCAN_WIDTH, width // 4)
+    if scan <= 0:
+        return image
+
+    left_strip = get_band_stats(grayscale, 0, scan)
+    left_inner = get_band_stats(grayscale, scan, min(width, scan * 2))
+    right_strip = get_band_stats(grayscale, max(0, width - scan), width)
+    right_inner = get_band_stats(grayscale, max(0, width - (scan * 2)), max(0, width - scan))
+
+    left_crop = scan if (
+        left_strip[0] <= PDF_MARGIN_STRIP_MEAN_MAX
+        and left_strip[1] >= PDF_MARGIN_STRIP_DARK_ROW_RATIO_MIN
+        and left_inner[0] >= PDF_MARGIN_CLEAR_MEAN_MIN
+        and left_inner[1] <= PDF_MARGIN_CLEAR_DARK_ROW_RATIO_MAX
+    ) else 0
+
+    right_crop = scan if (
+        right_strip[0] <= PDF_MARGIN_STRIP_MEAN_MAX
+        and right_strip[1] >= PDF_MARGIN_STRIP_DARK_ROW_RATIO_MIN
+        and right_inner[0] >= PDF_MARGIN_CLEAR_MEAN_MIN
+        and right_inner[1] <= PDF_MARGIN_CLEAR_DARK_ROW_RATIO_MAX
+    ) else 0
+
+    return image.crop((left_crop, 0, max(left_crop + 1, width - right_crop), height))
 
 
 def insert_question_number(page, question_number, y_cursor):
@@ -369,14 +486,94 @@ def insert_question_number(page, question_number, y_cursor):
 
 
 def row_white_ratio(image, y):
-    row = image.crop((0, y, image.width, y + 1))
+    left = min(PDF_GAP_SIDE_IGNORE, max(0, image.width // 8))
+    right = max(left + 1, image.width - left)
+    row = image.crop((left, y, right, y + 1))
     grayscale = row.convert("L")
     pixels = list(grayscale.getdata())
     white_pixels = sum(1 for pixel in pixels if pixel >= PDF_WHITE_ROW_THRESHOLD)
     return white_pixels / max(1, len(pixels))
 
 
-def find_split_row(image, start_px, ideal_end_px, max_end_px):
+def is_safe_gap_row(image, y):
+    left = min(PDF_GAP_SIDE_IGNORE, max(0, image.width // 8))
+    right = max(left + 1, image.width - left)
+    row = image.crop((left, y, right, y + 1))
+    grayscale = row.convert("L")
+    pixels = list(grayscale.getdata())
+    return (
+        min(pixels) >= PDF_GAP_MIN_PIXEL
+        and (sum(1 for pixel in pixels if pixel >= PDF_GAP_MIN_PIXEL) / max(1, len(pixels))) >= PDF_GAP_WHITE_RATIO
+    )
+
+
+def find_dotted_answer_regions(image):
+    left = min(PDF_GAP_SIDE_IGNORE, max(0, image.width // 8))
+    right = max(left + 1, image.width - left)
+
+    dotted_bands = []
+    band_start = None
+
+    for y in range(image.height):
+        row = image.crop((left, y, right, y + 1))
+        grayscale = row.convert("L")
+        pixels = list(grayscale.getdata())
+        dark_positions = [index for index, pixel in enumerate(pixels) if pixel < PDF_DOTTED_PIXEL_THRESHOLD]
+
+        is_dotted = False
+        if dark_positions:
+            spread = (max(dark_positions) - min(dark_positions)) / max(1, len(pixels))
+            density = len(dark_positions) / max(1, len(pixels))
+            is_dotted = (
+                spread >= PDF_DOTTED_SPREAD_MIN
+                and PDF_DOTTED_DENSITY_MIN <= density <= PDF_DOTTED_DENSITY_MAX
+            )
+
+        if is_dotted and band_start is None:
+            band_start = y
+        elif not is_dotted and band_start is not None:
+            if (y - band_start) <= PDF_DOTTED_BAND_MAX_ROWS:
+                dotted_bands.append((band_start, y - 1))
+            band_start = None
+
+    if band_start is not None and (image.height - band_start) <= PDF_DOTTED_BAND_MAX_ROWS:
+        dotted_bands.append((band_start, image.height - 1))
+
+    if len(dotted_bands) < PDF_DOTTED_MIN_BANDS:
+        return []
+
+    grouped_regions = []
+    current_start, current_end = dotted_bands[0]
+    current_count = 1
+
+    for band_start, band_end in dotted_bands[1:]:
+        if band_start - current_end <= PDF_DOTTED_GROUP_GAP:
+            current_end = band_end
+            current_count += 1
+        else:
+            if current_count >= PDF_DOTTED_MIN_BANDS:
+                grouped_regions.append((
+                    max(0, current_start - PDF_DOTTED_PROTECT_LEAD),
+                    min(image.height, current_end + PDF_DOTTED_PROTECT_TRAIL),
+                ))
+            current_start, current_end = band_start, band_end
+            current_count = 1
+
+    if current_count >= PDF_DOTTED_MIN_BANDS:
+        grouped_regions.append((
+            max(0, current_start - PDF_DOTTED_PROTECT_LEAD),
+            min(image.height, current_end + PDF_DOTTED_PROTECT_TRAIL),
+        ))
+
+    return grouped_regions
+
+
+def is_protected_row(y, protected_ranges):
+    return any(start <= y <= end for start, end in protected_ranges)
+
+
+def find_split_row(image, start_px, ideal_end_px, max_end_px, protected_ranges=None):
+    protected_ranges = protected_ranges or []
     if ideal_end_px >= max_end_px:
         return max_end_px
 
@@ -388,7 +585,7 @@ def find_split_row(image, start_px, ideal_end_px, max_end_px):
     gap_start = None
 
     for y in range(search_start, search_end):
-        is_white = row_white_ratio(image, y) >= PDF_WHITE_ROW_RATIO
+        is_white = is_safe_gap_row(image, y) and not is_protected_row(y, protected_ranges)
 
         if is_white and gap_start is None:
             gap_start = y
@@ -396,22 +593,24 @@ def find_split_row(image, start_px, ideal_end_px, max_end_px):
             gap_height = y - gap_start
             if gap_height >= PDF_MIN_SPLIT_GAP_ROWS:
                 gap_mid = gap_start + (gap_height // 2)
-                if gap_mid <= ideal_end_px:
-                    if best_before is None or gap_mid > best_before:
-                        best_before = gap_mid
-                else:
-                    if best_after is None or gap_mid < best_after:
-                        best_after = gap_mid
+                if not is_protected_row(gap_mid, protected_ranges):
+                    if gap_mid <= ideal_end_px:
+                        if best_before is None or gap_mid > best_before:
+                            best_before = gap_mid
+                    else:
+                        if best_after is None or gap_mid < best_after:
+                            best_after = gap_mid
             gap_start = None
 
     if gap_start is not None:
         gap_height = search_end - gap_start
         if gap_height >= PDF_MIN_SPLIT_GAP_ROWS:
             gap_mid = gap_start + (gap_height // 2)
-            if gap_mid <= ideal_end_px:
-                best_before = gap_mid
-            elif best_after is None:
-                best_after = gap_mid
+            if not is_protected_row(gap_mid, protected_ranges):
+                if gap_mid <= ideal_end_px:
+                    best_before = gap_mid
+                elif best_after is None:
+                    best_after = gap_mid
 
     return best_before or best_after
 
@@ -447,8 +646,8 @@ def find_part_starts_for_question(question):
                 continue
 
             page = doc[page_index]
-            words = get_pdf_words(page)
-            clip_rect = build_question_clip_rect(
+            words = clipper.get_page_words(page)
+            clip_rect, _ = clipper.build_clip_rect(
                 page,
                 words,
                 question['question'],
@@ -460,15 +659,15 @@ def find_part_starts_for_question(question):
                 text = str(word[4])
                 if not is_part_marker(text):
                     continue
-                if word[0] > PDF_PART_ANCHOR_LIMIT:
+                if (word[0] - clip_rect.x0) > PDF_PART_ANCHOR_LIMIT:
                     continue
                 if not (clip_rect.y0 <= word[1] <= clip_rect.y1):
                     continue
 
-                part_y = cumulative_height + int((word[1] - clip_rect.y0) * PDF_RENDER_SCALE)
+                part_y = cumulative_height + int((word[1] - clip_rect.y0) * clipper.RENDER_SCALE)
                 part_starts.append(part_y)
 
-            cumulative_height += int(clip_rect.height * PDF_RENDER_SCALE)
+            cumulative_height += int(clip_rect.height * clipper.RENDER_SCALE)
     finally:
         doc.close()
 
@@ -476,14 +675,15 @@ def find_part_starts_for_question(question):
     return cleaned
 
 
-def split_image_into_blocks(image):
+def split_image_into_blocks(image, protected_ranges=None):
+    protected_ranges = protected_ranges or []
     blocks = []
     in_gap = False
     gap_start = None
     last_cut = 0
 
     for y in range(image.height):
-        is_white_row = row_white_ratio(image, y) >= PDF_WHITE_ROW_RATIO
+        is_white_row = is_safe_gap_row(image, y)
 
         if is_white_row and not in_gap:
             in_gap = True
@@ -492,11 +692,12 @@ def split_image_into_blocks(image):
             gap_height = y - gap_start
             if gap_height >= PDF_MAJOR_GAP_MIN_ROWS:
                 cut = gap_start + (gap_height // 2)
-                block_top = max(0, last_cut - PDF_BLOCK_PADDING)
-                block_bottom = min(image.height, cut + PDF_BLOCK_PADDING)
-                if block_bottom > block_top:
-                    blocks.append((block_top, block_bottom))
-                last_cut = cut
+                if not is_protected_row(cut, protected_ranges):
+                    block_top = max(0, last_cut - PDF_BLOCK_PADDING)
+                    block_bottom = min(image.height, cut + PDF_BLOCK_PADDING)
+                    if block_bottom > block_top:
+                        blocks.append((block_top, block_bottom))
+                    last_cut = cut
             in_gap = False
             gap_start = None
 
@@ -516,13 +717,60 @@ def split_image_into_blocks(image):
     return deduped_blocks or [(0, image.height)]
 
 
+def merge_form_like_blocks(blocks):
+    if len(blocks) < PDF_FORM_RUN_MIN_BLOCKS:
+        return blocks
+
+    merged = []
+    index = 0
+
+    while index < len(blocks):
+        current_height = blocks[index][1] - blocks[index][0]
+        if not (PDF_FORM_BLOCK_MIN_HEIGHT <= current_height <= PDF_FORM_BLOCK_MAX_HEIGHT):
+            merged.append(blocks[index])
+            index += 1
+            continue
+
+        run_end = index
+        run_heights = [current_height]
+
+        while run_end + 1 < len(blocks):
+            next_height = blocks[run_end + 1][1] - blocks[run_end + 1][0]
+            candidate_heights = run_heights + [next_height]
+            if (
+                PDF_FORM_BLOCK_MIN_HEIGHT <= next_height <= PDF_FORM_BLOCK_MAX_HEIGHT
+                and (max(candidate_heights) - min(candidate_heights)) <= PDF_FORM_BLOCK_VARIANCE
+            ):
+                run_end += 1
+                run_heights.append(next_height)
+            else:
+                break
+
+        if len(run_heights) >= PDF_FORM_RUN_MIN_BLOCKS:
+            merged_end = run_end
+            if merged_end + 1 < len(blocks):
+                following_height = blocks[merged_end + 1][1] - blocks[merged_end + 1][0]
+                if following_height <= PDF_FORM_ATTACH_MAX_HEIGHT:
+                    merged_end += 1
+            merged.append((blocks[index][0], blocks[merged_end][1]))
+            index = merged_end + 1
+            continue
+
+        merged.append(blocks[index])
+        index += 1
+
+    return merged
+
+
 def build_question_blocks(question, image, top_trim=0):
+    protected_ranges = find_dotted_answer_regions(image)
     part_starts = [
         max(0, y - top_trim)
         for y in find_part_starts_for_question(question)
     ]
     if not part_starts:
-        return split_image_into_blocks(image)
+        blocks = split_image_into_blocks(image, protected_ranges=protected_ranges)
+        return merge_form_like_blocks(blocks)
 
     starts = [0] + [y for y in part_starts if 0 < y < image.height]
     starts = sorted(set(starts))
@@ -540,6 +788,7 @@ def generate_question_paper_pdf(paper_title, selected_questions, source_folder='
     doc = fitz.open()
     content_width = PDF_PAGE_WIDTH - (2 * PDF_MARGIN_X)
     content_bottom = PDF_PAGE_HEIGHT - PDF_MARGIN_BOTTOM
+    source_image_cache = {}
 
     page = doc.new_page(width=PDF_PAGE_WIDTH, height=PDF_PAGE_HEIGHT)
     y_cursor = PDF_MARGIN_TOP
@@ -560,95 +809,103 @@ def generate_question_paper_pdf(paper_title, selected_questions, source_folder='
         image_name = question.get(image_field)
         if not image_name:
             continue
-        image_path = os.path.join(CROP_FOLDER, source_folder, image_name)
-        if not os.path.exists(image_path):
+        prepared_image, top_trim = load_question_source_image(
+            question,
+            source_folder,
+            image_name,
+            source_image_cache,
+        )
+        if prepared_image is None:
             continue
 
-        with Image.open(image_path) as image:
-            question_image, trim_bbox = trim_outer_whitespace(image.convert("RGB"), return_bbox=True)
-            image_width, image_height = question_image.size
-            blocks = (
-                build_question_blocks(question, question_image, top_trim=trim_bbox[1])
-                if source_folder == 'qp'
-                else [(0, image_height)]
-            )
-            first_segment = True
+        question_image = prepared_image
+        image_width, image_height = question_image.size
+        blocks = (
+            build_question_blocks(question, question_image, top_trim=top_trim)
+            if source_folder == 'qp'
+            else [(0, image_height)]
+        )
+        first_segment = True
 
-            for block_top, block_bottom in blocks:
-                block_image = trim_vertical_whitespace(
-                    question_image.crop((0, block_top, image_width, block_bottom)),
-                    padding=PDF_BLOCK_PADDING,
-                )
-                block_width, block_height = block_image.size
+        for block_top, block_bottom in blocks:
+            block_image = trim_vertical_whitespace(
+                question_image.crop((0, block_top, image_width, block_bottom)),
+                padding=PDF_BLOCK_PADDING,
+            )
+            block_width, block_height = block_image.size
+            protected_ranges = find_dotted_answer_regions(block_image)
+            full_page_height = content_bottom - PDF_MARGIN_TOP
+            horizontal_offset = PDF_NUMBER_BOX_WIDTH + PDF_NUMBER_PADDING_RIGHT if first_segment else 0
+            usable_width = content_width - horizontal_offset
+            scale = usable_width / block_width
+            rendered_block_height = block_height * scale
+            remaining_height = content_bottom - y_cursor
+
+            if rendered_block_height > remaining_height and rendered_block_height <= full_page_height:
+                page = doc.new_page(width=PDF_PAGE_WIDTH, height=PDF_PAGE_HEIGHT)
+                y_cursor = PDF_MARGIN_TOP
+            elif remaining_height < 80:
+                page = doc.new_page(width=PDF_PAGE_WIDTH, height=PDF_PAGE_HEIGHT)
+                y_cursor = PDF_MARGIN_TOP
+
+            current_top_px = 0
+            while current_top_px < block_height:
+                if first_segment:
+                    insert_question_number(page, index, y_cursor)
+
                 horizontal_offset = PDF_NUMBER_BOX_WIDTH + PDF_NUMBER_PADDING_RIGHT if first_segment else 0
                 usable_width = content_width - horizontal_offset
                 scale = usable_width / block_width
-                rendered_block_height = block_height * scale
-                remaining_height = content_bottom - y_cursor
+                available_height = content_bottom - y_cursor
 
-                if rendered_block_height <= remaining_height and first_segment:
-                    pass
-                elif rendered_block_height <= remaining_height:
-                    pass
-                elif rendered_block_height <= (content_bottom - PDF_MARGIN_TOP):
+                if available_height < 80:
                     page = doc.new_page(width=PDF_PAGE_WIDTH, height=PDF_PAGE_HEIGHT)
                     y_cursor = PDF_MARGIN_TOP
-                elif remaining_height < 80:
-                    page = doc.new_page(width=PDF_PAGE_WIDTH, height=PDF_PAGE_HEIGHT)
-                    y_cursor = PDF_MARGIN_TOP
+                    continue
 
-                current_top_px = 0
-                while current_top_px < block_height:
-                    if first_segment:
-                        insert_question_number(page, index, y_cursor)
+                ideal_slice_height_px = max(1, min(int(available_height / scale), block_height - current_top_px))
+                proposed_end_px = current_top_px + ideal_slice_height_px
+                split_end_px = find_split_row(
+                    block_image,
+                    current_top_px,
+                    proposed_end_px,
+                    block_height,
+                    protected_ranges=protected_ranges,
+                )
 
-                    horizontal_offset = PDF_NUMBER_BOX_WIDTH + PDF_NUMBER_PADDING_RIGHT if first_segment else 0
-                    usable_width = content_width - horizontal_offset
-                    scale = usable_width / block_width
-                    available_height = content_bottom - y_cursor
-
-                    if available_height < 80:
+                if split_end_px is None:
+                    if y_cursor > PDF_MARGIN_TOP:
                         page = doc.new_page(width=PDF_PAGE_WIDTH, height=PDF_PAGE_HEIGHT)
                         y_cursor = PDF_MARGIN_TOP
                         continue
+                    split_end_px = proposed_end_px
 
-                    ideal_slice_height_px = max(1, min(int(available_height / scale), block_height - current_top_px))
-                    proposed_end_px = current_top_px + ideal_slice_height_px
-                    split_end_px = find_split_row(block_image, current_top_px, proposed_end_px, block_height)
+                split_end_px = min(split_end_px, block_height)
+                slice_height_px = max(1, min(split_end_px - current_top_px, block_height - current_top_px))
+                segment = block_image.crop((0, current_top_px, block_width, current_top_px + slice_height_px))
 
-                    if split_end_px is None:
-                        if y_cursor > PDF_MARGIN_TOP:
-                            page = doc.new_page(width=PDF_PAGE_WIDTH, height=PDF_PAGE_HEIGHT)
-                            y_cursor = PDF_MARGIN_TOP
-                            continue
-                        split_end_px = proposed_end_px
+                segment_buffer = BytesIO()
+                segment.save(segment_buffer, format="PNG")
+                segment_bytes = segment_buffer.getvalue()
 
-                    split_end_px = min(split_end_px, block_height)
-                    slice_height_px = max(1, min(split_end_px - current_top_px, block_height - current_top_px))
-                    segment = block_image.crop((0, current_top_px, block_width, current_top_px + slice_height_px))
+                rendered_height = slice_height_px * scale
+                image_rect = fitz.Rect(
+                    PDF_MARGIN_X + horizontal_offset,
+                    y_cursor,
+                    PDF_MARGIN_X + horizontal_offset + (segment.width * scale),
+                    y_cursor + rendered_height,
+                )
+                page.insert_image(image_rect, stream=segment_bytes)
 
-                    segment_buffer = BytesIO()
-                    segment.save(segment_buffer, format="PNG")
-                    segment_bytes = segment_buffer.getvalue()
+                y_cursor += rendered_height
+                current_top_px += slice_height_px
+                first_segment = False
 
-                    rendered_height = slice_height_px * scale
-                    image_rect = fitz.Rect(
-                        PDF_MARGIN_X + horizontal_offset,
-                        y_cursor,
-                        PDF_MARGIN_X + horizontal_offset + (segment.width * scale),
-                        y_cursor + rendered_height,
-                    )
-                    page.insert_image(image_rect, stream=segment_bytes)
+                if current_top_px < block_height:
+                    page = doc.new_page(width=PDF_PAGE_WIDTH, height=PDF_PAGE_HEIGHT)
+                    y_cursor = PDF_MARGIN_TOP
 
-                    y_cursor += rendered_height
-                    current_top_px += slice_height_px
-                    first_segment = False
-
-                    if current_top_px < block_height:
-                        page = doc.new_page(width=PDF_PAGE_WIDTH, height=PDF_PAGE_HEIGHT)
-                        y_cursor = PDF_MARGIN_TOP
-
-            y_cursor += PDF_QUESTION_GAP
+        y_cursor += PDF_QUESTION_GAP
 
     for page_number, pdf_page in enumerate(doc, start=1):
         insert_page_number(pdf_page, page_number)
