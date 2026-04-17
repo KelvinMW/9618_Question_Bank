@@ -22,6 +22,12 @@ SYLLABUS_FILE = 'map.json'
 CROP_FOLDER = 'static/crops'
 MAP_FILE = 'map.csv'
 SAVED_PAPERS_FILE = 'saved_papers.json'
+QUESTION_OVERRIDES_FILE = 'question_overrides.json'
+APP_SETTINGS_FILE = 'app_settings.json'
+DEFAULT_APP_SETTINGS = {
+    "favorite_level": "P1",
+    "edit_mode": False,
+}
 PDF_PAGE_WIDTH = 595
 PDF_PAGE_HEIGHT = 842
 PDF_MARGIN_X = 50
@@ -93,8 +99,94 @@ def question_key(paper, q_num):
     return f"{paper}::{q_num}"
 
 
+def normalize_level_choice(level):
+    level = str(level or '').strip().upper()
+    if level not in {'P1', 'P2', 'P3', 'P4'}:
+        return DEFAULT_APP_SETTINGS["favorite_level"]
+    return level
+
+
+def infer_level_from_topic(topic_key):
+    if topic_key == 'P4':
+        return 'P4'
+
+    match = re.search(r'(\d+)', str(topic_key))
+    if not match:
+        return DEFAULT_APP_SETTINGS["favorite_level"]
+
+    major_num = int(match.group(1))
+    if 1 <= major_num <= 8:
+        return 'P1'
+    if 9 <= major_num <= 12:
+        return 'P2'
+    if 13 <= major_num <= 20:
+        return 'P3'
+    return DEFAULT_APP_SETTINGS["favorite_level"]
+
+
 @lru_cache(maxsize=1)
-def load_question_lookup():
+def load_app_settings():
+    payload = load_json(APP_SETTINGS_FILE)
+    settings = DEFAULT_APP_SETTINGS.copy()
+
+    if isinstance(payload, dict):
+        settings["favorite_level"] = normalize_level_choice(payload.get("favorite_level"))
+        settings["edit_mode"] = bool(payload.get("edit_mode", False))
+
+    return settings
+
+
+def save_app_settings(settings):
+    save_json(APP_SETTINGS_FILE, settings)
+    load_app_settings.cache_clear()
+
+
+@lru_cache(maxsize=1)
+def load_question_overrides():
+    payload = load_json(QUESTION_OVERRIDES_FILE)
+    if isinstance(payload, dict):
+        return payload
+    return {}
+
+
+def save_question_overrides(overrides):
+    save_json(QUESTION_OVERRIDES_FILE, overrides)
+    load_question_overrides.cache_clear()
+    load_base_question_lookup.cache_clear()
+    load_question_lookup.cache_clear()
+
+
+def normalize_tag_list(raw_tags):
+    if isinstance(raw_tags, list):
+        parts = raw_tags
+    else:
+        parts = re.split(r'[;,]', str(raw_tags or ''))
+
+    tags = []
+    seen = set()
+
+    for part in parts:
+        tag = str(part).strip()
+        if not tag or tag in seen:
+            continue
+        tags.append(tag)
+        seen.add(tag)
+
+    return tags or ['Whole Topic']
+
+
+def load_topic_choices():
+    syllabus = load_json(SYLLABUS_FILE)
+    keys = set(syllabus.keys())
+    keys.add('P4')
+    return [
+        {"key": key, "name": get_topic_name(key)}
+        for key in sorted(keys, key=sort_key_logic)
+    ]
+
+
+@lru_cache(maxsize=1)
+def load_base_question_lookup():
     full_index = load_json(INDEX_FILE)
     lookup = {}
 
@@ -121,6 +213,33 @@ def load_question_lookup():
     return lookup
 
 
+@lru_cache(maxsize=1)
+def load_question_lookup():
+    lookup = {
+        key: value.copy()
+        for key, value in load_base_question_lookup().items()
+    }
+
+    for key, override in load_question_overrides().items():
+        try:
+            paper, normalized_q_num = key.split('::', 1)
+        except ValueError:
+            continue
+
+        lookup_key = (paper, normalized_q_num)
+        if lookup_key not in lookup:
+            continue
+
+        if override.get("topic_key"):
+            lookup[lookup_key]["topic_key"] = override["topic_key"]
+            lookup[lookup_key]["topic_name"] = get_topic_name(override["topic_key"])
+
+        if override.get("tags"):
+            lookup[lookup_key]["tags"] = list(override["tags"])
+
+    return lookup
+
+
 def get_display_title(paper, q_num, topic_key):
     manual_titles = load_json(MANUAL_TITLES_FILE)
     key = f"{paper}_q{q_num}"
@@ -133,6 +252,9 @@ def get_display_title(paper, q_num, topic_key):
 
 
 def get_topic_name(topic_key):
+    if topic_key == 'P4':
+        return get_level_name('P4')
+
     syllabus = load_json(SYLLABUS_FILE)
     value = syllabus.get(topic_key)
 
@@ -195,11 +317,12 @@ def sort_key_logic(topic_key):
     return [int(d) for d in nums] if nums else [0]
 
 
-def build_topic_list(full_index, target_level):
-    filtered_keys = [
-        k for k in full_index.keys()
-        if is_in_level(k, target_level)
-    ]
+def build_topic_list(target_level):
+    filtered_keys = {
+        question.get("topic_key")
+        for question in load_question_lookup().values()
+        if is_in_level(question.get("topic_key"), target_level)
+    }
 
     sorted_topics = sorted(filtered_keys, key=sort_key_logic)
 
@@ -214,37 +337,25 @@ def build_topic_list(full_index, target_level):
     return topic_list
 
 
-def build_paper_list(full_index, target_level=None):
+def build_paper_list(target_level=None):
     papers = set()
 
-    for topic_key, topic_data in full_index.items():
-        if not is_in_level(topic_key, target_level):
+    for question in load_question_lookup().values():
+        if not is_in_level(question.get("topic_key"), target_level):
             continue
-
-        for questions in topic_data.values():
-            for question in questions:
-                paper = question.get("paper")
-                if paper:
-                    papers.add(paper)
+        paper = question.get("paper")
+        if paper:
+            papers.add(paper)
 
     return sorted(papers)
 
 
-def build_global_question_list(full_index, target_level=None):
-    questions = []
-
-    for topic_key, topic_data in full_index.items():
-        if not is_in_level(topic_key, target_level):
-            continue
-
-        topic_name = get_topic_name(topic_key)
-        flattened = flatten_topic_questions(topic_data, topic_key)
-
-        for question in flattened:
-            item = question.copy()
-            item["topic_key"] = topic_key
-            item["topic_name"] = topic_name
-            questions.append(item)
+def build_global_question_list(target_level=None):
+    questions = [
+        question.copy()
+        for question in load_question_lookup().values()
+        if is_in_level(question.get("topic_key"), target_level)
+    ]
 
     return sorted(
         questions,
@@ -253,6 +364,23 @@ def build_global_question_list(full_index, target_level=None):
             item.get("topic_key", "").lower(),
             item.get("paper", "").lower(),
             int(item.get("question", 0)),
+        )
+    )
+
+
+def build_topic_question_list(topic_key):
+    questions = [
+        question.copy()
+        for question in load_question_lookup().values()
+        if question.get("topic_key") == topic_key
+    ]
+
+    return sorted(
+        questions,
+        key=lambda item: (
+            item.get('title', '').lower(),
+            item.get('paper', '').lower(),
+            int(item.get('question', 0))
         )
     )
 
@@ -1053,18 +1181,18 @@ def generate_question_paper_pdf(paper_title, selected_questions, source_folder='
 @app.route('/')
 @app.route('/level/<target_level>')
 def home(target_level=None):
-    target_level = target_level or "P1"
+    settings = load_app_settings()
+    target_level = normalize_level_choice(target_level or settings["favorite_level"])
 
     if target_level == "P4":
         return show_topic("P4", target_level="P4")
 
-    full_index = load_json(INDEX_FILE)
-    topic_list = build_topic_list(full_index, target_level)
-    paper_list = build_paper_list(full_index, target_level)
+    topic_list = build_topic_list(target_level)
+    paper_list = build_paper_list(target_level)
     saved_papers = load_saved_papers()
     assignment_map = build_saved_paper_assignment_map(saved_papers)
     search_questions = attach_assignments_to_questions(
-        build_global_question_list(full_index, target_level),
+        build_global_question_list(target_level),
         assignment_map,
     )
 
@@ -1075,6 +1203,8 @@ def home(target_level=None):
         data={},
         search_questions=search_questions,
         saved_paper_count=len(saved_papers),
+        app_settings=settings,
+        topic_choices=load_topic_choices(),
         current_topic=None,
         current_level=target_level
         ,
@@ -1085,21 +1215,21 @@ def home(target_level=None):
 @app.route('/topic/<path:topic_name>')
 @app.route('/level/<target_level>/topic/<path:topic_name>')
 def show_topic(topic_name, target_level=None):
-    full_index = load_json(INDEX_FILE)
-
-    if topic_name not in full_index:
+    settings = load_app_settings()
+    target_level = normalize_level_choice(target_level or infer_level_from_topic(topic_name) or settings["favorite_level"])
+    valid_topics = {choice["key"] for choice in load_topic_choices()}
+    if topic_name not in valid_topics:
         abort(404)
 
-    topic_data = full_index[topic_name]
     saved_papers = load_saved_papers()
     assignment_map = build_saved_paper_assignment_map(saved_papers)
     questions_with_metadata = attach_assignments_to_questions(
-        flatten_topic_questions(topic_data, topic_name),
+        build_topic_question_list(topic_name),
         assignment_map,
     )
 
-    topic_list = build_topic_list(full_index, target_level)
-    paper_list = build_paper_list(full_index, target_level)
+    topic_list = build_topic_list(target_level)
+    paper_list = build_paper_list(target_level)
 
     return render_template(
         'dashboard.html',
@@ -1108,6 +1238,8 @@ def show_topic(topic_name, target_level=None):
         data=questions_with_metadata,
         search_questions=[],
         saved_paper_count=len(saved_papers),
+        app_settings=settings,
+        topic_choices=load_topic_choices(),
         current_topic=topic_name,
         current_level=target_level,
         current_level_name=get_level_name(target_level) if target_level else None
@@ -1216,6 +1348,65 @@ def delete_saved_paper(paper_id):
 
     save_saved_papers(remaining)
     return ('', 204)
+
+
+@app.route('/api/settings', methods=['GET'])
+def api_settings():
+    return jsonify({"settings": load_app_settings()})
+
+
+@app.route('/api/settings', methods=['PUT'])
+def update_settings():
+    payload = request.get_json(silent=True) or {}
+    settings = {
+        "favorite_level": normalize_level_choice(payload.get("favorite_level")),
+        "edit_mode": bool(payload.get("edit_mode", False)),
+    }
+    save_app_settings(settings)
+    return jsonify({"settings": settings})
+
+
+@app.route('/api/questions/<paper>/<q_num>/metadata', methods=['PUT'])
+def update_question_metadata(paper, q_num):
+    normalized_q_num = str(q_num).strip()
+    lookup_key = (paper, normalized_q_num)
+    base_metadata = load_base_question_lookup().get(lookup_key)
+
+    if not base_metadata:
+        abort(404)
+
+    payload = request.get_json(silent=True) or {}
+    title = str(payload.get("title", "")).strip()
+    topic_key = str(payload.get("topic_key", "")).strip() or base_metadata["topic_key"]
+    tags = normalize_tag_list(payload.get("tags", base_metadata["tags"]))
+
+    valid_topics = {choice["key"] for choice in load_topic_choices()}
+    if not title or topic_key not in valid_topics:
+        abort(400)
+
+    manual_titles = load_json(MANUAL_TITLES_FILE)
+    manual_titles[f"{paper}_q{normalized_q_num}"] = title
+    save_json(MANUAL_TITLES_FILE, manual_titles)
+
+    overrides = load_question_overrides().copy()
+    question_override_key = question_key(paper, normalized_q_num)
+    override_payload = {}
+
+    if topic_key != base_metadata["topic_key"]:
+        override_payload["topic_key"] = topic_key
+
+    if tags != list(base_metadata["tags"]):
+        override_payload["tags"] = tags
+
+    if override_payload:
+        overrides[question_override_key] = override_payload
+    else:
+        overrides.pop(question_override_key, None)
+
+    save_question_overrides(overrides)
+    load_question_lookup.cache_clear()
+
+    return jsonify({"question": find_question_metadata(paper, normalized_q_num)})
 
 
 @app.route('/generate-paper', methods=['POST'])

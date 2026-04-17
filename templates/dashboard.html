@@ -38,6 +38,32 @@
         letter-spacing: 0.5px;
     }
 
+    .sidebar-header-top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 12px;
+    }
+
+    .settings-btn {
+        flex: 0 0 auto;
+        width: 36px;
+        height: 36px;
+        border-radius: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        background: rgba(255, 255, 255, 0.06);
+        color: #f4eaff;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .settings-btn:hover {
+        background: rgba(255, 255, 255, 0.12);
+        color: #ffffff;
+    }
+
     .builder-link {
         display: inline-flex;
         align-items: center;
@@ -294,12 +320,25 @@
     .q-actions {
         margin-left: 12px;
         flex: 0 0 auto;
+        display: flex;
+        align-items: center;
+        gap: 6px;
     }
 
     .select-btn {
         border-radius: 999px;
         font-size: 0.74rem;
         padding: 4px 10px;
+    }
+
+    .edit-btn {
+        width: 32px;
+        height: 32px;
+        border-radius: 999px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
     }
 
     .filter-bar {
@@ -412,6 +451,62 @@
         display: inline-block;
     }
 
+    .modal-backdrop-simple {
+        position: fixed;
+        inset: 0;
+        background: rgba(18, 21, 26, 0.55);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        z-index: 1050;
+    }
+
+    .modal-backdrop-simple.open {
+        display: flex;
+    }
+
+    .modal-panel-simple {
+        width: min(100%, 520px);
+        background: #ffffff;
+        border-radius: 16px;
+        box-shadow: 0 28px 60px rgba(0, 0, 0, 0.24);
+        padding: 20px;
+    }
+
+    .modal-title-simple {
+        font-size: 1.1rem;
+        font-weight: 700;
+        margin-bottom: 4px;
+        color: #20252c;
+    }
+
+    .modal-subtitle-simple {
+        color: #6b7280;
+        font-size: 0.86rem;
+        margin-bottom: 16px;
+    }
+
+    .modal-actions-simple {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+        margin-top: 18px;
+    }
+
+    .settings-help {
+        font-size: 0.8rem;
+        color: #6b7280;
+        margin-top: 4px;
+    }
+
+    .edit-status {
+        min-height: 18px;
+        font-size: 0.8rem;
+        color: #6b7280;
+        margin-top: 8px;
+    }
+
 
 </style>
 </head>
@@ -420,7 +515,14 @@
 <div class="wrapper">
     <nav class="sidebar">
         <div class="sidebar-header p-3 border-bottom bg-light">
-          <h5 class="mb-3 fw-bold hacker-purple">./cs_9618.cie</h5>
+          <div class="sidebar-header-top">
+              <h5 class="mb-0 fw-bold hacker-purple">./cs_9618.cie</h5>
+              <button type="button" class="settings-btn" id="settings-btn" title="Settings" aria-label="Settings">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M9.405.914a1 1 0 0 0-1.81 0l-.294.725a1 1 0 0 1-.95.62l-.78-.04a1 1 0 0 0-1.01.84l-.13.776a1 1 0 0 1-.705.79l-.753.225a1 1 0 0 0-.592 1.712l.523.58a1 1 0 0 1 .214 1.114l-.294.725a1 1 0 0 0 .743 1.37l.776.13a1 1 0 0 1 .79.705l.225.752a1 1 0 0 0 1.712.593l.58-.523a1 1 0 0 1 1.114-.214l.725.294a1 1 0 0 0 1.37-.743l.13-.776a1 1 0 0 1 .705-.79l.752-.225a1 1 0 0 0 .593-1.712l-.523-.58a1 1 0 0 1-.214-1.114l.294-.725a1 1 0 0 0-.743-1.37l-.776-.13a1 1 0 0 1-.79-.705zM8 10.5A2.5 2.5 0 1 1 8 5.5a2.5 2.5 0 0 1 0 5"/>
+                  </svg>
+              </button>
+          </div>
 
           <div class="selector-group w-100 mb-3" role="group">
             <div class="btn-group w-100" role="group">
@@ -533,6 +635,8 @@
                      data-view-url="{{ url_for('view_question', paper=q.paper, q_num=q.question) }}"
                      data-view-title="{{ q.title }}"
                      data-view-tags="{{ q.tags|sort|join('|') }}"
+                     data-topic-key="{{ q.topic_key }}"
+                     data-topic-name="{{ q.topic_name }}"
                      data-paper="{{ q.paper }}"
                      data-question="{{ q.question }}"
                      data-assigned-count="{{ q.assigned_count }}"
@@ -557,6 +661,14 @@
                     </div>
 
                     <div class="q-actions">
+                        {% if app_settings.edit_mode %}
+                        <button type="button" class="btn btn-sm btn-outline-secondary edit-btn" title="Edit question" onclick="openEditModal(event, this.closest('.q-row'))">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.5 9.5L3 14l.646-2.646z"/>
+                                <path fill-rule="evenodd" d="M1 13.5V16h2.5l7.086-7.086-2.5-2.5z"/>
+                            </svg>
+                        </button>
+                        {% endif %}
                         <button type="button" class="btn btn-sm btn-outline-secondary select-btn" onclick="toggleQuestionSelection(event, this.closest('.q-row'))">
                             Add
                         </button>
@@ -614,6 +726,8 @@
                      data-view-url="{{ url_for('view_question', paper=q.paper, q_num=q.question) }}"
                      data-view-title="{{ q.title }}"
                      data-view-tags="{{ q.tags|sort|join('|') }}"
+                     data-topic-key="{{ q.topic_key }}"
+                     data-topic-name="{{ q.topic_name }}"
                      data-paper="{{ q.paper }}"
                      data-question="{{ q.question }}"
                      data-assigned-count="{{ q.assigned_count }}"
@@ -639,6 +753,14 @@
                     </div>
 
                     <div class="q-actions">
+                        {% if app_settings.edit_mode %}
+                        <button type="button" class="btn btn-sm btn-outline-secondary edit-btn" title="Edit question" onclick="openEditModal(event, this.closest('.q-row'))">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                                <path d="M12.146.854a.5.5 0 0 1 .708 0l2.292 2.292a.5.5 0 0 1 0 .708l-9.5 9.5L3 14l.646-2.646z"/>
+                                <path fill-rule="evenodd" d="M1 13.5V16h2.5l7.086-7.086-2.5-2.5z"/>
+                            </svg>
+                        </button>
+                        {% endif %}
                         <button type="button" class="btn btn-sm btn-outline-secondary select-btn" onclick="toggleQuestionSelection(event, this.closest('.q-row'))">
                             Add
                         </button>
@@ -656,9 +778,68 @@
     </main>
 </div>
 
+<div class="modal-backdrop-simple" id="settings-modal">
+    <div class="modal-panel-simple">
+        <div class="modal-title-simple">Settings</div>
+        <div class="modal-subtitle-simple">Choose your default paper and turn edit mode on when you want to curate question metadata.</div>
+        <div class="mb-3">
+            <label class="form-label" for="favorite-level-select">Favourite paper</label>
+            <select class="form-select" id="favorite-level-select">
+                <option value="P1">P1</option>
+                <option value="P2">P2</option>
+                <option value="P3">P3</option>
+                <option value="P4">P4</option>
+            </select>
+            <div class="settings-help">This becomes the default page when you open the bank from `/`.</div>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="edit-mode-checkbox">
+            <label class="form-check-label" for="edit-mode-checkbox">
+                Enable edit mode
+            </label>
+            <div class="settings-help">Shows a pencil icon on each question card so you can edit its title, topic, and tags.</div>
+        </div>
+        <div class="edit-status" id="settings-status"></div>
+        <div class="modal-actions-simple">
+            <button type="button" class="btn btn-outline-secondary" id="settings-cancel-btn">Cancel</button>
+            <button type="button" class="btn btn-primary" id="settings-save-btn">Save settings</button>
+        </div>
+    </div>
+</div>
+
+<div class="modal-backdrop-simple" id="edit-modal">
+    <div class="modal-panel-simple">
+        <div class="modal-title-simple">Edit Question</div>
+        <div class="modal-subtitle-simple" id="edit-modal-subtitle">Update how this question appears in the bank.</div>
+        <div class="mb-3">
+            <label class="form-label" for="edit-title-input">Title</label>
+            <input type="text" class="form-control" id="edit-title-input">
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="edit-topic-select">Topic</label>
+            <select class="form-select" id="edit-topic-select">
+                {% for topic in topic_choices %}
+                <option value="{{ topic.key }}">{{ topic.key }} — {{ topic.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div>
+            <label class="form-label" for="edit-tags-input">Tags</label>
+            <input type="text" class="form-control" id="edit-tags-input" placeholder="Separate multiple tags with semicolons">
+            <div class="settings-help">Free text. Example: `Boolean Algebra; K-Maps`.</div>
+        </div>
+        <div class="edit-status" id="edit-modal-status"></div>
+        <div class="modal-actions-simple">
+            <button type="button" class="btn btn-outline-secondary" id="edit-cancel-btn">Cancel</button>
+            <button type="button" class="btn btn-primary" id="edit-save-btn">Save question</button>
+        </div>
+    </div>
+</div>
+
 <script>
     const QUESTION_STORAGE_KEY = 'qbank.paperBuilder.questions';
     const HIDE_ASSIGNED_STORAGE_KEY = 'qbank.browser.hideAssigned';
+    const APP_SETTINGS = {{ app_settings|tojson }};
     const filterBar = document.getElementById('tag-filter-bar');
     const builderCount = document.getElementById('builder-count');
     const builderClearButton = document.getElementById('builder-clear-btn');
@@ -675,6 +856,76 @@
     const searchResultsSummary = document.getElementById('search-results-summary');
     const hideAssignedToggle = document.getElementById('hide-assigned-toggle');
     const hideAssignedCaption = document.getElementById('hide-assigned-caption');
+    const settingsButton = document.getElementById('settings-btn');
+    const settingsModal = document.getElementById('settings-modal');
+    const settingsCancelButton = document.getElementById('settings-cancel-btn');
+    const settingsSaveButton = document.getElementById('settings-save-btn');
+    const favoriteLevelSelect = document.getElementById('favorite-level-select');
+    const editModeCheckbox = document.getElementById('edit-mode-checkbox');
+    const settingsStatus = document.getElementById('settings-status');
+    const editModal = document.getElementById('edit-modal');
+    const editModalSubtitle = document.getElementById('edit-modal-subtitle');
+    const editTitleInput = document.getElementById('edit-title-input');
+    const editTopicSelect = document.getElementById('edit-topic-select');
+    const editTagsInput = document.getElementById('edit-tags-input');
+    const editStatus = document.getElementById('edit-modal-status');
+    const editCancelButton = document.getElementById('edit-cancel-btn');
+    const editSaveButton = document.getElementById('edit-save-btn');
+    let editingRow = null;
+
+    function setModalOpen(modal, isOpen) {
+        if (!modal) {
+            return;
+        }
+        modal.classList.toggle('open', isOpen);
+    }
+
+    function syncSelectedQuestionMetadata(updatedQuestion) {
+        const selected = loadSelectedQuestions();
+        let changed = false;
+
+        selected.forEach((question) => {
+            if (question.paper === updatedQuestion.paper && String(question.question) === String(updatedQuestion.question)) {
+                question.title = updatedQuestion.title || question.title;
+                question.tags = updatedQuestion.tags || question.tags;
+                changed = true;
+            }
+        });
+
+        if (changed) {
+            localStorage.setItem(QUESTION_STORAGE_KEY, JSON.stringify(selected));
+        }
+    }
+
+    function openSettingsModal() {
+        favoriteLevelSelect.value = APP_SETTINGS.favorite_level || 'P1';
+        editModeCheckbox.checked = Boolean(APP_SETTINGS.edit_mode);
+        settingsStatus.textContent = '';
+        settingsSaveButton.disabled = false;
+        setModalOpen(settingsModal, true);
+    }
+
+    function closeSettingsModal() {
+        setModalOpen(settingsModal, false);
+    }
+
+    function openEditModal(event, row) {
+        event.stopPropagation();
+        editingRow = row;
+        editTitleInput.value = row.dataset.viewTitle || '';
+        editTopicSelect.value = row.dataset.topicKey || '';
+        editTagsInput.value = (row.dataset.viewTags || '').split('|').filter(Boolean).join('; ');
+        editModalSubtitle.textContent = `${row.dataset.paper} question ${row.dataset.question}`;
+        editStatus.textContent = '';
+        editSaveButton.disabled = false;
+        setModalOpen(editModal, true);
+    }
+
+    function closeEditModal() {
+        editingRow = null;
+        editSaveButton.disabled = false;
+        setModalOpen(editModal, false);
+    }
 
     function parseAssignedPapers(row) {
         try {
@@ -1057,6 +1308,83 @@
         });
     }
 
+    if (settingsButton) {
+        settingsButton.addEventListener('click', openSettingsModal);
+    }
+
+    if (settingsCancelButton) {
+        settingsCancelButton.addEventListener('click', closeSettingsModal);
+    }
+
+    if (settingsSaveButton) {
+        settingsSaveButton.addEventListener('click', async () => {
+            settingsStatus.textContent = 'Saving settings...';
+            settingsSaveButton.disabled = true;
+
+            try {
+                const response = await fetch('/api/settings', {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        favorite_level: favoriteLevelSelect.value,
+                        edit_mode: editModeCheckbox.checked,
+                    }),
+                });
+
+                if (!response.ok) {
+                    throw new Error('Settings save failed');
+                }
+
+                window.location.reload();
+            } catch {
+                settingsStatus.textContent = 'Settings could not be saved right now.';
+                settingsSaveButton.disabled = false;
+            }
+        });
+    }
+
+    if (editCancelButton) {
+        editCancelButton.addEventListener('click', closeEditModal);
+    }
+
+    if (editSaveButton) {
+        editSaveButton.addEventListener('click', async () => {
+            if (!editingRow) {
+                return;
+            }
+
+            editStatus.textContent = 'Saving question...';
+            editSaveButton.disabled = true;
+
+            try {
+                const response = await fetch(`/api/questions/${encodeURIComponent(editingRow.dataset.paper)}/${encodeURIComponent(editingRow.dataset.question)}/metadata`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        title: editTitleInput.value.trim(),
+                        topic_key: editTopicSelect.value,
+                        tags: editTagsInput.value,
+                    }),
+                });
+
+                if (!response.ok) {
+                    throw new Error('Question save failed');
+                }
+
+                const payload = await response.json();
+                syncSelectedQuestionMetadata(payload.question);
+                window.location.reload();
+            } catch {
+                editStatus.textContent = 'Question metadata could not be saved.';
+                editSaveButton.disabled = false;
+            }
+        });
+    }
+
     window.addEventListener('storage', (event) => {
         if (event.key === QUESTION_STORAGE_KEY) {
             updateSelectionUI();
@@ -1074,7 +1402,20 @@
         }
     });
 
+    [settingsModal, editModal].forEach((modal) => {
+        if (!modal) {
+            return;
+        }
+
+        modal.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                setModalOpen(modal, false);
+            }
+        });
+    });
+
     refreshSavedAssignments();
+    window.openEditModal = openEditModal;
 </script>
 
 </body>
