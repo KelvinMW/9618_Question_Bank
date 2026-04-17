@@ -189,6 +189,9 @@
                         <div class="viewer-title">{{ question_title }}</div>
                         <div class="viewer-meta">
                             <span class="paper-chip">{{ paper }}</span>
+                            {% if question_metadata.marks is not none %}
+                            <span class="tag-chip">{{ question_metadata.marks }} marks</span>
+                            {% endif %}
                             {% for tag in question_tags %}
                             <span class="tag-chip">{{ tag }}</span>
                             {% endfor %}

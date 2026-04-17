@@ -500,6 +500,16 @@
         margin-top: 4px;
     }
 
+    .warning-note {
+        border: 1px solid #f2ddab;
+        background: #fff8e8;
+        color: #7c5d20;
+        border-radius: 12px;
+        padding: 10px 12px;
+        font-size: 0.82rem;
+        line-height: 1.35;
+    }
+
     .edit-status {
         min-height: 18px;
         font-size: 0.8rem;
@@ -639,13 +649,14 @@
                      data-topic-name="{{ q.topic_name }}"
                      data-paper="{{ q.paper }}"
                      data-question="{{ q.question }}"
+                     data-marks="{{ '' if q.marks is none else q.marks }}"
                      data-assigned-count="{{ q.assigned_count }}"
                      data-assigned-papers='{{ q.assigned_papers|tojson }}'
                      data-search-text="{{ (q.title ~ ' ' ~ q.paper ~ ' ' ~ (q.tags|sort|join(' ')))|lower }}"
                      onclick="openQuestionViewer(this)">
                     <div class="flex-grow-1">
                         <div class="title-text">
-                            {{ q.title }}
+                            {{ q.title }}{% if q.marks is not none %} [{{ q.marks }}]{% endif %}
                         </div>
                         <div class="question-meta">
                             <span class="paper-chip">{{ q.paper }}</span>
@@ -730,13 +741,14 @@
                      data-topic-name="{{ q.topic_name }}"
                      data-paper="{{ q.paper }}"
                      data-question="{{ q.question }}"
+                     data-marks="{{ '' if q.marks is none else q.marks }}"
                      data-assigned-count="{{ q.assigned_count }}"
                      data-assigned-papers='{{ q.assigned_papers|tojson }}'
                      data-search-text="{{ (q.title ~ ' ' ~ q.paper ~ ' ' ~ q.topic_key ~ ' ' ~ q.topic_name ~ ' ' ~ (q.tags|sort|join(' ')))|lower }}"
                      onclick="openQuestionViewer(this)">
                     <div class="flex-grow-1">
                         <div class="title-text">
-                            {{ q.title }}
+                            {{ q.title }}{% if q.marks is not none %} [{{ q.marks }}]{% endif %}
                         </div>
                         <div class="question-meta">
                             <span class="paper-chip">{{ q.paper }}</span>
@@ -828,6 +840,13 @@
             <input type="text" class="form-control" id="edit-tags-input" placeholder="Separate multiple tags with semicolons">
             <div class="settings-help">Free text. Example: `Boolean Algebra; K-Maps`.</div>
         </div>
+        <div class="mt-3">
+            <label class="form-label" for="edit-marks-input">Total marks</label>
+            <input type="number" min="0" max="200" step="1" class="form-control" id="edit-marks-input" placeholder="Automatically generated total">
+            <div class="warning-note mt-2">
+                These marks are automatically generated and should be correct in most cases. Do not change them unless you are certain the automatically generated count is wrong.
+            </div>
+        </div>
         <div class="edit-status" id="edit-modal-status"></div>
         <div class="modal-actions-simple">
             <button type="button" class="btn btn-outline-secondary" id="edit-cancel-btn">Cancel</button>
@@ -868,6 +887,7 @@
     const editTitleInput = document.getElementById('edit-title-input');
     const editTopicSelect = document.getElementById('edit-topic-select');
     const editTagsInput = document.getElementById('edit-tags-input');
+    const editMarksInput = document.getElementById('edit-marks-input');
     const editStatus = document.getElementById('edit-modal-status');
     const editCancelButton = document.getElementById('edit-cancel-btn');
     const editSaveButton = document.getElementById('edit-save-btn');
@@ -915,6 +935,7 @@
         editTitleInput.value = row.dataset.viewTitle || '';
         editTopicSelect.value = row.dataset.topicKey || '';
         editTagsInput.value = (row.dataset.viewTags || '').split('|').filter(Boolean).join('; ');
+        editMarksInput.value = row.dataset.marks || '';
         editModalSubtitle.textContent = `${row.dataset.paper} question ${row.dataset.question}`;
         editStatus.textContent = '';
         editSaveButton.disabled = false;
@@ -1368,6 +1389,7 @@
                         title: editTitleInput.value.trim(),
                         topic_key: editTopicSelect.value,
                         tags: editTagsInput.value,
+                        marks: editMarksInput.value.trim(),
                     }),
                 });
 

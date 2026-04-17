@@ -24,6 +24,7 @@ MAP_FILE = 'map.csv'
 SAVED_PAPERS_FILE = 'saved_papers.json'
 QUESTION_OVERRIDES_FILE = 'question_overrides.json'
 APP_SETTINGS_FILE = 'app_settings.json'
+QUESTION_MARKS_FILE = 'question_marks.json'
 DEFAULT_APP_SETTINGS = {
     "favorite_level": "P1",
     "edit_mode": False,
@@ -186,6 +187,14 @@ def load_topic_choices():
 
 
 @lru_cache(maxsize=1)
+def load_question_marks():
+    payload = load_json(QUESTION_MARKS_FILE)
+    if isinstance(payload, dict):
+        return payload
+    return {}
+
+
+@lru_cache(maxsize=1)
 def load_base_question_lookup():
     full_index = load_json(INDEX_FILE)
     lookup = {}
@@ -208,6 +217,7 @@ def load_base_question_lookup():
                 "ms_img": question.get("ms_img") or f"{paper.replace('_qp_', '_ms_')}_q{normalized_q_num}.png",
                 "topic_key": topic_key,
                 "topic_name": topic_name,
+                "marks": load_question_marks().get(f"{paper}_q{normalized_q_num}"),
             }
 
     return lookup
@@ -236,6 +246,9 @@ def load_question_lookup():
 
         if override.get("tags"):
             lookup[lookup_key]["tags"] = list(override["tags"])
+
+        if "marks" in override:
+            lookup[lookup_key]["marks"] = override["marks"]
 
     return lookup
 
@@ -424,6 +437,7 @@ def find_question_metadata(paper, q_num):
         "question": normalized_q_num,
         "img": f"{paper}_q{normalized_q_num}.png",
         "ms_img": f"{paper.replace('_qp_', '_ms_')}_q{normalized_q_num}.png",
+        "marks": load_question_marks().get(f"{paper}_q{normalized_q_num}"),
     }
 
 
@@ -1379,6 +1393,17 @@ def update_question_metadata(paper, q_num):
     title = str(payload.get("title", "")).strip()
     topic_key = str(payload.get("topic_key", "")).strip() or base_metadata["topic_key"]
     tags = normalize_tag_list(payload.get("tags", base_metadata["tags"]))
+    raw_marks = payload.get("marks", None)
+
+    if raw_marks in (None, ""):
+        marks = base_metadata.get("marks")
+    else:
+        try:
+            marks = int(raw_marks)
+        except (TypeError, ValueError):
+            abort(400)
+        if marks < 0 or marks > 200:
+            abort(400)
 
     valid_topics = {choice["key"] for choice in load_topic_choices()}
     if not title or topic_key not in valid_topics:
@@ -1397,6 +1422,9 @@ def update_question_metadata(paper, q_num):
 
     if tags != list(base_metadata["tags"]):
         override_payload["tags"] = tags
+
+    if marks != base_metadata.get("marks"):
+        override_payload["marks"] = marks
 
     if override_payload:
         overrides[question_override_key] = override_payload
