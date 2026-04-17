@@ -76,6 +76,13 @@
         color: #f4eaff;
         text-decoration: none;
         font-size: 0.8rem;
+        background: transparent;
+        text-align: left;
+        transition: background 0.18s ease, border-color 0.18s ease;
+    }
+
+    .builder-area {
+        margin-bottom: 8px;
     }
 
     .builder-link-group {
@@ -89,6 +96,26 @@
         color: #ffffff;
     }
 
+    .builder-link-main {
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+    }
+
+    .builder-link-label {
+        color: #f4eaff;
+        font-size: 0.8rem;
+        font-weight: 600;
+        line-height: 1.1;
+    }
+
+    .builder-link-hint {
+        color: #bda7d8;
+        font-size: 0.63rem;
+        line-height: 1.1;
+    }
+
     .builder-count {
         background: rgba(255, 255, 255, 0.14);
         border-radius: 999px;
@@ -96,6 +123,28 @@
         text-align: center;
         padding: 1px 7px;
         font-size: 0.72rem;
+    }
+
+    .builder-counts {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        margin-left: auto;
+    }
+
+    .builder-marks {
+        background: rgba(187, 134, 252, 0.22);
+        border: 1px solid rgba(187, 134, 252, 0.35);
+    }
+
+    .builder-chevron {
+        font-size: 0.82rem;
+        color: #d9c2ff;
+        transition: transform 0.18s ease;
+    }
+
+    .builder-link[aria-expanded="true"] .builder-chevron {
+        transform: rotate(90deg);
     }
 
     .builder-clear {
@@ -111,6 +160,137 @@
     .builder-clear:hover {
         background: rgba(255, 255, 255, 0.12);
         color: #ffffff;
+    }
+
+    .builder-preview {
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.04);
+        border-radius: 10px;
+        padding: 8px;
+        display: none;
+        margin-top: 8px;
+    }
+
+    .builder-preview.open {
+        display: block;
+    }
+
+    .builder-preview-empty {
+        color: #bfc6d1;
+        font-size: 0.78rem;
+        line-height: 1.4;
+    }
+
+    .builder-preview-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 8px;
+    }
+
+    .builder-preview-title {
+        font-size: 0.74rem;
+        font-weight: 700;
+        color: #f6f2ff;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+    }
+
+    .builder-preview-link {
+        color: #d9c2ff;
+        text-decoration: none;
+        font-size: 0.7rem;
+    }
+
+    .builder-preview-link:hover {
+        color: #ffffff;
+    }
+
+    .builder-preview-stats {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 6px;
+        margin-bottom: 8px;
+    }
+
+    .builder-preview-stat {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 8px;
+        padding: 6px 8px;
+        background: rgba(255, 255, 255, 0.03);
+    }
+
+    .builder-preview-stat-label {
+        display: block;
+        font-size: 0.66rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: #bfc6d1;
+        margin-bottom: 2px;
+    }
+
+    .builder-preview-stat-value {
+        color: #ffffff;
+        font-size: 0.8rem;
+        font-weight: 700;
+    }
+
+    .builder-preview-section {
+        margin-top: 8px;
+    }
+
+    .builder-preview-section-title {
+        font-size: 0.68rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: #bfc6d1;
+        margin-bottom: 5px;
+    }
+
+    .builder-question-list {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .builder-question-item {
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 8px;
+        padding: 5px 7px;
+        background: rgba(255, 255, 255, 0.03);
+    }
+
+    .builder-topic-summary,
+    .builder-question-meta-preview {
+        color: #bfc6d1;
+        font-size: 0.68rem;
+        line-height: 1.35;
+    }
+
+    .builder-topic-summary strong {
+        color: #f4eaff;
+        font-weight: 600;
+    }
+
+    .builder-question-name {
+        color: #ffffff;
+        font-size: 0.71rem;
+        line-height: 1.3;
+        margin-bottom: 2px;
+    }
+
+    .builder-more-row {
+        color: #d9c2ff;
+        font-size: 0.68rem;
+        text-align: center;
+        padding: 4px 6px 0;
+    }
+
+    .builder-preview-note {
+        margin-top: 6px;
+        color: #bfc6d1;
+        font-size: 0.66rem;
     }
 
     .sidebar-tools {
@@ -212,7 +392,54 @@
         margin-top: 2px;
     }
 
+    .settings-section {
+        margin-top: 16px;
+        padding-top: 16px;
+        border-top: 1px solid #e5e7eb;
+    }
+
+    .settings-section-title {
+        font-size: 0.74rem;
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #6b7280;
+        margin-bottom: 10px;
+    }
+
+    #settings-modal .paper-filter-btn {
+        border-color: #d0d7de;
+        background: #ffffff;
+        color: #20252c;
+    }
+
+    #settings-modal .paper-filter-menu {
+        background: #ffffff;
+        border-color: #d0d7de;
+        box-shadow: 0 20px 44px rgba(15, 23, 42, 0.16);
+    }
+
+    #settings-modal .paper-filter-option {
+        color: #374151;
+    }
+
+    #settings-modal .saved-toggle {
+        border-color: #d0d7de;
+        background: #f8fafc;
+        color: #20252c;
+    }
+
+    #settings-modal .saved-toggle small {
+        color: #6b7280;
+    }
+
     .sidebar-scroll { overflow-y: auto; flex-grow: 1; }
+
+    @media (max-height: 760px) {
+        .builder-preview {
+            max-height: min(46vh, 300px);
+        }
+    }
 
     /* Sidebar List Items */
     .list-group-item {
@@ -543,42 +770,29 @@
             </div>
           </div>
 
-          <div class="builder-link-group">
-              <a href="/builder" class="builder-link">
-                  <span>Paper Builder</span>
-                  <span class="builder-count" id="builder-count">0</span>
-              </a>
-              <button type="button" class="builder-clear" id="builder-clear-btn" title="Clear paper builder">Clear</button>
+          <div class="builder-area">
+              <div class="builder-link-group">
+                  <button type="button" class="builder-link" id="builder-summary-toggle" aria-expanded="false" aria-controls="builder-preview">
+                      <span class="builder-link-main">
+                          <span class="builder-link-label">Paper Builder</span>
+                          <span class="builder-link-hint" id="builder-toggle-hint">Click to expand</span>
+                      </span>
+                      <span class="builder-counts">
+                          <span class="builder-count" id="builder-count">0Q</span>
+                          <span class="builder-count builder-marks" id="builder-marks">[0]</span>
+                          <span class="builder-chevron">›</span>
+                      </span>
+                  </button>
+                  <button type="button" class="builder-clear" id="builder-clear-btn" title="Clear paper builder">Clear</button>
+              </div>
+
+              <div class="builder-preview" id="builder-preview">
+                  <div class="builder-preview-empty">No questions selected yet.</div>
+              </div>
           </div>
 
           <div class="sidebar-tools">
               <input type="text" class="form-control form-control-sm sidebar-search" id="sidebar-search" placeholder="Search topics, tags, titles">
-              <div class="paper-filter" id="paper-filter">
-                  <button type="button" class="paper-filter-btn" id="paper-filter-btn">
-                      <span id="paper-filter-label">All papers</span>
-                      <span>▾</span>
-                  </button>
-                  <div class="paper-filter-menu" id="paper-filter-menu">
-                      <div class="paper-filter-actions">
-                          <button type="button" class="btn btn-sm btn-outline-light" id="paper-select-all">All</button>
-                          <button type="button" class="btn btn-sm btn-outline-light" id="paper-clear-all">None</button>
-                      </div>
-                      <div id="paper-filter-options" data-papers='{{ papers|tojson }}'></div>
-                  </div>
-              </div>
-              <label class="saved-toggle">
-                  <input type="checkbox" id="hide-assigned-toggle" {% if saved_paper_count == 0 %}disabled{% endif %}>
-                  <span>
-                      Hide saved-paper questions
-                      <small id="hide-assigned-caption">
-                          {% if saved_paper_count %}
-                              {{ saved_paper_count }} saved paper{{ '' if saved_paper_count == 1 else 's' }} tracked
-                          {% else %}
-                              No saved papers yet
-                          {% endif %}
-                      </small>
-                  </span>
-              </label>
           </div>
         </div>
 
@@ -665,7 +879,7 @@
                             {% endif %}
                             <span class="assigned-meta" data-assignment-meta {% if not q.assigned_papers %}hidden{% endif %}>
                                 {% if q.assigned_papers %}
-                                    In saved papers: {{ q.assigned_papers|map(attribute='title')|list|join(' • ') }}
+                                    Assigned
                                 {% endif %}
                             </span>
                         </div>
@@ -758,7 +972,7 @@
                             {% endif %}
                             <span class="assigned-meta" data-assignment-meta {% if not q.assigned_papers %}hidden{% endif %}>
                                 {% if q.assigned_papers %}
-                                    In saved papers: {{ q.assigned_papers|map(attribute='title')|list|join(' • ') }}
+                                    Assigned
                                 {% endif %}
                             </span>
                         </div>
@@ -793,7 +1007,7 @@
 <div class="modal-backdrop-simple" id="settings-modal">
     <div class="modal-panel-simple">
         <div class="modal-title-simple">Settings</div>
-        <div class="modal-subtitle-simple">Choose your default paper and turn edit mode on when you want to curate question metadata.</div>
+        <div class="modal-subtitle-simple">Default paper, browser filters, and edit mode.</div>
         <div class="mb-3">
             <label class="form-label" for="favorite-level-select">Favourite paper</label>
             <select class="form-select" id="favorite-level-select">
@@ -810,6 +1024,39 @@
                 Enable edit mode
             </label>
             <div class="settings-help">Shows a pencil icon on each question card so you can edit its title, topic, and tags.</div>
+        </div>
+        <div class="settings-section">
+            <div class="settings-section-title">Question Browser</div>
+            <div class="mb-3">
+                <div class="form-label">Shown papers</div>
+                <div class="paper-filter" id="paper-filter">
+                    <button type="button" class="paper-filter-btn" id="paper-filter-btn">
+                        <span id="paper-filter-label">All papers</span>
+                        <span>▾</span>
+                    </button>
+                    <div class="paper-filter-menu" id="paper-filter-menu">
+                        <div class="paper-filter-actions">
+                            <button type="button" class="btn btn-sm btn-outline-secondary" id="paper-select-all">All</button>
+                            <button type="button" class="btn btn-sm btn-outline-secondary" id="paper-clear-all">None</button>
+                        </div>
+                        <div id="paper-filter-options" data-papers='{{ papers|tojson }}'></div>
+                    </div>
+                </div>
+                <div class="settings-help">Hide specific exam papers from the browser.</div>
+            </div>
+            <label class="saved-toggle">
+                <input type="checkbox" id="hide-assigned-toggle" {% if saved_paper_count == 0 %}disabled{% endif %}>
+                <span>
+                    Hide saved-paper questions
+                    <small id="hide-assigned-caption">
+                        {% if saved_paper_count %}
+                            {{ saved_paper_count }} saved paper{{ '' if saved_paper_count == 1 else 's' }} tracked
+                        {% else %}
+                            No saved papers yet
+                        {% endif %}
+                    </small>
+                </span>
+            </label>
         </div>
         <div class="edit-status" id="settings-status"></div>
         <div class="modal-actions-simple">
@@ -857,11 +1104,16 @@
 
 <script>
     const QUESTION_STORAGE_KEY = 'qbank.paperBuilder.questions';
+    const BUILDER_PREVIEW_OPEN_KEY = 'qbank.paperBuilder.previewOpen';
     const HIDE_ASSIGNED_STORAGE_KEY = 'qbank.browser.hideAssigned';
     const APP_SETTINGS = {{ app_settings|tojson }};
     const filterBar = document.getElementById('tag-filter-bar');
     const builderCount = document.getElementById('builder-count');
+    const builderMarks = document.getElementById('builder-marks');
     const builderClearButton = document.getElementById('builder-clear-btn');
+    const builderSummaryToggle = document.getElementById('builder-summary-toggle');
+    const builderPreview = document.getElementById('builder-preview');
+    const builderToggleHint = document.getElementById('builder-toggle-hint');
     const sidebarSearch = document.getElementById('sidebar-search');
     const topicLinks = Array.from(document.querySelectorAll('.list-group-item[data-topic-search]'));
     const paperFilter = document.getElementById('paper-filter');
@@ -908,6 +1160,9 @@
             if (question.paper === updatedQuestion.paper && String(question.question) === String(updatedQuestion.question)) {
                 question.title = updatedQuestion.title || question.title;
                 question.tags = updatedQuestion.tags || question.tags;
+                question.topic_key = updatedQuestion.topic_key || question.topic_key;
+                question.topic_name = updatedQuestion.topic_name || question.topic_name;
+                question.marks = updatedQuestion.marks ?? question.marks ?? null;
                 changed = true;
             }
         });
@@ -972,7 +1227,7 @@
         }
 
         meta.hidden = false;
-        meta.textContent = `In saved papers: ${assignments.map((paper) => paper.title).join(' • ')}`;
+        meta.textContent = 'Assigned';
     }
 
     function loadSelectedQuestions() {
@@ -998,17 +1253,206 @@
             question: row.dataset.question,
             title: row.dataset.viewTitle || '',
             tags: (row.dataset.viewTags || '').split('|').filter(Boolean),
+            topic_key: row.dataset.topicKey || '',
+            topic_name: row.dataset.topicName || '',
+            marks: row.dataset.marks === '' ? null : Number(row.dataset.marks),
         };
     }
 
+    function normalizeSelectedQuestion(question) {
+        return {
+            paper: question.paper,
+            question: String(question.question),
+            title: question.title || '',
+            tags: Array.isArray(question.tags) ? question.tags.filter(Boolean) : [],
+            topic_key: question.topic_key || '',
+            topic_name: question.topic_name || '',
+            marks: Number.isFinite(Number(question.marks)) ? Number(question.marks) : null,
+        };
+    }
+
+    function persistBuilderPreviewOpen(isOpen) {
+        localStorage.setItem(BUILDER_PREVIEW_OPEN_KEY, isOpen ? '1' : '0');
+    }
+
+    function isBuilderPreviewOpen() {
+        return localStorage.getItem(BUILDER_PREVIEW_OPEN_KEY) === '1';
+    }
+
+    function setBuilderPreviewOpen(isOpen) {
+        if (!builderPreview || !builderSummaryToggle) {
+            return;
+        }
+
+        builderPreview.classList.toggle('open', isOpen);
+        builderSummaryToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        if (builderToggleHint) {
+            builderToggleHint.textContent = isOpen ? 'Click to collapse' : 'Click to expand';
+        }
+        persistBuilderPreviewOpen(isOpen);
+    }
+
+    function escapeHtml(value) {
+        return String(value ?? '')
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+    }
+
+    function groupSelectedQuestionsByTopic(selected) {
+        const groups = new Map();
+
+        selected.forEach((question) => {
+            const key = question.topic_key || 'Unknown';
+            if (!groups.has(key)) {
+                groups.set(key, {
+                    name: question.topic_name || key,
+                    questionCount: 0,
+                    marks: 0,
+                    unknownMarks: 0,
+                });
+            }
+
+            const group = groups.get(key);
+            group.questionCount += 1;
+            if (typeof question.marks === 'number') {
+                group.marks += question.marks;
+            } else {
+                group.unknownMarks += 1;
+            }
+        });
+
+        return Array.from(groups.values()).sort((a, b) => a.name.localeCompare(b.name));
+    }
+
+    function renderBuilderPreview(selected) {
+        if (!builderPreview) {
+            return;
+        }
+
+        if (!selected.length) {
+            builderPreview.innerHTML = '<div class="builder-preview-empty">No questions selected yet.</div>';
+            return;
+        }
+
+        const totalMarks = selected.reduce((sum, question) => (
+            typeof question.marks === 'number' ? sum + question.marks : sum
+        ), 0);
+        const unknownMarks = selected.filter((question) => typeof question.marks !== 'number').length;
+        const topicGroups = groupSelectedQuestionsByTopic(selected);
+        const previewQuestions = selected.slice(0, 1);
+        const hiddenQuestionCount = Math.max(0, selected.length - previewQuestions.length);
+
+        const visibleTopicGroups = topicGroups.slice(0, 2);
+        const hiddenTopicCount = Math.max(0, topicGroups.length - visibleTopicGroups.length);
+        const topicSummaryParts = visibleTopicGroups.map((topic) => {
+            const markLabel = topic.unknownMarks ? `[${topic.marks}+]` : `[${topic.marks}]`;
+            return `<strong>${escapeHtml(topic.name)}</strong> ${markLabel}`;
+        });
+        if (hiddenTopicCount) {
+            topicSummaryParts.push(`+${hiddenTopicCount} more`);
+        }
+        const topicSummary = `${topicGroups.length} topic${topicGroups.length === 1 ? '' : 's'} • ${topicSummaryParts.join(' • ')}`;
+
+        const questionsHtml = previewQuestions.map((question) => `
+            <div class="builder-question-item">
+                <div class="builder-question-name">${escapeHtml(question.title || `${question.paper} Q${question.question}`)}</div>
+                <div class="builder-question-meta-preview">
+                    ${escapeHtml(question.topic_name || question.topic_key || 'Unknown topic')} • ${escapeHtml(question.paper)} • ${typeof question.marks === 'number' ? `[${question.marks}]` : '[?]'}
+                </div>
+            </div>
+        `).join('');
+
+        builderPreview.innerHTML = `
+            <div class="builder-preview-header">
+                <div class="builder-preview-title">Current paper</div>
+                <a href="/builder" class="builder-preview-link">Review & export</a>
+            </div>
+            <div class="builder-preview-stats">
+                <div class="builder-preview-stat">
+                    <span class="builder-preview-stat-label">Questions</span>
+                    <span class="builder-preview-stat-value">${selected.length}</span>
+                </div>
+                <div class="builder-preview-stat">
+                    <span class="builder-preview-stat-label">Marks</span>
+                    <span class="builder-preview-stat-value">[${totalMarks}${unknownMarks ? '+' : ''}]</span>
+                </div>
+            </div>
+            <div class="builder-preview-section">
+                <div class="builder-preview-section-title">Topics</div>
+                <div class="builder-topic-summary">${topicSummary}</div>
+            </div>
+            <div class="builder-preview-section">
+                <div class="builder-preview-section-title">Questions</div>
+                <div class="builder-question-list">${questionsHtml}</div>
+            </div>
+            ${hiddenQuestionCount ? `<div class="builder-more-row">+${hiddenQuestionCount} more question${hiddenQuestionCount === 1 ? '' : 's'}</div>` : ''}
+            ${unknownMarks ? `<div class="builder-preview-note">${unknownMarks} selected question${unknownMarks === 1 ? '' : 's'} ${unknownMarks === 1 ? 'has' : 'have'} no total mark yet.</div>` : ''}
+        `;
+
+    }
+
+    function hydrateSelectedQuestions(selected) {
+        const rowMap = new Map(
+            Array.from(document.querySelectorAll('.q-row[data-paper]')).map((row) => [
+                `${row.dataset.paper}::${row.dataset.question}`,
+                row,
+            ])
+        );
+        let changed = false;
+
+        const hydrated = selected.map((question) => {
+            const normalized = normalizeSelectedQuestion(question);
+            const row = rowMap.get(questionKey(normalized));
+            if (!row) {
+                return normalized;
+            }
+
+            const enriched = buildQuestionPayload(row);
+            if (
+                normalized.title !== enriched.title
+                || normalized.topic_key !== enriched.topic_key
+                || normalized.topic_name !== enriched.topic_name
+                || normalized.marks !== enriched.marks
+                || JSON.stringify(normalized.tags) !== JSON.stringify(enriched.tags)
+            ) {
+                changed = true;
+                return {
+                    ...normalized,
+                    ...enriched,
+                };
+            }
+
+            return normalized;
+        });
+
+        if (changed) {
+            localStorage.setItem(QUESTION_STORAGE_KEY, JSON.stringify(hydrated));
+        }
+
+        return hydrated;
+    }
+
     function updateSelectionUI() {
-        const selected = loadSelectedQuestions();
+        const selected = hydrateSelectedQuestions(loadSelectedQuestions());
         const selectedKeys = new Set(selected.map(questionKey));
         const rows = document.querySelectorAll('.q-row[data-paper]');
+        const totalMarks = selected.reduce((sum, question) => (
+            typeof question.marks === 'number' ? sum + question.marks : sum
+        ), 0);
+        const unknownMarks = selected.filter((question) => typeof question.marks !== 'number').length;
 
         if (builderCount) {
-            builderCount.textContent = String(selected.length);
+            builderCount.textContent = `${selected.length}Q`;
         }
+
+        if (builderMarks) {
+            builderMarks.textContent = `[${totalMarks}${unknownMarks ? '+' : ''}]`;
+        }
+
+        renderBuilderPreview(selected);
 
         rows.forEach((row) => {
             const key = `${row.dataset.paper}::${row.dataset.question}`;
@@ -1270,6 +1714,13 @@
         row.dataset.tagVisible = 'true';
     });
     applyCombinedFilters();
+
+    if (builderSummaryToggle) {
+        setBuilderPreviewOpen(isBuilderPreviewOpen());
+        builderSummaryToggle.addEventListener('click', () => {
+            setBuilderPreviewOpen(!builderPreview.classList.contains('open'));
+        });
+    }
 
     if (builderClearButton) {
         builderClearButton.addEventListener('click', () => {

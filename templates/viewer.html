@@ -255,6 +255,9 @@
         question: {{ question_metadata.question|tojson }},
         title: {{ question_title|tojson }},
         tags: {{ question_tags|tojson }},
+        topic_key: {{ question_metadata.topic_key|tojson }},
+        topic_name: {{ question_metadata.topic_name|tojson }},
+        marks: {{ question_metadata.marks|tojson }},
     };
 
     function loadSelectedQuestions() {

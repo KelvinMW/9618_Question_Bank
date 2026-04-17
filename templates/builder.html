@@ -3,83 +3,343 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paper Builder</title>
+    <title>Review & Export</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         :root {
-            --accent: #bb86fc;
-            --accent-soft: rgba(187, 134, 252, 0.12);
-            --ink: #2a2f36;
-            --muted: #7b8491;
+            --bg: #f2f5fb;
             --surface: #ffffff;
-            --surface-alt: #f5f7fb;
+            --surface-soft: #f8f9fd;
+            --border: #dfe5ef;
+            --ink: #262c34;
+            --muted: #6f7885;
+            --accent: #b784f7;
+            --accent-deep: #6d3cb5;
+            --accent-soft: rgba(183, 132, 247, 0.13);
+            --danger-soft: #fff2f1;
+            --danger-border: #f0c6c3;
+            --shadow: 0 16px 40px rgba(29, 35, 44, 0.07);
+        }
+
+        * {
+            box-sizing: border-box;
         }
 
         body {
             margin: 0;
-            background: linear-gradient(180deg, #f8faff 0%, #eef2f8 100%);
-            color: var(--ink);
             min-height: 100vh;
+            font-family: Inter, "Segoe UI", sans-serif;
+            color: var(--ink);
+            background:
+                radial-gradient(circle at top left, rgba(183, 132, 247, 0.12), transparent 32%),
+                linear-gradient(180deg, #f8faff 0%, #eef2f8 100%);
         }
 
         .builder-shell {
-            max-width: 1040px;
+            max-width: 1160px;
             margin: 0 auto;
-            padding: 32px 20px 48px;
+            padding: 30px 20px 56px;
         }
 
-        .builder-header {
+        .builder-topbar {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            gap: 16px;
-            margin-bottom: 24px;
-        }
-
-        .builder-title {
-            font-size: 2rem;
-            font-weight: 700;
-            margin: 0 0 6px;
-        }
-
-        .builder-subtitle {
-            margin: 0;
-            color: var(--muted);
-        }
-
-        .builder-card,
-        .question-card {
-            background: var(--surface);
-            border: 1px solid #e3e8ef;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(27, 31, 36, 0.05);
-        }
-
-        .builder-card {
-            padding: 18px;
+            gap: 20px;
             margin-bottom: 20px;
         }
 
-        .toolbar {
+        .builder-eyebrow {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 12px;
+            border-radius: 999px;
+            background: rgba(255, 255, 255, 0.72);
+            border: 1px solid rgba(183, 132, 247, 0.28);
+            color: var(--accent-deep);
+            font-size: 0.74rem;
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        .builder-title {
+            margin: 0 0 8px;
+            font-size: clamp(2rem, 3vw, 2.8rem);
+            line-height: 1;
+            font-weight: 800;
+        }
+
+        .builder-subtitle {
+            max-width: 760px;
+            margin: 0;
+            color: var(--muted);
+            font-size: 0.98rem;
+            line-height: 1.55;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 14px;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, 0.82);
+            color: var(--ink);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+            box-shadow: 0 8px 24px rgba(29, 35, 44, 0.04);
+        }
+
+        .back-link:hover {
+            color: var(--accent-deep);
+            border-color: rgba(183, 132, 247, 0.42);
+        }
+
+        .page-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 2fr) minmax(290px, 0.95fr);
+            gap: 18px;
+            align-items: start;
+        }
+
+        .panel {
+            background: rgba(255, 255, 255, 0.92);
+            border: 1px solid rgba(255, 255, 255, 0.88);
+            border-radius: 22px;
+            box-shadow: var(--shadow);
+            backdrop-filter: blur(10px);
+        }
+
+        .hero-panel {
+            padding: 20px;
+            margin-bottom: 18px;
+        }
+
+        .hero-top {
+            display: flex;
+            justify-content: space-between;
+            gap: 16px;
+            align-items: flex-start;
+            margin-bottom: 18px;
+        }
+
+        .hero-title-group {
+            min-width: 0;
+            flex: 1 1 auto;
+        }
+
+        .title-input-wrap[hidden] {
+            display: none !important;
+        }
+
+        .field-label {
+            display: block;
+            margin-bottom: 6px;
+            font-size: 0.73rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--muted);
+            font-weight: 700;
+        }
+
+        .hero-title-input {
+            border-radius: 14px;
+            border: 1px solid var(--border);
+            padding: 14px 16px;
+            font-size: 1rem;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.96);
+        }
+
+        .hero-title-input:focus {
+            border-color: rgba(183, 132, 247, 0.55);
+            box-shadow: 0 0 0 4px rgba(183, 132, 247, 0.12);
+        }
+
+        .title-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 10px;
+            color: var(--muted);
+            font-size: 0.82rem;
+            font-weight: 600;
+        }
+
+        .title-toggle input {
+            width: 16px;
+            height: 16px;
+            accent-color: #8d57de;
+        }
+
+        .draft-tools {
+            flex: 0 0 auto;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .draft-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 12px;
+            border-radius: 14px;
+            background: var(--surface-soft);
+            border: 1px solid var(--border);
+            color: var(--muted);
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .draft-chip strong {
+            color: var(--ink);
+        }
+
+        .draft-save-btn {
+            border-radius: 12px;
+            font-weight: 600;
+            padding-inline: 14px;
+        }
+
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+            margin-bottom: 18px;
+        }
+
+        .stat-card {
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            background: linear-gradient(180deg, #ffffff 0%, #f8faff 100%);
+            padding: 14px 14px 12px;
+        }
+
+        .stat-label {
+            display: block;
+            font-size: 0.68rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--muted);
+            margin-bottom: 4px;
+        }
+
+        .stat-value {
+            display: block;
+            font-size: 1.15rem;
+            line-height: 1.1;
+            font-weight: 800;
+            color: var(--ink);
+        }
+
+        .stat-subtle {
+            display: block;
+            margin-top: 4px;
+            font-size: 0.74rem;
+            color: var(--muted);
+        }
+
+        .hero-actions {
             display: flex;
             flex-wrap: wrap;
-            gap: 12px;
+            gap: 10px;
             align-items: center;
         }
 
-        .title-control {
+        .action-group {
             display: flex;
-            flex-direction: column;
-            gap: 6px;
-            min-width: 280px;
-            flex: 1 1 360px;
+            flex-wrap: wrap;
+            gap: 8px;
+            align-items: center;
+            padding: 10px 12px;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            background: rgba(248, 250, 255, 0.82);
         }
 
-        .title-label {
-            font-size: 0.78rem;
+        .action-group-title {
+            font-size: 0.68rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
             color: var(--muted);
+            font-weight: 700;
+            margin-right: 4px;
+        }
+
+        .action-group .btn {
+            border-radius: 12px;
             font-weight: 600;
-            letter-spacing: 0.02em;
+        }
+
+        .action-primary {
+            background: linear-gradient(135deg, #7f4dd8 0%, #b784f7 100%);
+            border: none;
+            box-shadow: 0 10px 24px rgba(127, 77, 216, 0.2);
+        }
+
+        .action-primary:hover,
+        .action-primary:focus {
+            background: linear-gradient(135deg, #7241cd 0%, #a86ff4 100%);
+        }
+
+        .action-secondary {
+            border: 1px solid rgba(183, 132, 247, 0.46);
+            background: rgba(183, 132, 247, 0.08);
+            color: var(--accent-deep);
+        }
+
+        .action-secondary:hover,
+        .action-secondary:focus {
+            border-color: rgba(183, 132, 247, 0.62);
+            background: rgba(183, 132, 247, 0.14);
+            color: #5b2d91;
+        }
+
+        .save-status {
+            min-height: 20px;
+            margin-top: 12px;
+            color: var(--muted);
+            font-size: 0.82rem;
+        }
+
+        .section-panel {
+            padding: 18px;
+            margin-bottom: 18px;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            gap: 14px;
+            align-items: flex-start;
+            margin-bottom: 14px;
+        }
+
+        .section-title {
+            margin: 0;
+            font-size: 1.05rem;
+            font-weight: 800;
+        }
+
+        .section-subtitle {
+            margin: 4px 0 0;
+            color: var(--muted);
+            font-size: 0.84rem;
+            line-height: 1.45;
+        }
+
+        .section-count {
+            color: var(--muted);
+            font-size: 0.8rem;
+            font-weight: 700;
+            white-space: nowrap;
         }
 
         .question-list {
@@ -88,220 +348,422 @@
             gap: 12px;
         }
 
-        .saved-papers-card {
-            padding: 18px;
-        }
-
-        .saved-papers-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 12px;
-            margin-bottom: 16px;
-        }
-
-        .saved-papers-title {
-            font-size: 1rem;
-            font-weight: 700;
-            margin: 0;
-        }
-
-        .saved-papers-subtitle {
-            margin: 4px 0 0;
-            color: var(--muted);
-            font-size: 0.84rem;
-        }
-
-        .saved-papers-list {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-        }
-
-        .saved-paper-item {
-            border: 1px solid #e3e8ef;
-            border-radius: 14px;
-            padding: 14px 16px;
-            background: #fbfcff;
-            display: flex;
-            justify-content: space-between;
-            gap: 16px;
-            align-items: flex-start;
-        }
-
-        .saved-paper-item.active {
-            border-color: var(--accent);
-            box-shadow: inset 0 0 0 1px rgba(187, 134, 252, 0.2);
-            background: #fffaff;
-        }
-
-        .saved-paper-name {
-            font-size: 0.96rem;
-            font-weight: 600;
-            margin-bottom: 4px;
-        }
-
-        .saved-paper-meta {
-            color: var(--muted);
-            font-size: 0.8rem;
-            display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            align-items: center;
-        }
-
-        .saved-paper-actions {
-            display: flex;
-            gap: 8px;
-            flex: 0 0 auto;
-        }
-
-        .save-status {
-            min-height: 20px;
-            font-size: 0.82rem;
-            color: var(--muted);
-        }
-
-        .export-group {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-
         .question-card {
-            padding: 14px 16px;
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: auto auto minmax(0, 1fr) auto;
             gap: 14px;
-            align-items: flex-start;
+            align-items: start;
+            padding: 16px;
+            border-radius: 18px;
+            border: 1px solid var(--border);
+            background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
+            transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease, opacity 0.16s ease;
+        }
+
+        .question-card[draggable="true"] {
+            cursor: grab;
+        }
+
+        .question-card.dragging {
+            opacity: 0.5;
+            transform: scale(0.99);
+            border-color: rgba(183, 132, 247, 0.45);
+            box-shadow: 0 16px 34px rgba(109, 60, 181, 0.14);
+        }
+
+        .question-card.drag-target-before {
+            box-shadow: inset 0 4px 0 rgba(183, 132, 247, 0.7);
+        }
+
+        .question-card.drag-target-after {
+            box-shadow: inset 0 -4px 0 rgba(183, 132, 247, 0.7);
         }
 
         .question-index {
-            width: 34px;
-            height: 34px;
-            border-radius: 10px;
+            width: 38px;
+            height: 38px;
+            border-radius: 12px;
             background: var(--accent-soft);
-            color: #5b2d91;
+            color: var(--accent-deep);
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 700;
+            font-weight: 800;
+            font-size: 0.96rem;
             flex: 0 0 auto;
         }
 
+        .drag-handle {
+            width: 38px;
+            height: 38px;
+            border-radius: 12px;
+            border: 1px dashed rgba(183, 132, 247, 0.35);
+            background: rgba(183, 132, 247, 0.07);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-deep);
+            flex: 0 0 auto;
+        }
+
+        .drag-handle svg {
+            opacity: 0.82;
+        }
+
         .question-title {
+            margin: 0 0 6px;
             font-size: 1rem;
-            font-weight: 600;
-            margin-bottom: 4px;
+            font-weight: 700;
+            line-height: 1.35;
         }
 
         .question-meta {
-            color: var(--muted);
-            font-size: 0.82rem;
             display: flex;
             flex-wrap: wrap;
-            gap: 8px;
-            align-items: center;
+            gap: 7px;
+            margin-bottom: 8px;
         }
 
-        .pill {
+        .meta-chip {
             display: inline-flex;
             align-items: center;
+            gap: 6px;
             border-radius: 999px;
-            padding: 3px 9px;
-            border: 1px solid #dbe1e8;
-            background: #f8fafc;
+            padding: 4px 10px;
+            border: 1px solid var(--border);
+            background: var(--surface-soft);
+            font-size: 0.75rem;
+            color: var(--muted);
+            white-space: nowrap;
+        }
+
+        .meta-chip.topic-chip {
+            background: rgba(183, 132, 247, 0.11);
+            border-color: rgba(183, 132, 247, 0.26);
+            color: var(--accent-deep);
+        }
+
+        .meta-chip.marks-chip {
+            color: var(--ink);
+            font-weight: 700;
+        }
+
+        .question-tags {
+            color: var(--muted);
+            font-size: 0.78rem;
+            line-height: 1.45;
         }
 
         .question-actions {
             display: flex;
             gap: 8px;
-            flex: 0 0 auto;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            max-width: 110px;
+        }
+
+        .icon-btn {
+            width: 36px;
+            height: 36px;
+            padding: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 12px;
+            border: 1px solid var(--border);
+            background: #fff;
+            color: var(--ink);
+        }
+
+        .icon-btn:hover {
+            border-color: rgba(183, 132, 247, 0.4);
+            color: var(--accent-deep);
+            background: rgba(183, 132, 247, 0.08);
+        }
+
+        .remove-btn {
+            border-radius: 12px;
+            border-color: var(--danger-border);
+            background: var(--danger-soft);
+            color: #b2413d;
+            font-weight: 700;
+        }
+
+        .remove-btn:hover {
+            background: #ffe3e1;
+            border-color: #e5aaa5;
+            color: #972d29;
         }
 
         .empty-state {
             text-align: center;
-            padding: 48px 20px;
+            padding: 46px 20px;
             color: var(--muted);
+            border-radius: 18px;
+            border: 1px dashed var(--border);
+            background: linear-gradient(180deg, #ffffff 0%, #fafbfe 100%);
+        }
+
+        .empty-state strong {
+            display: block;
+            color: var(--ink);
+            font-size: 1rem;
+            margin-bottom: 6px;
+        }
+
+        .sidebar-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 18px;
+        }
+
+        .sidebar-panel {
+            padding: 18px;
+        }
+
+        .topic-balance-list,
+        .saved-papers-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .topic-balance-item,
+        .saved-paper-item {
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            background: linear-gradient(180deg, #ffffff 0%, #fafbfe 100%);
+            padding: 12px 14px;
+        }
+
+        .topic-balance-item {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .topic-balance-name,
+        .saved-paper-name {
+            font-size: 0.92rem;
+            font-weight: 700;
+            margin-bottom: 2px;
+        }
+
+        .topic-balance-meta,
+        .saved-paper-meta {
+            color: var(--muted);
+            font-size: 0.77rem;
+        }
+
+        .saved-paper-item.active {
+            border-color: rgba(183, 132, 247, 0.46);
+            box-shadow: inset 0 0 0 1px rgba(183, 132, 247, 0.18);
+            background: linear-gradient(180deg, #fffaff 0%, #f9f5ff 100%);
+        }
+
+        .saved-paper-top {
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .saved-paper-actions {
+            display: flex;
+            gap: 8px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .saved-paper-actions .btn {
+            border-radius: 10px;
+            font-size: 0.76rem;
+            font-weight: 600;
+        }
+
+        .helper-text {
+            color: var(--muted);
+            font-size: 0.78rem;
+            line-height: 1.45;
+        }
+
+        @media (max-width: 980px) {
+            .page-grid {
+                grid-template-columns: 1fr;
+            }
         }
 
         @media (max-width: 720px) {
-            .builder-header,
-            .question-card {
+            .builder-topbar,
+            .hero-top,
+            .question-card,
+            .saved-paper-top {
                 flex-direction: column;
             }
 
+            .hero-stats {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .question-card {
+                grid-template-columns: 1fr;
+            }
+
             .question-actions {
-                width: 100%;
+                justify-content: flex-start;
+                max-width: none;
             }
         }
     </style>
 </head>
 <body>
     <div class="builder-shell">
-        <div class="builder-header">
+        <div class="builder-topbar">
             <div>
-                <h1 class="builder-title">Paper Builder</h1>
-                <p class="builder-subtitle">Reorder your selected questions, then export them as a numbered PDF.</p>
+                <div class="builder-eyebrow">Paper</div>
+                <h1 class="builder-title">Review & Export</h1>
+                <p class="builder-subtitle">Check the title, reorder questions, review the balance, then export.</p>
             </div>
-            <a href="/" class="btn btn-outline-secondary">Back to Bank</a>
+            <a href="/" class="back-link">Back to Bank</a>
         </div>
 
-        <div class="builder-card">
-            <div class="toolbar">
-                <div class="title-control">
-                    <label class="title-label" for="paper-title">Paper Title</label>
-                    <input type="text" class="form-control" id="paper-title" value="Custom Question Paper" placeholder="Paper title shown at the top of the PDF">
-                </div>
-                <div class="export-group">
-                    <button type="button" class="btn btn-outline-secondary" id="save-paper-btn">Save paper</button>
-                    <button type="button" class="btn btn-outline-secondary" id="save-copy-btn">Save as new</button>
-                    <button type="button" class="btn btn-primary" id="generate-btn">Export Questions PDF</button>
-                    <button type="button" class="btn btn-outline-primary" id="generate-ms-btn">Export Mark Scheme PDF</button>
-                </div>
-                <button type="button" class="btn btn-outline-secondary" id="clear-all-btn">Clear selection</button>
-                <span class="text-muted small" id="question-count">0 questions selected</span>
-            </div>
-            <div class="save-status mt-3" id="save-status"></div>
-        </div>
+        <div class="page-grid">
+            <div class="main-column">
+                <div class="panel hero-panel">
+                    <div class="hero-top">
+                        <div class="hero-title-group">
+                            <label class="title-toggle" for="title-enabled">
+                                <input type="checkbox" id="title-enabled">
+                                <span>Add title to PDF</span>
+                            </label>
+                            <div class="title-input-wrap" id="title-input-wrap" hidden>
+                                <label class="field-label" for="paper-title" style="margin-top: 12px;">PDF Title</label>
+                                <input type="text" class="form-control hero-title-input" id="paper-title" value="" placeholder="Optional PDF title">
+                            </div>
+                        </div>
+                        <div class="draft-tools">
+                            <div class="draft-chip" id="draft-chip">
+                                <span>Draft</span>
+                                <strong id="draft-chip-text">Unsaved</strong>
+                            </div>
+                            <button type="button" class="btn btn-outline-secondary draft-save-btn" id="save-paper-btn">Save draft</button>
+                        </div>
+                    </div>
 
-        <div id="question-list" class="question-list"></div>
+                    <div class="hero-stats">
+                        <div class="stat-card">
+                            <span class="stat-label">Questions</span>
+                            <span class="stat-value" id="summary-questions">0Q</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-label">Marks</span>
+                            <span class="stat-value" id="summary-marks">[0]</span>
+                        </div>
+                    </div>
 
-        <div class="builder-card saved-papers-card">
-            <div class="saved-papers-header">
-                <div>
-                    <h2 class="saved-papers-title">Saved Papers</h2>
-                    <p class="saved-papers-subtitle">Saved papers store the question list so you can reopen and reuse them later.</p>
+                    <div class="hero-actions">
+                        <div class="action-group">
+                            <span class="action-group-title">Export</span>
+                            <button type="button" class="btn btn-primary action-primary" id="generate-assign-btn">Export &amp; assign questions</button>
+                            <button type="button" class="btn action-secondary" id="generate-only-btn">Export only</button>
+                            <button type="button" class="btn action-secondary" id="generate-ms-btn">Export mark scheme</button>
+                        </div>
+                    </div>
+
+                    <div class="save-status" id="save-status"></div>
                 </div>
-                <span class="text-muted small" id="saved-paper-count">{{ saved_paper_count }} saved</span>
+
+                <div class="panel section-panel">
+                    <div class="section-header">
+                        <div>
+                            <h2 class="section-title">Selected Questions</h2>
+                            <p class="section-subtitle">Reorder here before you export.</p>
+                        </div>
+                        <span class="section-count" id="question-section-count">0 selected</span>
+                    </div>
+                    <div id="question-list" class="question-list"></div>
+                </div>
             </div>
-            <div id="saved-papers-list" class="saved-papers-list"></div>
+
+            <aside class="sidebar-stack">
+                <div class="panel sidebar-panel">
+                    <div class="section-header">
+                        <div>
+                            <h2 class="section-title">Topic Balance</h2>
+                            <p class="section-subtitle">Questions and marks by topic.</p>
+                        </div>
+                    </div>
+                    <div id="topic-balance-list" class="topic-balance-list"></div>
+                </div>
+
+                <div class="panel sidebar-panel">
+                    <div class="section-header">
+                        <div>
+                            <h2 class="section-title">Drafts</h2>
+                            <p class="section-subtitle">Saved versions of this paper.</p>
+                        </div>
+                        <span class="section-count" id="saved-paper-count">{{ saved_paper_count }} saved</span>
+                    </div>
+                    <div id="saved-papers-list" class="saved-papers-list"></div>
+                </div>
+            </aside>
         </div>
     </div>
 
     <script>
         const QUESTION_STORAGE_KEY = 'qbank.paperBuilder.questions';
         const PAPER_TITLE_STORAGE_KEY = 'qbank.paperBuilder.title';
+        const PAPER_TITLE_ENABLED_KEY = 'qbank.paperBuilder.titleEnabled';
         const ACTIVE_SAVED_PAPER_KEY = 'qbank.paperBuilder.activeSavedPaperId';
+
         const questionList = document.getElementById('question-list');
-        const questionCount = document.getElementById('question-count');
+        const questionSectionCount = document.getElementById('question-section-count');
         const paperTitleInput = document.getElementById('paper-title');
-        const generateButton = document.getElementById('generate-btn');
+        const titleInputWrap = document.getElementById('title-input-wrap');
+        const titleEnabledCheckbox = document.getElementById('title-enabled');
+        const generateAssignButton = document.getElementById('generate-assign-btn');
+        const generateOnlyButton = document.getElementById('generate-only-btn');
         const generateMsButton = document.getElementById('generate-ms-btn');
-        const clearAllButton = document.getElementById('clear-all-btn');
         const savePaperButton = document.getElementById('save-paper-btn');
-        const saveCopyButton = document.getElementById('save-copy-btn');
         const saveStatus = document.getElementById('save-status');
         const savedPapersList = document.getElementById('saved-papers-list');
         const savedPaperCount = document.getElementById('saved-paper-count');
+        const topicBalanceList = document.getElementById('topic-balance-list');
+        const summaryQuestions = document.getElementById('summary-questions');
+        const summaryMarks = document.getElementById('summary-marks');
+        const draftChipText = document.getElementById('draft-chip-text');
         let savedPapers = [];
+        let draggedQuestionIndex = null;
 
-        paperTitleInput.value = localStorage.getItem(PAPER_TITLE_STORAGE_KEY) || 'Custom Question Paper';
+        paperTitleInput.value = localStorage.getItem(PAPER_TITLE_STORAGE_KEY) || '';
+        titleEnabledCheckbox.checked = localStorage.getItem(PAPER_TITLE_ENABLED_KEY) === 'true';
+
+        function escapeHtml(value) {
+            return String(value ?? '')
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;')
+                .replace(/'/g, '&#39;');
+        }
+
+        function normalizeQuestion(question) {
+            return {
+                paper: question.paper,
+                question: String(question.question),
+                title: question.title || '',
+                tags: Array.isArray(question.tags) ? question.tags.filter(Boolean) : [],
+                topic_key: question.topic_key || '',
+                topic_name: question.topic_name || '',
+                marks: Number.isFinite(Number(question.marks)) ? Number(question.marks) : null,
+            };
+        }
 
         function loadQuestions() {
             try {
-                return JSON.parse(localStorage.getItem(QUESTION_STORAGE_KEY) || '[]');
+                return JSON.parse(localStorage.getItem(QUESTION_STORAGE_KEY) || '[]').map(normalizeQuestion);
             } catch {
                 return [];
             }
@@ -329,9 +791,11 @@
             return savedPapers.find((paper) => paper.id === activeId) || null;
         }
 
-        function getDraftSignature(title, questions) {
+        function getDraftSignature(title, questions, pdfTitle, pdfTitleEnabled) {
             return JSON.stringify({
                 title: (title || '').trim(),
+                pdf_title: (pdfTitle || '').trim(),
+                pdf_title_enabled: Boolean(pdfTitleEnabled),
                 questions: (questions || []).map((question) => ({
                     paper: question.paper,
                     question: question.question,
@@ -344,7 +808,152 @@
             if (!activePaper) {
                 return false;
             }
-            return getDraftSignature(paperTitleInput.value, loadQuestions()) !== getDraftSignature(activePaper.title, activePaper.questions);
+
+            return getDraftSignature(
+                getDraftStorageTitle(),
+                loadQuestions(),
+                getEffectivePaperTitle(),
+                titleEnabledCheckbox.checked,
+            ) !== getDraftSignature(
+                activePaper.title,
+                activePaper.questions,
+                activePaper.pdf_title,
+                activePaper.pdf_title_enabled,
+            );
+        }
+
+        function getEffectivePaperTitle() {
+            if (!titleEnabledCheckbox.checked) {
+                return '';
+            }
+            return paperTitleInput.value.trim();
+        }
+
+        function getOrdinalSuffix(day) {
+            const mod100 = day % 100;
+            if (mod100 >= 11 && mod100 <= 13) {
+                return 'th';
+            }
+            const mod10 = day % 10;
+            if (mod10 === 1) return 'st';
+            if (mod10 === 2) return 'nd';
+            if (mod10 === 3) return 'rd';
+            return 'th';
+        }
+
+        function getTopicNamesForNaming(questions) {
+            const seen = new Set();
+            const names = [];
+
+            questions.forEach((question) => {
+                const name = String(question.topic_name || question.topic_key || '').trim();
+                if (!name || seen.has(name)) {
+                    return;
+                }
+                seen.add(name);
+                names.push(name);
+            });
+
+            return names;
+        }
+
+        function buildGeneratedPaperName(questions, style = 'display') {
+            const now = new Date();
+            const monthShort = new Intl.DateTimeFormat('en', { month: 'short' }).format(now);
+            const yearFull = now.getFullYear();
+            const yearShort = String(yearFull).slice(-2);
+            const monthNum = String(now.getMonth() + 1).padStart(2, '0');
+            const dayNum = String(now.getDate()).padStart(2, '0');
+            const dayWithSuffix = `${now.getDate()}${getOrdinalSuffix(now.getDate())}`;
+            const topicNames = getTopicNamesForNaming(questions);
+            const visibleTopics = topicNames.slice(0, 2);
+            const hasMoreTopics = topicNames.length > visibleTopics.length;
+
+            if (style === 'filename') {
+                const suffixParts = visibleTopics
+                    .map((topic) => topic.replace(/[^A-Za-z0-9]+/g, '_').replace(/^_+|_+$/g, ''))
+                    .filter(Boolean);
+                if (hasMoreTopics) {
+                    suffixParts.push('etc');
+                }
+                return suffixParts.length
+                    ? `${yearShort}_${monthNum}_${dayNum}_${suffixParts.join('_')}`
+                    : `${yearShort}_${monthNum}_${dayNum}`;
+            }
+
+            const topicLabel = visibleTopics.join(', ');
+            if (topicLabel && hasMoreTopics) {
+                return `${monthShort}. ${dayWithSuffix} ${yearFull} - ${topicLabel}, etc.`;
+            }
+            if (topicLabel) {
+                return `${monthShort}. ${dayWithSuffix} ${yearFull} - ${topicLabel}`;
+            }
+            return `${monthShort}. ${dayWithSuffix} ${yearFull}`;
+        }
+
+        function syncTitleVisibility() {
+            if (titleInputWrap) {
+                titleInputWrap.hidden = !titleEnabledCheckbox.checked;
+            }
+        }
+
+        function ensureGeneratedPdfTitle() {
+            if (!titleEnabledCheckbox.checked || !paperTitleInput) {
+                return;
+            }
+
+            const currentValue = paperTitleInput.value.trim();
+            if (currentValue && currentValue !== 'Custom Question Paper') {
+                return;
+            }
+
+            paperTitleInput.value = buildGeneratedPaperName(loadQuestions(), 'display');
+            localStorage.setItem(PAPER_TITLE_STORAGE_KEY, paperTitleInput.value);
+        }
+
+        function getDraftStorageTitle() {
+            const activePaper = getActiveSavedPaper();
+            if (activePaper?.title) {
+                return activePaper.title;
+            }
+
+            return buildGeneratedPaperName(loadQuestions(), 'display');
+        }
+
+        function summarizeQuestions(questions) {
+            const marksTotal = questions.reduce((sum, question) => (
+                typeof question.marks === 'number' ? sum + question.marks : sum
+            ), 0);
+            const unknownMarks = questions.filter((question) => typeof question.marks !== 'number').length;
+            const topics = new Map();
+
+            questions.forEach((question) => {
+                const key = question.topic_key || 'Unknown';
+                if (!topics.has(key)) {
+                    topics.set(key, {
+                        key,
+                        name: question.topic_name || key,
+                        questionCount: 0,
+                        marks: 0,
+                        unknownMarks: 0,
+                    });
+                }
+
+                const entry = topics.get(key);
+                entry.questionCount += 1;
+                if (typeof question.marks === 'number') {
+                    entry.marks += question.marks;
+                } else {
+                    entry.unknownMarks += 1;
+                }
+            });
+
+            return {
+                marksTotal,
+                unknownMarks,
+                topicCount: topics.size,
+                topics: Array.from(topics.values()).sort((a, b) => a.name.localeCompare(b.name)),
+            };
         }
 
         function updateSaveControls() {
@@ -354,36 +963,25 @@
             const unsavedChanges = hasUnsavedChanges();
 
             savePaperButton.disabled = disabled;
-            saveCopyButton.disabled = disabled;
 
             if (!questions.length) {
-                saveStatus.textContent = 'Add some questions, then save the paper for later.';
-                savePaperButton.textContent = 'Save paper';
+                saveStatus.textContent = 'Add questions from the dashboard to start a draft.';
+                savePaperButton.textContent = 'Save draft';
+                draftChipText.textContent = 'Unsaved';
                 return;
             }
 
             if (activePaper) {
-                savePaperButton.textContent = unsavedChanges ? 'Update saved paper' : 'Saved';
+                savePaperButton.textContent = unsavedChanges ? 'Update draft' : 'Assigned';
+                draftChipText.textContent = activePaper.title;
                 saveStatus.textContent = unsavedChanges
-                    ? `Editing saved paper: ${activePaper.title} (unsaved changes)`
-                    : `Editing saved paper: ${activePaper.title}`;
+                    ? `Editing: ${activePaper.title}`
+                    : `Assigned: ${activePaper.title}`;
             } else {
-                savePaperButton.textContent = 'Save paper';
-                saveStatus.textContent = 'Working draft not yet saved.';
+                savePaperButton.textContent = 'Save draft';
+                draftChipText.textContent = 'Unsaved';
+                saveStatus.textContent = 'Current selection not saved yet.';
             }
-        }
-
-        function moveQuestion(index, direction) {
-            const questions = loadQuestions();
-            const targetIndex = index + direction;
-
-            if (targetIndex < 0 || targetIndex >= questions.length) {
-                return;
-            }
-
-            const [question] = questions.splice(index, 1);
-            questions.splice(targetIndex, 0, question);
-            saveQuestions(questions);
         }
 
         function removeQuestion(index) {
@@ -392,18 +990,90 @@
             saveQuestions(questions);
         }
 
+        function reorderQuestions(fromIndex, toIndex, insertAfter = false) {
+            const questions = loadQuestions();
+            if (
+                fromIndex === null
+                || toIndex === null
+                || fromIndex === toIndex
+                || fromIndex < 0
+                || toIndex < 0
+                || fromIndex >= questions.length
+                || toIndex >= questions.length
+            ) {
+                return;
+            }
+
+            const [moved] = questions.splice(fromIndex, 1);
+            let targetIndex = toIndex;
+
+            if (fromIndex < toIndex) {
+                targetIndex -= 1;
+            }
+
+            if (insertAfter) {
+                targetIndex += 1;
+            }
+
+            if (targetIndex < 0) {
+                targetIndex = 0;
+            }
+
+            if (targetIndex > questions.length) {
+                targetIndex = questions.length;
+            }
+
+            questions.splice(targetIndex, 0, moved);
+            saveQuestions(questions);
+        }
+
+        function clearDragIndicators() {
+            questionList.querySelectorAll('.question-card').forEach((card) => {
+                card.classList.remove('drag-target-before', 'drag-target-after', 'dragging');
+            });
+        }
+
+        function renderTopicBalance(topics) {
+            if (!topics.length) {
+                topicBalanceList.innerHTML = `
+                    <div class="empty-state">
+                        <strong>No topics yet</strong>
+                        Add questions to see the split.
+                    </div>
+                `;
+                return;
+            }
+
+            topicBalanceList.innerHTML = topics.map((topic) => `
+                <div class="topic-balance-item">
+                    <div>
+                        <div class="topic-balance-name">${escapeHtml(topic.name)}</div>
+                        <div class="topic-balance-meta">${topic.questionCount} question${topic.questionCount === 1 ? '' : 's'}</div>
+                    </div>
+                    <div class="topic-balance-name">[${topic.marks}${topic.unknownMarks ? '+' : ''}]</div>
+                </div>
+            `).join('');
+        }
+
         function renderQuestions() {
             const questions = loadQuestions();
-            questionCount.textContent = `${questions.length} question${questions.length === 1 ? '' : 's'} selected`;
-            generateButton.disabled = questions.length === 0;
-            generateMsButton.disabled = questions.length === 0;
-            clearAllButton.disabled = questions.length === 0;
+            const summary = summarizeQuestions(questions);
 
-            if (questions.length === 0) {
+            questionSectionCount.textContent = `${questions.length} selected`;
+            summaryQuestions.textContent = `${questions.length}Q`;
+            summaryMarks.textContent = `[${summary.marksTotal}${summary.unknownMarks ? '+' : ''}]`;
+
+            generateAssignButton.disabled = questions.length === 0;
+            generateOnlyButton.disabled = questions.length === 0;
+            generateMsButton.disabled = questions.length === 0;
+
+            renderTopicBalance(summary.topics);
+
+            if (!questions.length) {
                 questionList.innerHTML = `
-                    <div class="builder-card empty-state">
-                        <p class="mb-2">No questions selected yet.</p>
-                        <p class="mb-0">Go back to the bank and use the Add button on any question card.</p>
+                    <div class="empty-state">
+                        <strong>No questions yet</strong>
+                        Add questions from the dashboard.
                     </div>
                 `;
                 updateSaveControls();
@@ -411,21 +1081,24 @@
             }
 
             questionList.innerHTML = questions.map((question, index) => `
-                <div class="question-card">
-                    <div class="d-flex gap-3 flex-grow-1">
-                        <div class="question-index">${index + 1}</div>
-                        <div class="flex-grow-1">
-                            <div class="question-title">${question.title || `Question ${question.question}`}</div>
-                            <div class="question-meta">
-                                <span class="pill">${question.paper}</span>
-                                ${(question.tags || []).map((tag) => `<span>${tag}</span>`).join('')}
-                            </div>
+                <div class="question-card" draggable="true" data-question-index="${index}">
+                    <div class="question-index">${index + 1}</div>
+                    <div class="drag-handle" title="Drag to reorder" aria-hidden="true">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M3 4a1 1 0 1 1 0-2 1 1 0 0 1 0 2m0 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2m0 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2m5-10a1 1 0 1 1 0-2 1 1 0 0 1 0 2m0 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2m0 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="question-title">${escapeHtml(question.title || `${question.paper} question ${question.question}`)}</h3>
+                        <div class="question-meta">
+                            <span class="meta-chip">${escapeHtml(question.paper)}</span>
+                            <span class="meta-chip topic-chip">${escapeHtml(question.topic_name || question.topic_key || 'Unknown topic')}</span>
+                            <span class="meta-chip marks-chip">${typeof question.marks === 'number' ? `[${question.marks}]` : '[?]'}</span>
                         </div>
+                        ${(question.tags || []).length ? `<div class="question-tags">${question.tags.map((tag) => escapeHtml(tag)).join(' • ')}</div>` : ''}
                     </div>
                     <div class="question-actions">
-                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="moveQuestion(${index}, -1)">Up</button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" onclick="moveQuestion(${index}, 1)">Down</button>
-                        <button type="button" class="btn btn-sm btn-outline-danger" onclick="removeQuestion(${index})">Remove</button>
+                        <button type="button" class="btn btn-sm remove-btn" onclick="removeQuestion(${index})">Remove</button>
                     </div>
                 </div>
             `).join('');
@@ -458,9 +1131,9 @@
 
             if (!savedPapers.length) {
                 savedPapersList.innerHTML = `
-                    <div class="builder-card empty-state">
-                        <p class="mb-2">No saved papers yet.</p>
-                        <p class="mb-0">Save a working draft here once you want to reuse it later.</p>
+                    <div class="empty-state">
+                        <strong>No drafts yet</strong>
+                        Save one when you want to reuse it.
                     </div>
                 `;
                 updateSaveControls();
@@ -469,17 +1142,18 @@
 
             savedPapersList.innerHTML = savedPapers.map((paper) => `
                 <div class="saved-paper-item ${paper.id === activeId ? 'active' : ''}">
-                    <div class="flex-grow-1">
-                        <div class="saved-paper-name">${paper.title}</div>
-                        <div class="saved-paper-meta">
-                            <span class="pill">${paper.question_count} question${paper.question_count === 1 ? '' : 's'}</span>
-                            <span>Updated ${formatSavedPaperDate(paper.updated_at)}</span>
+                    <div class="saved-paper-top">
+                        <div>
+                            <div class="saved-paper-name">${escapeHtml(paper.title)}</div>
+                            <div class="saved-paper-meta">${paper.question_count} question${paper.question_count === 1 ? '' : 's'} • Updated ${formatSavedPaperDate(paper.updated_at)}</div>
                         </div>
+                        ${paper.id === activeId ? '<span class="meta-chip topic-chip">Active</span>' : ''}
                     </div>
                     <div class="saved-paper-actions">
                         <button type="button" class="btn btn-sm btn-outline-secondary" data-action="load" data-paper-id="${paper.id}">
-                            ${paper.id === activeId ? 'Loaded' : 'Load'}
+                            ${paper.id === activeId ? 'Open' : 'Open'}
                         </button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-action="duplicate" data-paper-id="${paper.id}">Duplicate</button>
                         <button type="button" class="btn btn-sm btn-outline-danger" data-action="delete" data-paper-id="${paper.id}">Delete</button>
                     </div>
                 </div>
@@ -504,17 +1178,23 @@
             renderSavedPapers();
         }
 
-        async function saveCurrentPaper(forceNew = false) {
+        async function saveCurrentPaper() {
             const questions = loadQuestions();
             if (!questions.length) {
-                return;
+                return null;
             }
 
-            const title = paperTitleInput.value.trim() || 'Custom Question Paper';
+            const title = getDraftStorageTitle();
+            const pdfTitle = getEffectivePaperTitle();
             const activePaper = getActiveSavedPaper();
-            const activeButton = forceNew ? saveCopyButton : savePaperButton;
+            const unsavedChanges = hasUnsavedChanges();
+            const activeButton = savePaperButton;
             const originalLabel = activeButton.textContent;
-            const shouldUpdate = Boolean(activePaper && !forceNew);
+            const shouldUpdate = Boolean(activePaper);
+
+            if (activePaper && !unsavedChanges) {
+                return activePaper;
+            }
 
             activeButton.disabled = true;
             activeButton.textContent = shouldUpdate ? 'Updating...' : 'Saving...';
@@ -529,6 +1209,8 @@
                         },
                         body: JSON.stringify({
                             title,
+                            pdf_title: pdfTitle,
+                            pdf_title_enabled: titleEnabledCheckbox.checked,
                             questions,
                         }),
                     }
@@ -540,16 +1222,59 @@
 
                 const payload = await response.json();
                 const savedPaper = payload.paper;
-                localStorage.setItem(PAPER_TITLE_STORAGE_KEY, savedPaper.title);
+                localStorage.setItem(PAPER_TITLE_STORAGE_KEY, savedPaper.pdf_title || '');
+                localStorage.setItem(PAPER_TITLE_ENABLED_KEY, savedPaper.pdf_title_enabled ? 'true' : 'false');
+                paperTitleInput.value = savedPaper.pdf_title || '';
+                titleEnabledCheckbox.checked = Boolean(savedPaper.pdf_title_enabled);
+                syncTitleVisibility();
                 saveActiveSavedPaperId(savedPaper.id);
                 await refreshSavedPapers();
                 renderQuestions();
-            } catch (error) {
-                alert('The paper could not be saved. Please try again.');
+                return savedPaper;
+            } catch {
+                alert('The draft could not be saved. Please try again.');
+                return null;
             } finally {
                 activeButton.disabled = false;
                 activeButton.textContent = originalLabel;
             }
+        }
+
+        async function duplicateSavedPaper(paperId) {
+            const savedPaper = savedPapers.find((paper) => paper.id === paperId);
+            if (!savedPaper) {
+                return;
+            }
+
+            const response = await fetch('/api/saved-papers', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    title: `${savedPaper.title} Copy`,
+                    pdf_title: savedPaper.pdf_title || '',
+                    pdf_title_enabled: Boolean(savedPaper.pdf_title_enabled),
+                    questions: savedPaper.questions || [],
+                }),
+            });
+
+            if (!response.ok) {
+                alert('That draft could not be duplicated right now.');
+                return;
+            }
+
+            const payload = await response.json();
+            const duplicated = payload.paper;
+            localStorage.setItem(QUESTION_STORAGE_KEY, JSON.stringify(duplicated.questions || []));
+            localStorage.setItem(PAPER_TITLE_STORAGE_KEY, duplicated.pdf_title || '');
+            localStorage.setItem(PAPER_TITLE_ENABLED_KEY, duplicated.pdf_title_enabled ? 'true' : 'false');
+            paperTitleInput.value = duplicated.pdf_title || '';
+            titleEnabledCheckbox.checked = Boolean(duplicated.pdf_title_enabled);
+            syncTitleVisibility();
+            saveActiveSavedPaperId(duplicated.id);
+            await refreshSavedPapers();
+            renderQuestions();
         }
 
         function loadSavedPaper(paperId) {
@@ -558,9 +1283,12 @@
                 return;
             }
 
-            localStorage.setItem(QUESTION_STORAGE_KEY, JSON.stringify(savedPaper.questions));
-            localStorage.setItem(PAPER_TITLE_STORAGE_KEY, savedPaper.title);
-            paperTitleInput.value = savedPaper.title;
+            localStorage.setItem(QUESTION_STORAGE_KEY, JSON.stringify(savedPaper.questions || []));
+            localStorage.setItem(PAPER_TITLE_STORAGE_KEY, savedPaper.pdf_title || '');
+            localStorage.setItem(PAPER_TITLE_ENABLED_KEY, savedPaper.pdf_title_enabled ? 'true' : 'false');
+            paperTitleInput.value = savedPaper.pdf_title || '';
+            titleEnabledCheckbox.checked = Boolean(savedPaper.pdf_title_enabled);
+            syncTitleVisibility();
             saveActiveSavedPaperId(savedPaper.id);
             renderQuestions();
             renderSavedPapers();
@@ -572,7 +1300,8 @@
                 return;
             }
 
-            if (!confirm(`Delete "${savedPaper.title}"?`)) {
+            const confirmed = window.confirm(`Delete "${savedPaper.title}"?`);
+            if (!confirmed) {
                 return;
             }
 
@@ -581,7 +1310,7 @@
             });
 
             if (!response.ok) {
-                alert('The saved paper could not be deleted. Please try again.');
+                alert('That saved draft could not be deleted right now.');
                 return;
             }
 
@@ -593,16 +1322,16 @@
             renderQuestions();
         }
 
-        async function generatePaper(exportType) {
+        async function generatePaper(exportType, button, label) {
             const questions = loadQuestions();
             if (!questions.length) {
                 return;
             }
 
-            const activeButton = exportType === 'markscheme' ? generateMsButton : generateButton;
+            const activeButton = button;
             const originalLabel = activeButton.textContent;
             activeButton.disabled = true;
-            activeButton.textContent = 'Generating...';
+            activeButton.textContent = label;
 
             try {
                 const response = await fetch('/generate-paper', {
@@ -611,7 +1340,7 @@
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify({
-                        title: paperTitleInput.value.trim() || (exportType === 'markscheme' ? 'Custom Mark Scheme' : 'Custom Question Paper'),
+                        title: getEffectivePaperTitle(),
                         export_type: exportType,
                         questions,
                     }),
@@ -625,14 +1354,16 @@
                 const url = URL.createObjectURL(blob);
                 const link = document.createElement('a');
                 link.href = url;
-                const baseName = (paperTitleInput.value.trim() || (exportType === 'markscheme' ? 'Custom Mark Scheme' : 'Custom Question Paper')).replace(/[^A-Za-z0-9._-]+/g, '_');
+                const baseName = getEffectivePaperTitle()
+                    ? getEffectivePaperTitle().replace(/[^A-Za-z0-9._-]+/g, '_')
+                    : buildGeneratedPaperName(questions, 'filename');
                 const prefix = exportType === 'markscheme' ? 'ms_' : 'qp_';
                 link.download = `${prefix}${baseName}.pdf`;
                 document.body.appendChild(link);
                 link.click();
                 link.remove();
                 URL.revokeObjectURL(url);
-            } catch (error) {
+            } catch {
                 alert('The PDF could not be generated. Please try again.');
             } finally {
                 activeButton.disabled = false;
@@ -640,22 +1371,34 @@
             }
         }
 
-        clearAllButton.addEventListener('click', () => {
-            localStorage.removeItem(QUESTION_STORAGE_KEY);
-            saveActiveSavedPaperId('');
-            renderQuestions();
-            renderSavedPapers();
-        });
+        async function exportAndAssignQuestions() {
+            const savedPaper = await saveCurrentPaper();
+            if (!savedPaper) {
+                return;
+            }
+            await generatePaper('questions', generateAssignButton, 'Generating paper...');
+        }
 
         paperTitleInput.addEventListener('input', () => {
             localStorage.setItem(PAPER_TITLE_STORAGE_KEY, paperTitleInput.value);
             updateSaveControls();
         });
 
-        savePaperButton.addEventListener('click', () => saveCurrentPaper(false));
-        saveCopyButton.addEventListener('click', () => saveCurrentPaper(true));
-        generateButton.addEventListener('click', () => generatePaper('questions'));
-        generateMsButton.addEventListener('click', () => generatePaper('markscheme'));
+        titleEnabledCheckbox.addEventListener('change', () => {
+            if (titleEnabledCheckbox.checked) {
+                localStorage.setItem(PAPER_TITLE_ENABLED_KEY, 'true');
+                ensureGeneratedPdfTitle();
+            } else {
+                localStorage.removeItem(PAPER_TITLE_ENABLED_KEY);
+            }
+            syncTitleVisibility();
+            updateSaveControls();
+        });
+
+        savePaperButton.addEventListener('click', saveCurrentPaper);
+        generateAssignButton.addEventListener('click', exportAndAssignQuestions);
+        generateOnlyButton.addEventListener('click', () => generatePaper('questions', generateOnlyButton, 'Generating paper...'));
+        generateMsButton.addEventListener('click', () => generatePaper('markscheme', generateMsButton, 'Generating mark scheme...'));
 
         savedPapersList.addEventListener('click', (event) => {
             const button = event.target.closest('button[data-action][data-paper-id]');
@@ -668,16 +1411,68 @@
 
             if (action === 'load') {
                 loadSavedPaper(paperId);
+            } else if (action === 'duplicate') {
+                duplicateSavedPaper(paperId);
             } else if (action === 'delete') {
                 deleteSavedPaper(paperId);
             }
         });
 
-        window.moveQuestion = moveQuestion;
         window.removeQuestion = removeQuestion;
 
+        questionList.addEventListener('dragstart', (event) => {
+            const card = event.target.closest('.question-card[data-question-index]');
+            if (!card) {
+                return;
+            }
+
+            draggedQuestionIndex = Number(card.dataset.questionIndex);
+            card.classList.add('dragging');
+            if (event.dataTransfer) {
+                event.dataTransfer.effectAllowed = 'move';
+                event.dataTransfer.setData('text/plain', String(draggedQuestionIndex));
+            }
+        });
+
+        questionList.addEventListener('dragover', (event) => {
+            const card = event.target.closest('.question-card[data-question-index]');
+            if (!card || draggedQuestionIndex === null) {
+                return;
+            }
+
+            event.preventDefault();
+            clearDragIndicators();
+
+            const rect = card.getBoundingClientRect();
+            const insertAfter = event.clientY > rect.top + rect.height / 2;
+            card.classList.add(insertAfter ? 'drag-target-after' : 'drag-target-before');
+        });
+
+        questionList.addEventListener('drop', (event) => {
+            const card = event.target.closest('.question-card[data-question-index]');
+            if (!card || draggedQuestionIndex === null) {
+                return;
+            }
+
+            event.preventDefault();
+            const targetIndex = Number(card.dataset.questionIndex);
+            const rect = card.getBoundingClientRect();
+            const insertAfter = event.clientY > rect.top + rect.height / 2;
+            clearDragIndicators();
+            reorderQuestions(draggedQuestionIndex, targetIndex, insertAfter);
+            draggedQuestionIndex = null;
+        });
+
+        questionList.addEventListener('dragend', () => {
+            clearDragIndicators();
+            draggedQuestionIndex = null;
+        });
+
+        syncTitleVisibility();
+        ensureGeneratedPdfTitle();
+
         refreshSavedPapers().catch(() => {
-            saveStatus.textContent = 'Saved papers could not be loaded right now.';
+            saveStatus.textContent = 'Saved drafts could not be loaded right now.';
         });
         renderQuestions();
     </script>

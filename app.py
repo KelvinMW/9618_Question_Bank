@@ -482,6 +482,8 @@ def load_saved_papers():
             "id": str(item.get('id') or f"paper_{uuid4().hex[:12]}"),
             "title": title,
             "questions": questions,
+            "pdf_title": str(item.get('pdf_title', '') or '').strip(),
+            "pdf_title_enabled": bool(item.get('pdf_title_enabled', False)),
             "created_at": item.get('created_at') or now_iso(),
             "updated_at": item.get('updated_at') or item.get('created_at') or now_iso(),
         })
@@ -532,11 +534,16 @@ def serialize_saved_paper(saved_paper):
             "tags": metadata.get("tags", []),
             "img": metadata.get("img"),
             "ms_img": metadata.get("ms_img"),
+            "topic_key": metadata.get("topic_key"),
+            "topic_name": metadata.get("topic_name"),
+            "marks": metadata.get("marks"),
         })
 
     return {
         "id": saved_paper["id"],
         "title": saved_paper["title"],
+        "pdf_title": saved_paper.get("pdf_title", ""),
+        "pdf_title_enabled": bool(saved_paper.get("pdf_title_enabled", False)),
         "question_count": len(enriched_questions),
         "questions": enriched_questions,
         "created_at": saved_paper.get("created_at"),
@@ -1308,6 +1315,8 @@ def api_saved_papers():
 def create_saved_paper():
     payload = request.get_json(silent=True) or {}
     title = str(payload.get("title", "")).strip()
+    pdf_title = str(payload.get("pdf_title", "") or "").strip()
+    pdf_title_enabled = bool(payload.get("pdf_title_enabled", False))
     questions = parse_requested_question_refs(payload)
 
     if not title or not questions:
@@ -1319,6 +1328,8 @@ def create_saved_paper():
         "id": f"paper_{uuid4().hex[:12]}",
         "title": title,
         "questions": questions,
+        "pdf_title": pdf_title,
+        "pdf_title_enabled": pdf_title_enabled,
         "created_at": timestamp,
         "updated_at": timestamp,
     }
@@ -1331,6 +1342,8 @@ def create_saved_paper():
 def update_saved_paper(paper_id):
     payload = request.get_json(silent=True) or {}
     title = str(payload.get("title", "")).strip()
+    pdf_title = str(payload.get("pdf_title", "") or "").strip()
+    pdf_title_enabled = bool(payload.get("pdf_title_enabled", False))
     questions = parse_requested_question_refs(payload)
 
     if not title or not questions:
@@ -1344,6 +1357,8 @@ def update_saved_paper(paper_id):
         updated_paper = saved_paper.copy()
         updated_paper["title"] = title
         updated_paper["questions"] = questions
+        updated_paper["pdf_title"] = pdf_title
+        updated_paper["pdf_title_enabled"] = pdf_title_enabled
         updated_paper["updated_at"] = now_iso()
         saved_papers[index] = updated_paper
         save_saved_papers(saved_papers)
@@ -1441,7 +1456,7 @@ def update_question_metadata(paper, q_num):
 def generate_paper():
     payload = request.get_json(silent=True) or {}
     requested_questions = parse_requested_question_refs(payload)
-    paper_title = (payload.get("title") or "Custom Question Paper").strip()
+    paper_title = str(payload.get("title") or "").strip()
     export_type = (payload.get("export_type") or "questions").strip().lower()
 
     selected_questions = []
