@@ -204,6 +204,19 @@
         line-height: 1.4;
     }
 
+    .builder-empty-link {
+        display: inline-flex;
+        margin-top: 8px;
+        color: #d9c2ff;
+        text-decoration: none;
+        font-size: 0.74rem;
+        font-weight: 600;
+    }
+
+    .builder-empty-link:hover {
+        color: #ffffff;
+    }
+
     .builder-preview-header {
         display: flex;
         align-items: center;
@@ -1051,7 +1064,7 @@
             <label class="saved-toggle">
                 <input type="checkbox" id="hide-assigned-toggle" {% if saved_paper_count == 0 %}disabled{% endif %}>
                 <span>
-                    Hide saved-paper questions
+                    Hide assigned questions
                     <small id="hide-assigned-caption">
                         {% if saved_paper_count %}
                             {{ saved_paper_count }} saved paper{{ '' if saved_paper_count == 1 else 's' }} tracked
@@ -1077,6 +1090,7 @@
             <p>The purpose of this tool is to allow teachers to easily browse A Level CS questions by topic, and build their own papers composed of past and practice exam questions. Currently, all previous Paper 3 and Paper 4 questions (from June 2021 to November 2025) are available. Paper 1 and Paper 2 is in the process of being added.</p>
             <p>This tool is not designed for students, or for the public. It's for internal use within a computer science department only. CAIE owns the copyright for these exam papers and they are not to be reproduced online.</p>
             <p>Some exam papers are not included because they are duplicates of other papers. For example, 21_june_13 is identical to another paper in the same series, so questions from this paper weren't included.</p>
+            <p>Known issues: a small number of questions have the wrong title, wrong number of marks, or have some parts of the question incorrectly cropped. Let me know about any broken questions you find. You can also manually update the title and number of marks.</p>
         </div>
         <div class="modal-actions-simple">
             <button type="button" class="btn btn-primary" id="about-close-btn">Close</button>
@@ -1362,7 +1376,13 @@
         }
 
         if (!selected.length) {
-            builderPreview.innerHTML = '<div class="builder-preview-empty">No questions selected yet.</div>';
+            builderPreview.innerHTML = `
+                <div class="builder-preview-empty">
+                    No questions selected yet.
+                    <br>
+                    <a href="/builder" class="builder-empty-link">Open builder</a>
+                </div>
+            `;
             return;
         }
 
@@ -1727,6 +1747,11 @@
     if (builderSummaryToggle) {
         setBuilderPreviewOpen(isBuilderPreviewOpen());
         builderSummaryToggle.addEventListener('click', () => {
+            const selected = loadSelectedQuestions();
+            if (!selected.length) {
+                window.location.href = '/builder';
+                return;
+            }
             setBuilderPreviewOpen(!builderPreview.classList.contains('open'));
         });
     }
