@@ -68,6 +68,11 @@ def is_footer_marker(text):
     stripped = str(text).strip()
     if not stripped:
         return False
+    normalized_letters = re.sub(r'[^A-Za-z]+', '', stripped).upper()
+    if normalized_letters in {"TURN", "OVER"}:
+        return True
+    if stripped.isdigit() and len(stripped) == 4:
+        return True
     if stripped in FOOTER_WORDS:
         return True
     if PAPER_CODE_RE.match(stripped):
@@ -160,6 +165,27 @@ def find_content_line_top(words, left_bound, right_bound):
     return None
 
 
+def find_content_bottom(words, left_bound, right_bound, top_bound):
+    candidates = []
+
+    for word in words:
+        x0, y0, x1, y1, text = word[:5]
+        if x1 <= left_bound or x0 >= right_bound:
+            continue
+        if y1 <= top_bound:
+            continue
+        if str(text).strip() in MARGIN_WORDS:
+            continue
+        if is_footer_marker(text):
+            continue
+        candidates.append(word)
+
+    if not candidates:
+        return None
+
+    return max(word[3] for word in candidates)
+
+
 def build_clip_rect(page, words, q_num, is_first_page, is_last_page):
     page_rect = page.rect
     page_width = page_rect.width
@@ -187,6 +213,11 @@ def build_clip_rect(page, words, q_num, is_first_page, is_last_page):
     footer_cutoff = find_footer_cutoff(words, page_width, page_height)
     if footer_cutoff is not None:
         bottom = min(bottom, footer_cutoff)
+
+    if is_last_page and not next_anchor:
+        content_bottom = find_content_bottom(words, left, right, top)
+        if content_bottom is not None:
+            bottom = max(bottom, min(page_height - FOOTER_PADDING, content_bottom + ANCHOR_PADDING))
 
     if bottom <= top:
         top = HEADER_CUTOFF

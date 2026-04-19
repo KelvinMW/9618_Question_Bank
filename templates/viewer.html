@@ -3,14 +3,43 @@
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        body, html { height: 100%; margin: 0; overflow: hidden; background: #f0f2f5; }
-        .viewport { display: flex; height: 100vh; width: 100vw; }
+        :root {
+            --deep-space: #2c3036;
+            --panel-dark: #23272d;
+            --panel-darker: #1f2328;
+            --surface-dark: #333840;
+            --active-purple: #bb86fc;
+            --active-purple-strong: #9d5cf4;
+            --text-primary: #f7f0ff;
+            --text-secondary: #d8dee7;
+            --text-muted: #a0a6ad;
+        }
+
+        body, html {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            background: radial-gradient(circle at top left, rgba(187, 134, 252, 0.16) 0%, rgba(187, 134, 252, 0.04) 20%, transparent 42%), var(--deep-space);
+            color: var(--text-primary);
+        }
+
+        .viewport {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+            gap: 1px;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .question-pane,
+        .viewport.expanded .ms-pane {
+            background: linear-gradient(180deg, #2c3036 0%, #252a31 100%);
+        }
 
         .question-pane {
             flex: 1;
             overflow-y: auto;
-            padding: 30px;
-            background: white;
+            padding: 20px;
             display: flex;
             flex-direction: column;
         }
@@ -21,40 +50,53 @@
             justify-content: center;
             align-items: flex-start;
             flex-grow: 1;
-            padding-top: 20px;
+            margin-top: 16px;
+            padding: 24px;
+            border-radius: 22px;
+            background: linear-gradient(180deg, rgba(35, 39, 45, 0.96) 0%, rgba(31, 35, 40, 0.98) 100%);
+            border: 1px solid rgba(187, 134, 252, 0.12);
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03), 0 22px 54px rgba(11, 13, 17, 0.28);
         }
 
         #zoom-target {
-            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            width: 60%; /* DEFAULT SET TO 60% */
+            transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            width: 60%;
             max-width: 100%;
         }
 
         .ms-pane {
-            width: 50px;
+            width: 56px;
             overflow-y: auto;
-            background: #212529;
-            border-left: 1px solid #dee2e6;
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            background: linear-gradient(180deg, #23272d 0%, #1f2328 100%);
+            border-left: 1px solid rgba(187, 134, 252, 0.16);
+            transition: width 0.35s cubic-bezier(0.4, 0, 0.2, 1), background 0.35s ease;
             position: relative;
             cursor: pointer;
         }
 
         .viewport.expanded .ms-pane {
             width: 50%;
-            background: #fdfdfd;
             cursor: default;
         }
 
-        .pane-content { padding: 20px; opacity: 0; visibility: hidden; transition: opacity 0.3s; }
-        .viewport.expanded .pane-content { opacity: 1; visibility: visible; }
+        .pane-content {
+            padding: 20px;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.25s ease;
+        }
+
+        .viewport.expanded .pane-content {
+            opacity: 1;
+            visibility: visible;
+        }
 
         .ms-loading {
             min-height: 220px;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #6b7280;
+            color: var(--text-muted);
         }
 
         .ms-loading[hidden] {
@@ -70,12 +112,16 @@
         }
 
         .header-bar {
-            background: #f8f9fa;
-            padding: 14px 20px;
-            border-bottom: 1px solid #dee2e6;
+            background: rgba(35, 39, 45, 0.96);
+            color: var(--text-primary);
+            padding: 14px 18px;
+            border: 1px solid rgba(187, 134, 252, 0.2);
+            border-radius: 18px;
+            box-shadow: 0 18px 40px rgba(8, 10, 14, 0.24);
             position: sticky;
             top: 0;
             z-index: 10;
+            backdrop-filter: blur(10px);
         }
 
         .header-main {
@@ -98,11 +144,12 @@
         }
 
         .viewer-title {
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             font-weight: 700;
-            color: #24292e;
+            color: #ffffff;
             line-height: 1.25;
             margin-bottom: 4px;
+            letter-spacing: -0.01em;
         }
 
         .viewer-meta {
@@ -110,7 +157,7 @@
             flex-wrap: wrap;
             gap: 6px;
             align-items: center;
-            margin-top: 6px;
+            margin-top: 8px;
         }
 
         .paper-chip,
@@ -118,24 +165,25 @@
             border-radius: 999px;
             font-size: 0.72rem;
             line-height: 1.2;
-            padding: 4px 9px;
-            border: 1px solid #d8dee4;
+            padding: 5px 10px;
+            border: 1px solid rgba(255, 255, 255, 0.14);
         }
 
         .paper-chip {
-            background: #eef1f4;
-            color: #6b7280;
+            background: rgba(255, 255, 255, 0.08);
+            color: var(--text-secondary);
         }
 
         .tag-chip {
-            background: white;
-            color: #6f7782;
+            background: rgba(187, 134, 252, 0.14);
+            color: #ead8ff;
+            border-color: rgba(187, 134, 252, 0.28);
         }
 
         .assignment-chip {
-            background: #fff7e6;
-            border-color: #f2ddab;
-            color: #7c5d20;
+            background: rgba(255, 233, 172, 0.12);
+            border-color: rgba(255, 211, 107, 0.34);
+            color: #ffe39b;
         }
 
         .viewer-controls {
@@ -149,15 +197,69 @@
 
         .back-btn {
             flex: 0 0 auto;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            background: rgba(255, 255, 255, 0.06);
+            color: var(--text-primary);
+        }
+
+        .back-btn:hover,
+        .back-btn:focus {
+            background: rgba(255, 255, 255, 0.12);
+            border-color: rgba(187, 134, 252, 0.4);
+            color: #ffffff;
         }
 
         .builder-btn {
             border-radius: 999px;
             font-size: 0.8rem;
-            padding: 6px 12px;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-color: rgba(187, 134, 252, 0.64);
+            color: #ead8ff;
+            background: rgba(187, 134, 252, 0.08);
         }
 
-        img { width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .builder-btn:hover,
+        .builder-btn:focus {
+            border-color: rgba(187, 134, 252, 0.84);
+            background: rgba(187, 134, 252, 0.16);
+            color: #ffffff;
+        }
+
+        .builder-btn.btn-primary {
+            background: linear-gradient(135deg, #7f4dd8 0%, #b784f7 100%);
+            color: #ffffff;
+            border-color: transparent;
+            box-shadow: 0 10px 24px rgba(157, 92, 244, 0.24);
+        }
+
+        .scale-box {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.06);
+            border: 1px solid rgba(255, 255, 255, 0.14);
+            border-radius: 12px;
+            padding: 6px 10px;
+        }
+
+        .scale-box label,
+        .scale-box span {
+            color: var(--text-secondary) !important;
+        }
+
+        .form-range {
+            accent-color: var(--active-purple-strong);
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 14px;
+            box-shadow: 0 18px 44px rgba(20, 24, 31, 0.28);
+            background: white;
+        }
 
         .collapsed-label {
             position: absolute;
@@ -165,14 +267,41 @@
             left: 50%;
             transform: translate(-50%, -50%) rotate(-90deg);
             white-space: nowrap;
-            color: #ffffff;
-            font-size: 0.8rem;
-            font-weight: bold;
-            letter-spacing: 2px;
+            color: #e9dbff;
+            font-size: 0.76rem;
+            font-weight: 700;
+            letter-spacing: 0.18em;
             pointer-events: none;
-            opacity: 0.7;
+            opacity: 0.82;
         }
-        .viewport.expanded .collapsed-label { display: none; }
+
+        .viewport.expanded .collapsed-label {
+            display: none;
+        }
+
+        .spinner-border.text-secondary {
+            color: var(--active-purple) !important;
+        }
+
+        .small.text-muted {
+            color: var(--text-muted) !important;
+        }
+
+        @media (max-width: 1100px) {
+            .header-main {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .viewer-controls {
+                width: 100%;
+                justify-content: flex-start;
+            }
+
+            #zoom-target {
+                width: 82%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -186,17 +315,14 @@
                         &larr; Back
                     </button>
                     <div class="viewer-title-block">
-                        <div class="viewer-title">{{ question_title }}</div>
+                        <div class="viewer-title">{{ question_title }}{% if question_metadata.marks is not none %} [{{ question_metadata.marks }}]{% endif %}</div>
                         <div class="viewer-meta">
                             <span class="paper-chip">{{ paper }}</span>
-                            {% if question_metadata.marks is not none %}
-                            <span class="tag-chip">{{ question_metadata.marks }} marks</span>
-                            {% endif %}
                             {% for tag in question_tags %}
                             <span class="tag-chip">{{ tag }}</span>
                             {% endfor %}
                             {% for saved_paper in question_assignments %}
-                            <span class="tag-chip assignment-chip">Saved in {{ saved_paper.title }}</span>
+                            <span class="tag-chip assignment-chip">Assigned in {{ saved_paper.title }}</span>
                             {% endfor %}
                         </div>
                     </div>
@@ -206,10 +332,18 @@
                     <button class="btn btn-sm btn-outline-primary builder-btn" id="builder-toggle-btn" type="button">
                         Add To Paper
                     </button>
-                    <div class="d-flex align-items-center bg-light border rounded px-2">
-                    <label for="zoomRange" class="small me-2 text-muted">Scale:</label>
+                    {% if question_metadata.source_files %}
+                    <a
+                        class="btn btn-sm builder-btn"
+                        href="/download-source-files/question/{{ paper }}/{{ q_num }}"
+                    >
+                        {% if question_metadata.source_files|length == 1 %}Download Source File{% else %}Download Source Files{% endif %}
+                    </a>
+                    {% endif %}
+                    <div class="scale-box">
+                    <label for="zoomRange" class="small me-2">Scale:</label>
                     <input type="range" class="form-range" id="zoomRange" min="30" max="100" step="5" value="60" style="width: 120px;" oninput="updateZoom(this.value)">
-                    <span id="zoomPercent" class="small ms-2 text-muted" style="min-width: 40px;">60%</span>
+                    <span id="zoomPercent" class="small ms-2" style="min-width: 40px;">60%</span>
                     </div>
                 </div>
             </div>
@@ -225,9 +359,9 @@
     <div class="ms-pane" id="ms-pane" onclick="handlePaneClick(event)">
         <div class="collapsed-label">REVEAL MARK SCHEME</div>
         <div class="pane-content">
-            <div class="header-bar text-success" style="margin: -20px -20px 20px -20px;">
+            <div class="header-bar" style="margin: -20px -20px 20px -20px;">
                 <span>MARK SCHEME</span>
-                <button class="btn btn-sm btn-danger" onclick="closeMS(event)">Hide</button>
+                <button class="btn btn-sm btn-outline-secondary back-btn" onclick="closeMS(event)">Hide</button>
             </div>
             <div class="ms-loading" id="ms-loading">
                 <div class="d-flex flex-column align-items-center gap-2">

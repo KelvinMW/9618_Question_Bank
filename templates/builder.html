@@ -201,12 +201,6 @@
             color: var(--ink);
         }
 
-        .draft-save-btn {
-            border-radius: 12px;
-            font-weight: 600;
-            padding-inline: 14px;
-        }
-
         .hero-stats {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -358,6 +352,11 @@
             border: 1px solid var(--border);
             background: linear-gradient(180deg, #ffffff 0%, #fbfcff 100%);
             transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease, opacity 0.16s ease;
+        }
+
+        .question-card:hover {
+            border-color: rgba(183, 132, 247, 0.38);
+            box-shadow: 0 14px 28px rgba(109, 60, 181, 0.08);
         }
 
         .question-card[draggable="true"] {
@@ -645,10 +644,9 @@
                         </div>
                         <div class="draft-tools">
                             <div class="draft-chip" id="draft-chip">
-                                <span>Draft</span>
-                                <strong id="draft-chip-text">Unsaved</strong>
+                                <span>Assigned</span>
+                                <strong id="draft-chip-text">Not assigned</strong>
                             </div>
-                            <button type="button" class="btn btn-outline-secondary draft-save-btn" id="save-paper-btn">Save draft</button>
                         </div>
                     </div>
 
@@ -669,10 +667,9 @@
                             <button type="button" class="btn btn-primary action-primary" id="generate-assign-btn">Export &amp; assign questions</button>
                             <button type="button" class="btn action-secondary" id="generate-only-btn">Export only</button>
                             <button type="button" class="btn action-secondary" id="generate-ms-btn">Export mark scheme</button>
+                            <button type="button" class="btn action-secondary" id="generate-source-btn" hidden>Download source files</button>
                         </div>
                     </div>
-
-                    <div class="save-status" id="save-status"></div>
                 </div>
 
                 <div class="panel section-panel">
@@ -701,10 +698,10 @@
                 <div class="panel sidebar-panel">
                     <div class="section-header">
                         <div>
-                            <h2 class="section-title">Drafts</h2>
-                            <p class="section-subtitle">Saved versions of this paper.</p>
+                            <h2 class="section-title">Assigned Papers</h2>
+                            <p class="section-subtitle">Previously assigned papers you can reopen, regenerate, or unassign.</p>
                         </div>
-                        <span class="section-count" id="saved-paper-count">{{ saved_paper_count }} saved</span>
+                        <span class="section-count" id="saved-paper-count">{{ saved_paper_count }} assigned</span>
                     </div>
                     <div id="saved-papers-list" class="saved-papers-list"></div>
                 </div>
@@ -717,6 +714,7 @@
         const PAPER_TITLE_STORAGE_KEY = 'qbank.paperBuilder.title';
         const PAPER_TITLE_ENABLED_KEY = 'qbank.paperBuilder.titleEnabled';
         const ACTIVE_SAVED_PAPER_KEY = 'qbank.paperBuilder.activeSavedPaperId';
+        const SOURCE_FILE_QUESTION_KEYS = new Set({{ (source_file_question_keys if source_file_question_keys is defined else [])|tojson }});
 
         const questionList = document.getElementById('question-list');
         const questionSectionCount = document.getElementById('question-section-count');
@@ -726,8 +724,7 @@
         const generateAssignButton = document.getElementById('generate-assign-btn');
         const generateOnlyButton = document.getElementById('generate-only-btn');
         const generateMsButton = document.getElementById('generate-ms-btn');
-        const savePaperButton = document.getElementById('save-paper-btn');
-        const saveStatus = document.getElementById('save-status');
+        const generateSourceButton = document.getElementById('generate-source-btn');
         const savedPapersList = document.getElementById('saved-papers-list');
         const savedPaperCount = document.getElementById('saved-paper-count');
         const topicBalanceList = document.getElementById('topic-balance-list');
@@ -758,7 +755,17 @@
                 topic_key: question.topic_key || '',
                 topic_name: question.topic_name || '',
                 marks: Number.isFinite(Number(question.marks)) ? Number(question.marks) : null,
+                source_files: Array.isArray(question.source_files) ? question.source_files.filter(Boolean) : [],
             };
+        }
+
+        function questionKey(question) {
+            return `${question.paper}::${String(question.question)}`;
+        }
+
+        function hasMappedSourceFiles(question) {
+            return SOURCE_FILE_QUESTION_KEYS.has(questionKey(question))
+                || (Array.isArray(question.source_files) && question.source_files.length > 0);
         }
 
         function loadQuestions() {
@@ -959,28 +966,16 @@
         function updateSaveControls() {
             const questions = loadQuestions();
             const activePaper = getActiveSavedPaper();
-            const disabled = questions.length === 0;
-            const unsavedChanges = hasUnsavedChanges();
-
-            savePaperButton.disabled = disabled;
 
             if (!questions.length) {
-                saveStatus.textContent = 'Add questions from the dashboard to start a draft.';
-                savePaperButton.textContent = 'Save draft';
-                draftChipText.textContent = 'Unsaved';
+                draftChipText.textContent = 'Not assigned';
                 return;
             }
 
             if (activePaper) {
-                savePaperButton.textContent = unsavedChanges ? 'Update draft' : 'Assigned';
                 draftChipText.textContent = activePaper.title;
-                saveStatus.textContent = unsavedChanges
-                    ? `Editing: ${activePaper.title}`
-                    : `Assigned: ${activePaper.title}`;
             } else {
-                savePaperButton.textContent = 'Save draft';
-                draftChipText.textContent = 'Unsaved';
-                saveStatus.textContent = 'Current selection not saved yet.';
+                draftChipText.textContent = 'Not assigned';
             }
         }
 
@@ -1066,6 +1061,11 @@
             generateAssignButton.disabled = questions.length === 0;
             generateOnlyButton.disabled = questions.length === 0;
             generateMsButton.disabled = questions.length === 0;
+            if (generateSourceButton) {
+                const hasSourceFiles = questions.some((question) => hasMappedSourceFiles(question));
+                generateSourceButton.hidden = !hasSourceFiles;
+                generateSourceButton.disabled = !hasSourceFiles;
+            }
 
             renderTopicBalance(summary.topics);
 
@@ -1081,7 +1081,7 @@
             }
 
             questionList.innerHTML = questions.map((question, index) => `
-                <div class="question-card" draggable="true" data-question-index="${index}">
+                <div class="question-card" draggable="true" data-question-index="${index}" data-paper="${escapeHtml(question.paper)}" data-question="${escapeHtml(question.question)}" title="Open preview">
                     <div class="question-index">${index + 1}</div>
                     <div class="drag-handle" title="Drag to reorder" aria-hidden="true">
                         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16">
@@ -1126,14 +1126,14 @@
             const activeId = loadActiveSavedPaperId();
 
             if (savedPaperCount) {
-                savedPaperCount.textContent = `${savedPapers.length} saved`;
+                savedPaperCount.textContent = `${savedPapers.length} assigned`;
             }
 
             if (!savedPapers.length) {
                 savedPapersList.innerHTML = `
                     <div class="empty-state">
-                        <strong>No drafts yet</strong>
-                        Save one when you want to reuse it.
+                        <strong>No assigned papers yet</strong>
+                        Export and assign one to keep it here.
                     </div>
                 `;
                 updateSaveControls();
@@ -1151,10 +1151,11 @@
                     </div>
                     <div class="saved-paper-actions">
                         <button type="button" class="btn btn-sm btn-outline-secondary" data-action="load" data-paper-id="${paper.id}">
-                            ${paper.id === activeId ? 'Open' : 'Open'}
+                            Open
                         </button>
-                        <button type="button" class="btn btn-sm btn-outline-secondary" data-action="duplicate" data-paper-id="${paper.id}">Duplicate</button>
-                        <button type="button" class="btn btn-sm btn-outline-danger" data-action="delete" data-paper-id="${paper.id}">Delete</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-action="regen-qp" data-paper-id="${paper.id}">Questions PDF</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" data-action="regen-ms" data-paper-id="${paper.id}">Mark scheme</button>
+                        <button type="button" class="btn btn-sm btn-outline-danger" data-action="unassign" data-paper-id="${paper.id}">Unassign</button>
                     </div>
                 </div>
             `).join('');
@@ -1188,16 +1189,11 @@
             const pdfTitle = getEffectivePaperTitle();
             const activePaper = getActiveSavedPaper();
             const unsavedChanges = hasUnsavedChanges();
-            const activeButton = savePaperButton;
-            const originalLabel = activeButton.textContent;
             const shouldUpdate = Boolean(activePaper);
 
             if (activePaper && !unsavedChanges) {
                 return activePaper;
             }
-
-            activeButton.disabled = true;
-            activeButton.textContent = shouldUpdate ? 'Updating...' : 'Saving...';
 
             try {
                 const response = await fetch(
@@ -1232,49 +1228,9 @@
                 renderQuestions();
                 return savedPaper;
             } catch {
-                alert('The draft could not be saved. Please try again.');
+                alert('The assigned paper could not be saved. Please try again.');
                 return null;
-            } finally {
-                activeButton.disabled = false;
-                activeButton.textContent = originalLabel;
             }
-        }
-
-        async function duplicateSavedPaper(paperId) {
-            const savedPaper = savedPapers.find((paper) => paper.id === paperId);
-            if (!savedPaper) {
-                return;
-            }
-
-            const response = await fetch('/api/saved-papers', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    title: `${savedPaper.title} Copy`,
-                    pdf_title: savedPaper.pdf_title || '',
-                    pdf_title_enabled: Boolean(savedPaper.pdf_title_enabled),
-                    questions: savedPaper.questions || [],
-                }),
-            });
-
-            if (!response.ok) {
-                alert('That draft could not be duplicated right now.');
-                return;
-            }
-
-            const payload = await response.json();
-            const duplicated = payload.paper;
-            localStorage.setItem(QUESTION_STORAGE_KEY, JSON.stringify(duplicated.questions || []));
-            localStorage.setItem(PAPER_TITLE_STORAGE_KEY, duplicated.pdf_title || '');
-            localStorage.setItem(PAPER_TITLE_ENABLED_KEY, duplicated.pdf_title_enabled ? 'true' : 'false');
-            paperTitleInput.value = duplicated.pdf_title || '';
-            titleEnabledCheckbox.checked = Boolean(duplicated.pdf_title_enabled);
-            syncTitleVisibility();
-            saveActiveSavedPaperId(duplicated.id);
-            await refreshSavedPapers();
-            renderQuestions();
         }
 
         function loadSavedPaper(paperId) {
@@ -1294,13 +1250,13 @@
             renderSavedPapers();
         }
 
-        async function deleteSavedPaper(paperId) {
+        async function unassignSavedPaper(paperId) {
             const savedPaper = savedPapers.find((paper) => paper.id === paperId);
             if (!savedPaper) {
                 return;
             }
 
-            const confirmed = window.confirm(`Delete "${savedPaper.title}"?`);
+            const confirmed = window.confirm(`Unassign "${savedPaper.title}"?`);
             if (!confirmed) {
                 return;
             }
@@ -1310,7 +1266,7 @@
             });
 
             if (!response.ok) {
-                alert('That saved draft could not be deleted right now.');
+                alert('That assigned paper could not be unassigned right now.');
                 return;
             }
 
@@ -1322,8 +1278,7 @@
             renderQuestions();
         }
 
-        async function generatePaper(exportType, button, label) {
-            const questions = loadQuestions();
+        async function generatePaperForQuestions(questions, exportType, button, label, pdfTitle = '') {
             if (!questions.length) {
                 return;
             }
@@ -1340,7 +1295,7 @@
                         'Content-Type': 'application/json',
                     },
                     body: JSON.stringify({
-                        title: getEffectivePaperTitle(),
+                        title: pdfTitle,
                         export_type: exportType,
                         questions,
                     }),
@@ -1354,8 +1309,8 @@
                 const url = URL.createObjectURL(blob);
                 const link = document.createElement('a');
                 link.href = url;
-                const baseName = getEffectivePaperTitle()
-                    ? getEffectivePaperTitle().replace(/[^A-Za-z0-9._-]+/g, '_')
+                const baseName = pdfTitle
+                    ? pdfTitle.replace(/[^A-Za-z0-9._-]+/g, '_')
                     : buildGeneratedPaperName(questions, 'filename');
                 const prefix = exportType === 'markscheme' ? 'ms_' : 'qp_';
                 link.download = `${prefix}${baseName}.pdf`;
@@ -1369,6 +1324,70 @@
                 activeButton.disabled = false;
                 activeButton.textContent = originalLabel;
             }
+        }
+
+        async function generatePaper(exportType, button, label) {
+            return generatePaperForQuestions(loadQuestions(), exportType, button, label, getEffectivePaperTitle());
+        }
+
+        async function downloadSourceFilesForQuestions(questions, button, label, paperTitle = '') {
+            if (!questions.length) {
+                return;
+            }
+
+            const activeButton = button;
+            const originalLabel = activeButton.textContent;
+            activeButton.disabled = true;
+            activeButton.textContent = label;
+
+            try {
+                const response = await fetch('/download-source-files', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        title: paperTitle,
+                        questions,
+                    }),
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to download source files');
+                }
+
+                const blob = await response.blob();
+                const url = URL.createObjectURL(blob);
+                const link = document.createElement('a');
+                link.href = url;
+                const disposition = response.headers.get('Content-Disposition') || '';
+                const match = disposition.match(/filename=\"?([^\";]+)\"?/i);
+                link.download = match ? match[1] : 'source_files.zip';
+                document.body.appendChild(link);
+                link.click();
+                link.remove();
+                URL.revokeObjectURL(url);
+            } catch {
+                alert('The source files could not be downloaded. Please try again.');
+            } finally {
+                activeButton.disabled = false;
+                activeButton.textContent = originalLabel;
+            }
+        }
+
+        async function regenerateAssignedPaper(paperId, exportType, button) {
+            const savedPaper = savedPapers.find((paper) => paper.id === paperId);
+            if (!savedPaper) {
+                return;
+            }
+
+            return generatePaperForQuestions(
+                savedPaper.questions || [],
+                exportType,
+                button,
+                exportType === 'markscheme' ? 'Generating mark scheme...' : 'Generating paper...',
+                savedPaper.pdf_title_enabled ? (savedPaper.pdf_title || '') : ''
+            );
         }
 
         async function exportAndAssignQuestions() {
@@ -1395,10 +1414,17 @@
             updateSaveControls();
         });
 
-        savePaperButton.addEventListener('click', saveCurrentPaper);
         generateAssignButton.addEventListener('click', exportAndAssignQuestions);
         generateOnlyButton.addEventListener('click', () => generatePaper('questions', generateOnlyButton, 'Generating paper...'));
         generateMsButton.addEventListener('click', () => generatePaper('markscheme', generateMsButton, 'Generating mark scheme...'));
+        if (generateSourceButton) {
+            generateSourceButton.addEventListener('click', () => downloadSourceFilesForQuestions(
+                loadQuestions(),
+                generateSourceButton,
+                'Preparing files...',
+                getEffectivePaperTitle(),
+            ));
+        }
 
         savedPapersList.addEventListener('click', (event) => {
             const button = event.target.closest('button[data-action][data-paper-id]');
@@ -1411,14 +1437,35 @@
 
             if (action === 'load') {
                 loadSavedPaper(paperId);
-            } else if (action === 'duplicate') {
-                duplicateSavedPaper(paperId);
-            } else if (action === 'delete') {
-                deleteSavedPaper(paperId);
+            } else if (action === 'regen-qp') {
+                regenerateAssignedPaper(paperId, 'questions', button);
+            } else if (action === 'regen-ms') {
+                regenerateAssignedPaper(paperId, 'markscheme', button);
+            } else if (action === 'unassign') {
+                unassignSavedPaper(paperId);
             }
         });
 
         window.removeQuestion = removeQuestion;
+
+        questionList.addEventListener('click', (event) => {
+            const card = event.target.closest('.question-card[data-paper][data-question]');
+            if (!card) {
+                return;
+            }
+
+            if (event.target.closest('button, .drag-handle')) {
+                return;
+            }
+
+            const paper = card.dataset.paper;
+            const question = card.dataset.question;
+            if (!paper || !question) {
+                return;
+            }
+
+            window.open(`/view/${encodeURIComponent(paper)}/${encodeURIComponent(question)}`, '_blank');
+        });
 
         questionList.addEventListener('dragstart', (event) => {
             const card = event.target.closest('.question-card[data-question-index]');
@@ -1471,9 +1518,7 @@
         syncTitleVisibility();
         ensureGeneratedPdfTitle();
 
-        refreshSavedPapers().catch(() => {
-            saveStatus.textContent = 'Saved drafts could not be loaded right now.';
-        });
+        refreshSavedPapers().catch(() => {});
         renderQuestions();
     </script>
 </body>

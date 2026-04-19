@@ -83,17 +83,27 @@
 
     .builder-area {
         margin-bottom: 8px;
+        border: 1px solid rgba(187, 134, 252, 0.28);
+        border-radius: 14px;
+        background: rgba(255, 255, 255, 0.04);
+        overflow: hidden;
     }
 
     .builder-link-group {
         display: flex;
         gap: 8px;
         align-items: stretch;
+        padding: 8px;
     }
 
     .builder-link:hover {
         background: rgba(187, 134, 252, 0.12);
         color: #ffffff;
+    }
+
+    .builder-link[aria-expanded="true"] {
+        background: rgba(187, 134, 252, 0.12);
+        border-color: rgba(187, 134, 252, 0.58);
     }
 
     .builder-link-main {
@@ -163,12 +173,10 @@
     }
 
     .builder-preview {
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        background: rgba(255, 255, 255, 0.04);
-        border-radius: 10px;
-        padding: 8px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.02);
+        padding: 8px 10px 10px;
         display: none;
-        margin-top: 8px;
     }
 
     .builder-preview.open {
@@ -186,7 +194,7 @@
         align-items: center;
         justify-content: space-between;
         gap: 10px;
-        margin-bottom: 8px;
+        margin-bottom: 6px;
     }
 
     .builder-preview-title {
@@ -207,32 +215,15 @@
         color: #ffffff;
     }
 
-    .builder-preview-stats {
-        display: grid;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 6px;
+    .builder-preview-summary {
+        color: #d9deea;
+        font-size: 0.72rem;
+        line-height: 1.35;
         margin-bottom: 8px;
     }
 
-    .builder-preview-stat {
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 8px;
-        padding: 6px 8px;
-        background: rgba(255, 255, 255, 0.03);
-    }
-
-    .builder-preview-stat-label {
-        display: block;
-        font-size: 0.66rem;
-        text-transform: uppercase;
-        letter-spacing: 0.04em;
-        color: #bfc6d1;
-        margin-bottom: 2px;
-    }
-
-    .builder-preview-stat-value {
+    .builder-preview-summary strong {
         color: #ffffff;
-        font-size: 0.8rem;
         font-weight: 700;
     }
 
@@ -1039,7 +1030,7 @@
                             <button type="button" class="btn btn-sm btn-outline-secondary" id="paper-select-all">All</button>
                             <button type="button" class="btn btn-sm btn-outline-secondary" id="paper-clear-all">None</button>
                         </div>
-                        <div id="paper-filter-options" data-papers='{{ papers|tojson }}'></div>
+                        <div id="paper-filter-options" data-papers='{{ all_papers|default(papers, true)|tojson }}'></div>
                     </div>
                 </div>
                 <div class="settings-help">Hide specific exam papers from the browser.</div>
@@ -1354,41 +1345,14 @@
         if (hiddenTopicCount) {
             topicSummaryParts.push(`+${hiddenTopicCount} more`);
         }
-        const topicSummary = `${topicGroups.length} topic${topicGroups.length === 1 ? '' : 's'} • ${topicSummaryParts.join(' • ')}`;
-
-        const questionsHtml = previewQuestions.map((question) => `
-            <div class="builder-question-item">
-                <div class="builder-question-name">${escapeHtml(question.title || `${question.paper} Q${question.question}`)}</div>
-                <div class="builder-question-meta-preview">
-                    ${escapeHtml(question.topic_name || question.topic_key || 'Unknown topic')} • ${escapeHtml(question.paper)} • ${typeof question.marks === 'number' ? `[${question.marks}]` : '[?]'}
-                </div>
-            </div>
-        `).join('');
+        const topicSummary = topicSummaryParts.join(' • ');
 
         builderPreview.innerHTML = `
             <div class="builder-preview-header">
                 <div class="builder-preview-title">Current paper</div>
                 <a href="/builder" class="builder-preview-link">Review & export</a>
             </div>
-            <div class="builder-preview-stats">
-                <div class="builder-preview-stat">
-                    <span class="builder-preview-stat-label">Questions</span>
-                    <span class="builder-preview-stat-value">${selected.length}</span>
-                </div>
-                <div class="builder-preview-stat">
-                    <span class="builder-preview-stat-label">Marks</span>
-                    <span class="builder-preview-stat-value">[${totalMarks}${unknownMarks ? '+' : ''}]</span>
-                </div>
-            </div>
-            <div class="builder-preview-section">
-                <div class="builder-preview-section-title">Topics</div>
-                <div class="builder-topic-summary">${topicSummary}</div>
-            </div>
-            <div class="builder-preview-section">
-                <div class="builder-preview-section-title">Questions</div>
-                <div class="builder-question-list">${questionsHtml}</div>
-            </div>
-            ${hiddenQuestionCount ? `<div class="builder-more-row">+${hiddenQuestionCount} more question${hiddenQuestionCount === 1 ? '' : 's'}</div>` : ''}
+            ${topicSummary ? `<div class="builder-preview-summary">${topicSummary}</div>` : ''}
             ${unknownMarks ? `<div class="builder-preview-note">${unknownMarks} selected question${unknownMarks === 1 ? '' : 's'} ${unknownMarks === 1 ? 'has' : 'have'} no total mark yet.</div>` : ''}
         `;
 
@@ -1478,12 +1442,19 @@
         }
 
         const papers = JSON.parse(paperFilterOptions.dataset.papers || '[]');
+        const configuredPapers = Array.isArray(APP_SETTINGS.visible_papers) ? APP_SETTINGS.visible_papers : [];
+        const hasConfiguredPapers = configuredPapers.length > 0;
 
-        papers.forEach((paper) => paperSelections.add(paper));
+        paperSelections.clear();
+        papers.forEach((paper) => {
+            if (!hasConfiguredPapers || configuredPapers.includes(paper)) {
+                paperSelections.add(paper);
+            }
+        });
 
         paperFilterOptions.innerHTML = papers.map((paper) => `
             <label class="paper-filter-option">
-                <input type="checkbox" value="${paper}" checked>
+                <input type="checkbox" value="${paper}" ${paperSelections.has(paper) ? 'checked' : ''}>
                 <span>${paper}</span>
             </label>
         `).join('');
@@ -1769,13 +1740,8 @@
     }
 
     if (hideAssignedToggle) {
-        hideAssignedToggle.checked = localStorage.getItem(HIDE_ASSIGNED_STORAGE_KEY) === 'true';
+        hideAssignedToggle.checked = Boolean(APP_SETTINGS.hide_assigned);
         hideAssignedToggle.addEventListener('change', () => {
-            if (hideAssignedToggle.checked) {
-                localStorage.setItem(HIDE_ASSIGNED_STORAGE_KEY, 'true');
-            } else {
-                localStorage.removeItem(HIDE_ASSIGNED_STORAGE_KEY);
-            }
             applyCombinedFilters();
         });
     }
@@ -1802,6 +1768,8 @@
                     body: JSON.stringify({
                         favorite_level: favoriteLevelSelect.value,
                         edit_mode: editModeCheckbox.checked,
+                        visible_papers: Array.from(paperSelections),
+                        hide_assigned: Boolean(hideAssignedToggle?.checked),
                     }),
                 });
 

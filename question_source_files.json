@@ -1,0 +1,79 @@
+{
+  "21_june_qp_41::3": [
+    "TreasureChestData.txt"
+  ],
+  "21_nov_qp_41::2": [
+    "Pictures.txt"
+  ],
+  "22_june_qp_41::1": [
+    "HighScore.txt"
+  ],
+  "22_june_qp_42::3": [
+    "CardValues.txt"
+  ],
+  "22_nov_qp_41::1": [
+    "IntegerData.txt"
+  ],
+  "22_nov_qp_42::2": [
+    "Characters.txt"
+  ],
+  "23_june_qp_41::1": [
+    "Data.txt"
+  ],
+  "23_june_qp_41::3": [
+    "AnimalData.txt",
+    "ColourData.txt"
+  ],
+  "23_june_qp_42::3": [
+    "Employees.txt",
+    "HoursWeek1.txt"
+  ],
+  "23_nov_qp_41::2": [
+    "QueueData.txt"
+  ],
+  "23_nov_qp_42::1": [
+    "StackData.txt"
+  ],
+  "24_june_qp_41::2": [
+    "Trees.txt"
+  ],
+  "24_june_qp_42::1": [
+    "Easy.txt",
+    "Medium.txt",
+    "Hard.txt"
+  ],
+  "24_nov_qp_41::1": [
+    "Data.txt"
+  ],
+  "24_nov_qp_42::3": [
+    "HighScoreTable.txt"
+  ],
+  "25_june_qp_41::2": [
+    "TheData.txt",
+    "Blue.txt",
+    "Green.txt",
+    "Orange.txt",
+    "Pink.txt",
+    "Red.txt",
+    "Yellow.txt"
+  ],
+  "25_june_qp_42::1": [
+    "StackData.txt",
+    "SecondStack.txt"
+  ],
+  "25_june_qp_42::2": [
+    "HashData.txt"
+  ],
+  "25_june_qp_43::1": [
+    "QueueData.txt"
+  ],
+  "25_nov_qp_41::3": [
+    "HashTableData.txt"
+  ],
+  "25_nov_qp_42::3": [
+    "TreeData.txt"
+  ],
+  "25_nov_qp_43::2": [
+    "BinaryData.txt"
+  ]
+}

@@ -8,6 +8,7 @@ from datetime import datetime
 from functools import lru_cache
 from io import BytesIO
 from uuid import uuid4
+from zipfile import ZIP_DEFLATED, ZipFile
 
 import fitz
 from PIL import Image, ImageChops
@@ -16,18 +17,27 @@ import clipper
 app = Flask(__name__)
 
 # --- CONFIGURATION ---
-INDEX_FILE = 'topic_index.json'
-MANUAL_TITLES_FILE = 'manual_titles.json'
-SYLLABUS_FILE = 'map.json'
-CROP_FOLDER = 'static/crops'
-MAP_FILE = 'map.csv'
-SAVED_PAPERS_FILE = 'saved_papers.json'
-QUESTION_OVERRIDES_FILE = 'question_overrides.json'
-APP_SETTINGS_FILE = 'app_settings.json'
-QUESTION_MARKS_FILE = 'question_marks.json'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+LOCAL_DATA_DIR = os.path.join(BASE_DIR, 'local')
+
+INDEX_FILE = os.path.join(BASE_DIR, 'topic_index.json')
+MANUAL_TITLES_FILE = os.path.join(BASE_DIR, 'manual_titles.json')
+USER_TITLES_FILE = os.path.join(LOCAL_DATA_DIR, 'user_titles.json')
+SYLLABUS_FILE = os.path.join(BASE_DIR, 'map.json')
+CROP_FOLDER = os.path.join(BASE_DIR, 'static', 'crops')
+MAP_FILE = os.path.join(BASE_DIR, 'map.csv')
+SAVED_PAPERS_FILE = os.path.join(LOCAL_DATA_DIR, 'saved_papers.json')
+MASTER_QUESTION_OVERRIDES_FILE = os.path.join(BASE_DIR, 'question_overrides.json')
+USER_QUESTION_OVERRIDES_FILE = os.path.join(LOCAL_DATA_DIR, 'question_overrides.json')
+APP_SETTINGS_FILE = os.path.join(LOCAL_DATA_DIR, 'app_settings.json')
+QUESTION_MARKS_FILE = os.path.join(BASE_DIR, 'question_marks.json')
+QUESTION_SOURCE_FILES_FILE = os.path.join(BASE_DIR, 'question_source_files.json')
+SUPP_FILES_FOLDER = os.path.join(BASE_DIR, 'supp_files')
 DEFAULT_APP_SETTINGS = {
     "favorite_level": "P1",
     "edit_mode": False,
+    "visible_papers": [],
+    "hide_assigned": False,
 }
 PDF_PAGE_WIDTH = 595
 PDF_PAGE_HEIGHT = 842
@@ -88,6 +98,9 @@ def load_json(filepath):
 
 
 def save_json(filepath, payload):
+    parent = os.path.dirname(filepath)
+    if parent:
+        os.makedirs(parent, exist_ok=True)
     with open(filepath, 'w', encoding='utf-8') as f:
         json.dump(payload, f, ensure_ascii=False, indent=2)
 
@@ -125,7 +138,6 @@ def infer_level_from_topic(topic_key):
     return DEFAULT_APP_SETTINGS["favorite_level"]
 
 
-@lru_cache(maxsize=1)
 def load_app_settings():
     payload = load_json(APP_SETTINGS_FILE)
     settings = DEFAULT_APP_SETTINGS.copy()
@@ -133,26 +145,48 @@ def load_app_settings():
     if isinstance(payload, dict):
         settings["favorite_level"] = normalize_level_choice(payload.get("favorite_level"))
         settings["edit_mode"] = bool(payload.get("edit_mode", False))
+        visible_papers = payload.get("visible_papers", [])
+        if isinstance(visible_papers, list):
+            settings["visible_papers"] = [
+                str(paper).strip() for paper in visible_papers if str(paper).strip()
+            ]
+        settings["hide_assigned"] = bool(payload.get("hide_assigned", False))
 
     return settings
 
 
 def save_app_settings(settings):
     save_json(APP_SETTINGS_FILE, settings)
-    load_app_settings.cache_clear()
 
 
 @lru_cache(maxsize=1)
 def load_question_overrides():
-    payload = load_json(QUESTION_OVERRIDES_FILE)
+    merged = {}
+    for filepath in (MASTER_QUESTION_OVERRIDES_FILE, USER_QUESTION_OVERRIDES_FILE):
+        payload = load_json(filepath)
+        if isinstance(payload, dict):
+            merged.update(payload)
+    return merged
+
+
+def save_question_overrides(overrides):
+    save_json(USER_QUESTION_OVERRIDES_FILE, overrides)
+    load_question_overrides.cache_clear()
+    load_base_question_lookup.cache_clear()
+    load_question_lookup.cache_clear()
+
+
+@lru_cache(maxsize=1)
+def load_user_titles():
+    payload = load_json(USER_TITLES_FILE)
     if isinstance(payload, dict):
         return payload
     return {}
 
 
-def save_question_overrides(overrides):
-    save_json(QUESTION_OVERRIDES_FILE, overrides)
-    load_question_overrides.cache_clear()
+def save_user_titles(titles):
+    save_json(USER_TITLES_FILE, titles)
+    load_user_titles.cache_clear()
     load_base_question_lookup.cache_clear()
     load_question_lookup.cache_clear()
 
@@ -195,6 +229,54 @@ def load_question_marks():
 
 
 @lru_cache(maxsize=1)
+def load_question_source_files():
+    payload = load_json(QUESTION_SOURCE_FILES_FILE)
+    if not isinstance(payload, dict):
+        return {}
+
+    known_files = {
+        path.name
+        for path in os.scandir(SUPP_FILES_FOLDER)
+        if path.is_file()
+    } if os.path.isdir(SUPP_FILES_FOLDER) else set()
+
+    normalized = {}
+    for key, files in payload.items():
+        if not isinstance(files, list):
+            continue
+
+        deduped = []
+        seen = set()
+        for raw_name in files:
+            name = os.path.basename(str(raw_name or '').strip())
+            if not name or name in seen or (known_files and name not in known_files):
+                continue
+            deduped.append(name)
+            seen.add(name)
+
+        if deduped:
+            normalized[str(key)] = deduped
+
+    return normalized
+
+
+def get_question_source_files(paper, q_num):
+    return list(load_question_source_files().get(question_key(paper, str(q_num).strip()), []))
+
+
+def build_source_file_bundle(file_names):
+    archive_buffer = BytesIO()
+    with ZipFile(archive_buffer, mode='w', compression=ZIP_DEFLATED) as archive:
+        for filename in file_names:
+            file_path = os.path.join(SUPP_FILES_FOLDER, filename)
+            if not os.path.isfile(file_path):
+                continue
+            archive.write(file_path, arcname=filename)
+    archive_buffer.seek(0)
+    return archive_buffer
+
+
+@lru_cache(maxsize=1)
 def load_base_question_lookup():
     full_index = load_json(INDEX_FILE)
     lookup = {}
@@ -218,6 +300,7 @@ def load_base_question_lookup():
                 "topic_key": topic_key,
                 "topic_name": topic_name,
                 "marks": load_question_marks().get(f"{paper}_q{normalized_q_num}"),
+                "source_files": get_question_source_files(paper, normalized_q_num),
             }
 
     return lookup
@@ -250,12 +333,21 @@ def load_question_lookup():
         if "marks" in override:
             lookup[lookup_key]["marks"] = override["marks"]
 
+    for title_key, title in load_user_titles().items():
+        try:
+            paper, q_num = title_key.rsplit('_q', 1)
+        except ValueError:
+            continue
+        lookup_key = (paper, q_num)
+        if lookup_key in lookup and str(title).strip():
+            lookup[lookup_key]["title"] = str(title).strip()
+
     return lookup
 
 
 def get_display_title(paper, q_num, topic_key):
-    manual_titles = load_json(MANUAL_TITLES_FILE)
     key = f"{paper}_q{q_num}"
+    manual_titles = load_json(MANUAL_TITLES_FILE)
 
     if key in manual_titles:
         return manual_titles[key]
@@ -363,6 +455,15 @@ def build_paper_list(target_level=None):
     return sorted(papers)
 
 
+def build_all_paper_list():
+    papers = {
+        question.get("paper")
+        for question in load_question_lookup().values()
+        if question.get("paper")
+    }
+    return sorted(papers)
+
+
 def build_global_question_list(target_level=None):
     questions = [
         question.copy()
@@ -438,6 +539,7 @@ def find_question_metadata(paper, q_num):
         "img": f"{paper}_q{normalized_q_num}.png",
         "ms_img": f"{paper.replace('_qp_', '_ms_')}_q{normalized_q_num}.png",
         "marks": load_question_marks().get(f"{paper}_q{normalized_q_num}"),
+        "source_files": get_question_source_files(paper, normalized_q_num),
     }
 
 
@@ -537,6 +639,7 @@ def serialize_saved_paper(saved_paper):
             "topic_key": metadata.get("topic_key"),
             "topic_name": metadata.get("topic_name"),
             "marks": metadata.get("marks"),
+            "source_files": metadata.get("source_files", []),
         })
 
     return {
@@ -1221,6 +1324,7 @@ def home(target_level=None):
         'dashboard.html',
         topics=topic_list,
         papers=paper_list,
+        all_papers=build_all_paper_list(),
         data={},
         search_questions=search_questions,
         saved_paper_count=len(saved_papers),
@@ -1256,6 +1360,7 @@ def show_topic(topic_name, target_level=None):
         'dashboard.html',
         topics=topic_list,
         papers=paper_list,
+        all_papers=build_all_paper_list(),
         data=questions_with_metadata,
         search_questions=[],
         saved_paper_count=len(saved_papers),
@@ -1293,11 +1398,33 @@ def view_question(paper, q_num):
 
 @app.route('/builder')
 def paper_builder():
-    return render_template('builder.html', saved_paper_count=len(load_saved_papers()))
+    return render_template(
+        'builder.html',
+        saved_paper_count=len(load_saved_papers()),
+        source_file_question_keys=sorted(load_question_source_files().keys()),
+    )
 
 
 def parse_requested_question_refs(payload):
     return normalize_saved_question_refs((payload or {}).get("questions", []))
+
+
+def collect_source_files_for_questions(questions):
+    collected = []
+    seen = set()
+
+    for question in questions:
+        for filename in question.get("source_files", []):
+            name = os.path.basename(str(filename or '').strip())
+            if not name or name in seen:
+                continue
+            file_path = os.path.join(SUPP_FILES_FOLDER, name)
+            if not os.path.isfile(file_path):
+                continue
+            collected.append(name)
+            seen.add(name)
+
+    return collected
 
 
 @app.route('/api/saved-papers', methods=['GET'])
@@ -1390,6 +1517,12 @@ def update_settings():
     settings = {
         "favorite_level": normalize_level_choice(payload.get("favorite_level")),
         "edit_mode": bool(payload.get("edit_mode", False)),
+        "visible_papers": [
+            str(paper).strip()
+            for paper in (payload.get("visible_papers") or [])
+            if str(paper).strip()
+        ],
+        "hide_assigned": bool(payload.get("hide_assigned", False)),
     }
     save_app_settings(settings)
     return jsonify({"settings": settings})
@@ -1424,11 +1557,18 @@ def update_question_metadata(paper, q_num):
     if not title or topic_key not in valid_topics:
         abort(400)
 
-    manual_titles = load_json(MANUAL_TITLES_FILE)
-    manual_titles[f"{paper}_q{normalized_q_num}"] = title
-    save_json(MANUAL_TITLES_FILE, manual_titles)
+    title_key = f"{paper}_q{normalized_q_num}"
+    user_titles = load_user_titles().copy()
+    if title != base_metadata["title"]:
+        user_titles[title_key] = title
+    else:
+        user_titles.pop(title_key, None)
+    save_user_titles(user_titles)
 
-    overrides = load_question_overrides().copy()
+    master_overrides = load_json(MASTER_QUESTION_OVERRIDES_FILE)
+    overrides = load_json(USER_QUESTION_OVERRIDES_FILE)
+    if not isinstance(overrides, dict):
+        overrides = {}
     question_override_key = question_key(paper, normalized_q_num)
     override_payload = {}
 
@@ -1441,7 +1581,9 @@ def update_question_metadata(paper, q_num):
     if marks != base_metadata.get("marks"):
         override_payload["marks"] = marks
 
-    if override_payload:
+    if question_override_key in master_overrides and not override_payload:
+        overrides.pop(question_override_key, None)
+    elif override_payload:
         overrides[question_override_key] = override_payload
     else:
         overrides.pop(question_override_key, None)
@@ -1450,6 +1592,55 @@ def update_question_metadata(paper, q_num):
     load_question_lookup.cache_clear()
 
     return jsonify({"question": find_question_metadata(paper, normalized_q_num)})
+
+
+@app.route('/download-source-files/question/<paper>/<q_num>')
+def download_question_source_files(paper, q_num):
+    metadata = find_question_metadata(paper, q_num)
+    source_files = collect_source_files_for_questions([metadata])
+
+    if not source_files:
+        abort(404)
+
+    if len(source_files) == 1:
+        filename = source_files[0]
+        return send_from_directory(SUPP_FILES_FOLDER, filename, as_attachment=True, download_name=filename)
+
+    safe_title = re.sub(r'[^A-Za-z0-9._-]+', '_', metadata.get('title', '')).strip('_') or f'{paper}_q{q_num}'
+    archive_name = f"source_files_{safe_title}.zip"
+    archive_buffer = build_source_file_bundle(source_files)
+    return send_file(archive_buffer, mimetype='application/zip', as_attachment=True, download_name=archive_name)
+
+
+@app.route('/download-source-files', methods=['POST'])
+def download_selected_source_files():
+    payload = request.get_json(silent=True) or {}
+    requested_questions = parse_requested_question_refs(payload)
+    paper_title = str(payload.get('title') or '').strip()
+
+    selected_questions = []
+    for item in requested_questions:
+        paper = str(item.get("paper", "")).strip()
+        question = str(item.get("question", "")).strip()
+        if not paper or not question:
+            continue
+        selected_questions.append(find_question_metadata(paper, question))
+
+    if not selected_questions:
+        abort(400)
+
+    source_files = collect_source_files_for_questions(selected_questions)
+    if not source_files:
+        abort(400)
+
+    if len(source_files) == 1:
+        filename = source_files[0]
+        return send_from_directory(SUPP_FILES_FOLDER, filename, as_attachment=True, download_name=filename)
+
+    safe_title = re.sub(r'[^A-Za-z0-9._-]+', '_', paper_title).strip('_') or 'selected_questions'
+    archive_name = f"source_files_{safe_title}.zip"
+    archive_buffer = build_source_file_bundle(source_files)
+    return send_file(archive_buffer, mimetype='application/zip', as_attachment=True, download_name=archive_name)
 
 
 @app.route('/generate-paper', methods=['POST'])
@@ -1505,4 +1696,4 @@ def serve_crops(folder, filename):
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5001)
+    app.run(debug=os.environ.get('FLASK_DEBUG') == '1', port=5001)
