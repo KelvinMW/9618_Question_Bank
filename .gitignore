@@ -2,5 +2,6 @@ __pycache__/
 *.py[cod]
 .DS_Store
 venv/
+.qbank-venv/
 local/*.json
 !local/.gitkeep

@@ -64,6 +64,21 @@
         color: #ffffff;
     }
 
+    .header-actions {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        flex: 0 0 auto;
+    }
+
+    .about-btn {
+        width: auto;
+        min-width: 36px;
+        padding: 0 10px;
+        font-size: 0.78rem;
+        font-weight: 600;
+    }
+
     .builder-link {
         display: inline-flex;
         align-items: center;
@@ -745,11 +760,17 @@
         <div class="sidebar-header p-3 border-bottom bg-light">
           <div class="sidebar-header-top">
               <h5 class="mb-0 fw-bold hacker-purple">./cs_9618.cie</h5>
-              <button type="button" class="settings-btn" id="settings-btn" title="Settings" aria-label="Settings">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" viewBox="0 0 16 16">
-                      <path d="M9.405.914a1 1 0 0 0-1.81 0l-.294.725a1 1 0 0 1-.95.62l-.78-.04a1 1 0 0 0-1.01.84l-.13.776a1 1 0 0 1-.705.79l-.753.225a1 1 0 0 0-.592 1.712l.523.58a1 1 0 0 1 .214 1.114l-.294.725a1 1 0 0 0 .743 1.37l.776.13a1 1 0 0 1 .79.705l.225.752a1 1 0 0 0 1.712.593l.58-.523a1 1 0 0 1 1.114-.214l.725.294a1 1 0 0 0 1.37-.743l.13-.776a1 1 0 0 1 .705-.79l.752-.225a1 1 0 0 0 .593-1.712l-.523-.58a1 1 0 0 1-.214-1.114l.294-.725a1 1 0 0 0-.743-1.37l-.776-.13a1 1 0 0 1-.79-.705zM8 10.5A2.5 2.5 0 1 1 8 5.5a2.5 2.5 0 0 1 0 5"/>
-                  </svg>
-              </button>
+              <div class="header-actions">
+                  <button type="button" class="settings-btn about-btn" id="about-btn" title="About" aria-label="About">
+                      About
+                  </button>
+                  <button type="button" class="settings-btn" id="settings-btn" title="Settings" aria-label="Settings">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" viewBox="0 0 16 16">
+                          <path d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0"/>
+                          <path d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.54l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.902 3.433 2.54 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.892 3.433-.902 2.54-2.54l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.892-1.64-.902-3.433-2.54-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.291a1.873 1.873 0 0 0 1.116 2.693l.318.094c.835.246.835 1.428 0 1.674l-.318.094a1.873 1.873 0 0 0-1.116 2.693l.159.291c.416.764-.42 1.6-1.184 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.318a1.873 1.873 0 0 0-2.693-1.116l-.291.159c-.764.416-1.6-.42-1.184-1.184l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.375l-.16-.291c-.415-.764.42-1.6 1.185-1.184l.291.159a1.873 1.873 0 0 0 2.693-1.115z"/>
+                      </svg>
+                  </button>
+              </div>
           </div>
 
           <div class="selector-group w-100 mb-3" role="group">
@@ -782,9 +803,6 @@
               </div>
           </div>
 
-          <div class="sidebar-tools">
-              <input type="text" class="form-control form-control-sm sidebar-search" id="sidebar-search" placeholder="Search topics, tags, titles">
-          </div>
         </div>
 
         <div class="sidebar-scroll">
@@ -930,11 +948,6 @@
             </div>
             {% endif %}
 
-            <div class="search-results-header" id="search-results-header" hidden>
-                <h3 class="fw-bold mb-2">Search Results</h3>
-                <p class="text-muted mb-0" id="search-results-summary">Matching questions across topics</p>
-            </div>
-
             <div id="global-search-results">
             {% for q in search_questions %}
                 <div class="q-row"
@@ -1057,6 +1070,20 @@
     </div>
 </div>
 
+<div class="modal-backdrop-simple" id="about-modal">
+    <div class="modal-panel-simple">
+        <div class="modal-title-simple">About</div>
+        <div class="settings-help" style="font-size: 0.95rem; line-height: 1.65; color: #4b5563;">
+            <p>The purpose of this tool is to allow teachers to easily browse A Level CS questions by topic, and build their own papers composed of past and practice exam questions. Currently, all previous Paper 3 and Paper 4 questions (from June 2021 to November 2025) are available. Paper 1 and Paper 2 is in the process of being added.</p>
+            <p>This tool is not designed for students, or for the public. It's for internal use within a computer science department only. CAIE owns the copyright for these exam papers and they are not to be reproduced online.</p>
+            <p>Some exam papers are not included because they are duplicates of other papers. For example, 21_june_13 is identical to another paper in the same series, so questions from this paper weren't included.</p>
+        </div>
+        <div class="modal-actions-simple">
+            <button type="button" class="btn btn-primary" id="about-close-btn">Close</button>
+        </div>
+    </div>
+</div>
+
 <div class="modal-backdrop-simple" id="edit-modal">
     <div class="modal-panel-simple">
         <div class="modal-title-simple">Edit Question</div>
@@ -1118,6 +1145,9 @@
     const searchResultsSummary = document.getElementById('search-results-summary');
     const hideAssignedToggle = document.getElementById('hide-assigned-toggle');
     const hideAssignedCaption = document.getElementById('hide-assigned-caption');
+    const aboutButton = document.getElementById('about-btn');
+    const aboutModal = document.getElementById('about-modal');
+    const aboutCloseButton = document.getElementById('about-close-btn');
     const settingsButton = document.getElementById('settings-btn');
     const settingsModal = document.getElementById('settings-modal');
     const settingsCancelButton = document.getElementById('settings-cancel-btn');
@@ -1173,6 +1203,14 @@
 
     function closeSettingsModal() {
         setModalOpen(settingsModal, false);
+    }
+
+    function openAboutModal() {
+        setModalOpen(aboutModal, true);
+    }
+
+    function closeAboutModal() {
+        setModalOpen(aboutModal, false);
     }
 
     function openEditModal(event, row) {
@@ -1750,8 +1788,16 @@
         settingsButton.addEventListener('click', openSettingsModal);
     }
 
+    if (aboutButton) {
+        aboutButton.addEventListener('click', openAboutModal);
+    }
+
     if (settingsCancelButton) {
         settingsCancelButton.addEventListener('click', closeSettingsModal);
+    }
+
+    if (aboutCloseButton) {
+        aboutCloseButton.addEventListener('click', closeAboutModal);
     }
 
     if (settingsSaveButton) {
