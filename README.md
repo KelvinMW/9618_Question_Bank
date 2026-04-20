@@ -4,10 +4,12 @@ Local Flask app for browsing Cambridge 9618 questions, viewing mark schemes, and
 
 ## Quick start
 
-The easiest way to run the app on macOS is:
+The easiest way to run the app on Windows is:
 
 1. Clone the repo
-2. Double-click [run_qbank.command](/Users/rjm/Dev/9618%20QBank/run_qbank.command:1)
+2. Double-click `run_qbank.bat`
+
+If Windows asks whether you trust the file, choose to run it.
 
 On first run it will:
 
@@ -18,7 +20,21 @@ On first run it will:
 
 The app runs locally on `http://127.0.0.1:5001`.
 
+## macOS start
+
+Double-click `run_qbank.command`.
+
 ## Manual start
+
+Windows:
+
+```bat
+py -3 -m venv .qbank-venv
+.qbank-venv\Scripts\python.exe -m pip install -r requirements.txt
+.qbank-venv\Scripts\python.exe launch_qbank.py
+```
+
+macOS/Linux:
 
 ```bash
 python3 -m venv .qbank-venv
