@@ -113,11 +113,14 @@
             border-radius: 22px;
             box-shadow: var(--shadow);
             backdrop-filter: blur(10px);
+            position: relative;
         }
 
         .hero-panel {
             padding: 20px;
             margin-bottom: 18px;
+            z-index: 5;
+            overflow: visible;
         }
 
         .hero-top {
@@ -197,6 +200,12 @@
             font-weight: 600;
         }
 
+        .draft-chip.status-new {
+            background: rgba(183, 132, 247, 0.1);
+            border-color: rgba(183, 132, 247, 0.3);
+            color: var(--accent-deep);
+        }
+
         .draft-chip strong {
             color: var(--ink);
         }
@@ -249,13 +258,127 @@
 
         .action-group {
             display: flex;
-            flex-wrap: wrap;
-            gap: 8px;
-            align-items: center;
-            padding: 10px 12px;
+            flex-direction: column;
+            gap: 12px;
+            align-items: stretch;
+            padding: 14px 16px;
             border-radius: 16px;
             border: 1px solid var(--border);
             background: rgba(248, 250, 255, 0.82);
+            overflow: visible;
+        }
+
+        .action-layout-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .action-buttons-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .layout-select {
+            min-width: 240px;
+            max-width: 360px;
+            border-radius: 12px;
+            border: 1px solid rgba(183, 132, 247, 0.32);
+            background:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(244, 236, 255, 0.96)),
+                rgba(183, 132, 247, 0.08);
+            color: var(--accent-deep);
+            font-weight: 600;
+            padding-right: 42px;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
+            appearance: none;
+            -webkit-appearance: none;
+            background-image:
+                linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(244, 236, 255, 0.96)),
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 14 14'%3E%3Cpath d='M3 5.25 7 9l4-3.75' fill='none' stroke='%236d3cb5' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+            background-repeat: no-repeat, no-repeat;
+            background-position: 0 0, right 14px center;
+            background-size: auto, 14px 14px;
+            cursor: pointer;
+            flex: 0 1 320px;
+        }
+
+        .layout-select:focus {
+            border-color: rgba(183, 132, 247, 0.56);
+            box-shadow: 0 0 0 4px rgba(183, 132, 247, 0.12);
+        }
+
+        .layout-help {
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            flex: 0 0 auto;
+            z-index: 30;
+        }
+
+        .layout-help-button {
+            width: 26px;
+            height: 26px;
+            border-radius: 999px;
+            border: 1px solid rgba(183, 132, 247, 0.36);
+            background: rgba(183, 132, 247, 0.12);
+            color: var(--accent-deep);
+            font-size: 0.78rem;
+            font-weight: 800;
+            line-height: 1;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            cursor: help;
+            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5);
+        }
+
+        .layout-help-button:hover,
+        .layout-help-button:focus {
+            border-color: rgba(183, 132, 247, 0.56);
+            background: rgba(183, 132, 247, 0.18);
+            outline: none;
+        }
+
+        .layout-help-tooltip {
+            position: absolute;
+            left: 0;
+            top: calc(100% + 10px);
+            transform: none;
+            width: min(420px, calc(100vw - 80px));
+            padding: 12px 14px;
+            border-radius: 14px;
+            border: 1px solid rgba(183, 132, 247, 0.24);
+            background: rgba(36, 34, 46, 0.96);
+            color: #f5f1ff;
+            box-shadow: 0 16px 34px rgba(20, 19, 28, 0.28);
+            font-size: 0.78rem;
+            line-height: 1.5;
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+            transition: opacity 0.16s ease, visibility 0.16s ease;
+            z-index: 200;
+        }
+
+        .layout-help:hover .layout-help-tooltip,
+        .layout-help:focus-within .layout-help-tooltip {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .layout-help-tooltip strong {
+            color: #ffffff;
+        }
+
+        .layout-help-tooltip p {
+            margin: 0 0 8px;
+        }
+
+        .layout-help-tooltip p:last-child {
+            margin-bottom: 0;
         }
 
         .action-group-title {
@@ -265,6 +388,7 @@
             color: var(--muted);
             font-weight: 700;
             margin-right: 4px;
+            flex: 0 0 auto;
         }
 
         .action-group .btn {
@@ -614,6 +738,26 @@
                 justify-content: flex-start;
                 max-width: none;
             }
+
+            .action-layout-row,
+            .action-buttons-row {
+                align-items: stretch;
+            }
+
+            .action-layout-row {
+                flex-wrap: wrap;
+            }
+
+            .layout-select {
+                max-width: none;
+                flex-basis: 100%;
+            }
+
+            .layout-help-tooltip {
+                left: auto;
+                right: 0;
+                width: min(320px, calc(100vw - 48px));
+            }
         }
     </style>
 </head>
@@ -644,7 +788,7 @@
                         </div>
                         <div class="draft-tools">
                             <div class="draft-chip" id="draft-chip">
-                                <span>Assigned</span>
+                                <span id="draft-chip-label">Assigned</span>
                                 <strong id="draft-chip-text">Not assigned</strong>
                             </div>
                         </div>
@@ -663,11 +807,28 @@
 
                     <div class="hero-actions">
                         <div class="action-group">
-                            <span class="action-group-title">Export</span>
+                            <div class="action-layout-row">
+                                <span class="action-group-title">Layout</span>
+                                <select class="form-select layout-select" id="layout-mode" aria-label="PDF layout mode">
+                                    <option value="standard">Standard layout</option>
+                                    <option value="smart">Smart layout (Experimental)</option>
+                                </select>
+                                <div class="layout-help">
+                                    <button type="button" class="layout-help-button" aria-label="Explain PDF layout modes">i</button>
+                                    <div class="layout-help-tooltip" role="tooltip">
+                                        <p><strong>Standard layout</strong> takes a new page after each question. This will result in a longer PDF with a lot of blank space on each page, but is more reliable.</p>
+                                        <p><strong>Smart layout</strong> attempts to compact the questions onto as few pages as possible. In some cases, this might cut off parts of questions, or do some strange resizing and repositioning that worsens readability.</p>
+                                        <p><strong>Please visually inspect the PDF carefully before giving it to students.</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="action-buttons-row">
+                                <span class="action-group-title">Export</span>
                             <button type="button" class="btn btn-primary action-primary" id="generate-assign-btn">Export &amp; assign questions</button>
                             <button type="button" class="btn action-secondary" id="generate-only-btn">Export only</button>
                             <button type="button" class="btn action-secondary" id="generate-ms-btn">Export mark scheme</button>
                             <button type="button" class="btn action-secondary" id="generate-source-btn" hidden>Download source files</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -714,6 +875,7 @@
         const PAPER_TITLE_STORAGE_KEY = 'qbank.paperBuilder.title';
         const PAPER_TITLE_ENABLED_KEY = 'qbank.paperBuilder.titleEnabled';
         const ACTIVE_SAVED_PAPER_KEY = 'qbank.paperBuilder.activeSavedPaperId';
+        const LAYOUT_MODE_STORAGE_KEY = 'qbank.paperBuilder.layoutMode';
         const SOURCE_FILE_QUESTION_KEYS = new Set({{ (source_file_question_keys if source_file_question_keys is defined else [])|tojson }});
 
         const questionList = document.getElementById('question-list');
@@ -725,17 +887,23 @@
         const generateOnlyButton = document.getElementById('generate-only-btn');
         const generateMsButton = document.getElementById('generate-ms-btn');
         const generateSourceButton = document.getElementById('generate-source-btn');
+        const layoutModeSelect = document.getElementById('layout-mode');
         const savedPapersList = document.getElementById('saved-papers-list');
         const savedPaperCount = document.getElementById('saved-paper-count');
         const topicBalanceList = document.getElementById('topic-balance-list');
         const summaryQuestions = document.getElementById('summary-questions');
         const summaryMarks = document.getElementById('summary-marks');
+        const draftChip = document.getElementById('draft-chip');
+        const draftChipLabel = document.getElementById('draft-chip-label');
         const draftChipText = document.getElementById('draft-chip-text');
         let savedPapers = [];
         let draggedQuestionIndex = null;
 
         paperTitleInput.value = localStorage.getItem(PAPER_TITLE_STORAGE_KEY) || '';
         titleEnabledCheckbox.checked = localStorage.getItem(PAPER_TITLE_ENABLED_KEY) === 'true';
+        if (layoutModeSelect) {
+            layoutModeSelect.value = localStorage.getItem(LAYOUT_MODE_STORAGE_KEY) || 'standard';
+        }
 
         function escapeHtml(value) {
             return String(value ?? '')
@@ -796,6 +964,10 @@
         function getActiveSavedPaper() {
             const activeId = loadActiveSavedPaperId();
             return savedPapers.find((paper) => paper.id === activeId) || null;
+        }
+
+        function getSelectedLayoutMode() {
+            return layoutModeSelect?.value === 'smart' ? 'smart' : 'standard';
         }
 
         function getDraftSignature(title, questions, pdfTitle, pdfTitleEnabled) {
@@ -927,6 +1099,31 @@
             return buildGeneratedPaperName(loadQuestions(), 'display');
         }
 
+        function syncActivePaperState() {
+            const activePaper = getActiveSavedPaper();
+            if (!activePaper) {
+                return;
+            }
+
+            const currentSignature = getDraftSignature(
+                getDraftStorageTitle(),
+                loadQuestions(),
+                getEffectivePaperTitle(),
+                titleEnabledCheckbox.checked,
+            );
+            const activeSignature = getDraftSignature(
+                activePaper.title,
+                activePaper.questions,
+                activePaper.pdf_title,
+                activePaper.pdf_title_enabled,
+            );
+
+            if (currentSignature !== activeSignature) {
+                saveActiveSavedPaperId('');
+                renderSavedPapers();
+            }
+        }
+
         function summarizeQuestions(questions) {
             const marksTotal = questions.reduce((sum, question) => (
                 typeof question.marks === 'number' ? sum + question.marks : sum
@@ -968,14 +1165,20 @@
             const activePaper = getActiveSavedPaper();
 
             if (!questions.length) {
+                draftChip.classList.remove('status-new');
+                draftChipLabel.textContent = 'Assigned';
                 draftChipText.textContent = 'Not assigned';
                 return;
             }
 
             if (activePaper) {
+                draftChip.classList.remove('status-new');
+                draftChipLabel.textContent = 'Assigned';
                 draftChipText.textContent = activePaper.title;
             } else {
-                draftChipText.textContent = 'Not assigned';
+                draftChip.classList.add('status-new');
+                draftChipLabel.textContent = 'New paper';
+                draftChipText.textContent = buildGeneratedPaperName(questions, 'display');
             }
         }
 
@@ -1052,6 +1255,7 @@
 
         function renderQuestions() {
             const questions = loadQuestions();
+            syncActivePaperState();
             const summary = summarizeQuestions(questions);
 
             questionSectionCount.textContent = `${questions.length} selected`;
@@ -1172,6 +1376,8 @@
             const payload = await response.json();
             savedPapers = payload.papers || [];
 
+            syncActivePaperState();
+
             if (loadActiveSavedPaperId() && !getActiveSavedPaper()) {
                 saveActiveSavedPaperId('');
             }
@@ -1189,7 +1395,7 @@
             const pdfTitle = getEffectivePaperTitle();
             const activePaper = getActiveSavedPaper();
             const unsavedChanges = hasUnsavedChanges();
-            const shouldUpdate = Boolean(activePaper);
+            const shouldUpdate = Boolean(activePaper) && !unsavedChanges;
 
             if (activePaper && !unsavedChanges) {
                 return activePaper;
@@ -1297,6 +1503,7 @@
                     body: JSON.stringify({
                         title: pdfTitle,
                         export_type: exportType,
+                        layout_mode: getSelectedLayoutMode(),
                         questions,
                     }),
                 });
@@ -1400,6 +1607,7 @@
 
         paperTitleInput.addEventListener('input', () => {
             localStorage.setItem(PAPER_TITLE_STORAGE_KEY, paperTitleInput.value);
+            syncActivePaperState();
             updateSaveControls();
         });
 
@@ -1411,8 +1619,15 @@
                 localStorage.removeItem(PAPER_TITLE_ENABLED_KEY);
             }
             syncTitleVisibility();
+            syncActivePaperState();
             updateSaveControls();
         });
+
+        if (layoutModeSelect) {
+            layoutModeSelect.addEventListener('change', () => {
+                localStorage.setItem(LAYOUT_MODE_STORAGE_KEY, getSelectedLayoutMode());
+            });
+        }
 
         generateAssignButton.addEventListener('click', exportAndAssignQuestions);
         generateOnlyButton.addEventListener('click', () => generatePaper('questions', generateOnlyButton, 'Generating paper...'));

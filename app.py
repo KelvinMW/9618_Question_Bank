@@ -719,6 +719,45 @@ def load_question_source_image(question, source_folder, image_name, source_image
     return prepared_image, top_trim
 
 
+def load_question_source_pages(question, source_folder, image_name, source_image_cache):
+    cache_key = ('pages', source_folder, question.get('paper'), str(question.get('question')), image_name)
+    cached = source_image_cache.get(cache_key)
+    if cached is not None:
+        return [image.copy() for image in cached]
+
+    page_images = []
+
+    if source_folder == 'qp':
+        row = find_map_row(question['paper'], question['question'], folder='qp')
+        if row:
+            try:
+                start_page = int(row['start_page']) - 1
+                end_page = int(row['end_page']) - 1
+            except (ValueError, TypeError):
+                start_page = end_page = None
+
+            pdf_path = os.path.join('qp', f"{question['paper']}.pdf")
+            if start_page is not None and os.path.exists(pdf_path):
+                doc = fitz.open(pdf_path)
+                try:
+                    extracted_pages = clipper.extract_question_images(doc, start_page, end_page, question['question'])
+                finally:
+                    doc.close()
+
+                for page_image in extracted_pages:
+                    prepared_page = trim_edge_gutters(page_image.convert("RGB"))
+                    prepared_page, _ = trim_outer_whitespace(prepared_page, return_bbox=True)
+                    page_images.append(prepared_page)
+
+    if not page_images:
+        image, _ = load_question_source_image(question, source_folder, image_name, source_image_cache)
+        if image is not None:
+            page_images = [image]
+
+    source_image_cache[cache_key] = [image.copy() for image in page_images]
+    return page_images
+
+
 def get_pdf_words(page):
     return page.get_text('words', sort=True)
 
@@ -1171,128 +1210,211 @@ def build_question_blocks(question, image, top_trim=0):
     return blocks or [(0, image.height)]
 
 
-def generate_question_paper_pdf(paper_title, selected_questions, source_folder='qp', image_field='img'):
-    doc = fitz.open()
+def start_new_pdf_page(doc):
+    return doc.new_page(width=PDF_PAGE_WIDTH, height=PDF_PAGE_HEIGHT)
+
+
+def add_pdf_title(page, paper_title):
+    title_rect = fitz.Rect(PDF_MARGIN_X, PDF_MARGIN_TOP, PDF_PAGE_WIDTH - PDF_MARGIN_X, PDF_MARGIN_TOP + 34)
+    page.insert_textbox(
+        title_rect,
+        paper_title,
+        fontsize=14,
+        fontname="hebo",
+        color=(0, 0, 0),
+        align=0,
+    )
+    return PDF_MARGIN_TOP + PDF_TITLE_GAP
+
+
+def render_simple_question_page(doc, page, question_number, question_image, y_cursor, include_number=False):
     content_width = PDF_PAGE_WIDTH - (2 * PDF_MARGIN_X)
     content_bottom = PDF_PAGE_HEIGHT - PDF_MARGIN_BOTTOM
-    source_image_cache = {}
+    image_width, image_height = question_image.size
+    horizontal_offset = PDF_NUMBER_BOX_WIDTH + PDF_NUMBER_PADDING_RIGHT if include_number else 0
+    if include_number:
+        insert_question_number(page, question_number, y_cursor)
 
-    page = doc.new_page(width=PDF_PAGE_WIDTH, height=PDF_PAGE_HEIGHT)
+    usable_width = content_width - horizontal_offset
+    available_height = content_bottom - y_cursor
+
+    if available_height < 80:
+        page = start_new_pdf_page(doc)
+        y_cursor = PDF_MARGIN_TOP
+        available_height = content_bottom - y_cursor
+
+    scale = min(usable_width / image_width, available_height / image_height)
+    scale = min(scale, usable_width / image_width)
+    if scale <= 0:
+        scale = usable_width / image_width
+
+    segment_buffer = BytesIO()
+    question_image.save(segment_buffer, format="PNG")
+    rendered_height = image_height * scale
+    image_rect = fitz.Rect(
+        PDF_MARGIN_X + horizontal_offset,
+        y_cursor,
+        PDF_MARGIN_X + horizontal_offset + (image_width * scale),
+        y_cursor + rendered_height,
+    )
+    page.insert_image(image_rect, stream=segment_buffer.getvalue())
+    y_cursor += rendered_height
+    return page, y_cursor
+
+
+def render_smart_question_image(doc, page, question_number, question, question_image, y_cursor, source_folder, top_trim=0):
+    content_width = PDF_PAGE_WIDTH - (2 * PDF_MARGIN_X)
+    content_bottom = PDF_PAGE_HEIGHT - PDF_MARGIN_BOTTOM
+    image_width, image_height = question_image.size
+    blocks = (
+        build_question_blocks(question, question_image, top_trim=top_trim)
+        if source_folder == 'qp'
+        else [(0, image_height)]
+    )
+    first_segment = True
+
+    for block_top, block_bottom in blocks:
+        block_image = trim_vertical_whitespace(
+            question_image.crop((0, block_top, image_width, block_bottom)),
+            padding=PDF_BLOCK_PADDING,
+        )
+        block_width, block_height = block_image.size
+        protected_ranges = find_dotted_answer_regions(block_image)
+        full_page_height = content_bottom - PDF_MARGIN_TOP
+        horizontal_offset = PDF_NUMBER_BOX_WIDTH + PDF_NUMBER_PADDING_RIGHT if first_segment else 0
+        usable_width = content_width - horizontal_offset
+        scale = usable_width / block_width
+        rendered_block_height = block_height * scale
+        remaining_height = content_bottom - y_cursor
+
+        if rendered_block_height > remaining_height and rendered_block_height <= full_page_height:
+            page = start_new_pdf_page(doc)
+            y_cursor = PDF_MARGIN_TOP
+        elif remaining_height < 80:
+            page = start_new_pdf_page(doc)
+            y_cursor = PDF_MARGIN_TOP
+
+        current_top_px = 0
+        while current_top_px < block_height:
+            if first_segment:
+                insert_question_number(page, question_number, y_cursor)
+
+            horizontal_offset = PDF_NUMBER_BOX_WIDTH + PDF_NUMBER_PADDING_RIGHT if first_segment else 0
+            usable_width = content_width - horizontal_offset
+            scale = usable_width / block_width
+            available_height = content_bottom - y_cursor
+
+            if available_height < 80:
+                page = start_new_pdf_page(doc)
+                y_cursor = PDF_MARGIN_TOP
+                continue
+
+            ideal_slice_height_px = max(1, min(int(available_height / scale), block_height - current_top_px))
+            proposed_end_px = current_top_px + ideal_slice_height_px
+            split_end_px = find_split_row(
+                block_image,
+                current_top_px,
+                proposed_end_px,
+                block_height,
+                protected_ranges=protected_ranges,
+            )
+
+            if split_end_px is None:
+                if y_cursor > PDF_MARGIN_TOP:
+                    page = start_new_pdf_page(doc)
+                    y_cursor = PDF_MARGIN_TOP
+                    continue
+                split_end_px = proposed_end_px
+
+            split_end_px = min(split_end_px, block_height)
+            slice_height_px = max(1, min(split_end_px - current_top_px, block_height - current_top_px))
+            segment = block_image.crop((0, current_top_px, block_width, current_top_px + slice_height_px))
+
+            segment_buffer = BytesIO()
+            segment.save(segment_buffer, format="PNG")
+            segment_bytes = segment_buffer.getvalue()
+
+            rendered_height = slice_height_px * scale
+            image_rect = fitz.Rect(
+                PDF_MARGIN_X + horizontal_offset,
+                y_cursor,
+                PDF_MARGIN_X + horizontal_offset + (segment.width * scale),
+                y_cursor + rendered_height,
+            )
+            page.insert_image(image_rect, stream=segment_bytes)
+
+            y_cursor += rendered_height
+            current_top_px += slice_height_px
+            first_segment = False
+
+            if current_top_px < block_height:
+                page = start_new_pdf_page(doc)
+                y_cursor = PDF_MARGIN_TOP
+
+    return page, y_cursor
+
+
+def generate_question_paper_pdf(paper_title, selected_questions, source_folder='qp', image_field='img', layout_mode='standard'):
+    doc = fitz.open()
+    source_image_cache = {}
+    normalized_layout = 'smart' if str(layout_mode).strip().lower() == 'smart' else 'standard'
+
+    page = start_new_pdf_page(doc)
     y_cursor = PDF_MARGIN_TOP
 
     if paper_title:
-        title_rect = fitz.Rect(PDF_MARGIN_X, y_cursor, PDF_PAGE_WIDTH - PDF_MARGIN_X, y_cursor + 34)
-        page.insert_textbox(
-            title_rect,
-            paper_title,
-            fontsize=14,
-            fontname="hebo",
-            color=(0, 0, 0),
-            align=0,
-        )
-        y_cursor += PDF_TITLE_GAP
+        y_cursor = add_pdf_title(page, paper_title)
 
     for index, question in enumerate(selected_questions, start=1):
         image_name = question.get(image_field)
         if not image_name:
             continue
-        prepared_image, top_trim = load_question_source_image(
-            question,
-            source_folder,
-            image_name,
-            source_image_cache,
-        )
-        if prepared_image is None:
-            continue
-
-        question_image = prepared_image
-        image_width, image_height = question_image.size
-        blocks = (
-            build_question_blocks(question, question_image, top_trim=top_trim)
-            if source_folder == 'qp'
-            else [(0, image_height)]
-        )
-        first_segment = True
-
-        for block_top, block_bottom in blocks:
-            block_image = trim_vertical_whitespace(
-                question_image.crop((0, block_top, image_width, block_bottom)),
-                padding=PDF_BLOCK_PADDING,
+        if normalized_layout == 'smart':
+            prepared_image, top_trim = load_question_source_image(
+                question,
+                source_folder,
+                image_name,
+                source_image_cache,
             )
-            block_width, block_height = block_image.size
-            protected_ranges = find_dotted_answer_regions(block_image)
-            full_page_height = content_bottom - PDF_MARGIN_TOP
-            horizontal_offset = PDF_NUMBER_BOX_WIDTH + PDF_NUMBER_PADDING_RIGHT if first_segment else 0
-            usable_width = content_width - horizontal_offset
-            scale = usable_width / block_width
-            rendered_block_height = block_height * scale
-            remaining_height = content_bottom - y_cursor
+            if prepared_image is None:
+                continue
 
-            if rendered_block_height > remaining_height and rendered_block_height <= full_page_height:
-                page = doc.new_page(width=PDF_PAGE_WIDTH, height=PDF_PAGE_HEIGHT)
-                y_cursor = PDF_MARGIN_TOP
-            elif remaining_height < 80:
-                page = doc.new_page(width=PDF_PAGE_WIDTH, height=PDF_PAGE_HEIGHT)
-                y_cursor = PDF_MARGIN_TOP
+            page, y_cursor = render_smart_question_image(
+                doc,
+                page,
+                index,
+                question,
+                prepared_image,
+                y_cursor,
+                source_folder,
+                top_trim=top_trim,
+            )
+        else:
+            question_pages = load_question_source_pages(
+                question,
+                source_folder,
+                image_name,
+                source_image_cache,
+            )
+            if not question_pages:
+                continue
 
-            current_top_px = 0
-            while current_top_px < block_height:
-                if first_segment:
-                    insert_question_number(page, index, y_cursor)
-
-                horizontal_offset = PDF_NUMBER_BOX_WIDTH + PDF_NUMBER_PADDING_RIGHT if first_segment else 0
-                usable_width = content_width - horizontal_offset
-                scale = usable_width / block_width
-                available_height = content_bottom - y_cursor
-
-                if available_height < 80:
-                    page = doc.new_page(width=PDF_PAGE_WIDTH, height=PDF_PAGE_HEIGHT)
-                    y_cursor = PDF_MARGIN_TOP
-                    continue
-
-                ideal_slice_height_px = max(1, min(int(available_height / scale), block_height - current_top_px))
-                proposed_end_px = current_top_px + ideal_slice_height_px
-                split_end_px = find_split_row(
-                    block_image,
-                    current_top_px,
-                    proposed_end_px,
-                    block_height,
-                    protected_ranges=protected_ranges,
-                )
-
-                if split_end_px is None:
-                    if y_cursor > PDF_MARGIN_TOP:
-                        page = doc.new_page(width=PDF_PAGE_WIDTH, height=PDF_PAGE_HEIGHT)
-                        y_cursor = PDF_MARGIN_TOP
-                        continue
-                    split_end_px = proposed_end_px
-
-                split_end_px = min(split_end_px, block_height)
-                slice_height_px = max(1, min(split_end_px - current_top_px, block_height - current_top_px))
-                segment = block_image.crop((0, current_top_px, block_width, current_top_px + slice_height_px))
-
-                segment_buffer = BytesIO()
-                segment.save(segment_buffer, format="PNG")
-                segment_bytes = segment_buffer.getvalue()
-
-                rendered_height = slice_height_px * scale
-                image_rect = fitz.Rect(
-                    PDF_MARGIN_X + horizontal_offset,
+            for page_index, question_page in enumerate(question_pages):
+                page, y_cursor = render_simple_question_page(
+                    doc,
+                    page,
+                    index,
+                    question_page,
                     y_cursor,
-                    PDF_MARGIN_X + horizontal_offset + (segment.width * scale),
-                    y_cursor + rendered_height,
+                    include_number=(page_index == 0),
                 )
-                page.insert_image(image_rect, stream=segment_bytes)
-
-                y_cursor += rendered_height
-                current_top_px += slice_height_px
-                first_segment = False
-
-                if current_top_px < block_height:
-                    page = doc.new_page(width=PDF_PAGE_WIDTH, height=PDF_PAGE_HEIGHT)
+                if page_index < len(question_pages) - 1:
+                    page = start_new_pdf_page(doc)
                     y_cursor = PDF_MARGIN_TOP
 
-        y_cursor += PDF_QUESTION_GAP
+        if index < len(selected_questions):
+            page = start_new_pdf_page(doc)
+            y_cursor = PDF_MARGIN_TOP
 
     for page_number, pdf_page in enumerate(doc, start=1):
         insert_page_number(pdf_page, page_number)
@@ -1649,6 +1771,7 @@ def generate_paper():
     requested_questions = parse_requested_question_refs(payload)
     paper_title = str(payload.get("title") or "").strip()
     export_type = (payload.get("export_type") or "questions").strip().lower()
+    layout_mode = (payload.get("layout_mode") or "standard").strip().lower()
 
     selected_questions = []
     for item in requested_questions:
@@ -1667,6 +1790,7 @@ def generate_paper():
             selected_questions,
             source_folder='ms',
             image_field='ms_img',
+            layout_mode=layout_mode,
         )
         default_filename = "ms_custom_mark_scheme"
     else:
@@ -1675,6 +1799,7 @@ def generate_paper():
             selected_questions,
             source_folder='qp',
             image_field='img',
+            layout_mode=layout_mode,
         )
         default_filename = "qp_custom_question_paper"
 
